@@ -1,0 +1,48 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-14",
+ "numero": 25,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250414Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250414Minutes.pdf",
+ "version": "20250415005706",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 13
+  },
+  {
+   "type": "renvoi",
+   "bill": 13,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 16
+  },
+  {
+   "type": "renvoi",
+   "bill": 16,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 17
+  },
+  {
+   "type": "renvoi",
+   "bill": 17,
+   "comite": "Standing Committee on the Economy"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 20
+  },
+  {
+   "type": "renvoi",
+   "bill": 20,
+   "comite": "Standing Committee on the Economy"
+  }
+ ],
+ "divisions": []
+}

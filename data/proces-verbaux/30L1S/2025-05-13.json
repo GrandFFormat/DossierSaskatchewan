@@ -1,0 +1,370 @@
+{
+ "session": "30L1S",
+ "date": "2025-05-13",
+ "numero": 38,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250513Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250513Minutes.pdf",
+ "version": "20250625155910",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "rapport",
+   "bill": 21,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 21
+  },
+  {
+   "type": "sanction",
+   "bill": 6,
+   "titre": "The Safe Public Spaces (Street Weapons) Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 10,
+   "titre": "The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 11,
+   "titre": "The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024 (No. 2)"
+  },
+  {
+   "type": "sanction",
+   "bill": 9,
+   "titre": "The Traffic Safety Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 13,
+   "titre": "The Income Tax Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 16,
+   "titre": "The Provincial Sales Tax Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 8,
+   "titre": "The Child Care (New Facilities) Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 601,
+   "titre": "The Sikh Heritage Month Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 17,
+   "titre": "The Saskatchewan Commercial Innovation Incentive (Patent Box) Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 20,
+   "titre": "The Small and Medium Enterprise (SME) Investment Tax Credit Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 4,
+   "titre": "The Workers' Compensation Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 5,
+   "titre": "The Saskatchewan Employment Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 3,
+   "titre": "The Safer Communities and Neighbourhoods Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 14,
+   "titre": "The Power Corporation Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 15,
+   "titre": "The Alcohol and Gaming Regulation Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 18,
+   "titre": "The Regulated Health Professions Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 19,
+   "titre": "The Regulated Health Professions Consequential Amendments Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 7,
+   "titre": "The Court of Appeal (Residency) Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 22,
+   "titre": "The King's Bench Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 21,
+   "titre": "The Construction Codes (Derelict Buildings) Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 23,
+   "titre": "The Appropriation Act, 2025 (No. 1)"
+  }
+ ],
+ "divisions": [
+  {
+   "etape": "ajournement",
+   "debat": null,
+   "bill": null,
+   "motion": "That this Assembly do now adjourn.",
+   "motionPrincipale": "That this Assembly do now adjourn.",
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "brad-crassweller",
+     "name": "Brad Crassweller"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "contre": [
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "matt-love",
+     "name": "Matt Love"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "kim-breckner",
+     "name": "Kim Breckner"
+    },
+    {
+     "id": "meara-conway",
+     "name": "Meara Conway"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "keith-jorgenson",
+     "name": "Keith Jorgenson"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "sally-housser",
+     "name": "Sally Housser"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    }
+   ],
+   "totaux": {
+    "pour": 32,
+    "contre": 24
+   },
+   "valide": true,
+   "raisons": []
+  }
+ ]
+}

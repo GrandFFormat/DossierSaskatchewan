@@ -1,0 +1,69 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-15",
+ "numero": 26,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250415Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250415Minutes.pdf",
+ "version": "20250416170837",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "rapport",
+   "bill": 6,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": true
+  },
+  {
+   "type": "troisieme",
+   "bill": 6
+  },
+  {
+   "type": "rapport",
+   "bill": 10,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 10
+  },
+  {
+   "type": "rapport",
+   "bill": 11,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 11
+  },
+  {
+   "type": "deuxieme",
+   "bill": 3
+  },
+  {
+   "type": "renvoi",
+   "bill": 3,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 7
+  },
+  {
+   "type": "renvoi",
+   "bill": 7,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 9
+  },
+  {
+   "type": "renvoi",
+   "bill": 9,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  }
+ ],
+ "divisions": []
+}

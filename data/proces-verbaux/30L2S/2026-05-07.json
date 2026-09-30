@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2026-05-07",
+ "numero": 61,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260507Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260507Minutes.pdf",
+ "version": "20260507214608",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 624,
+   "titre": "The Provincial Sales Tax Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Trent Wotherspoon"
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,30 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-27",
+ "numero": 54,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260427Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260427Minutes.pdf",
+ "version": "20260427224550",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 52
+  },
+  {
+   "type": "renvoi",
+   "bill": 52,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 54
+  },
+  {
+   "type": "renvoi",
+   "bill": 54,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,19 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-10",
+ "numero": 24,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250410Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250410Minutes.pdf",
+ "version": "20250410223228",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 602,
+   "titre": "The Buy Local Day Act",
+   "titreFr": null,
+   "parrain": "Aleana Young"
+  }
+ ],
+ "divisions": []
+}

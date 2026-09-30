@@ -1,0 +1,68 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-22",
+ "numero": 52,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260422Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260422Minutes.pdf",
+ "version": "20260423001123",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 57,
+   "titre": "The Information Services Corporation Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Jeremy Harrison"
+  },
+  {
+   "type": "rapport",
+   "bill": 49,
+   "comite": "Standing Committee on Crown and Central Agencies",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 49
+  },
+  {
+   "type": "rapport",
+   "bill": 50,
+   "comite": "Standing Committee on Crown and Central Agencies",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 50
+  },
+  {
+   "type": "rapport",
+   "bill": 51,
+   "comite": "Standing Committee on Crown and Central Agencies",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 51
+  },
+  {
+   "type": "rapport",
+   "bill": 53,
+   "comite": "Standing Committee on Crown and Central Agencies",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 53
+  },
+  {
+   "type": "deuxieme",
+   "bill": 43
+  },
+  {
+   "type": "renvoi",
+   "bill": 43,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

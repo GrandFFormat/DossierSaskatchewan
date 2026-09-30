@@ -1,0 +1,55 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-09",
+ "numero": 23,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250409Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250409Minutes.pdf",
+ "version": "20250410134855",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 21,
+   "titre": "The Construction Codes (Derelict Buildings) Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Eric Schmalz"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 6
+  },
+  {
+   "type": "renvoi",
+   "bill": 6,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 8
+  },
+  {
+   "type": "renvoi",
+   "bill": 8,
+   "comite": "Standing Committee on Human Services"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 10
+  },
+  {
+   "type": "renvoi",
+   "bill": 10,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 11
+  },
+  {
+   "type": "renvoi",
+   "bill": 11,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

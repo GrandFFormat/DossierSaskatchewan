@@ -324,15 +324,9 @@ function goToFederal(evt){
     <div class="info-box" data-i18n="pers.info">These people hold official public functions and are appointed through a legally defined process — that's what makes the information above public. That doesn't mean everything about them becomes public: I stick to their official function here, as with the rest of the site.</div>
     </div>
 
-    <div class="band band-yellow bleed" id="band-suggest">
-      <div class="suggest-inner">
-        <div>
-          <h2 data-i18n="suggest.h">Missing a word?</h2>
-          <p data-i18n="suggest.p">If a term tripped you up while reading a bill or a vote, it tripped others too. Suggest it on the Facebook page — it will be added with a plain-language definition.</p>
-        </div>
-        <a class="suggest-cta" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" data-i18n="suggest.cta">✉ Suggest a term</a>
-      </div>
-    </div>
+    <!-- Bande « Missing a word? » retirée : elle renvoyait à la page Facebook de DQ. À remettre
+         quand le site aura son propre moyen de contact. -->
+
 
     <div class="section-head" id="sec-lobby"><div><h2 data-i18n="h.lobby">The lobbyist registry</h2><div class="sub" data-i18n="lobby.sub">Who's paid to influence public decisions — and how to look it up</div></div></div>
     <div class="info-box" style="scroll-margin-top:12px;">
@@ -479,12 +473,11 @@ function goToFederal(evt){
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Unofficial site — public data from the Legislative Assembly of Saskatchewan and the Government of Saskatchewan ·</span> <span id="footerRight">built with Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
+  <!-- Pas de Facebook ni de « Source code » : c'étaient la page et le dépôt de DQ. -->
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Buy me a coffee" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="RSS feed of “What's new”">RSS feed</a>
   </span>
   </div>
 </footer>

@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-19",
+ "numero": 15,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251119Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251119Minutes.pdf",
+ "version": "20251120150740",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 40,
+   "titre": "The Animal Protection Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Daryl Harrison"
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,33 @@
+{
+ "session": "30L1S",
+ "date": "2024-12-04",
+ "numero": 7,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241204Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241204Minutes.pdf",
+ "version": "20241205013333",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 3,
+   "titre": "The Safer Communities and Neighbourhoods Amendment Act, 2024",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 4,
+   "titre": "The Workers' Compensation Amendment Act, 2024",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  },
+  {
+   "type": "premiere",
+   "bill": 5,
+   "titre": "The Saskatchewan Employment Amendment Act, 2024",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  }
+ ],
+ "divisions": []
+}

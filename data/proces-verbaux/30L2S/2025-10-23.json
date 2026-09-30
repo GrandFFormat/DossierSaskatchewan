@@ -1,0 +1,504 @@
+{
+ "session": "30L2S",
+ "date": "2025-10-23",
+ "numero": 2,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251023Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251023Minutes.pdf",
+ "version": "20251024164549",
+ "lecteur": 3,
+ "evenements": [],
+ "divisions": [
+  {
+   "etape": "amendement",
+   "debat": null,
+   "bill": null,
+   "motion": "That all words after “the Assembly” be removed and replaced with: calls for the Government of Canada to immediately remove its tariffs on electric vehicles from China to restore market access for canola, pea, and pork producers in Saskatchewan; and, That this Assembly commends the Premier for the early and consistent leadership he has shown by calling on the federal government to remove its EV tariffs, by being the first Canadian Premier in six years to lead a trade mission to China, and by r…",
+   "motionPrincipale": "That the Assembly calls upon the Premier to clearly and unequivocally call for the Government of Canada to immediately remove its tariffs on electric vehicles from China to restore market access for canola, pea, and pork producers in Saskatchewan.",
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "brad-crassweller",
+     "name": "Brad Crassweller"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "contre": [
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "matt-love",
+     "name": "Matt Love"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "sally-housser",
+     "name": "Sally Housser"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    },
+    {
+     "id": "don-mcbean",
+     "name": "Don McBean"
+    }
+   ],
+   "totaux": {
+    "pour": 33,
+    "contre": 24
+   },
+   "valide": true,
+   "raisons": []
+  },
+  {
+   "etape": "motion",
+   "debat": null,
+   "bill": null,
+   "motion": "That the Assembly calls upon the Premier to clearly and unequivocally call for the Government of Canada to immediately remove its tariffs on electric vehicles from China to restore market access for canola, pea, and pork producers in Saskatchewan.",
+   "motionPrincipale": "That the Assembly calls upon the Premier to clearly and unequivocally call for the Government of Canada to immediately remove its tariffs on electric vehicles from China to restore market access for canola, pea, and pork producers in Saskatchewan.",
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "brad-crassweller",
+     "name": "Brad Crassweller"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "contre": [
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "matt-love",
+     "name": "Matt Love"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "sally-housser",
+     "name": "Sally Housser"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    },
+    {
+     "id": "don-mcbean",
+     "name": "Don McBean"
+    }
+   ],
+   "totaux": {
+    "pour": 33,
+    "contre": 24
+   },
+   "valide": true,
+   "raisons": []
+  }
+ ]
+}

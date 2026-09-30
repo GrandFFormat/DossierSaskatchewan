@@ -1,0 +1,30 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-03",
+ "numero": 27,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260303Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260303Minutes.pdf",
+ "version": "20260304160853",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 29
+  },
+  {
+   "type": "renvoi",
+   "bill": 29,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 42
+  },
+  {
+   "type": "renvoi",
+   "bill": 42,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

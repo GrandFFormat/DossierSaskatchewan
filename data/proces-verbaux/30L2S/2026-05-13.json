@@ -1,0 +1,47 @@
+{
+ "session": "30L2S",
+ "date": "2026-05-13",
+ "numero": 64,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260513Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260513Minutes.pdf",
+ "version": "20260514014323",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 625,
+   "titre": "The Members' Conflict of Interest Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  },
+  {
+   "type": "premiere",
+   "bill": 626,
+   "titre": "The Lobbyists Transparency Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  },
+  {
+   "type": "premiere",
+   "bill": 628,
+   "titre": "The Freedom of Information and Protection of Privacy Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  },
+  {
+   "type": "premiere",
+   "bill": 629,
+   "titre": "The Child and Family Services (Betty's Law) Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  },
+  {
+   "type": "premiere",
+   "bill": 630,
+   "titre": "The Public Health Care Transparency and Accountability Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  }
+ ],
+ "divisions": []
+}

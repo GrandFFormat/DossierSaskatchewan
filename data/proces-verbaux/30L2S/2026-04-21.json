@@ -1,0 +1,265 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-21",
+ "numero": 51,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260421Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260421Minutes.pdf",
+ "version": "20260422175823",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 620,
+   "titre": "The Restricting Property Controls for Grocery Stores and Supermarkets Act",
+   "titreFr": null,
+   "parrain": "Carla Beck"
+  },
+  {
+   "type": "premiere",
+   "bill": 56,
+   "titre": "The King's Bench Amendment Act, 2026",
+   "titreFr": "Loi modificative de 2026 sur la Cour du Banc du Roi",
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 47
+  },
+  {
+   "type": "renvoi",
+   "bill": 47,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": [
+  {
+   "etape": "deuxieme",
+   "debat": null,
+   "bill": 47,
+   "motion": "That Bill No. 47 — The Response to Illicit Drugs Act be now read a second time.",
+   "motionPrincipale": "That Bill No. 47 — The Response to Illicit Drugs Act be now read a second time.",
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "brad-crassweller",
+     "name": "Brad Crassweller"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    },
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "matt-love",
+     "name": "Matt Love"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "meara-conway",
+     "name": "Meara Conway"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "keith-jorgenson",
+     "name": "Keith Jorgenson"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    },
+    {
+     "id": "don-mcbean",
+     "name": "Don McBean"
+    }
+   ],
+   "contre": [],
+   "totaux": {
+    "pour": 53,
+    "contre": 0
+   },
+   "valide": true,
+   "raisons": []
+  }
+ ]
+}

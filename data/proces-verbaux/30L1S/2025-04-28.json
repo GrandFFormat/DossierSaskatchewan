@@ -1,0 +1,66 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-28",
+ "numero": 29,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250428Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250428Minutes.pdf",
+ "version": "20250429002452",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 4
+  },
+  {
+   "type": "renvoi",
+   "bill": 4,
+   "comite": "Standing Committee on Human Services"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 5
+  },
+  {
+   "type": "renvoi",
+   "bill": 5,
+   "comite": "Standing Committee on Human Services"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 14
+  },
+  {
+   "type": "renvoi",
+   "bill": 14,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 15
+  },
+  {
+   "type": "renvoi",
+   "bill": 15,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 18
+  },
+  {
+   "type": "renvoi",
+   "bill": 18,
+   "comite": "Standing Committee on Human Services"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 19
+  },
+  {
+   "type": "renvoi",
+   "bill": 19,
+   "comite": "Standing Committee on Human Services"
+  }
+ ],
+ "divisions": []
+}

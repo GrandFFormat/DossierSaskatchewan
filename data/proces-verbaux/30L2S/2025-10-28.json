@@ -1,0 +1,26 @@
+{
+ "session": "30L2S",
+ "date": "2025-10-28",
+ "numero": 4,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251028Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251028Minutes.pdf",
+ "version": "20251029153643",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 24,
+   "titre": "The Saskatchewan Internal Trade Promotion Act",
+   "titreFr": null,
+   "parrain": "Warren Kaeding"
+  },
+  {
+   "type": "premiere",
+   "bill": 25,
+   "titre": "The Income Tax (Miscellaneous) Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  }
+ ],
+ "divisions": []
+}

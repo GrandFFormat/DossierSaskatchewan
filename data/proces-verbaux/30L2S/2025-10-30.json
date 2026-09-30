@@ -1,0 +1,526 @@
+{
+ "session": "30L2S",
+ "date": "2025-10-30",
+ "numero": 6,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251030Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251030Minutes.pdf",
+ "version": "20251031170344",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 28,
+   "titre": "The Public Libraries Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Everett Hindley"
+  },
+  {
+   "type": "premiere",
+   "bill": 29,
+   "titre": "The Tailgating Act",
+   "titreFr": "Loi sur les rassemblements d'avant-match",
+   "parrain": "Alana Ross"
+  },
+  {
+   "type": "premiere",
+   "bill": 606,
+   "titre": "The Provincial Health Authority (ER Closure right-to-know) Amendment Act",
+   "titreFr": null,
+   "parrain": "Jared Clarke"
+  }
+ ],
+ "divisions": [
+  {
+   "etape": "amendement",
+   "debat": "trone",
+   "bill": null,
+   "motion": "That the motion be amended by adding: And, that the Assembly does not support the agenda outlined in the Speech from the Throne because it fails to include adequate measures to urgently address the challenges Saskatchewan people face regarding health care, tariffs, the cost of living, housing, and public safety; and further, That the Assembly has lost confidence in the government.",
+   "motionPrincipale": "That an Humble Address be presented to Her Honour the Lieutenant Governor as follows:",
+   "resultat": "rejete",
+   "pour": [
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "kim-breckner",
+     "name": "Kim Breckner"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "meara-conway",
+     "name": "Meara Conway"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "sally-housser",
+     "name": "Sally Housser"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    },
+    {
+     "id": "don-mcbean",
+     "name": "Don McBean"
+    }
+   ],
+   "contre": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "totaux": {
+    "pour": 25,
+    "contre": 32
+   },
+   "valide": true,
+   "raisons": []
+  },
+  {
+   "etape": "trone",
+   "debat": "trone",
+   "bill": null,
+   "motion": "That an Humble Address be presented to Her Honour the Lieutenant Governor as follows:",
+   "motionPrincipale": "That an Humble Address be presented to Her Honour the Lieutenant Governor as follows:",
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "contre": [
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "kim-breckner",
+     "name": "Kim Breckner"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "meara-conway",
+     "name": "Meara Conway"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "sally-housser",
+     "name": "Sally Housser"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    },
+    {
+     "id": "don-mcbean",
+     "name": "Don McBean"
+    }
+   ],
+   "totaux": {
+    "pour": 32,
+    "contre": 25
+   },
+   "valide": true,
+   "raisons": []
+  }
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-24",
+ "numero": 39,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260324Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260324Minutes.pdf",
+ "version": "20260325051116",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 616,
+   "titre": "The Islamic Heritage Month Act",
+   "titreFr": null,
+   "parrain": "Noor Burki"
+  },
+  {
+   "type": "premiere",
+   "bill": 52,
+   "titre": "The Heritage Property Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Alana Ross"
+  }
+ ],
+ "divisions": []
+}

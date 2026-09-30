@@ -1,0 +1,69 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-30",
+ "numero": 31,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250430Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250430Minutes.pdf",
+ "version": "20250501021846",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 603,
+   "titre": "The Ukrainian Heritage Month Act",
+   "titreFr": null,
+   "parrain": "Keith Jorgenson"
+  },
+  {
+   "type": "rapport",
+   "bill": 17,
+   "comite": "Standing Committee on the Economy",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 17
+  },
+  {
+   "type": "rapport",
+   "bill": 20,
+   "comite": "Standing Committee on the Economy",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 20
+  },
+  {
+   "type": "rapport",
+   "bill": 4,
+   "comite": "Standing Committee on Human Services",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 4
+  },
+  {
+   "type": "rapport",
+   "bill": 5,
+   "comite": "Standing Committee on Human Services",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 5
+  },
+  {
+   "type": "rapport",
+   "bill": 3,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 3
+  }
+ ],
+ "divisions": []
+}

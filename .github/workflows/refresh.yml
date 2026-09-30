@@ -1,22 +1,27 @@
-# Rafraîchissement quotidien et automatique des données de DossierQuébec.
+# Rafraîchissement automatique des données de Dossier Saskatchewan.
 #
-# Chaque matin : relance tous les scrapers + builds (npm run refresh), puis, s'il
+# Deux fois par jour : relance tous les scrapers + builds (npm run refresh), puis, s'il
 # y a un changement, committe et pousse. Le push sur `master` déclenche le
 # redéploiement automatique du site sur Vercel — donc un nouveau projet de loi ou
 # un nouveau vote apparu la veille se retrouve en ligne sans intervention.
 #
-# Clé API des résumés IA : à ajouter dans le dépôt sous
+# Pourquoi deux fois : l'Assemblée publie le procès-verbal du jour le soir même… ou le
+# lendemain matin (celui du 30 avril 2026 est sorti le 1er mai à 9 h 29, heure de Regina).
+# Le passage de 16 h UTC l'attrape le matin ; celui de 4 h UTC, le soir.
+#
+# Clé API des résumés IA (étape à venir) : à ajouter dans le dépôt sous
 #   Settings > Secrets and variables > Actions > New repository secret
 #   Nom : ANTHROPIC_API_KEY
-# Sans ce secret, tout tourne quand même : l'étape des résumés est « best effort »
-# (voir scripts/refresh.js) — seuls les résumés des nouveaux projets sont sautés.
+# Sans ce secret, tout tourne quand même.
 
-name: Rafraîchissement quotidien des données
+name: Rafraîchissement des données (deux fois par jour)
 
 on:
   schedule:
-    # 08:00 UTC = ~03:00–04:00 au Québec. Tous les jours.
-    - cron: '0 8 * * *'
+    # La Saskatchewan est à UTC−6 toute l'année (pas d'heure d'été).
+    # 16:00 UTC = 10 h à Regina ; 04:00 UTC = 22 h à Regina.
+    - cron: '0 16 * * *'
+    - cron: '0 4 * * *'
   workflow_dispatch: {} # permet aussi de lancer à la main (bouton « Run workflow »)
 
 # Nécessaire pour que le job puisse committer et pousser les données mises à jour.
@@ -66,7 +71,7 @@ jobs:
       - name: Committer et pousser s'il y a des changements
         id: publication
         run: |
-          git config user.name "dossierquebec-bot"
+          git config user.name "dossier-saskatchewan-bot"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then

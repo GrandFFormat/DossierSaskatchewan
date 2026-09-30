@@ -1,0 +1,305 @@
+{
+ "session": "30L2S",
+ "date": "2026-05-05",
+ "numero": 59,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260505Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260505Minutes.pdf",
+ "version": "20260506152108",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "rapport",
+   "bill": 48,
+   "comite": "Standing Committee on Human Services",
+   "amende": true
+  },
+  {
+   "type": "troisieme",
+   "bill": 48
+  },
+  {
+   "type": "rapport",
+   "bill": 55,
+   "comite": "Standing Committee on Human Services",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 55
+  },
+  {
+   "type": "deuxieme",
+   "bill": 58
+  },
+  {
+   "type": "renvoi",
+   "bill": 58,
+   "comite": "Committee of the Whole on Bills"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 59
+  },
+  {
+   "type": "renvoi",
+   "bill": 59,
+   "comite": "Committee of the Whole on Bills"
+  },
+  {
+   "type": "rapport",
+   "bill": 58,
+   "comite": "Committee of the Whole on Bills",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 58
+  },
+  {
+   "type": "rapport",
+   "bill": 59,
+   "comite": "Committee of the Whole on Bills",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 59
+  }
+ ],
+ "divisions": [
+  {
+   "etape": "troisieme",
+   "debat": null,
+   "bill": 48,
+   "motion": "That Bill No. 48 — The Compassionate Intervention Act be now read the third time and passed under its title.",
+   "motionPrincipale": "That Bill No. 48 — The Compassionate Intervention Act be now read the third time and passed under its title.",
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "brad-crassweller",
+     "name": "Brad Crassweller"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "contre": [
+    {
+     "id": "carla-beck",
+     "name": "Carla Beck"
+    },
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "noor-burki",
+     "name": "Noor Burki"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "meara-conway",
+     "name": "Meara Conway"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "kim-breckner",
+     "name": "Kim Breckner"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "tajinder-grewal",
+     "name": "Tajinder Grewal"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "keith-jorgenson",
+     "name": "Keith Jorgenson"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "brittney-senger",
+     "name": "Brittney Senger"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    },
+    {
+     "id": "don-mcbean",
+     "name": "Don McBean"
+    }
+   ],
+   "totaux": {
+    "pour": 33,
+    "contre": 21
+   },
+   "valide": true,
+   "raisons": []
+  }
+ ]
+}

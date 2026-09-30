@@ -1,0 +1,42 @@
+{
+ "session": "30L2S",
+ "date": "2025-12-02",
+ "numero": 22,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251202Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251202Minutes.pdf",
+ "version": "20251203030310",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 44,
+   "titre": "The Co-operatives Act, 2025",
+   "titreFr": "Loi de 2025 sur les coopératives",
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 45,
+   "titre": "The Co-operatives Consequential Amendments Act, 2025",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 609,
+   "titre": "The Saskatchewan Wildfire Strategy Act",
+   "titreFr": null,
+   "parrain": "Leroy Laliberte"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 30
+  },
+  {
+   "type": "renvoi",
+   "bill": 30,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

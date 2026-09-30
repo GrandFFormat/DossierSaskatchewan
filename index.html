@@ -237,8 +237,8 @@ function goToFederal(evt){
     <!-- Bande de stats (vraies données — mêmes ids qu'avant, peuplés par le JS) -->
     <div class="stat-band bleed">
       <div class="stat-cell"><b id="statMinistres">18</b><span data-i18n="stat.ministres">Ministers</span></div>
-      <div class="stat-cell"><b id="statProjets">0</b><span data-i18n="stat.projets">Bills</span></div>
-      <div class="stat-cell"><b id="statVotes">0</b><span data-i18n="stat.votes">Votes recorded</span></div>
+      <div class="stat-cell"><b id="statProjets">88</b><span data-i18n="stat.projets">Bills</span></div>
+      <div class="stat-cell"><b id="statVotes">34</b><span data-i18n="stat.votes">Votes recorded</span></div>
     </div>
 
     <!-- Section signature du handoff : bande JAUNE pleine largeur -->
@@ -263,7 +263,10 @@ function goToFederal(evt){
     <div id="apercuBills"></div>
     <div class="prerendu" data-prerendu="apercuBills">
       <ul aria-label="Recently active bills">
-
+        <li><b>Bill 24</b> — The Saskatchewan Internal Trade Promotion Act <span class="pr-meta">· Sanctionné le 2026-05-14</span></li>
+        <li><b>Bill 31</b> — The Defamation Act <span class="pr-meta">· Sanctionné le 2026-05-14</span></li>
+        <li><b>Bill 32</b> — The Defamation Consequential Amendments Act, 2025 <span class="pr-meta">· Sanctionné le 2026-05-14</span></li>
+        <li><b>Bill 33</b> — The Credit Union Amendment Act, 2025 <span class="pr-meta">· Sanctionné le 2026-05-14</span></li>
       </ul>
       <p class="pr-note">Official source: <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.</p>
     </div>
@@ -308,7 +311,14 @@ function goToFederal(evt){
     <div id="newsList"></div>
     <div class="prerendu" data-prerendu="newsItems">
       <ul aria-label="What’s new at the Legislative Assembly">
-
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 60 — The Appropriation Act, 2026 (No. 1)</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 59 — The Time Consequential Amendments Act, 2026</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 58 — The Time Act, 2026</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 57 — The Information Services Corporation Amendment Act, 2026</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 56 — The King's Bench Amendment Act, 2026</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 55 — The Medical Profession Amendment Act, 2026</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 54 — The Correctional Services Amendment Act, 2026</li>
+        <li><span class="pr-meta">14 mai 2026 —</span> Sanction du projet de loi n° 53 — The Saskatchewan Chemical Fertilizer Incentive Amendment Act, 2026</li>
       </ul>
       <p class="pr-note">Official source: <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.</p>
     </div>
@@ -411,12 +421,11 @@ function goToFederal(evt){
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Unofficial site — public data from the Legislative Assembly of Saskatchewan and the Government of Saskatchewan ·</span> <span id="footerRight">built with Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
+  <!-- Pas de Facebook ni de « Source code » : c'étaient la page et le dépôt de DQ. -->
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Buy me a coffee" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="RSS feed of “What's new”">RSS feed</a>
   </span>
   </div>
 </footer>

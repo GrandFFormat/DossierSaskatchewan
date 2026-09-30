@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-25",
+ "numero": 40,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260325Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260325Minutes.pdf",
+ "version": "20260326022920",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 53,
+   "titre": "The Saskatchewan Chemical Fertilizer Incentive Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Warren Kaeding"
+  }
+ ],
+ "divisions": []
+}

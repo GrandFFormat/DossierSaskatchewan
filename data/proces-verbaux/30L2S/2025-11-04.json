@@ -1,0 +1,33 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-04",
+ "numero": 8,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251104Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251104Minutes.pdf",
+ "version": "20251104234526",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 30,
+   "titre": "The Inter-jurisdictional Support Orders Amendment Act, 2025",
+   "titreFr": "Loi modificative de 2025 sur les ordonnances alimentaires interterritoriales",
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 31,
+   "titre": "The Defamation Act",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 32,
+   "titre": "The Defamation Consequential Amendments Act, 2025",
+   "titreFr": "Loi de 2025 corrélative de la loi intitulée The Defamation Act",
+   "parrain": "Tim McLeod"
+  }
+ ],
+ "divisions": []
+}

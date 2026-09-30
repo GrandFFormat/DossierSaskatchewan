@@ -1,0 +1,51 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-14",
+ "numero": 47,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260414Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260414Minutes.pdf",
+ "version": "20260415042449",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "rapport",
+   "bill": 31,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": true
+  },
+  {
+   "type": "troisieme",
+   "bill": 31
+  },
+  {
+   "type": "rapport",
+   "bill": 32,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 32
+  },
+  {
+   "type": "deuxieme",
+   "bill": 41
+  },
+  {
+   "type": "renvoi",
+   "bill": 41,
+   "comite": "Committee of the Whole on Bills"
+  },
+  {
+   "type": "rapport",
+   "bill": 41,
+   "comite": "Committee of the Whole on Bills",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 41
+  }
+ ],
+ "divisions": []
+}

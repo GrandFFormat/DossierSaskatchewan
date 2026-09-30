@@ -1,0 +1,288 @@
+{
+ "session": "30L2S",
+ "date": "2025-12-04",
+ "numero": 24,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251204Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251204Minutes.pdf",
+ "version": "20251205162937",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 611,
+   "titre": "The Constitutional Questions (Notwithstanding Clause Referral) Amendment Act",
+   "titreFr": null,
+   "parrain": "Nicole Sarauer"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 46
+  },
+  {
+   "type": "troisieme",
+   "bill": 46
+  },
+  {
+   "type": "sanction",
+   "bill": 25,
+   "titre": "The Income Tax (Miscellaneous) Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 34,
+   "titre": "The Cyberstalking and Coercive Control Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 28,
+   "titre": "The Public Libraries Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 26,
+   "titre": "The Miscellaneous Statutes Repeal Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 27,
+   "titre": "The Statute Law Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 46,
+   "titre": "The Appropriation Act, 2025 (No. 2)"
+  }
+ ],
+ "divisions": [
+  {
+   "etape": "troisieme",
+   "debat": null,
+   "bill": 46,
+   "motion": "Pursuant to rule 32(1)(e), it was moved by the Hon. Jim Reiter: That Bill No. 46 — The Appropriation Act, 2025 (No. 2) be now read a second and third time and passed under its title.",
+   "motionPrincipale": null,
+   "resultat": "adopte",
+   "pour": [
+    {
+     "id": "scott-moe",
+     "name": "Scott Moe"
+    },
+    {
+     "id": "daryl-harrison",
+     "name": "Daryl Harrison"
+    },
+    {
+     "id": "warren-kaeding",
+     "name": "Warren Kaeding"
+    },
+    {
+     "id": "david-marit",
+     "name": "David Marit"
+    },
+    {
+     "id": "jeremy-cockrill",
+     "name": "Jeremy Cockrill"
+    },
+    {
+     "id": "jim-reiter",
+     "name": "Jim Reiter"
+    },
+    {
+     "id": "everett-hindley",
+     "name": "Everett Hindley"
+    },
+    {
+     "id": "jeremy-harrison",
+     "name": "Jeremy Harrison"
+    },
+    {
+     "id": "terry-jenson",
+     "name": "Terry Jenson"
+    },
+    {
+     "id": "colleen-young",
+     "name": "Colleen Young"
+    },
+    {
+     "id": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff"
+    },
+    {
+     "id": "travis-keisig",
+     "name": "Travis Keisig"
+    },
+    {
+     "id": "james-thorsteinson",
+     "name": "James Thorsteinson"
+    },
+    {
+     "id": "jamie-martens",
+     "name": "Jamie Martens"
+    },
+    {
+     "id": "racquel-hilbert",
+     "name": "Racquel Hilbert"
+    },
+    {
+     "id": "doug-steele",
+     "name": "Doug Steele"
+    },
+    {
+     "id": "eric-schmalz",
+     "name": "Eric Schmalz"
+    },
+    {
+     "id": "alana-ross",
+     "name": "Alana Ross"
+    },
+    {
+     "id": "tim-mcleod",
+     "name": "Tim McLeod"
+    },
+    {
+     "id": "lori-carr",
+     "name": "Lori Carr"
+    },
+    {
+     "id": "sean-wilson",
+     "name": "Sean Wilson"
+    },
+    {
+     "id": "kevin-weedmark",
+     "name": "Kevin Weedmark"
+    },
+    {
+     "id": "chris-beaudry",
+     "name": "Chris Beaudry"
+    },
+    {
+     "id": "blaine-mcleod",
+     "name": "Blaine McLeod"
+    },
+    {
+     "id": "brad-crassweller",
+     "name": "Brad Crassweller"
+    },
+    {
+     "id": "barret-kropf",
+     "name": "Barret Kropf"
+    },
+    {
+     "id": "michael-weger",
+     "name": "Michael Weger"
+    },
+    {
+     "id": "megan-patterson",
+     "name": "Megan Patterson"
+    },
+    {
+     "id": "terri-bromm",
+     "name": "Terri Bromm"
+    },
+    {
+     "id": "darlene-rowden",
+     "name": "Darlene Rowden"
+    },
+    {
+     "id": "david-chan",
+     "name": "David Chan"
+    },
+    {
+     "id": "kim-gartner",
+     "name": "Kim Gartner"
+    },
+    {
+     "id": "kevin-kasun",
+     "name": "Kevin Kasun"
+    }
+   ],
+   "contre": [
+    {
+     "id": "erika-ritchie",
+     "name": "Erika Ritchie"
+    },
+    {
+     "id": "betty-nippi-albright",
+     "name": "Betty Nippi-Albright"
+    },
+    {
+     "id": "vicki-mowat",
+     "name": "Vicki Mowat"
+    },
+    {
+     "id": "trent-wotherspoon",
+     "name": "Trent Wotherspoon"
+    },
+    {
+     "id": "matt-love",
+     "name": "Matt Love"
+    },
+    {
+     "id": "nathaniel-teed",
+     "name": "Nathaniel Teed"
+    },
+    {
+     "id": "aleana-young",
+     "name": "Aleana Young"
+    },
+    {
+     "id": "jared-clarke",
+     "name": "Jared Clarke"
+    },
+    {
+     "id": "leroy-laliberte",
+     "name": "Leroy Laliberte"
+    },
+    {
+     "id": "jordan-mcphail",
+     "name": "Jordan McPhail"
+    },
+    {
+     "id": "april-chiefcalf",
+     "name": "April ChiefCalf"
+    },
+    {
+     "id": "nicole-sarauer",
+     "name": "Nicole Sarauer"
+    },
+    {
+     "id": "kim-breckner",
+     "name": "Kim Breckner"
+    },
+    {
+     "id": "brent-blakley",
+     "name": "Brent Blakley"
+    },
+    {
+     "id": "bhajan-brar",
+     "name": "Bhajan Brar"
+    },
+    {
+     "id": "hugh-gordon",
+     "name": "Hugh Gordon"
+    },
+    {
+     "id": "darcy-warrington",
+     "name": "Darcy Warrington"
+    },
+    {
+     "id": "joan-pratchler",
+     "name": "Joan Pratchler"
+    },
+    {
+     "id": "sally-housser",
+     "name": "Sally Housser"
+    },
+    {
+     "id": "jacqueline-roy",
+     "name": "Jacqueline Roy"
+    }
+   ],
+   "totaux": {
+    "pour": 33,
+    "contre": 20
+   },
+   "valide": true,
+   "raisons": []
+  }
+ ]
+}
