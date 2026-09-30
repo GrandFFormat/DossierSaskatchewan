@@ -1,0 +1,24 @@
+.env
+api.env
+node_modules/
+.claude/settings.local.json
+
+# Écritures en deux temps (fichier voisin, puis renommage) : un .tmp resté là après un run
+# interrompu ne doit pas être ramassé par le « git add » des workflows.
+*/data/*.tmp
+
+# Volet Montréal : cache de texte des PDF (régénérable)
+montreal/data/textes/
+levis/data/textes/
+longueuil/data/textes/
+laval/data/textes/
+quebec/infolettres/
+montreal/infolettres/
+
+# Détail de l'argent : payant, donc jamais dans le dépôt public. Cache local ; la copie servie
+# vit dans Supabase (quebec/scripts/publier-details.js).
+quebec/data/details.json
+montreal/data/details.json
+levis/data/details.json
+longueuil/data/details.json
+laval/data/details.json

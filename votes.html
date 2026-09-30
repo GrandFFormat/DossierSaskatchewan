@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
+     La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dq:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87R1S6SR9Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-87R1S6SR9Y');
+</script>
+<script src="/commun/consentement.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
+   (commun/dq.js) : « ?lang=en » dans l'adresse, sinon le choix gardé dans dvq:langue (commun à
+   tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
+   En anglais, la page reste cachée le temps que dq.js la traduise : 1,5 s au plus, même s'il
+   échoue. lang="en" n'est posé qu'au moment de traduire (dq.js) : si la traduction n'arrive pas,
+   la page française ne s'annonce pas en anglais.
+   Tout est dans une fonction : une variable globale ici entrerait en collision avec les
+   déclarations de dq.js et le ferait planter en entier. */
+(function(){
+  try{
+    var valide = function(l){ return l === 'en' || l === 'fr'; };
+    var gardee = null;
+    try{ gardee = localStorage.getItem('dvq:langue'); }catch(e){}
+    var q = new URLSearchParams(location.search).get('lang');
+    var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+    var parHistorique = !!nav && nav.type === 'back_forward';
+    var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
+    if(choix !== 'en') return;
+    var racine = document.documentElement;
+    racine.classList.add('dq-en');
+    setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
+  }catch(e){}
+})();
+</script>
+<title>Votes nominatifs à l'Assemblée nationale — DossierQuébec</title>
+<meta name="description" content="Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.">
+<link rel="canonical" href="https://dossiersaskatchewan.ca/votes">
+<!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
+     C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
+<link rel="alternate" type="application/rss+xml" title="DossierQuébec — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#046A38">
+
+<!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DossierQuébec">
+<meta property="og:locale" content="fr_CA">
+<meta property="og:title" content="Votes nominatifs à l'Assemblée nationale — DossierQuébec">
+<meta property="og:description" content="Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.">
+<meta property="og:url" content="https://dossiersaskatchewan.ca/votes">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta property="og:image:width" content="1702">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DossierQuébec — veille citoyenne de l'Assemblée nationale du Québec">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Votes nominatifs à l'Assemblée nationale — DossierQuébec">
+<meta name="twitter:description" content="Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+
+<link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/commun/dq-48.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/commun/dq-512.png">
+<link rel="apple-touch-icon" href="/commun/dq-512.png">
+
+<!-- Données structurées (aide Google à comprendre le site) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://dossiersaskatchewan.ca/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Votes",
+      "item": "https://dossiersaskatchewan.ca/votes"
+    }
+  ]
+}
+</script>
+<!-- Les DEUX préconnexions sont nécessaires et ce n'est pas un doublon :
+     googleapis.com sert la feuille CSS, gstatic.com sert les ~258 ko de
+     fichiers de police. Sans la seconde, le navigateur n'ouvre la connexion
+     vers gstatic qu'APRÈS avoir lu le CSS — un DNS + TLS en série, soit 100 à
+     300 ms perdus sur mobile à la première visite. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ⚠️ « wght@400..900 » (deux points) demande la POLICE VARIABLE : un seul
+     fichier couvrant toutes les graisses, au lieu d'un fichier par graisse.
+     Mesuré : Archivo passe de 6 fichiers / 205 ko à 1 fichier / 34 ko, et
+     Archivo Narrow de 3 fichiers / 55 ko à 1 fichier / 18 ko — 260 ko et
+     9 requêtes ramenés à 52 ko et 2 requêtes, sans perdre aucune graisse.
+     Ne pas revenir à la liste « 400;500;600 » (points-virgules) : c'est la
+     syntaxe des fichiers statiques.
+     IBM Plex Mono a été retirée : utilisée nulle part. Aucun octet économisé
+     pour autant — un navigateur ne télécharge une police que si elle sert au
+     rendu, donc elle ne partait déjà pas. C'était du ménage, pas un gain. -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/commun/dq.css">
+</head>
+<body data-page="votes" data-donnees="votes,deputesRaw,billsTitres,stats">
+
+<!-- Ticker brutaliste : bande noire défilante — contenu rempli avec les VRAIES
+     données par renderTicker() (appelé une fois les datasets chargés). -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-text" id="tickerA">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<div id="dq-topbar">
+<header class="top">
+  <div class="brand">
+    <div class="brand-text" role="button" tabindex="0" aria-label="Retour à l'aperçu" onclick="goToTab('apercu')">
+      <!-- Volontairement un div, et non un titre de niveau 1 : le nom du site se
+           répète sur chaque page, alors que le titre de niveau 1 doit annoncer
+           le sujet de LA page. C'est le titre de une de la vue active qui joue
+           ce rôle, et le générateur de pages de section s'en assure.
+           (Pas de balise écrite en toutes lettres dans ce commentaire : elle
+           fausserait les outils qui comptent les titres à l'expression
+           régulière.) -->
+      <div class="brand-title">Dossier<span class="brand-blue">Saskatchewan</span></div>
+      <p>Qui siège, qui légifère, qui vote quoi</p>
+    </div>
+    <!-- Feuille d'érable : passerelle vers le site fédéral DossierCanada.
+         Flippe jaune ↔ rouge toutes les 20 s (voir le script plus bas). -->
+    <a class="maple-flip" id="mapleFlip" role="button" tabindex="0"
+       title="Aller au site fédéral — DossierCanada"
+       aria-label="Aller au site fédéral — DossierCanada"
+       onclick="goToFederal(event)">
+      <svg viewBox="-2015 -2000 4030 4030" aria-hidden="true"><path fill="currentColor" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></svg>
+    </a>
+  </div>
+  <!-- Nav DANS la ligne du header (maquette : logo | menu | contrôles sur
+       UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
+       du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
+  <nav class="tabs">
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
+    <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
+         /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
+    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
+    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministres</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></a>
+    <a class="active" aria-current="page" href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
+    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">Mon dossier</span></a>
+  </nav>
+  <div class="header-ctrls">
+    <div class="font-size-ctrl" id="fontSizeCtrl">
+      <button id="fontMinus" aria-label="Réduire le texte">A−</button>
+      <span id="fontPct">100%</span>
+      <button id="fontPlus" aria-label="Agrandir le texte">A+</button>
+    </div>
+    <!-- Aucun contenu textuel : l'icône est dessinée en CSS. Le nom accessible
+         vient donc entièrement de aria-label, que le JS tient à jour. -->
+    <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Passer au thème sombre" title="Passer au thème sombre"></button>
+    <button class="lang-toggle" id="langToggle">English</button>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+</div>
+
+<script>
+/* Bascule le bloc logo+menu en mode compact après un peu de défilement.
+   Hystérésis (80 vs 20) pour éviter le clignotement autour du seuil. */
+(function(){
+  var bar = document.getElementById('dq-topbar');
+  var compact = false;
+  function onScroll(){
+    var y = window.scrollY;
+    if(!compact && y > 80){ compact = true; bar.classList.add('compact'); }
+    else if(compact && y < 20){ compact = false; bar.classList.remove('compact'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+// Ouvre le site fédéral DossierCanada dans un nouvel onglet.
+function goToFederal(evt){
+  if(evt) evt.stopPropagation();
+  window.open('https://dossiercanada.ca/', '_blank', 'noopener');
+}
+// Feuille d'érable : flippe jaune ↔ rouge toutes les 20 secondes.
+(function(){
+  var leaf = document.getElementById('mapleFlip');
+  if(!leaf) return;
+  setInterval(function(){ leaf.classList.toggle('is-red'); }, 20000);
+})();
+
+</script>
+
+<div class="app">
+
+  <!-- APERÇU -->
+  <section class="view active" id="view-votes">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.votes">Votes</span></nav>
+    <!-- Hero de vue (refonte brutaliste) -->
+    <div class="view-hero">
+      <h1 class="hero-h1 hero-h1-md">
+        <span class="hero-sujet" data-i18n="sujet.votes">Votes nominatifs à l'Assemblée nationale</span>
+        <span data-i18n="votehero.l1">Qui a voté</span>
+        <span class="hero-outline" data-i18n="votehero.l2">pour, contre, absent.</span>
+      </h1>
+      <p class="view-hero-sub" data-i18n="votehero.sub">Le registre des votes nominatifs, tel quel. <b>On n'interprète pas — on montre.</b> Une absence peut être une mission officielle, une maladie, un conflit d'horaire.</p>
+    </div>
+
+    <div class="section-head">
+      <div>
+        <h2 data-i18n="h.votes" class="visually-hidden-title">Registre des votes</h2>
+        <div class="sub" data-i18n="votes.sub">43e législature (sessions 1 à 3) — décomptes et détail nominatif officiels</div>
+      </div>
+      <div class="toolbar">
+        <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Mot-clé : sujet, numéro de projet de loi…">
+        <!-- Tous / Divisés / Projets de loi / Motions — rempli par renderVotesQuickFilters(). -->
+        <div class="quick-filters" id="votesQuickFilters"></div>
+      </div>
+    </div>
+
+    <div id="votesList"></div>
+    <div class="prerendu" data-prerendu="votes">
+      <ul aria-label="Votes nominatifs récents">
+        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 4, Loi sur la communication de renseignements aux fins de protection contre la violence d’un partenaire intime et modifiant diverses dispositions législatives <span class="pr-meta">· pour 75, contre 0, abstentions 0</span></li>
+        <li><span class="pr-meta">11 juin 2026 —</span> Nomination — Motion proposée par Mme Fréchette, première ministre, afin de nommer Mme Nicole Léger membre à temps partiel de la Commission des droits de la personne et des droits de la jeunesse <span class="pr-meta">· pour 105, contre 0, abstentions 0</span></li>
+        <li><span class="pr-meta">11 juin 2026 —</span> Nomination — Motion proposée par Mme Fréchette, première ministre, afin de nommer Mme Marie-Claude Girard membre à temps partiel de la Commission des droits de la personne et des droits de la jeunesse <span class="pr-meta">· pour 97, contre 7, abstentions 0</span></li>
+        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 10, Loi protégeant les consommateurs contre les pratiques abusives de revente de billets et de renouvellement d’abonnements en ligne <span class="pr-meta">· pour 103, contre 1, abstentions 1</span></li>
+        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 11, Loi modifiant diverses dispositions principalement aux fins d’allègement du fardeau réglementaire et administratif <span class="pr-meta">· pour 89, contre 7, abstentions 9</span></li>
+        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 9, Loi visant à prévenir les effets nocifs de la boisson énergisante sur la santé des jeunes <span class="pr-meta">· pour 103, contre 1, abstentions 2</span></li>
+        <li><span class="pr-meta">10 juin 2026 —</span> Motion sans préavis — Motion proposée par M. Arseneau (Îles-de-la-Madeleine) afin de demander à Santé Québec de prendre les mesures nécessaires afin d’assurer le maintien des services d’urgence au CLSC de Portneuf <span class="pr-meta">· pour 96, contre 0, abstentions 0</span></li>
+        <li><span class="pr-meta">10 juin 2026 —</span> Motion sans préavis — Motion proposée par M. Ciccone (Marquette) afin de rendre hommage à l’équipe de la Victoire de Montréal, gagnante de la Coupe Walter <span class="pr-meta">· pour 101, contre 0, abstentions 0</span></li>
+        <li><span class="pr-meta">10 juin 2026 —</span> Adoption du principe — Projet de loi n° 2, Loi permettant au Parlement du Québec de préserver le principe de la souveraineté parlementaire à l’égard de la Charte de la langue française et de la Loi sur la langue officielle et commune du Québec, le français <span class="pr-meta">· pour 76, contre 26, abstentions 3</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Motion sans préavis — Motion proposée par Mme Ghazal, cheffe du deuxième groupe d’opposition, afin de réaffirmer la pertinence d’encadrer la vente de boissons énergisantes aux mineurs <span class="pr-meta">· pour 78, contre 0, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Motion proposant que l’Assemblée approuve la politique générale du gouvernement <span class="pr-meta">· pour 62, contre 25, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Arseneau (Îles-de-la-Madeleine) <span class="pr-meta">· pour 24, contre 63, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Tanguay, leader de l’opposition officielle <span class="pr-meta">· pour 24, contre 63, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Gentilcore (Terrebonne) <span class="pr-meta">· pour 25, contre 62, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Laflamme (Chicoutimi) <span class="pr-meta">· pour 26, contre 62, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Dufour (Mille-Îles) <span class="pr-meta">· pour 24, contre 63, abstentions 1</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Grandmont (Taschereau) <span class="pr-meta">· pour 24, contre 63, abstentions 1</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Boissonneault (Arthabaska) <span class="pr-meta">· pour 25, contre 63, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Maccarone (Westmount–Saint-Louis) <span class="pr-meta">· pour 25, contre 63, abstentions 1</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Caron (La Pinière) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Bouazzi (Maurice-Richard) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme McGraw (Notre-Dame-de-Grâce) <span class="pr-meta">· pour 26, contre 63, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Massé (Sainte-Marie–Saint-Jacques) <span class="pr-meta">· pour 24, contre 64, abstentions 1</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Rotiroti (Jeanne-Mance–Viger) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Paradis (Jean-Talon) <span class="pr-meta">· pour 24, contre 65, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Beauchemin (Marguerite-Bourgeoys) <span class="pr-meta">· pour 25, contre 63, abstentions 1</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Zanetti (Jean-Lesage) <span class="pr-meta">· pour 21, contre 66, abstentions 2</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Kelley (Jacques-Cartier) <span class="pr-meta">· pour 25, contre 63, abstentions 1</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Fontecilla (Laurier-Dorion) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
+        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Morin (Acadie) <span class="pr-meta">· pour 24, contre 63, abstentions 2</span></li>
+      </ul>
+      <p class="pr-note">Les 30 votes les plus récents, sur 735. Source officielle : le registre des votes, <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.<noscript> Les filtres, la recherche et le détail de chaque fiche demandent JavaScript.</noscript></p>
+    </div>
+    <div class="info-box">
+      <b data-i18n="votes.info.b">Sur le détail « qui a voté quoi »</b> <span data-i18n="votes.info.text">— l'Assemblée nationale publie le nom de chaque député pour chaque vote nominal dans son registre des votes officiel. Le détail nominatif ci-dessus (bouton « Voir le détail nominatif ») vient de ce registre officiel, pas d'une estimation. Le parti affiché à côté de chaque nom est celui inscrit au registre au moment du vote — il peut différer du parti actuel d'un·e député·e ayant changé d'allégeance depuis.</span>
+    </div>
+
+    <!-- « Comment lire un vote » : bande bleue pédagogique (maquette) -->
+    <div class="band band-blue bleed" id="band-lire-vote">
+      <h2 data-i18n="lire.h">Comment lire un vote</h2>
+      <div class="lire-grid">
+        <div class="lire-box">
+          <h3 data-i18n="lire.1.h">Vote nominal</h3>
+          <p data-i18n="lire.1.p">Chaque député·e se lève et son choix est consigné au Journal des débats. C'est le seul type de vote qu'on peut attribuer à une personne.</p>
+        </div>
+        <div class="lire-box">
+          <h3 data-i18n="lire.2.h">Adopté ≠ loi</h3>
+          <p data-i18n="lire.2.p">Un vote gagné fait avancer le projet d'une étape. Il ne devient loi qu'après la sanction du lieutenant-gouverneur.</p>
+        </div>
+        <div class="lire-box hl">
+          <h3 data-i18n="lire.3.h">Ligne de parti</h3>
+          <p data-i18n="lire.3.p">La plupart des votes suivent la consigne du parti. Les votes libres sont rares — et c'est là que le détail nominatif devient intéressant.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINISTRES & DÉPUTÉS -->
+  
+
+  <!-- PROJETS DE LOI -->
+  
+
+  <!-- VOTES -->
+  
+
+  <!-- COMPTE & ABONNEMENT -->
+
+  <!-- LEXIQUE (fusion : personnes, lexique, apropos) -->
+  <!-- PROMESSES — vue sans onglet (comme view-bd). Accessible par /promesses,
+       par le bouton de la bande de dissolution et par le bloc du Lexique.
+       Contenu saisi à la main dans data/promises.json (voir la note du fichier). -->
+  
+
+  
+
+  <!-- PAGE CACHÉE — la BD « l'idée derrière le site ». Aucun onglet n'y mène :
+       accessible seulement par le « et moi » du bas de page (à côté de
+       « Construit avec Claude »). goToTab('bd') fonctionne sans bouton d'onglet. -->
+  <!-- /mon-dossier : l'espace de la personne connectée, côté ASSEMBLÉE seulement (Martin,
+       22 sept. 2026 : « mes dossiers provincial et les villes doivent être complètement séparés »).
+       Les villes gardent leur propre page, /mes-dossiers, avec le style des volets. Tout le contenu
+       est rempli par commun/dq.js (renderMonDossier) : rien de personnel n'est dans le HTML. -->
+  
+
+  
+
+</div>
+
+<!-- Footer maquette : texte à gauche (avec « construit avec Claude » suivi du
+     lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
+<footer>
+  <nav class="footer-nav" aria-label="Plan du site">
+    <a href="/" data-i18n="nav.apercu">Aperçu</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministres</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Projets de loi</a>
+    <a href="/votes" data-i18n="nav.votes">Votes</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promesses</a>
+    <a href="/lexique" data-i18n="nav.lexique">Lexique</a>
+    <a href="/sources" data-i18n="fil.bd">Mises à jour du site</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">Mon dossier</a>
+      <a href="/quebec/">Québec</a>
+      <a href="/montreal/">Montréal</a>
+      <a href="/levis/">Lévis</a>
+      <a href="/longueuil/">Longueuil</a>
+      <a href="/laval/">Laval</a>
+    </span>
+  </nav>
+  <div class="footer-inner">
+  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">et moi</a></span>
+  <span class="footer-right-group">
+    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="DossierQuébec sur Facebook">Facebook</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Offre-moi un café</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">Flux RSS</a>
+    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Code source</a>
+  </span>
+  </div>
+</footer>
+
+<button id="backToTop" class="dq-remonter" aria-label="Remonter en haut" title="Remonter en haut" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/commun/dq.js"></script>
+<!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
+     bannière de consentement requise). Le script est servi automatiquement par
+     Vercel quand Web Analytics est activé dans le tableau de bord du projet. -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

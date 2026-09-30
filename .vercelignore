@@ -1,0 +1,96 @@
+# Le MODÈLE de DossierQuébec. Les sept pages en sont tirées par
+# scripts/build-section-pages.js ; lui-même ne doit pas être servi : il pèse 567 ko et
+# ferait doublon avec index.html aux yeux de Google.
+gabarit.html
+
+# Outillage du volet municipal : dans le dépôt pour le rafraîchissement automatique
+# (GitHub Actions), inutile au site servi. Les pages, assets/ et data/ restent publiés.
+quebec/lib
+quebec/scrapers
+quebec/scripts
+quebec/README.md
+quebec/REPRODUIRE-POUR-UNE-AUTRE-VILLE.md
+quebec/package.json
+quebec/package-lock.json
+quebec/api.env.example
+
+# Volet Montréal : même règle.
+montreal/lib
+montreal/scrapers
+montreal/scripts
+montreal/test
+montreal/README.md
+montreal/courriel-greffe.md
+montreal/package.json
+montreal/package-lock.json
+montreal/api.env.example
+montreal/LANCER-MONTREAL.cmd
+montreal/data/textes
+
+# Volet Lévis : même règle.
+levis/lib
+levis/scrapers
+levis/scripts
+levis/test
+levis/README.md
+levis/courriel-greffe.md
+levis/package.json
+levis/package-lock.json
+levis/api.env.example
+levis/data/textes
+levis/data/seances.json
+
+# Volet Longueuil : même règle.
+longueuil/lib
+longueuil/scrapers
+longueuil/scripts
+longueuil/test
+longueuil/README.md
+longueuil/courriel-greffe.md
+longueuil/package.json
+longueuil/package-lock.json
+longueuil/api.env.example
+longueuil/data/textes
+longueuil/data/seances.json
+
+# Volet Laval : même règle. data/index-documents.json (1,3 Mo) n'est lu que par les scrapers, et
+# data/sources/ est la capture de la page des élus — matière première, pas une donnée servie.
+laval/lib
+laval/scrapers
+laval/scripts
+laval/test
+laval/README.md
+laval/courriel-greffe.md
+laval/package.json
+laval/package-lock.json
+laval/api.env.example
+laval/data/textes
+laval/data/sources
+laval/data/index-documents.json
+laval/data/lancement.log
+laval/data/seances.json
+
+# Fichiers de travail : dans le dépôt, jamais servis (21 sept. 2026). Tant que les volets étaient
+# en noindex, leur en-tête X-Robots-Tag couvrait aussi ces fichiers ; ouverts aux moteurs, ils
+# devenaient indexables — dont des courriels échangés avec la Ville de Montréal. Aucune page ni
+# aucune fonction api/ ne lit de .md, de .log, de .cmd ni de .sql.
+**/*.md
+**/*.log
+**/*.cmd
+**/*.sql
+# L'outillage de l'Assemblée, à la racine : même règle que celui des volets plus haut. Sauf le
+# script que Vercel lance lui-même pour décider s'il redéploie (vercel.json → ignoreCommand).
+/scrapers
+/scripts/*
+!/scripts/vercel-deployer.sh
+/.github
+
+# Du travail mis de côté, gardé dans le dépôt pour pouvoir le ressortir : des notes internes, pas
+# des pages. Servi tel quel, /patches/… serait lisible par n'importe qui.
+/patches
+
+# Le cahier de design et ses maquettes (CHARTE-DOSSIER.md renvoie dessus) : une référence pour
+# qui construit, pas des pages. Servies, les maquettes seraient cinq faux accueils indexables.
+/design
+/CHARTE-DOSSIER.md
+/contexte-pour-claude-code.md
