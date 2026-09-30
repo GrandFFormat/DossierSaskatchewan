@@ -124,8 +124,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -216,22 +216,22 @@ function goToFederal(evt){
 
   <!-- APERÇU -->
   <section class="view active" id="view-ministres">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.ministres">Ministers and MNAs</span></nav>
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.ministres">Ministers and MLAs</span></nav>
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.ministres">Quebec ministers and MNAs</span>
+        <span class="hero-sujet" data-i18n="sujet.ministres">Saskatchewan ministers and MLAs</span>
         <span data-i18n="minhero.l1">The Cabinet</span>
         <span class="hero-outline" data-i18n="minhero.l2">& the whole Assembly.</span>
       </h1>
-      <p class="view-hero-sub" data-i18n="minhero.sub">The ministers, then all 125 MNAs from every party (<b>the MNAs are further down</b>) — <b>one search for both.</b></p>
+      <p class="view-hero-sub" data-i18n="minhero.sub">The ministers, then all 61 MLAs from every party (<b>the MLAs are further down</b>) — <b>one search for both.</b></p>
 
       <!-- Grande recherche façon maquette : loupe sur cellule jaune. Même rangée
            que sur Projets de loi (.projets-controls = flex + retour à la ligne). -->
       <div class="projets-controls">
         <div class="brutal-search">
           <span class="bs-icon" aria-hidden="true">🔍</span>
-          <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Name, riding, region, or ministry…">
+          <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Name, constituency, region, or ministry…">
         </div>
         <!-- Tri par assiduité aux votes. La logique (toggleMinistresSort) existait
              depuis le début, mais AUCUN bouton ne la déclenchait. -->
@@ -244,9 +244,9 @@ function goToFederal(evt){
     <div class="band band-white bleed" id="band-composition">
     <div class="section-head" id="sec-composition">
       <div>
-        <h2 data-i18n="h.composition">Composition — 125 seats</h2>
+        <h2 data-i18n="h.composition">Composition — 61 seats</h2>
       </div>
-      <span class="head-note" data-i18n="apercu.composition.sub">43rd Legislature · breakdown by parliamentary group</span>
+      <span class="head-note" data-i18n="apercu.composition.sub">30th Legislature · breakdown by caucus</span>
     </div>
     <div class="compo-wrap">
       <div class="compo-bar" id="compoBar"></div>
@@ -270,7 +270,7 @@ function goToFederal(evt){
         <li data-i18n="lp.debut">The count starts at each person's first vote: someone elected mid-term is not counted absent from votes held before they arrived.</li>
         <li data-i18n="lp.pres"><b>—</b>: the Assembly's President* and its three Vice-Presidents. To stay neutral, they vote little or not at all: a low rate would not mean they were absent.</li>
         <li data-i18n="lp.nd"><b>n/a</b>: no recorded vote for this person.</li>
-        <li data-i18n="lp.officiel">This is not an official measure: the Assembly does not publish attendance, and a missed vote does not tell why.</li>
+        <li data-i18n="lp.officiel">This is not an official measure: a missed vote does not tell why.</li>
       </ul>
       <p class="lp-asterisque" data-i18n="lp.aster">* The Assembly's President is not the same as the Premier: the President runs the debates and stays neutral, while the Premier heads the government and votes like the other members. <a href="/lexique#role-presidence">See the Assembly's presidency in the Glossary →</a></p>
       <p class="lp-asterisque lp-asterisque-suite" data-i18n="lp.aster2">** Updated every morning: the site rereads the Assembly's register of votes and recalculates each person's rate, then the median, the colours and the numbers above. A vote held one day shows up the next; during the dissolution, nothing changes.</p>
@@ -280,7 +280,7 @@ function goToFederal(evt){
 
     <div class="section-head min-group-head" id="ministresTitle">
       <div><h2 data-i18n="h.ministres2">The ministers</h2></div>
-      <span class="head-note"><span id="ministresCount"></span><span data-i18n="min.sub2b"> ministers — official quebec.ca list</span></span>
+      <span class="head-note"><span id="ministresCount"></span><span data-i18n="min.sub2b"> ministers — official saskatchewan.ca list</span></span>
     </div>
     <div class="grid" id="ministresGrid"></div>
     <div class="prerendu" data-prerendu="ministers">
@@ -337,7 +337,7 @@ function goToFederal(evt){
 
     <div class="section-head min-group-head" id="deputesTitle">
       <div><h2 data-i18n="min.restTitle">The rest of the Assembly</h2></div>
-      <span class="head-note" data-i18n="min.restNote">Every party — 125 seats total</span>
+      <span class="head-note" data-i18n="min.restNote">Every party — 61 seats total</span>
     </div>
     <div class="grid" id="deputesList"></div>
     <div class="prerendu" data-prerendu="deputesRaw">
@@ -441,7 +441,7 @@ function goToFederal(evt){
       </ul>
       <p class="pr-note">Les 96 autres député·e·s. Source officielle : <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.<noscript> Les filtres, la recherche et le détail de chaque fiche demandent JavaScript.</noscript></p>
     </div>
-    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">These 125 entries come directly from the official list of sitting MNAs at the National Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.</div>
+    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">These 61 entries come directly from the official list of sitting MLAs at the Legislative Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update.</div>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->
