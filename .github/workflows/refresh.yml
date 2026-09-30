@@ -1,0 +1,107 @@
+# Rafraîchissement quotidien et automatique des données de DossierQuébec.
+#
+# Chaque matin : relance tous les scrapers + builds (npm run refresh), puis, s'il
+# y a un changement, committe et pousse. Le push sur `master` déclenche le
+# redéploiement automatique du site sur Vercel — donc un nouveau projet de loi ou
+# un nouveau vote apparu la veille se retrouve en ligne sans intervention.
+#
+# Clé API des résumés IA : à ajouter dans le dépôt sous
+#   Settings > Secrets and variables > Actions > New repository secret
+#   Nom : ANTHROPIC_API_KEY
+# Sans ce secret, tout tourne quand même : l'étape des résumés est « best effort »
+# (voir scripts/refresh.js) — seuls les résumés des nouveaux projets sont sautés.
+
+name: Rafraîchissement quotidien des données
+
+on:
+  schedule:
+    # 08:00 UTC = ~03:00–04:00 au Québec. Tous les jours.
+    - cron: '0 8 * * *'
+  workflow_dispatch: {} # permet aussi de lancer à la main (bouton « Run workflow »)
+
+# Nécessaire pour que le job puisse committer et pousser les données mises à jour.
+permissions:
+  contents: write
+
+# Deux exécutions de CE workflow ne doivent pas se marcher dessus, mais rien n'empêche un
+# volet de tourner en même temps : chacun n'écrit que son dossier, et la boucle de poussée
+# plus bas rebase et réessaie. Un groupe partagé faisait annuler les runs en attente.
+concurrency:
+  group: refresh-assemblee
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    # Filet de sécurité : un job ne doit jamais s'emballer (par défaut GitHub le
+    # laisserait tourner jusqu'à 6 h). Le rafraîchissement incrémental prend
+    # normalement quelques minutes ; 30 min laisse une marge très large.
+    timeout-minutes: 30
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v5
+
+      - name: Installer Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      # --omit=dev : les scrapers n'utilisent que les dependencies (cheerio,
+      # csv-parse, pdf-parse, @anthropic-ai/sdk). Playwright (devDependency) n'est
+      # pas nécessaire — aucun scraper n'a besoin de navigateur.
+      - name: Installer les dépendances
+        run: npm ci --omit=dev
+
+      - name: Rafraîchir toutes les données
+        id: refresh
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npm run refresh
+
+      # Rafraîchissement tolérant : `npm run refresh` sort 0 même si un scraper a
+      # échoué (il expose `builds_ok`/`failed` via $GITHUB_OUTPUT). On sort != 0
+      # UNIQUEMENT si un build/garde-fou a cassé — auquel cas l'étape ci-dessus a
+      # déjà échoué et le commit est sauté. Sinon on committe les données fraîches
+      # des sources qui ont fonctionné.
+      - name: Committer et pousser s'il y a des changements
+        id: publication
+        run: |
+          git config user.name "dossierquebec-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Aucun changement — rien à committer."
+          else
+            # Le sitemap est daté par scripts/build-section-pages.js : seules les pages
+            # dont le HTML a vraiment changé prennent la date du jour. Le dater ici,
+            # comme avant, avançait TOUTES les dates chaque matin (les horodatages des
+            # données changent toujours) — et Google finit par ignorer un lastmod faux.
+            TODAY=$(date -u +%Y-%m-%d)
+            git commit -m "Rafraîchissement auto des données ($TODAY)"
+            # Quelqu'un a pu pousser pendant les scrapers (un volet, ou du travail à la main) :
+            # on se remet à jour avant de réessayer, comme les workflows des volets.
+            for essai in 1 2 3; do
+              git pull --rebase && git push && break
+              [ "$essai" = 3 ] && { echo "::error::Push refusé trois fois — rien n'est publié aujourd'hui."; exit 1; }
+              echo "Push refusé (essai $essai) — nouvel essai dans $((essai * 10)) s."
+              sleep $((essai * 10))
+            done
+          fi
+
+      # Après le commit : si un ou des scrapers ont échoué, on marque quand même le run en
+      # échec pour être alerté qu'une source est tombée. Le !cancelled() fait que l'étape parle
+      # aussi quand le commit a été sauté ou la poussée refusée — dans ce cas, rien n'a été
+      # publié, et il ne faut pas écrire le contraire : on lit l'issue de l'étape de poussée.
+      - name: Alerter si des scrapers ont échoué
+        if: ${{ !cancelled() && steps.refresh.outputs.failed != '' }}
+        env:
+          FAILED: ${{ steps.refresh.outputs.failed }}
+          PUBLICATION: ${{ steps.publication.outcome }}
+        run: |
+          echo "::warning::Scrapers en échec (données de la veille conservées) : $FAILED"
+          if [ "$PUBLICATION" = "success" ]; then
+            echo "Le reste des données a été publié. Vérifier la ou les sources en panne."
+          else
+            echo "Rien n'a été publié ce matin : la poussée n'a pas abouti. Voir l'étape plus haut."
+          fi
+          exit 1
