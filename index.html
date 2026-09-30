@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
-     La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dq:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-87R1S6SR9Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-87R1S6SR9Y');
-</script>
-<script src="/commun/consentement.js" defer></script>
+<!-- Pas de Google Analytics pour l'instant. La copie de DQ portait l'identifiant de DQ : les
+     visites de ce site seraient allées dans les statistiques de DQ. Pour en remettre, créer
+     une propriété à part, puis ramener ici le bloc gtag de DQ et commun/consentement.js (la
+     bannière de consentement), qui sont prêts. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -44,8 +32,8 @@
   }catch(e){}
 })();
 </script>
-<title>Saskatchewan's Legislative Assembly in plain language — Dossier Saskatchewan</title>
-<meta name="description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers and where every number comes from.">
+<title>The Legislative Assembly in plain language — Dossier Saskatchewan</title>
+<meta name="description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
@@ -57,8 +45,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dossier Saskatchewan">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Saskatchewan's Legislative Assembly in plain language — Dossier Saskatchewan">
-<meta property="og:description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers and where every number comes from.">
+<meta property="og:title" content="The Legislative Assembly in plain language — Dossier Saskatchewan">
+<meta property="og:description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/">
 <meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
@@ -67,8 +55,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Saskatchewan's Legislative Assembly in plain language — Dossier Saskatchewan">
-<meta name="twitter:description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers and where every number comes from.">
+<meta name="twitter:title" content="The Legislative Assembly in plain language — Dossier Saskatchewan">
+<meta name="twitter:description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.">
 <meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
@@ -87,7 +75,7 @@
       "@id": "https://dossiersaskatchewan.ca/#site",
       "name": "Dossier Saskatchewan",
       "url": "https://dossiersaskatchewan.ca/",
-      "description": "Suivez Saskatchewan's Legislative Assembly en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.",
+      "description": "Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.",
       "inLanguage": "en-CA",
       "publisher": {
         "@id": "https://dossiersaskatchewan.ca/#organisation"
@@ -104,10 +92,7 @@
         "width": 512,
         "height": 512
       },
-      "sameAs": [
-        "https://www.facebook.com/dossierquebec",
-        "https://github.com/GrandFFormat/DossierQuebec"
-      ]
+      "sameAs": []
     }
   ]
 }
@@ -251,9 +236,9 @@ function goToFederal(evt){
 
     <!-- Bande de stats (vraies données — mêmes ids qu'avant, peuplés par le JS) -->
     <div class="stat-band bleed">
-      <div class="stat-cell"><b id="statMinistres">29</b><span data-i18n="stat.ministres">Ministers</span></div>
-      <div class="stat-cell"><b id="statProjets">143</b><span data-i18n="stat.projets">Bills</span></div>
-      <div class="stat-cell"><b id="statVotes">735</b><span data-i18n="stat.votes">Votes recorded</span></div>
+      <div class="stat-cell"><b id="statMinistres">18</b><span data-i18n="stat.ministres">Ministers</span></div>
+      <div class="stat-cell"><b id="statProjets">0</b><span data-i18n="stat.projets">Bills</span></div>
+      <div class="stat-cell"><b id="statVotes">0</b><span data-i18n="stat.votes">Votes recorded</span></div>
     </div>
 
     <!-- Section signature du handoff : bande JAUNE pleine largeur -->
@@ -277,13 +262,10 @@ function goToFederal(evt){
     <div id="body-projets-recents">
     <div id="apercuBills"></div>
     <div class="prerendu" data-prerendu="apercuBills">
-      <ul aria-label="Projets de loi récemment actifs">
-        <li><b>Projet de loi n° 3</b> — Loi visant à assurer la représentation effective des électeurs <span class="pr-meta">· Sanctionné le 2026-06-12</span></li>
-        <li><b>Projet de loi n° 10</b> — Loi protégeant les consommateurs contre les pratiques abusives de revente de billets et de renouvellement d’abonnements en ligne <span class="pr-meta">· Sanctionné le 2026-06-12</span></li>
-        <li><b>Projet de loi n° 17</b> — Loi modifiant la Loi sur le stockage de gaz naturel et sur les conduites de gaz naturel et de pétrole aux fins d'autoriser la mise en œuvre d'un projet pilote relatif à la recherche ou à l'exploitation d'un réservoir souterrain ou de certains fluides (titre modifié) <span class="pr-meta">· Sanctionné le 2026-06-12</span></li>
-        <li><b>Projet de loi n° 22</b> — Loi bonifiant les pouvoirs d’intervention des municipalités et modifiant d’autres dispositions législatives <span class="pr-meta">· Sanctionné le 2026-06-12</span></li>
+      <ul aria-label="Recently active bills">
+
       </ul>
-      <p class="pr-note">Source officielle : <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.</p>
+      <p class="pr-note">Official source: <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.</p>
     </div>
     </div>
 
@@ -325,17 +307,10 @@ function goToFederal(evt){
     <div id="body-quoideneuf">
     <div id="newsList"></div>
     <div class="prerendu" data-prerendu="newsItems">
-      <ul aria-label="Quoi de neuf à l’Assemblée nationale">
-        <li><span class="pr-meta">12 juin 2026 —</span> Dépôt du projet de loi n° 692 — Loi visant à créer un nouvel outil de conservation volontaire des milieux naturels</li>
-        <li><span class="pr-meta">12 juin 2026 —</span> Sanction du projet de loi n° 24 — Loi protégeant le consommateur contre l’utilisation trompeuse ou frauduleuse de l’identité ou de l’image…</li>
-        <li><span class="pr-meta">12 juin 2026 —</span> Sanction du projet de loi n° 23 — Loi visant principalement à mieux accompagner les personnes dont l’état mental pourrait représenter un r…</li>
-        <li><span class="pr-meta">12 juin 2026 —</span> Sanction du projet de loi n° 22 — Loi bonifiant les pouvoirs d’intervention des municipalités et modifiant d’autres dispositions législati…</li>
-        <li><span class="pr-meta">12 juin 2026 —</span> Sanction du projet de loi n° 17 — Loi modifiant la Loi sur le stockage de gaz naturel et sur les conduites de gaz naturel et de pétrole au…</li>
-        <li><span class="pr-meta">12 juin 2026 —</span> Sanction du projet de loi n° 10 — Loi protégeant les consommateurs contre les pratiques abusives de revente de billets et de renouvellemen…</li>
-        <li><span class="pr-meta">12 juin 2026 —</span> Sanction du projet de loi n° 3 — Loi visant à assurer la représentation effective des électeurs</li>
-        <li><span class="pr-meta">11 juin 2026 —</span> 6 votes nominatifs tenus à l'Assemblée.</li>
+      <ul aria-label="What’s new at the Legislative Assembly">
+
       </ul>
-      <p class="pr-note">Source officielle : <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.</p>
+      <p class="pr-note">Official source: <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.</p>
     </div>
     <!-- Encadré noir compact (maquette) — le même statut réel que le ticker.
          renderTicker() lit .calendar-box .status : NE PAS renommer. -->
@@ -433,11 +408,6 @@ function goToFederal(evt){
     <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
     <a href="/sources" data-i18n="fil.bd">Site updates</a>
     <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
-      <a href="/quebec/">Québec</a>
-      <a href="/montreal/">Montréal</a>
-      <a href="/levis/">Lévis</a>
-      <a href="/longueuil/">Longueuil</a>
-      <a href="/laval/">Laval</a>
     </span>
   </nav>
   <div class="footer-inner">

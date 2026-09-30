@@ -156,8 +156,10 @@ function extraireDonnees() {
 // affiche les trois compteurs partout. Elle les comptait dans les jeux complets, que la plupart
 // des pages ne chargent plus — elle affichait « 0 vote nominatif » depuis le découpage.
 //
-// RÉFÉRENCEMENT (21 sept. 2026). `title` suit la formule « Sujet — DossierQuébec », 65 caractères
-// au plus ; `desc` fait entre 120 et 165 caractères. Le <h1> de chaque page s'ouvre sur le même
+// RÉFÉRENCEMENT (21 sept. 2026). `title` suit la formule « Sujet — Dossier Saskatchewan », 65
+// caractères au plus ; `desc` fait entre 120 et 165 caractères. Le site est anglophone : titres,
+// descriptions et fil d'Ariane sont en ANGLAIS ; le français vient de PAGE_META et du
+// dictionnaire de commun/dq.js quand le visiteur le choisit. Le <h1> de chaque page s'ouvre sur le même
 // sujet (span .hero-sujet dans gabarit.html). `fil` est le nom de la page dans le fil d'Ariane
 // (visible et JSON-LD) ; `cle` sa traduction. `frequence` et `priorite` vont au sitemap. Les
 // contrôles plus bas refusent un titre ou une description en double, hors longueur, ou une page
@@ -166,44 +168,44 @@ const PAGES = [
   {
     fichier: 'index.html', vue: 'apercu', onglet: 'apercu', url: '/',
     donnees: ['newsItems', 'petitions', 'apercuBills', 'deputesRaw', 'stats'],
-    title: "L'Assemblée nationale du Québec en clair — DossierQuébec",
-    desc: "Suivez l'Assemblée nationale du Québec en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.",
+    title: 'The Legislative Assembly in plain language — Dossier Saskatchewan',
+    desc: "Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.",
     frequence: 'daily', priorite: '1.0',
   },
   {
     fichier: 'ministres.html', vue: 'ministres', onglet: 'ministres', url: '/ministres',
     donnees: ['ministers', 'deputesRaw', 'deputeEmails', 'presences', 'billsParrains'],
-    title: 'Ministres et député·e·s du Québec — DossierQuébec',
-    desc: "Les ministres du gouvernement du Québec et les député·e·s de l'Assemblée nationale : rôles, circonscriptions, présence aux votes et coordonnées officielles.",
-    fil: 'Ministres et député·e·s', cle: 'fil.ministres', frequence: 'weekly', priorite: '0.8',
+    title: 'Saskatchewan ministers and MLAs — Dossier Saskatchewan',
+    desc: 'The ministers of the Government of Saskatchewan and the 61 MLAs of the Legislative Assembly: roles, constituencies, voting records and official contact details.',
+    fil: 'Ministers and MLAs', cle: 'fil.ministres', frequence: 'weekly', priorite: '0.8',
   },
   {
     fichier: 'projets-de-loi.html', vue: 'projets', onglet: 'projets', url: '/projets-de-loi',
     donnees: ['bills', 'deputesRaw'],
-    title: 'Projets de loi du Québec expliqués en clair — DossierQuébec',
-    desc: "Les projets de loi de l'Assemblée nationale du Québec résumés en langage courant, avec leur étape réelle dans le processus et le lien vers le texte officiel.",
-    fil: 'Projets de loi', cle: 'fil.projets', frequence: 'daily', priorite: '0.9',
+    title: 'Saskatchewan bills in plain language — Dossier Saskatchewan',
+    desc: "The bills before Saskatchewan's Legislative Assembly, summarized in everyday language, with the stage each has really reached and a link to the official text.",
+    fil: 'Bills', cle: 'fil.projets', frequence: 'daily', priorite: '0.9',
   },
   {
     fichier: 'votes.html', vue: 'votes', onglet: 'votes', url: '/votes',
     donnees: ['votes', 'deputesRaw', 'billsTitres'],
-    title: "Votes nominatifs à l'Assemblée nationale — DossierQuébec",
-    desc: "Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.",
+    title: 'Recorded votes, MLA by MLA — Dossier Saskatchewan',
+    desc: "Every recorded division in Saskatchewan's Legislative Assembly: who voted for and who voted against, MLA by MLA, read from the official minutes, with no spin.",
     fil: 'Votes', cle: 'fil.votes', frequence: 'daily', priorite: '0.9',
   },
   {
     fichier: 'promesses.html', vue: 'promesses', onglet: null, url: '/promesses',
     donnees: ['promises', 'deputesRaw'],
-    title: 'Promesses électorales 2026 au Québec — DossierQuébec',
-    desc: "Les engagements des partis pour l'élection québécoise du 5 octobre 2026, chacun avec sa source officielle. Aucun verdict : la promesse et l'action, côte à côte.",
-    fil: 'Promesses', cle: 'fil.promesses', frequence: 'weekly', priorite: '0.8',
+    title: 'Election promises — Dossier Saskatchewan',
+    desc: "What Saskatchewan's parties promised, each commitment with its official source. No verdicts here: the promise and the action, side by side, for you to judge.",
+    fil: 'Promises', cle: 'fil.promesses', frequence: 'weekly', priorite: '0.8',
   },
   {
     fichier: 'lexique.html', vue: 'lexique', onglet: 'lexique', url: '/lexique',
     donnees: [],
-    title: "Lexique de l'Assemblée nationale en clair — DossierQuébec",
-    desc: "Sanction royale, étude détaillée, vote par appel nominal : le vocabulaire de l'Assemblée nationale du Québec expliqué simplement, avec les sources officielles.",
-    fil: 'Lexique', cle: 'fil.lexique', frequence: 'monthly', priorite: '0.6',
+    title: 'Legislative Assembly glossary — Dossier Saskatchewan',
+    desc: "Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with links to the official sources.",
+    fil: 'Glossary', cle: 'fil.lexique', frequence: 'monthly', priorite: '0.6',
   },
   {
     // Page PRIVÉE (`prive`) : l'espace de la personne connectée, côté Assemblée. Elle porte un
@@ -213,16 +215,16 @@ const PAGES = [
     // séparés ».
     fichier: 'mon-dossier.html', vue: 'mondossier', onglet: 'mondossier', url: '/mon-dossier', prive: true,
     donnees: ['bills'],
-    title: 'Mon dossier — DossierQuébec',
-    desc: "Votre espace à l'Assemblée nationale : les projets de loi que vous suivez, les ministres et député·e·s suivis, vos mots-clés et votre alerte du matin.",
-    fil: 'Mon dossier', cle: 'fil.mondossier', frequence: 'weekly', priorite: '0.1',
+    title: 'My file — Dossier Saskatchewan',
+    desc: 'Your corner of the Legislative Assembly: the bills you follow, the ministers and MLAs you follow, your keywords and your morning alert, all in one place.',
+    fil: 'My file', cle: 'fil.mondossier', frequence: 'weekly', priorite: '0.1',
   },
   {
     fichier: 'sources.html', vue: 'bd', onglet: null, url: '/sources',
     donnees: ['journal'],
-    title: 'Mises à jour du site — DossierQuébec',
-    desc: "Ce qui change sur DossierQuébec, site citoyen indépendant qui rend lisibles l'Assemblée nationale et les conseils municipaux du Québec, et qui est derrière.",
-    fil: 'Mises à jour du site', cle: 'fil.bd', frequence: 'weekly', priorite: '0.4',
+    title: 'Site updates — Dossier Saskatchewan',
+    desc: "What changes on Dossier Saskatchewan, the independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.",
+    fil: 'Site updates', cle: 'fil.bd', frequence: 'weekly', priorite: '0.4',
   },
 ];
 for (const page of PAGES) if (!page.donnees.includes('stats')) page.donnees.push('stats');
@@ -239,10 +241,12 @@ const ht = (x) => String(x ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<'
 const ORGANISATION = {
   '@type': 'Organization',
   '@id': `${BASE}/#organisation`,
-  name: 'DossierQuébec',
+  name: 'Dossier Saskatchewan',
   url: `${BASE}/`,
+  // À REFAIRE : dq-512.png est encore le logo de DQ.
   logo: { '@type': 'ImageObject', url: `${BASE}/commun/dq-512.png`, width: 512, height: 512 },
-  sameAs: ['https://www.facebook.com/dossierquebec', 'https://github.com/GrandFFormat/DossierQuebec'],
+  // Aucun compte à soi pour l'instant (pas de page Facebook ni de dépôt public).
+  sameAs: [],
 };
 function jsonLd(page) {
   const donnees = page.url === '/'
@@ -250,8 +254,8 @@ function jsonLd(page) {
       '@context': 'https://schema.org',
       '@graph': [
         {
-          '@type': 'WebSite', '@id': `${BASE}/#site`, name: 'DossierQuébec', url: `${BASE}/`,
-          description: page.desc, inLanguage: 'fr-CA', publisher: { '@id': `${BASE}/#organisation` },
+          '@type': 'WebSite', '@id': `${BASE}/#site`, name: 'Dossier Saskatchewan', url: `${BASE}/`,
+          description: page.desc, inLanguage: 'en-CA', publisher: { '@id': `${BASE}/#organisation` },
         },
         ORGANISATION,
       ],
@@ -260,7 +264,7 @@ function jsonLd(page) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Accueil', item: `${BASE}/` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: `${BASE}/` },
         { '@type': 'ListItem', position: 2, name: page.fil, item: BASE + page.url },
       ],
     };
@@ -277,18 +281,20 @@ function jsonLd(page) {
 // retire dès que les vraies cartes sont affichées (voir [data-prerendu]).
 //
 // Même source que les cartes (les JSON de data/site/) : rien ici n'est rédigé à la main.
-const ASSNAT = '<a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>';
-const QUEBEC_CA = '<a href="https://www.quebec.ca/premiere-ministre/equipe/conseil-des-ministres" rel="noopener">quebec.ca</a>';
+// Ces listes sont ce qu'un moteur de recherche lit de chaque page : elles sont en ANGLAIS, comme
+// le site. (commun/dq.js les remplace par les vraies cartes, dans la langue du visiteur.)
+const ASSEMBLEE = '<a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>';
+const SASK_CA = '<a href="https://www.saskatchewan.ca/government/government-structure/cabinet" rel="noopener">saskatchewan.ca</a>';
 // Le mot sur JavaScript n'a sa place que là où il y a des filtres ou une recherche.
-const SANS_JS = '<noscript> Les filtres, la recherche et le détail de chaque fiche demandent JavaScript.</noscript>';
+const SANS_JS = '<noscript> Filters, search and the detail of each entry need JavaScript.</noscript>';
 // `jeu` : le fichier de data/site/ dont dépend la liste. commun/dq.js ne retire une liste que si
 // CE fichier est arrivé : si le JSON manque, la version écrite ici reste, et c'est justement le
 // cas où elle sert.
 const bloc = (jeu, etiquette, items, note, filtres = false) =>
   `<div class="prerendu" data-prerendu="${jeu}">\n      <ul aria-label="${esc(etiquette)}">\n${items.map((i) => `        <li>${i}</li>`).join('\n')}\n      </ul>\n      <p class="pr-note">${note}${filtres ? SANS_JS : ''}</p>\n    </div>`;
-const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-const dateFr = (iso) => { const [a, m, j] = String(iso).split('-').map(Number); return a && m && j ? `${j === 1 ? '1er' : j} ${MOIS[m - 1]} ${a}` : ht(iso); };
-const projet = (b) => `<b>Projet de loi n° ${ht(b.num)}</b> — ${ht(b.title)}${b.note ? ` <span class="pr-meta">· ${ht(b.note)}</span>` : ''}`;
+const MOIS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const dateEn = (iso) => { const [a, m, j] = String(iso).split('-').map(Number); return a && m && j ? `${MOIS[m - 1]} ${j}, ${a}` : ht(iso); };
+const projet = (b) => `<b>Bill ${ht(b.num)}</b> — ${ht(b.title)}${b.note ? ` <span class="pr-meta">· ${ht(b.note)}</span>` : ''}`;
 // Même normalisation que norm() dans commun/dq.js : c'est elle qui sépare les ministres du reste
 // de l'Assemblée.
 const normNom = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[-–—']/g, ' ').replace(/\s+/g, ' ').trim();
@@ -306,33 +312,37 @@ function prerendus(valeurs) {
   catch (e) { console.warn(`⚠ data/journal.json illisible (${e.message.slice(0, 70)}) : /sources part sans sa liste écrite`); }
   if (!Array.isArray(journal)) journal = [];
   const journalTrie = [...journal].sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
+  // Une liste vide dit qu'elle est vide, au lieu d'un « Les 0 projets de loi » : avant la
+  // première lecture des sources, il n'y a rien, et on le dit.
+  const pluriel = (n, un, plusieurs) => `${n} ${n === 1 ? un : plusieurs}`;
   return {
-    apercuBills: bloc('apercuBills', 'Projets de loi récemment actifs', bills.slice(0, 4).map(projet),
-      `Source officielle : ${ASSNAT}.`),
-    newsList: bloc('newsItems', 'Quoi de neuf à l’Assemblée nationale',
+    apercuBills: bloc('apercuBills', 'Recently active bills', bills.slice(0, 4).map(projet),
+      `Official source: ${ASSEMBLEE}.`),
+    newsList: bloc('newsItems', 'What’s new at the Legislative Assembly',
       [...valeurs.newsItems].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 8)
-        .map((n) => `<span class="pr-meta">${ht(n.label || dateFr(n.date))} —</span> ${ht(n.text)}`),
-      `Source officielle : ${ASSNAT}.`),
-    ministresGrid: bloc('ministers', 'Conseil des ministres',
-      valeurs.ministers.map((m) => `<b>${ht(m.name)}</b> — ${ht(m.role)} <span class="pr-meta">(${ht(m.party)})</span>`),
-      `Les ${valeurs.ministers.length} membres du Conseil des ministres. Source officielle : ${QUEBEC_CA}.`, true),
-    deputesList: bloc('deputesRaw', 'Le reste de l’Assemblée',
+        .map((n) => `<span class="pr-meta">${ht(n.label || dateEn(n.date))} —</span> ${ht(n.text)}`),
+      `Official source: ${ASSEMBLEE}.`),
+    ministresGrid: bloc('ministers', 'Cabinet',
+      valeurs.ministers.map((m) => `<b>${ht(m.name)}</b> — ${ht(m.roleEn || m.role)} <span class="pr-meta">(${ht(m.party)})</span>`),
+      `The ${pluriel(valeurs.ministers.length, 'member', 'members')} of Cabinet. Official source: ${SASK_CA}.`, true),
+    deputesList: bloc('deputesRaw', 'The rest of the Assembly',
       deputes.map((d) => `${ht(d[0])} — ${ht(d[1])} <span class="pr-meta">(${ht(d[3])})</span>`),
-      `Les ${deputes.length} autres député·e·s. Source officielle : ${ASSNAT}.`, true),
-    billsList: bloc('bills', 'Projets de loi', bills.map(projet),
-      `Les ${bills.length} projets de loi, du plus récemment actif au plus ancien. Texte intégral de chacun : ${ASSNAT}.`, true),
-    // Le sujet d'un vote commence souvent déjà par « Projet de loi n° X » : on ne le répète pas.
-    votesList: bloc('votes', 'Votes nominatifs récents', votesRecents.map((v) =>
-      `<span class="pr-meta">${ht(dateFr(v.date))} —</span> ${v.stage ? `${ht(v.stage)} — ` : ''}${v.billNum && !/^projet de loi n[°o]\s*\d/i.test(String(v.subject || '')) ? `projet de loi n° ${ht(v.billNum)} — ` : ''}${ht(v.subject)} <span class="pr-meta">· pour ${ht(v.totals?.pour)}, contre ${ht(v.totals?.contre)}, abstentions ${ht(v.totals?.abstentions)}</span>`),
-      `Les ${votesRecents.length} votes les plus récents, sur ${valeurs.votes.length}. Source officielle : le registre des votes, ${ASSNAT}.`, true),
-    promisesList: bloc('promises', 'Promesses électorales 2026', valeurs.promises.filter((p) => !p.draft).map((p) =>
-      `<b>${ht(p.party)}</b> <span class="pr-meta">· ${ht(p.theme)}</span> — « ${ht(p.quote)} » <span class="pr-meta">(source : ${p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" rel="noopener">${ht(p.sourceLabel)}</a>` : ht(p.sourceLabel)})</span>`),
-      'Chaque promesse est citée mot pour mot, avec sa source.', true),
+      `The ${pluriel(deputes.length, 'other MLA', 'other MLAs')}. Official source: ${ASSEMBLEE}.`, true),
+    billsList: bloc('bills', 'Bills', bills.map(projet),
+      `${pluriel(bills.length, 'bill', 'bills')}, most recently active first. Full text of each: ${ASSEMBLEE}.`, true),
+    // Le sujet d'un vote commence souvent déjà par « Bill No. X » : on ne le répète pas. Pas
+    // d'abstentions en Saskatchewan : on ne les affiche que si la donnée existe.
+    votesList: bloc('votes', 'Recent recorded divisions', votesRecents.map((v) =>
+      `<span class="pr-meta">${ht(dateEn(v.date))} —</span> ${v.stage ? `${ht(v.stage)} — ` : ''}${v.billNum && !/^bill\s*(no\.?\s*)?\d/i.test(String(v.subject || '')) ? `Bill ${ht(v.billNum)} — ` : ''}${ht(v.subject)} <span class="pr-meta">· for ${ht(v.totals?.pour)}, against ${ht(v.totals?.contre)}${v.totals?.abstentions != null ? `, abstentions ${ht(v.totals.abstentions)}` : ''}</span>`),
+      `The ${pluriel(votesRecents.length, 'most recent vote', 'most recent votes')}, out of ${valeurs.votes.length}. Official source: the Votes and Proceedings, ${ASSEMBLEE}.`, true),
+    promisesList: bloc('promises', 'Election promises', valeurs.promises.filter((p) => !p.draft).map((p) =>
+      `<b>${ht(p.party)}</b> <span class="pr-meta">· ${ht(p.theme)}</span> — “${ht(p.quote)}” <span class="pr-meta">(source: ${p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" rel="noopener">${ht(p.sourceLabel)}</a>` : ht(p.sourceLabel)})</span>`),
+      'Each promise is quoted word for word, with its source.', true),
     // Les 20 plus récentes seulement, comme la page vivante : sans plafond, le journal ferait
-    // grossir /sources sans fin.
-    journal: bloc('journal', 'Mises à jour du site', journalTrie.slice(0, JOURNAL_PREMIERES).map((e) =>
-      `<span class="pr-meta">${ht(dateFr(e.date))} —</span> <b>${ht(e.fr?.titre)}</b> ${ht(e.fr?.texte)}`),
-      journalTrie.length > JOURNAL_PREMIERES ? `Les ${JOURNAL_PREMIERES} plus récentes, sur ${journalTrie.length}.` : 'Du plus récent au plus ancien.'),
+    // grossir /sources sans fin. L'anglais d'abord ; le français si l'entrée n'a que lui.
+    journal: bloc('journal', 'Site updates', journalTrie.slice(0, JOURNAL_PREMIERES).map((e) =>
+      `<span class="pr-meta">${ht(dateEn(e.date))} —</span> <b>${ht(e.en?.titre ?? e.fr?.titre)}</b> ${ht(e.en?.texte ?? e.fr?.texte)}`),
+      journalTrie.length > JOURNAL_PREMIERES ? `The ${JOURNAL_PREMIERES} most recent, out of ${journalTrie.length}.` : 'Newest first.'),
   };
 }
 
@@ -348,10 +358,10 @@ function filtresPromesses(promesses) {
   const sujets = [...new Set(promesses.map((p) => p.theme))].sort();
   const js = (x) => String(x).replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/"/g, '&quot;');
   return {
-    partis: [btn('Tous', promesses.length, "setPromParty('tous')", ' active'),
-      ...partis.map((x) => btn(x, n((p) => p.party === x), `setPromParty('${js(x)}')`)),
-      `<button class="qf-btn qf-renvoi" onclick="allerAuxComparateurs()">Médias <span class="qf-n">4</span> ↓</button>`].join(''),
-    sujets: [btn('Tous', promesses.length, "setPromTheme('tous')", ' active'),
+    // Pas de bouton « Médias » : c'étaient les comparateurs de programmes des médias québécois.
+    partis: [btn('All', promesses.length, "setPromParty('tous')", ' active'),
+      ...partis.map((x) => btn(x, n((p) => p.party === x), `setPromParty('${js(x)}')`))].join(''),
+    sujets: [btn('All', promesses.length, "setPromTheme('tous')", ' active'),
       ...sujets.map((x) => btn(x, n((p) => p.theme === x), `setPromTheme('${js(x)}')`))].join(''),
   };
 }
@@ -576,7 +586,7 @@ for (const { page, html } of produites) {
     const f = page.fichier;
     const titre = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
     must(titre === page.title, `${f} : <title> inattendu`);
-    must(titre.length <= 65 && titre.endsWith(' — DossierQuébec'), `${f} : le titre doit suivre « Sujet — DossierQuébec » en 65 caractères au plus (${titre.length})`);
+    must(titre.length <= 65 && titre.endsWith(' — Dossier Saskatchewan'), `${f} : le titre doit suivre « Sujet — Dossier Saskatchewan » en 65 caractères au plus (${titre.length})`);
     must(page.desc.length >= 120 && page.desc.length <= 165, `${f} : description de ${page.desc.length} caractères (attendu 120 à 165)`);
     const h1 = html.match(/<h1[\s>][\s\S]*?<\/h1>/g) || [];
     must(h1.length === 1, `${f} : ${h1.length} <h1> (attendu 1)`);
@@ -631,7 +641,8 @@ for (const { page, html } of produites) {
 // volet, un avertissement, et la page SORT du sitemap : ce build tourne dans la chaîne quotidienne
 // de l'Assemblée, et un volet qu'on reverrouille (si une Ville refuse) ou dont les données arrivent
 // abîmées ne doit pas empêcher la publication des votes et des projets de loi du jour.
-const VILLES = ['quebec', 'montreal', 'levis', 'longueuil', 'laval'];
+// Aucun volet municipal en Saskatchewan pour l'instant : la liste est vide, le code reste prêt.
+const VILLES = [];
 const PAGES_VILLE = [
   { page: 'index', frequence: 'daily', priorite: '0.8', jeu: 'decisions' },
   // Chaque ville a son adresse : « Décisions de la Ville de Québec » donne decisions-de-la-ville-de-quebec.

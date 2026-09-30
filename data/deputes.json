@@ -1,6 +1,557 @@
 {
   "source": "https://www.legassembly.sk.ca/mlas/",
-  "scrapedAt": null,
-  "count": 0,
-  "deputes": []
+  "legislature": 30,
+  "scrapedAt": "2026-09-30T23:04:20.726Z",
+  "count": 61,
+  "deputes": [
+    {
+      "name": "Chris Beaudry",
+      "riding": "Kelvington-Wadena",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "chris-beaudry"
+    },
+    {
+      "name": "Carla Beck",
+      "riding": "Regina Lakeview",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "carla-beck"
+    },
+    {
+      "name": "Brent Blakley",
+      "riding": "Regina Wascana Plains",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "brent-blakley"
+    },
+    {
+      "name": "Bhajan Brar",
+      "riding": "Regina Pasqua",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "bhajan-brar"
+    },
+    {
+      "name": "Kim Breckner",
+      "riding": "Saskatoon Riversdale",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "kim-breckner"
+    },
+    {
+      "name": "Terri Bromm",
+      "riding": "Carrot River Valley",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "terri-bromm"
+    },
+    {
+      "name": "Noor Burki",
+      "riding": "Regina Coronation Park",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "noor-burki"
+    },
+    {
+      "name": "Lori Carr",
+      "riding": "Estevan-Big Muddy",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "lori-carr"
+    },
+    {
+      "name": "David Chan",
+      "riding": "Yorkton",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "david-chan"
+    },
+    {
+      "name": "Ken Cheveldayoff",
+      "riding": "Saskatoon Willowgrove",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "ken-cheveldayoff"
+    },
+    {
+      "name": "April ChiefCalf",
+      "riding": "Saskatoon Westview",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "april-chiefcalf"
+    },
+    {
+      "name": "Jared Clarke",
+      "riding": "Regina Walsh Acres",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "jared-clarke"
+    },
+    {
+      "name": "Jeremy Cockrill",
+      "riding": "The Battlefords",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "jeremy-cockrill"
+    },
+    {
+      "name": "Meara Conway",
+      "riding": "Regina Elphinstone-Centre",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "meara-conway"
+    },
+    {
+      "name": "Brad Crassweller",
+      "riding": "White City-Qu'Appelle",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "brad-crassweller"
+    },
+    {
+      "name": "Kim Gartner",
+      "riding": "Kindersley-Biggar",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "kim-gartner"
+    },
+    {
+      "name": "Hugh Gordon",
+      "riding": "Saskatoon Silverspring",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "hugh-gordon"
+    },
+    {
+      "name": "Todd Goudy",
+      "riding": "Melfort",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "todd-goudy"
+    },
+    {
+      "name": "Tajinder Grewal",
+      "riding": "Saskatoon University-Sutherland",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "tajinder-grewal"
+    },
+    {
+      "name": "Daryl Harrison",
+      "riding": "Cannington",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "daryl-harrison"
+    },
+    {
+      "name": "Jeremy Harrison",
+      "riding": "Meadow Lake",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "jeremy-harrison"
+    },
+    {
+      "name": "Racquel Hilbert",
+      "riding": "Humboldt-Watrous",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "racquel-hilbert"
+    },
+    {
+      "name": "Everett Hindley",
+      "riding": "Swift Current",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "everett-hindley"
+    },
+    {
+      "name": "Sally Housser",
+      "riding": "Regina University",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "sally-housser"
+    },
+    {
+      "name": "Terry Jenson",
+      "riding": "Warman",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "terry-jenson"
+    },
+    {
+      "name": "Keith Jorgenson",
+      "riding": "Saskatoon Churchill-Wildwood",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "keith-jorgenson"
+    },
+    {
+      "name": "Warren Kaeding",
+      "riding": "Melville-Saltcoats",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "warren-kaeding"
+    },
+    {
+      "name": "Kevin Kasun",
+      "riding": "Prince Albert Carlton",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "kevin-kasun"
+    },
+    {
+      "name": "Travis Keisig",
+      "riding": "Last Mountain-Touchwood",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "travis-keisig"
+    },
+    {
+      "name": "Barret Kropf",
+      "riding": "Dakota-Arm River",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "barret-kropf"
+    },
+    {
+      "name": "Leroy Laliberte",
+      "riding": "Athabasca",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "leroy-laliberte"
+    },
+    {
+      "name": "Matt Love",
+      "riding": "Saskatoon Eastview",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "matt-love"
+    },
+    {
+      "name": "David Marit",
+      "riding": "Wood River",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "david-marit"
+    },
+    {
+      "name": "Jamie Martens",
+      "riding": "Martensville-Blairmore",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "jamie-martens"
+    },
+    {
+      "name": "Don McBean",
+      "riding": "Saskatoon Chief Mistawasis",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "don-mcbean"
+    },
+    {
+      "name": "Blaine McLeod",
+      "riding": "Lumsden-Morse",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "blaine-mcleod"
+    },
+    {
+      "name": "Tim McLeod",
+      "riding": "Moose Jaw North",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "tim-mcleod"
+    },
+    {
+      "name": "Jordan McPhail",
+      "riding": "Cumberland",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "jordan-mcphail"
+    },
+    {
+      "name": "Scott Moe",
+      "riding": "Rosthern-Shellbrook",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "scott-moe"
+    },
+    {
+      "name": "Vicki Mowat",
+      "riding": "Saskatoon Fairview",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "vicki-mowat"
+    },
+    {
+      "name": "Betty Nippi-Albright",
+      "riding": "Saskatoon Centre",
+      "region": null,
+      "party": "IND",
+      "partyFull": "Independent",
+      "caucus": "Independent",
+      "id": "betty-nippi-albright"
+    },
+    {
+      "name": "Megan Patterson",
+      "riding": "Moose Jaw Wakamow",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "megan-patterson"
+    },
+    {
+      "name": "Joan Pratchler",
+      "riding": "Regina Rochdale",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "joan-pratchler"
+    },
+    {
+      "name": "Jim Reiter",
+      "riding": "Rosetown-Delisle",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "jim-reiter"
+    },
+    {
+      "name": "Erika Ritchie",
+      "riding": "Saskatoon Nutana",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "erika-ritchie"
+    },
+    {
+      "name": "Alana Ross",
+      "riding": "Prince Albert Northcote",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "alana-ross"
+    },
+    {
+      "name": "Darlene Rowden",
+      "riding": "Batoche",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "darlene-rowden"
+    },
+    {
+      "name": "Jacqueline Roy",
+      "riding": "Regina Northeast",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "jacqueline-roy"
+    },
+    {
+      "name": "Nicole Sarauer",
+      "riding": "Regina Douglas Park",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "nicole-sarauer"
+    },
+    {
+      "name": "Eric Schmalz",
+      "riding": "Saskatchewan Rivers",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "eric-schmalz"
+    },
+    {
+      "name": "Brittney Senger",
+      "riding": "Saskatoon Southeast",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "brittney-senger"
+    },
+    {
+      "name": "Doug Steele",
+      "riding": "Cypress Hills",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "doug-steele"
+    },
+    {
+      "name": "Nathaniel Teed",
+      "riding": "Saskatoon Meewasin",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "nathaniel-teed"
+    },
+    {
+      "name": "James Thorsteinson",
+      "riding": "Cut Knife-Turtleford",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "james-thorsteinson"
+    },
+    {
+      "name": "Darcy Warrington",
+      "riding": "Saskatoon Stonebridge",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "darcy-warrington"
+    },
+    {
+      "name": "Kevin Weedmark",
+      "riding": "Moosomin-Montmartre",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "kevin-weedmark"
+    },
+    {
+      "name": "Michael Weger",
+      "riding": "Weyburn-Bengough",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "michael-weger"
+    },
+    {
+      "name": "Sean Wilson",
+      "riding": "Canora-Pelly",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "sean-wilson"
+    },
+    {
+      "name": "Trent Wotherspoon",
+      "riding": "Regina Mount Royal",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "trent-wotherspoon"
+    },
+    {
+      "name": "Aleana Young",
+      "riding": "Regina South Albert",
+      "region": null,
+      "party": "NDP",
+      "partyFull": "Saskatchewan New Democratic Party",
+      "caucus": "Opposition Caucus",
+      "id": "aleana-young"
+    },
+    {
+      "name": "Colleen Young",
+      "riding": "Lloydminster",
+      "region": null,
+      "party": "SKP",
+      "partyFull": "Saskatchewan Party",
+      "caucus": "Government Caucus",
+      "id": "colleen-young"
+    }
+  ]
 }

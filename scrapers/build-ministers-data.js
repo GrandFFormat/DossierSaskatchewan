@@ -26,7 +26,7 @@ function main() {
     throw new Error(`Marqueurs MINISTERS_DATA_START/END introuvables dans ${HTML_PATH}`);
   }
 
-  const block = `${START_MARKER} — généré automatiquement par scrapers/build-ministers-data.js\n   à partir de data/ministers.json (voir scrapers/ministers.js). Scrapé en direct\n   depuis quebec.ca/premiere-ministre/equipe/conseil-des-ministres. Ne pas éditer\n   ce bloc à la main. */\nconst ministers = [\n${rows}\n];\n`;
+  const block = `${START_MARKER} — généré automatiquement par scrapers/build-ministers-data.js\n   à partir de data/ministers.json (voir scrapers/ministers.js). Lu chaque jour\n   sur saskatchewan.ca (page Cabinet, anglais et français officiels). Ne pas éditer\n   ce bloc à la main. */\nconst ministers = [\n${rows}\n];\n`;
 
   // `html.slice(endIdx)` (et non endIdx + END_MARKER.length) : on CONSERVE le
   // marqueur END, sinon on le supprimerait et la prochaine exécution planterait
