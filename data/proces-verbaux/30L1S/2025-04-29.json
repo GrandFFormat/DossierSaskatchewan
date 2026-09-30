@@ -1,0 +1,21 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-29",
+ "numero": 30,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250429Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250429Minutes.pdf",
+ "version": "20250429230812",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 21
+  },
+  {
+   "type": "renvoi",
+   "bill": 21,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,26 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-12",
+ "numero": 11,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251112Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251112Minutes.pdf",
+ "version": "20251113001742",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 36,
+   "titre": "The Change of Name Amendment Act, 2025",
+   "titreFr": "Loi modificative de 2025 sur le changement de nom",
+   "parrain": "Jeremy Cockrill"
+  },
+  {
+   "type": "premiere",
+   "bill": 37,
+   "titre": "The Vital Statistics Amendment Act, 2025",
+   "titreFr": "Loi modificative de 2025 sur les services de l'état civil",
+   "parrain": "Jeremy Cockrill"
+  }
+ ],
+ "divisions": []
+}

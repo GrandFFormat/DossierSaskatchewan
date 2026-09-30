@@ -1,0 +1,48 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-20",
+ "numero": 50,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260420Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260420Minutes.pdf",
+ "version": "20260421001007",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 49
+  },
+  {
+   "type": "renvoi",
+   "bill": 49,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 50
+  },
+  {
+   "type": "renvoi",
+   "bill": 50,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 51
+  },
+  {
+   "type": "renvoi",
+   "bill": 51,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 53
+  },
+  {
+   "type": "renvoi",
+   "bill": 53,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  }
+ ],
+ "divisions": []
+}

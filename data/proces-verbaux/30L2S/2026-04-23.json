@@ -1,0 +1,62 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-23",
+ "numero": 53,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260423Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260423Minutes.pdf",
+ "version": "20260423224811",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "rapport",
+   "bill": 24,
+   "comite": "Standing Committee on the Economy",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 24
+  },
+  {
+   "type": "rapport",
+   "bill": 33,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 33
+  },
+  {
+   "type": "rapport",
+   "bill": 47,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 47
+  },
+  {
+   "type": "rapport",
+   "bill": 45,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 45
+  },
+  {
+   "type": "rapport",
+   "bill": 44,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 44
+  }
+ ],
+ "divisions": []
+}

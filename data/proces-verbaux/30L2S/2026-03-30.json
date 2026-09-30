@@ -1,0 +1,62 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-30",
+ "numero": 42,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260330Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260330Minutes.pdf",
+ "version": "20260401165108",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 24
+  },
+  {
+   "type": "renvoi",
+   "bill": 24,
+   "comite": "Standing Committee on the Economy"
+  },
+  {
+   "type": "retire",
+   "bill": 605,
+   "motif": "decision"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 33
+  },
+  {
+   "type": "renvoi",
+   "bill": 33,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 40
+  },
+  {
+   "type": "renvoi",
+   "bill": 40,
+   "comite": "Standing Committee on the Economy"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 44
+  },
+  {
+   "type": "renvoi",
+   "bill": 44,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 45
+  },
+  {
+   "type": "renvoi",
+   "bill": 45,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

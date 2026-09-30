@@ -1,0 +1,30 @@
+{
+ "session": "30L2S",
+ "date": "2026-05-04",
+ "numero": 58,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260504Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260504Minutes.pdf",
+ "version": "20260505033337",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 48
+  },
+  {
+   "type": "renvoi",
+   "bill": 48,
+   "comite": "Standing Committee on Human Services"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 57
+  },
+  {
+   "type": "renvoi",
+   "bill": 57,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  }
+ ],
+ "divisions": []
+}

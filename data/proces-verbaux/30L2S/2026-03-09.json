@@ -1,0 +1,21 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-09",
+ "numero": 30,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260309Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260309Minutes.pdf",
+ "version": "20260310143920",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 35
+  },
+  {
+   "type": "renvoi",
+   "bill": 35,
+   "comite": "Standing Committee on the Economy"
+  }
+ ],
+ "divisions": []
+}

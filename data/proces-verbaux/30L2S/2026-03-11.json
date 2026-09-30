@@ -1,0 +1,39 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-11",
+ "numero": 32,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260311Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260311Minutes.pdf",
+ "version": "20260312004846",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 614,
+   "titre": "The Saskatchewan Medical Care Insurance (Banning Private Fees) Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  },
+  {
+   "type": "rapport",
+   "bill": 30,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 30
+  },
+  {
+   "type": "rapport",
+   "bill": 42,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice",
+   "amende": true
+  },
+  {
+   "type": "troisieme",
+   "bill": 42
+  }
+ ],
+ "divisions": []
+}

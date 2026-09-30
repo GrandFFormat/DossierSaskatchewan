@@ -90,6 +90,7 @@ const translations = {
     'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Ministres",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
     'cal.status':"● L'Assemblée reprend le 27 octobre 2026 · 3e session de la 30e législature",
+    'etape.1':"Dépôt", 'etape.2':"Débat et comité", 'etape.3':"Adoption / Sanction",
     'h.composition':"Composition — 61 sièges",
     'h.billsrecent':"Projets de loi récemment actifs",
     'h.ministres':"Ministres et député·e·s",
@@ -418,6 +419,7 @@ const translations = {
     'trouve.info':"These 61 entries come directly from the official list of sitting MLAs at the Legislative Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update.",
     // What's new / calendar
     'cal.status':"● The Assembly returns on October 27, 2026 · third session of the 30th Legislature",
+    'etape.1':"First reading", 'etape.2':"Debate and committee", 'etape.3':"Third reading / Assent",
     'cal.title':"Sitting calendar",
     // Dissolution de la 43e législature (2026-08-27) — à retirer le 17 nov. 2026.
     'diss.h':"⚠️ The Assembly is dissolved — election October 5",
@@ -879,12 +881,12 @@ const seats = [
 
 
 // Stepper simplifié à 3 étapes pour l'affichage. Les données gardent la pleine
-// granularité officielle (b.step de 1 à 5, régénéré chaque jour par les scrapers) ;
-// displayStep() replie « Adoption du principe » (2) et « Prise en considération » (4)
-// dans « Étude détaillée » — assez précis pour un lecteur pressé, et le détail réel
-// reste visible dans la note de chaque carte (« Adoption du principe le … »).
-const steps = ['Présentation','Étude détaillée','Adoption / Sanction'];
-const stepsEn = ['Introduction','Detailed study','Passage / Assent'];
+// granularité officielle (b.step de 1 à 5, lue chaque jour dans les procès-verbaux :
+// 1 première lecture, 2 deuxième lecture, 3 renvoi en comité, 4 rapport du comité,
+// 5 troisième lecture ou sanction) ; displayStep() replie 2 à 4 dans « Débat et comité ».
+// Le détail réel reste dans la note de chaque carte (« Reported by committee on … »).
+const steps = ['Dépôt','Débat et comité','Adoption / Sanction'];
+const stepsEn = ['First reading','Debate and committee','Third reading / Assent'];
 function displayStep(step){
   if(step === null || step === undefined) return step;
   return step <= 1 ? 1 : (step >= 5 ? 3 : 2);
@@ -1016,12 +1018,11 @@ async function toggleFollowBill(billId, btnId){
 const libelleSuivreLoi = (suivi, isEn) => suivi
   ? (isEn ? '★ Following — stop' : '★ Suivi — retirer')
   : (isEn ? '☆ Follow this bill' : '☆ Suivre ce projet de loi');
-// Un projet de loi « vivant » : pas de dissolution en cours, ET de la législature en cours. Le
-// 17 nov. 2026, dissolved repasse à false alors que bills.json porte encore les 143 projets de la
-// 43e, tous morts le 27 août, jusqu'à ce que Données Québec publie le premier de la 44e. Aucun
-// projet de la 43e n'a d'activité après la dissolution ; tout projet de la 44e en a une après
-// newLegislatureOn.
-const loiVivante = (b) => !ASSEMBLY.dissolved && String(b.lastActivity || '') >= ASSEMBLY.newLegislatureOn;
+// Un projet de loi « vivant » : pas de dissolution en cours, et ni mort au Feuilleton (sa session
+// est finie), ni rejeté, ni retiré. En Saskatchewan, un projet meurt à la fin de SA SESSION :
+// scrapers/bills.js le marque « mort » dès que la session suivante a un procès-verbal. (DQ
+// comparait la date d'activité à celle de la nouvelle législature, qui n'existe pas ici.)
+const loiVivante = (b) => !ASSEMBLY.dissolved && !['mort', 'rejete', 'retire'].includes(b.status);
 
 // Un projet se « challenge » tant qu'il n'est pas devenu loi.
 //
@@ -1750,7 +1751,7 @@ function renderPromises(){
 
 /* ---------------- RENDER ---------------- */
 const mailIconSvg = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>';
-const deputesDirectoryUrl = 'https://www.assnat.qc.ca/fr/deputes/index.html';
+const deputesDirectoryUrl = 'https://www.legassembly.sk.ca/mlas/';
 
 
 
@@ -2059,20 +2060,23 @@ function renderPetitions(targetId){
     return;
   }
   if(petitions.length === 0){
+    // Saskatchewan : pas de pétition électronique. Les pétitions se signent sur papier, avec
+    // signatures originales, et un·e député·e les dépose ; le procès-verbal en reprend la
+    // demande, sans le nombre de signatures (guide pratique de l'Assemblée, oct. 2024).
     const emptyMsg = isEn
-      ? "I couldn't retrieve the real list of open petitions — the official page loads its content dynamically, like the vote registry. Rather than invent petitions, I'm leaving this tab empty for now. Use the link below to see the real petitions right now."
-      : "Je n'ai pas pu récupérer la vraie liste des pétitions ouvertes — la page officielle charge son contenu dynamiquement, comme le registre des votes. Plutôt que d'inventer des pétitions, je laisse cet onglet vide pour l'instant. Utilisez le lien ci-dessous pour voir les vraies pétitions en ce moment.";
-    const emptyLinkText = isEn ? "See the real open petitions on assnat.qc.ca →" : "Voir les vraies pétitions ouvertes sur assnat.qc.ca →";
-    const emptyUrl = isEn ? "https://www.assnat.qc.ca/en/exprimez-votre-opinion/petition/signer-petition/index.html" : "https://www.assnat.qc.ca/fr/exprimez-votre-opinion/petition/signer-petition/index.html";
+      ? "In Saskatchewan, petitions are signed on paper only — the Assembly does not accept electronic petitions. An MLA presents them in the House, and the official minutes record what each petition asks for, but not how many people signed. That is why there is no list of petitions to sign here."
+      : "En Saskatchewan, les pétitions se signent sur papier seulement : l'Assemblée n'accepte pas de pétition électronique. Un·e député·e les dépose en Chambre, et le procès-verbal note ce que chacune demande, mais pas combien de personnes l'ont signée. C'est pourquoi il n'y a pas ici de liste de pétitions à signer.";
+    const emptyLinkText = isEn ? "The Legislative Assembly's guide to petitions →" : "Le guide des pétitions de l'Assemblée législative →";
+    const emptyUrl = "https://www.legassembly.sk.ca/media/xq4ddcwt/practical-guide-to-petitions-october-2024-v10.pdf";
     el.innerHTML = `<div class="no-results">${emptyMsg}</div>
     <a class="bill-more" href="${emptyUrl}" target="_blank" rel="noopener" style="display:inline-block; margin-top:12px;">${emptyLinkText}</a>`;
     return;
   }
-  const sponsorLabel = isEn ? "Sponsoring MNA" : "Députée ou député intermédiaire";
+  const sponsorLabel = isEn ? "Presenting MLA" : "Député·e qui la dépose";
   const openLabel = isEn ? "Open from" : "Ouverte du";
   const toLabel = isEn ? "to" : "au";
   const signatureLabel = isEn ? "signature" : "signature";
-  const viewSignLabel = isEn ? "Find and sign on assnat.qc.ca →" : "Trouver et signer sur assnat.qc.ca →";
+  const viewSignLabel = isEn ? "See it on legassembly.sk.ca →" : "La voir sur legassembly.sk.ca →";
   const moreLabel = isEn ? "+ Show 3 more" : "+ Voir 3 de plus";
   const sorted = petitions.slice().sort((a,b)=>b.count-a.count);
   const list = sorted.slice(0, petitionsShown);
@@ -2163,7 +2167,7 @@ function renderDeputes(filter){
       ${g.members.map(d => {
         const email = findDeputeEmail(d.name);
         const mailHref = email ? 'mailto:'+email : deputesDirectoryUrl;
-        const mailText = email ? email : (isEn ? 'Official email on assnat.qc.ca' : 'Courriel officiel sur assnat.qc.ca');
+        const mailText = email ? email : (isEn ? 'Contact details on legassembly.sk.ca' : 'Coordonnées sur legassembly.sk.ca');
         const followKey = d.name + '|' + d.riding;
         const isFollowed = !!followedDeputes[followKey];
         const att = attendanceForAssnatId(d.assnatId);
@@ -2206,7 +2210,7 @@ function personCard(p){
   const party = isMin ? p.m.party : p.d.party;
   const email = findDeputeEmail(name);
   const mailHref = email ? 'mailto:'+email : deputesDirectoryUrl;
-  const mailTitle = email ? email : (isEn ? 'Find the official email on assnat.qc.ca' : 'Trouver le courriel officiel sur assnat.qc.ca');
+  const mailTitle = email ? email : (isEn ? 'Find the contact details on legassembly.sk.ca' : 'Trouver les coordonnées sur legassembly.sk.ca');
   const followKey = isMin ? name : (p.d.name + '|' + p.d.riding);
   const isFollowed = isMin ? !!followed[name] : !!followedDeputes[followKey];
   const followOnclick = isMin
@@ -2246,7 +2250,7 @@ function personCard(p){
         <div class="m-row"><span class="m-label">${labels.riding}</span><span class="m-val">${riding}</span></div>
         <div class="m-row"><span class="m-label">${labels.att}</span><span class="m-val m-val-blue" title="${attTitle}">${attShort}</span></div>
         <div class="m-row"><span class="m-label">${labels.bills}</span><span class="m-val">${plCount}</span></div>
-        <a class="m-mail" href="${mailHref}" ${email ? '' : 'target="_blank" rel="noopener"'} onclick="event.stopPropagation()" title="${mailTitle}">✉ ${email ? email : (isEn ? 'Official email on assnat.qc.ca' : 'Courriel officiel sur assnat.qc.ca')}</a>
+        <a class="m-mail" href="${mailHref}" ${email ? '' : 'target="_blank" rel="noopener"'} onclick="event.stopPropagation()" title="${mailTitle}">✉ ${email ? email : (isEn ? 'Contact details on legassembly.sk.ca' : 'Coordonnées sur legassembly.sk.ca')}</a>
       </div>
     </div>
   `;
@@ -2498,6 +2502,17 @@ function statusLabel(s, step){
       ? (isEn ? 'Dead on arrival' : 'Mort dans l\'œuf')
       : (isEn ? 'Died along the way' : 'Tombé en cours de route');
   }
+  // Saskatchewan : un projet non sanctionné meurt à la fin de sa SESSION (prorogation), pas
+  // seulement à la dissolution. Même langage clair, selon l'étape atteinte.
+  if(s === 'mort'){
+    if(step === undefined || step === null) return isEn ? 'Not passed' : 'Non adopté';
+    return (step <= 1)
+      ? (isEn ? 'Dead on arrival' : 'Mort dans l\'œuf')
+      : (isEn ? 'Died along the way' : 'Tombé en cours de route');
+  }
+  // Rejeté par un vote de l'Assemblée ; retiré du Feuilleton par décision du président.
+  if(s === 'rejete') return isEn ? 'Defeated' : 'Rejeté';
+  if(s === 'retire') return isEn ? 'Removed' : 'Retiré';
   if(isEn){
     return s==='sanctionne' ? 'Assented to' : s==='laisse_de_cote' ? 'On ice' : 'Under review';
   }
@@ -2505,6 +2520,7 @@ function statusLabel(s, step){
 }
 function statusClass(s){
   if(ASSEMBLY.dissolved && s !== 'sanctionne') return 'status-mort';
+  if(s === 'mort' || s === 'rejete' || s === 'retire') return 'status-mort';
   return s==='sanctionne' ? 'status-sanctionne' : s==='laisse_de_cote' ? 'status-glace' : 'status-encours';
 }
 
@@ -2774,7 +2790,7 @@ function toggleBillVotes(id){
 let billsStatusFilter = '';
 let billsStepFilter = null;
 let billsSortDir = 'desc';
-const billsStatusOrder = ['sanctionne','encours','laisse_de_cote'];
+const billsStatusOrder = ['sanctionne','encours','mort','rejete','retire'];
 
 function renderStatusFilters(){
   if(!document.getElementById('statusFilters')) return;   // vue absente de cette page
@@ -3528,19 +3544,25 @@ function renderVotes(keyword){
 
   const el = document.getElementById('votesList');
   el.innerHTML = list.length ? list.map(v=>{
-    const total = v.totals.pour + v.totals.contre + v.totals.abstentions;
+    // La Saskatchewan ne consigne pas d'abstention : totals.abstentions vaut null, et la case
+    // disparaît (afficher « 0 abstention » laisserait croire qu'on l'a mesuré).
+    const avecAbst = v.totals.abstentions !== null && v.totals.abstentions !== undefined;
+    const total = v.totals.pour + v.totals.contre + (v.totals.abstentions || 0);
     const bill = v.billId ? bills.find(b=>b.id===v.billId) : null;
+    const stage = isEn ? v.stage : (v.stageFr || v.stage);
     const title = bill ? (isEn ? (bill.titleEn||bill.title) : bill.title) : v.subject;
     const domId = 'nominal-' + v.id;
     const wrapId = `votecard-${v.id}`;
     const whoLabel = isEn ? 'who voted what' : 'qui a voté quoi';
-    const numLine = (v.billNum ? `${billLabel} ${v.billNum} — ` : '') + (v.stage ? v.stage + ' — ' : '') + v.date;
+    const numLine = (v.billNum ? `${billLabel} ${v.billNum} — ` : '') + (stage ? stage + ' — ' : '') + v.date;
     const sponsorParty_ = bill && bill.sponsor ? sponsorParty(bill.sponsor) : null;
     const sponsorBadge = sponsorParty_ ? `<span class="depute-party" style="background:${partyColors[sponsorParty_]}; color:${partyText(sponsorParty_)}">${sponsorParty_}</span>` : '';
     const sponsorLine = bill && bill.sponsor ? `<div class="meta">${sponsorLabel} : ${bill.sponsor} ${sponsorBadge}</div>` : '';
-    const isAdopted = v.totals.pour > v.totals.contre;
-    const headTitle = (v.stage ? v.stage + ' — ' : '') + (v.billNum ? `${isEn ? 'Bill' : 'PL'} ${v.billNum}, ` : '') + title;
-    const metaLine = `${v.date} · ${isEn ? 'Recorded division' : 'Vote nominal'}${v.stage ? ' · ' + v.stage : ''}`;
+    // Le résultat écrit au procès-verbal (« agreed to » / « negatived ») quand on l'a ; sinon
+    // les chiffres.
+    const isAdopted = v.result ? v.result === 'adopte' : v.totals.pour > v.totals.contre;
+    const headTitle = (stage ? stage + ' — ' : '') + (v.billNum ? `${isEn ? 'Bill' : 'PL'} ${v.billNum}, ` : '') + title;
+    const metaLine = `${v.date} · ${isEn ? 'Recorded division' : 'Vote nominal'}${stage ? ' · ' + stage : ''}`;
     const seg = (g) => total ? (v.totals[g]/total*100).toFixed(1) : 0;
 
     return `
@@ -3554,7 +3576,7 @@ function renderVotes(keyword){
           <div class="vc-counts">
             <span class="vcc pour"><b>${v.totals.pour}</b> ${isEn?'yea':'pour'}</span>
             <span class="vcc contre"><b>${v.totals.contre}</b> ${isEn?'nay':'contre'}</span>
-            <span class="vcc abst"><b>${v.totals.abstentions}</b> ${isEn?'abst.':'abst.'}</span>
+            ${avecAbst ? `<span class="vcc abst"><b>${v.totals.abstentions}</b> ${isEn?'abst.':'abst.'}</span>` : ''}
           </div>
           <span class="vc-toggle" id="vctog-vc-${v.id}">+</span>
         </div>
@@ -3567,8 +3589,10 @@ function renderVotes(keyword){
           <div class="vc-pgrid"></div>
           <div class="vc-ncols"></div>
           <div class="vc-foot">
-            <span class="vc-foot-note">${isEn ? 'An abstention is not a « no » vote — mission, illness, scheduling.' : 'Une abstention n\'est pas un vote « non » — mission, maladie, horaire.'}</span>
-            <a class="bill-more" href="${v.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${isEn ? 'Full record → assnat.qc.ca' : 'Procès-verbal complet → assnat.qc.ca'}</a>
+            <span class="vc-foot-note">${avecAbst
+              ? (isEn ? 'An abstention is not a « no » vote — mission, illness, scheduling.' : 'Une abstention n\'est pas un vote « non » — mission, maladie, horaire.')
+              : (isEn ? 'The Assembly does not record abstentions: an MLA who does not vote is simply not listed — which can mean a mission, an illness, a scheduling conflict.' : 'L\'Assemblée ne consigne pas d\'abstention : qui ne vote pas n\'est simplement pas nommé — mission, maladie, horaire.')}</span>
+            <a class="bill-more" href="${v.url}" target="_blank" rel="noopener" onclick="event.stopPropagation()">${isEn ? 'Official minutes → legassembly.sk.ca' : 'Procès-verbal officiel → legassembly.sk.ca'}</a>
           </div>
         </div>
       </div>
@@ -3609,25 +3633,33 @@ async function nominalDuVote(voteId){
 function contenuNominal(v, nominal, isEn){
   // Boîtes par parti : une par parti RÉELLEMENT présent dans ce vote
   // (Pour/Contre/Abstentions comptés sur le détail nominatif officiel).
+  // Sans abstentions consignées (Saskatchewan), ni ligne ni colonne « Abstentions ».
+  const avecAbst = v.totals.abstentions !== null && v.totals.abstentions !== undefined;
+  const camps = avecAbst ? ['pour','contre','abstentions'] : ['pour','contre'];
+  // Un parti inconnu ce jour-là (changement de caucus le jour même du vote : voir
+  // scrapers/sk-changements-caucus.js) est regroupé sous « non attribué », jamais deviné.
+  const SANS = '—';
   const perParty = {};
-  ['pour','contre','abstentions'].forEach(g => (nominal[g]||[]).forEach(([id,party])=>{
-    (perParty[party] = perParty[party] || {pour:0, contre:0, abstentions:0})[g]++;
+  camps.forEach(g => (nominal[g]||[]).forEach(([id,party])=>{
+    const cle = party || SANS;
+    (perParty[cle] = perParty[cle] || {pour:0, contre:0, abstentions:0})[g]++;
   }));
   const partiesPresent = Object.keys(partyColors).filter(p => perParty[p])
     .concat(Object.keys(perParty).filter(p => !(p in partyColors)));
+  const etiquette = (p) => p === SANS ? (isEn ? 'Party not assigned' : 'Parti non attribué') : p;
   const partyBoxes = partiesPresent.map(p => `
     <div class="vc-pbox">
-      <div class="vc-phead" style="background:${partyColors[p]||'#999'}; color:${partyText(p)}">${p}</div>
+      <div class="vc-phead" style="background:${partyColors[p]||'#999'}; color:${partyText(p)}">${etiquette(p)}</div>
       <div class="vc-pbody">
         <div class="vc-prow"><span style="color:var(--green)">${isEn?'Yea':'Pour'}</span><b>${perParty[p].pour}</b></div>
         <div class="vc-prow"><span style="color:var(--red)">${isEn?'Nay':'Contre'}</span><b>${perParty[p].contre}</b></div>
-        <div class="vc-prow"><span style="color:var(--slate)">${isEn?'Abst.':'Abst.'}</span><b>${perParty[p].abstentions}</b></div>
+        ${avecAbst ? `<div class="vc-prow"><span style="color:var(--slate)">${isEn?'Abst.':'Abst.'}</span><b>${perParty[p].abstentions}</b></div>` : ''}
       </div>
     </div>`).join('');
 
-  // 3 colonnes nominatives défilables (nom + pastille de parti)
+  // Les colonnes nominatives défilables (nom + pastille de parti)
   const heads = isEn ? ['Yea','Nay','Abstentions'] : ['Pour','Contre','Abstentions'];
-  const nominalCols = ['pour','contre','abstentions'].map((g,i)=>{
+  const nominalCols = camps.map((g,i)=>{
     const pairs = nominal[g] || [];
     const cls = ['pour','contre','abst'][i];
     const body = pairs.length ? pairs.map(([id,party])=>{

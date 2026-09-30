@@ -1,0 +1,29 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-25",
+ "numero": 18,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251125Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251125Minutes.pdf",
+ "version": "20251126164534",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 42,
+   "titre": "The Saskatchewan Firearms Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "rapport",
+   "bill": 25,
+   "comite": "Standing Committee on Crown and Central Agencies",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 25
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,19 @@
+{
+ "session": "30L1S",
+ "date": "2024-12-03",
+ "numero": 6,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241203Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241203Minutes.pdf",
+ "version": "20241204042250",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 2,
+   "titre": "The SaskEnergy (Carbon Tax Fairness for Families) Amendment Act, 2024",
+   "titreFr": null,
+   "parrain": "Jeremy Harrison"
+  }
+ ],
+ "divisions": []
+}

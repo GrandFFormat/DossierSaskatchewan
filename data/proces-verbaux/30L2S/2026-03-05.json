@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-05",
+ "numero": 29,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260305Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260305Minutes.pdf",
+ "version": "20260310143956",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 612,
+   "titre": "The Lower Power Bills and Car Insurance Act",
+   "titreFr": null,
+   "parrain": "Aleana Young"
+  }
+ ],
+ "divisions": []
+}

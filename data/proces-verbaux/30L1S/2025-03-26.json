@@ -1,0 +1,33 @@
+{
+ "session": "30L1S",
+ "date": "2025-03-26",
+ "numero": 15,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250326Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250326Minutes.pdf",
+ "version": "20250327014957",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 17,
+   "titre": "The Saskatchewan Commercial Innovation Incentive (Patent Box) Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Warren Kaeding"
+  },
+  {
+   "type": "premiere",
+   "bill": 18,
+   "titre": "The Regulated Health Professions Act",
+   "titreFr": null,
+   "parrain": "Jeremy Cockrill"
+  },
+  {
+   "type": "premiere",
+   "bill": 19,
+   "titre": "The Regulated Health Professions Consequential Amendments Act, 2025",
+   "titreFr": "Loi de 2025 corrélative de la loi intitulée The Regulated Health Professions Act",
+   "parrain": "Jeremy Cockrill"
+  }
+ ],
+ "divisions": []
+}

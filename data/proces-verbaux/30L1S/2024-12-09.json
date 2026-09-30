@@ -1,0 +1,55 @@
+{
+ "session": "30L1S",
+ "date": "2024-12-09",
+ "numero": 9,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241209Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241209Minutes.pdf",
+ "version": "20241212224537",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 8,
+   "titre": "The Child Care (New Facilities) Amendment Act, 2024",
+   "titreFr": "Loi modificative de 2024 sur les garderies d'enfants (nouveaux établissements)",
+   "parrain": "Everett Hindley"
+  },
+  {
+   "type": "premiere",
+   "bill": 9,
+   "titre": "The Traffic Safety Amendment Act, 2024",
+   "titreFr": null,
+   "parrain": "Jeremy Harrison"
+  },
+  {
+   "type": "premiere",
+   "bill": 10,
+   "titre": "The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 11,
+   "titre": "The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024 (No. 2)",
+   "titreFr": "Loi modificative diverse (amélioration des registres publics) de 2024 (no 2)",
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 12,
+   "titre": "The Appropriation Act, 2024 (No. 2)",
+   "titreFr": null,
+   "parrain": "Jeremy Harrison"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 12
+  },
+  {
+   "type": "troisieme",
+   "bill": 12
+  }
+ ],
+ "divisions": []
+}

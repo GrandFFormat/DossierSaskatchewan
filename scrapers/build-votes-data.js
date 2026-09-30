@@ -42,9 +42,9 @@ const HTML_PATH = 'gabarit.html';   // le MODÈLE, jamais servi : les pages en s
 const START_MARKER = '/* VOTES_DATA_START */';
 const END_MARKER = '/* VOTES_DATA_END */';
 
-// Les partis pris en compte pour juger qu'un vote « divise ». Même liste que
-// celle qui vivait dans commun/dq.js.
-const PARTIS = ['CAQ', 'PLQ', 'QS', 'PQ', 'PCQ'];
+// Les partis pris en compte pour juger qu'un vote « divise » : les deux caucus de
+// l'Assemblée (une personne indépendante ne fait pas un parti).
+const PARTIS = ['SKP', 'NDP'];
 
 // Un vote divise quand les partis ne penchent pas tous du même côté. Le camp
 // d'un parti est celui où il a le plus de voix ; à égalité, c'est l'ordre
@@ -166,6 +166,8 @@ function main() {
       id: `${v.session}-${v.num}`,
       date: v.date,
       stage: v.stage,
+      stageFr: v.stageFr ?? null,
+      result: v.result ?? null,
       subject: v.subject,
       billNum: v.billNum,
       billId: bill ? bill.id : null,
@@ -208,7 +210,7 @@ function main() {
   console.log(`${out.length} votes injectés dans ${HTML_PATH} — ${koPage} ko dans la page.`);
   console.log(`  détail nominatif sorti : ${koNominal} ko dans ${fichiers.total} fichiers (${fichiers.ecrits} écrit(s), ${fichiers.retires} retiré(s))`);
   console.log(`  agrégats précalculés : ${out.filter((v) => v.divise).length} votes divisés, ${Object.keys(presences).length} taux de présence`);
-  console.log(`  ${matched} rapprochés à un projet de loi connu, ${unmatchedWithBillNum} avec un n° de PL mais aucune correspondance dans bills.json (probablement hors du jeu de données Données Québec — pas de donnée inventée).`);
+  console.log(`  ${matched} rapprochés à un projet de loi connu, ${unmatchedWithBillNum} avec un n° de PL mais aucune correspondance dans bills.json (pas de donnée inventée : le vote reste sans lien).`);
 }
 
 main();

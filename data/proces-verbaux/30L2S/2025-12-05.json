@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2025-12-05",
+ "numero": 25,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251205Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251205Minutes.pdf",
+ "version": "20251205194126",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 48,
+   "titre": "The Compassionate Intervention Act",
+   "titreFr": null,
+   "parrain": "Lori Carr"
+  }
+ ],
+ "divisions": []
+}

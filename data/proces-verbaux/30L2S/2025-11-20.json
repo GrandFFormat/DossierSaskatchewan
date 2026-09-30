@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-20",
+ "numero": 16,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251120Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251120Minutes.pdf",
+ "version": "20251121151752",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 41,
+   "titre": "The Heritage Recognition (From Many Peoples, Strength) Act",
+   "titreFr": "Loi sur la reconnaissance du patrimoine (Nos origines multiples, notre force)",
+   "parrain": "Alana Ross"
+  }
+ ],
+ "divisions": []
+}

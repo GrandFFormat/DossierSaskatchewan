@@ -1,0 +1,26 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-05",
+ "numero": 9,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251105Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251105Minutes.pdf",
+ "version": "20251113181037",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 33,
+   "titre": "The Credit Union Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 607,
+   "titre": "The Fransaskois Community Consultation Act",
+   "titreFr": "Loi de consultation de la communauté fransaskoise",
+   "parrain": "Jacqueline Roy"
+  }
+ ],
+ "divisions": []
+}

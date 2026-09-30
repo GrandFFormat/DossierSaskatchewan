@@ -1,0 +1,27 @@
+{
+ "session": "30L1S",
+ "date": "2024-12-10",
+ "numero": 10,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241210Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20241210Minutes.pdf",
+ "version": "20250114223635",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "sanction",
+   "bill": 1,
+   "titre": "The Saskatchewan Affordability Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 2,
+   "titre": "The SaskEnergy (Carbon Tax Fairness for Families) Amendment Act, 2024"
+  },
+  {
+   "type": "sanction",
+   "bill": 12,
+   "titre": "The Appropriation Act, 2024 (No. 2)"
+  }
+ ],
+ "divisions": []
+}

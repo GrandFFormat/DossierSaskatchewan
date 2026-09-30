@@ -1,0 +1,33 @@
+{
+ "session": "30L2S",
+ "date": "2025-10-29",
+ "numero": 5,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251029Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251029Minutes.pdf",
+ "version": "20251031195624",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 605,
+   "titre": "The Free Trade within Canada (Mutual Recognition) Act",
+   "titreFr": null,
+   "parrain": "Kim Breckner"
+  },
+  {
+   "type": "premiere",
+   "bill": 26,
+   "titre": "The Miscellaneous Statutes Repeal Act, 2025",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 27,
+   "titre": "The Statute Law Amendment Act, 2025",
+   "titreFr": "Loi de 2025 modifiant le droit législatif",
+   "parrain": "Tim McLeod"
+  }
+ ],
+ "divisions": []
+}

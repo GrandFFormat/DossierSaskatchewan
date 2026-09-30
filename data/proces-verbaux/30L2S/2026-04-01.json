@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2026-04-01",
+ "numero": 44,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260401Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260401Minutes.pdf",
+ "version": "20260401231322",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 617,
+   "titre": "The Provincial Health Authority (Family Physician Registry) Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  }
+ ],
+ "divisions": []
+}

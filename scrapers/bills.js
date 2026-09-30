@@ -1,234 +1,178 @@
-// Scraper — Projets de loi (Données Québec)
+// Scraper — les projets de loi de la législature, étape par étape.
 //
-// Source : jeu de données "Projets de loi" sur donneesquebec.ca, distribué par
-// l'Assemblée nationale du Québec. Contient un enregistrement par (projet de loi,
-// session) avec la dernière étape franchie à ce moment-là.
-// https://www.donneesquebec.ca/recherche/dataset/projets-de-loi
+// Source : les procès-verbaux déjà lus par proces-verbaux.js (data/proces-verbaux/). Chaque
+// projet y apparaît jour après jour : dépôt et première lecture, deuxième lecture, renvoi en
+// comité, rapport (avec ou sans amendement), troisième lecture, sanction royale — ou retrait,
+// ou rejet. On les assemble ici ; on ne devine aucune étape.
 //
-// Limite connue : ce CSV peut avoir un léger retard sur les pages individuelles
-// des projets de loi sur assnat.qc.ca (qui sont mises à jour en direct et sont
-// du HTML statique lisible sans navigateur). Amélioration future possible :
-// enrichir chaque projet de loi avec un fetch de sa page individuelle.
+// Le texte : un PDF par projet, à une adresse stable
+// (docs.legassembly.sk.ca/legdocs/Bills/<session>/Bill<législature>-<n°>.pdf), publié le jour
+// même de la première lecture. C'est le texte TEL QUE DÉPOSÉ : l'Assemblée ne réimprime pas un
+// projet amendé en comité. Les notes explicatives n'existent que pour certains projets : on
+// vérifie leur présence une fois (requête HEAD) et on garde la réponse.
 //
-// Champs volontairement laissés à `null` (sponsor, summary) : ce ne sont pas des
-// données présentes dans ce jeu de données, et le projet interdit d'inventer une
-// donnée manquante. À compléter manuellement ou par un futur scraper dédié.
+// Numérotation : continue sur toute la législature (1 à 23, puis 24 à 60…) ; les projets de
+// député·e·s commencent à 601, les projets privés à 901. Un numéro désigne donc un seul projet
+// dans la législature.
 //
-// Important : `num` (ex. « PL 2 ») N'EST PAS un identifiant unique. Le Québec
-// réutilise les petits numéros à chaque nouvelle session — deux projets de loi
-// bien réels et distincts peuvent tous les deux s'appeler « PL 2 ». Utiliser `id`
-// (ou `url`) comme clé, jamais `num`.
-//
-// `status` peut valoir :
-//   - 'encours'        : dossier actif, session en cours ou précédente
-//   - 'sanctionne'      : devenu loi
-//   - 'laisse_de_cote'  : d'une session antérieure du même mandat, jamais
-//                         sanctionné, jamais réinscrit depuis — abandonné en
-//                         cours de route (fait vérifiable dans les données,
-//                         pas une supposition).
+// Une session se termine à la prorogation : dès que la session suivante a un procès-verbal,
+// tout projet de la précédente qui n'a pas été sanctionné est mort au Feuilleton.
 
-import { writeFileSync, mkdirSync, readFileSync, existsSync } from 'node:fs';
-import { parse } from 'csv-parse/sync';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
+import { join } from 'node:path';
+import { USER_AGENT, LEGISLATURE } from './sk-commun.js';
 
-const CSV_URL = 'https://www.donneesquebec.ca/recherche/dataset/2bde70f9-15ff-455b-b3ea-c6e229b24074/resource/93c74b8c-51d1-49e6-9ab9-1f8d96dbd735/download/projets-de-loi.csv';
+const DOSSIER_PV = 'data/proces-verbaux';
 const OUT_PATH = 'data/bills.json';
+const DOCS = 'https://docs.legassembly.sk.ca/legdocs';
 
-// Ordre des 5 grandes étapes affichées dans le prototype (index.html, `steps`).
-// `depot_commission_consultation` n'a pas d'étape dédiée dans ce modèle à 5 cases :
-// elle se produit après la présentation et avant l'adoption du principe, donc elle
-// reste rattachée à l'étape 1 tant que le principe n'est pas adopté.
-const STEP_BY_CODE = {
-  presentation: 1,
-  depot_commission_consultation: 1,
-  adoption_principe: 2,
-  depot_commission_etude_detaillee: 3,
-  sanction: 5,
-};
+const ETAPES = { premiere: 1, deuxieme: 2, renvoi: 3, rapport: 4, troisieme: 5, sanction: 5 };
 
-const NOTE_BY_CODE = {
-  presentation: (date) => `Présenté le ${date}`,
-  depot_commission_consultation: (date) => `Déposé en commission pour consultations particulières le ${date}`,
-  adoption_principe: (date) => `Adoption du principe le ${date}`,
-  depot_commission_etude_detaillee: (date) => `Étude détaillée entreprise le ${date}`,
-  sanction: (date) => `Sanctionné le ${date}`,
-};
-
-const STEP_LABEL_BY_CODE = {
-  presentation: 'présentation',
-  depot_commission_consultation: 'dépôt en commission (consultations particulières)',
-  adoption_principe: 'adoption du principe',
-  depot_commission_etude_detaillee: 'étude détaillée',
-  sanction: 'sanction',
-};
-
-function cleanTitle(rawTitle) {
-  // Format brut : "43-2 PL 1  Loi constitutionnelle de 2025 sur le Québec"
-  const match = rawTitle.match(/^\d+-\d+\s+PL\s+\d+\s+(.*)$/);
-  return (match ? match[1] : rawTitle).trim();
+function typeDe(num) {
+  if (num >= 901) return { type: 'Private Bill', typeFr: 'Projet de loi d\'intérêt privé' };
+  if (num >= 601) return { type: "Private Members' Public Bill", typeFr: 'Projet de loi d\'un·e député·e' };
+  return { type: 'Government Bill', typeFr: 'Projet de loi du gouvernement' };
 }
 
-async function fetchCsv() {
-  const res = await fetch(CSV_URL);
-  if (!res.ok) throw new Error(`Échec du téléchargement du CSV : HTTP ${res.status}`);
-  return await res.text();
+const numeroSession = (code) => Number(code.match(/L(\d+)S$/)[1]);
+
+async function existe(url) {
+  try {
+    const r = await fetch(url, { method: 'HEAD', headers: { 'User-Agent': USER_AGENT } });
+    return r.ok;
+  } catch { return false; }
 }
 
-function buildBills(rows) {
-  const currentLegislature = Math.max(...rows.map((r) => Number(r.No_legislature)));
-  const rowsCurrentLeg = rows.filter((r) => Number(r.No_legislature) === currentLegislature);
-
-  // `Id` identifie un vrai projet de loi de façon stable à travers ses réinscriptions
-  // d'une session à l'autre (prorogation). `Numero_projet_loi`, lui, N'EST PAS un
-  // identifiant fiable à lui seul : le Québec réutilise les petits numéros (PL 1, PL 2...)
-  // à chaque nouvelle session — ex. le "PL 2" de la session 2 (sanctionné en oct. 2025)
-  // et le "PL 2" de la session 3 (encore à l'étude) sont deux projets de loi distincts.
-  // On regroupe donc par Id, et `num` ne sert que d'étiquette d'affichage (« PL 2 »),
-  // pas de clé unique.
-  const byId = new Map();
-  for (const row of rowsCurrentLeg) {
-    if (!byId.has(row.Id)) byId.set(row.Id, []);
-    byId.get(row.Id).push(row);
+function note(b) {
+  const d = (x) => x;
+  switch (b.status) {
+    case 'sanctionne': return [`Sanctionné le ${d(b.dates.sanction)}`, `Assented to on ${b.dates.sanction}`];
+    case 'rejete': return [`Rejeté le ${d(b.dates.retire)}`, `Defeated on ${b.dates.retire}`];
+    case 'retire': return [`Retiré du Feuilleton le ${d(b.dates.retire)}`, `Removed from the Order Paper on ${b.dates.retire}`];
+    case 'mort': return [`Mort au Feuilleton à la fin de la session`, 'Died on the Order Paper when the session ended'];
+    default: {
+      if (b.dates.troisieme) return [`Adopté en troisième lecture le ${b.dates.troisieme}, en attente de sanction`, `Passed third reading on ${b.dates.troisieme}, awaiting Royal Assent`];
+      if (b.dates.rapport) return [`Rapport du comité le ${b.dates.rapport}`, `Reported by committee on ${b.dates.rapport}`];
+      if (b.dates.renvoi) return [`Renvoyé en comité le ${b.dates.renvoi}`, `Referred to committee on ${b.dates.renvoi}`];
+      if (b.dates.deuxieme) return [`Deuxième lecture le ${b.dates.deuxieme}`, `Second reading on ${b.dates.deuxieme}`];
+      return [`Déposé le ${b.dates.premiere}`, `Introduced on ${b.dates.premiere}`];
+    }
   }
+}
 
-  const maxSession = Math.max(...rowsCurrentLeg.map((r) => Number(r.No_session)));
+async function main() {
+  // 1. Tous les événements, dans l'ordre des jours.
+  const sessions = readdirSync(DOSSIER_PV).filter((s) => s.startsWith(`${LEGISLATURE}L`)).sort((a, b) => numeroSession(a) - numeroSession(b));
+  if (!sessions.length) throw new Error('aucun procès-verbal : lancer scrapers/proces-verbaux.js d\'abord');
+  const derniereSession = sessions[sessions.length - 1];
 
-  const bills = [];
-  for (const [id, group] of byId) {
-    const sessionsInGroup = group.map((r) => Number(r.No_session));
-    const maxSessionInGroup = Math.max(...sessionsInGroup);
-
-    // L'étape la plus avancée atteinte, tous exemplaires (sessions) confondus —
-    // un projet de loi ne recule jamais dans le processus.
-    let best = group[0];
-    for (const row of group) {
-      const bestStep = STEP_BY_CODE[best.Derniere_etape_franchie] ?? 0;
-      const rowStep = STEP_BY_CODE[row.Derniere_etape_franchie] ?? 0;
-      if (rowStep > bestStep || (rowStep === bestStep && row.Date_derniere_etape > best.Date_derniere_etape)) {
-        best = row;
+  const projets = new Map();   // num → projet en construction
+  for (const session of sessions) {
+    const jours = readdirSync(join(DOSSIER_PV, session)).filter((f) => f.endsWith('.json')).sort();
+    for (const f of jours) {
+      const jour = JSON.parse(readFileSync(join(DOSSIER_PV, session, f), 'utf-8'));
+      for (const e of jour.evenements) {
+        let b = projets.get(e.bill);
+        if (!b) {
+          b = { num: e.bill, session, dates: {}, comites: [], amende: false, titre: null, titreFr: null, parrain: null, sources: new Set() };
+          projets.set(e.bill, b);
+        }
+        b.sources.add(jour.url);
+        if (e.titre && !b.titre) b.titre = e.titre;
+        if (e.titreFr && !b.titreFr) b.titreFr = e.titreFr;
+        if (e.type === 'premiere') { b.session = session; if (e.parrain) b.parrain = e.parrain; }
+        // La PREMIÈRE date de chaque étape (un rapport peut venir de deux comités : on les garde tous).
+        if (!b.dates[e.type]) b.dates[e.type] = jour.date;
+        if (e.comite && !b.comites.includes(e.comite)) b.comites.push(e.comite);
+        if (e.amende) b.amende = true;
+        if (e.type === 'retire') b.motifRetrait = e.motif;
       }
     }
-    const code = best.Derniere_etape_franchie;
+  }
 
-    // Heuristique : "sur la table" = le dossier touche la session en cours ou celle
-    // juste avant (prorogation récente), sans dépendre d'un numéro de session codé
-    // en dur. Un dossier plus ancien qui a été sanctionné est une loi déjà adoptée —
-    // on l'exclut, il n'est pas "laissé de côté", il est simplement terminé et hors
-    // du champ de la veille "affaires en cours". Un dossier plus ancien qui n'a
-    // JAMAIS été sanctionné et n'a pas été réinscrit, lui, est vraiment laissé de côté.
-    const onTable = maxSessionInGroup >= maxSession - 1;
-    if (!onTable && code === 'sanction') continue;
+  // 2. Ce qu'on ne peut pas publier sans vérifier.
+  const erreurs = [];
+  for (const b of projets.values()) {
+    if (!b.dates.premiere) erreurs.push(`n° ${b.num} : aucune première lecture trouvée`);
+    if (!b.titre) erreurs.push(`n° ${b.num} : aucun titre`);
+  }
+  if (erreurs.length) {
+    console.error(`bills.js : rien n'est écrit —`);
+    for (const e of erreurs) console.error(`  ✗ ${e}`);
+    process.exitCode = 1;
+    return;
+  }
 
-    const num = Number(group[0].Numero_projet_loi);
-    const introSession = Math.min(...sessionsInGroup);
-    const step = STEP_BY_CODE[code] ?? null;
-    const date = best.Date_derniere_etape || null;
+  // 3. Les notes explicatives déjà vérifiées la dernière fois (on ne redemande pas).
+  const avant = existsSync(OUT_PATH) ? JSON.parse(readFileSync(OUT_PATH, 'utf-8')).bills ?? [] : [];
+  const notesConnues = new Map(avant.filter((b) => b.notesUrl !== undefined).map((b) => [b.id, b.notesUrl]));
 
-    let status, note;
-    if (onTable) {
-      status = code === 'sanction' ? 'sanctionne' : 'encours';
-      note = date && NOTE_BY_CODE[code] ? NOTE_BY_CODE[code](date) : null;
-    } else {
-      status = 'laisse_de_cote';
-      const stepLabel = STEP_LABEL_BY_CODE[code] ?? code;
-      note = `Resté à l'étape « ${stepLabel} » (session ${maxSessionInGroup}) — non réinscrit depuis${date ? `, dernière activité le ${date}` : ''}`;
+  const bills = [];
+  for (const b of [...projets.values()].sort((a, c) => a.num - c.num)) {
+    const id = `${LEGISLATURE}-${numeroSession(b.session)}-${b.num}`;
+    const sessionFinie = b.session !== derniereSession;
+    const status = b.dates.sanction ? 'sanctionne'
+      : b.dates.retire ? (b.motifRetrait === 'rejete' ? 'rejete' : 'retire')
+        : sessionFinie ? 'mort'
+          : 'encours';
+    const step = Math.max(...Object.keys(b.dates).map((t) => ETAPES[t] ?? 0));
+    const url = `${DOCS}/Bills/${b.session}/Bill${LEGISLATURE}-${b.num}.pdf`;
+    let notesUrl = notesConnues.get(id);
+    if (notesUrl === undefined) {
+      const candidat = `${DOCS}/Explanatory%20Notes/${b.session}/Bill${LEGISLATURE}-${b.num}EN.pdf`;
+      notesUrl = (await existe(candidat)) ? candidat : null;
+      await new Promise((ok) => setTimeout(ok, 300));
     }
-
+    const lastActivity = Object.values(b.dates).sort().pop();
+    const [noteFr, noteEn] = note({ status, dates: b.dates });
     bills.push({
-      id: Number(id),
-      num,
-      legislature: currentLegislature,
-      introSession,
-      type: best.Type_projet_loi,
-      title: cleanTitle(best.Titre_projet_loi),
+      id,
+      num: b.num,
+      legislature: LEGISLATURE,
+      introSession: numeroSession(b.session),
+      session: b.session,
+      ...typeDe(b.num),
+      // Le titre officiel est anglais ; le titre français n'existe que pour les projets bilingues.
+      title: b.titre,
+      titleEn: b.titre,
+      titleFrOfficiel: b.titreFr,
       status,
       step,
-      note,
-      lastActivity: date,
-      url: `https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-${num}-${currentLegislature}-${introSession}.html`,
-      urlEn: `https://www.assnat.qc.ca/en/travaux-parlementaires/projets-loi/projet-loi-${num}-${currentLegislature}-${introSession}.html`,
-      sponsor: null,
+      note: noteFr,
+      noteEn,
+      presentedOn: b.dates.premiere,
+      lastActivity,
+      dates: b.dates,
+      comites: b.comites,
+      amende: b.amende,
+      sponsor: b.parrain,
+      url,
+      urlEn: url,
+      notesUrl,
+      textSource: 'texte tel que déposé en première lecture (PDF) ; l\'Assemblée ne réimprime pas un projet amendé',
+      sources: [...b.sources],
       summary: null,
-      titleEn: null,
-      noteEn: null,
       summaryEn: null,
     });
   }
 
-  bills.sort((a, b) => {
-    if (!a.lastActivity && !b.lastActivity) return 0;
-    if (!a.lastActivity) return 1;
-    if (!b.lastActivity) return -1;
-    return b.lastActivity.localeCompare(a.lastActivity);
-  });
+  writeFileSync(OUT_PATH, JSON.stringify({
+    source: 'Procès-verbaux (Votes and Proceedings) de l\'Assemblée législative de la Saskatchewan',
+    legislature: LEGISLATURE,
+    scrapedAt: new Date().toISOString(),
+    count: bills.length,
+    bills,
+  }, null, 2) + '\n');
 
-  return bills;
-}
-
-// Champs d'enrichissement obtenus par d'AUTRES étapes (bill-details, bill-summaries)
-// ou saisis à la main (traductions EN). On les préserve d'un run à l'autre : le CSV
-// ne les contient pas, et sans ça un rafraîchissement quotidien effacerait les
-// résumés IA (API payante) et referait tout chaque jour. Les champs venant du CSV
-// (statut, étape, note, dernière activité, titre) sont toujours repris à neuf.
-const PRESERVE_FIELDS = [
-  'sponsor', 'presentationPdfUrl',
-  'summary', 'summaryEn', 'summaryAiGenerated', 'summarySource', 'summaryGeneratedAt',
-  'titleEn', 'noteEn', 'enSource',
-];
-
-function mergePreviousEnrichment(bills) {
-  if (!existsSync(OUT_PATH)) return;
-  let prev;
-  try {
-    prev = JSON.parse(readFileSync(OUT_PATH, 'utf-8'));
-  } catch (err) {
-    console.warn(`Ancien ${OUT_PATH} illisible (${err.message}) — reconstruction complète, sans fusion.`);
-    return;
-  }
-  const prevById = new Map((prev.bills || []).map((b) => [b.id, b]));
-  let carried = 0;
-  for (const bill of bills) {
-    const old = prevById.get(bill.id); // clé stable = id (jamais num, réutilisé)
-    if (!old) continue;
-    for (const key of PRESERVE_FIELDS) {
-      if ((bill[key] === null || bill[key] === undefined) && old[key] !== null && old[key] !== undefined) {
-        bill[key] = old[key];
-        if (key === 'summary') carried++;
-      }
-    }
-  }
-  console.log(`Fusion : ${carried} résumés existants préservés (pas de re-génération inutile).`);
-}
-
-async function main() {
-  const csv = await fetchCsv();
-  const rows = parse(csv, { columns: true, skip_empty_lines: true });
-  const bills = buildBills(rows);
-
-  mergePreviousEnrichment(bills);
-
-  mkdirSync('data', { recursive: true });
-  writeFileSync(
-    OUT_PATH,
-    JSON.stringify(
-      {
-        source: CSV_URL,
-        scrapedAt: new Date().toISOString(),
-        count: bills.length,
-        bills,
-      },
-      null,
-      2
-    )
-  );
-
-  const byStatus = bills.reduce((acc, b) => {
-    acc[b.status] = (acc[b.status] ?? 0) + 1;
-    return acc;
-  }, {});
-  console.log(`${bills.length} projets de loi écrits dans ${OUT_PATH}`, byStatus);
+  const compte = (f) => bills.filter(f).length;
+  console.log(`${bills.length} projets de loi écrits dans ${OUT_PATH} (${sessions.join(', ')})`);
+  console.log(`  sanctionnés ${compte((b) => b.status === 'sanctionne')}, en cours ${compte((b) => b.status === 'encours')}, morts au Feuilleton ${compte((b) => b.status === 'mort')}, retirés ${compte((b) => b.status === 'retire')}, rejetés ${compte((b) => b.status === 'rejete')}`);
+  console.log(`  titre français officiel : ${compte((b) => b.titleFrOfficiel)} ; notes explicatives : ${compte((b) => b.notesUrl)} ; amendés en comité : ${compte((b) => b.amende)}`);
+  const sansParrain = bills.filter((b) => !b.sponsor);
+  if (sansParrain.length) console.log(`  ⚠ sans parrain lu : ${sansParrain.map((b) => b.num).join(', ')}`);
 }
 
 main().catch((err) => {
-  console.error('Échec du scraper bills.js :', err);
+  console.error('Échec du scraper bills.js :', err.message);
   process.exitCode = 1;
 });

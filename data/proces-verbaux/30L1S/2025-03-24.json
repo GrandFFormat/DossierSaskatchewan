@@ -1,0 +1,33 @@
+{
+ "session": "30L1S",
+ "date": "2025-03-24",
+ "numero": 13,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250324Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250324Minutes.pdf",
+ "version": "20250325140944",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 13,
+   "titre": "The Income Tax Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  },
+  {
+   "type": "premiere",
+   "bill": 14,
+   "titre": "The Power Corporation Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Jeremy Harrison"
+  },
+  {
+   "type": "premiere",
+   "bill": 15,
+   "titre": "Alcohol and Gaming Regulation Amendment Act, 2025",
+   "titreFr": "Loi modificative de 2025 sur la réglementation des boissons alcoolisées et des jeux de hasard",
+   "parrain": "Alana Ross"
+  }
+ ],
+ "divisions": []
+}

@@ -32,40 +32,22 @@ function runOrThrow(label, nodeArgs) {
   if (res.status !== 0) throw new Error(`code ${res.status}`);
 }
 
-// En local, api.env fournit ANTHROPIC_API_KEY ; en CI, elle vient de l'env (secret).
-const summariesArgs = existsSync('api.env')
-  ? ['--env-file=api.env', 'scrapers/bill-summaries.js']
-  : ['scrapers/bill-summaries.js'];
-const promisesArgs = existsSync('api.env')
-  ? ['--env-file=api.env', 'scrapers/promises.js']
-  : ['scrapers/promises.js'];
+// Saskatchewan. Pas encore de résumés IA ni de promesses (étapes à venir), pas de pétitions :
+// elles sont sur papier, sans liste publiée (voir le message de la page d'accueil).
+const doPetitions = false;
 
-// Les pétitions bougent lentement : on ne les rafraîchit qu'une fois par semaine
-// (lundi UTC), pas chaque jour. FORCE_PETITIONS=1 force la mise à jour (local),
-// et on force aussi si le fichier n'existe pas encore.
-const doPetitions =
-  new Date().getUTCDay() === 1 || // 0=dimanche, 1=lundi
-  process.env.FORCE_PETITIONS === '1' ||
-  !existsSync('data/petitions.json');
-
-// 1) Scrapers (source -> data/*.json) — TOLÉRANT.
+// 1) Scrapers (source -> data/*.json) — TOLÉRANT. L'ordre compte : les procès-verbaux ont
+// besoin de la liste des député·e·s (pour lire les noms des votes), les projets de loi ont
+// besoin des procès-verbaux, et les votes des projets de loi.
 const SCRAPERS = [
-  ['Scrape : projets de loi (Données Québec)', ['scrapers/bills.js']],
-  ['Scrape : détails des projets de loi (assnat)', ['scrapers/bill-details.js']],
-  // `soft: true` = source lente/peu critique dont une panne NE déclenche PAS
-  // d'alerte (run vert). Les pétitions (hebdo) sont capricieuses côté assnat
-  // (liste parfois servie en AJAX) : une semaine ratée = données de la veille
-  // conservées, sans rendre le run rouge inutilement.
-  ...(doPetitions ? [['Scrape : pétitions ouvertes (assnat, hebdo)', ['scrapers/petitions.js'], { soft: true }]] : []),
-  ['Scrape : résumés IA + traductions (Claude)', summariesArgs],
-  // Promesses électorales : extraction IA des plateformes officielles, PUIS
-  // vérification que chaque citation existe mot pour mot dans la source.
-  // « soft » : source lente et dépendante de l'IA, une panne n'alerte pas.
-  ['Scrape : promesses électorales (Claude + vérif)', promisesArgs, { soft: true }],
-  ['Scrape : députés (assnat)', ['scrapers/deputes.js']],
-  ['Scrape : courriels des députés (assnat)', ['scrapers/depute-emails.js']],
-  ['Scrape : votes (assnat)', ['scrapers/votes.js']],
-  ['Scrape : ministres (quebec.ca)', ['scrapers/ministers.js']],
+  ['Scrape : député·e·s (legassembly.sk.ca)', ['scrapers/deputes.js']],
+  ['Scrape : courriels des député·e·s (legassembly.sk.ca)', ['scrapers/depute-emails.js']],
+  // saskatchewan.ca est derrière Cloudflare : si un défi arrive, ministers.js s'arrête sans
+  // écrire (on ne le contourne pas) et les ministres de la veille restent.
+  ['Scrape : ministres (saskatchewan.ca)', ['scrapers/ministers.js']],
+  ['Scrape : procès-verbaux (legassembly.sk.ca)', ['scrapers/proces-verbaux.js']],
+  ['Scrape : projets de loi (depuis les procès-verbaux)', ['scrapers/bills.js']],
+  ['Scrape : votes nominatifs (depuis les procès-verbaux)', ['scrapers/votes.js']],
 ];
 
 const failed = [];      // sources critiques → déclenchent l'alerte (run rouge)
@@ -104,12 +86,14 @@ function sanityCheck() {
     else if (legVeille && leg > legVeille) plancherBills = 1;
     else plancherBills = Math.max(1, Math.min(50, veille.length));
   } catch { /* pas de veille lisible : on garde 50 */ }
+  // Saskatchewan : 61 sièges (quelques-uns peuvent être vacants), pas de régions, une
+  // vingtaine de votes nominatifs par session seulement.
   const checks = [
     ['projets de loi', bills.length, plancherBills],
-    ['députés', deputes.length, 100],
-    ['députés avec région', deputes.filter((d) => d.region).length, 100],
-    ['votes', arr('data/votes.json', 'votes').length, 100],
-    ['ministres', arr('data/ministers.json', 'ministers').length, 15],
+    ['député·e·s', deputes.length, 55],
+    ['député·e·s avec parti', deputes.filter((d) => d.party).length, 55],
+    ['votes', arr('data/votes.json', 'votes').length, 20],
+    ['ministres', arr('data/ministers.json', 'ministers').length, 12],
   ];
   const failures = checks.filter(([, n, min]) => n < min);
   if (failures.length) {

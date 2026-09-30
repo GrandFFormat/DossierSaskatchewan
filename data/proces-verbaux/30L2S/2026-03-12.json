@@ -1,0 +1,44 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-12",
+ "numero": 33,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260312Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260312Minutes.pdf",
+ "version": "20260313223354",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 615,
+   "titre": "The Provincial Health Authority (Banning Parking Fees for Cancer Patients) Amendment Act",
+   "titreFr": null,
+   "parrain": "Jared Clarke"
+  },
+  {
+   "type": "rapport",
+   "bill": 29,
+   "comite": "Standing Committee on Crown and Central Agencies",
+   "amende": false
+  },
+  {
+   "type": "troisieme",
+   "bill": 29
+  },
+  {
+   "type": "sanction",
+   "bill": 30,
+   "titre": "The Inter-jurisdictional Support Orders Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 42,
+   "titre": "The Saskatchewan Firearms Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 29,
+   "titre": "The Tailgating Act"
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,30 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-16",
+ "numero": 34,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260316Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260316Minutes.pdf",
+ "version": "20260317011236",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 36
+  },
+  {
+   "type": "renvoi",
+   "bill": 36,
+   "comite": "Standing Committee on Human Services"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 37
+  },
+  {
+   "type": "renvoi",
+   "bill": 37,
+   "comite": "Standing Committee on Human Services"
+  }
+ ],
+ "divisions": []
+}

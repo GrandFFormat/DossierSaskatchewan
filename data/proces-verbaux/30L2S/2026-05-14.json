@@ -1,0 +1,152 @@
+{
+ "session": "30L2S",
+ "date": "2026-05-14",
+ "numero": 65,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260514Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260514Minutes.pdf",
+ "version": "20260514213423",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "sanction",
+   "bill": 35,
+   "titre": "The Mineral Resources Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 36,
+   "titre": "The Change of Name Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 37,
+   "titre": "The Vital Statistics Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 31,
+   "titre": "The Defamation Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 32,
+   "titre": "The Defamation Consequential Amendments Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 41,
+   "titre": "The Heritage Recognition (From Many Peoples, Strength) Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 49,
+   "titre": "The Income Tax Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 50,
+   "titre": "The Financial Administration Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 51,
+   "titre": "The Corporation Capital Tax Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 53,
+   "titre": "The Saskatchewan Chemical Fertilizer Incentive Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 24,
+   "titre": "The Saskatchewan Internal Trade Promotion Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 33,
+   "titre": "The Credit Union Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 47,
+   "titre": "The Response to Illicit Drugs Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 45,
+   "titre": "The Co-operatives Consequential Amendments Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 44,
+   "titre": "The Co-operatives Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 40,
+   "titre": "The Animal Protection Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 38,
+   "titre": "The Building Schools Faster Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 39,
+   "titre": "The Building Schools Faster Consequential Amendment Act, 2025"
+  },
+  {
+   "type": "sanction",
+   "bill": 48,
+   "titre": "The Compassionate Intervention Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 55,
+   "titre": "The Medical Profession Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 58,
+   "titre": "The Time Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 59,
+   "titre": "The Time Consequential Amendments Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 57,
+   "titre": "The Information Services Corporation Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 52,
+   "titre": "The Heritage Property Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 54,
+   "titre": "The Correctional Services Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 56,
+   "titre": "The King's Bench Amendment Act, 2026"
+  },
+  {
+   "type": "sanction",
+   "bill": 43,
+   "titre": "The Municipalities Modernization and Red Tape Reduction Act"
+  },
+  {
+   "type": "sanction",
+   "bill": 60,
+   "titre": "The Appropriation Act, 2026 (No. 1)"
+  }
+ ],
+ "divisions": []
+}

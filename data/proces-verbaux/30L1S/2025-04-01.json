@@ -1,0 +1,19 @@
+{
+ "session": "30L1S",
+ "date": "2025-04-01",
+ "numero": 18,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250401Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L1S/20250401Minutes.pdf",
+ "version": "20250402031321",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 601,
+   "titre": "The Sikh Heritage Month Act",
+   "titreFr": null,
+   "parrain": "Bhajan Brar"
+  }
+ ],
+ "divisions": []
+}

@@ -1,0 +1,26 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-06",
+ "numero": 10,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251106Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251106Minutes.pdf",
+ "version": "20251107161800",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 34,
+   "titre": "The Cyberstalking and Coercive Control Act",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 35,
+   "titre": "The Mineral Resources Amendment Act, 2025",
+   "titreFr": null,
+   "parrain": "Colleen Young"
+  }
+ ],
+ "divisions": []
+}

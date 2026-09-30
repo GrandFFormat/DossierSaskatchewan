@@ -1,0 +1,37 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-10",
+ "numero": 31,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260310Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260310Minutes.pdf",
+ "version": "20260311011024",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 613,
+   "titre": "The Saskatchewan Farm Security (Foreign Farmland Ownership) Amendment Act",
+   "titreFr": null,
+   "parrain": "Trent Wotherspoon"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 31
+  },
+  {
+   "type": "renvoi",
+   "bill": 31,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 32
+  },
+  {
+   "type": "renvoi",
+   "bill": 32,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  }
+ ],
+ "divisions": []
+}

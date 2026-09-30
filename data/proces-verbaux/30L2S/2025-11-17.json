@@ -1,0 +1,48 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-17",
+ "numero": 13,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251117Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251117Minutes.pdf",
+ "version": "20251118161342",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "deuxieme",
+   "bill": 25
+  },
+  {
+   "type": "renvoi",
+   "bill": 25,
+   "comite": "Standing Committee on Crown and Central Agencies"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 26
+  },
+  {
+   "type": "renvoi",
+   "bill": 26,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 27
+  },
+  {
+   "type": "renvoi",
+   "bill": 27,
+   "comite": "Standing Committee on Intergovernmental Affairs and Justice"
+  },
+  {
+   "type": "deuxieme",
+   "bill": 28
+  },
+  {
+   "type": "renvoi",
+   "bill": 28,
+   "comite": "Standing Committee on Human Services"
+  }
+ ],
+ "divisions": []
+}

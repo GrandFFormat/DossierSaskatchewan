@@ -1,0 +1,33 @@
+{
+ "session": "30L2S",
+ "date": "2026-03-23",
+ "numero": 38,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260323Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20260323Minutes.pdf",
+ "version": "20260324050342",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 49,
+   "titre": "The Income Tax Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  },
+  {
+   "type": "premiere",
+   "bill": 50,
+   "titre": "The Financial Administration Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  },
+  {
+   "type": "premiere",
+   "bill": 51,
+   "titre": "The Corporation Capital Tax Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  }
+ ],
+ "divisions": []
+}

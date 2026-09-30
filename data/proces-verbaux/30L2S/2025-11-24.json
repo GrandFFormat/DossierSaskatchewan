@@ -1,0 +1,19 @@
+{
+ "session": "30L2S",
+ "date": "2025-11-24",
+ "numero": 17,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251124Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L2S/20251124Minutes.pdf",
+ "version": "20251125155747",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 608,
+   "titre": "The Rent Control Act, 2025",
+   "titreFr": null,
+   "parrain": "April ChiefCalf"
+  }
+ ],
+ "divisions": []
+}
