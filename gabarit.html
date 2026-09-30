@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
      La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
@@ -21,11 +21,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 /* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
-   (commun/dq.js) : « ?lang=en » dans l'adresse, sinon le choix gardé dans dvq:langue (commun à
+   (commun/dq.js) : « ?lang=fr » dans l'adresse, sinon le choix gardé dans dsk:langue (commun à
    tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
-   En anglais, la page reste cachée le temps que dq.js la traduise : 1,5 s au plus, même s'il
-   échoue. lang="en" n'est posé qu'au moment de traduire (dq.js) : si la traduction n'arrive pas,
-   la page française ne s'annonce pas en anglais.
+   Le site est ANGLOPHONE : l'anglais est écrit dans le HTML et s'affiche tout de suite. C'est
+   le français qui attend sa traduction, et la page reste cachée le temps que dq.js la fasse :
+   1,5 s au plus, même s'il échoue. lang="fr" n'est posé qu'au moment de traduire (dq.js).
    Tout est dans une fonction : une variable globale ici entrerait en collision avec les
    déclarations de dq.js et le ferait planter en entier. */
 (function(){
@@ -37,39 +37,39 @@
     var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
     var parHistorique = !!nav && nav.type === 'back_forward';
     var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
-    if(choix !== 'en') return;
+    if(choix !== 'fr') return;
     var racine = document.documentElement;
-    racine.classList.add('dq-en');
+    racine.classList.add('dq-fr');
     setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
   }catch(e){}
 })();
 </script>
-<title>DossierQuébec — ministres, projets de loi et votes de l'Assemblée nationale</title>
-<meta name="description" content="Suivez l'Assemblée nationale du Québec en un coup d'œil : ministres et député·e·s, projets de loi et leur statut réel, votes nominatifs. Site citoyen indépendant, vraies données publiques.">
+<title>Dossier Saskatchewan — ministers, bills and votes of the Legislative Assembly</title>
+<meta name="description" content="Saskatchewan's Legislative Assembly at a glance: ministers and MLAs, bills and the stage they have really reached, recorded votes. An independent citizen site.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
-<link rel="alternate" type="application/rss+xml" title="DossierQuébec — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Dossier Saskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#046A38">
 
 <!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DossierQuébec">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="DossierQuébec — ministres, projets de loi et votes de l'Assemblée nationale">
-<meta property="og:description" content="Suivez l'Assemblée nationale du Québec : ministres, projets de loi et leur statut réel, votes nominatifs. Site citoyen indépendant, vraies données publiques.">
+<meta property="og:site_name" content="Dossier Saskatchewan">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Dossier Saskatchewan — ministers, bills and votes of the Legislative Assembly">
+<meta property="og:description" content="Saskatchewan's Legislative Assembly at a glance: ministers and MLAs, bills and the stage they have really reached, recorded votes. An independent citizen site.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/">
-<meta property="og:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DossierQuébec — veille citoyenne de l'Assemblée nationale du Québec">
+<meta property="og:image:alt" content="Dossier Saskatchewan — veille citoyenne de Saskatchewan's Legislative Assembly">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="DossierQuébec — ministres, projets de loi et votes de l'Assemblée nationale">
-<meta name="twitter:description" content="Suivez l'Assemblée nationale du Québec : ministres, projets de loi, votes nominatifs. Site citoyen indépendant.">
-<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta name="twitter:title" content="Dossier Saskatchewan — ministers, bills and votes of the Legislative Assembly">
+<meta name="twitter:description" content="Saskatchewan's Legislative Assembly at a glance: ministers and MLAs, bills and the stage they have really reached, recorded votes. An independent citizen site.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -82,13 +82,13 @@
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "DossierQuébec",
+  "name": "Dossier Saskatchewan",
   "url": "https://dossiersaskatchewan.ca/",
-  "description": "Veille citoyenne indépendante de l'Assemblée nationale du Québec : ministres et député·e·s, projets de loi et leur statut réel, votes nominatifs — vraies données publiques.",
-  "inLanguage": "fr-CA",
+  "description": "Veille citoyenne indépendante de Saskatchewan's Legislative Assembly : ministres et député·e·s, projets de loi et leur statut réel, votes nominatifs — vraies données publiques.",
+  "inLanguage": "en-CA",
   "publisher": {
     "@type": "Organization",
-    "name": "DossierQuébec",
+    "name": "Dossier Saskatchewan",
     "url": "https://dossiersaskatchewan.ca/",
     "logo": "https://dossiersaskatchewan.ca/commun/dq-512.png"
   }
@@ -120,8 +120,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -152,15 +152,15 @@
        UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
        du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
   <nav class="tabs">
-    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
     <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
-    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
-    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministres</span></a>
-    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></a>
+    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
+    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
-    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
-    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">Mon dossier</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
   <div class="header-ctrls">
     <div class="font-size-ctrl" id="fontSizeCtrl">
@@ -213,42 +213,29 @@ function goToFederal(evt){
   <!-- APERÇU -->
   <section class="view active" id="view-apercu">
 
-    <!-- Avis de dissolution — la 43e législature s'est terminée le 2026-08-27.
-         À RETIRER (ici et dans view-projets) quand la nouvelle Assemblée
-         commencera le 17 novembre 2026 ; voir l'objet ASSEMBLY dans le script. -->
-    <div class="band band-yellow bleed" id="band-dissolution">
-      <h2 data-i18n="diss.h">⚠️ L'Assemblée est dissoute — élections le 5 octobre</h2>
-      <!-- Résultat du scrutin : rempli par applyAssemblyState() depuis
-           ASSEMBLY.resultat, seulement après le 5 octobre et seulement si la
-           phrase a été écrite. Caché sinon. -->
-      <p class="diss-resultat" id="dissResultat" hidden></p>
-      <p data-i18n="diss.p1">Le <b>27 août 2026</b>, l'Assemblée nationale a été dissoute : la 43<sup>e</sup> législature est terminée. Il n'y a plus de député·e·s en poste — celles et ceux qui siégeaient sont maintenant candidat·e·s ou se retirent. Le gouvernement, lui, reste en place le temps de la campagne.</p>
-      <p data-i18n="diss.p2">Conséquence directe : <b>tous les projets de loi qui n'avaient pas été sanctionnés sont morts avec elle.</b> Ils devront repartir de zéro devant la nouvelle Assemblée, convoquée le <b>17 novembre 2026</b>. Ce qui reste ici, c'est le bilan complet de la 43<sup>e</sup> législature : les lois adoptées, les votes de chaque député·e, et les projets qui n'ont pas abouti.</p>
-      <a class="diss-cta" href="/promesses" data-i18n="diss.cta">Ce que les partis promettent →</a>
-    </div>
 
     <!-- Hero poster brutaliste : la devise du site devient l'affiche.
          (La ligne du header .brand-text p est masquée en échange.) -->
     <div class="hero-poster">
       <h1 class="hero-h1">
-        <span class="hero-sujet" data-i18n="sujet.apercu">L'Assemblée nationale du Québec en clair</span>
-        <span data-i18n="hero.l1">Qui siège,</span>
-        <span class="hero-outline" data-i18n="hero.l2">qui légifère,</span>
-        <span class="hero-blue" data-i18n="hero.l3">qui vote quoi.</span>
+        <span class="hero-sujet" data-i18n="sujet.apercu">Quebec's National Assembly in plain language</span>
+        <span data-i18n="hero.l1">Who sits,</span>
+        <span class="hero-outline" data-i18n="hero.l2">who legislates,</span>
+        <span class="hero-blue" data-i18n="hero.l3">who votes what.</span>
       </h1>
       <div class="hero-row">
         <div class="hero-manifesto">
-          <p data-i18n="hero.manifesto">L'Assemblée nationale du Québec, réorganisée <b>par personne</b> et traduite <b>en langage clair</b> — sans jugement ni verdict. Site citoyen indépendant, vraies données publiques.</p>
+          <p data-i18n="hero.manifesto">Québec's National Assembly, reorganized by person and translated into plain language — no judgment, no verdict. Independent citizen site, real public data.</p>
         </div>
-        <a class="hero-cta" href="/projets-de-loi" data-i18n="hero.cta">Explorer →</a>
+        <a class="hero-cta" href="/projets-de-loi" data-i18n="hero.cta">Explore →</a>
       </div>
     </div>
 
     <!-- Bande de stats (vraies données — mêmes ids qu'avant, peuplés par le JS) -->
     <div class="stat-band bleed">
-      <div class="stat-cell"><b id="statMinistres">—</b><span data-i18n="stat.ministres">Ministres au Conseil</span></div>
-      <div class="stat-cell"><b id="statProjets">—</b><span data-i18n="stat.projets">Projets de loi suivis</span></div>
-      <div class="stat-cell"><b id="statVotes">—</b><span data-i18n="stat.votes">Votes nominatifs</span></div>
+      <div class="stat-cell"><b id="statMinistres">—</b><span data-i18n="stat.ministres">Ministers</span></div>
+      <div class="stat-cell"><b id="statProjets">—</b><span data-i18n="stat.projets">Bills</span></div>
+      <div class="stat-cell"><b id="statVotes">—</b><span data-i18n="stat.votes">Votes recorded</span></div>
     </div>
 
     <!-- Section signature du handoff : bande JAUNE pleine largeur -->
@@ -258,15 +245,15 @@ function goToFederal(evt){
         <h2 id="challengedTitle">Projets challengés par les citoyen·ne·s</h2>
         <div class="sub" id="challengedSub"></div>
       </div>
-      <a class="ch-more" id="chMoreBtn" role="button" tabindex="0" onclick="showMoreChallenged()" data-i18n="ch.more" style="display:none;">Voir plus →</a>
+      <a class="ch-more" id="chMoreBtn" role="button" tabindex="0" onclick="showMoreChallenged()" data-i18n="ch.more" style="display:none;">See more →</a>
     </div>
     <div id="challengedList"></div>
     </div>
 
     <div class="section-head" id="sec-projets-recents">
       <div>
-        <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
-        <div class="sub" data-i18n="apercu.recent.sub">↓ Cliquez n'importe où dans le carré blanc pour voir le résumé ↓</div>
+        <h2 data-i18n="h.billsrecent">Recently active bills</h2>
+        <div class="sub" data-i18n="apercu.recent.sub">↓ Click anywhere in the white square to see the summary ↓</div>
       </div>
     </div>
     <div id="body-projets-recents">
@@ -280,14 +267,13 @@ function goToFederal(evt){
     <div class="band band-blue bleed promo-alertes promo-accueil" id="band-alertes-accueil" role="region" aria-labelledby="promoAccueilTitre">
       <div class="promo-accueil-grille">
         <div>
-          <p class="promo-sur" data-i18n="promo.sur">Compte gratuit</p>
-          <h2 id="promoAccueilTitre" data-i18n="promo.h">Suivez les projets de loi qui vous touchent</h2>
-          <p class="promo-texte" data-i18n="promo.p">Un compte gratuit, sans mot de passe : suivez jusqu'à 3 projets de loi ou projets de ville, et retrouvez-les dans Mon dossier, avec leur étape du moment.</p>
-          <p class="promo-texte promo-dissolution" data-i18n="promo.diss">Les projets de loi de la 43e législature sont morts à la dissolution du 27 août : le suivi reprendra avec les premiers projets de loi de la nouvelle législature, convoquée le 17 novembre 2026.</p>
+          <p class="promo-sur" data-i18n="promo.sur">Free account</p>
+          <h2 id="promoAccueilTitre" data-i18n="promo.h">Follow the bills that matter to you</h2>
+          <p class="promo-texte" data-i18n="promo.p">A free account, no password: follow up to 3 bills or city projects, and find them in My file, with their current stage.</p>
         </div>
         <div class="promo-cote">
         <div class="promo-compte">
-          <b class="promo-compte-titre" data-i18n="promo.compte.h">Votre compte</b>
+          <b class="promo-compte-titre" data-i18n="promo.compte.h">Your account</b>
           <div id="promoCompte">
             <div class="promo-compte-ligne">
               <input type="email" id="promoEmail" placeholder="Votre courriel" aria-label="Votre courriel" disabled>
@@ -295,7 +281,7 @@ function goToFederal(evt){
             </div>
             <p class="promo-compte-note" id="promoNote">Pas de mot de passe : un lien de connexion arrive par courriel. Le compte gratuit suit 3 choses en tout.</p>
           </div>
-          <a class="promo-mes-dossiers" href="/mon-dossier" data-i18n="promo.mesdossiers">Mon dossier →</a>
+          <a class="promo-mes-dossiers" href="/mon-dossier" data-i18n="promo.mesdossiers">My file →</a>
         </div>
         </div>
       </div>
@@ -308,7 +294,7 @@ function goToFederal(evt){
     <!-- Le flux RSS (feed.xml) reprend exactement ces événements. Son lien
          visible vit dans le pied de page ; la balise <link rel=alternate> de
          l'en-tête sert aux lecteurs RSS. -->
-    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">Quoi de neuf</h2><div class="sub" data-i18n="h.quoideneuf.sub">Dernières activités réelles à l'Assemblée nationale</div></div></div>
+    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">What's new</h2><div class="sub" data-i18n="h.quoideneuf.sub">Real, recent activity from the National Assembly</div></div></div>
 
     <div id="body-quoideneuf">
     <div id="newsList"></div>
@@ -316,7 +302,7 @@ function goToFederal(evt){
     <!-- Encadré noir compact (maquette) — le même statut réel que le ticker.
          renderTicker() lit .calendar-box .status : NE PAS renommer. -->
     <div class="calendar-box">
-      <div class="status" data-i18n="cal.status">● Assemblée dissoute le 27 août 2026 · élections générales le 5 octobre · nouvelle législature le 17 novembre</div>
+      <div class="status" data-i18n="cal.status">● The Assembly returns on October 27, 2026 · third session of the 30th Legislature</div>
     </div>
     </div>
     </div>
@@ -324,8 +310,8 @@ function goToFederal(evt){
     <div>
     <div class="section-head" id="sec-petitions">
       <div>
-        <h2 data-i18n="h.petitions">Pétitions ouvertes à l'Assemblée nationale</h2>
-        <div class="sub" data-i18n="pet.sub">Vraies pétitions électroniques actuellement ouvertes pour signature — relevées le 23 juin 2026</div>
+        <h2 data-i18n="h.petitions">Petitions open at the National Assembly</h2>
+        <div class="sub" data-i18n="pet.sub">Real e-petitions currently open for signature — recorded June 23, 2026</div>
       </div>
     </div>
     <div id="body-petitions">
@@ -339,23 +325,23 @@ function goToFederal(evt){
     <div class="band band-blue bleed" id="band-mission">
     <div id="introBlock">
       <div class="mission-box" id="sec-mission">
-        <div class="mission-eyebrow" data-i18n="mission.eyebrow">Notre mission</div>
-        <p class="mission-statement"><span data-i18n="mission.st1">Le site officiel de l'Assemblée est la source la plus fiable qui existe. Celui-ci la rend juste </span><span class="hl" data-i18n="mission.st2">plus facile à suivre.</span></p>
+        <div class="mission-eyebrow" data-i18n="mission.eyebrow">Our mission</div>
+        <p class="mission-statement"><span data-i18n="mission.st1">The Assembly's official site is the most reliable source there is. This one just makes it </span><span class="hl" data-i18n="mission.st2">easier to follow.</span></p>
         <div class="compare">
           <div class="compare-col">
-            <span class="tag" data-i18n="mission.assnat.tag">assnat.qc.ca fait</span>
+            <span class="tag" data-i18n="mission.assnat.tag">What assnat.qc.ca does</span>
             <ul>
-              <li data-i18n="mission.assnat.1">Organise tout par document officiel</li>
-              <li data-i18n="mission.assnat.2">La source légale et complète de tout</li>
-              <li data-i18n="mission.assnat.3">Neutre — ne compare et ne résume jamais</li>
+              <li data-i18n="mission.assnat.1">Organizes everything by official document</li>
+              <li data-i18n="mission.assnat.2">The complete, legally authoritative source for everything</li>
+              <li data-i18n="mission.assnat.3">Neutral — never compares or summarizes</li>
             </ul>
           </div>
           <div class="compare-col">
-            <span class="tag" data-i18n="mission.site.tag">Ce site essaie de faire</span>
+            <span class="tag" data-i18n="mission.site.tag">What this site tries to do</span>
             <ul>
-              <li data-i18n="mission.site.1">Organise tout par personne : une fiche, tous ses dossiers</li>
-              <li data-i18n="mission.site.2">Traduit le jargon en langage clair (voir le Lexique)</li>
-              <li data-i18n="mission.site.3">Vous laisse suivre ce qui vous touche, sans jugement ni verdict</li>
+              <li data-i18n="mission.site.1">Organizes everything by person: one profile, all their files</li>
+              <li data-i18n="mission.site.2">Translates the jargon into plain language (see the Glossary)</li>
+              <li data-i18n="mission.site.3">Lets you follow what affects you, with no judgment or verdict</li>
             </ul>
           </div>
         </div>
@@ -370,18 +356,18 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.ministres">Ministres et député·e·s du Québec</span>
-        <span data-i18n="minhero.l1">Conseil des ministres</span>
-        <span class="hero-outline" data-i18n="minhero.l2">&amp; toute l'Assemblée.</span>
+        <span class="hero-sujet" data-i18n="sujet.ministres">Quebec ministers and MNAs</span>
+        <span data-i18n="minhero.l1">The Cabinet</span>
+        <span class="hero-outline" data-i18n="minhero.l2">& the whole Assembly.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="minhero.sub">Les ministres, puis les 125 député·e·s de tous les partis (<b>les député·e·s sont plus bas</b>) — <b>une seule recherche pour les deux.</b></p>
+      <p class="view-hero-sub" data-i18n="minhero.sub">The ministers, then all 125 MNAs from every party (<b>the MNAs are further down</b>) — <b>one search for both.</b></p>
 
       <!-- Grande recherche façon maquette : loupe sur cellule jaune. Même rangée
            que sur Projets de loi (.projets-controls = flex + retour à la ligne). -->
       <div class="projets-controls">
         <div class="brutal-search">
           <span class="bs-icon" aria-hidden="true">🔍</span>
-          <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Nom, circonscription, région ou ministère…">
+          <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Name, riding, region, or ministry…">
         </div>
         <!-- Tri par assiduité aux votes. La logique (toggleMinistresSort) existait
              depuis le début, mais AUCUN bouton ne la déclenchait. -->
@@ -394,9 +380,9 @@ function goToFederal(evt){
     <div class="band band-white bleed" id="band-composition">
     <div class="section-head" id="sec-composition">
       <div>
-        <h2 data-i18n="h.composition">Composition — 125 sièges</h2>
+        <h2 data-i18n="h.composition">Composition — 125 seats</h2>
       </div>
-      <span class="head-note" data-i18n="apercu.composition.sub">43e législature · répartition par groupe parlementaire</span>
+      <span class="head-note" data-i18n="apercu.composition.sub">43rd Legislature · breakdown by parliamentary group</span>
     </div>
     <div class="compo-wrap">
       <div class="compo-bar" id="compoBar"></div>
@@ -411,26 +397,26 @@ function goToFederal(evt){
          jugement : le site ne donne pas de verdict. -->
     <div class="legende-presence" id="legendePresence">
       <div class="lp-tete">
-        <b class="lp-titre" data-i18n="lp.titre">Lire la présence aux votes</b>
-        <a class="lp-lien" href="/lexique" data-i18n="lp.lien">Définition complète → Lexique</a>
+        <b class="lp-titre" data-i18n="lp.titre">How to read vote attendance</b>
+        <a class="lp-lien" href="/lexique" data-i18n="lp.lien">Full definition → Glossary</a>
       </div>
-      <p class="lp-formule" data-i18n="lp.formule"><b>88 %</b> : sur 100 votes par appel nominal tenus depuis son premier vote de la législature, la personne a voté à 88 — pour, contre ou abstention, peu importe le sens.</p>
+      <p class="lp-formule" data-i18n="lp.formule"><b>88%</b>: out of 100 recorded votes held since their first vote of the legislature, the person voted in 88 — yea, nay or abstention, whichever way.</p>
       <div class="lp-echelle" id="lpEchelle"></div>
       <ul class="lp-notes">
-        <li data-i18n="lp.debut">Le compte part du premier vote de chacun : une personne élue en cours de mandat n'est pas comptée absente des votes tenus avant son arrivée.</li>
-        <li data-i18n="lp.pres"><b>—</b> : la présidence de l'Assemblée* et ses trois vice-présidences. Par neutralité, elles votent peu ou pas du tout : un taux bas ne voudrait pas dire une absence.</li>
-        <li data-i18n="lp.nd"><b>n/d</b> : aucun vote enregistré pour cette personne.</li>
-        <li data-i18n="lp.officiel">Ce n'est pas une mesure officielle : l'Assemblée ne publie pas d'assiduité, et un vote manqué n'en dit pas la raison.</li>
+        <li data-i18n="lp.debut">The count starts at each person's first vote: someone elected mid-term is not counted absent from votes held before they arrived.</li>
+        <li data-i18n="lp.pres"><b>—</b>: the Assembly's President* and its three Vice-Presidents. To stay neutral, they vote little or not at all: a low rate would not mean they were absent.</li>
+        <li data-i18n="lp.nd"><b>n/a</b>: no recorded vote for this person.</li>
+        <li data-i18n="lp.officiel">This is not an official measure: the Assembly does not publish attendance, and a missed vote does not tell why.</li>
       </ul>
-      <p class="lp-asterisque" data-i18n="lp.aster">* La présidence de l'Assemblée n'est pas la même chose que le ou la première ministre : elle dirige les débats et reste neutre, alors que le ou la première ministre dirige le gouvernement et vote comme les autres élus. <a href="/lexique#role-presidence">Voir la présidence de l'Assemblée dans le Lexique →</a></p>
-      <p class="lp-asterisque lp-asterisque-suite" data-i18n="lp.aster2">** Mis à jour chaque matin : le site relit le registre des votes de l'Assemblée et recalcule le taux de chacun, puis la médiane, les couleurs et les nombres ci-dessus. Un vote tenu un jour apparaît le lendemain ; pendant la dissolution, rien ne bouge.</p>
+      <p class="lp-asterisque" data-i18n="lp.aster">* The Assembly's President is not the same as the Premier: the President runs the debates and stays neutral, while the Premier heads the government and votes like the other members. <a href="/lexique#role-presidence">See the Assembly's presidency in the Glossary →</a></p>
+      <p class="lp-asterisque lp-asterisque-suite" data-i18n="lp.aster2">** Updated every morning: the site rereads the Assembly's register of votes and recalculates each person's rate, then the median, the colours and the numbers above. A vote held one day shows up the next; during the dissolution, nothing changes.</p>
     </div>
 
     <div class="role-group-title" id="combinedTitle" style="display:none;"></div>
 
     <div class="section-head min-group-head" id="ministresTitle">
-      <div><h2 data-i18n="h.ministres2">Les ministres</h2></div>
-      <span class="head-note"><span id="ministresCount"></span><span data-i18n="min.sub2b"> ministres — liste officielle quebec.ca</span></span>
+      <div><h2 data-i18n="h.ministres2">The ministers</h2></div>
+      <span class="head-note"><span id="ministresCount"></span><span data-i18n="min.sub2b"> ministers — official quebec.ca list</span></span>
     </div>
     <div class="grid" id="ministresGrid"></div>
     <!--PRERENDU:ministresGrid-->
@@ -441,8 +427,8 @@ function goToFederal(evt){
     <div class="band band-blue bleed" id="band-comparateur">
     <div class="section-head" id="sec-comparateur">
       <div>
-        <h2 data-i18n="h.comparateur">Comparateur</h2>
-        <div class="sub" data-i18n="comp.sub">Deux ministres, les mêmes faits, côte à côte — jamais un classement</div>
+        <h2 data-i18n="h.comparateur">Comparator</h2>
+        <div class="sub" data-i18n="comp.sub">Two ministers, the same facts, side by side — never a ranking</div>
       </div>
     </div>
     <div class="toolbar comparateur-toolbar">
@@ -453,37 +439,33 @@ function goToFederal(evt){
     </div>
 
     <div class="section-head min-group-head" id="deputesTitle">
-      <div><h2 data-i18n="min.restTitle">Le reste de l'Assemblée</h2></div>
-      <span class="head-note" data-i18n="min.restNote">Tous les partis — 125 sièges au total</span>
+      <div><h2 data-i18n="min.restTitle">The rest of the Assembly</h2></div>
+      <span class="head-note" data-i18n="min.restNote">Every party — 125 seats total</span>
     </div>
     <div class="grid" id="deputesList"></div>
     <!--PRERENDU:deputesList-->
-    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">Ces 125 entrées viennent directement de la liste officielle des députés en fonction de l'Assemblée nationale. Certains sièges peuvent changer entre deux mises à jour (démission, élection partielle) — cette liste est une photo prise au moment de la dernière mise à jour, pas un flux automatiquement à jour.</div>
+    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">These 125 entries come directly from the official list of sitting MNAs at the National Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.</div>
   </section>
 
   <!-- PROJETS DE LOI -->
   <section class="view" id="view-projets">
     <!-- Rappel de dissolution : sans ça, les projets non sanctionnés seraient lus
          comme « encore en cours ». À retirer avec l'autre bande le 17 nov. 2026. -->
-    <div class="band band-yellow bleed" id="band-dissolution-projets">
-      <h2 data-i18n="dissp.h">⚠️ Ces projets ne sont jamais devenus des lois</h2>
-      <p data-i18n="dissp.p">L'Assemblée a été dissoute le <b>27 août 2026</b>. Tout projet de loi qui n'avait pas été <b>sanctionné</b> est donc <b>mort au feuilleton</b> — c'est le terme officiel de l'Assemblée. Sur les cartes, on l'écrit en clair : <b>« mort dans l'œuf »</b> si le projet n'a jamais dépassé la présentation, <b>« tombé en cours de route »</b> s'il s'était rendu plus loin. Dans les deux cas, il devra repartir de zéro devant la nouvelle Assemblée (17 novembre 2026). Les projets marqués « Sanctionnée » sont, eux, bel et bien devenus des lois.</p>
-    </div>
 
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.projets">Projets de loi du Québec</span>
-        <span data-i18n="projhero.l1">Projets de loi,</span>
-        <span class="hero-outline" data-i18n="projhero.l2">traduits en clair.</span>
+        <span class="hero-sujet" data-i18n="sujet.projets">Quebec bills</span>
+        <span data-i18n="projhero.l1">Bills,</span>
+        <span class="hero-outline" data-i18n="projhero.l2">translated plainly.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="projhero.sub">Chaque projet résumé en langage courant, avec son étape réelle dans le processus. <b>Le texte intégral reste toujours à un clic sur assnat.qc.ca.</b></p>
+      <p class="view-hero-sub" data-i18n="projhero.sub">Every bill summarized in everyday language, with its real stage in the process. The full text is always one click away on assnat.qc.ca.</p>
 
       <!-- Recherche façon maquette + 4 filtres rapides (actif = noir/jaune) -->
       <div class="projets-controls">
         <div class="brutal-search">
           <span class="bs-icon" aria-hidden="true">🔍</span>
-          <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Numéro, titre ou mot-clé…">
+          <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Number, title or keyword…">
         </div>
         <!-- Tri par activité. La logique existait déjà (toggleBillsSort) mais
              AUCUN bouton ne la déclenchait : la liste était figée sur « activité
@@ -495,13 +477,13 @@ function goToFederal(evt){
 
     <!-- Bande légende : le chemin d'un projet (les 3 étapes RÉELLES du site) -->
     <div class="legend-strip bleed">
-      <span class="legend-label" data-i18n="legend.label">Le chemin d'un projet de loi :</span>
+      <span class="legend-label" data-i18n="legend.label">A bill's path:</span>
       <span class="legend-chips">
         <span class="bstep">Présentation</span><span class="legend-arrow">→</span>
         <span class="bstep">Étude détaillée</span><span class="legend-arrow">→</span>
         <span class="bstep">Adoption / Sanction</span>
       </span>
-      <a class="legend-link" href="/lexique" data-i18n="legend.link">C'est quoi ces étapes ? → Lexique</a>
+      <a class="legend-link" href="/lexique" data-i18n="legend.link">What are these stages? → Glossary</a>
     </div>
 
     <!-- Titre de résultats (change avec le filtre actif) -->
@@ -517,9 +499,9 @@ function goToFederal(evt){
          requis, 1 demande par personne, paliers 500/1000) — la maquette disait
          « pas de compte requis », ce qui ne correspond pas à la réalité. -->
     <div class="band band-yellow bleed" id="band-challenge-explainer">
-      <h2 data-i18n="chexp.h">✋ C'est quoi, « challenger » ?</h2>
-      <p data-i18n="chexp.p1">Un clic sur « Demander une explication » = une demande citoyenne pour que le parrain du projet l'explique en langage clair, et pour qu'on le garde à l'œil ensemble.</p>
-      <p data-i18n="chexp.p2"><b>Un compte (courriel) est requis</b> — une demande par personne, aucune demande anonyme. 🔥 À <b>1 000</b>, on pousse pour une pétition officielle.</p>
+      <h2 data-i18n="chexp.h">✋ What is “challenging”?</h2>
+      <p data-i18n="chexp.p1">One click on “Ask for an explanation” = a citizen request for the bill's sponsor to explain it in plain language, and for us to keep an eye on it together.</p>
+      <p data-i18n="chexp.p2">An account (email) is required — one request per person, no anonymous requests. 🔥 At 1,000, we push for an official petition.</p>
     </div>
 
     <!-- Reste des projets (3e et suivants) — la bande jaune ci-dessus
@@ -532,20 +514,20 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.votes">Votes nominatifs à l'Assemblée nationale</span>
-        <span data-i18n="votehero.l1">Qui a voté</span>
-        <span class="hero-outline" data-i18n="votehero.l2">pour, contre, absent.</span>
+        <span class="hero-sujet" data-i18n="sujet.votes">Recorded divisions at the National Assembly</span>
+        <span data-i18n="votehero.l1">Who voted</span>
+        <span class="hero-outline" data-i18n="votehero.l2">for, against, absent.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="votehero.sub">Le registre des votes nominatifs, tel quel. <b>On n'interprète pas — on montre.</b> Une absence peut être une mission officielle, une maladie, un conflit d'horaire.</p>
+      <p class="view-hero-sub" data-i18n="votehero.sub">The recorded-division registry, as is. We don't interpret — we show. An absence can be an official mission, an illness, a scheduling conflict.</p>
     </div>
 
     <div class="section-head">
       <div>
-        <h2 data-i18n="h.votes" class="visually-hidden-title">Registre des votes</h2>
-        <div class="sub" data-i18n="votes.sub">43e législature (sessions 1 à 3) — décomptes et détail nominatif officiels</div>
+        <h2 data-i18n="h.votes" class="visually-hidden-title">Vote registry</h2>
+        <div class="sub" data-i18n="votes.sub">43rd Legislature (sessions 1 to 3) — official counts and by-MNA breakdown</div>
       </div>
       <div class="toolbar">
-        <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Mot-clé : sujet, numéro de projet de loi…">
+        <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Keyword: subject, bill number…">
         <!-- Tous / Divisés / Projets de loi / Motions — rempli par renderVotesQuickFilters(). -->
         <div class="quick-filters" id="votesQuickFilters"></div>
       </div>
@@ -554,24 +536,24 @@ function goToFederal(evt){
     <div id="votesList"></div>
     <!--PRERENDU:votesList-->
     <div class="info-box">
-      <b data-i18n="votes.info.b">Sur le détail « qui a voté quoi »</b> <span data-i18n="votes.info.text">— l'Assemblée nationale publie le nom de chaque député pour chaque vote nominal dans son registre des votes officiel. Le détail nominatif ci-dessus (bouton « Voir le détail nominatif ») vient de ce registre officiel, pas d'une estimation. Le parti affiché à côté de chaque nom est celui inscrit au registre au moment du vote — il peut différer du parti actuel d'un·e député·e ayant changé d'allégeance depuis.</span>
+      <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text">— the National Assembly publishes each MNA's name for every recorded vote in its official vote registry. The by-MNA breakdown above (“View names by MNA” button) comes from that official registry, not an estimate. The party shown next to each name is the one on record at the time of the vote — it may differ from an MNA's current party if they have since changed allegiance.</span>
     </div>
 
     <!-- « Comment lire un vote » : bande bleue pédagogique (maquette) -->
     <div class="band band-blue bleed" id="band-lire-vote">
-      <h2 data-i18n="lire.h">Comment lire un vote</h2>
+      <h2 data-i18n="lire.h">How to read a vote</h2>
       <div class="lire-grid">
         <div class="lire-box">
-          <h3 data-i18n="lire.1.h">Vote nominal</h3>
-          <p data-i18n="lire.1.p">Chaque député·e se lève et son choix est consigné au Journal des débats. C'est le seul type de vote qu'on peut attribuer à une personne.</p>
+          <h3 data-i18n="lire.1.h">Recorded division</h3>
+          <p data-i18n="lire.1.p">Each MNA stands and their choice is recorded in the Journal des débats. It's the only kind of vote that can be attributed to a person.</p>
         </div>
         <div class="lire-box">
-          <h3 data-i18n="lire.2.h">Adopté ≠ loi</h3>
-          <p data-i18n="lire.2.p">Un vote gagné fait avancer le projet d'une étape. Il ne devient loi qu'après la sanction du lieutenant-gouverneur.</p>
+          <h3 data-i18n="lire.2.h">Passed ≠ law</h3>
+          <p data-i18n="lire.2.p">A winning vote moves the bill one stage forward. It only becomes law after assent by the Lieutenant-Governor.</p>
         </div>
         <div class="lire-box hl">
-          <h3 data-i18n="lire.3.h">Ligne de parti</h3>
-          <p data-i18n="lire.3.p">La plupart des votes suivent la consigne du parti. Les votes libres sont rares — et c'est là que le détail nominatif devient intéressant.</p>
+          <h3 data-i18n="lire.3.h">Party line</h3>
+          <p data-i18n="lire.3.p">Most votes follow the party's instruction. Free votes are rare — and that's where the nominal detail gets interesting.</p>
         </div>
       </div>
     </div>
@@ -586,37 +568,37 @@ function goToFederal(evt){
   <section class="view" id="view-promesses">
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.promesses">Promesses électorales 2026</span>
-        <span data-i18n="prom.l1">Ce qu'ils promettent,</span>
-        <span class="hero-outline" data-i18n="prom.l2">ce qu'ils en feront.</span>
+        <span class="hero-sujet" data-i18n="sujet.promesses">2026 election promises</span>
+        <span data-i18n="prom.l1">What they promise,</span>
+        <span class="hero-outline" data-i18n="prom.l2">what they'll do with it.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="prom.sub">Les engagements des partis pour l'élection du 5 octobre 2026, chacun avec sa source. <b>Aucun verdict n'est rendu ici</b> — à mesure que la nouvelle Assemblée légiférera, chaque promesse sera placée à côté de ce qui a réellement été fait.</p>
+      <p class="view-hero-sub" data-i18n="prom.sub">The parties' commitments for the October 5, 2026 election, each with its source. <b>No verdict is issued here</b> — as the new Assembly legislates, each promise will be placed next to what was actually done.</p>
     </div>
 
 
     <div class="legend-strip bleed">
-      <span class="legend-label" data-i18n="prom.method">Notre méthode :</span>
+      <span class="legend-label" data-i18n="prom.method">Our method:</span>
       <span class="legend-chips">
-        <span class="bstep" data-i18n="prom.m1">Citation exacte</span><span class="legend-arrow">→</span>
-        <span class="bstep" data-i18n="prom.m2">Source liée</span><span class="legend-arrow">→</span>
-        <span class="bstep" data-i18n="prom.m3">Aucun jugement</span>
+        <span class="bstep" data-i18n="prom.m1">Exact quote</span><span class="legend-arrow">→</span>
+        <span class="bstep" data-i18n="prom.m2">Source linked</span><span class="legend-arrow">→</span>
+        <span class="bstep" data-i18n="prom.m3">No judgment</span>
       </span>
     </div>
 
     <div class="prom-filters">
       <div class="prom-filter-row">
-        <span class="prom-filter-lbl" data-i18n="prom.byparty">Par parti</span>
+        <span class="prom-filter-lbl" data-i18n="prom.byparty">By party</span>
         <div class="quick-filters" id="promPartyFilters"></div>
       </div>
       <div class="prom-filter-row">
-        <span class="prom-filter-lbl" data-i18n="prom.bytheme">Par sujet</span>
+        <span class="prom-filter-lbl" data-i18n="prom.bytheme">By topic</span>
         <div class="quick-filters" id="promThemeFilters"></div>
       </div>
     </div>
 
     <!-- Pourquoi la CAQ est absente. Une absence non expliquée se lit comme un
          parti pris : tant qu'elle n'a pas publié de plateforme, on dit pourquoi. -->
-    <div class="info-box" data-i18n="prom.caq">Une seule source est acceptée ici : les <b>documents officiels du parti</b>, cités mot pour mot. <b>Au plus 8 engagements par parti</b>, et la <b>Coalition avenir Québec</b> n'apparaît pas du tout — son site demande aux outils automatisés comme le nôtre de ne pas le lire, et nous respectons cette demande plutôt que de la contourner.</div>
+    <div class="info-box" data-i18n="prom.caq">Only one source is accepted here: the <b>party's own official documents</b>, quoted word for word. <b>At most 8 commitments per party</b>, and the <b>Coalition avenir Québec</b> does not appear at all — its website asks automated tools like ours not to read it, and we honour that request rather than work around it.</div>
     <div class="section-head min-group-head" id="promResultHead">
       <div><h2 id="promResultTitle">Toutes les promesses</h2></div>
       <span class="head-note" id="promResultNote"></span>
@@ -631,15 +613,15 @@ function goToFederal(evt){
          que c'est notre plafond. On dit donc précisément ce que la liste est,
          et surtout ce qu'elle n'est PAS. -->
     <div class="prom-methode" id="prom-methode">
-      <h3 data-i18n="prom.meth.h">D'où viennent ces promesses</h3>
+      <h3 data-i18n="prom.meth.h">Where these promises come from</h3>
       <ul>
-        <li data-i18n="prom.meth.1"><b>Des partis eux-mêmes.</b> Chaque citation est tirée d'un document publié par le parti — plateforme électorale ou annonce de campagne — et reproduite mot pour mot. Une citation qui ne se retrouve pas telle quelle dans la source est rejetée automatiquement. Le lien « Voir la source » de chaque carte mène à l'original.</li>
-        <li data-i18n="prom.meth.2"><b>Ce ne sont pas les « promesses phares ».</b> Au plus 8 par parti, choisies automatiquement parmi les plus concrètes — montants, cibles, échéances. Rien ici ne classe les engagements par importance. Un engagement central formulé sans chiffre peut donc ne pas y figurer, et les partis en ont publié davantage.</li>
-        <li data-i18n="prom.meth.3"><b>La période couverte n'est pas la même pour tous.</b> Québec solidaire, le Parti libéral et le Parti conservateur publient une plateforme complète, lue en entier. Le Parti Québécois n'en publie pas : ses engagements sont lus dans ses annonces de campagne depuis la dissolution du 27 août.</li>
-        <li data-i18n="prom.meth.4"><b>La Coalition avenir Québec est absente.</b> Elle a publié des engagements sur son site, mais celui-ci demande aux outils automatisés de ne pas le lire. Nous ne contournons pas cette demande. Elle entrera dans la liste dès qu'une source lisible existera.</li>
-        <li data-i18n="prom.meth.5"><b>Rien n'est tiré des médias.</b> Un engagement annoncé en conférence de presse mais jamais publié par le parti n'apparaît pas ici. La presse québécoise a retiré son contenu de l'usage par l'IA et nos demandes d'autorisation sont restées sans réponse.</li>
+        <li data-i18n="prom.meth.1"><b>From the parties themselves.</b> Every quote is taken from a document the party published — an electoral platform or a campaign announcement — and reproduced word for word. A quote that cannot be found verbatim in the source is rejected automatically. The “See the source” link on each card leads to the original.</li>
+        <li data-i18n="prom.meth.2"><b>These are not the “flagship” promises.</b> At most 8 per party, selected automatically from the most concrete ones — amounts, targets, deadlines. Nothing here ranks commitments by importance. A central commitment stated without a figure may therefore be missing, and the parties have published more.</li>
+        <li data-i18n="prom.meth.3"><b>The period covered is not the same for everyone.</b> Québec solidaire, the Liberal Party and the Conservative Party publish a full platform, read in its entirety. The Parti Québécois does not: its commitments are read from its campaign announcements since the August 27 dissolution.</li>
+        <li data-i18n="prom.meth.4"><b>The Coalition avenir Québec is absent.</b> It has published commitments on its website, but that site asks automated tools not to read it. We do not work around that request. It will be added as soon as a readable source exists.</li>
+        <li data-i18n="prom.meth.5"><b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here. Quebec news organizations have opted their content out of AI use, and our permission requests remain unanswered.</li>
       </ul>
-      <p class="prom-methode-fin" data-i18n="prom.meth.fin">Autrement dit : une absence dans cette liste ne dit rien de ce qu'un parti pense. Pour la liste complète, suivez le lien vers la source.</p>
+      <p class="prom-methode-fin" data-i18n="prom.meth.fin">In short: an absence from this list says nothing about what a party thinks. For the full list, follow the link to the source.</p>
     </div>
 
     <!-- Les comparateurs des médias. On ne reprend pas leur contenu — ils ont
@@ -650,8 +632,8 @@ function goToFederal(evt){
          ⚠️ Ces quatre adresses ont été vérifiées (réponse 200) le 2026-09-12.
          Si l'une tombe, la retirer plutôt que de la laisser pourrir. -->
     <div class="prom-ailleurs" id="prom-ailleurs">
-      <h3 data-i18n="prom.ail.h">Les comparateurs des médias</h3>
-      <p data-i18n="prom.ail.p">Plusieurs salles de rédaction ont bâti leur propre comparateur, avec des moyens que nous n'avons pas. <b>Nous ne reprenons pas leur contenu</b> : ces médias ont retiré leurs textes de l'usage par l'intelligence artificielle, et nos demandes d'autorisation sont restées sans réponse. Nous respectons ce choix. Mais un lien n'est pas une reproduction — alors les voici, parce qu'ils vous seront utiles.</p>
+      <h3 data-i18n="prom.ail.h">Comparison tools from news outlets</h3>
+      <p data-i18n="prom.ail.p">Several newsrooms have built their own promise comparison tools, with resources we do not have. <b>We do not reproduce their content</b>: these outlets have opted their material out of AI use, and our permission requests remain unanswered. We respect that choice. But a link is not a reproduction — so here they are, because they will be useful to you.</p>
       <ul class="prom-ailleurs-liste">
         <li><a href="https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/" target="_blank" rel="noopener"><b>Radio-Canada</b> — Comparez les plateformes électorales des partis</a></li>
         <li><a href="https://www.ledevoir.com/interactif/2026-08-28/promesses-elections-quebec/index.html" target="_blank" rel="noopener"><b>Le Devoir</b> — Comparez les promesses et programmes des partis</a></li>
@@ -661,8 +643,8 @@ function goToFederal(evt){
     </div>
 
     <div class="band band-yellow bleed" id="band-promesses-suite">
-      <h2 data-i18n="prom.next.h">Et après le 5 octobre ?</h2>
-      <p data-i18n="prom.next.p">La nouvelle Assemblée siégera à partir du <b>17 novembre 2026</b>. À partir de là, chaque projet de loi déposé viendra se placer à côté de la promesse qui lui correspond — et l'absence de projet de loi sur un engagement sera tout aussi visible. C'est le suivi que personne ne fait passé la semaine électorale.</p>
+      <h2 data-i18n="prom.next.h">And after October 5?</h2>
+      <p data-i18n="prom.next.p">The new Assembly sits from <b>November 17, 2026</b>. From then on, every bill introduced will be placed next to the promise it matches — and the absence of a bill on a commitment will be just as visible. That is the follow-up nobody does past election week.</p>
     </div>
   </section>
 
@@ -670,15 +652,15 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.lexique">Lexique de l'Assemblée nationale</span>
-        <span data-i18n="lexhero.l1">Le jargon,</span>
-        <span class="hero-outline" data-i18n="lexhero.l2">décodé.</span>
+        <span class="hero-sujet" data-i18n="sujet.lexique">National Assembly glossary</span>
+        <span data-i18n="lexhero.l1">The jargon,</span>
+        <span class="hero-outline" data-i18n="lexhero.l2">decoded.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="lexhero.sub">« Sanction royale », « étude détaillée », « bâillon »… Le Parlement a son vocabulaire. <b>Ici, chaque terme est expliqué comme à un·e ami·e.</b></p>
+      <p class="view-hero-sub" data-i18n="lexhero.sub">“Royal assent”, “clause-by-clause study”, “closure”… Parliament has its own vocabulary. Here, every term is explained like you'd explain it to a friend.</p>
     </div>
 
     <!-- Connexion — remontee tout en haut de Lexique -->
-    <div class="section-head" id="sec-compte"><div><h2 data-i18n="h.compte">Compte</h2></div></div>
+    <div class="section-head" id="sec-compte"><div><h2 data-i18n="h.compte">Account</h2></div></div>
     <!-- Contenu de départ = la branche « non connecté » de renderAccountBox() (commun/dq.js), qui le
          remplace : la boîte a sa hauteur finale dès le premier affichage (CLS). Désactivé tant que
          la connexion n'est pas prête : un clic avant ce moment enverrait un lien dont la
@@ -694,186 +676,186 @@ function goToFederal(evt){
 
     <!-- Entrée permanente vers /promesses (la vue n'a pas d'onglet — voir la
          décision : on lui en donnera un si la page est visitée souvent). -->
-    <div class="section-head" id="sec-promesses"><div><h2 data-i18n="h.promesses">Promesses électorales</h2></div></div>
+    <div class="section-head" id="sec-promesses"><div><h2 data-i18n="h.promesses">Election promises</h2></div></div>
     <div class="info-box">
-      <span data-i18n="prom.lex">Les engagements des partis pour l'élection du 5 octobre 2026, chacun avec sa source — et, à mesure que la nouvelle Assemblée légiférera, ce qui en aura réellement été fait. Aucun verdict : la promesse et l'action, côte à côte.</span>
-      <div><a class="diss-cta" href="/promesses" data-i18n="prom.lex.cta" style="margin-top:12px;">Voir les promesses →</a></div>
+      <span data-i18n="prom.lex">The parties' commitments for the October 5, 2026 election, each with its source — and, as the new Assembly legislates, what was actually done about them. No verdict: the promise and the action, side by side.</span>
+      <div><a class="diss-cta" href="/promesses" data-i18n="prom.lex.cta" style="margin-top:12px;">See the promises →</a></div>
     </div>
 
     <div class="quick-nav" id="quickNavLexique">
-      <span class="quick-nav-label" data-i18n="quicknav.label">Aller à :</span>
-      <a data-jump="sec-personnes" data-i18n="quicknav.personnes">Qui gravite autour</a>
-      <a data-jump="sec-lobby" data-i18n="quicknav.lobby">Registre des lobbyistes</a>
-      <a data-jump="sec-lexique" data-i18n="quicknav.lexiqueitem">Lexique</a>
-      <a data-jump="sec-apropos" data-i18n="quicknav.apropos">D'où viennent ces données</a>
+      <span class="quick-nav-label" data-i18n="quicknav.label">Jump to:</span>
+      <a data-jump="sec-personnes" data-i18n="quicknav.personnes">Who's involved</a>
+      <a data-jump="sec-lobby" data-i18n="quicknav.lobby">Lobbyist registry</a>
+      <a data-jump="sec-lexique" data-i18n="quicknav.lexiqueitem">Glossary</a>
+      <a data-jump="sec-apropos" data-i18n="quicknav.apropos">Where this data comes from</a>
     </div>
 
-    <div class="section-head" id="sec-personnes"><div><h2 data-i18n="h.personnes">Qui gravite autour de l'Assemblée</h2><div class="sub" data-i18n="pers.sub">Les rôles publics qu'on n'avait pas encore couverts — vrais noms, vraies fonctions actuelles</div></div></div>
+    <div class="section-head" id="sec-personnes"><div><h2 data-i18n="h.personnes">Who's involved around the Assembly</h2><div class="sub" data-i18n="pers.sub">The public roles we hadn't covered yet — real names, real current functions</div></div></div>
 
     <div id="body-personnes">
 
-    <div class="role-group-title" data-i18n="pers.g1">À l'intérieur de l'Assemblée</div>
+    <div class="role-group-title" data-i18n="pers.g1">Inside the Assembly</div>
     <!-- #role-presidence : la légende de la présence aux votes (page Ministres) y renvoie, parce que
          « la présidence » s'y confondait avec la première ministre (Martin, 22 sept. 2026). -->
     <div class="role-card" id="role-presidence">
       <div>
-        <div class="role" data-i18n="pers.1.role">Présidente de l'Assemblée nationale</div>
+        <div class="role" data-i18n="pers.1.role">President of the National Assembly</div>
         <h3>Nathalie Roy</h3>
-        <p data-i18n="pers.1.desc">Préside les séances et applique le Règlement. Députée de Montarville (CAQ), mais son rôle de présidence exige la neutralité.</p>
+        <p data-i18n="pers.1.desc">Presides over sittings and enforces the Standing Orders. MNA for Montarville (CAQ), but the presiding role requires neutrality.</p>
       </div>
     </div>
 
-    <div class="role-group-title" data-i18n="pers.g2">Représentante de la Couronne</div>
+    <div class="role-group-title" data-i18n="pers.g2">The Crown's representative</div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.2.role">Lieutenante-gouverneure du Québec</div>
+        <div class="role" data-i18n="pers.2.role">Lieutenant Governor of Québec</div>
         <h3>Manon Jeannotte</h3>
-        <p data-i18n="pers.2.desc">30e titulaire du poste, en fonction depuis le 25 janvier 2024 — première personne issue des Premières Nations à l'occuper. C'est elle qui donne la sanction royale citée dans chaque fiche de projet de loi de ce site.</p>
+        <p data-i18n="pers.2.desc">30th holder of the office, in place since January 25, 2024 — the first person of First Nations heritage to hold it. She gives the royal assent cited on every bill card on this site.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.2.badge">Cérémoniel + sanction des lois</span>
+      <span class="role-badge" data-i18n="pers.2.badge">Ceremonial + assent to laws</span>
     </div>
 
-    <div class="role-group-title" data-i18n="pers.g3">Chiens de garde indépendants — nommés par l'Assemblée, pas par le gouvernement</div>
+    <div class="role-group-title" data-i18n="pers.g3">Independent watchdogs — appointed by the Assembly, not the government</div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.3.role">Vérificatrice générale du Québec</div>
+        <div class="role" data-i18n="pers.3.role">Auditor General of Québec</div>
         <h3>Christine Roy</h3>
-        <p data-i18n="pers.3.desc">Audite les dépenses et la gestion de l'État. En poste depuis décembre 2025, mandat de 10 ans non renouvelable.</p>
+        <p data-i18n="pers.3.desc">Audits state spending and management. In office since December 2025, 10-year non-renewable term.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Personne désignée</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.4.role">Protecteur du citoyen</div>
+        <div class="role" data-i18n="pers.4.role">Québec Ombudsperson</div>
         <h3>Marc-André Dowd</h3>
-        <p data-i18n="pers.4.desc">Traite les plaintes des citoyens contre l'administration publique.</p>
+        <p data-i18n="pers.4.desc">Handles citizen complaints against the public administration.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Personne désignée</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.5.role">Directeur général des élections du Québec</div>
+        <div class="role" data-i18n="pers.5.role">Chief Electoral Officer of Québec</div>
         <h3>Jean-François Blanchet</h3>
-        <p data-i18n="pers.5.desc">Supervise les élections et la délimitation de la carte électorale.</p>
+        <p data-i18n="pers.5.desc">Oversees elections and the electoral map.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Personne désignée</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.6.role">Commissaire à l'éthique et à la déontologie</div>
+        <div class="role" data-i18n="pers.6.role">Ethics Commissioner</div>
         <h3>Ariane Mignolet</h3>
-        <p data-i18n="pers.6.desc">Conseille et enquête sur la conduite des députés en matière d'éthique.</p>
+        <p data-i18n="pers.6.desc">Advises on and investigates MNA conduct on ethics matters.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Personne désignée</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.7.role">Commissaire au lobbyisme</div>
+        <div class="role" data-i18n="pers.7.role">Lobbying Commissioner</div>
         <h3>Jean-François Routhier</h3>
-        <p data-i18n="pers.7.desc">Administre le registre des lobbyistes — le lien direct avec la tâche « registre des lobbyistes » de notre feuille de route.</p>
+        <p data-i18n="pers.7.desc">Administers the lobbyist registry — the direct link to the “lobbyist registry” task on our roadmap.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Personne désignée</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.8.role">Commissaire au bien-être et aux droits des enfants</div>
+        <div class="role" data-i18n="pers.8.role">Commissioner for the Well-Being and Rights of Children</div>
         <h3>Marie-Eve Brunet</h3>
-        <p data-i18n="pers.8.desc">Institution la plus récente de ce groupe, créée en 2023.</p>
+        <p data-i18n="pers.8.desc">The most recent institution in this group, created in 2023.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Personne désignée</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
     </div>
 
-    <div class="info-box" data-i18n="pers.info">Ces personnes exercent des fonctions publiques officielles et sont nommées selon un processus prévu par la loi — c'est en cela que l'information ci-dessus est publique. Ça ne veut pas dire que tout ce qui les concerne devient public : je m'en tiens ici à leur fonction officielle, comme pour tout le reste du site.</div>
+    <div class="info-box" data-i18n="pers.info">These people hold official public functions and are appointed through a legally defined process — that's what makes the information above public. That doesn't mean everything about them becomes public: I stick to their official function here, as with the rest of the site.</div>
     </div>
 
     <div class="band band-yellow bleed" id="band-suggest">
       <div class="suggest-inner">
         <div>
-          <h2 data-i18n="suggest.h">Un mot vous échappe ?</h2>
-          <p data-i18n="suggest.p">Si vous avez buté sur un terme en lisant un projet de loi ou un vote, d'autres aussi. Suggérez-le sur la page Facebook — il sera ajouté avec une définition en langage clair.</p>
+          <h2 data-i18n="suggest.h">Missing a word?</h2>
+          <p data-i18n="suggest.p">If a term tripped you up while reading a bill or a vote, it tripped others too. Suggest it on the Facebook page — it will be added with a plain-language definition.</p>
         </div>
-        <a class="suggest-cta" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" data-i18n="suggest.cta">✉ Suggérer un terme</a>
+        <a class="suggest-cta" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" data-i18n="suggest.cta">✉ Suggest a term</a>
       </div>
     </div>
 
-    <div class="section-head" id="sec-lobby"><div><h2 data-i18n="h.lobby">Le registre des lobbyistes</h2><div class="sub" data-i18n="lobby.sub">Qui est payé pour influencer les décisions publiques — et comment le consulter</div></div></div>
+    <div class="section-head" id="sec-lobby"><div><h2 data-i18n="h.lobby">The lobbyist registry</h2><div class="sub" data-i18n="lobby.sub">Who's paid to influence public decisions — and how to look it up</div></div></div>
     <div class="info-box" style="scroll-margin-top:12px;">
-      <p data-i18n="lobby.body" style="margin:0 0 8px;">Toute personne payée pour communiquer avec des <b>titulaires de charge publique</b> (ministres, député·e·s, hauts fonctionnaires…) au sujet de lois, règlements, subventions ou contrats doit s'inscrire à un <b>registre public</b>, supervisé par le <b>Commissaire au lobbyisme du Québec</b>, une institution indépendante. Les lobbyistes doivent y déclarer leurs mandats.</p>
-      <p data-i18n="lobby.note" style="margin:0 0 10px; color:var(--slate); font-size:12.5px;">Pourquoi ce site ne reproduit pas ce registre : ses données ne sont pas offertes en données ouvertes (rien sur Données Québec) et ne sont consultables qu'à travers l'outil de recherche officiel. Plutôt que d'en faire une copie qui ne serait pas fiable ni à jour, on renvoie directement aux outils publics officiels.</p>
+      <p data-i18n="lobby.body" style="margin:0 0 8px;">Anyone paid to communicate with <b>public office holders</b> (ministers, MNAs, senior officials…) about laws, regulations, grants or contracts must register in a <b>public registry</b>, overseen by the <b>Quebec Lobbying Commissioner</b>, an independent institution. Lobbyists must declare their mandates there.</p>
+      <p data-i18n="lobby.note" style="margin:0 0 10px; color:var(--slate); font-size:12.5px;">Why this site doesn't reproduce the registry: its data isn't offered as open data (nothing on Données Québec) and is only accessible through the official search tool. Rather than make a copy that wouldn't be reliable or up to date, we link straight to the official public tools.</p>
       <div style="font-size:12.5px; display:flex; flex-wrap:wrap; align-items:center; gap:2px 0;">
-        <a href="https://www.carrefourlobby.quebec/recherche-mandats" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link1">Rechercher dans le registre ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://www.carrefourlobby.quebec/mandats-publies" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link2">Mandats récemment publiés ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://lobbyisme.quebec/" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link3">Commissaire au lobbyisme ↗</a>
+        <a href="https://www.carrefourlobby.quebec/recherche-mandats" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link1">Search the registry ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://www.carrefourlobby.quebec/mandats-publies" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link2">Recently published mandates ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://lobbyisme.quebec/" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link3">Lobbying Commissioner ↗</a>
       </div>
     </div>
 
-    <div class="section-head" id="sec-lexique"><div><h2 data-i18n="h.lexique">Lexique du jargon parlementaire</h2><div class="sub" data-i18n="h.lexique.sub">Pour comprendre le reste du site sans avoir fait un cours de science politique</div></div></div>
+    <div class="section-head" id="sec-lexique"><div><h2 data-i18n="h.lexique">Parliamentary glossary</h2><div class="sub" data-i18n="h.lexique.sub">To understand the rest of the site without a political science degree</div></div></div>
 
     <div id="body-lexique">
 
     <dl>
       <div class="lexique-item">
-        <dt data-i18n="lex.1.t">Projet de loi</dt>
-        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Processus</span>
-        <dd data-i18n="lex.1.d">Le texte qu'un député ou le gouvernement soumet à l'Assemblée pour qu'il devienne une loi. Il devient une vraie loi seulement une fois adopté puis sanctionné.</dd>
+        <dt data-i18n="lex.1.t">Bill</dt>
+        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
+        <dd data-i18n="lex.1.d">The text a member or the government submits to the Assembly to become a law. It only becomes a real law once passed and then assented to.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.2.t">Adoption du principe</dt>
-        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Processus</span>
-        <dd data-i18n="lex.2.d">La première grande étape : l'Assemblée vote pour dire si elle est d'accord avec l'idée générale du projet de loi, avant d'en étudier le détail article par article.</dd>
+        <dt data-i18n="lex.2.t">Passage in principle</dt>
+        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
+        <dd data-i18n="lex.2.d">The first big stage: the Assembly votes on whether it agrees with the general idea of the bill, before studying it in clause-by-clause detail.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.3.t">Étude détaillée</dt>
-        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Processus</span>
-        <dd data-i18n="lex.3.d">L'étape où une commission parlementaire (un petit groupe de députés) passe le projet de loi au peigne fin, article par article, et peut y proposer des amendements.</dd>
+        <dt data-i18n="lex.3.t">Clause-by-clause review</dt>
+        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
+        <dd data-i18n="lex.3.d">The stage where a parliamentary committee (a small group of MNAs) goes through the bill in detail, clause by clause, and can propose amendments.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.4.t">Adoption</dt>
-        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Processus</span>
-        <dd data-i18n="lex.4.d">Le vote final en Chambre sur l'ensemble du projet de loi, une fois toutes les étapes précédentes complétées.</dd>
+        <dt data-i18n="lex.4.t">Passage</dt>
+        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
+        <dd data-i18n="lex.4.d">The final vote in the Chamber on the entire bill, once all previous stages are complete.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.5.t">Sanction</dt>
-        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Processus</span>
-        <dd data-i18n="lex.5.d">La toute dernière étape administrative : le lieutenant-gouverneur donne son assentiment officiel, et le projet de loi devient formellement une loi du Québec.</dd>
+        <dt data-i18n="lex.5.t">Assent</dt>
+        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
+        <dd data-i18n="lex.5.d">The very last administrative step: the Lieutenant Governor gives official assent, and the bill formally becomes a law of Québec.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.6.t">Commission parlementaire</dt>
-        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Processus</span>
-        <dd data-i18n="lex.6.d">Un groupe plus restreint de députés (une dizaine, en général) qui étudie un sujet ou un projet de loi en profondeur, entend des experts et des citoyens, avant que ça revienne devant l'Assemblée au complet.</dd>
+        <dt data-i18n="lex.6.t">Parliamentary committee</dt>
+        <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
+        <dd data-i18n="lex.6.d">A smaller group of MNAs (usually around ten) who study a topic or bill in depth, hear experts and citizens, before it comes back before the full Assembly.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.7.t">Vote par appel nominal</dt>
+        <dt data-i18n="lex.7.t">Recorded vote</dt>
         <span class="lex-badge cat-votes" data-i18n="lexcat.votes">Votes</span>
-        <dd data-i18n="lex.7.d">Un vote où le nom de chaque député et son choix (Pour/Contre/Abstention) sont officiellement consignés — par opposition à un vote à main levée, où seul le résultat global est noté.</dd>
+        <dd data-i18n="lex.7.d">A vote where each MNA's name and choice (Yea/Nay/Abstention) are officially recorded — as opposed to a voice vote, where only the overall result is noted.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.8.t">Procès-verbal</dt>
+        <dt data-i18n="lex.8.t">Minutes (Procès-verbal)</dt>
         <span class="lex-badge cat-votes" data-i18n="lexcat.votes">Votes</span>
-        <dd data-i18n="lex.8.d">Le compte rendu officiel, mais résumé, de tout ce qui s'est passé pendant une séance : décisions, votes, dépôts de documents.</dd>
+        <dd data-i18n="lex.8.d">The official but summarized record of everything that happened during a sitting: decisions, votes, tabled documents.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.9.t">Journal des débats</dt>
+        <dt data-i18n="lex.9.t">Debates journal (Journal des débats)</dt>
         <span class="lex-badge cat-votes" data-i18n="lexcat.votes">Votes</span>
-        <dd data-i18n="lex.9.d">La transcription complète, mot pour mot, de tout ce qui a été dit en Chambre — contrairement au procès-verbal, qui ne fait que résumer les décisions.</dd>
+        <dd data-i18n="lex.9.d">The complete, word-for-word transcript of everything said in the Chamber — unlike the minutes, which only summarize decisions.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.10.t">Leader parlementaire</dt>
-        <span class="lex-badge cat-pers" data-i18n="lexcat.pers">Personnes et rôles</span>
-        <dd data-i18n="lex.10.d">Le député responsable d'organiser les travaux de son groupe à l'Assemblée — un peu le chef d'orchestre du calendrier et des débats pour son parti.</dd>
+        <dt data-i18n="lex.10.t">House leader</dt>
+        <span class="lex-badge cat-pers" data-i18n="lexcat.pers">People & roles</span>
+        <dd data-i18n="lex.10.d">The MNA responsible for organizing their group's proceedings at the Assembly — a bit like the conductor of the calendar and debates for their party.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.11.t">Whip</dt>
-        <span class="lex-badge cat-pers" data-i18n="lexcat.pers">Personnes et rôles</span>
-        <dd data-i18n="lex.11.d">Le député chargé de s'assurer que les membres de son groupe parlementaire sont présents aux votes et suivent la ligne du parti.</dd>
+        <span class="lex-badge cat-pers" data-i18n="lexcat.pers">People & roles</span>
+        <dd data-i18n="lex.11.d">The MNA in charge of making sure members of their parliamentary group are present for votes and follow the party line.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.12.t">Ministre délégué / Ministre responsable de</dt>
-        <span class="lex-badge cat-pers" data-i18n="lexcat.pers">Personnes et rôles</span>
-        <dd data-i18n="lex.12.d">Un ministre qui n'est pas le grand titulaire d'un ministère, mais qui a la charge officielle d'un dossier précis à l'intérieur ou en marge de celui-ci.</dd>
+        <dt data-i18n="lex.12.t">Minister Delegate / Minister Responsible for</dt>
+        <span class="lex-badge cat-pers" data-i18n="lexcat.pers">People & roles</span>
+        <dd data-i18n="lex.12.d">A minister who isn't the main head of a department, but who officially holds responsibility for a specific file within or alongside it.</dd>
       </div>
       <div class="lexique-item">
-        <dt data-i18n="lex.13.t">Présence (%)</dt>
-        <span class="lex-badge cat-outils" data-i18n="lexcat.outils">Outils citoyens</span>
-        <dd data-i18n="lex.13.d">Le chiffre affiché sous chaque ministre (ex. « présence : 88 % (647/735) ») : sur les 735 votes par appel nominal enregistrés dans les 3 sessions de la législature, 647 sont ceux où cette personne apparaît comme Pour, Contre ou Abstention — donc était présente pour voter, peu importe le sens de son vote. Le compte débute à son tout premier vote détecté (une façon d'approximer le début de son mandat actuel sans donnée externe). L'Assemblée ne publie pas d'assiduité officielle ; c'est un indicateur de présence, pas une mesure officielle — même méthode que certains médias (ex. Radio-Canada).</dd>
+        <dt data-i18n="lex.13.t">Attendance (%)</dt>
+        <span class="lex-badge cat-outils" data-i18n="lexcat.outils">Citizen tools</span>
+        <dd data-i18n="lex.13.d">The figure shown under each minister (e.g. “attendance: 88% (647/735)”): out of the 735 recorded votes across the legislature's 3 sessions, 647 are ones where this person appears as Yea, Nay, or Abstention — meaning they were present to vote, regardless of which way. The count starts from their very first detected vote (a way to approximate the start of their current term without external data). The Assembly does not publish official attendance; this is a presence proxy, not an official measure — the same method used by some media outlets (e.g. Radio-Canada).</dd>
       </div>
     </dl>
     </div>
@@ -881,22 +863,13 @@ function goToFederal(evt){
     <!-- Bande jaune « suggérer un terme » (maquette) — le canal de contact
          existant est la page Facebook : pas de courriel inventé. -->
 
-    <div class="section-head" id="sec-apropos"><div><h2 data-i18n="h.apropos">D'où viennent ces données, et comment aller plus loin</h2></div></div>
+    <div class="section-head" id="sec-apropos"><div><h2 data-i18n="h.apropos">Where this data comes from, and how to go further</h2></div></div>
 
     <div id="body-apropos">
 
     <div class="bill">
-      <h3 data-i18n="apropos.sources.h">Sources publiques utilisées ici</h3>
-      <p style="font-size:13px; line-height:1.7; color:var(--slate);" data-i18n="apropos.sources.p">
-        <b style="color:var(--ink)">Projets de loi</b> — Données Québec, jeu de données officiel de l'Assemblée nationale, mis à jour en temps réel.<br>
-        <b style="color:var(--ink)">Détails des projets de loi</b> (parrain, étape en cours, texte intégral en PDF) — assnat.qc.ca, pages individuelles de chaque projet de loi.<br>
-        <b style="color:var(--ink)">Résumés des projets de loi</b> — générés par intelligence artificielle (API Claude) à partir du texte intégral officiel tel que déposé ; chaque résumé est identifié comme tel sur le site.<br>
-        <b style="color:var(--ink)">Registre des votes</b> — assnat.qc.ca, pages de détail de chaque vote nominal des 3 sessions de la 43e législature, incluant le nom et le parti de chaque député·e.<br>
-        <b style="color:var(--ink)">Conseil des ministres</b> — quebec.ca, page officielle du Conseil des ministres, scrapée en direct.<br>
-        <b style="color:var(--ink)">Député·e·s et courriels officiels</b> — assnat.qc.ca, liste officielle des député·e·s en fonction.<br>
-        <b style="color:var(--ink)">Pétitions</b> — assnat.qc.ca, liste officielle des pétitions ouvertes.<br>
-        <b style="color:var(--ink)">Présence (%)</b> — calculée à partir du registre des votes ci-dessus (voir la définition dans le lexique) ; aucune source externe.
-      </p>
+      <h3 data-i18n="apropos.sources.h">Public sources used here</h3>
+      <p style="font-size:13px; line-height:1.7; color:var(--slate);" data-i18n="apropos.sources.p"><b style="color:var(--ink)">Bills</b> — Données Québec, the National Assembly's official dataset, updated in real time.<br><b style="color:var(--ink)">Bill details</b> (sponsor, current stage, full text as PDF) — assnat.qc.ca, each bill's individual page.<br><b style="color:var(--ink)">Bill summaries</b> — generated by artificial intelligence (Claude API) from the official full text as introduced; every summary is labelled as such on the site.<br><b style="color:var(--ink)">Vote registry</b> — assnat.qc.ca, the detail page of every recorded vote across the 3 sessions of the 43rd Legislature, including each MNA's name and party.<br><b style="color:var(--ink)">Cabinet</b> — quebec.ca, the official Council of Ministers page, scraped live.<br><b style="color:var(--ink)">MNAs and official emails</b> — assnat.qc.ca, the official list of sitting MNAs.<br><b style="color:var(--ink)">Petitions</b> — assnat.qc.ca, the official list of open petitions.<br><b style="color:var(--ink)">Attendance (%)</b> — computed from the vote registry above (see the glossary definition); no external source.</p>
     </div>
 
     </div>
@@ -913,11 +886,11 @@ function goToFederal(evt){
   <section class="view" id="view-mondossier">
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.mondossier">Mon dossier</span>
-        <span data-i18n="mdhero.l1">Vos projets de loi,</span>
-        <span class="hero-outline" data-i18n="mdhero.l2">vos élus suivis.</span>
+        <span class="hero-sujet" data-i18n="sujet.mondossier">My file</span>
+        <span data-i18n="mdhero.l1">Your bills,</span>
+        <span class="hero-outline" data-i18n="mdhero.l2">the members you follow.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="mdhero.sub">Ce que vous suivez à l'Assemblée nationale. <b>Les décisions de votre ville vivent dans <a class="md-lien" href="/mes-dossiers">Mes dossiers</a>, à part.</b></p>
+      <p class="view-hero-sub" data-i18n="mdhero.sub">What you follow at the National Assembly. <b>Your city's decisions live in <a class="md-lien" href="/mes-dossiers">My files</a>, separately.</b></p>
     </div>
 
     <div id="mdCompte" class="md-bloc"></div>
@@ -932,26 +905,26 @@ function goToFederal(evt){
          data/journal.json, tenu à la main : voir renderJournal dans commun/dq.js. -->
     <div class="section-head">
       <div>
-        <h2 data-i18n="maj.h">Mises à jour du site</h2>
-        <div class="sub" data-i18n="maj.sub">Ce qui a changé sur DossierQuébec, du plus récent au plus ancien</div>
+        <h2 data-i18n="maj.h">Site updates</h2>
+        <div class="sub" data-i18n="maj.sub">What changed on Dossier Saskatchewan, newest first</div>
       </div>
-      <a class="bd-back" href="/" data-i18n="bd.back">← Retour à l'aperçu</a>
+      <a class="bd-back" href="/" data-i18n="bd.back">← Back to overview</a>
     </div>
     <div class="createur">
       <div class="createur-tete">
         <img class="createur-photo" src="/commun/martin.jpg" width="120" height="120" alt="Martin Archambault">
         <div class="createur-bulle">
-          <span data-i18n="bd.intro1">Bonjour, moi c'est</span>
+          <span data-i18n="bd.intro1">Hi! My name is</span>
           <strong class="createur-nom">Martin Archambault</strong>
-          <span data-i18n="bd.intro3">j'ai 45 ans et dossiersaskatchewan.ca, c'est votre premier pas vers la démocratie !</span>
+          <span data-i18n="bd.intro3">I'm 45, and dossiersaskatchewan.ca is your first step into democracy!</span>
         </div>
       </div>
       <!-- Le mot de Martin (27 sept. 2026), le même que sur DossierCanada. -->
       <div class="createur-mot">
-        <p class="createur-lead" data-i18n="bd.mot1">Si on veut que les gens comprennent la politique, il faut la ramener à leur niveau.</p>
-        <p data-i18n="bd.mot2">Quand j'ai voulu m'y intéresser, en plus de ne pas connaître le jargon, les projets de loi tenaient en deux lignes… et cinquante PDF. Le commun des mortels passait son chemin.</p>
-        <p data-i18n="bd.mot3">J'ai eu l'idée de me servir de l'intelligence artificielle pour, d'abord, analyser tout ça, et ensuite le vulgariser. C'est comme ça que DossierQuébec est né.</p>
-        <p data-i18n="bd.mot4">En plus du récapitulatif écrit par l'IA, j'ai mis à la disposition des gens un lexique qui explique les fondements du jargon politique. Je suis l'Éducaloi de la politique !</p>
+        <p class="createur-lead" data-i18n="bd.mot1">If we want people to understand politics, it has to be brought down to their level.</p>
+        <p data-i18n="bd.mot2">When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.</p>
+        <p data-i18n="bd.mot3">So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how Dossier Saskatchewan was born.</p>
+        <p data-i18n="bd.mot4">Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!</p>
       </div>
     </div>
     <div class="maj" id="journal">
@@ -967,23 +940,23 @@ function goToFederal(evt){
      lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
 <footer>
   <nav class="footer-nav" aria-label="Plan du site">
-    <a href="/" data-i18n="nav.apercu">Aperçu</a>
-    <a href="/ministres" data-i18n="nav.ministres">Ministres</a>
-    <a href="/projets-de-loi" data-i18n="nav.projets">Projets de loi</a>
+    <a href="/" data-i18n="nav.apercu">Overview</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministers</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
     <a href="/votes" data-i18n="nav.votes">Votes</a>
-    <a href="/promesses" data-i18n="fil.promesses">Promesses</a>
-    <a href="/lexique" data-i18n="nav.lexique">Lexique</a>
-    <a href="/sources" data-i18n="fil.bd">Mises à jour du site</a>
-    <a href="/mon-dossier" data-i18n="nav.mondossier">Mon dossier</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
+    <a href="/sources" data-i18n="fil.bd">Site updates</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">et moi</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="DossierQuébec sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Offre-moi un café</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">Flux RSS</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Code source</a>
+    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
+    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
   </span>
   </div>
 </footer>
@@ -2291,7 +2264,7 @@ const bills = [
     "summaryAiGenerated": true,
     "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-191-43-2.html",
     "urlEn": "https://www.assnat.qc.ca/en/travaux-parlementaires/projets-loi/projet-loi-191-43-2.html",
-    "titleEn": "Act to amend the Act respecting the Cercle des ex-parlementaires de l'Assemblée nationale du Québec",
+    "titleEn": "Act to amend the Act respecting the Cercle des ex-parlementaires de Saskatchewan's Legislative Assembly",
     "noteEn": "Assented to on 2025-11-04",
     "lastActivity": "2025-11-04",
     "presentedOn": "2025-10-30",

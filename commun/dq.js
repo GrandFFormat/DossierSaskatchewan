@@ -89,6 +89,7 @@ const translations = {
     'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député",
     'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Ministres",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
+    'cal.status':"● L'Assemblée reprend le 27 octobre 2026 · 3e session de la 30e législature",
     'h.composition':"Composition — 125 sièges",
     'h.billsrecent':"Projets de loi récemment actifs",
     'h.ministres':"Ministres et député·e·s",
@@ -214,7 +215,7 @@ const translations = {
     'trouve.sub':"125 ridings — full list, real National Assembly data",
     'trouve.info':"These 125 entries come directly from the official list of sitting MNAs at the National Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.",
     // What's new / calendar
-    'cal.status':"\u25CF Assembly dissolved on August 27, 2026 \u00B7 general election October 5 · new legislature November 17",
+    'cal.status':"● The Assembly returns on October 27, 2026 · third session of the 30th Legislature",
     'cal.title':"Sitting calendar",
     // Dissolution de la 43e législature (2026-08-27) — à retirer le 17 nov. 2026.
     'diss.h':"⚠️ The Assembly is dissolved — election October 5",
@@ -2245,10 +2246,10 @@ function renderComparateurTable(){
    ➜ Quand la nouvelle législature commencera (17 nov. 2026), remettre
      `dissolved: false` et mettre à jour la ligne « cal.status ». */
 const ASSEMBLY = {
-  dissolved: true,
-  dissolvedOn: '2026-08-27',
-  electionOn: '2026-10-05',
-  newLegislatureOn: '2026-11-17',
+  dissolved: false,
+  dissolvedOn: null,
+  electionOn: null,
+  newLegislatureOn: null,
   // À remplir À LA MAIN le soir du 5 octobre : UNE phrase, factuelle, sans
   // adjectif — p. ex. « Le Parti Québécois forme un gouvernement majoritaire
   // (63 sièges). » Vide tant que ce n'est pas officiel : la bande passe au

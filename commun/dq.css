@@ -1969,10 +1969,11 @@
      un contraste de 1,8:1 en thème sombre, où le pied de page est clair. */
   .footer-nav-villes > span:first-child{color:var(--paper); font-weight:400;}
 
-  /* Anglais choisi : la page reste cachée le temps que commun/dq.js la traduise (script du
-     <head> de gabarit.html, qui la montre de toute façon après 1,5 s). Sans ça, un lecteur
-     anglophone voyait chaque page en français avant qu'elle ne bascule. */
-  html.dq-en:not(.dq-pret) body{visibility:hidden;}
+  /* Français choisi : la page reste cachée le temps que commun/dq.js la traduise (script du
+     <head> de gabarit.html, qui la montre de toute façon après 1,5 s). Le site est anglophone
+     et son HTML est écrit en anglais : sans ça, un lecteur francophone voyait chaque page en
+     anglais avant qu'elle ne bascule. */
+  html.dq-fr:not(.dq-pret) body{visibility:hidden;}
 
   /* L'en-tête sur deux rangées, quand logo, onglets et boutons ne tiennent pas côte à côte
      (commun/dq.js, majEnteteDeuxRangees, qui pose la classe) : logo et boutons en haut,

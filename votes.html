@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
      La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
@@ -21,11 +21,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 /* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
-   (commun/dq.js) : « ?lang=en » dans l'adresse, sinon le choix gardé dans dvq:langue (commun à
+   (commun/dq.js) : « ?lang=fr » dans l'adresse, sinon le choix gardé dans dsk:langue (commun à
    tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
-   En anglais, la page reste cachée le temps que dq.js la traduise : 1,5 s au plus, même s'il
-   échoue. lang="en" n'est posé qu'au moment de traduire (dq.js) : si la traduction n'arrive pas,
-   la page française ne s'annonce pas en anglais.
+   Le site est ANGLOPHONE : l'anglais est écrit dans le HTML et s'affiche tout de suite. C'est
+   le français qui attend sa traduction, et la page reste cachée le temps que dq.js la fasse :
+   1,5 s au plus, même s'il échoue. lang="fr" n'est posé qu'au moment de traduire (dq.js).
    Tout est dans une fonction : une variable globale ici entrerait en collision avec les
    déclarations de dq.js et le ferait planter en entier. */
 (function(){
@@ -37,39 +37,39 @@
     var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
     var parHistorique = !!nav && nav.type === 'back_forward';
     var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
-    if(choix !== 'en') return;
+    if(choix !== 'fr') return;
     var racine = document.documentElement;
-    racine.classList.add('dq-en');
+    racine.classList.add('dq-fr');
     setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
   }catch(e){}
 })();
 </script>
-<title>Votes nominatifs à l'Assemblée nationale — DossierQuébec</title>
-<meta name="description" content="Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.">
+<title>Recorded votes in the Legislative Assembly — Dossier Saskatchewan</title>
+<meta name="description" content="The record of recorded divisions in Saskatchewan's Legislative Assembly: who voted for, against or abstained, MLA by MLA, with no interpretation.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/votes">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
-<link rel="alternate" type="application/rss+xml" title="DossierQuébec — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Dossier Saskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#046A38">
 
 <!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DossierQuébec">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="Votes nominatifs à l'Assemblée nationale — DossierQuébec">
-<meta property="og:description" content="Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.">
+<meta property="og:site_name" content="Dossier Saskatchewan">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Recorded votes in the Legislative Assembly — Dossier Saskatchewan">
+<meta property="og:description" content="The record of recorded divisions in Saskatchewan's Legislative Assembly: who voted for, against or abstained, MLA by MLA, with no interpretation.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/votes">
-<meta property="og:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DossierQuébec — veille citoyenne de l'Assemblée nationale du Québec">
+<meta property="og:image:alt" content="Dossier Saskatchewan — veille citoyenne de Saskatchewan's Legislative Assembly">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Votes nominatifs à l'Assemblée nationale — DossierQuébec">
-<meta name="twitter:description" content="Le registre des votes nominatifs de l'Assemblée nationale du Québec : qui a voté pour, contre ou s'est abstenu, député·e par député·e, sans interprétation.">
-<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta name="twitter:title" content="Recorded votes in the Legislative Assembly — Dossier Saskatchewan">
+<meta name="twitter:description" content="The record of recorded divisions in Saskatchewan's Legislative Assembly: who voted for, against or abstained, MLA by MLA, with no interpretation.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -124,8 +124,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -156,15 +156,15 @@
        UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
        du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
   <nav class="tabs">
-    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
     <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
-    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
-    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministres</span></a>
-    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></a>
+    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
+    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a class="active" aria-current="page" href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
-    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
-    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">Mon dossier</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
   <div class="header-ctrls">
     <div class="font-size-ctrl" id="fontSizeCtrl">
@@ -216,24 +216,24 @@ function goToFederal(evt){
 
   <!-- APERÇU -->
   <section class="view active" id="view-votes">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.votes">Votes</span></nav>
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.votes">Votes</span></nav>
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.votes">Votes nominatifs à l'Assemblée nationale</span>
-        <span data-i18n="votehero.l1">Qui a voté</span>
-        <span class="hero-outline" data-i18n="votehero.l2">pour, contre, absent.</span>
+        <span class="hero-sujet" data-i18n="sujet.votes">Recorded divisions at the National Assembly</span>
+        <span data-i18n="votehero.l1">Who voted</span>
+        <span class="hero-outline" data-i18n="votehero.l2">for, against, absent.</span>
       </h1>
-      <p class="view-hero-sub" data-i18n="votehero.sub">Le registre des votes nominatifs, tel quel. <b>On n'interprète pas — on montre.</b> Une absence peut être une mission officielle, une maladie, un conflit d'horaire.</p>
+      <p class="view-hero-sub" data-i18n="votehero.sub">The recorded-division registry, as is. We don't interpret — we show. An absence can be an official mission, an illness, a scheduling conflict.</p>
     </div>
 
     <div class="section-head">
       <div>
-        <h2 data-i18n="h.votes" class="visually-hidden-title">Registre des votes</h2>
-        <div class="sub" data-i18n="votes.sub">43e législature (sessions 1 à 3) — décomptes et détail nominatif officiels</div>
+        <h2 data-i18n="h.votes" class="visually-hidden-title">Vote registry</h2>
+        <div class="sub" data-i18n="votes.sub">43rd Legislature (sessions 1 to 3) — official counts and by-MNA breakdown</div>
       </div>
       <div class="toolbar">
-        <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Mot-clé : sujet, numéro de projet de loi…">
+        <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Keyword: subject, bill number…">
         <!-- Tous / Divisés / Projets de loi / Motions — rempli par renderVotesQuickFilters(). -->
         <div class="quick-filters" id="votesQuickFilters"></div>
       </div>
@@ -276,24 +276,24 @@ function goToFederal(evt){
       <p class="pr-note">Les 30 votes les plus récents, sur 735. Source officielle : le registre des votes, <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.<noscript> Les filtres, la recherche et le détail de chaque fiche demandent JavaScript.</noscript></p>
     </div>
     <div class="info-box">
-      <b data-i18n="votes.info.b">Sur le détail « qui a voté quoi »</b> <span data-i18n="votes.info.text">— l'Assemblée nationale publie le nom de chaque député pour chaque vote nominal dans son registre des votes officiel. Le détail nominatif ci-dessus (bouton « Voir le détail nominatif ») vient de ce registre officiel, pas d'une estimation. Le parti affiché à côté de chaque nom est celui inscrit au registre au moment du vote — il peut différer du parti actuel d'un·e député·e ayant changé d'allégeance depuis.</span>
+      <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text">— the National Assembly publishes each MNA's name for every recorded vote in its official vote registry. The by-MNA breakdown above (“View names by MNA” button) comes from that official registry, not an estimate. The party shown next to each name is the one on record at the time of the vote — it may differ from an MNA's current party if they have since changed allegiance.</span>
     </div>
 
     <!-- « Comment lire un vote » : bande bleue pédagogique (maquette) -->
     <div class="band band-blue bleed" id="band-lire-vote">
-      <h2 data-i18n="lire.h">Comment lire un vote</h2>
+      <h2 data-i18n="lire.h">How to read a vote</h2>
       <div class="lire-grid">
         <div class="lire-box">
-          <h3 data-i18n="lire.1.h">Vote nominal</h3>
-          <p data-i18n="lire.1.p">Chaque député·e se lève et son choix est consigné au Journal des débats. C'est le seul type de vote qu'on peut attribuer à une personne.</p>
+          <h3 data-i18n="lire.1.h">Recorded division</h3>
+          <p data-i18n="lire.1.p">Each MNA stands and their choice is recorded in the Journal des débats. It's the only kind of vote that can be attributed to a person.</p>
         </div>
         <div class="lire-box">
-          <h3 data-i18n="lire.2.h">Adopté ≠ loi</h3>
-          <p data-i18n="lire.2.p">Un vote gagné fait avancer le projet d'une étape. Il ne devient loi qu'après la sanction du lieutenant-gouverneur.</p>
+          <h3 data-i18n="lire.2.h">Passed ≠ law</h3>
+          <p data-i18n="lire.2.p">A winning vote moves the bill one stage forward. It only becomes law after assent by the Lieutenant-Governor.</p>
         </div>
         <div class="lire-box hl">
-          <h3 data-i18n="lire.3.h">Ligne de parti</h3>
-          <p data-i18n="lire.3.p">La plupart des votes suivent la consigne du parti. Les votes libres sont rares — et c'est là que le détail nominatif devient intéressant.</p>
+          <h3 data-i18n="lire.3.h">Party line</h3>
+          <p data-i18n="lire.3.p">Most votes follow the party's instruction. Free votes are rare — and that's where the nominal detail gets interesting.</p>
         </div>
       </div>
     </div>
@@ -335,14 +335,14 @@ function goToFederal(evt){
      lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
 <footer>
   <nav class="footer-nav" aria-label="Plan du site">
-    <a href="/" data-i18n="nav.apercu">Aperçu</a>
-    <a href="/ministres" data-i18n="nav.ministres">Ministres</a>
-    <a href="/projets-de-loi" data-i18n="nav.projets">Projets de loi</a>
+    <a href="/" data-i18n="nav.apercu">Overview</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministers</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
     <a href="/votes" data-i18n="nav.votes">Votes</a>
-    <a href="/promesses" data-i18n="fil.promesses">Promesses</a>
-    <a href="/lexique" data-i18n="nav.lexique">Lexique</a>
-    <a href="/sources" data-i18n="fil.bd">Mises à jour du site</a>
-    <a href="/mon-dossier" data-i18n="nav.mondossier">Mon dossier</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
+    <a href="/sources" data-i18n="fil.bd">Site updates</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
       <a href="/quebec/">Québec</a>
       <a href="/montreal/">Montréal</a>
       <a href="/levis/">Lévis</a>
@@ -351,12 +351,12 @@ function goToFederal(evt){
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">et moi</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="DossierQuébec sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Offre-moi un café</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">Flux RSS</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Code source</a>
+    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
+    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
   </span>
   </div>
 </footer>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
      La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
@@ -21,11 +21,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 /* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
-   (commun/dq.js) : « ?lang=en » dans l'adresse, sinon le choix gardé dans dvq:langue (commun à
+   (commun/dq.js) : « ?lang=fr » dans l'adresse, sinon le choix gardé dans dsk:langue (commun à
    tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
-   En anglais, la page reste cachée le temps que dq.js la traduise : 1,5 s au plus, même s'il
-   échoue. lang="en" n'est posé qu'au moment de traduire (dq.js) : si la traduction n'arrive pas,
-   la page française ne s'annonce pas en anglais.
+   Le site est ANGLOPHONE : l'anglais est écrit dans le HTML et s'affiche tout de suite. C'est
+   le français qui attend sa traduction, et la page reste cachée le temps que dq.js la fasse :
+   1,5 s au plus, même s'il échoue. lang="fr" n'est posé qu'au moment de traduire (dq.js).
    Tout est dans une fonction : une variable globale ici entrerait en collision avec les
    déclarations de dq.js et le ferait planter en entier. */
 (function(){
@@ -37,39 +37,39 @@
     var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
     var parHistorique = !!nav && nav.type === 'back_forward';
     var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
-    if(choix !== 'en') return;
+    if(choix !== 'fr') return;
     var racine = document.documentElement;
-    racine.classList.add('dq-en');
+    racine.classList.add('dq-fr');
     setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
   }catch(e){}
 })();
 </script>
-<title>L'Assemblée nationale du Québec en clair — DossierQuébec</title>
-<meta name="description" content="Suivez l'Assemblée nationale du Québec en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.">
+<title>Saskatchewan's Legislative Assembly in plain language — Dossier Saskatchewan</title>
+<meta name="description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers and where every number comes from.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
-<link rel="alternate" type="application/rss+xml" title="DossierQuébec — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Dossier Saskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#046A38">
 
 <!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DossierQuébec">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="L'Assemblée nationale du Québec en clair — DossierQuébec">
-<meta property="og:description" content="Suivez l'Assemblée nationale du Québec en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.">
+<meta property="og:site_name" content="Dossier Saskatchewan">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Saskatchewan's Legislative Assembly in plain language — Dossier Saskatchewan">
+<meta property="og:description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers and where every number comes from.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/">
-<meta property="og:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DossierQuébec — veille citoyenne de l'Assemblée nationale du Québec">
+<meta property="og:image:alt" content="Dossier Saskatchewan — veille citoyenne de Saskatchewan's Legislative Assembly">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="L'Assemblée nationale du Québec en clair — DossierQuébec">
-<meta name="twitter:description" content="Suivez l'Assemblée nationale du Québec en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.">
-<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta name="twitter:title" content="Saskatchewan's Legislative Assembly in plain language — Dossier Saskatchewan">
+<meta name="twitter:description" content="Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers and where every number comes from.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -85,10 +85,10 @@
     {
       "@type": "WebSite",
       "@id": "https://dossiersaskatchewan.ca/#site",
-      "name": "DossierQuébec",
+      "name": "Dossier Saskatchewan",
       "url": "https://dossiersaskatchewan.ca/",
-      "description": "Suivez l'Assemblée nationale du Québec en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.",
-      "inLanguage": "fr-CA",
+      "description": "Suivez Saskatchewan's Legislative Assembly en langage clair : projets de loi résumés, votes nominatifs de chaque député·e, ministres et promesses électorales 2026.",
+      "inLanguage": "en-CA",
       "publisher": {
         "@id": "https://dossiersaskatchewan.ca/#organisation"
       }
@@ -96,7 +96,7 @@
     {
       "@type": "Organization",
       "@id": "https://dossiersaskatchewan.ca/#organisation",
-      "name": "DossierQuébec",
+      "name": "Dossier Saskatchewan",
       "url": "https://dossiersaskatchewan.ca/",
       "logo": {
         "@type": "ImageObject",
@@ -138,8 +138,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -170,15 +170,15 @@
        UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
        du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
   <nav class="tabs">
-    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
     <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
-    <a class="active" aria-current="page" href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
-    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministres</span></a>
-    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></a>
+    <a class="active" aria-current="page" href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
+    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
-    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
-    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">Mon dossier</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
   <div class="header-ctrls">
     <div class="font-size-ctrl" id="fontSizeCtrl">
@@ -231,42 +231,29 @@ function goToFederal(evt){
   <!-- APERÇU -->
   <section class="view active" id="view-apercu">
 
-    <!-- Avis de dissolution — la 43e législature s'est terminée le 2026-08-27.
-         À RETIRER (ici et dans view-projets) quand la nouvelle Assemblée
-         commencera le 17 novembre 2026 ; voir l'objet ASSEMBLY dans le script. -->
-    <div class="band band-yellow bleed" id="band-dissolution">
-      <h2 data-i18n="diss.h">⚠️ L'Assemblée est dissoute — élections le 5 octobre</h2>
-      <!-- Résultat du scrutin : rempli par applyAssemblyState() depuis
-           ASSEMBLY.resultat, seulement après le 5 octobre et seulement si la
-           phrase a été écrite. Caché sinon. -->
-      <p class="diss-resultat" id="dissResultat" hidden></p>
-      <p data-i18n="diss.p1">Le <b>27 août 2026</b>, l'Assemblée nationale a été dissoute : la 43<sup>e</sup> législature est terminée. Il n'y a plus de député·e·s en poste — celles et ceux qui siégeaient sont maintenant candidat·e·s ou se retirent. Le gouvernement, lui, reste en place le temps de la campagne.</p>
-      <p data-i18n="diss.p2">Conséquence directe : <b>tous les projets de loi qui n'avaient pas été sanctionnés sont morts avec elle.</b> Ils devront repartir de zéro devant la nouvelle Assemblée, convoquée le <b>17 novembre 2026</b>. Ce qui reste ici, c'est le bilan complet de la 43<sup>e</sup> législature : les lois adoptées, les votes de chaque député·e, et les projets qui n'ont pas abouti.</p>
-      <a class="diss-cta" href="/promesses" data-i18n="diss.cta">Ce que les partis promettent →</a>
-    </div>
 
     <!-- Hero poster brutaliste : la devise du site devient l'affiche.
          (La ligne du header .brand-text p est masquée en échange.) -->
     <div class="hero-poster">
       <h1 class="hero-h1">
-        <span class="hero-sujet" data-i18n="sujet.apercu">L'Assemblée nationale du Québec en clair</span>
-        <span data-i18n="hero.l1">Qui siège,</span>
-        <span class="hero-outline" data-i18n="hero.l2">qui légifère,</span>
-        <span class="hero-blue" data-i18n="hero.l3">qui vote quoi.</span>
+        <span class="hero-sujet" data-i18n="sujet.apercu">Quebec's National Assembly in plain language</span>
+        <span data-i18n="hero.l1">Who sits,</span>
+        <span class="hero-outline" data-i18n="hero.l2">who legislates,</span>
+        <span class="hero-blue" data-i18n="hero.l3">who votes what.</span>
       </h1>
       <div class="hero-row">
         <div class="hero-manifesto">
-          <p data-i18n="hero.manifesto">L'Assemblée nationale du Québec, réorganisée <b>par personne</b> et traduite <b>en langage clair</b> — sans jugement ni verdict. Site citoyen indépendant, vraies données publiques.</p>
+          <p data-i18n="hero.manifesto">Québec's National Assembly, reorganized by person and translated into plain language — no judgment, no verdict. Independent citizen site, real public data.</p>
         </div>
-        <a class="hero-cta" href="/projets-de-loi" data-i18n="hero.cta">Explorer →</a>
+        <a class="hero-cta" href="/projets-de-loi" data-i18n="hero.cta">Explore →</a>
       </div>
     </div>
 
     <!-- Bande de stats (vraies données — mêmes ids qu'avant, peuplés par le JS) -->
     <div class="stat-band bleed">
-      <div class="stat-cell"><b id="statMinistres">29</b><span data-i18n="stat.ministres">Ministres au Conseil</span></div>
-      <div class="stat-cell"><b id="statProjets">143</b><span data-i18n="stat.projets">Projets de loi suivis</span></div>
-      <div class="stat-cell"><b id="statVotes">735</b><span data-i18n="stat.votes">Votes nominatifs</span></div>
+      <div class="stat-cell"><b id="statMinistres">29</b><span data-i18n="stat.ministres">Ministers</span></div>
+      <div class="stat-cell"><b id="statProjets">143</b><span data-i18n="stat.projets">Bills</span></div>
+      <div class="stat-cell"><b id="statVotes">735</b><span data-i18n="stat.votes">Votes recorded</span></div>
     </div>
 
     <!-- Section signature du handoff : bande JAUNE pleine largeur -->
@@ -276,15 +263,15 @@ function goToFederal(evt){
         <h2 id="challengedTitle">Projets challengés par les citoyen·ne·s</h2>
         <div class="sub" id="challengedSub"></div>
       </div>
-      <a class="ch-more" id="chMoreBtn" role="button" tabindex="0" onclick="showMoreChallenged()" data-i18n="ch.more" style="display:none;">Voir plus →</a>
+      <a class="ch-more" id="chMoreBtn" role="button" tabindex="0" onclick="showMoreChallenged()" data-i18n="ch.more" style="display:none;">See more →</a>
     </div>
     <div id="challengedList"></div>
     </div>
 
     <div class="section-head" id="sec-projets-recents">
       <div>
-        <h2 data-i18n="h.billsrecent">Projets de loi récemment actifs</h2>
-        <div class="sub" data-i18n="apercu.recent.sub">↓ Cliquez n'importe où dans le carré blanc pour voir le résumé ↓</div>
+        <h2 data-i18n="h.billsrecent">Recently active bills</h2>
+        <div class="sub" data-i18n="apercu.recent.sub">↓ Click anywhere in the white square to see the summary ↓</div>
       </div>
     </div>
     <div id="body-projets-recents">
@@ -306,14 +293,13 @@ function goToFederal(evt){
     <div class="band band-blue bleed promo-alertes promo-accueil" id="band-alertes-accueil" role="region" aria-labelledby="promoAccueilTitre">
       <div class="promo-accueil-grille">
         <div>
-          <p class="promo-sur" data-i18n="promo.sur">Compte gratuit</p>
-          <h2 id="promoAccueilTitre" data-i18n="promo.h">Suivez les projets de loi qui vous touchent</h2>
-          <p class="promo-texte" data-i18n="promo.p">Un compte gratuit, sans mot de passe : suivez jusqu'à 3 projets de loi ou projets de ville, et retrouvez-les dans Mon dossier, avec leur étape du moment.</p>
-          <p class="promo-texte promo-dissolution" data-i18n="promo.diss">Les projets de loi de la 43e législature sont morts à la dissolution du 27 août : le suivi reprendra avec les premiers projets de loi de la nouvelle législature, convoquée le 17 novembre 2026.</p>
+          <p class="promo-sur" data-i18n="promo.sur">Free account</p>
+          <h2 id="promoAccueilTitre" data-i18n="promo.h">Follow the bills that matter to you</h2>
+          <p class="promo-texte" data-i18n="promo.p">A free account, no password: follow up to 3 bills or city projects, and find them in My file, with their current stage.</p>
         </div>
         <div class="promo-cote">
         <div class="promo-compte">
-          <b class="promo-compte-titre" data-i18n="promo.compte.h">Votre compte</b>
+          <b class="promo-compte-titre" data-i18n="promo.compte.h">Your account</b>
           <div id="promoCompte">
             <div class="promo-compte-ligne">
               <input type="email" id="promoEmail" placeholder="Votre courriel" aria-label="Votre courriel" disabled>
@@ -321,7 +307,7 @@ function goToFederal(evt){
             </div>
             <p class="promo-compte-note" id="promoNote">Pas de mot de passe : un lien de connexion arrive par courriel. Le compte gratuit suit 3 choses en tout.</p>
           </div>
-          <a class="promo-mes-dossiers" href="/mon-dossier" data-i18n="promo.mesdossiers">Mon dossier →</a>
+          <a class="promo-mes-dossiers" href="/mon-dossier" data-i18n="promo.mesdossiers">My file →</a>
         </div>
         </div>
       </div>
@@ -334,7 +320,7 @@ function goToFederal(evt){
     <!-- Le flux RSS (feed.xml) reprend exactement ces événements. Son lien
          visible vit dans le pied de page ; la balise <link rel=alternate> de
          l'en-tête sert aux lecteurs RSS. -->
-    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">Quoi de neuf</h2><div class="sub" data-i18n="h.quoideneuf.sub">Dernières activités réelles à l'Assemblée nationale</div></div></div>
+    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">What's new</h2><div class="sub" data-i18n="h.quoideneuf.sub">Real, recent activity from the National Assembly</div></div></div>
 
     <div id="body-quoideneuf">
     <div id="newsList"></div>
@@ -354,7 +340,7 @@ function goToFederal(evt){
     <!-- Encadré noir compact (maquette) — le même statut réel que le ticker.
          renderTicker() lit .calendar-box .status : NE PAS renommer. -->
     <div class="calendar-box">
-      <div class="status" data-i18n="cal.status">● Assemblée dissoute le 27 août 2026 · élections générales le 5 octobre · nouvelle législature le 17 novembre</div>
+      <div class="status" data-i18n="cal.status">● The Assembly returns on October 27, 2026 · third session of the 30th Legislature</div>
     </div>
     </div>
     </div>
@@ -362,8 +348,8 @@ function goToFederal(evt){
     <div>
     <div class="section-head" id="sec-petitions">
       <div>
-        <h2 data-i18n="h.petitions">Pétitions ouvertes à l'Assemblée nationale</h2>
-        <div class="sub" data-i18n="pet.sub">Vraies pétitions électroniques actuellement ouvertes pour signature — relevées le 23 juin 2026</div>
+        <h2 data-i18n="h.petitions">Petitions open at the National Assembly</h2>
+        <div class="sub" data-i18n="pet.sub">Real e-petitions currently open for signature — recorded June 23, 2026</div>
       </div>
     </div>
     <div id="body-petitions">
@@ -377,23 +363,23 @@ function goToFederal(evt){
     <div class="band band-blue bleed" id="band-mission">
     <div id="introBlock">
       <div class="mission-box" id="sec-mission">
-        <div class="mission-eyebrow" data-i18n="mission.eyebrow">Notre mission</div>
-        <p class="mission-statement"><span data-i18n="mission.st1">Le site officiel de l'Assemblée est la source la plus fiable qui existe. Celui-ci la rend juste </span><span class="hl" data-i18n="mission.st2">plus facile à suivre.</span></p>
+        <div class="mission-eyebrow" data-i18n="mission.eyebrow">Our mission</div>
+        <p class="mission-statement"><span data-i18n="mission.st1">The Assembly's official site is the most reliable source there is. This one just makes it </span><span class="hl" data-i18n="mission.st2">easier to follow.</span></p>
         <div class="compare">
           <div class="compare-col">
-            <span class="tag" data-i18n="mission.assnat.tag">assnat.qc.ca fait</span>
+            <span class="tag" data-i18n="mission.assnat.tag">What assnat.qc.ca does</span>
             <ul>
-              <li data-i18n="mission.assnat.1">Organise tout par document officiel</li>
-              <li data-i18n="mission.assnat.2">La source légale et complète de tout</li>
-              <li data-i18n="mission.assnat.3">Neutre — ne compare et ne résume jamais</li>
+              <li data-i18n="mission.assnat.1">Organizes everything by official document</li>
+              <li data-i18n="mission.assnat.2">The complete, legally authoritative source for everything</li>
+              <li data-i18n="mission.assnat.3">Neutral — never compares or summarizes</li>
             </ul>
           </div>
           <div class="compare-col">
-            <span class="tag" data-i18n="mission.site.tag">Ce site essaie de faire</span>
+            <span class="tag" data-i18n="mission.site.tag">What this site tries to do</span>
             <ul>
-              <li data-i18n="mission.site.1">Organise tout par personne : une fiche, tous ses dossiers</li>
-              <li data-i18n="mission.site.2">Traduit le jargon en langage clair (voir le Lexique)</li>
-              <li data-i18n="mission.site.3">Vous laisse suivre ce qui vous touche, sans jugement ni verdict</li>
+              <li data-i18n="mission.site.1">Organizes everything by person: one profile, all their files</li>
+              <li data-i18n="mission.site.2">Translates the jargon into plain language (see the Glossary)</li>
+              <li data-i18n="mission.site.3">Lets you follow what affects you, with no judgment or verdict</li>
             </ul>
           </div>
         </div>
@@ -439,14 +425,14 @@ function goToFederal(evt){
      lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
 <footer>
   <nav class="footer-nav" aria-label="Plan du site">
-    <a href="/" data-i18n="nav.apercu">Aperçu</a>
-    <a href="/ministres" data-i18n="nav.ministres">Ministres</a>
-    <a href="/projets-de-loi" data-i18n="nav.projets">Projets de loi</a>
+    <a href="/" data-i18n="nav.apercu">Overview</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministers</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
     <a href="/votes" data-i18n="nav.votes">Votes</a>
-    <a href="/promesses" data-i18n="fil.promesses">Promesses</a>
-    <a href="/lexique" data-i18n="nav.lexique">Lexique</a>
-    <a href="/sources" data-i18n="fil.bd">Mises à jour du site</a>
-    <a href="/mon-dossier" data-i18n="nav.mondossier">Mon dossier</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
+    <a href="/sources" data-i18n="fil.bd">Site updates</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
       <a href="/quebec/">Québec</a>
       <a href="/montreal/">Montréal</a>
       <a href="/levis/">Lévis</a>
@@ -455,12 +441,12 @@ function goToFederal(evt){
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">et moi</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="DossierQuébec sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Offre-moi un café</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">Flux RSS</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Code source</a>
+    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
+    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
   </span>
   </div>
 </footer>

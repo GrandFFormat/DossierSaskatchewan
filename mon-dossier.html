@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
      La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
@@ -21,11 +21,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 /* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
-   (commun/dq.js) : « ?lang=en » dans l'adresse, sinon le choix gardé dans dvq:langue (commun à
+   (commun/dq.js) : « ?lang=fr » dans l'adresse, sinon le choix gardé dans dsk:langue (commun à
    tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
-   En anglais, la page reste cachée le temps que dq.js la traduise : 1,5 s au plus, même s'il
-   échoue. lang="en" n'est posé qu'au moment de traduire (dq.js) : si la traduction n'arrive pas,
-   la page française ne s'annonce pas en anglais.
+   Le site est ANGLOPHONE : l'anglais est écrit dans le HTML et s'affiche tout de suite. C'est
+   le français qui attend sa traduction, et la page reste cachée le temps que dq.js la fasse :
+   1,5 s au plus, même s'il échoue. lang="fr" n'est posé qu'au moment de traduire (dq.js).
    Tout est dans une fonction : une variable globale ici entrerait en collision avec les
    déclarations de dq.js et le ferait planter en entier. */
 (function(){
@@ -37,39 +37,39 @@
     var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
     var parHistorique = !!nav && nav.type === 'back_forward';
     var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
-    if(choix !== 'en') return;
+    if(choix !== 'fr') return;
     var racine = document.documentElement;
-    racine.classList.add('dq-en');
+    racine.classList.add('dq-fr');
     setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
   }catch(e){}
 })();
 </script>
-<title>Mon dossier — DossierQuébec</title>
-<meta name="description" content="Votre espace à l'Assemblée nationale : les projets de loi que vous suivez, les ministres et député·e·s suivis, vos mots-clés et votre alerte du matin.">
+<title>My file — Dossier Saskatchewan</title>
+<meta name="description" content="Your corner of the Legislative Assembly: the bills you follow, the ministers and MLAs you follow, your keywords and your morning alert.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/mon-dossier">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
-<link rel="alternate" type="application/rss+xml" title="DossierQuébec — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Dossier Saskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
 <meta name="robots" content="noindex, follow">
 <meta name="theme-color" content="#046A38">
 
 <!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DossierQuébec">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="Mon dossier — DossierQuébec">
-<meta property="og:description" content="Votre espace à l'Assemblée nationale : les projets de loi que vous suivez, les ministres et député·e·s suivis, vos mots-clés et votre alerte du matin.">
+<meta property="og:site_name" content="Dossier Saskatchewan">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="My file — Dossier Saskatchewan">
+<meta property="og:description" content="Your corner of the Legislative Assembly: the bills you follow, the ministers and MLAs you follow, your keywords and your morning alert.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/mon-dossier">
-<meta property="og:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DossierQuébec — veille citoyenne de l'Assemblée nationale du Québec">
+<meta property="og:image:alt" content="Dossier Saskatchewan — veille citoyenne de Saskatchewan's Legislative Assembly">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mon dossier — DossierQuébec">
-<meta name="twitter:description" content="Votre espace à l'Assemblée nationale : les projets de loi que vous suivez, les ministres et député·e·s suivis, vos mots-clés et votre alerte du matin.">
-<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta name="twitter:title" content="My file — Dossier Saskatchewan">
+<meta name="twitter:description" content="Your corner of the Legislative Assembly: the bills you follow, the ministers and MLAs you follow, your keywords and your morning alert.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -124,8 +124,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -156,15 +156,15 @@
        UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
        du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
   <nav class="tabs">
-    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
     <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
-    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
-    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministres</span></a>
-    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></a>
+    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
+    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
-    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
-    <a class="nav-mondossier active" aria-current="page" href="/mon-dossier" data-view="mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">Mon dossier</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <a class="nav-mondossier active" aria-current="page" href="/mon-dossier" data-view="mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
   <div class="header-ctrls">
     <div class="font-size-ctrl" id="fontSizeCtrl">
@@ -216,14 +216,14 @@ function goToFederal(evt){
 
   <!-- APERÇU -->
   <section class="view active" id="view-mondossier">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.mondossier">Mon dossier</span></nav>
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.mondossier">My file</span></nav>
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.mondossier">Mon dossier</span>
-        <span data-i18n="mdhero.l1">Vos projets de loi,</span>
-        <span class="hero-outline" data-i18n="mdhero.l2">vos élus suivis.</span>
+        <span class="hero-sujet" data-i18n="sujet.mondossier">My file</span>
+        <span data-i18n="mdhero.l1">Your bills,</span>
+        <span class="hero-outline" data-i18n="mdhero.l2">the members you follow.</span>
       </h1>
-      <p class="view-hero-sub" data-i18n="mdhero.sub">Ce que vous suivez à l'Assemblée nationale. <b>Les décisions de votre ville vivent dans <a class="md-lien" href="/mes-dossiers">Mes dossiers</a>, à part.</b></p>
+      <p class="view-hero-sub" data-i18n="mdhero.sub">What you follow at the National Assembly. <b>Your city's decisions live in <a class="md-lien" href="/mes-dossiers">My files</a>, separately.</b></p>
     </div>
 
     <div id="mdCompte" class="md-bloc"></div>
@@ -267,14 +267,14 @@ function goToFederal(evt){
      lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
 <footer>
   <nav class="footer-nav" aria-label="Plan du site">
-    <a href="/" data-i18n="nav.apercu">Aperçu</a>
-    <a href="/ministres" data-i18n="nav.ministres">Ministres</a>
-    <a href="/projets-de-loi" data-i18n="nav.projets">Projets de loi</a>
+    <a href="/" data-i18n="nav.apercu">Overview</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministers</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
     <a href="/votes" data-i18n="nav.votes">Votes</a>
-    <a href="/promesses" data-i18n="fil.promesses">Promesses</a>
-    <a href="/lexique" data-i18n="nav.lexique">Lexique</a>
-    <a href="/sources" data-i18n="fil.bd">Mises à jour du site</a>
-    <a href="/mon-dossier" data-i18n="nav.mondossier">Mon dossier</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
+    <a href="/sources" data-i18n="fil.bd">Site updates</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
       <a href="/quebec/">Québec</a>
       <a href="/montreal/">Montréal</a>
       <a href="/levis/">Lévis</a>
@@ -283,12 +283,12 @@ function goToFederal(evt){
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">et moi</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="DossierQuébec sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Offre-moi un café</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">Flux RSS</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Code source</a>
+    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
+    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
   </span>
   </div>
 </footer>
