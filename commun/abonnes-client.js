@@ -9,6 +9,7 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 // Mêmes valeurs que index.html de DossierQuébec. La clé « publishable » est faite pour être
 // publique : ce sont les règles RLS (scripts/supabase-schema-abonnes.sql) qui protègent.
+// ⚠ À RÉGLER AVANT LA MISE EN LIGNE : ce sont les tables de DQ (voir commun/dq.js, supabaseClient).
 export const client = createClient('https://wfgcqftgtmptfutrbujz.supabase.co', 'sb_publishable_CutVYEz29QYUV3tCDsAhSQ_RvZUQ3G6');
 
 // VILLES, echapper et la navigation vivent dans navigation.js (sans dépendance extérieure).

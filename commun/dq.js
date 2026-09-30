@@ -848,24 +848,30 @@ document.getElementById('langToggle')?.addEventListener('click', ()=>{
 
 /* ---------------- DATA ---------------- */
 
-// Couleurs des partis — au plus proche des vraies identités visuelles, tout en
-// restant distinguables (CAQ cyan clair, PCQ bleu royal, PQ bleu foncé : trois
-// bleus séparés par la clarté, comme dans la vraie vie politique québécoise).
-const partyColors = { CAQ:'#00A5CF', PLQ:'#E23A3A', QS:'#FF7B33', PQ:'#12429B', PCQ:'#3E63B0', IND:'#8B8578' };
-// Refonte : badges de parti à fond PLEIN — couleur de texte lisible par parti
-// (noir sur cyan/orange clairs, blanc sur les foncés).
-const partyTextColors = { CAQ:'#131313', QS:'#131313', PLQ:'#fff', PQ:'#fff', PCQ:'#fff', IND:'#fff' };
+// Couleurs des partis, et leur source :
+//   SKP  Saskatchewan Party          #005941  charte Dossier (provinces.md, 19 sept. 2026)
+//   NDP  Nouveau Parti démocratique  #F58220  l'orange du NPD déjà utilisé par DossierCanada
+//   IND  indépendant·e               #8B8578  le gris de DQ
+// Wikipédia ne donne que « Green » et « Orange », sans code. Le vert du Saskatchewan Party est
+// proche de l'accent du site (#046A38) : il ne sert qu'aux pastilles de parti, jamais ailleurs.
+const partyColors = { SKP:'#005941', NDP:'#F58220', IND:'#8B8578' };
+// Badges de parti à fond PLEIN — couleur de texte lisible par parti
+// (blanc sur le vert foncé et le gris, noir sur l'orange).
+const partyTextColors = { SKP:'#fff', NDP:'#131313', IND:'#fff' };
 function partyText(p){ return partyTextColors[p] || '#fff'; }
 
-// Répartition réelle approximative des groupes à la 43e législature (Ass. nat. du Québec)
+// Les groupes de l'Assemblée. Le nombre de sièges n'est PAS écrit ici : il se compte dans
+// deputesRaw, la liste des 61 député·e·s lue chaque jour sur le site de l'Assemblée (DQ
+// l'écrivait à la main, « approximatif », et il vieillissait à chaque démission).
+// « Saskatchewan Party » n'a pas de nom français officiel : on le garde tel quel.
 const seats = [
-  {party:'CAQ', label:'Coalition avenir Québec (gouvernement)', labelEn:'Coalition avenir Québec (government)', n:79},
-  {party:'PLQ', label:'Parti libéral du Québec (opposition officielle)', labelEn:'Québec Liberal Party (official opposition)', n:18},
-  {party:'QS', label:'Québec solidaire', labelEn:'Québec solidaire', n:11},
-  {party:'IND', label:'Indépendants', labelEn:'Independents', n:9},
-  {party:'PQ', label:'Parti québécois', labelEn:'Parti Québécois', n:7},
-  {party:'PCQ', label:'Parti conservateur du Québec', labelEn:'Conservative Party of Québec', n:1},
-];
+  {party:'SKP', label:'Saskatchewan Party (gouvernement)', labelEn:'Saskatchewan Party (government)'},
+  {party:'NDP', label:'Nouveau Parti démocratique (opposition officielle)', labelEn:'New Democratic Party (official opposition)'},
+  {party:'IND', label:'Indépendant·e·s', labelEn:'Independents'},
+].map((s) => Object.defineProperty(s, 'n', {
+  get(){ return deputesRaw.filter((d) => d[3] === s.party).length; },
+  enumerable: true,
+}));
 
 
 
@@ -1035,6 +1041,9 @@ const peutEtreChallenge = (b) => ASSEMBLY.dissolved
 // table `follows` et ses règles de sécurité (chaque compte ne voit que ses
 // propres suivis). Tant que personne n'est connecté, le suivi reste dans
 // localStorage comme avant (comportement inchangé pour les visiteurs anonymes).
+// ⚠ À RÉGLER AVANT LA MISE EN LIGNE : c'est encore le projet Supabase de DQ, avec SES tables
+// (follows, bill_flags…). Un compte ou un suivi créé ici irait chez DQ, mêlé au Québec. Même
+// solution que l'Ontario : même projet, mais des tables à part, préfixées sk_.
 const supabaseClient = supabase.createClient(
   'https://wfgcqftgtmptfutrbujz.supabase.co',
   'sb_publishable_CutVYEz29QYUV3tCDsAhSQ_RvZUQ3G6'
@@ -1752,7 +1761,7 @@ function findDeputeEmail(name){
 }
 
 let partyFilter = '';
-const partyOrder = ['CAQ','PLQ','PQ','QS','PCQ','IND'];
+const partyOrder = ['SKP','NDP','IND'];
 
 function renderPartyFilters(){
   const el = document.getElementById('partyFilters');

@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
-     La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dq:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-87R1S6SR9Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-87R1S6SR9Y');
-</script>
-<script src="/commun/consentement.js" defer></script>
+<!-- Pas de Google Analytics pour l'instant. La copie de DQ portait l'identifiant de DQ : les
+     visites de ce site seraient allées dans les statistiques de DQ. Pour en remettre, créer
+     une propriété à part, puis ramener ici le bloc gtag de DQ et commun/consentement.js (la
+     bannière de consentement), qui sont prêts. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -44,8 +32,8 @@
   }catch(e){}
 })();
 </script>
-<title>Recorded votes in the Legislative Assembly — Dossier Saskatchewan</title>
-<meta name="description" content="The record of recorded divisions in Saskatchewan's Legislative Assembly: who voted for, against or abstained, MLA by MLA, with no interpretation.">
+<title>Recorded votes, MLA by MLA — Dossier Saskatchewan</title>
+<meta name="description" content="Every recorded division in Saskatchewan's Legislative Assembly: who voted for and who voted against, MLA by MLA, read from the official minutes, with no spin.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/votes">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
@@ -57,8 +45,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dossier Saskatchewan">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Recorded votes in the Legislative Assembly — Dossier Saskatchewan">
-<meta property="og:description" content="The record of recorded divisions in Saskatchewan's Legislative Assembly: who voted for, against or abstained, MLA by MLA, with no interpretation.">
+<meta property="og:title" content="Recorded votes, MLA by MLA — Dossier Saskatchewan">
+<meta property="og:description" content="Every recorded division in Saskatchewan's Legislative Assembly: who voted for and who voted against, MLA by MLA, read from the official minutes, with no spin.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/votes">
 <meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
@@ -67,8 +55,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Recorded votes in the Legislative Assembly — Dossier Saskatchewan">
-<meta name="twitter:description" content="The record of recorded divisions in Saskatchewan's Legislative Assembly: who voted for, against or abstained, MLA by MLA, with no interpretation.">
+<meta name="twitter:title" content="Recorded votes, MLA by MLA — Dossier Saskatchewan">
+<meta name="twitter:description" content="Every recorded division in Saskatchewan's Legislative Assembly: who voted for and who voted against, MLA by MLA, read from the official minutes, with no spin.">
 <meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
@@ -86,7 +74,7 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Accueil",
+      "name": "Home",
       "item": "https://dossiersaskatchewan.ca/"
     },
     {
@@ -216,7 +204,7 @@ function goToFederal(evt){
 
   <!-- APERÇU -->
   <section class="view active" id="view-votes">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.votes">Votes</span></nav>
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.votes">Votes</span></nav>
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
@@ -241,39 +229,10 @@ function goToFederal(evt){
 
     <div id="votesList"></div>
     <div class="prerendu" data-prerendu="votes">
-      <ul aria-label="Votes nominatifs récents">
-        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 4, Loi sur la communication de renseignements aux fins de protection contre la violence d’un partenaire intime et modifiant diverses dispositions législatives <span class="pr-meta">· pour 75, contre 0, abstentions 0</span></li>
-        <li><span class="pr-meta">11 juin 2026 —</span> Nomination — Motion proposée par Mme Fréchette, première ministre, afin de nommer Mme Nicole Léger membre à temps partiel de la Commission des droits de la personne et des droits de la jeunesse <span class="pr-meta">· pour 105, contre 0, abstentions 0</span></li>
-        <li><span class="pr-meta">11 juin 2026 —</span> Nomination — Motion proposée par Mme Fréchette, première ministre, afin de nommer Mme Marie-Claude Girard membre à temps partiel de la Commission des droits de la personne et des droits de la jeunesse <span class="pr-meta">· pour 97, contre 7, abstentions 0</span></li>
-        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 10, Loi protégeant les consommateurs contre les pratiques abusives de revente de billets et de renouvellement d’abonnements en ligne <span class="pr-meta">· pour 103, contre 1, abstentions 1</span></li>
-        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 11, Loi modifiant diverses dispositions principalement aux fins d’allègement du fardeau réglementaire et administratif <span class="pr-meta">· pour 89, contre 7, abstentions 9</span></li>
-        <li><span class="pr-meta">11 juin 2026 —</span> Adoption — Projet de loi n° 9, Loi visant à prévenir les effets nocifs de la boisson énergisante sur la santé des jeunes <span class="pr-meta">· pour 103, contre 1, abstentions 2</span></li>
-        <li><span class="pr-meta">10 juin 2026 —</span> Motion sans préavis — Motion proposée par M. Arseneau (Îles-de-la-Madeleine) afin de demander à Santé Québec de prendre les mesures nécessaires afin d’assurer le maintien des services d’urgence au CLSC de Portneuf <span class="pr-meta">· pour 96, contre 0, abstentions 0</span></li>
-        <li><span class="pr-meta">10 juin 2026 —</span> Motion sans préavis — Motion proposée par M. Ciccone (Marquette) afin de rendre hommage à l’équipe de la Victoire de Montréal, gagnante de la Coupe Walter <span class="pr-meta">· pour 101, contre 0, abstentions 0</span></li>
-        <li><span class="pr-meta">10 juin 2026 —</span> Adoption du principe — Projet de loi n° 2, Loi permettant au Parlement du Québec de préserver le principe de la souveraineté parlementaire à l’égard de la Charte de la langue française et de la Loi sur la langue officielle et commune du Québec, le français <span class="pr-meta">· pour 76, contre 26, abstentions 3</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Motion sans préavis — Motion proposée par Mme Ghazal, cheffe du deuxième groupe d’opposition, afin de réaffirmer la pertinence d’encadrer la vente de boissons énergisantes aux mineurs <span class="pr-meta">· pour 78, contre 0, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Motion proposant que l’Assemblée approuve la politique générale du gouvernement <span class="pr-meta">· pour 62, contre 25, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Arseneau (Îles-de-la-Madeleine) <span class="pr-meta">· pour 24, contre 63, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Tanguay, leader de l’opposition officielle <span class="pr-meta">· pour 24, contre 63, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Gentilcore (Terrebonne) <span class="pr-meta">· pour 25, contre 62, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Laflamme (Chicoutimi) <span class="pr-meta">· pour 26, contre 62, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Dufour (Mille-Îles) <span class="pr-meta">· pour 24, contre 63, abstentions 1</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Grandmont (Taschereau) <span class="pr-meta">· pour 24, contre 63, abstentions 1</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Boissonneault (Arthabaska) <span class="pr-meta">· pour 25, contre 63, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Maccarone (Westmount–Saint-Louis) <span class="pr-meta">· pour 25, contre 63, abstentions 1</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Caron (La Pinière) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Bouazzi (Maurice-Richard) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme McGraw (Notre-Dame-de-Grâce) <span class="pr-meta">· pour 26, contre 63, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Massé (Sainte-Marie–Saint-Jacques) <span class="pr-meta">· pour 24, contre 64, abstentions 1</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de Mme Rotiroti (Jeanne-Mance–Viger) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Paradis (Jean-Talon) <span class="pr-meta">· pour 24, contre 65, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Beauchemin (Marguerite-Bourgeoys) <span class="pr-meta">· pour 25, contre 63, abstentions 1</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Zanetti (Jean-Lesage) <span class="pr-meta">· pour 21, contre 66, abstentions 2</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Kelley (Jacques-Cartier) <span class="pr-meta">· pour 25, contre 63, abstentions 1</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Fontecilla (Laurier-Dorion) <span class="pr-meta">· pour 25, contre 64, abstentions 0</span></li>
-        <li><span class="pr-meta">5 juin 2026 —</span> Débat sur le discours d’ouverture — Motion pour formuler un grief de M. Morin (Acadie) <span class="pr-meta">· pour 24, contre 63, abstentions 2</span></li>
+      <ul aria-label="Recent recorded divisions">
+
       </ul>
-      <p class="pr-note">Les 30 votes les plus récents, sur 735. Source officielle : le registre des votes, <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.<noscript> Les filtres, la recherche et le détail de chaque fiche demandent JavaScript.</noscript></p>
+      <p class="pr-note">The 0 most recent votes, out of 0. Official source: the Votes and Proceedings, <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.<noscript> Filters, search and the detail of each entry need JavaScript.</noscript></p>
     </div>
     <div class="info-box">
       <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text"> — the Legislative Assembly records every MLA's name for each recorded division in its official minutes (Votes and Proceedings). The by-MLA breakdown above (“View names by MLA” button) is read from those official minutes, nothing else.</span>
@@ -343,11 +302,6 @@ function goToFederal(evt){
     <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
     <a href="/sources" data-i18n="fil.bd">Site updates</a>
     <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
-      <a href="/quebec/">Québec</a>
-      <a href="/montreal/">Montréal</a>
-      <a href="/levis/">Lévis</a>
-      <a href="/longueuil/">Longueuil</a>
-      <a href="/laval/">Laval</a>
     </span>
   </nav>
   <div class="footer-inner">

@@ -1,22 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
-     La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dq:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-87R1S6SR9Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-87R1S6SR9Y');
-</script>
-<script src="/commun/consentement.js" defer></script>
+<!-- Pas de Google Analytics pour l'instant. La copie de DQ portait l'identifiant de DQ : les
+     visites de ce site seraient allées dans les statistiques de DQ. Pour en remettre, créer
+     une propriété à part, puis ramener ici le bloc gtag de DQ et commun/consentement.js (la
+     bannière de consentement), qui sont prêts. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -44,8 +32,8 @@
   }catch(e){}
 })();
 </script>
-<title>Plain-language glossary of the Legislative Assembly — Dossier Saskatchewan</title>
-<meta name="description" content="Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with the official sources.">
+<title>Legislative Assembly glossary — Dossier Saskatchewan</title>
+<meta name="description" content="Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with links to the official sources.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/lexique">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
@@ -57,8 +45,8 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dossier Saskatchewan">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Plain-language glossary of the Legislative Assembly — Dossier Saskatchewan">
-<meta property="og:description" content="Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with the official sources.">
+<meta property="og:title" content="Legislative Assembly glossary — Dossier Saskatchewan">
+<meta property="og:description" content="Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with links to the official sources.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/lexique">
 <meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
@@ -67,8 +55,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Plain-language glossary of the Legislative Assembly — Dossier Saskatchewan">
-<meta name="twitter:description" content="Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with the official sources.">
+<meta name="twitter:title" content="Legislative Assembly glossary — Dossier Saskatchewan">
+<meta name="twitter:description" content="Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with links to the official sources.">
 <meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
@@ -86,13 +74,13 @@
     {
       "@type": "ListItem",
       "position": 1,
-      "name": "Accueil",
+      "name": "Home",
       "item": "https://dossiersaskatchewan.ca/"
     },
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Lexique",
+      "name": "Glossary",
       "item": "https://dossiersaskatchewan.ca/lexique"
     }
   ]
@@ -216,7 +204,7 @@ function goToFederal(evt){
 
   <!-- APERÇU -->
   <section class="view active" id="view-lexique">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.lexique">Glossary</span></nav>
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.lexique">Glossary</span></nav>
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
@@ -488,11 +476,6 @@ function goToFederal(evt){
     <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
     <a href="/sources" data-i18n="fil.bd">Site updates</a>
     <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
-      <a href="/quebec/">Québec</a>
-      <a href="/montreal/">Montréal</a>
-      <a href="/levis/">Lévis</a>
-      <a href="/longueuil/">Longueuil</a>
-      <a href="/laval/">Laval</a>
     </span>
   </nav>
   <div class="footer-inner">

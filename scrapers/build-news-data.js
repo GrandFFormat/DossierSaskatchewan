@@ -105,7 +105,11 @@ function main() {
     });
   }
 
-  if (items.length === 0) throw new Error('aucun événement généré — données absentes ou format changé ?');
+  // Une liste vide est presque toujours une panne (données absentes, format changé) : on
+  // s'arrête. Seule exception, voulue : --premier-demarrage, avant la toute première lecture
+  // des sources, quand il n'y a vraiment encore rien à raconter.
+  const premierDemarrage = process.argv.includes('--premier-demarrage');
+  if (items.length === 0 && !premierDemarrage) throw new Error('aucun événement généré — données absentes ou format changé ?');
 
   items.sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : 0));
   const retenus = items.slice(0, MAX_ITEMS).map((it) => {
@@ -127,7 +131,9 @@ function main() {
     `const newsItems = ${JSON.stringify(retenus, null, 2)};\n`;
 
   writeFileSync(HTML_PATH, html.slice(0, startIdx) + block + html.slice(endIdx));
-  console.log(`${retenus.length} événement(s) « Quoi de neuf » injecté(s) — du ${retenus[retenus.length - 1].date} au ${retenus[0].date}.`);
+  console.log(retenus.length
+    ? `${retenus.length} événement(s) « Quoi de neuf » injecté(s) — du ${retenus[retenus.length - 1].date} au ${retenus[0].date}.`
+    : '0 événement « Quoi de neuf » (premier démarrage : rien encore à raconter).');
 
   // Flux RSS : les MÊMES événements, une seule source de vérité. Généré ici et
   // non dans un script à part, pour qu'il ne puisse jamais diverger du bloc
@@ -148,21 +154,23 @@ function rfc822(iso) {
   return new Date(`${iso}T12:00:00-04:00`).toUTCString();
 }
 function rss(items) {
+  // Le site est anglophone : le flux aussi (le texte anglais de chaque événement, le français
+  // seulement s'il manque).
   const entries = items.map((it) => `    <item>
-      <title>${xml(it.text)}</title>
+      <title>${xml(it.textEn || it.text)}</title>
       <link>${xml(it.link || SITE)}</link>
       <guid isPermaLink="false">${xml(it.guid || `${it.date}-${it.text}`)}</guid>
       <pubDate>${rfc822(it.date)}</pubDate>
-      <description>${xml(it.text)}</description>
+      <description>${xml(it.textEn || it.text)}</description>
     </item>`).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DossierQuébec — Quoi de neuf</title>
+    <title>Dossier Saskatchewan — What's new</title>
     <link>${SITE}/</link>
     <atom:link href="${SITE}/${FEED_PATH}" rel="self" type="application/rss+xml"/>
-    <description>Dépôts et sanctions de projets de loi, journées de votes nominatifs à l'Assemblée nationale du Québec. Site citoyen indépendant, données publiques officielles.</description>
-    <language>fr-CA</language>
+    <description>Bills introduced and assented to, and days of recorded divisions in Saskatchewan's Legislative Assembly. Independent citizen site, official public data.</description>
+    <language>en-CA</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
 ${entries}
   </channel>

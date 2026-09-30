@@ -1,6 +1,312 @@
 {
   "source": "https://www.legassembly.sk.ca/mlas/mla-contact-information/",
-  "scrapedAt": null,
-  "count": 0,
-  "contacts": []
+  "scrapedAt": "2026-09-30T23:04:42.819Z",
+  "count": 61,
+  "contacts": [
+    {
+      "id": "chris-beaudry",
+      "name": "Chris Beaudry",
+      "email": "cbeaudrymla@gmail.com"
+    },
+    {
+      "id": "carla-beck",
+      "name": "Carla Beck",
+      "email": "reginalakeview@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "brent-blakley",
+      "name": "Brent Blakley",
+      "email": "reginawascanaplains@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "bhajan-brar",
+      "name": "Bhajan Brar",
+      "email": "reginapasqua@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "kim-breckner",
+      "name": "Kim Breckner",
+      "email": "saskatoonriversdale@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "terri-bromm",
+      "name": "Terri Bromm",
+      "email": "TBromm.mla@outlook.com"
+    },
+    {
+      "id": "noor-burki",
+      "name": "Noor Burki",
+      "email": "reginacoronationpark@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "lori-carr",
+      "name": "Lori Carr",
+      "email": "loricarrmla@sasktel.net"
+    },
+    {
+      "id": "david-chan",
+      "name": "David Chan",
+      "email": "david.chan@yorktonmla.ca"
+    },
+    {
+      "id": "ken-cheveldayoff",
+      "name": "Ken Cheveldayoff",
+      "email": "ken.cheveldayoff.mla@sasktel.net"
+    },
+    {
+      "id": "april-chiefcalf",
+      "name": "April ChiefCalf",
+      "email": "saskatoonwestview@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "jared-clarke",
+      "name": "Jared Clarke",
+      "email": "reginawalshacres@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "jeremy-cockrill",
+      "name": "Jeremy Cockrill",
+      "email": "office@jeremycockrill.ca"
+    },
+    {
+      "id": "meara-conway",
+      "name": "Meara Conway",
+      "email": "reginaelphinstonecentre@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "brad-crassweller",
+      "name": "Brad Crassweller",
+      "email": "mla@wc-q.ca"
+    },
+    {
+      "id": "kim-gartner",
+      "name": "Kim Gartner",
+      "email": "kgartnermla@outlook.com"
+    },
+    {
+      "id": "hugh-gordon",
+      "name": "Hugh Gordon",
+      "email": "saskatoonsilverspring@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "todd-goudy",
+      "name": "Todd Goudy",
+      "email": "goudymla@gmail.com"
+    },
+    {
+      "id": "tajinder-grewal",
+      "name": "Tajinder Grewal",
+      "email": "saskatoonuniversitysutherland@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "daryl-harrison",
+      "name": "Daryl Harrison",
+      "email": "canningtonconstituency@sasktel.net"
+    },
+    {
+      "id": "jeremy-harrison",
+      "name": "Jeremy Harrison",
+      "email": "jharrisonmla@sasktel.net"
+    },
+    {
+      "id": "racquel-hilbert",
+      "name": "Racquel Hilbert",
+      "email": "mla.humboldt-watrous@outlook.com"
+    },
+    {
+      "id": "everett-hindley",
+      "name": "Everett Hindley",
+      "email": "swiftcurrentmla@gmail.com"
+    },
+    {
+      "id": "sally-housser",
+      "name": "Sally Housser",
+      "email": "reginauniversity@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "terry-jenson",
+      "name": "Terry Jenson",
+      "email": "office@terryjenson.ca"
+    },
+    {
+      "id": "keith-jorgenson",
+      "name": "Keith Jorgenson",
+      "email": "saskatoonchurchillwildwood@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "warren-kaeding",
+      "name": "Warren Kaeding",
+      "email": "warrenkaedingmla@sasktel.net"
+    },
+    {
+      "id": "kevin-kasun",
+      "name": "Kevin Kasun",
+      "email": "pacarltonmla@sasktel.net"
+    },
+    {
+      "id": "travis-keisig",
+      "name": "Travis Keisig",
+      "email": "mla@traviskeisig.ca"
+    },
+    {
+      "id": "barret-kropf",
+      "name": "Barret Kropf",
+      "email": "dakotaarmriver.mla@gmail.com"
+    },
+    {
+      "id": "leroy-laliberte",
+      "name": "Leroy Laliberte",
+      "email": "athabasca@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "matt-love",
+      "name": "Matt Love",
+      "email": "saskatooneastview@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "david-marit",
+      "name": "David Marit",
+      "email": "mlawoodriver@sasktel.net"
+    },
+    {
+      "id": "jamie-martens",
+      "name": "Jamie Martens",
+      "email": "jamie.martensmla@outlook.com"
+    },
+    {
+      "id": "don-mcbean",
+      "name": "Don McBean",
+      "email": "saskatoonchiefmistawasis@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "blaine-mcleod",
+      "name": "Blaine McLeod",
+      "email": "LumsdenmorseMLA@outlook.com"
+    },
+    {
+      "id": "tim-mcleod",
+      "name": "Tim McLeod",
+      "email": "mjnorthmla@sasktel.net"
+    },
+    {
+      "id": "jordan-mcphail",
+      "name": "Jordan McPhail",
+      "email": "cumberland@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "scott-moe",
+      "name": "Scott Moe",
+      "email": "scottmoe.mla@sasktel.net; Premier@gov.sk.ca"
+    },
+    {
+      "id": "vicki-mowat",
+      "name": "Vicki Mowat",
+      "email": "saskatoonfairview@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "betty-nippi-albright",
+      "name": "Betty Nippi-Albright",
+      "email": "independentmla@saskatooncentre.com"
+    },
+    {
+      "id": "megan-patterson",
+      "name": "Megan Patterson",
+      "email": "mjwakamowmla@outlook.com"
+    },
+    {
+      "id": "joan-pratchler",
+      "name": "Joan Pratchler",
+      "email": "reginarochdale@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "jim-reiter",
+      "name": "Jim Reiter",
+      "email": "jimreitermla@sasktel.net"
+    },
+    {
+      "id": "erika-ritchie",
+      "name": "Erika Ritchie",
+      "email": "saskatoonnutana@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "alana-ross",
+      "name": "Alana Ross",
+      "email": "minister.pcs@gov.sk.ca"
+    },
+    {
+      "id": "darlene-rowden",
+      "name": "Darlene Rowden",
+      "email": "batochemla@outlook.com"
+    },
+    {
+      "id": "jacqueline-roy",
+      "name": "Jacqueline Roy",
+      "email": "reginanortheast@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "nicole-sarauer",
+      "name": "Nicole Sarauer",
+      "email": "reginadouglaspark@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "eric-schmalz",
+      "name": "Eric Schmalz",
+      "email": "SaskRivers.MLA@outlook.com"
+    },
+    {
+      "id": "brittney-senger",
+      "name": "Brittney Senger",
+      "email": "saskatoonsoutheast@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "doug-steele",
+      "name": "Doug Steele",
+      "email": "dougsteelemla@gmail.com"
+    },
+    {
+      "id": "nathaniel-teed",
+      "name": "Nathaniel Teed",
+      "email": "saskatoonmeewasin@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "james-thorsteinson",
+      "name": "James Thorsteinson",
+      "email": "office@cktmla.ca"
+    },
+    {
+      "id": "darcy-warrington",
+      "name": "Darcy Warrington",
+      "email": "saskatoonstonebridge@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "kevin-weedmark",
+      "name": "Kevin Weedmark",
+      "email": "office@kevinweedmark.ca"
+    },
+    {
+      "id": "michael-weger",
+      "name": "Michael Weger",
+      "email": "office@weyburnbengough.ca"
+    },
+    {
+      "id": "sean-wilson",
+      "name": "Sean Wilson",
+      "email": "office@canorapellymla.ca"
+    },
+    {
+      "id": "trent-wotherspoon",
+      "name": "Trent Wotherspoon",
+      "email": "reginamountroyal@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "aleana-young",
+      "name": "Aleana Young",
+      "email": "reginasouthalbert@ndpcaucus.sk.ca"
+    },
+    {
+      "id": "colleen-young",
+      "name": "Colleen Young",
+      "email": "colleen.young@sasktel.net"
+    }
+  ]
 }

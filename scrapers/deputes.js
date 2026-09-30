@@ -1,127 +1,129 @@
-// Scraper — Liste des 125 député·e·s (nom, circonscription, parti)
+// Scraper — les 61 député·e·s (MLAs) : nom, circonscription, caucus, parti.
 //
-// Source : la page d'index des députés sur assnat.qc.ca (HTML statique, un seul
-// fetch — même page déjà utilisée par depute-emails.js pour les courriels).
-// Contrairement au courriel (voir depute-emails.js), la région administrative
-// n'est PAS dans ce tableau — seulement nom, circonscription et parti. On la
-// préserve donc depuis le tableau `deputesRaw` déjà présent dans index.html
-// (assignation géographique stable : une circonscription ne change pas de région
-// d'une élection à l'autre, contrairement au nom du député ou à son parti).
+// Source : la page MLAs de l'Assemblée législative (HTML statique, un seul appel). Chaque
+// rangée du tableau donne le nom (lien vers sa fiche), le caucus et la circonscription.
 //
-// Si une nouvelle circonscription apparaît sans correspondance dans l'ancien
-// tableau (élection partielle, redécoupage), la région est laissée à `null`
-// plutôt que devinée — jamais de donnée inventée.
+// Le parti se déduit du caucus (voir CAUCUS_VERS_PARTI dans sk-commun.js). Avant d'écrire quoi
+// que ce soit, le scraper vérifie que la page dit toujours la même chose que lui :
+//   - le total par caucus de l'encadré « Seats in the Legislature » = ce qu'il a compté ;
+//   - la page renvoie encore vers le « Saskatchewan Party Caucus » et le « New Democratic
+//     Party Caucus » (sinon, la correspondance caucus → parti n'est plus sûre) ;
+//   - le premier ministre nommé en tête de page siège au caucus du gouvernement.
+// Un seul écart, et il s'arrête sans rien écrire : les données de la veille restent.
+//
+// La région : la Saskatchewan n'a pas de régions administratives dans les données de
+// l'Assemblée. Le champ reste vide (null) plutôt que deviné.
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { writeFileSync } from 'node:fs';
 import * as cheerio from 'cheerio';
+import { ASSEMBLEE, lirePage, sansTitre, plierNom, CAUCUS_VERS_PARTI, LEGISLATURE } from './sk-commun.js';
 
-const INDEX_URL = 'https://www.assnat.qc.ca/fr/deputes/index.html';
-const HTML_PATH = 'gabarit.html';   // le MODÈLE, jamais servi : les pages en sont tirées
+const URL_MLAS = `${ASSEMBLEE}/mlas/`;
 const OUT_PATH = 'data/deputes.json';
-const USER_AGENT = 'veille-assnat-scraper/0.1 (projet citoyen independant, usage non commercial)';
-const START_MARKER = '/* DEPUTES_DATA_START';
-const END_MARKER = '/* DEPUTES_DATA_END */';
 
-const PARTY_CODES = {
-  'Coalition avenir Québec': 'CAQ',
-  'Parti libéral du Québec': 'PLQ',
-  'Québec solidaire': 'QS',
-  'Parti québécois': 'PQ',
-  'Parti conservateur du Québec': 'PCQ',
-  'Indépendant': 'IND',
-  'Indépendante': 'IND',
-};
-
-// Même logique que norm() dans index.html — insensible aux accents/casse,
-// pour tolérer les petites incohérences de graphie entre les pages assnat.qc.ca
-// (ex. "Etienne Grandmont" sans accent sur une page, "Étienne Grandmont" ailleurs).
-function foldName(name) {
-  return name
-    .normalize('NFD').replace(/[̀-ͯ]/g, '')
-    .toLowerCase()
-    .replace(/[-–—']/g, ' ')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function normalizeName(rawName) {
-  // Format brut : "Bachand, André " (Nom, Prénom) -> "André Bachand"
-  const cleaned = rawName.replace(/\s+/g, ' ').trim();
-  const match = cleaned.match(/^([^,]+),\s*(.+)$/);
-  return match ? `${match[2]} ${match[1]}` : cleaned;
-}
-
-function loadExistingRegions() {
-  const html = readFileSync(HTML_PATH, 'utf-8');
-  const startIdx = html.indexOf(START_MARKER);
-  const endIdx = html.indexOf(END_MARKER);
-  if (startIdx === -1 || endIdx === -1) {
-    throw new Error(`Marqueurs DEPUTES_DATA_START/END introuvables dans ${HTML_PATH}`);
-  }
-  const block = html.slice(startIdx, endIdx);
-  // Tolère des champs supplémentaires après le parti (ex. l'assnatId numérique
-  // ajouté en 5e position) : on ne capture que les 4 premiers (nom, circ, région,
-  // parti) puis on accepte soit « ] » soit « , … ». Sans ce « [,\]] », l'ajout de
-  // l'assnatId cassait le report des régions -> toutes nulles au scrape suivant.
-  const rows = [...block.matchAll(/\["([^"]+)","([^"]+)","([^"]+)","([^"]+)"[,\]]/g)];
-  const regionByName = new Map();
-  for (const [, name, , region] of rows) regionByName.set(foldName(name), region);
-  return regionByName;
+// Identifiant stable tiré de l'adresse de la fiche (« ?first=Chris&last=Beaudry » →
+// « chris-beaudry »). Il sert à rapprocher la même personne d'une page à l'autre (courriel,
+// votes) sans dépendre de la façon d'écrire le nom. L'Assemblée laisse parfois une espace de
+// trop (« first=Nathaniel &last=Teed ») : on la retire.
+function identifiant(href) {
+  const u = new URL(href, ASSEMBLEE);
+  const prenom = (u.searchParams.get('first') || '').trim();
+  const nom = (u.searchParams.get('last') || '').trim();
+  if (!prenom || !nom) return null;
+  return plierNom(`${prenom} ${nom}`).replace(/ /g, '-');
 }
 
 async function main() {
-  const regionByName = loadExistingRegions();
-
-  const res = await fetch(INDEX_URL, { headers: { 'User-Agent': USER_AGENT } });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const html = await res.text();
+  const html = await lirePage(URL_MLAS);
   const $ = cheerio.load(html);
 
   const deputes = [];
-  $('tbody tr').each((_, row) => {
-    const cells = $(row).find('td');
-    if (cells.length < 3) return;
-
-    const nameLink = $(cells[0]).find('a').first();
-    if (nameLink.length === 0) return;
-    const name = normalizeName(nameLink.text());
-    const riding = $(cells[1]).text().replace(/\s+/g, ' ').trim();
-    const partyFull = $(cells[2]).text().replace(/\s+/g, ' ').trim();
-    const party = PARTY_CODES[partyFull] ?? null;
-
-    const region = regionByName.get(foldName(name)) ?? null;
-
-    // ID numérique interne assnat.qc.ca (ex. "/fr/deputes/bachand-andre-17859/index.html"
-    // -> 17859). Sert de clé fiable pour rapprocher chaque député·e du détail nominatif
-    // des votes, où le même ID identifie la personne sans ambiguïté (contrairement au
-    // nom de famille seul, que plusieurs député·e·s peuvent partager).
-    const href = nameLink.attr('href') || '';
-    const idMatch = href.match(/-(\d+)\/index\.html$/);
-    const assnatId = idMatch ? Number(idMatch[1]) : null;
-
-    deputes.push({ name, riding, region, party, partyFull, assnatId });
+  const inconnus = [];
+  $('tr').each((_, rangee) => {
+    const lien = $(rangee).find('td.mla-name a[href*="member-details"]').first();
+    if (!lien.length) return;
+    const caucus = $(rangee).find('td.mla-party').text().replace(/\s+/g, ' ').trim();
+    const circonscription = $(rangee).find('td').eq(2).text().replace(/\s+/g, ' ').trim();
+    const parti = CAUCUS_VERS_PARTI[caucus];
+    if (!parti) inconnus.push(`${lien.text().trim()} (« ${caucus} »)`);
+    deputes.push({
+      name: sansTitre(lien.text()),
+      riding: circonscription,
+      region: null,
+      party: parti ? parti.code : null,
+      partyFull: parti ? parti.nom : null,
+      caucus,
+      id: identifiant(lien.attr('href')),
+    });
   });
 
-  const missingRegion = deputes.filter((d) => !d.region);
-  const missingParty = deputes.filter((d) => !d.party);
-  const missingId = deputes.filter((d) => !d.assnatId);
+  // --- Vérifications, avant toute écriture ---
+  const erreurs = [];
+  if (inconnus.length) erreurs.push(`caucus inconnu : ${inconnus.join(', ')}`);
 
-  writeFileSync(
-    OUT_PATH,
-    JSON.stringify(
-      { source: INDEX_URL, scrapedAt: new Date().toISOString(), count: deputes.length, deputes },
-      null,
-      2
-    )
-  );
+  // L'encadré « Seats in the Legislature » : un petit tableau, une rangée par caucus
+  // (<td>Government Caucus</td><td>34</td>), puis « Total: ». On lit cellule par cellule :
+  // le texte des cellules, mis bout à bout, se colle (« Government Caucus34 »).
+  const annonces = {};
+  $('th:contains("Seats in the Legislature")').closest('table').find('tr').each((_, tr) => {
+    const cellules = $(tr).find('td');
+    if (cellules.length !== 2) return;
+    const libelle = cellules.eq(0).text().replace(/\s+/g, ' ').replace(/:$/, '').trim();
+    annonces[libelle] = Number(cellules.eq(1).text().trim());
+  });
+  for (const caucus of Object.keys(CAUCUS_VERS_PARTI)) {
+    const annonce = annonces[caucus];
+    const compte = deputes.filter((d) => d.caucus === caucus).length;
+    if (annonce === undefined) erreurs.push(`l'encadré des sièges ne donne plus « ${caucus} »`);
+    else if (annonce !== compte) erreurs.push(`${caucus} : la page annonce ${annonce}, j'en compte ${compte}`);
+  }
+  if (annonces.Total !== deputes.length) {
+    erreurs.push(`total : la page annonce ${annonces.Total ?? '?'}, j'en compte ${deputes.length}`);
+  }
 
-  console.log(`${deputes.length} député·e·s écrit·e·s dans ${OUT_PATH}`);
-  if (missingRegion.length) console.log(`  ⚠ ${missingRegion.length} sans région connue : ${missingRegion.map((d) => d.name).join(', ')}`);
-  if (missingParty.length) console.log(`  ⚠ ${missingParty.length} avec un intitulé de parti non reconnu : ${missingParty.map((d) => `${d.name} (${d.partyFull})`).join(', ')}`);
-  if (missingId.length) console.log(`  ⚠ ${missingId.length} sans ID assnat détecté : ${missingId.map((d) => d.name).join(', ')}`);
+  // La correspondance caucus → parti tient-elle encore ?
+  const liens = $('a').map((_, a) => $(a).text().replace(/\s+/g, ' ').trim()).get();
+  for (const attendu of ['Saskatchewan Party Caucus', 'New Democratic Party Caucus']) {
+    if (!liens.includes(attendu)) erreurs.push(`la page ne renvoie plus vers « ${attendu} »`);
+  }
+
+  // Le premier ministre, nommé en tête de page : un lien vers sa fiche, puis son rôle en gras
+  // dans la même cellule (<strong>Premier</strong>).
+  let nomPremier = null;
+  $('a[href*="member-details"]').each((_, a) => {
+    if (nomPremier) return;
+    const role = $(a).closest('td').find('strong').first().text().replace(/\s+/g, ' ').trim();
+    if (role === 'Premier') nomPremier = sansTitre($(a).text());
+  });
+  const premier = deputes.find((d) => plierNom(d.name) === plierNom(nomPremier));
+  if (!premier) erreurs.push(`premier ministre introuvable dans la liste (« ${nomPremier ?? 'aucun'} »)`);
+  else if (premier.caucus !== 'Government Caucus') erreurs.push(`le premier ministre (${premier.name}) n'est pas au caucus du gouvernement`);
+
+  const sansId = deputes.filter((d) => !d.id);
+  if (sansId.length) erreurs.push(`sans identifiant : ${sansId.map((d) => d.name).join(', ')}`);
+
+  if (erreurs.length) {
+    console.error(`deputes.js : ${erreurs.length} vérification(s) échouée(s) — rien n'est écrit :`);
+    for (const e of erreurs) console.error(`  ✗ ${e}`);
+    process.exitCode = 1;
+    return;
+  }
+
+  writeFileSync(OUT_PATH, JSON.stringify({
+    source: URL_MLAS,
+    legislature: LEGISLATURE,
+    scrapedAt: new Date().toISOString(),
+    count: deputes.length,
+    deputes,
+  }, null, 2) + '\n');
+
+  const parParti = {};
+  for (const d of deputes) parParti[d.party] = (parParti[d.party] || 0) + 1;
+  console.log(`${deputes.length} député·e·s écrit·e·s dans ${OUT_PATH} — ${Object.entries(parParti).map(([p, n]) => `${p} ${n}`).join(', ')}`);
+  console.log(`  premier ministre : ${premier.name} (${premier.riding})`);
 }
 
 main().catch((err) => {
-  console.error('Échec du scraper deputes.js :', err);
+  console.error('Échec du scraper deputes.js :', err.message);
   process.exitCode = 1;
 });

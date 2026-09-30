@@ -1,64 +1,75 @@
-// Scraper — Courriels officiels des député·e·s
+// Scraper — le courriel de chaque député·e, tel que l'Assemblée le publie.
 //
-// Source : la page d'index des députés sur assnat.qc.ca (HTML statique, un seul
-// fetch — le tableau contient déjà nom, circonscription, parti ET courriel officiel
-// pour chaque député·e, pas besoin de visiter 125 pages individuelles).
+// Source : la page « MLA Contact Information » de l'Assemblée législative (HTML statique, un
+// seul appel). Chaque rangée : un lien vers la fiche (nom en gras, caucus, circonscription),
+// puis bureau, adresse, téléphone et le lien « mailto: ».
 //
-// Volontairement PAS de réseaux sociaux (LinkedIn/FB/Instagram) : ces comptes ne
-// sont listés nulle part sur les pages officielles. Les trouver demanderait une
-// recherche par nom (ex. Google), avec un vrai risque de confondre des homonymes
-// ou de tomber sur un faux compte — décision prise de ne pas faire ça tant qu'il
-// n'y a pas une façon fiable de vérifier la correspondance. Courriel seulement.
+// On prend l'adresse que l'Assemblée affiche, telle quelle. Certaines sont celles d'un caucus
+// (…@ndpcaucus.sk.ca), d'autres une adresse personnelle choisie par la personne : c'est le
+// contact que l'Assemblée donne, pas à nous d'en juger. Pas de réseaux sociaux.
+//
+// Vérification : les 61 fiches du tableau doivent correspondre aux 61 député·e·s de
+// data/deputes.json (même identifiant). Sinon, rien n'est écrit.
 
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import * as cheerio from 'cheerio';
+import { ASSEMBLEE, lirePage, sansTitre, plierNom } from './sk-commun.js';
 
-const INDEX_URL = 'https://www.assnat.qc.ca/fr/deputes/index.html';
+const URL_CONTACTS = `${ASSEMBLEE}/mlas/mla-contact-information/`;
+const DEPUTES_PATH = 'data/deputes.json';
 const OUT_PATH = 'data/deputes-contacts.json';
-const USER_AGENT = 'veille-assnat-scraper/0.1 (projet citoyen independant, usage non commercial)';
 
-function normalizeName(rawName) {
-  // Format brut : "Bachand, André " (Nom, Prénom) -> "André Bachand"
-  const cleaned = rawName.replace(/ /g, ' ').replace(/\s+/g, ' ').trim();
-  const match = cleaned.match(/^([^,]+),\s*(.+)$/);
-  return match ? `${match[2]} ${match[1]}` : cleaned;
+function identifiant(href) {
+  const u = new URL(href, ASSEMBLEE);
+  const prenom = (u.searchParams.get('first') || '').trim();
+  const nom = (u.searchParams.get('last') || '').trim();
+  return prenom && nom ? plierNom(`${prenom} ${nom}`).replace(/ /g, '-') : null;
 }
 
 async function main() {
-  const res = await fetch(INDEX_URL, { headers: { 'User-Agent': USER_AGENT } });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const html = await res.text();
-  const $ = cheerio.load(html);
+  const { deputes } = JSON.parse(readFileSync(DEPUTES_PATH, 'utf-8'));
+  const connus = new Map(deputes.map((d) => [d.id, d]));
 
+  const $ = cheerio.load(await lirePage(URL_CONTACTS));
   const contacts = [];
-  $('tbody tr').each((_, row) => {
-    const cells = $(row).find('td');
-    if (cells.length < 4) return;
-
-    const nameLink = $(cells[0]).find('a').first();
-    if (nameLink.length === 0) return;
-    const name = normalizeName(nameLink.text());
-
-    const emailLink = $(cells[3]).find('a[href^="mailto:"]').first();
-    const email = emailLink.length ? emailLink.attr('href').replace(/^mailto:/, '').trim() : null;
-
-    if (name) contacts.push({ name, email });
+  $('tr').each((_, rangee) => {
+    const lien = $(rangee).find('a[href*="member-details"]').first();
+    if (!lien.length) return;
+    const id = identifiant(lien.attr('href'));
+    const courriel = ($(rangee).find('a[href^="mailto:"]').first().attr('href') || '')
+      .replace(/^mailto:/i, '').trim() || null;
+    contacts.push({ id, name: sansTitre(lien.find('b').first().text() || lien.text()), email: courriel });
   });
 
-  writeFileSync(
-    OUT_PATH,
-    JSON.stringify(
-      { source: INDEX_URL, scrapedAt: new Date().toISOString(), count: contacts.length, contacts },
-      null,
-      2
-    )
-  );
+  const erreurs = [];
+  const vus = new Set(contacts.map((c) => c.id));
+  const inconnus = contacts.filter((c) => !connus.has(c.id));
+  const absents = deputes.filter((d) => !vus.has(d.id));
+  if (inconnus.length) erreurs.push(`fiches absentes de data/deputes.json : ${inconnus.map((c) => c.name).join(', ')}`);
+  if (absents.length) erreurs.push(`député·e·s sans rangée de contact : ${absents.map((d) => d.name).join(', ')}`);
+  if (erreurs.length) {
+    console.error(`depute-emails.js : rien n'est écrit —`);
+    for (const e of erreurs) console.error(`  ✗ ${e}`);
+    process.exitCode = 1;
+    return;
+  }
 
-  const withEmail = contacts.filter((c) => c.email).length;
-  console.log(`${contacts.length} député·e·s trouvé·e·s, ${withEmail} avec courriel — écrit dans ${OUT_PATH}`);
+  // Le nom de référence est celui de data/deputes.json : c'est lui que les pages rapprochent.
+  for (const c of contacts) c.name = connus.get(c.id).name;
+
+  writeFileSync(OUT_PATH, JSON.stringify({
+    source: URL_CONTACTS,
+    scrapedAt: new Date().toISOString(),
+    count: contacts.length,
+    contacts,
+  }, null, 2) + '\n');
+
+  const sansCourriel = contacts.filter((c) => !c.email);
+  console.log(`${contacts.length} contacts écrits dans ${OUT_PATH} — ${contacts.length - sansCourriel.length} avec courriel`);
+  if (sansCourriel.length) console.log(`  ⚠ sans courriel publié : ${sansCourriel.map((c) => c.name).join(', ')}`);
 }
 
 main().catch((err) => {
-  console.error('Échec du scraper depute-emails.js :', err);
+  console.error('Échec du scraper depute-emails.js :', err.message);
   process.exitCode = 1;
 });
