@@ -124,8 +124,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -220,7 +220,7 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.votes">Recorded divisions at the National Assembly</span>
+        <span class="hero-sujet" data-i18n="sujet.votes">Recorded divisions in the Legislative Assembly</span>
         <span data-i18n="votehero.l1">Who voted</span>
         <span class="hero-outline" data-i18n="votehero.l2">for, against, absent.</span>
       </h1>
@@ -230,7 +230,7 @@ function goToFederal(evt){
     <div class="section-head">
       <div>
         <h2 data-i18n="h.votes" class="visually-hidden-title">Vote registry</h2>
-        <div class="sub" data-i18n="votes.sub">43rd Legislature (sessions 1 to 3) — official counts and by-MNA breakdown</div>
+        <div class="sub" data-i18n="votes.sub">30th Legislature — official counts and by-MLA breakdown</div>
       </div>
       <div class="toolbar">
         <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Keyword: subject, bill number…">
@@ -276,7 +276,7 @@ function goToFederal(evt){
       <p class="pr-note">Les 30 votes les plus récents, sur 735. Source officielle : le registre des votes, <a href="https://www.assnat.qc.ca/" rel="noopener">assnat.qc.ca</a>.<noscript> Les filtres, la recherche et le détail de chaque fiche demandent JavaScript.</noscript></p>
     </div>
     <div class="info-box">
-      <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text">— the National Assembly publishes each MNA's name for every recorded vote in its official vote registry. The by-MNA breakdown above (“View names by MNA” button) comes from that official registry, not an estimate. The party shown next to each name is the one on record at the time of the vote — it may differ from an MNA's current party if they have since changed allegiance.</span>
+      <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text"> — the Legislative Assembly records every MLA's name for each recorded division in its official minutes (Votes and Proceedings). The by-MLA breakdown above (“View names by MLA” button) is read from those official minutes, nothing else.</span>
     </div>
 
     <!-- « Comment lire un vote » : bande bleue pédagogique (maquette) -->
@@ -285,7 +285,7 @@ function goToFederal(evt){
       <div class="lire-grid">
         <div class="lire-box">
           <h3 data-i18n="lire.1.h">Recorded division</h3>
-          <p data-i18n="lire.1.p">Each MNA stands and their choice is recorded in the Journal des débats. It's the only kind of vote that can be attributed to a person.</p>
+          <p data-i18n="lire.1.p">Each MLA's name is recorded in the Votes and Proceedings, the Assembly's official minutes. It's the only kind of vote that can be attributed to a person.</p>
         </div>
         <div class="lire-box">
           <h3 data-i18n="lire.2.h">Passed ≠ law</h3>

@@ -120,8 +120,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -218,14 +218,14 @@ function goToFederal(evt){
          (La ligne du header .brand-text p est masquée en échange.) -->
     <div class="hero-poster">
       <h1 class="hero-h1">
-        <span class="hero-sujet" data-i18n="sujet.apercu">Quebec's National Assembly in plain language</span>
+        <span class="hero-sujet" data-i18n="sujet.apercu">Saskatchewan's Legislative Assembly in plain language</span>
         <span data-i18n="hero.l1">Who sits,</span>
         <span class="hero-outline" data-i18n="hero.l2">who legislates,</span>
         <span class="hero-blue" data-i18n="hero.l3">who votes what.</span>
       </h1>
       <div class="hero-row">
         <div class="hero-manifesto">
-          <p data-i18n="hero.manifesto">Québec's National Assembly, reorganized by person and translated into plain language — no judgment, no verdict. Independent citizen site, real public data.</p>
+          <p data-i18n="hero.manifesto">Saskatchewan's Legislative Assembly, reorganized by person and translated into plain language — no judgment, no verdict. Independent citizen site, real public data.</p>
         </div>
         <a class="hero-cta" href="/projets-de-loi" data-i18n="hero.cta">Explore →</a>
       </div>
@@ -242,7 +242,7 @@ function goToFederal(evt){
     <div class="band band-yellow bleed" id="band-challenged">
     <div class="section-head" id="sec-challenged">
       <div>
-        <h2 id="challengedTitle">Projets challengés par les citoyen·ne·s</h2>
+        <h2 id="challengedTitle">Bills challenged by citizens</h2>
         <div class="sub" id="challengedSub"></div>
       </div>
       <a class="ch-more" id="chMoreBtn" role="button" tabindex="0" onclick="showMoreChallenged()" data-i18n="ch.more" style="display:none;">See more →</a>
@@ -294,7 +294,7 @@ function goToFederal(evt){
     <!-- Le flux RSS (feed.xml) reprend exactement ces événements. Son lien
          visible vit dans le pied de page ; la balise <link rel=alternate> de
          l'en-tête sert aux lecteurs RSS. -->
-    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">What's new</h2><div class="sub" data-i18n="h.quoideneuf.sub">Real, recent activity from the National Assembly</div></div></div>
+    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">What's new</h2><div class="sub" data-i18n="h.quoideneuf.sub">Real, recent activity from the Legislative Assembly</div></div></div>
 
     <div id="body-quoideneuf">
     <div id="newsList"></div>
@@ -310,7 +310,7 @@ function goToFederal(evt){
     <div>
     <div class="section-head" id="sec-petitions">
       <div>
-        <h2 data-i18n="h.petitions">Petitions open at the National Assembly</h2>
+        <h2 data-i18n="h.petitions">Petitions presented in the Legislative Assembly</h2>
         <div class="sub" data-i18n="pet.sub">Real e-petitions currently open for signature — recorded June 23, 2026</div>
       </div>
     </div>
@@ -329,7 +329,7 @@ function goToFederal(evt){
         <p class="mission-statement"><span data-i18n="mission.st1">The Assembly's official site is the most reliable source there is. This one just makes it </span><span class="hl" data-i18n="mission.st2">easier to follow.</span></p>
         <div class="compare">
           <div class="compare-col">
-            <span class="tag" data-i18n="mission.assnat.tag">What assnat.qc.ca does</span>
+            <span class="tag" data-i18n="mission.assnat.tag">What legassembly.sk.ca does</span>
             <ul>
               <li data-i18n="mission.assnat.1">Organizes everything by official document</li>
               <li data-i18n="mission.assnat.2">The complete, legally authoritative source for everything</li>
@@ -356,18 +356,18 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.ministres">Quebec ministers and MNAs</span>
+        <span class="hero-sujet" data-i18n="sujet.ministres">Saskatchewan ministers and MLAs</span>
         <span data-i18n="minhero.l1">The Cabinet</span>
         <span class="hero-outline" data-i18n="minhero.l2">& the whole Assembly.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="minhero.sub">The ministers, then all 125 MNAs from every party (<b>the MNAs are further down</b>) — <b>one search for both.</b></p>
+      <p class="view-hero-sub" data-i18n="minhero.sub">The ministers, then all 61 MLAs from every party (<b>the MLAs are further down</b>) — <b>one search for both.</b></p>
 
       <!-- Grande recherche façon maquette : loupe sur cellule jaune. Même rangée
            que sur Projets de loi (.projets-controls = flex + retour à la ligne). -->
       <div class="projets-controls">
         <div class="brutal-search">
           <span class="bs-icon" aria-hidden="true">🔍</span>
-          <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Name, riding, region, or ministry…">
+          <input type="text" id="searchMinistres" data-i18n-placeholder="ph.searchMinistres" placeholder="Name, constituency, region, or ministry…">
         </div>
         <!-- Tri par assiduité aux votes. La logique (toggleMinistresSort) existait
              depuis le début, mais AUCUN bouton ne la déclenchait. -->
@@ -380,9 +380,9 @@ function goToFederal(evt){
     <div class="band band-white bleed" id="band-composition">
     <div class="section-head" id="sec-composition">
       <div>
-        <h2 data-i18n="h.composition">Composition — 125 seats</h2>
+        <h2 data-i18n="h.composition">Composition — 61 seats</h2>
       </div>
-      <span class="head-note" data-i18n="apercu.composition.sub">43rd Legislature · breakdown by parliamentary group</span>
+      <span class="head-note" data-i18n="apercu.composition.sub">30th Legislature · breakdown by caucus</span>
     </div>
     <div class="compo-wrap">
       <div class="compo-bar" id="compoBar"></div>
@@ -406,7 +406,7 @@ function goToFederal(evt){
         <li data-i18n="lp.debut">The count starts at each person's first vote: someone elected mid-term is not counted absent from votes held before they arrived.</li>
         <li data-i18n="lp.pres"><b>—</b>: the Assembly's President* and its three Vice-Presidents. To stay neutral, they vote little or not at all: a low rate would not mean they were absent.</li>
         <li data-i18n="lp.nd"><b>n/a</b>: no recorded vote for this person.</li>
-        <li data-i18n="lp.officiel">This is not an official measure: the Assembly does not publish attendance, and a missed vote does not tell why.</li>
+        <li data-i18n="lp.officiel">This is not an official measure: a missed vote does not tell why.</li>
       </ul>
       <p class="lp-asterisque" data-i18n="lp.aster">* The Assembly's President is not the same as the Premier: the President runs the debates and stays neutral, while the Premier heads the government and votes like the other members. <a href="/lexique#role-presidence">See the Assembly's presidency in the Glossary →</a></p>
       <p class="lp-asterisque lp-asterisque-suite" data-i18n="lp.aster2">** Updated every morning: the site rereads the Assembly's register of votes and recalculates each person's rate, then the median, the colours and the numbers above. A vote held one day shows up the next; during the dissolution, nothing changes.</p>
@@ -416,7 +416,7 @@ function goToFederal(evt){
 
     <div class="section-head min-group-head" id="ministresTitle">
       <div><h2 data-i18n="h.ministres2">The ministers</h2></div>
-      <span class="head-note"><span id="ministresCount"></span><span data-i18n="min.sub2b"> ministers — official quebec.ca list</span></span>
+      <span class="head-note"><span id="ministresCount"></span><span data-i18n="min.sub2b"> ministers — official saskatchewan.ca list</span></span>
     </div>
     <div class="grid" id="ministresGrid"></div>
     <!--PRERENDU:ministresGrid-->
@@ -440,11 +440,11 @@ function goToFederal(evt){
 
     <div class="section-head min-group-head" id="deputesTitle">
       <div><h2 data-i18n="min.restTitle">The rest of the Assembly</h2></div>
-      <span class="head-note" data-i18n="min.restNote">Every party — 125 seats total</span>
+      <span class="head-note" data-i18n="min.restNote">Every party — 61 seats total</span>
     </div>
     <div class="grid" id="deputesList"></div>
     <!--PRERENDU:deputesList-->
-    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">These 125 entries come directly from the official list of sitting MNAs at the National Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update, not an automatically updated feed.</div>
+    <div class="info-box" id="deputesInfoBox" data-i18n="trouve.info">These 61 entries come directly from the official list of sitting MLAs at the Legislative Assembly. Some seats may change between updates (resignation, by-election) — this list is a snapshot taken at the last update.</div>
   </section>
 
   <!-- PROJETS DE LOI -->
@@ -455,11 +455,11 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.projets">Quebec bills</span>
+        <span class="hero-sujet" data-i18n="sujet.projets">Saskatchewan bills</span>
         <span data-i18n="projhero.l1">Bills,</span>
         <span class="hero-outline" data-i18n="projhero.l2">translated plainly.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="projhero.sub">Every bill summarized in everyday language, with its real stage in the process. The full text is always one click away on assnat.qc.ca.</p>
+      <p class="view-hero-sub" data-i18n="projhero.sub">Every bill summarized in everyday language, with its real stage in the process. The full text is always one click away on legassembly.sk.ca.</p>
 
       <!-- Recherche façon maquette + 4 filtres rapides (actif = noir/jaune) -->
       <div class="projets-controls">
@@ -514,7 +514,7 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.votes">Recorded divisions at the National Assembly</span>
+        <span class="hero-sujet" data-i18n="sujet.votes">Recorded divisions in the Legislative Assembly</span>
         <span data-i18n="votehero.l1">Who voted</span>
         <span class="hero-outline" data-i18n="votehero.l2">for, against, absent.</span>
       </h2>
@@ -524,7 +524,7 @@ function goToFederal(evt){
     <div class="section-head">
       <div>
         <h2 data-i18n="h.votes" class="visually-hidden-title">Vote registry</h2>
-        <div class="sub" data-i18n="votes.sub">43rd Legislature (sessions 1 to 3) — official counts and by-MNA breakdown</div>
+        <div class="sub" data-i18n="votes.sub">30th Legislature — official counts and by-MLA breakdown</div>
       </div>
       <div class="toolbar">
         <input type="text" id="searchVotes" data-i18n-placeholder="ph.searchVotes" placeholder="Keyword: subject, bill number…">
@@ -536,7 +536,7 @@ function goToFederal(evt){
     <div id="votesList"></div>
     <!--PRERENDU:votesList-->
     <div class="info-box">
-      <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text">— the National Assembly publishes each MNA's name for every recorded vote in its official vote registry. The by-MNA breakdown above (“View names by MNA” button) comes from that official registry, not an estimate. The party shown next to each name is the one on record at the time of the vote — it may differ from an MNA's current party if they have since changed allegiance.</span>
+      <b data-i18n="votes.info.b">On the “who voted what” detail</b> <span data-i18n="votes.info.text"> — the Legislative Assembly records every MLA's name for each recorded division in its official minutes (Votes and Proceedings). The by-MLA breakdown above (“View names by MLA” button) is read from those official minutes, nothing else.</span>
     </div>
 
     <!-- « Comment lire un vote » : bande bleue pédagogique (maquette) -->
@@ -545,7 +545,7 @@ function goToFederal(evt){
       <div class="lire-grid">
         <div class="lire-box">
           <h3 data-i18n="lire.1.h">Recorded division</h3>
-          <p data-i18n="lire.1.p">Each MNA stands and their choice is recorded in the Journal des débats. It's the only kind of vote that can be attributed to a person.</p>
+          <p data-i18n="lire.1.p">Each MLA's name is recorded in the Votes and Proceedings, the Assembly's official minutes. It's the only kind of vote that can be attributed to a person.</p>
         </div>
         <div class="lire-box">
           <h3 data-i18n="lire.2.h">Passed ≠ law</h3>
@@ -652,7 +652,7 @@ function goToFederal(evt){
     <!-- Hero de vue (refonte brutaliste) -->
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.lexique">National Assembly glossary</span>
+        <span class="hero-sujet" data-i18n="sujet.lexique">Legislative Assembly glossary</span>
         <span data-i18n="lexhero.l1">The jargon,</span>
         <span class="hero-outline" data-i18n="lexhero.l2">decoded.</span>
       </h2>
@@ -805,7 +805,7 @@ function goToFederal(evt){
       <div class="lexique-item">
         <dt data-i18n="lex.3.t">Clause-by-clause review</dt>
         <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
-        <dd data-i18n="lex.3.d">The stage where a parliamentary committee (a small group of MNAs) goes through the bill in detail, clause by clause, and can propose amendments.</dd>
+        <dd data-i18n="lex.3.d">The stage where a committee (a small group of MLAs) goes through the bill in detail, clause by clause, and can propose amendments.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.4.t">Passage</dt>
@@ -815,17 +815,17 @@ function goToFederal(evt){
       <div class="lexique-item">
         <dt data-i18n="lex.5.t">Assent</dt>
         <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
-        <dd data-i18n="lex.5.d">The very last administrative step: the Lieutenant Governor gives official assent, and the bill formally becomes a law of Québec.</dd>
+        <dd data-i18n="lex.5.d">The very last administrative step: the Lieutenant Governor gives official assent, and the bill formally becomes a law of Saskatchewan.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.6.t">Parliamentary committee</dt>
         <span class="lex-badge cat-proc" data-i18n="lexcat.proc">Process</span>
-        <dd data-i18n="lex.6.d">A smaller group of MNAs (usually around ten) who study a topic or bill in depth, hear experts and citizens, before it comes back before the full Assembly.</dd>
+        <dd data-i18n="lex.6.d">A smaller group of MLAs who study a topic or bill in depth, hear experts and citizens, before it comes back before the full Assembly.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.7.t">Recorded vote</dt>
         <span class="lex-badge cat-votes" data-i18n="lexcat.votes">Votes</span>
-        <dd data-i18n="lex.7.d">A vote where each MNA's name and choice (Yea/Nay/Abstention) are officially recorded — as opposed to a voice vote, where only the overall result is noted.</dd>
+        <dd data-i18n="lex.7.d">A vote where each MLA's name and choice (Yea/Nay) are officially recorded — as opposed to a voice vote, where only the overall result is noted.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.8.t">Minutes (Procès-verbal)</dt>
@@ -840,12 +840,12 @@ function goToFederal(evt){
       <div class="lexique-item">
         <dt data-i18n="lex.10.t">House leader</dt>
         <span class="lex-badge cat-pers" data-i18n="lexcat.pers">People & roles</span>
-        <dd data-i18n="lex.10.d">The MNA responsible for organizing their group's proceedings at the Assembly — a bit like the conductor of the calendar and debates for their party.</dd>
+        <dd data-i18n="lex.10.d">The MLA responsible for organizing their group's proceedings at the Assembly — a bit like the conductor of the calendar and debates for their party.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.11.t">Whip</dt>
         <span class="lex-badge cat-pers" data-i18n="lexcat.pers">People & roles</span>
-        <dd data-i18n="lex.11.d">The MNA in charge of making sure members of their parliamentary group are present for votes and follow the party line.</dd>
+        <dd data-i18n="lex.11.d">The MLA in charge of making sure members of their caucus are present for votes and follow the party line.</dd>
       </div>
       <div class="lexique-item">
         <dt data-i18n="lex.12.t">Minister Delegate / Minister Responsible for</dt>
@@ -890,7 +890,7 @@ function goToFederal(evt){
         <span data-i18n="mdhero.l1">Your bills,</span>
         <span class="hero-outline" data-i18n="mdhero.l2">the members you follow.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="mdhero.sub">What you follow at the National Assembly. <b>Your city's decisions live in <a class="md-lien" href="/mes-dossiers">My files</a>, separately.</b></p>
+      <p class="view-hero-sub" data-i18n="mdhero.sub">What you follow at the Legislative Assembly.</p>
     </div>
 
     <div id="mdCompte" class="md-bloc"></div>
@@ -923,7 +923,7 @@ function goToFederal(evt){
       <div class="createur-mot">
         <p class="createur-lead" data-i18n="bd.mot1">If we want people to understand politics, it has to be brought down to their level.</p>
         <p data-i18n="bd.mot2">When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.</p>
-        <p data-i18n="bd.mot3">So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how Dossier Saskatchewan was born.</p>
+        <p data-i18n="bd.mot3">So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierQuébec was born.</p>
         <p data-i18n="bd.mot4">Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!</p>
       </div>
     </div>
