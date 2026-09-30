@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <!-- Consentement (Loi 25) : par défaut, Google Analytics n'a PAS le droit de déposer de témoins.
      La bannière (commun/consentement.js) passe analytics_storage à « granted » après « Accepter ». -->
@@ -21,11 +21,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
 /* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
-   (commun/dq.js) : « ?lang=en » dans l'adresse, sinon le choix gardé dans dvq:langue (commun à
+   (commun/dq.js) : « ?lang=fr » dans l'adresse, sinon le choix gardé dans dsk:langue (commun à
    tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
-   En anglais, la page reste cachée le temps que dq.js la traduise : 1,5 s au plus, même s'il
-   échoue. lang="en" n'est posé qu'au moment de traduire (dq.js) : si la traduction n'arrive pas,
-   la page française ne s'annonce pas en anglais.
+   Le site est ANGLOPHONE : l'anglais est écrit dans le HTML et s'affiche tout de suite. C'est
+   le français qui attend sa traduction, et la page reste cachée le temps que dq.js la fasse :
+   1,5 s au plus, même s'il échoue. lang="fr" n'est posé qu'au moment de traduire (dq.js).
    Tout est dans une fonction : une variable globale ici entrerait en collision avec les
    déclarations de dq.js et le ferait planter en entier. */
 (function(){
@@ -37,39 +37,39 @@
     var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
     var parHistorique = !!nav && nav.type === 'back_forward';
     var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
-    if(choix !== 'en') return;
+    if(choix !== 'fr') return;
     var racine = document.documentElement;
-    racine.classList.add('dq-en');
+    racine.classList.add('dq-fr');
     setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
   }catch(e){}
 })();
 </script>
-<title>Mises à jour du site — DossierQuébec</title>
-<meta name="description" content="Ce qui change sur DossierQuébec, site citoyen indépendant qui rend lisibles l'Assemblée nationale et les conseils municipaux du Québec, et qui est derrière.">
+<title>Site updates — Dossier Saskatchewan</title>
+<meta name="description" content="What changes on Dossier Saskatchewan, an independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.">
 <link rel="canonical" href="https://dossiersaskatchewan.ca/sources">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
-<link rel="alternate" type="application/rss+xml" title="DossierQuébec — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="Dossier Saskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#046A38">
 
 <!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DossierQuébec">
-<meta property="og:locale" content="fr_CA">
-<meta property="og:title" content="Mises à jour du site — DossierQuébec">
-<meta property="og:description" content="Ce qui change sur DossierQuébec, site citoyen indépendant qui rend lisibles l'Assemblée nationale et les conseils municipaux du Québec, et qui est derrière.">
+<meta property="og:site_name" content="Dossier Saskatchewan">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Site updates — Dossier Saskatchewan">
+<meta property="og:description" content="What changes on Dossier Saskatchewan, an independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.">
 <meta property="og:url" content="https://dossiersaskatchewan.ca/sources">
-<meta property="og:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DossierQuébec — veille citoyenne de l'Assemblée nationale du Québec">
+<meta property="og:image:alt" content="Dossier Saskatchewan — veille citoyenne de Saskatchewan's Legislative Assembly">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mises à jour du site — DossierQuébec">
-<meta name="twitter:description" content="Ce qui change sur DossierQuébec, site citoyen indépendant qui rend lisibles l'Assemblée nationale et les conseils municipaux du Québec, et qui est derrière.">
-<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossierquebec-cover-2026.png">
+<meta name="twitter:title" content="Site updates — Dossier Saskatchewan">
+<meta name="twitter:description" content="What changes on Dossier Saskatchewan, an independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/dq.svg">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
@@ -124,8 +124,8 @@
      données par renderTicker() (appelé une fois les datasets chargés). -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span class="ticker-text" id="tickerA">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-text" id="tickerB">● DossierQuébec — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerA">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● Dossier Saskatchewan — site citoyen indépendant · vraies données publiques&nbsp;&nbsp;&nbsp;</span>
   </div>
 </div>
 
@@ -156,15 +156,15 @@
        UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
        du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
   <nav class="tabs">
-    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Fermer</span> ✕</div>
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
     <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
-    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Aperçu</span></a>
-    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministres</span></a>
-    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Projets de loi</span></a>
+    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
+    <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
-    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Lexique</span></a>
-    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">Mon dossier</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
   <div class="header-ctrls">
     <div class="font-size-ctrl" id="fontSizeCtrl">
@@ -216,33 +216,33 @@ function goToFederal(evt){
 
   <!-- APERÇU -->
   <section class="view active" id="view-bd">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.bd">Mises à jour du site</span></nav>
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Home</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.bd">Site updates</span></nav>
     <!-- La page /sources : le créateur, puis les mises à jour du site. Elle portait une bande
          dessinée (Ti-Jo) ; Martin n'a gardé que la case de sa photo, refaite en HTML pour qu'elle
          reste lisible sur un téléphone et suive le thème sombre. La liste vient de
          data/journal.json, tenu à la main : voir renderJournal dans commun/dq.js. -->
     <div class="section-head">
       <div>
-        <h1 data-i18n="maj.h">Mises à jour du site</h1>
-        <div class="sub" data-i18n="maj.sub">Ce qui a changé sur DossierQuébec, du plus récent au plus ancien</div>
+        <h1 data-i18n="maj.h">Site updates</h1>
+        <div class="sub" data-i18n="maj.sub">What changed on Dossier Saskatchewan, newest first</div>
       </div>
-      <a class="bd-back" href="/" data-i18n="bd.back">← Retour à l'aperçu</a>
+      <a class="bd-back" href="/" data-i18n="bd.back">← Back to overview</a>
     </div>
     <div class="createur">
       <div class="createur-tete">
         <img class="createur-photo" src="/commun/martin.jpg" width="120" height="120" alt="Martin Archambault">
         <div class="createur-bulle">
-          <span data-i18n="bd.intro1">Bonjour, moi c'est</span>
+          <span data-i18n="bd.intro1">Hi! My name is</span>
           <strong class="createur-nom">Martin Archambault</strong>
-          <span data-i18n="bd.intro3">j'ai 45 ans et dossiersaskatchewan.ca, c'est votre premier pas vers la démocratie !</span>
+          <span data-i18n="bd.intro3">I'm 45, and dossiersaskatchewan.ca is your first step into democracy!</span>
         </div>
       </div>
       <!-- Le mot de Martin (27 sept. 2026), le même que sur DossierCanada. -->
       <div class="createur-mot">
-        <p class="createur-lead" data-i18n="bd.mot1">Si on veut que les gens comprennent la politique, il faut la ramener à leur niveau.</p>
-        <p data-i18n="bd.mot2">Quand j'ai voulu m'y intéresser, en plus de ne pas connaître le jargon, les projets de loi tenaient en deux lignes… et cinquante PDF. Le commun des mortels passait son chemin.</p>
-        <p data-i18n="bd.mot3">J'ai eu l'idée de me servir de l'intelligence artificielle pour, d'abord, analyser tout ça, et ensuite le vulgariser. C'est comme ça que DossierQuébec est né.</p>
-        <p data-i18n="bd.mot4">En plus du récapitulatif écrit par l'IA, j'ai mis à la disposition des gens un lexique qui explique les fondements du jargon politique. Je suis l'Éducaloi de la politique !</p>
+        <p class="createur-lead" data-i18n="bd.mot1">If we want people to understand politics, it has to be brought down to their level.</p>
+        <p data-i18n="bd.mot2">When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.</p>
+        <p data-i18n="bd.mot3">So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how Dossier Saskatchewan was born.</p>
+        <p data-i18n="bd.mot4">Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!</p>
       </div>
     </div>
     <div class="maj" id="journal">
@@ -252,20 +252,20 @@ function goToFederal(evt){
         <li><span class="pr-meta">29 septembre 2026 —</span> <b>Mesure des visites : seulement si vous acceptez</b> Le site peut maintenant compter ses visites avec Google Analytics, mais seulement si vous l’acceptez : une bannière le demande à la première visite, « Refuser » ne change rien d’autre, et le lien « Témoins » au bas de chaque page permet de changer d’avis.</li>
         <li><span class="pr-meta">27 septembre 2026 —</span> <b>Chaque adresse dit le titre de sa page, au complet</b> Dans les cinq villes, l’adresse d’une page reprend maintenant son titre entier : /quebec/votes-nominatifs-du-conseil-de-quebec, /quebec/conseil-municipal-de-quebec, /longueuil/conseil-de-ville-de-longueuil, /quebec/lexique-municipal-de-quebec, /quebec/sources-des-donnees-de-quebec. Toutes les adresses précédentes mènent directement à la bonne page, sans détour, et les liens reçus par courriel gardent le dossier qu’ils désignaient.</li>
         <li><span class="pr-meta">27 septembre 2026 —</span> <b>La page des décisions prend son titre pour adresse</b> Dernière des cinq à changer d’adresse : /quebec/decisions devient /quebec/decisions-de-la-ville-de-quebec, et de même dans les quatre autres villes. L’ancienne adresse mène toujours à la nouvelle, y compris les liens reçus par courriel, qui gardent le dossier qu’ils désignaient.</li>
-        <li><span class="pr-meta">27 septembre 2026 —</span> <b>Une fleur de lys pour revenir à l’Assemblée nationale</b> Dans les cinq villes, une fleur de lys verte à droite du logo mène à DossierQuébec et à l’Assemblée nationale.</li>
-        <li><span class="pr-meta">27 septembre 2026 —</span> <b>Plus d’abonnement payant : DossierQuébec est entièrement gratuit</b> L’abonnement payant est retiré, sur DossierQuébec comme dans les villes, avec ce qu’il vendait : les alertes par courriel, les mots-clés, les organismes suivis, l’agenda des conseils et l’export. Tout le reste est gratuit : lire, le détail de l’argent, l’infolettre mensuelle, et un compte gratuit qui suit jusqu’à 3 projets de loi ou projets de ville.</li>
+        <li><span class="pr-meta">27 septembre 2026 —</span> <b>Une fleur de lys pour revenir à l’Assemblée nationale</b> Dans les cinq villes, une fleur de lys verte à droite du logo mène à Dossier Saskatchewan et à l’Assemblée nationale.</li>
+        <li><span class="pr-meta">27 septembre 2026 —</span> <b>Plus d’abonnement payant : Dossier Saskatchewan est entièrement gratuit</b> L’abonnement payant est retiré, sur Dossier Saskatchewan comme dans les villes, avec ce qu’il vendait : les alertes par courriel, les mots-clés, les organismes suivis, l’agenda des conseils et l’export. Tout le reste est gratuit : lire, le détail de l’argent, l’infolettre mensuelle, et un compte gratuit qui suit jusqu’à 3 projets de loi ou projets de ville.</li>
         <li><span class="pr-meta">27 septembre 2026 —</span> <b>Le premier paragraphe dit de quoi parle la page</b> Sur les 25 pages intérieures des cinq volets, la phrase d’ouverture nomme le sujet dès ses premiers mots : « On lit les décisions de la Ville de Québec dans quatre types de documents… », « En tout, le conseil municipal de Québec compte 22 membres… », « Au total, le conseil de ville de Longueuil compte 19 sièges… ». Les chiffres, les faits et les mises en garde de ces paragraphes ne changent pas — seule la façon d’entrer en matière change.</li>
         <li><span class="pr-meta">27 septembre 2026 —</span> <b>L’adresse de chaque page dit ce qu’on y trouve</b> Dans les cinq volets municipaux, l’adresse d’une page reprend son titre : /quebec/votes devient /quebec/votes-nominatifs, /quebec/conseil devient /quebec/conseil-municipal (/longueuil/conseil-de-ville, puisque Longueuil a un conseil de ville), /quebec/lexique devient /quebec/lexique-municipal et /quebec/sources devient /quebec/sources-des-donnees. Les décisions gardent /quebec/decisions. Les anciennes adresses continuent de fonctionner pour toujours : un lien reçu par courriel ou mis en signet mène à la nouvelle page.</li>
-        <li><span class="pr-meta">27 septembre 2026 —</span> <b>Lévis, Longueuil et Laval : un titre par page, et le fil d’Ariane partout</b> Comme Québec et Montréal ce matin, les trois autres volets annoncent le sujet de la page en grand titre — « Décisions de la Ville de Lévis », « Le conseil de ville de Longueuil » — au lieu du nom du site, répété d’une page à l’autre. Les trente pages des cinq volets portent aussi leur fil d’Ariane, pour que les moteurs de recherche affichent « DossierQuébec › Ville de Québec › Conseil municipal » plutôt que l’adresse nue. Laval parlait de « votes nominaux » : c’est « votes nominatifs », comme partout ailleurs.</li>
+        <li><span class="pr-meta">27 septembre 2026 —</span> <b>Lévis, Longueuil et Laval : un titre par page, et le fil d’Ariane partout</b> Comme Québec et Montréal ce matin, les trois autres volets annoncent le sujet de la page en grand titre — « Décisions de la Ville de Lévis », « Le conseil de ville de Longueuil » — au lieu du nom du site, répété d’une page à l’autre. Les trente pages des cinq volets portent aussi leur fil d’Ariane, pour que les moteurs de recherche affichent « Dossier Saskatchewan › Ville de Québec › Conseil municipal » plutôt que l’adresse nue. Laval parlait de « votes nominaux » : c’est « votes nominatifs », comme partout ailleurs.</li>
         <li><span class="pr-meta">27 septembre 2026 —</span> <b>Québec et Montréal : imprimer une séance entière</b> Sur ordinateur, chaque séance de la page des décisions a une icône d’imprimante à gauche du +. Elle imprime cette séance seulement, avec toutes ses décisions dépliées. Chaque page intérieure porte aussi un titre qui dit son sujet (« Décisions de la Ville de Montréal »…).</li>
         <li><span class="pr-meta">27 septembre 2026 —</span> <b>Québec et Montréal : les décisions récentes lisibles par Google</b> Les pages de décisions de Québec et de Montréal portent maintenant les 30 décisions les plus récentes et leur résumé en clair directement dans la page, pour que les moteurs de recherche les lisent sans attendre le chargement. Elles se mettent à jour chaque matin avec les données.</li>
-        <li><span class="pr-meta">27 septembre 2026 —</span> <b>« Et moi » : pourquoi DossierQuébec existe</b> La page « et moi », au bas du site, porte maintenant le mot de Martin : pourquoi il faut ramener la politique au niveau des gens, et comment l’IA et le lexique servent à ça.</li>
+        <li><span class="pr-meta">27 septembre 2026 —</span> <b>« Et moi » : pourquoi Dossier Saskatchewan existe</b> La page « et moi », au bas du site, porte maintenant le mot de Martin : pourquoi il faut ramener la politique au niveau des gens, et comment l’IA et le lexique servent à ça.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>Les filtres Omnibus et Challengés se combinent</b> Sur la page des projets de loi, « Omnibus » et « Challengés » s’ajoutent maintenant à « Tous », « Non adoptés » ou « Adoptés », et entre eux : « Adoptés » + « Omnibus » montre les omnibus adoptés. Un second clic retire le filtre.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>La liste des lois touchées se déplie d’un +</b> Sous le résumé d’un projet de loi, la liste officielle des lois et règlements touchés est maintenant repliée, avec un + à gauche pour l’afficher (un − pour la refermer), omnibus compris. Un clic sur la liste ne referme plus le projet de loi.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>Les omnibus se lisent loi par loi</b> Le résumé d’un projet omnibus commence par un aperçu, puis chaque loi touchée a sa propre tête (« Volet 1 · Loi sur les cités et villes ») avec ses changements dessous. Une loi qui revenait à deux endroits est regroupée sous une seule tête.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>Abonnement : plus de faux « pas encore ouvert »</b> La page Abonnement affichait « L’abonnement n’est pas encore ouvert » le temps de son chargement, ou quand le paiement ne répondait pas, alors qu’il est ouvert depuis le 20 septembre. Ce message ne s’affiche plus que si l’abonnement est vraiment fermé.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>Le compte rendu gratuit ne vend plus le détail de l’argent</b> Le compte rendu mensuel gratuit (Québec et Montréal) n’affiche plus d’encadrés verrouillés « Détail de l’argent — S’abonner » : ce détail est maintenant gratuit sur le site. L’édition abonnés garde ses encadrés dorés sous chaque gros montant, et l’agenda des conseils.</li>
-        <li><span class="pr-meta">25 septembre 2026 —</span> <b>Montréal et Lévis : les sources disent ce que vend l’abonnement</b> Les pages Sources de Montréal et de Lévis disaient « sans usage commercial », alors que DossierQuébec offre un abonnement payant. Elles disent maintenant la vérité : les procès-verbaux et leurs résumés restent gratuits à lire, et l’abonnement vend des outils (alertes, suivis, export), jamais l’accès à ces documents.</li>
+        <li><span class="pr-meta">25 septembre 2026 —</span> <b>Montréal et Lévis : les sources disent ce que vend l’abonnement</b> Les pages Sources de Montréal et de Lévis disaient « sans usage commercial », alors que Dossier Saskatchewan offre un abonnement payant. Elles disent maintenant la vérité : les procès-verbaux et leurs résumés restent gratuits à lire, et l’abonnement vend des outils (alertes, suivis, export), jamais l’accès à ces documents.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>Le détail de l’argent devient gratuit pour tout le monde</b> À Québec, le détail de l’argent d’une décision — qui reçoit, qui paie, les soumissions, l’estimation de la Ville, la répartition par année — s’affiche maintenant pour tout le monde, sans abonnement. Pour demander la lecture d’un dossier pas encore lu, un compte gratuit suffit (10 demandes par 24 heures). L’abonnement vend des outils : les alertes, les suivis, l’agenda du conseil et l’export.</li>
         <li><span class="pr-meta">25 septembre 2026 —</span> <b>Les projets omnibus sont repérés, et résumés en entier</b> Certains projets de loi modifient des dizaines de lois sous un seul titre — le PL 11 en touche 74. Leur résumé ne lisait que le début du texte et s’arrêtait à 7 puces : il passait à côté de la plus grande partie du projet. Les 24 projets omnibus portent maintenant une pastille « Omnibus » avec le nombre de lois touchées, un filtre les regroupe, et leur résumé, refait à partir des notes explicatives officielles, couvre tout le projet loi par loi. Sous chaque résumé, la liste officielle des lois et règlements touchés.</li>
         <li><span class="pr-meta">24 septembre 2026 —</span> <b>L’en-tête ne se casse plus en français</b> Depuis l’ajout de l’onglet « Mon dossier », le logo, les onglets et les boutons ne tenaient plus côte à côte en français : les boutons de taille, de thème et de langue tombaient seuls sous le logo, sur tous les écrans. Les onglets sont un peu resserrés et l’en-tête tient de nouveau sur une ligne. Quand la fenêtre est plus étroite, ou le texte agrandi avec A+, il passe proprement sur deux rangées : le logo et les boutons en haut, les onglets dessous.</li>
@@ -312,14 +312,14 @@ function goToFederal(evt){
      lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
 <footer>
   <nav class="footer-nav" aria-label="Plan du site">
-    <a href="/" data-i18n="nav.apercu">Aperçu</a>
-    <a href="/ministres" data-i18n="nav.ministres">Ministres</a>
-    <a href="/projets-de-loi" data-i18n="nav.projets">Projets de loi</a>
+    <a href="/" data-i18n="nav.apercu">Overview</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministers</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
     <a href="/votes" data-i18n="nav.votes">Votes</a>
-    <a href="/promesses" data-i18n="fil.promesses">Promesses</a>
-    <a href="/lexique" data-i18n="nav.lexique">Lexique</a>
-    <a href="/sources" data-i18n="fil.bd">Mises à jour du site</a>
-    <a href="/mon-dossier" data-i18n="nav.mondossier">Mon dossier</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
+    <a href="/sources" data-i18n="fil.bd">Site updates</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
       <a href="/quebec/">Québec</a>
       <a href="/montreal/">Montréal</a>
       <a href="/levis/">Lévis</a>
@@ -328,12 +328,12 @@ function goToFederal(evt){
     </span>
   </nav>
   <div class="footer-inner">
-  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">et moi</a></span>
+  <span class="footer-left-line"><span id="footerLeft">Site non officiel — données publiques ANQ &amp; Données Québec ·</span> <span id="footerRight">construit avec Claude</span> <a class="footer-etmoi" href="/sources" data-i18n="footer.etmoi">and me</a></span>
   <span class="footer-right-group">
-    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="DossierQuébec sur Facebook">Facebook</a>
-    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Offre-moi un café</a>
-    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">Flux RSS</a>
-    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Code source</a>
+    <a class="footer-gh" href="https://www.facebook.com/dossierquebec" target="_blank" rel="noopener" aria-label="Dossier Saskatchewan sur Facebook">Facebook</a>
+    <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Offre-moi un café" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="Flux RSS de « Quoi de neuf »">RSS feed</a>
+    <a class="footer-gh" href="https://github.com/GrandFFormat/DossierQuebec" target="_blank" rel="noopener" data-i18n="footer.source">Source code</a>
   </span>
   </div>
 </footer>
