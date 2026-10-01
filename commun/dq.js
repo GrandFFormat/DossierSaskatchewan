@@ -3908,12 +3908,7 @@ function retirerPrerendus(jeux){
    pour qu'on puisse toujours remonter à ce qui a vraiment été fait. Rien n'y entre qui ne soit
    en ligne. */
 const JOURNAL_VOLETS = {
-  assemblee: ['Assemblée nationale', 'National Assembly'],
-  quebec:    ['Ville de Québec', 'Québec City'],
-  montreal:  ['Montréal', 'Montréal'],
-  levis:     ['Lévis', 'Lévis'],
-  longueuil: ['Longueuil', 'Longueuil'],
-  laval:     ['Laval', 'Laval'],
+  assemblee: ['Assemblée législative', 'Legislative Assembly'],
   compte:    ['Compte', 'Account'],
   site:      ['Tout le site', 'Whole site'],
 };
