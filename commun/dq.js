@@ -1183,7 +1183,7 @@ function renderPromoCompte(){
     : (isEn ? 'Get the link' : 'Recevoir le lien');
   const note = promoEnvoi?.etat === 'envoye'
     ? (isEn ? 'Check your inbox for the sign-in link.' : 'Vérifiez vos courriels : le lien de connexion vous attend.')
-    : (isEn ? 'No password: a sign-in link arrives by email. A free account follows 3 things in all.' : 'Pas de mot de passe : un lien de connexion arrive par courriel. Le compte gratuit suit 3 choses en tout.');
+    : (isEn ? 'No password: a sign-in link arrives by email. A free account follows up to 10 bills.' : 'Pas de mot de passe : un lien de connexion arrive par courriel. Le compte gratuit suit jusqu’à 10 projets de loi.');
   box.innerHTML = `<div class="promo-compte-ligne">
       <input type="email" id="promoEmail" placeholder="${isEn ? 'Your email' : 'Votre courriel'}" aria-label="${isEn ? 'Your email' : 'Votre courriel'}"${occupe ? ' readonly' : ''}>
       <button class="account-btn" id="promoLienBtn" onclick="handlePromoLink()"${occupe ? ' disabled' : ''}>${libelle}</button>

@@ -578,3 +578,20 @@ html[data-theme="dark"] .brand-title .brand-blue{color:#4ADE80 !important;}
 .ch-papier{margin-top:6px; font-weight:700 !important; color:var(--ink) !important;}
 .ch-papier::before{content:"** ";}
 .ch-papier::after{content:" **";}
+
+/* Thème clair : les bandes foncées (« Suivez les projets de loi », « Notre mission ») prennent le
+   même fond pâle que « Projets challengés », comme en sombre (Martin, 1er oct. 2026). Leur
+   contenu était écrit pour un fond foncé : on y remet les jetons du clair. */
+html:not([data-theme="dark"]) .band-blue, html:not([data-theme="dark"]) .band-blue.bleed{
+  background:var(--sk-brume) !important; color:var(--ink) !important;
+  --ink:#0F1F17; --ink-2:#0F1F17; --card:#FFFFFF; --line:#E3EAE5; --slate:#56635B; --gold:#15803D; --sur-fonce:#0F1F17;
+}
+html:not([data-theme="dark"]) .band-blue h2, html:not([data-theme="dark"]) .band-blue p,
+html:not([data-theme="dark"]) .band-blue li, html:not([data-theme="dark"]) .band-blue .promo-texte{color:var(--ink) !important;}
+html:not([data-theme="dark"]) .band-blue .promo-sur, html:not([data-theme="dark"]) .band-blue .mission-eyebrow{color:var(--sk-vert-fonce) !important;}
+html:not([data-theme="dark"]) .mission-statement .hl{color:var(--sk-vert-fonce) !important;}
+html:not([data-theme="dark"]) .compare-col{background:#FFFFFF !important; border-color:var(--sk-filet) !important;}
+html:not([data-theme="dark"]) .compare-col .tag{color:var(--sk-vert-fonce) !important;}
+html:not([data-theme="dark"]) .band-blue .sub, html:not([data-theme="dark"]) .band-blue h3,
+html:not([data-theme="dark"]) .band-blue .cp-txt{color:var(--ink) !important;}
+html:not([data-theme="dark"]) .band-blue .cp-vs, html:not([data-theme="dark"]) .band-blue .cp-hint{color:var(--sk-vert-fonce) !important;}
