@@ -169,13 +169,13 @@ const translations = {
     'apercu.composition.sub':"30e législature · répartition par caucus",
     'lp.titre':"Lire la présence aux votes",
     'lp.lien':"Définition complète → Lexique",
-    'lp.formule':"<b>88 %</b> : sur 100 votes par appel nominal tenus depuis son premier vote de la législature, la personne a voté à 88 — pour, contre ou abstention, peu importe le sens.",
-    'lp.debut':"Le compte part du premier vote de chacun : une personne élue en cours de mandat n'est pas comptée absente des votes tenus avant son arrivée.",
-    'lp.pres':"<b>—</b> : la présidence de l'Assemblée* et ses trois vice-présidences. Par neutralité, elles votent peu ou pas du tout : un taux bas ne voudrait pas dire une absence.",
-    'lp.nd':"<b>n/d</b> : aucun vote enregistré pour cette personne.",
+    'lp.formule':"<b>88 %</b> : sur 100 votes nominatifs tenus depuis son premier vote de la législature, la personne a voté à 88 — pour ou contre, peu importe le sens.",
+    'lp.debut':"Les votes nominatifs sont rares en Saskatchewan : la plupart des projets passent de vive voix, sans que les noms soient notés. Avec si peu de votes, un seul jour manqué pèse lourd dans un taux. Le compte part du premier vote de chacun.",
+    'lp.pres':"<b>—</b> : le président de l'Assemblée*. Par neutralité, il ne vote que pour départager une égalité (règle 40 du Règlement de l'Assemblée) : pas de vote ne veut pas dire une absence.",
+    'lp.nd':"<b>n/d</b> : aucun vote nominatif pour cette personne.",
     'lp.officiel':"Ce n'est pas une mesure officielle : un vote manqué n'en dit pas la raison.",
-    'lp.aster':"* La présidence de l'Assemblée n'est pas la même chose que le ou la première ministre : elle dirige les débats et reste neutre, alors que le ou la première ministre dirige le gouvernement et vote comme les autres élus. <a href=\"/lexique#role-presidence\">Voir la présidence de l'Assemblée dans le Lexique →</a>",
-    'lp.aster2':"** Mis à jour chaque matin : le site relit le registre des votes de l'Assemblée et recalcule le taux de chacun, puis la médiane, les couleurs et les nombres ci-dessus. Un vote tenu un jour apparaît le lendemain ; pendant la dissolution, rien ne bouge.",
+    'lp.aster':"* Le président de l'Assemblée n'est pas le premier ministre : il dirige les débats et reste neutre, alors que le premier ministre dirige le gouvernement et vote comme les autres élus.",
+    'lp.aster2':"** Mis à jour chaque jour : le site relit les procès-verbaux officiels de l'Assemblée (Votes and Proceedings) et recalcule le taux de chacun, puis la médiane, les couleurs et les nombres ci-dessus. Un vote tenu un jour apparaît le soir même ou le lendemain matin.",
     'h.ministres2':"Les ministres",
     'min.sub2b':"ministres — liste officielle saskatchewan.ca",
     'h.comparateur':"Comparateur",
@@ -533,11 +533,11 @@ const translations = {
     'mdhero.sub':"What you follow at the Legislative Assembly.",
     'lp.titre':"How to read vote attendance",
     'lp.lien':"Full definition → Glossary",
-    'lp.formule':"<b>88%</b>: out of 100 recorded votes held since their first vote of the legislature, the person voted in 88 — yea, nay or abstention, whichever way.",
-    'lp.debut':"The count starts at each person's first vote: someone elected mid-term is not counted absent from votes held before they arrived.",
-    'lp.pres':"<b>—</b>: the Assembly's President* and its three Vice-Presidents. To stay neutral, they vote little or not at all: a low rate would not mean they were absent.",
-    'lp.aster2':"** Updated every morning: the site rereads the Assembly's register of votes and recalculates each person's rate, then the median, the colours and the numbers above. A vote held one day shows up the next; during the dissolution, nothing changes.",
-    'lp.aster':"* The Assembly's President is not the same as the Premier: the President runs the debates and stays neutral, while the Premier heads the government and votes like the other members. <a href=\"/lexique#role-presidence\">See the Assembly's presidency in the Glossary →</a>",
+    'lp.formule':"<b>88%</b>: out of 100 recorded divisions held since their first vote of the legislature, the person voted in 88 — for or against, whichever way.",
+    'lp.debut':"Recorded divisions are rare in Saskatchewan: most bills pass by voice vote, with no names written down. With so few votes, a single missed day weighs heavily on a rate. The count starts at each person's first vote.",
+    'lp.pres':"<b>—</b>: the Speaker*. To stay neutral, the Speaker votes only to break a tie (rule 40 of the Assembly's Rules): no vote does not mean an absence.",
+    'lp.aster2':"** Updated every day: the site rereads the Assembly's official minutes (Votes and Proceedings) and recalculates each person's rate, then the median, the colours and the numbers above. A vote held one day shows up the same evening or the next morning.",
+    'lp.aster':"* The Speaker is not the Premier: the Speaker presides over the debates and stays neutral, while the Premier heads the government and votes like the other members.",
     'lp.nd':"<b>n/a</b>: no recorded vote for this person.",
     'lp.officiel':"This is not an official measure: a missed vote does not tell why.",
     'promo.sur':"Free account",
@@ -1417,7 +1417,7 @@ function mdElus(isEn){
       <h2>${isEn ? 'Members you follow' : 'Élus suivis'}</h2>
       <span class="md-etiquette">${ministres.length + deps.length}</span>
     </div>
-    ${lignes ? `<ul class="md-liste">${lignes}</ul>` : `<p>${isEn ? 'No minister or MNA followed yet.' : 'Aucun ministre ni député suivi.'} <a class="md-lien" href="/ministres">${isEn ? 'Follow someone from the Ministers and MNAs page' : 'Suivez quelqu’un depuis la page Ministres et député·e·s'}</a></p>`}
+    ${lignes ? `<ul class="md-liste">${lignes}</ul>` : `<p>${isEn ? 'No minister or MLA followed yet.' : 'Aucun ministre ni député suivi.'} <a class="md-lien" href="/ministres">${isEn ? 'Follow someone from the Ministers and MNAs page' : 'Suivez quelqu’un depuis la page Ministres et député·e·s'}</a></p>`}
   </div>`;
 }
 
@@ -1441,7 +1441,7 @@ function renderAccountBox(){
         <span>${isEn ? 'Signed in as' : 'Connecté·e comme'} <span class="account-email">${displayName}</span></span>
         <button class="account-btn" onclick="signOutUser()">${isEn ? 'Sign out' : 'Se déconnecter'}</button>
       </div>
-      <div class="account-note">${isEn ? 'The ministers, MNAs, and bills you follow are now synced to your account, across devices.' : 'Les ministres, député·e·s et projets de loi que vous suivez sont maintenant synchronisés à votre compte, entre tous vos appareils.'}</div>
+      <div class="account-note">${isEn ? 'The ministers, MLAs, and bills you follow are now synced to your account, across devices.' : 'Les ministres, député·e·s et projets de loi que vous suivez sont maintenant synchronisés à votre compte, entre tous vos appareils.'}</div>
     `;
   } else {
     const saisie = document.getElementById('accountEmailInput')?.value || '';
@@ -1450,7 +1450,7 @@ function renderAccountBox(){
         <input type="email" id="accountEmailInput" placeholder="${isEn ? 'Your email' : 'Votre courriel'}">
         <button class="account-btn" id="magicLinkBtn" onclick="handleMagicLinkClick()">${isEn ? 'Send magic link' : 'Envoyer un lien de connexion'}</button>
       </div>
-      <div class="account-note" id="accountStatusNote">${isEn ? 'Sign in to sync the ministers, MNAs, and bills you follow across devices.' : 'Connectez-vous pour synchroniser les ministres, député·e·s et projets de loi que vous suivez entre vos appareils.'}</div>
+      <div class="account-note" id="accountStatusNote">${isEn ? 'Sign in to sync the ministers, MLAs, and bills you follow across devices.' : 'Connectez-vous pour synchroniser les ministres, député·e·s et projets de loi que vous suivez entre vos appareils.'}</div>
     `;
     const champ = document.getElementById('accountEmailInput');
     if(champ && saisie) champ.value = saisie;
@@ -2212,10 +2212,10 @@ function personCard(p){
     ? (isEn ? `attendance: ${p.att.rate}% (${p.att.participated}/${p.att.total})` : `présence : ${p.att.rate} % (${p.att.participated}/${p.att.total})`)
     : (isEn ? 'attendance: not available' : 'présence : non disponible');
   const attTitle = presidingNote
-    ? (isEn ? 'The Assembly\'s President and Vice-Presidents referee the debates (nothing to do with the Premier). To stay neutral, they vote little or not at all — so a low or absent vote count does not mean they were absent.' : 'La présidence et les vice-présidences de l\'Assemblée arbitrent les débats (rien à voir avec la ou le premier ministre). Par neutralité, elles votent peu ou pas du tout — un faible taux ou une absence de vote ne veut donc pas dire qu\'elles étaient absentes.')
+    ? (isEn ? 'The Speaker presides over the debates (nothing to do with the Premier). To stay neutral, the Speaker votes only to break a tie — so the absence of votes does not mean the Speaker was absent.' : 'Le président de l\'Assemblée dirige les débats (rien à voir avec le premier ministre). Par neutralité, il ne vote que pour départager une égalité — l\'absence de vote ne veut donc pas dire qu\'il était absent.')
     : isEn
-    ? 'Share of recorded votes (all 3 sessions of the 43rd Legislature) this MNA appears in (Yea/Nay/Abstention), counted since their first recorded vote — a proxy for attendance, since the Assembly does not publish attendance directly.'
-    : "Part des votes nominaux enregistrés (3 sessions de la 43e législature) où cette personne apparaît (Pour/Contre/Abstention), comptée depuis son premier vote enregistré — un indicateur de présence, l'Assemblée ne publiant pas l'assiduité directement.";
+    ? 'Share of the recorded divisions of the 30th Legislature in which this MLA\'s name appears (for or against), counted from their first recorded vote. Recorded divisions are rare: most bills pass by voice vote, with no names. It is an indication, not an attendance record.'
+    : "Part des votes nominatifs de la 30e législature où le nom de cette personne figure (pour ou contre), comptée depuis son premier vote. Les votes nominatifs sont rares : la plupart des projets passent de vive voix, sans noms. C'est une indication, pas un registre de présence.";
   // Carte au format de la maquette (Ministres.dc.html) : badge parti + Suivre
   // en tête, nom 800 uppercase, portefeuille bleu, puis les faits en rangées
   // étiquette/valeur (circonscription, présence, PL parrainés) et le courriel.
@@ -3281,8 +3281,8 @@ function shareBill(billId, platform, evt){
   const title = isEn ? (b.titleEn || b.title) : b.title;
   const url = `https://dossiersaskatchewan.ca/projets-de-loi?pl=${encodeURIComponent(b.num)}` + paramLangue(false);
   const text = isEn
-    ? `Bill no. ${b.num} — ${title}. Plain-language summary on DossierQuébec:`
-    : `Projet de loi n° ${b.num} — ${title}. Résumé en clair sur DossierQuébec :`;
+    ? `Bill ${b.num} — ${title}. Plain-language summary on Dossier Saskatchewan:`
+    : `Projet de loi n° ${b.num} — ${title}. Résumé en clair sur Dossier Saskatchewan :`;
   if(platform === 'x'){
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=520');
   } else if(platform === 'fb'){
@@ -3461,21 +3461,19 @@ function showMoreChallenged(){
 // L'index « qui a participé à quels votes » se reconstruisait ici à chaque chargement de page,
 // en parcourant le détail nominatif des 735 votes. Il est maintenant calculé au build et livré
 // sous forme de taux déjà faits, dans `presences` (voir scrapers/build-votes-data.js).
-// La présidence et les 3 vice-présidences de l'Assemblée ne votent généralement
-// pas quand elles président une séance, pour préserver leur neutralité — un vrai
-// taux de présence très bas ou nul pour ces 4 personnes ne veut donc pas dire
-// « absent·e », contrairement à tout le monde d'autre. Sources : élection de la
-// présidence du 29 novembre 2022 (quebec.ca) et fiches assnat.qc.ca de chacun·e.
-const presidingRoles = {
-  'nathalie roy': { fr: "Présidente de l'Assemblée nationale", en: 'President of the National Assembly' },
-  'chantal soucy': { fr: '1ère vice-présidente de l\'Assemblée', en: '1st Vice-President of the Assembly' },
-  'sylvain levesque': { fr: '2e vice-président de l\'Assemblée', en: '2nd Vice-President of the Assembly' },
-  'frantz benjamin': { fr: '3e vice-président de l\'Assemblée', en: '3rd Vice-President of the Assembly' },
-};
+// Le président de l'Assemblée (Speaker) ne vote que pour départager une égalité (règle 40 du
+// Règlement de l'Assemblée : « In case of an equality of votes, the Speaker shall give a casting
+// vote »), pour préserver
+// sa neutralité : un taux de présence nul ne veut donc pas dire « absent ». Saskatchewan : SEUL le
+// président est mis à part. Vérifié dans les données le 30 sept. 2026 : sur 34 votes nominatifs,
+// le président (Todd Goudy) n'apparaît jamais, alors que le vice-président (Blaine McLeod, élu le
+// 26 nov. 2024) et les vice-présidents des comités pléniers votent presque toujours.
+// Le président n'est pas écrit ici : scrapers/deputes.js le lit chaque jour en tête de la page
+// MLAs de l'Assemblée et le marque `speaker` (6e valeur de deputesRaw).
 function presidingRoleNote(name, isEn){
-  const bareName = name.replace(/\s*\([^)]*\)\s*/g, '').trim();
-  const role = presidingRoles[norm(bareName)];
-  return role ? (isEn ? role.en : role.fr) : null;
+  const bareName = norm(name.replace(/\s*\([^)]*\)\s*/g, '').trim());
+  const president = (typeof deputesRaw !== 'undefined' ? deputesRaw : []).find((d) => d[5] === 'speaker' && norm(d[0]) === bareName);
+  return president ? (isEn ? 'Speaker of the Legislative Assembly' : 'Président de l’Assemblée législative') : null;
 }
 
 // La légende de la présence (gabarit.html, #legendePresence), sous la composition de l'Assemblée :
