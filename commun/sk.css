@@ -11,12 +11,12 @@
      2. elle remplace les familles de caractères (Onest partout, JetBrains Mono pour les
         étiquettes) et annule les capitales forcées ;
      3. elle dessine les composants propres au design (sk-*).
-   Le thème sombre n'est pas encore dessiné : le site reste clair (voir la fin du fichier).
+   Le thème sombre est à la fin du fichier (html[data-theme="dark"]).
    ========================================================================== */
 
 :root,
 :root[data-theme],
-html[data-theme="dark"]{
+:root[data-theme="dark"]{   /* :root[...] et non html[...] : le bloc clair du haut porte :root[data-theme], plus fort */
   /* Les champs */
   --sk-vert:#16A34A;
   --sk-vert-fonce:#15803D;
@@ -113,7 +113,6 @@ header.top .tabs a.active, header.top .tabs a[aria-current="page"]{
 }
 .tabs a.nav-mondossier{background:var(--sk-nuit); color:var(--sk-lime-clair); font-weight:600;}
 header.top .tabs a.nav-mondossier:hover, header.top .tabs a.nav-mondossier.active, header.top .tabs a.nav-mondossier[aria-current="page"]{background:#000 !important; color:var(--sk-lime-clair) !important; box-shadow:none !important;}
-.header-ctrls .theme-toggle{display:none;}   /* thème sombre pas encore dessiné */
 .header-ctrls button, .font-size-ctrl, .lang-toggle{background:transparent; border:1px solid var(--sk-filet); box-shadow:none; color:var(--ink); border-radius:999px;}
 .lang-toggle:hover{background:var(--sk-brume); color:var(--ink);}
 @media (min-width: 981px){
@@ -326,10 +325,7 @@ footer a{color:var(--slate) !important;}
   .sk-carte{min-height:0;}
 }
 
-/* Le thème sombre n'est pas encore dessiné pour ce design : on reste clair même si un ancien
-   choix « sombre » est mémorisé dans le navigateur. */
-html[data-theme="dark"]{color-scheme:light;}
-html[data-theme="dark"] body{background:var(--sk-blanc); color:var(--ink);}
+
 
 /* L'ancienne feuille impose ses tailles au menu et aux titres de section : on les reprend. */
 header.top .tabs a{font-size:17px !important; font-weight:500 !important; padding:9px 20px !important;}
@@ -353,7 +349,7 @@ h2, .section-head h2, .sk-sanct-tete h2{font-weight:600 !important; letter-spaci
 .lexique-item:has(.cat-outils){--cat:#14532D; background:#F1F5F2 !important; border-color:#CFDDD3 !important;}
 .lex-badge{border:0 !important; padding:4px 12px !important;}
 .lex-badge.cat-proc{background:#16A34A !important; color:#fff !important;}
-.lex-badge.cat-votes{background:#CA8A04 !important; color:#fff !important;}
+.lex-badge.cat-votes{background:#A16207 !important; color:#fff !important;}
 .lex-badge.cat-pers{background:#BEF264 !important; color:#14532D !important;}
 .lex-badge.cat-outils{background:#14532D !important; color:#BEF264 !important;}
 
@@ -429,3 +425,123 @@ h2, .section-head h2, .sk-sanct-tete h2{font-weight:600 !important; letter-spaci
 .prom-etiq-loi{background:var(--sk-lime-fond); color:var(--sk-vert-fonce);}
 .prom-etiq-partiel{background:#FEF3C7; color:#A16207;}
 .prom-etiq-aucune{background:var(--sk-brume); color:var(--slate);}
+
+/* --------------------------------------------------------------------------
+   Thème sombre (1er oct. 2026) : la nuit sur le champ. Fond vert très foncé, surfaces un
+   cran plus claires, le vert et le lime gardent leur éclat. Activé par le bouton lune de
+   l'en-tête (html[data-theme="dark"], voir appliquerTheme dans commun/dq.js).
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"]{   /* :root[...] et non html[...] : le bloc clair du haut porte :root[data-theme], plus fort */
+  --sk-blanc:#0E1A13;       /* le fond de page */
+  --sk-brume:#16241B;       /* les surfaces douces */
+  --sk-filet:#24372B;       /* les filets */
+  --sk-lime-fond:#1C3320;
+  --sk-nuit:#050B07;
+
+  --ink:#E8F0EA; --ink-2:#E8F0EA;
+  --paper:#0E1A13; --paper-2:#16241B; --card:#132119;
+  --line:#24372B; --line-soft:#1B2B21;
+  --slate:#A3B4A8;
+  --sur-clair:#E8F0EA; --sur-fonce:#E8F0EA;
+  --gold:#4ADE80; --gold-hover:#86EFAC; --gold-soft:#16341F; --gold-pale:#86EFAC; --gold-paler:#16341F;
+  --ink-bg:#050B07; --yellow:#BEF264;   /* DQ s'en sert comme TEXTE clair sur fond foncé */
+  --green:#4ADE80; --green-soft:#16341F;
+  --red:#F97066; --red-soft:#3A1916;
+  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.45), 0 18px 44px rgba(0,0,0,.45);
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4), 0 3px 8px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+html[data-theme="dark"], html[data-theme="dark"] body{background:var(--sk-blanc) !important; color:var(--ink);}
+html[data-theme="dark"] .sk-etiq, html[data-theme="dark"] .role-group-title, html[data-theme="dark"] .quick-nav-label,
+html[data-theme="dark"] .promo-sur, html[data-theme="dark"] .mission-eyebrow, html[data-theme="dark"] .dep-table-head{color:#4ADE80 !important;}
+
+/* En-tête et menu */
+html[data-theme="dark"] .tabs a{color:var(--ink);}
+html[data-theme="dark"] header.top .tabs a:hover{background:rgba(255,255,255,.06) !important; color:var(--ink) !important;}
+html[data-theme="dark"] header.top .tabs a.active, html[data-theme="dark"] header.top .tabs a[aria-current="page"]{background:#24372B !important; color:#fff !important;}
+html[data-theme="dark"] .tabs a.nav-mondossier{background:var(--sk-lime-clair); color:#0E1A13;}
+html[data-theme="dark"] header.top .tabs a.nav-mondossier:hover, html[data-theme="dark"] header.top .tabs a.nav-mondossier.active,
+html[data-theme="dark"] header.top .tabs a.nav-mondossier[aria-current="page"]{background:#D9F99D !important; color:#0E1A13 !important;}
+
+/* Accueil */
+html[data-theme="dark"] .sk-vert-txt, html[data-theme="dark"] .hero-outline, html[data-theme="dark"] .hero-blue{color:#4ADE80 !important;}
+html[data-theme="dark"] .sk-pilule{color:#BEF264;}
+html[data-theme="dark"] .sk-btn-creux{border-color:var(--ink); color:var(--ink); background:transparent;}
+html[data-theme="dark"] .sk-btn-creux:hover{background:var(--sk-brume);}
+html[data-theme="dark"] .sk-indice{background:rgba(14,26,19,.92);}
+html[data-theme="dark"] .sk-barres i.zero{background:#2F4636;}
+html[data-theme="dark"] .sk-resume-case{background:#0E1A13;}
+html[data-theme="dark"] .sk-badge-vert, html[data-theme="dark"] .prom-etiq-loi, html[data-theme="dark"] .prom-etat.ok, html[data-theme="dark"] .status-sanctionne{background:#1C3320 !important; color:#86EFAC !important;}
+html[data-theme="dark"] .sk-badge-ocre, html[data-theme="dark"] .prom-etiq-partiel, html[data-theme="dark"] .prom-etat, html[data-theme="dark"] .status-encours{background:#3A2E0E !important; color:#FCD34D !important;}
+html[data-theme="dark"] .sk-badge-gris, html[data-theme="dark"] .prom-etiq-aucune, html[data-theme="dark"] .status-mort{background:#1B2B21 !important; color:var(--slate) !important;}
+html[data-theme="dark"] .sk-carte{background:#132119;}
+html[data-theme="dark"] .sk-etat, html[data-theme="dark"] .sk-carte:hover{color:inherit;}
+html[data-theme="dark"] .sk-etat{color:#4ADE80;}
+
+/* Projets de loi : les teintes d'état, en version nuit */
+html[data-theme="dark"] .bill{--etat-fond:#112418; --etat-filet:#1F4A2B; --etat-txt:#86EFAC;}
+html[data-theme="dark"] .bill:has(.status-encours){--etat-fond:#211C0C; --etat-filet:#4A3B12; --etat-txt:#FCD34D;}
+html[data-theme="dark"] .bill:has(.status-mort), html[data-theme="dark"] .bill:has(.status-retire){--etat-fond:#151D18; --etat-filet:#2A3830; --etat-txt:#A3B4A8;}
+html[data-theme="dark"] .bill:has(.status-rejete){--etat-fond:#261412; --etat-filet:#5A2520; --etat-txt:#F97066;}
+html[data-theme="dark"] .bill-resume-executif, html[data-theme="dark"] .last-event-box{background:rgba(0,0,0,.25) !important; color:var(--ink);}
+html[data-theme="dark"] .bstep.on{background:transparent !important;}
+html[data-theme="dark"] .qf-btn[onclick*="'encours'"]:not(.active){background:#3A2E0E !important; color:#FCD34D !important; border-color:#4A3B12 !important;}
+html[data-theme="dark"] .qf-btn[onclick*="'adoptes'"]:not(.active){background:#1C3320 !important; color:#86EFAC !important; border-color:#1F4A2B !important;}
+html[data-theme="dark"] .qf-btn.active, html[data-theme="dark"] .follow-btn.on{background:var(--sk-lime-clair) !important; color:#0E1A13 !important; border-color:var(--sk-lime-clair) !important;}
+
+/* Lexique */
+html[data-theme="dark"] .lexique-item:has(.cat-proc){background:#112418 !important; border-color:#1F4A2B !important;}
+html[data-theme="dark"] .lexique-item:has(.cat-votes){background:#211C0C !important; border-color:#4A3B12 !important;}
+html[data-theme="dark"] .lexique-item:has(.cat-pers){background:#18240E !important; border-color:#34501A !important;}
+html[data-theme="dark"] .lexique-item:has(.cat-outils){background:#132119 !important; border-color:#2A3830 !important;}
+html[data-theme="dark"] .lex-badge.cat-outils{background:#BEF264 !important; color:#14532D !important;}
+html[data-theme="dark"] .role-card .role, html[data-theme="dark"] .role-card h3 a:hover{color:#4ADE80 !important;}
+html[data-theme="dark"] .role-badge{background:#1C3320 !important; color:#86EFAC !important;}
+html[data-theme="dark"] .quick-nav a:nth-of-type(4n+1){background:#1C3320 !important; color:#86EFAC !important;}
+html[data-theme="dark"] .quick-nav a:nth-of-type(4n+2){background:#3A2E0E !important; color:#FCD34D !important;}
+html[data-theme="dark"] .quick-nav a:nth-of-type(4n+3){background:#18240E !important; color:#BEF264 !important;}
+html[data-theme="dark"] .lire-box.hl{background:#18240E !important; border-color:#34501A !important;}
+
+/* Promesses */
+html[data-theme="dark"] .prom-col:last-child{background:#211C0C !important;}
+html[data-theme="dark"] .prom-loi{background:rgba(0,0,0,.28);}
+html[data-theme="dark"] .prom-col .lbl, html[data-theme="dark"] .prom-col a, html[data-theme="dark"] .prom-loi-src{color:#4ADE80 !important;}
+html[data-theme="dark"] .prom-col .lbl.att{color:#FCD34D !important;}
+html[data-theme="dark"] .qf-btn.qf-sel{outline-color:var(--ink);}
+
+/* Divers */
+html[data-theme="dark"] .brutal-search .bs-icon{background:#16A34A !important;}
+html[data-theme="dark"] input, html[data-theme="dark"] select, html[data-theme="dark"] textarea{background:#132119 !important; color:var(--ink) !important;}
+html[data-theme="dark"] .dq-remonter{background:var(--sk-lime-clair) !important; color:#0E1A13 !important;}
+html[data-theme="dark"] .band-blue, html[data-theme="dark"] .band-blue.bleed{background:#050B07 !important;}
+
+/* Relevé des contrastes en sombre (scripts maison, 1er oct. 2026) : les restes de l'ancien style */
+html[data-theme="dark"] .band-yellow, html[data-theme="dark"] .band-yellow h2, html[data-theme="dark"] .band-yellow p,
+html[data-theme="dark"] .band-yellow b, html[data-theme="dark"] .band-yellow .sub{color:var(--ink) !important;}
+html[data-theme="dark"] .sort-toggle{color:var(--ink) !important;}
+html[data-theme="dark"] .band-blue h2, html[data-theme="dark"] .band-blue p, html[data-theme="dark"] .promo-texte{color:var(--ink) !important;}
+html[data-theme="dark"] .calendar-box .status{color:var(--ink) !important;}
+html[data-theme="dark"] .lire-box h3{color:var(--ink) !important;}
+html[data-theme="dark"] .lire-box.hl h3{color:#BEF264 !important;}
+html[data-theme="dark"] .diss-cta{color:#BEF264 !important;}
+html[data-theme="dark"] .challenged-empty, html[data-theme="dark"] #challengedList > div{background:var(--card) !important; color:var(--ink);}
+/* DQ garde la bande jaune CLAIRE en sombre en y redéfinissant les jetons ; ici elle devient une
+   surface sombre, donc on redéfinit les jetons dans l'autre sens. */
+:root[data-theme="dark"] .band-yellow{
+  color:var(--ink);
+  --ink:#E8F0EA; --ink-2:#E8F0EA; --line:#24372B; --line-soft:#1B2B21;
+  --slate:#A3B4A8; --card:#132119; --paper:#0E1A13; --paper-2:#16241B;
+  --gold:#4ADE80; --gold-soft:#16341F; --green:#4ADE80; --green-soft:#16341F; --red:#F97066; --red-soft:#3A1916;
+}
+/* Les boutons sur fond lime (l'ancien jaune) : texte foncé */
+html[data-theme="dark"] .bill-more, html[data-theme="dark"] .votes-more, html[data-theme="dark"] .cp-slot,
+html[data-theme="dark"] .md-etiquette{color:#0E1A13 !important;}
+:root[data-theme="dark"] .promo-compte{background:#132119 !important; color:var(--ink) !important;}
+:root[data-theme="dark"] .promo-compte .promo-compte-titre{color:#E8F0EA !important;}
+:root[data-theme="dark"] .promo-compte .promo-compte-note{color:#A3B4A8 !important;}
+/* Thème clair : deux restes de l'ancien style trouvés par le même relevé */
+.calendar-box .status{color:var(--sk-vert-fonce) !important;}
+.lire-box.hl h3, .lire-box.hl p{color:var(--ink) !important;}
+html[data-theme="dark"] .calendar-box .status{color:#4ADE80 !important;}
+html[data-theme="dark"] .lire-box.hl p{color:var(--ink) !important;}
