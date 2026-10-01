@@ -146,7 +146,7 @@ const translations = {
     'promo.diss':"Les projets de loi de la 43e législature sont morts à la dissolution du 27 août : le suivi reprendra avec les premiers projets de loi de la nouvelle législature, convoquée le 17 novembre 2026.",
     'promo.compte.h':"Votre compte",
     'promo.mesdossiers':"Mon dossier →",
-    'pet.sub':"Vraies pétitions électroniques actuellement ouvertes pour signature — relevées le 23 juin 2026",
+    'pet.sub':"Pas de pétition électronique en Saskatchewan : elles se signent sur papier et un·e député·e les dépose en Chambre",
     'mission.eyebrow':"Notre mission",
     'mission.st1':"Le site officiel de l'Assemblée est la source la plus fiable qui existe. Celui-ci la rend juste",
     'mission.st2':"plus facile à suivre.",
@@ -490,7 +490,7 @@ const translations = {
     'lobby.link1':"Search the registry ↗",
     'lobby.link2':"Office of the Registrar of Lobbyists ↗",
     // Petitions
-    'pet.sub':"Real e-petitions currently open for signature — recorded June 23, 2026",
+    'pet.sub':"No electronic petitions in Saskatchewan: they are signed on paper and an MLA presents them in the House",
     'pet.info':"Each petition above is reproduced as-is from the National Assembly's official list, with a link to the official page where you can find and sign it. The signature count shown is the one recorded at the last update — for the exact, current count, or to sign, use the \u201cFind and sign on assnat.qc.ca\u201d link on each card.",
     // Where this data comes from
     'apropos.sources.h':"Public sources used here",
@@ -3305,8 +3305,8 @@ async function renderChallenged(){
         ? 'Demands made before the Assembly was dissolved — these bills died with it and would have to start over'
         : 'Demandes faites avant la dissolution — ces projets sont morts avec elle et devraient repartir de zéro')
     : (isEn
-        ? `The moment one person asks for an explanation, the bill appears here — pile on in one click; at ${fmt(PETITION_THRESHOLD)}, we push for a petition`
-        : `Dès qu'une personne demande une explication, le projet apparaît ici — appuyez en un clic ; à ${fmt(PETITION_THRESHOLD)}, on pousse pour une pétition`);
+        ? `The moment one person asks for an explanation, the bill appears here — pile on in one click; at ${fmt(PETITION_THRESHOLD)}, we push for a petition. In Saskatchewan, petitions are signed on paper only: the Assembly does not accept electronic petitions.`
+        : `Dès qu'une personne demande une explication, le projet apparaît ici — appuyez en un clic ; à ${fmt(PETITION_THRESHOLD)}, on pousse pour une pétition. En Saskatchewan, les pétitions se signent sur papier seulement : l'Assemblée n'accepte pas de pétition électronique.`);
 
   const challenged = (challengedCache || [])
     .map(c => ({ cnt: Number(c.cnt), bill: projetChallenge(c.bill_id) }))
