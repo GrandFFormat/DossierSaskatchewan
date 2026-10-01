@@ -2664,6 +2664,12 @@ function billCard(b, ctx){
         <div class="bill-head-main">
           <h3>${title}</h3>
           <div class="meta">${sponsorLabel} : ${b.sponsor || noSponsorLabel} · ${presentedOnLabel} ${presentedOnValue}</div>
+          ${(() => {
+            // Le RÉSUMÉ EXÉCUTIF (Martin, 30 sept. 2026) : ce que fait le projet, en une phrase,
+            // visible sans déplier la carte. Rédigé par IA (scrapers/resumes.js), comme les puces.
+            const r = isEn ? b.resumeExecutifEn : b.resumeExecutif;
+            return r ? `<p class="bill-resume-executif">${String(r).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]))}</p>` : '';
+          })()}
         </div>
         <div class="bill-head-right">
           ${hotBadge}
@@ -2687,6 +2693,9 @@ function billCard(b, ctx){
             ${b.omnibus ? `<p class="omnibus-avis">${isEn ? `<strong>Omnibus bill:</strong> it changes ${b.nbLois || 'several'} laws and regulations, and its title names only part of them. The summary below covers them all, law by law.` : `<strong>Projet omnibus :</strong> il modifie ${b.nbLois || 'plusieurs'} lois et règlements, et son titre n’en nomme qu’une partie. Le résumé ci-dessous les couvre toutes, loi par loi.`}</p>` : ''}
             <div class="bill-summary-body"></div>
             <p class="src-note">${b.summaryAiGenerated ? (isEn ? '⚙ AI-generated summary of the bill as introduced — may not reflect amendments made since.' : '⚙ Résumé généré par IA à partir du texte tel que présenté — peut ne pas refléter les amendements adoptés depuis.') : srcNote}</p>
+            ${b.amende ? `<p class="src-note amende-avis">${isEn
+              ? '⚠ This bill was amended in committee. The Assembly does not reprint amended bills: this summary describes the text as introduced.'
+              : '⚠ Ce projet a été amendé en comité. L\'Assemblée ne réimprime pas un projet amendé : ce résumé décrit le texte tel que déposé.'}</p>` : ''}
           </div>
           <div class="bill-open-side">
             <div class="open-label side">${lastActivityLabel}</div>

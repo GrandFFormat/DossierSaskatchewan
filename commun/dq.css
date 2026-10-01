@@ -1257,6 +1257,14 @@
     font-family:'Archivo Narrow',sans-serif; font-size:12.5px; font-weight:600;
     color:var(--slate); text-transform:uppercase; letter-spacing:0.04em; margin-top:4px;
   }
+  /* Le RÉSUMÉ EXÉCUTIF sur la carte (Saskatchewan, 30 sept. 2026) : une phrase à lire, donc en
+     casse normale, un filet d'accent à gauche pour la détacher du titre et des métadonnées. */
+  .bill-resume-executif{
+    margin:10px 0 0; padding-left:10px; border-left:3px solid var(--gold);
+    font-size:15.5px; line-height:1.45; font-weight:500; color:var(--ink); max-width:72ch;
+  }
+  .bill-summary .resume-executif{font-weight:700; margin:0 0 8px;}
+  .bill-summary .resume-origine{font-size:11px; color:var(--slate); margin:8px 0 0;}
   .hot-badge{
     background:var(--ink-bg); color:var(--yellow);
     font-family:'Archivo Narrow',sans-serif; font-size:12px; font-weight:700;
