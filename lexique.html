@@ -250,79 +250,83 @@ function goToFederal(evt){
       <a data-jump="sec-apropos" data-i18n="quicknav.apropos">Where this data comes from</a>
     </div>
 
-    <div class="section-head" id="sec-personnes"><div><h2 data-i18n="h.personnes">Who's involved around the Assembly</h2><div class="sub" data-i18n="pers.sub">The public roles we hadn't covered yet — real names, real current functions</div></div></div>
+    <div class="section-head" id="sec-personnes"><div><h2 data-i18n="h.personnes">Who's involved around the Assembly</h2><div class="sub" data-i18n="pers.sub">The public roles we hadn't covered yet — real names, verified on official sites</div></div></div>
 
     <div id="body-personnes">
 
     <div class="role-group-title" data-i18n="pers.g1">Inside the Assembly</div>
-    <!-- #role-presidence : la légende de la présence aux votes (page Ministres) y renvoie, parce que
-         « la présidence » s'y confondait avec la première ministre (Martin, 22 sept. 2026). -->
+    <!-- #role-presidence : la légende de la présence aux votes (page Ministres) y renvoie. -->
     <div class="role-card" id="role-presidence">
       <div>
-        <div class="role" data-i18n="pers.1.role">President of the National Assembly</div>
-        <h3>Nathalie Roy</h3>
-        <p data-i18n="pers.1.desc">Presides over sittings and enforces the Standing Orders. MNA for Montarville (CAQ), but the presiding role requires neutrality.</p>
+        <div class="role" data-i18n="pers.1.role">Speaker of the Legislative Assembly</div>
+        <h3><a href="https://www.legassembly.sk.ca/mlas/" target="_blank" rel="noopener">Todd Goudy</a></h3>
+        <p data-i18n="pers.1.desc">Presides over sittings and enforces the Rules. MLA for Melfort (Saskatchewan Party), but the chair requires neutrality: the Speaker only votes to break a tie.</p>
       </div>
     </div>
-
+    <div class="role-card">
+      <div>
+        <div class="role" data-i18n="pers.2.role">Clerk of the Legislative Assembly</div>
+        <h3><a href="https://www.legassembly.sk.ca/" target="_blank" rel="noopener">Iris Lang</a></h3>
+        <p data-i18n="pers.2.desc">The Assembly's top non-partisan official since January 1, 2023: advises the Speaker and members on procedure and keeps the official record, including the minutes this site reads every day.</p>
+      </div>
+    </div>
     <div class="role-group-title" data-i18n="pers.g2">The Crown's representative</div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.2.role">Lieutenant Governor of Québec</div>
-        <h3>Manon Jeannotte</h3>
-        <p data-i18n="pers.2.desc">30th holder of the office, in place since January 25, 2024 — the first person of First Nations heritage to hold it. She gives the royal assent cited on every bill card on this site.</p>
+        <div class="role" data-i18n="pers.3.role">Lieutenant Governor of Saskatchewan</div>
+        <h3><a href="https://www.legassembly.sk.ca/" target="_blank" rel="noopener">Bernadette McIntyre</a></h3>
+        <p data-i18n="pers.3.desc">Represents the King in Saskatchewan. She gives the royal assent cited on every bill card on this site.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.2.badge">Ceremonial + assent to laws</span>
+      <span class="role-badge" data-i18n="pers.3.badge">Ceremonial + assent to laws</span>
     </div>
-
-    <div class="role-group-title" data-i18n="pers.g3">Independent watchdogs — appointed by the Assembly, not the government</div>
+    <div class="role-group-title" data-i18n="pers.g3">Independent officers — appointed by the Assembly, not the government</div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.3.role">Auditor General of Québec</div>
-        <h3>Christine Roy</h3>
-        <p data-i18n="pers.3.desc">Audits state spending and management. In office since December 2025, 10-year non-renewable term.</p>
+        <div class="role" data-i18n="pers.4.role">Provincial Auditor</div>
+        <h3><a href="https://auditor.sk.ca/" target="_blank" rel="noopener">Tara Clemett</a></h3>
+        <p data-i18n="pers.4.desc">Audits government spending and management, and reports directly to the Assembly.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
-    </div>
-    <div class="role-card">
-      <div>
-        <div class="role" data-i18n="pers.4.role">Québec Ombudsperson</div>
-        <h3>Marc-André Dowd</h3>
-        <p data-i18n="pers.4.desc">Handles citizen complaints against the public administration.</p>
-      </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Officer of the Assembly</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.5.role">Chief Electoral Officer of Québec</div>
-        <h3>Jean-François Blanchet</h3>
-        <p data-i18n="pers.5.desc">Oversees elections and the electoral map.</p>
+        <div class="role" data-i18n="pers.5.role">Ombudsman and Public Interest Disclosure Commissioner</div>
+        <h3><a href="https://ombudsman.sk.ca/" target="_blank" rel="noopener">Sharon H. Pratchler, K.C.</a></h3>
+        <p data-i18n="pers.5.desc">Handles citizen complaints against provincial services, and protects public employees who report wrongdoing.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Officer of the Assembly</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.6.role">Ethics Commissioner</div>
-        <h3>Ariane Mignolet</h3>
-        <p data-i18n="pers.6.desc">Advises on and investigates MNA conduct on ethics matters.</p>
+        <div class="role" data-i18n="pers.6.role">Chief Electoral Officer</div>
+        <h3><a href="https://www.elections.sk.ca/" target="_blank" rel="noopener">Dr. Michael Boda</a></h3>
+        <p data-i18n="pers.6.desc">Runs provincial elections. In office since June 1, 2012, reappointed November 4, 2021.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Officer of the Assembly</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.7.role">Lobbying Commissioner</div>
-        <h3>Jean-François Routhier</h3>
-        <p data-i18n="pers.7.desc">Administers the lobbyist registry — the direct link to the “lobbyist registry” task on our roadmap.</p>
+        <div class="role" data-i18n="pers.7.role">Conflict of Interest Commissioner and Registrar of Lobbyists</div>
+        <h3><a href="https://www.legassembly.sk.ca/" target="_blank" rel="noopener">Maurice Herauf</a></h3>
+        <p data-i18n="pers.7.desc">Advises on and investigates MLA conduct, and keeps the lobbyist registry. Reappointed for five years as of July 1, 2025.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Officer of the Assembly</span>
     </div>
     <div class="role-card">
       <div>
-        <div class="role" data-i18n="pers.8.role">Commissioner for the Well-Being and Rights of Children</div>
-        <h3>Marie-Eve Brunet</h3>
-        <p data-i18n="pers.8.desc">The most recent institution in this group, created in 2023.</p>
+        <div class="role" data-i18n="pers.8.role">Information and Privacy Commissioner</div>
+        <h3><a href="https://oipc.sk.ca/" target="_blank" rel="noopener">Grace Hession David</a></h3>
+        <p data-i18n="pers.8.desc">Oversees access to public documents and the protection of personal information. In office since May 1, 2025.</p>
       </div>
-      <span class="role-badge" data-i18n="pers.badge.designee">Appointed officer</span>
+      <span class="role-badge" data-i18n="pers.badge.designee">Officer of the Assembly</span>
+    </div>
+    <div class="role-card">
+      <div>
+        <div class="role" data-i18n="pers.9.role">Advocate for Children and Youth</div>
+        <h3><a href="https://www.saskadvocate.ca/" target="_blank" rel="noopener">Lisa Broda</a></h3>
+        <p data-i18n="pers.9.desc">Protects the rights of young people who receive provincial services. Reappointed for five years as of April 1, 2025.</p>
+      </div>
+      <span class="role-badge" data-i18n="pers.badge.designee">Officer of the Assembly</span>
     </div>
 
     <div class="info-box" data-i18n="pers.info">These people hold official public functions and are appointed through a legally defined process — that's what makes the information above public. That doesn't mean everything about them becomes public: I stick to their official function here, as with the rest of the site.</div>
