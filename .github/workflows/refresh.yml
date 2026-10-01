@@ -9,10 +9,10 @@
 # lendemain matin (celui du 30 avril 2026 est sorti le 1er mai à 9 h 29, heure de Regina).
 # Le passage de 16 h UTC l'attrape le matin ; celui de 4 h UTC, le soir.
 #
-# Clé API des résumés IA (étape à venir) : à ajouter dans le dépôt sous
+# Clé API des résumés IA (ajoutée le 1er oct. 2026) : elle vit dans le dépôt sous
 #   Settings > Secrets and variables > Actions > New repository secret
 #   Nom : ANTHROPIC_API_KEY
-# Sans ce secret, tout tourne quand même.
+# Sans ce secret, tout tourne quand même, sauf les nouveaux résumés.
 
 name: Rafraîchissement des données (deux fois par jour)
 
