@@ -305,6 +305,15 @@ body *:not(.sk-surtitre):not(.hero-sujet):not(.promo-sur):not(.mission-eyebrow):
   .sk-lots-champ{height:240px;}
 }
 @media (max-width: 640px){
+  /* L'en-tête sur une seule rangée : logo, langue, menu. Le réglage A−/A+ cède la place (le
+     zoom du téléphone fait le même travail). */
+  .header-ctrls .font-size-ctrl{display:none !important;}
+  header.top{flex-wrap:nowrap !important; gap:6px; padding-top:10px; padding-bottom:10px;}
+  .brand{min-width:0;}
+  .brand-title{font-size:16px !important; gap:6px; white-space:nowrap; margin-right:6px;}
+  .sk-logo{width:24px; height:18px;}
+  .header-ctrls{margin-left:auto; gap:6px; flex:none;}
+  .header-ctrls .lang-toggle{padding:0 8px; height:34px; font-size:13px;}
   /* 61 lanières sur 375 px font des fils de 4 px : des rayures, pas des terres. On en garde 21. */
   .sk-laniere:nth-child(n+22){display:none;}
   .sk-resume{grid-template-columns:1fr;}
