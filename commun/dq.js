@@ -228,7 +228,7 @@ const translations = {
     'prom.meth.5':"<b>Rien n'est tiré des médias.</b> Un engagement annoncé en conférence de presse mais jamais publié par le parti n'apparaît pas ici.",
     'prom.meth.fin':"Autrement dit : une absence dans cette liste ne dit rien de ce qu'un parti pense. Pour la liste complète, suivez le lien vers la source.",
     'prom.next.h':"Et maintenant ?",
-    'prom.next.p':"L'Assemblée reprend le <b>27 octobre 2026</b> pour la 3e session de la 30e législature. La prochaine étape de cette page : placer chaque projet de loi à côté de la promesse qui lui correspond — et rendre tout aussi visible l'absence de projet sur un engagement.",
+    'prom.next.p':"Chaque promesse est placée à côté des projets de loi qui la mettent en œuvre, avec la phrase des notes explicatives officielles qui le montre. Quand aucun projet n'en parle, la carte le dit. L'Assemblée reprend le <b>27 octobre 2026</b> pour la 3e session : chaque nouveau projet de loi sera relu de la même façon.",
     'sujet.lexique':"Lexique de l'Assemblée législative",
     'lexhero.l1':"Le jargon,",
     'lexhero.l2':"décodé.",
@@ -447,7 +447,7 @@ const translations = {
     'prom.meth.5':"<b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here.",
     'prom.meth.fin':"In short: an absence from this list says nothing about what a party thinks. For the full list, follow the link to the source.",
     'prom.next.h':"What's next?",
-    'prom.next.p':"The Assembly returns on <b>October 27, 2026</b> for the third session of the 30th Legislature. The next step for this page: placing each bill next to the promise it matches — and making the absence of a bill on a commitment just as visible.",
+    'prom.next.p':"Each promise sits next to the bills that carry it out, with the sentence from the official explanatory notes that shows it. When no bill deals with it, the card says so. The Assembly returns on <b>October 27, 2026</b> for the third session: every new bill will be checked the same way.",
     'dissp.h':"⚠️ These bills never became law",
     'dissp.p':"The Assembly was dissolved on <b>August 27, 2026</b>. Any bill that had not been <b>assented to</b> therefore <b>died on the Order Paper</b> — that is the Assembly's official term. On the cards we say it plainly: <b>“dead on arrival”</b> if the bill never got past introduction, <b>“died along the way”</b> if it got further. Either way, it must start over before the new Assembly (November 17, 2026). Bills marked “Assented to” did become law.",
     'cal.p1':"The Assembly doesn't sit year-round. Its Standing Orders set two working periods: a spring period starting the 2nd Tuesday of February (16 weeks, plus 2 intensive weeks), and a fall period starting the 3rd Tuesday of September (10 weeks, plus 2 intensive weeks). Outside these periods the Assembly is adjourned — barring a special sitting called by the Premier.",
@@ -1610,6 +1610,22 @@ function renderPromFilters(){
   }
 }
 
+// La colonne « L'action » : les projets de loi qui mettent l'engagement en œuvre, chacun avec la
+// phrase des notes explicatives qui le prouve (vérifié à la main dans les textes officiels de
+// l'Assemblée, voir data/promises.json). Pas de verdict : on montre ce qui a été déposé.
+function actionPromesse(p, isEn){
+  const etat = (a) => a.statut === 'sanctionne'
+    ? `<span class="prom-etat ok">${isEn ? 'Assented' : 'Sanctionnée'} · ${(String(a.note || '').match(/\d{4}-\d{2}-\d{2}/) || [''])[0]}</span>`
+    : `<span class="prom-etat">${echapperTexte(isEn ? (a.noteEn || a.note || '') : (a.note || ''))}</span>`;
+  const lois = (p.actions || []).map((a) => `<div class="prom-loi">
+      <a href="/projets-de-loi?pl=${a.num}${paramLangue(false)}"><b>${isEn ? 'Bill' : 'PL'} ${a.num}</b> — ${echapperTexte(a.titre)}</a> ${etat(a)}
+      <p>${echapperTexte(isEn ? a.preuveEn : a.preuve)}</p>
+      <a class="prom-loi-src" href="${a.source}" target="_blank" rel="noopener">${isEn ? 'Explanatory notes (legassembly.sk.ca)' : 'Notes explicatives (legassembly.sk.ca)'}</a>
+    </div>`).join('');
+  const note = (isEn ? p.actionNoteEn : p.actionNote) || (lois ? '' : (isEn ? 'Not yet checked against the bills.' : 'Pas encore vérifiée dans les projets de loi.'));
+  return lois + (note ? `<p class="prom-none">${echapperTexte(note)}</p>` : '');
+}
+
 function renderPromises(){
   if(!document.getElementById('promisesList')) return;   // vue absente de cette page
   if(!promPret) return;   // données pas encore là : filtres et liste du build restent tels quels
@@ -1653,9 +1669,7 @@ function renderPromises(){
         </div>
         <div class="prom-col">
           <span class="lbl att">${isEn ? 'The action' : 'L\'action'}</span>
-          <p class="prom-none">${isEn
-            ? 'Not yet matched to a bill. Linking each promise to the bills of the 30th Legislature is the next step for this page.'
-            : 'Pas encore rapprochée d’un projet de loi. Relier chaque promesse aux projets de la 30e législature est la prochaine étape de cette page.'}</p>
+          ${actionPromesse(p, isEn)}
         </div>
       </div>
     </div>`;

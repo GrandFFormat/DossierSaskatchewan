@@ -22,7 +22,13 @@ function main() {
     theme: p.theme,
     quote: p.quote,
     sourceLabel: p.sourceLabel,
+    sourceLabelEn: p.sourceLabelEn,
     sourceUrl: p.sourceUrl,
+    // Ce que l'Assemblée en a fait : les projets de loi qui la mettent en œuvre, avec la preuve
+    // tirée des notes explicatives ; ou une note quand aucun projet n'en parle.
+    actions: p.actions || [],
+    actionNote: p.actionNote,
+    actionNoteEn: p.actionNoteEn,
     sourceType: p.sourceType || 'primaire',
     capturedAt: p.capturedAt,
     draft: Boolean(p.draft),
