@@ -1536,7 +1536,7 @@ async function adminReset(billId){
    stable de la palette de secours (dérivée du nom, donc toujours la même). */
 // Les couleurs des sujets : celles du champ de tuiles de l'accueil (design « tuiles », 1er oct. 2026).
 const themeColors = {
-  'Santé':'#16A34A', 'Logement':'#CA8A04', 'Éducation':'#4D7C0F', 'Familles':'#84CC16',
+  'Santé':'#16A34A', 'Logement':'#A16207', 'Éducation':'#4D7C0F', 'Familles':'#84CC16',
   'Sécurité':'#14532D', 'Économie':'#166534', 'Fiscalité':'#A16207', 'Coût de la vie':'#BEF264', 'Aînés':'#65A30D',
 };
 const themeFallback = ['#8B5CF6','#0891B2','#C2410C','#4D7C0F','#BE185D','#0F766E'];
