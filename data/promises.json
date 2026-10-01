@@ -1,5 +1,5 @@
 {
-  "note": "Engagements de l'élection générale du 28 octobre 2024, cités mot pour mot depuis les sites officiels des partis. Vérifiés par scripts/verifier-promesses.mjs.",
+  "note": "Engagements du Saskatchewan Party (gouvernement majoritaire) à l'élection générale du 28 octobre 2024, cités mot pour mot depuis son site officiel. Vérifiés par scripts/verifier-promesses.mjs.",
   "election": "2024-10-28",
   "promises": [
     {
@@ -89,76 +89,9 @@
       "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
       "sourceType": "primaire",
       "capturedAt": "2026-10-01"
-    },
-    {
-      "id": "ndp-1",
-      "party": "NDP",
-      "theme": "Coût de la vie",
-      "quote": "We will make your life more affordable – by cutting the gas tax, getting rid of PST on groceries and children's clothing, making more affordable housing available and delivering a school lunch program for kids.",
-      "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-      "sourceLabelEn": "Saskatchewan NDP — “It's Time for Change”, 2024 election platform",
-      "sourceUrl": "https://www.saskndp.ca/plan",
-      "sourceType": "primaire",
-      "capturedAt": "2026-10-01"
-    },
-    {
-      "id": "ndp-2",
-      "party": "NDP",
-      "theme": "Santé",
-      "quote": "We will ensure better healthcare – by investing to hire more doctors, nurses and healthcare workers, and listening to local voices to ensure the best healthcare outcomes.",
-      "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-      "sourceLabelEn": "Saskatchewan NDP — “It's Time for Change”, 2024 election platform",
-      "sourceUrl": "https://www.saskndp.ca/plan",
-      "sourceType": "primaire",
-      "capturedAt": "2026-10-01"
-    },
-    {
-      "id": "ndp-3",
-      "party": "NDP",
-      "theme": "Éducation",
-      "quote": "We will improve education – by making a generational investment to address classroom size and complexity, building schools faster to address overcrowding, and respecting teachers, school boards and education workers and working with them as partners in education.",
-      "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-      "sourceLabelEn": "Saskatchewan NDP — “It's Time for Change”, 2024 election platform",
-      "sourceUrl": "https://www.saskndp.ca/plan",
-      "sourceType": "primaire",
-      "capturedAt": "2026-10-01"
-    },
-    {
-      "id": "ndp-4",
-      "party": "NDP",
-      "theme": "Économie",
-      "quote": "We will grow the economy – by implementing a Hire Saskatchewan plan to ensure public infrastructure dollars remain in the province, by supporting small businesses by freezing their taxes and supporting workers with more jobs and bigger paycheques.",
-      "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-      "sourceLabelEn": "Saskatchewan NDP — “It's Time for Change”, 2024 election platform",
-      "sourceUrl": "https://www.saskndp.ca/plan",
-      "sourceType": "primaire",
-      "capturedAt": "2026-10-01"
-    },
-    {
-      "id": "ndp-5",
-      "party": "NDP",
-      "theme": "Sécurité",
-      "quote": "We will be tough on crime and the causes of crime – by increasing funding to Saskatchewan police forces and mental health and addictions services, offering a rebate program for security equipment to homes, places of worship and small businesses, and scrapping the Sask. Party’s Marshals Service, which has seen millions of dollars spent and not a single new cop hired.",
-      "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-      "sourceLabelEn": "Saskatchewan NDP — “It's Time for Change”, 2024 election platform",
-      "sourceUrl": "https://www.saskndp.ca/plan",
-      "sourceType": "primaire",
-      "capturedAt": "2026-10-01"
-    },
-    {
-      "id": "ndp-6",
-      "party": "NDP",
-      "theme": "Fiscalité",
-      "quote": "And, I guarantee I will not raise taxes.",
-      "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-      "sourceLabelEn": "Saskatchewan NDP — “It's Time for Change”, 2024 election platform",
-      "sourceUrl": "https://www.saskndp.ca/plan",
-      "sourceType": "primaire",
-      "capturedAt": "2026-10-01"
     }
   ],
   "pagesVues": [
-    "https://saskparty.com/saskatchewan_party_releases_election_platform/",
-    "https://www.saskndp.ca/plan"
+    "https://saskparty.com/saskatchewan_party_releases_election_platform/"
   ]
 }

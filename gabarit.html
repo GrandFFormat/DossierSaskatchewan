@@ -594,7 +594,7 @@ function goToFederal(evt){
         <span data-i18n="prom.l1">What they promise,</span>
         <span class="hero-outline" data-i18n="prom.l2">what they'll do with it.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="prom.sub">The two parties' commitments in the October 28, 2024 election, each with its source. <b>No verdict is issued here</b>: each promise is quoted as written, next to what the Assembly has done about it.</p>
+      <p class="view-hero-sub" data-i18n="prom.sub">The governing party's commitments in the October 28, 2024 election, each with its source. <b>No verdict is issued here</b>: each promise is quoted as written, next to what the Assembly has done about it.</p>
     </div>
 
 
@@ -608,10 +608,7 @@ function goToFederal(evt){
     </div>
 
     <div class="prom-filters">
-      <div class="prom-filter-row">
-        <span class="prom-filter-lbl" data-i18n="prom.byparty">By party</span>
-        <div class="quick-filters" id="promPartyFilters"></div>
-      </div>
+      <div hidden><div class="quick-filters" id="promPartyFilters"></div></div><!-- un seul parti suivi : pas de filtre par parti -->
       <div class="prom-filter-row">
         <span class="prom-filter-lbl" data-i18n="prom.bytheme">By topic</span>
         <div class="quick-filters" id="promThemeFilters"></div>
@@ -619,7 +616,7 @@ function goToFederal(evt){
     </div>
 
     <!-- D'où viennent les promesses, en une phrase (la clé garde son nom d'origine, prom.caq). -->
-    <div class="info-box" data-i18n="prom.caq">Only one source is accepted here: the <b>party's own official documents</b>, quoted word for word. Both parties in the Assembly are here: the <b>Saskatchewan Party</b>, which forms the government, and the <b>NDP</b>, the Official Opposition.</div>
+    <div class="info-box" data-i18n="prom.caq">This page follows the promises of the <b>Saskatchewan Party</b>, which won the election and governs with a majority of seats: it has the power to deliver them. Only one source is accepted: <b>its official documents</b>, quoted word for word.</div>
     <div class="section-head min-group-head" id="promResultHead">
       <div><h2 id="promResultTitle">Toutes les promesses</h2></div>
       <span class="head-note" id="promResultNote"></span>
@@ -636,10 +633,10 @@ function goToFederal(evt){
     <div class="prom-methode" id="prom-methode">
       <h3 data-i18n="prom.meth.h">Where these promises come from</h3>
       <ul>
-        <li data-i18n="prom.meth.1"><b>From the parties themselves.</b> Every quote comes from the 2024 platform published on the party's website, reproduced word for word. A script checks that each quote appears exactly as written in the source; if not, it is removed. The “See the source” link on each card leads to the original.</li>
-        <li data-i18n="prom.meth.2"><b>These are not all the promises.</b> The Saskatchewan Party published a list of commitments; the NDP, five main pillars and a guarantee on taxes. We use those lists as published, without ranking them by importance. The full platforms contain more.</li>
-        <li data-i18n="prom.meth.3"><b>The two platforms aren't written the same way.</b> The Saskatchewan Party's is a list of specific measures; the NDP's groups its measures by broad theme. One NDP card can therefore cover several commitments at once.</li>
-        <li data-i18n="prom.meth.4"><b>Government and opposition don't have the same power.</b> The Saskatchewan Party won the election and introduces most bills. The NDP sits in opposition: its commitments only become law if the Assembly passes a bill that carries them.</li>
+        <li data-i18n="prom.meth.1"><b>From the party itself.</b> Every quote comes from the 2024 platform published on the Saskatchewan Party's website, reproduced word for word. A script checks that each quote appears exactly as written in the source; if not, it is removed. The “See the source” link on each card leads to the original.</li>
+        <li data-i18n="prom.meth.2"><b>These are not all the promises.</b> We use the list of commitments the party published with its platform, as published, without ranking it by importance. The full platform contains more.</li>
+        <li data-i18n="prom.meth.3"><b>Why only the government.</b> The majority party introduces most bills and can get them passed: its promises are the ones that can be checked against what actually happens. The opposition doesn't have that power.</li>
+        <li data-i18n="prom.meth.4"><b>An absence says nothing.</b> A commitment missing from this list may still be in the full platform.</li>
         <li data-i18n="prom.meth.5"><b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here.</li>
       </ul>
       <p class="prom-methode-fin" data-i18n="prom.meth.fin">In short: an absence from this list says nothing about what a party thinks. For the full list, follow the link to the source.</p>
@@ -681,7 +678,7 @@ function goToFederal(evt){
          décision : on lui en donnera un si la page est visitée souvent). -->
     <div class="section-head" id="sec-promesses"><div><h2 data-i18n="h.promesses">Election promises</h2></div></div>
     <div class="info-box">
-      <span data-i18n="prom.lex">The parties' commitments in the October 28, 2024 election, each with its source. No verdict: the promise, quoted word for word.</span>
+      <span data-i18n="prom.lex">The governing party's commitments in the October 28, 2024 election, each with its source. No verdict: the promise, quoted word for word.</span>
       <div><a class="diss-cta" href="/promesses" data-i18n="prom.lex.cta" style="margin-top:12px;">See the promises →</a></div>
     </div>
 
@@ -3765,7 +3762,7 @@ const petitions = [];
 
 /* PROMISES_DATA_START — généré par scrapers/build-promises-data.js à partir de
    data/promises.json (saisi à la main). Éditer le JSON, pas ce bloc.
-   Généré le 2026-10-01T01:46:46.631Z */
+   Généré le 2026-10-01T01:48:29.832Z */
 const promises = [
   {
     "id": "skp-1",
@@ -3851,72 +3848,6 @@ const promises = [
     "quote": "Keeping the small business tax at one per cent",
     "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
     "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
-    "sourceType": "primaire",
-    "capturedAt": "2026-10-01",
-    "draft": false
-  },
-  {
-    "id": "ndp-1",
-    "party": "NDP",
-    "theme": "Coût de la vie",
-    "quote": "We will make your life more affordable – by cutting the gas tax, getting rid of PST on groceries and children's clothing, making more affordable housing available and delivering a school lunch program for kids.",
-    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-    "sourceUrl": "https://www.saskndp.ca/plan",
-    "sourceType": "primaire",
-    "capturedAt": "2026-10-01",
-    "draft": false
-  },
-  {
-    "id": "ndp-2",
-    "party": "NDP",
-    "theme": "Santé",
-    "quote": "We will ensure better healthcare – by investing to hire more doctors, nurses and healthcare workers, and listening to local voices to ensure the best healthcare outcomes.",
-    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-    "sourceUrl": "https://www.saskndp.ca/plan",
-    "sourceType": "primaire",
-    "capturedAt": "2026-10-01",
-    "draft": false
-  },
-  {
-    "id": "ndp-3",
-    "party": "NDP",
-    "theme": "Éducation",
-    "quote": "We will improve education – by making a generational investment to address classroom size and complexity, building schools faster to address overcrowding, and respecting teachers, school boards and education workers and working with them as partners in education.",
-    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-    "sourceUrl": "https://www.saskndp.ca/plan",
-    "sourceType": "primaire",
-    "capturedAt": "2026-10-01",
-    "draft": false
-  },
-  {
-    "id": "ndp-4",
-    "party": "NDP",
-    "theme": "Économie",
-    "quote": "We will grow the economy – by implementing a Hire Saskatchewan plan to ensure public infrastructure dollars remain in the province, by supporting small businesses by freezing their taxes and supporting workers with more jobs and bigger paycheques.",
-    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-    "sourceUrl": "https://www.saskndp.ca/plan",
-    "sourceType": "primaire",
-    "capturedAt": "2026-10-01",
-    "draft": false
-  },
-  {
-    "id": "ndp-5",
-    "party": "NDP",
-    "theme": "Sécurité",
-    "quote": "We will be tough on crime and the causes of crime – by increasing funding to Saskatchewan police forces and mental health and addictions services, offering a rebate program for security equipment to homes, places of worship and small businesses, and scrapping the Sask. Party’s Marshals Service, which has seen millions of dollars spent and not a single new cop hired.",
-    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-    "sourceUrl": "https://www.saskndp.ca/plan",
-    "sourceType": "primaire",
-    "capturedAt": "2026-10-01",
-    "draft": false
-  },
-  {
-    "id": "ndp-6",
-    "party": "NDP",
-    "theme": "Fiscalité",
-    "quote": "And, I guarantee I will not raise taxes.",
-    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
-    "sourceUrl": "https://www.saskndp.ca/plan",
     "sourceType": "primaire",
     "capturedAt": "2026-10-01",
     "draft": false
