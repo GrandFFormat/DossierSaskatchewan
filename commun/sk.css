@@ -372,3 +372,31 @@ h2, .section-head h2, .sk-sanct-tete h2{font-weight:600 !important; letter-spaci
 .quick-nav a:nth-of-type(4n+3){background:#ECFCCB !important; color:#4D7C0F !important;}
 .quick-nav a:nth-of-type(4n+4){background:#14532D !important; color:#BEF264 !important;}
 .quick-nav a:hover{filter:brightness(0.95);}
+
+/* --------------------------------------------------------------------------
+   Projets de loi en couleur (Martin, 1er oct. 2026)
+   La couleur dit l'état : vert = sanctionné, ocre = en cours, gris = mort ou retiré,
+   rouge = rejeté. Bande en haut, fond teinté, numéro et résumé dans la même teinte.
+   -------------------------------------------------------------------------- */
+.bill{position:relative; overflow:hidden; padding-top:26px !important; --etat:#16A34A; --etat-fond:#F0FDF4; --etat-filet:#BBF7D0; --etat-txt:#15803D;}
+.bill:has(.status-encours){--etat:#CA8A04; --etat-fond:#FFFBEB; --etat-filet:#FDE68A; --etat-txt:#A16207;}
+.bill:has(.status-mort), .bill:has(.status-retire){--etat:#8A968F; --etat-fond:#F6F8F7; --etat-filet:#E3EAE5; --etat-txt:#56635B;}
+.bill:has(.status-rejete){--etat:#B42318; --etat-fond:#FEF3F2; --etat-filet:#FECDCA; --etat-txt:#B42318;}
+.bill::before{content:""; position:absolute; left:0; right:0; top:0; height:8px; background:var(--etat);}
+.bill{background:var(--etat-fond) !important; border-color:var(--etat-filet) !important;}
+.bill:hover{border-color:var(--etat) !important;}
+.bill .num{background:var(--etat) !important; color:#fff !important;}
+.bill:has(.status-encours) .num{color:#fff !important;}
+.bill-resume-executif{background:rgba(255,255,255,.75); border-left:4px solid var(--etat) !important; border-radius:0 12px 12px 0; padding:10px 14px !important;}
+.bstep.on{background:#fff !important; color:var(--etat-txt) !important; border-color:var(--etat-filet) !important;}
+.bstep.now{background:var(--etat) !important; color:#fff !important; border-color:var(--etat) !important;}
+.bill .expand-hint{color:var(--etat-txt) !important; font-weight:600;}
+.status-rejete{background:#FEE4E2 !important; color:#B42318 !important;}
+.status-retire{background:var(--sk-brume) !important; color:var(--slate) !important;}
+.last-event-box{background:#fff !important; border:1.5px solid var(--etat-filet) !important; border-radius:12px;}
+
+/* Les filtres de la page : chacun dans la couleur de l'état qu'il montre */
+.qf-btn[onclick*="'encours'"]:not(.active){background:#FEF3C7 !important; color:#A16207 !important; border-color:#FDE68A !important;}
+.qf-btn[onclick*="'adoptes'"]:not(.active){background:#DCFCE7 !important; color:#15803D !important; border-color:#BBF7D0 !important;}
+.qf-btn.active{background:var(--sk-nuit) !important; color:var(--sk-lime-clair) !important; border-color:var(--sk-nuit) !important;}
+.brutal-search .bs-icon{background:var(--sk-vert) !important; color:#fff !important;}
