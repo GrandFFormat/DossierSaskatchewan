@@ -123,6 +123,22 @@ function extraireDonnees() {
         votesSurProjets: valeurs.votes.filter((v) => v.billNum).length,
         premier: premier ? premier.name : null,
         derniereSanction: derniere,
+        // L'indice d'activité de l'accueil : les votes nominatifs, mois par mois, du premier au
+        // dernier (les mois sans séance comptent zéro : c'est la vraie forme de l'année).
+        activite: (() => {
+          const mois = valeurs.votes.map((v) => String(v.date || '').slice(0, 7)).filter(Boolean).sort();
+          if (!mois.length) return [];
+          const out = [];
+          let [an, m] = mois[0].split('-').map(Number);
+          const fin = mois[mois.length - 1];
+          for (;;) {
+            const cle = `${an}-${String(m).padStart(2, '0')}`;
+            out.push({ mois: cle, n: mois.filter((x) => x === cle).length });
+            if (cle === fin) break;
+            if (++m > 12) { m = 1; an++; }
+          }
+          return out;
+        })(),
         // Les quatre plus hauts numéros sanctionnés ce jour-là (les plus récents déposés).
         sanctionnees: sanct.filter((b) => dateSanction(b) === derniere)
           .sort((a, c) => c.num - a.num).slice(0, 4)

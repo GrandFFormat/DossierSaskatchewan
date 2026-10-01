@@ -116,9 +116,9 @@
      rendu, donc elle ne partait déjà pas. C'était du ménage, pas un gain. -->
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/commun/dq.css">
-<!-- Nouveau design « long lots » (30 sept. 2026) : Fraunces pour les titres, Karla pour le
-     texte, et la couche commun/sk.css, chargée APRÈS dq.css, qui l'emporte sur l'ancien style. -->
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..800&family=Karla:wght@400..700&display=swap" rel="stylesheet">
+<!-- Design « tuiles » (30 sept. 2026) : Onest pour le texte, JetBrains Mono pour les étiquettes,
+     et la couche commun/sk.css, chargée APRÈS dq.css, qui l'emporte sur l'ancien style. -->
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/commun/sk.css">
 </head>
 <body data-page="apercu" data-donnees="newsItems,petitions,apercuBills,deputesRaw,stats">
@@ -143,7 +143,7 @@
            (Pas de balise écrite en toutes lettres dans ce commentaire : elle
            fausserait les outils qui comptent les titres à l'expression
            régulière.) -->
-      <div class="brand-title"><svg class="sk-logo" viewBox="0 0 40 28" aria-hidden="true"><rect x="0" y="0" width="5" height="26" fill="#6B8C4A"/><rect x="8" y="0" width="5" height="26" fill="#D4AE62"/><rect x="16" y="0" width="5" height="26" fill="#B87440"/><rect x="24" y="0" width="5" height="26" fill="#8BA35E"/><rect x="32" y="20" width="8" height="6" fill="#3E6F9A"/></svg>Dossier<span class="brand-blue">Saskatchewan</span></div>
+      <div class="brand-title"><svg class="sk-logo" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="9" fill="#16A34A"/><path d="M7 18c3.2-5.3 7-8 11-8s7.8 2.7 11 8c-3.2 5.3-7 8-11 8s-7.8-2.7-11-8z" fill="#D9F99D"/><circle cx="18" cy="18" r="3.6" fill="#16A34A"/></svg>Dossier<span class="brand-blue">Saskatchewan</span></div>
       <p>Qui siège, qui légifère, qui vote quoi</p>
     </div>
     <!-- Feuille d'érable : passerelle vers le site fédéral DossierCanada.
@@ -221,51 +221,58 @@ function goToFederal(evt){
   <section class="view active" id="view-apercu">
 
 
-    <!-- NOUVEAU DESIGN « long lots » (Martin, 30 sept. 2026) : les terres en lanières.
-         1. Le résumé : l'essentiel de la page en 30 secondes, cinq cases. Les quatre cases de
-            droite sont remplies par dq.js (renderResumeAccueil) avec les VRAIES données ; leur
-            texte écrit ici n'est que le repli sans JavaScript. -->
+    <!-- DESIGN « tuiles » (Martin, 30 sept. 2026, d'après sa maquette « Cultiver une démocratie
+         lisible »).
+         1. Le résumé : l'essentiel en 30 secondes. Les quatre cases sont remplies par dq.js
+            (renderResumeAccueil) avec les VRAIES données ; le texte écrit ici n'est que le repli. -->
     <div class="sk-resume" aria-label="Summary">
       <div class="sk-resume-tete">
-        <span class="sk-surtitre" data-i18n="resume.label">Summary</span>
+        <span class="sk-etiq" data-i18n="resume.label">Summary</span>
         <b class="sk-resume-titre" data-i18n="resume.h">The essentials in 30 seconds</b>
       </div>
-      <div class="sk-resume-case sk-c1"><b id="resumeT1">Session</b><span id="resumeP1">The Assembly returns on October 27, 2026.</span></div>
-      <div class="sk-resume-case sk-c2"><b id="resumeT2">Bills</b><span id="resumeP2">—</span></div>
-      <div class="sk-resume-case sk-c3"><b id="resumeT3">Votes</b><span id="resumeP3">—</span></div>
-      <div class="sk-resume-case sk-c4"><b id="resumeT4">Cabinet</b><span id="resumeP4">—</span></div>
+      <div class="sk-resume-case"><div class="sk-case-tete"><b id="resumeT1">Session</b><i class="sk-badge sk-badge-ocre" id="resumeB1"></i></div><span id="resumeP1">The Assembly returns on October 27, 2026.</span></div>
+      <div class="sk-resume-case"><div class="sk-case-tete"><b id="resumeT2">Bills</b><i class="sk-badge sk-badge-vert" id="resumeB2"></i></div><span id="resumeP2">—</span></div>
+      <div class="sk-resume-case"><div class="sk-case-tete"><b id="resumeT3">Votes</b><i class="sk-badge sk-badge-gris" id="resumeB3"></i></div><span id="resumeP3">—</span></div>
+      <div class="sk-resume-case"><div class="sk-case-tete"><b id="resumeT4">Cabinet</b><i class="sk-badge sk-badge-vert" id="resumeB4"></i></div><span id="resumeP4">—</span></div>
     </div>
 
-    <!-- 2. Les lots : 61 lanières, une par siège de l'Assemblée (dessinées par dq.js, renderLots),
-         la carte du titre posée dessus, et la rivière dessous. -->
-    <div class="sk-lots">
-      <div class="sk-lots-champ" id="lotsChamp" aria-hidden="true"></div>
-      <div class="sk-lots-carte">
-        <p class="sk-surtitre sk-vert" data-i18n="lots.eyebrow">Survey · 30th Legislature</p>
-        <h1 class="hero-h1 sk-lots-titre">
+    <!-- 2. Le titre, et le champ de tuiles (dessiné par dq.js, renderTuiles) avec l'indice
+         d'activité (les VRAIS votes nominatifs, mois par mois) et les trois compteurs. -->
+    <div class="sk-hero">
+      <div>
+        <span class="sk-pilule" data-i18n="hero.pill">Live data · 30th Legislature</span>
+        <h1 class="hero-h1 sk-hero-titre">
           <span class="hero-sujet sk-masque" data-i18n="sujet.apercu">Saskatchewan's Legislative Assembly in plain language</span>
-          <span data-i18n="lots.h">The Legislative Assembly, lot by lot.</span>
+          <span data-i18n="hero.h1">Growing a democracy</span> <span class="sk-vert-txt" data-i18n="hero.h2">you can read.</span>
         </h1>
-        <p class="sk-lots-texte" data-i18n="lots.p">Who sits, who legislates, who votes what — every MLA on their lot, in plain language, with no judgment and no verdict.</p>
+        <p class="sk-hero-texte" data-i18n="hero.p">Who sits, who legislates, who votes what. Saskatchewan's Legislative Assembly, measured person by person and translated into plain language — with no judgment and no verdict.</p>
+        <div class="sk-boutons">
+          <a class="sk-btn sk-btn-plein" href="/projets-de-loi" data-i18n="hero.cta1">Explore the bills</a>
+          <a class="sk-btn sk-btn-creux" href="/votes" data-i18n="hero.cta2">See the votes</a>
+        </div>
       </div>
-      <div class="sk-rive" aria-hidden="true"></div>
-      <div class="sk-riviere"><span data-i18n="lots.riviere">South Saskatchewan River</span></div>
+      <div class="sk-champ">
+        <div class="sk-tuiles" id="skTuiles" aria-hidden="true"></div>
+        <div class="sk-indice">
+          <span class="sk-etiq" data-i18n="hero.indice">Recorded divisions by month</span>
+          <div class="sk-barres" id="skBarres"></div>
+        </div>
+        <div class="sk-compteurs">
+          <div><b id="statVotes">34</b><span data-i18n="stat.votes">Recorded divisions</span></div>
+          <div><b id="statProjets">88</b><span data-i18n="stat.projets">Bills tracked</span></div>
+          <div><b id="statMinistres">18</b><span data-i18n="stat.ministres">Ministers in Cabinet</span></div>
+        </div>
+      </div>
     </div>
 
-    <!-- 3. Les trois chiffres (mêmes ids qu'avant, peuplés par le JS) -->
-    <div class="sk-chiffres">
-      <div class="sk-chiffre sk-vert-b"><b id="statVotes">34</b><span data-i18n="stat.votes">Recorded divisions</span></div>
-      <div class="sk-chiffre sk-ble-b"><b id="statProjets">88</b><span data-i18n="stat.projets">Bills tracked</span></div>
-      <div class="sk-chiffre sk-ocre-b"><b id="statMinistres">18</b><span data-i18n="stat.ministres">Ministers in Cabinet</span></div>
-    </div>
-
-    <!-- 4. Les dernières lois sanctionnées (renderSanctionnees : les vraies, datées) -->
+    <!-- 3. La récolte récente : les dernières lois sanctionnées (renderSanctionnees : les vraies, datées) -->
     <div class="sk-sanct" id="skSanct" hidden>
       <div class="sk-sanct-tete">
-        <h2 data-i18n="sanct.h">Recently assented</h2>
+        <h2 data-i18n="sanct.h">Recent harvest · laws assented</h2>
         <span class="sk-sanct-date" id="skSanctDate"></span>
       </div>
       <div class="sk-sanct-grille" id="skSanctGrille"></div>
+      <p class="sk-source" data-i18n="sanct.source">Source: legassembly.sk.ca · Unofficial citizen site</p>
     </div>
 
     <!-- Section signature du handoff : bande JAUNE pleine largeur -->

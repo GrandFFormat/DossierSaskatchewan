@@ -1,74 +1,58 @@
-// Fabrique l'icône et l'image de partage du design « long lots », avec Chromium (Playwright).
+// Fabrique l'icône et l'image de partage du design « tuiles », avec Chromium (Playwright).
 //
 //   commun/sk.svg                       l'icône vectorielle (onglet du navigateur)
 //   commun/sk-48.png, sk-180.png, sk-512.png
 //   favicon.ico                         un .ico qui contient le PNG de 48 px
 //   dossier-saskatchewan-cover.png      l'image de partage, 1702 × 630 (Facebook, X, iMessage…)
 //
-// Les lanières de l'image de partage sont tirées de la même graine que celles de l'accueil
-// (commun/dq.js, renderLots) : le même champ, partout.
+// Les tuiles de l'image de partage sont tirées de la même graine et des mêmes couleurs que
+// celles de l'accueil (commun/dq.js, renderTuiles) : le même champ, partout.
 //
 // Usage : node scripts/fabriquer-images.mjs
 
 import { writeFileSync, readFileSync } from 'node:fs';
 import { chromium } from 'playwright';
 
-const COULEURS = ['#6B8C4A', '#4E6B3D', '#8BA35E', '#A9B573', '#D4AE62', '#E3CC92', '#B87440', '#C98F57'];
-
-// L'icône : quatre lanières et le trait bleu de la rivière, sur un carré crème aux coins doux.
-const ICONE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#F4EFE3"/>
-  <rect x="9" y="10" width="8" height="36" fill="#6B8C4A"/>
-  <rect x="20" y="10" width="8" height="36" fill="#D4AE62"/>
-  <rect x="31" y="10" width="8" height="36" fill="#B87440"/>
-  <rect x="42" y="10" width="8" height="36" fill="#8BA35E"/>
-  <rect x="9" y="50" width="46" height="6" fill="#3E6F9A"/>
+// L'icône : le carré vert du logo, l'œil lime au milieu (le même dessin que dans l'en-tête).
+const ICONE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <rect width="36" height="36" rx="9" fill="#16A34A"/>
+  <path d="M7 18c3.2-5.3 7-8 11-8s7.8 2.7 11 8c-3.2 5.3-7 8-11 8s-7.8-2.7-11-8z" fill="#D9F99D"/>
+  <circle cx="18" cy="18" r="3.6" fill="#16A34A"/>
 </svg>
 `;
 
-function lanieres(nombre) {
-  let graine = 1885;
+function tuiles(nombre) {
+  const COULEURS = ['#14532D', '#166534', '#16A34A', '#4D7C0F', '#65A30D', '#84CC16', '#BEF264', '#D9F99D', '#CA8A04'];
+  const POIDS = [3, 2, 2, 2, 2, 2, 2, 1, 1];
+  const sac = COULEURS.flatMap((c, i) => Array(POIDS[i]).fill(c));
+  let graine = 1905;
   const hasard = () => { graine = (graine * 16807) % 2147483647; return (graine - 1) / 2147483646; };
   let html = '';
-  for (let i = 0; i < nombre; i++) {
-    const largeur = 1 + Math.floor(hasard() * 3);
-    const morceaux = 1 + Math.floor(hasard() * 3);
-    let reste = 100, lots = '';
-    for (let k = 0; k < morceaux; k++) {
-      const h = k === morceaux - 1 ? reste : Math.round(reste * (0.3 + hasard() * 0.4));
-      reste -= h;
-      lots += `<span style="flex:${h} 1 0;background:${COULEURS[Math.floor(hasard() * COULEURS.length)]}"></span>`;
-    }
-    html += `<div class="l" style="flex:${largeur} 1 0">${lots}</div>`;
-  }
+  for (let i = 0; i < nombre; i++) html += `<span style="background:${sac[Math.floor(hasard() * sac.length)]}"></span>`;
   return html;
 }
 
 const COUVERTURE = `<!doctype html><html><head><meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..800&family=Karla:wght@400..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0}
-  body{width:1702px;height:630px;background:#E9DFC6;font-family:Karla,sans-serif;position:relative;overflow:hidden}
-  .champ{position:absolute;inset:0 0 120px 0;display:flex;gap:4px}
-  .l{display:flex;flex-direction:column;gap:4px}
-  .l span{display:block}
-  .rive{position:absolute;left:0;right:0;bottom:110px;height:10px;background:#E9DFC6}
-  .riviere{position:absolute;left:0;right:0;bottom:0;height:110px;background:#3E6F9A;display:flex;align-items:center;justify-content:flex-end;padding:0 64px}
-  .riviere span{font-family:Fraunces,serif;font-style:italic;font-weight:600;font-size:34px;color:#F4EFE3}
-  .carte{position:absolute;left:72px;top:64px;width:880px;background:#fff;border-radius:8px;padding:46px 54px 50px;box-shadow:0 14px 40px rgba(30,42,36,.18)}
-  .marque{display:flex;align-items:center;gap:14px;font-family:Fraunces,serif;font-weight:700;font-size:34px;color:#1E2A24}
-  .marque svg{width:46px;height:34px}
-  h1{font-family:Fraunces,serif;font-weight:800;font-size:76px;line-height:1.02;letter-spacing:-0.025em;color:#1E2A24;margin:26px 0 20px}
-  p{font-size:25px;line-height:1.5;color:#5E665F;max-width:36ch}
+  body{width:1702px;height:630px;background:#fff;font-family:Onest,sans-serif;position:relative;overflow:hidden}
+  .texte{position:absolute;left:80px;top:70px;width:860px}
+  .marque{display:flex;align-items:center;gap:16px;font-weight:700;font-size:36px;color:#0F1F17;letter-spacing:-0.02em}
+  .marque svg{width:48px;height:48px}
+  h1{font-weight:600;font-size:92px;line-height:1.02;letter-spacing:-0.035em;color:#0F1F17;margin:56px 0 26px}
+  h1 em{font-style:normal;color:#16A34A}
+  p{font-size:27px;line-height:1.5;color:#56635B;max-width:34ch}
+  .champ{position:absolute;right:60px;top:50px;width:640px;height:530px;border-radius:40px;overflow:hidden;background:#0F1F17}
+  .tuiles{position:absolute;left:-20%;top:-30%;width:140%;display:grid;grid-template-columns:repeat(9,1fr);gap:11px;transform:rotate(-8deg)}
+  .tuiles span{border-radius:9px;aspect-ratio:1/1}
 </style></head><body>
-  <div class="champ">${lanieres(61)}</div>
-  <div class="rive"></div>
-  <div class="riviere"><span>South Saskatchewan River</span></div>
-  <div class="carte">
-    <div class="marque"><svg viewBox="0 0 40 28"><rect x="0" y="0" width="5" height="26" fill="#6B8C4A"/><rect x="8" y="0" width="5" height="26" fill="#D4AE62"/><rect x="16" y="0" width="5" height="26" fill="#B87440"/><rect x="24" y="0" width="5" height="26" fill="#8BA35E"/><rect x="32" y="20" width="8" height="6" fill="#3E6F9A"/></svg>Dossier Saskatchewan</div>
-    <h1>The Legislative Assembly, lot by lot.</h1>
+  <div class="texte">
+    <div class="marque">${ICONE}Dossier Saskatchewan</div>
+    <h1>Growing a democracy <em>you can read.</em></h1>
     <p>Bills, recorded votes and ministers, in plain language. Independent citizen site.</p>
   </div>
+  <div class="champ"><div class="tuiles">${tuiles(81)}</div></div>
 </body></html>`;
 
 // Un .ico n'est qu'un petit en-tête devant une image PNG (format accepté par tous les
