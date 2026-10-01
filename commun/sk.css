@@ -575,3 +575,4 @@ html[data-theme="dark"] .maple-flip{color:#F87171;}
 /* Le nom seul, sans pictogramme (Martin, 1er oct. 2026) : « Saskatchewan » prend le vert du logo. */
 .brand-title .brand-blue{color:var(--sk-vert) !important;}
 html[data-theme="dark"] .brand-title .brand-blue{color:#4ADE80 !important;}
+.ch-papier{margin-top:6px; font-weight:600;}
