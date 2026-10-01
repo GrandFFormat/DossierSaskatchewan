@@ -111,8 +111,10 @@ header.top{background:var(--sk-blanc); border:0; box-shadow:none;}
 .tabs a[data-view="apercu"]{display:none;}   /* le logo ramène à l'accueil (maquette) */
 header.top .tabs a:hover, header.top .tabs a.active, header.top .tabs a[aria-current="page"]{
   background:transparent !important; color:var(--sk-riviere) !important; box-shadow:none !important;
+  border-color:transparent !important; outline:0;
   text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:2px;
 }
+header.top .tabs a{border:1px solid transparent !important;}
 .tabs a.nav-mondossier{background:var(--sk-riviere); color:#fff; border-radius:4px; padding:8px 18px; font-weight:700;}
 header.top .tabs a.nav-mondossier:hover, header.top .tabs a.nav-mondossier.active, header.top .tabs a.nav-mondossier[aria-current="page"]{background:var(--sk-riviere-fonce) !important; color:#fff !important; text-decoration:none;}
 .header-ctrls .theme-toggle{display:none;}   /* thème sombre pas encore dessiné */
@@ -229,6 +231,69 @@ footer{background:var(--sk-blanc) !important; color:var(--slate) !important; bor
 footer a{color:var(--slate) !important;}
 
 /* --------------------------------------------------------------------------
+   Polissage, page par page (relevé automatique des restes de l'ancien style :
+   bordures de 3 px, ombres dures, capitales forcées, aplats noirs)
+   -------------------------------------------------------------------------- */
+
+/* Plus aucune capitale forcée, sauf les surtitres. */
+body *:not(.sk-surtitre):not(.hero-sujet):not(.promo-sur):not(.mission-eyebrow):not(.role-group-title):not(.quick-nav-label):not(.dep-table-head){
+  text-transform:none !important;
+}
+/* Les vrais surtitres de l'ancien site prennent le style des surtitres de la maquette. */
+.promo-sur, .mission-eyebrow, .role-group-title, .quick-nav-label, .dep-table-head{
+  font-family:'Karla', sans-serif !important; font-weight:700 !important; font-size:12.5px !important;
+  letter-spacing:0.16em !important; text-transform:uppercase !important; color:var(--sk-olive) !important;
+  background:transparent !important;
+}
+.band-blue .promo-sur, .band-blue .mission-eyebrow{color:var(--sk-paille) !important;}
+
+/* Les boîtes à bordure épaisse : un filet fin, des coins doux, pas d'ombre dure. */
+.brutal-search, .legend-strip, .promo-compte, .compare-col, .account-box, .diss-cta, .role-card,
+.lexique-item, .legende-presence, .compare-placeholder, .cp-col, .dep-table, .dep-group-banner,
+.prom-methode, .prom-ailleurs, .lire-box, .dq-remonter, .compo-bar, .search-box, .quick-filters .qf-btn{
+  border-width:1px !important; border-style:solid !important; border-color:var(--sk-filet) !important;
+  box-shadow:none !important; border-radius:6px;
+}
+.legend-strip{border-left:0 !important; border-right:0 !important; border-radius:0; background:var(--sk-blanc) !important;}
+.compo-seg{border-left:2px solid var(--sk-blanc) !important; border-top:0 !important; border-bottom:0 !important; border-right:0 !important;}
+.compo-bar{overflow:hidden;}
+.dep-group-banner{border:0 !important;}
+.lire-box.hl{background:var(--sk-creme) !important; border-color:var(--sk-ble) !important;}
+.createur-lead{border-left-color:var(--sk-ble) !important;}
+.dq-remonter{background:var(--sk-blanc) !important; color:var(--ink) !important;}
+
+/* La recherche : un champ simple, l'icône sur fond crème. */
+.brutal-search{background:var(--sk-blanc) !important; overflow:hidden;}
+.brutal-search .bs-icon{background:var(--sk-creme) !important; border:0 !important; border-right:1px solid var(--sk-filet) !important; color:var(--ink) !important;}
+.brutal-search input{border:0 !important; font-family:'Karla', sans-serif; font-size:17px;}
+
+/* Boutons de tri et de filtre */
+.sort-toggle, .qf-btn{font-family:'Karla', sans-serif !important; font-weight:600 !important; letter-spacing:0 !important;}
+.sort-toggle{border:1px solid var(--sk-filet) !important; box-shadow:none !important; border-radius:4px; background:var(--sk-blanc) !important;}
+
+/* Fil d'Ariane, légendes, notes */
+.fil-ariane, .fil-ariane a, .fil-ariane span{font-family:'Karla', sans-serif !important; font-size:14px !important; letter-spacing:0 !important; color:var(--slate) !important;}
+.head-note, .legend-link, .legend-label, .vcc, .news-date, .prom-filter-lbl, .lp-titre, .m-label, .cp-txt, .cp-hint{
+  font-family:'Karla', sans-serif !important; letter-spacing:0.01em !important;
+}
+
+/* Le Lexique : des fiches et des pastilles de catégorie */
+.lexique-item dt{font-family:'Fraunces', Georgia, serif !important; font-weight:700; font-size:20px;}
+.lex-badge, .role-badge{border-radius:999px !important; font-family:'Karla', sans-serif !important; font-weight:700; letter-spacing:0.02em !important;}
+.role-card .role{font-family:'Karla', sans-serif !important; color:var(--slate) !important;}
+
+/* La mission (bande bleue) : une phrase en serif, pas une affiche en capitales */
+.mission-statement{font-family:'Fraunces', Georgia, serif !important; font-weight:600 !important; letter-spacing:-0.01em !important; line-height:1.25 !important;}
+.mission-statement .hl{background:transparent !important; color:var(--sk-paille) !important; box-shadow:none !important;}
+.compare-col{background:rgba(255,255,255,0.06) !important; border-color:rgba(255,255,255,0.25) !important;}
+.compare-col .tag{background:transparent !important; color:var(--sk-paille) !important; border:0 !important; font-family:'Karla', sans-serif; font-weight:700;}
+
+/* Ministres et député·e·s : les noms en serif, les portefeuilles en clair */
+.m-name{font-family:'Fraunces', Georgia, serif !important; font-weight:700 !important; letter-spacing:-0.01em !important;}
+.m-portfolio{font-family:'Karla', sans-serif !important; letter-spacing:0 !important;}
+.dep-group-name, .dep-group-count{font-family:'Karla', sans-serif !important; letter-spacing:0.02em !important;}
+
+/* --------------------------------------------------------------------------
    Téléphone
    -------------------------------------------------------------------------- */
 @media (max-width: 980px){
@@ -240,6 +305,8 @@ footer a{color:var(--slate) !important;}
   .sk-lots-champ{height:240px;}
 }
 @media (max-width: 640px){
+  /* 61 lanières sur 375 px font des fils de 4 px : des rayures, pas des terres. On en garde 21. */
+  .sk-laniere:nth-child(n+22){display:none;}
   .sk-resume{grid-template-columns:1fr;}
   .sk-resume-case{border-right:0;}
   .sk-chiffres{grid-template-columns:1fr; gap:24px;}
