@@ -48,7 +48,7 @@ const COUVERTURE = `<!doctype html><html><head><meta charset="utf-8">
   .tuiles span{border-radius:9px;aspect-ratio:1/1}
 </style></head><body>
   <div class="texte">
-    <div class="marque">${ICONE}<span>DossierSaskatchewan</span></div>
+    <div class="marque"><span>Dossier<span style="color:#16A34A">Saskatchewan</span></span></div>
     <h1>Growing a democracy <em>you can read.</em></h1>
     <p>Bills, recorded votes and ministers, in plain language. Independent citizen site.</p>
   </div>
