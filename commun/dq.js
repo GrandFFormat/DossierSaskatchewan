@@ -209,34 +209,32 @@ const translations = {
     'lire.2.p':"Un vote gagné fait avancer le projet d'une étape. Il ne devient loi qu'après la sanction du lieutenant-gouverneur.",
     'lire.3.h':"Ligne de parti",
     'lire.3.p':"La plupart des votes suivent la consigne du parti. Les votes libres sont rares — et c'est là que le détail nominatif devient intéressant.",
-    'sujet.promesses':"Promesses électorales 2026",
+    'sujet.promesses':"Promesses électorales 2024",
     'prom.l1':"Ce qu'ils promettent,",
     'prom.l2':"ce qu'ils en feront.",
-    'prom.sub':"Les engagements des partis pour l'élection du 5 octobre 2026, chacun avec sa source. <b>Aucun verdict n'est rendu ici</b> — à mesure que la nouvelle Assemblée légiférera, chaque promesse sera placée à côté de ce qui a réellement été fait.",
+    'prom.sub':"Les engagements des deux partis à l'élection du 28 octobre 2024, chacun avec sa source. <b>Aucun verdict n'est rendu ici</b> : la promesse est citée telle quelle, à côté de ce que l'Assemblée en a fait.",
     'prom.method':"Notre méthode :",
     'prom.m1':"Citation exacte",
     'prom.m2':"Source liée",
     'prom.m3':"Aucun jugement",
     'prom.byparty':"Par parti",
     'prom.bytheme':"Par sujet",
-    'prom.caq':"Une seule source est acceptée ici : les <b>documents officiels du parti</b>, cités mot pour mot. <b>Au plus 8 engagements par parti</b>, et la <b>Coalition avenir Québec</b> n'apparaît pas du tout — son site demande aux outils automatisés comme le nôtre de ne pas le lire, et nous respectons cette demande plutôt que de la contourner.",
+    'prom.caq':"Une seule source est acceptée ici : les <b>documents officiels du parti</b>, cités mot pour mot. Les deux partis représentés à l'Assemblée y sont : le <b>Saskatchewan Party</b>, qui forme le gouvernement, et le <b>NPD</b>, l'opposition officielle.",
     'prom.meth.h':"D'où viennent ces promesses",
-    'prom.meth.1':"<b>Des partis eux-mêmes.</b> Chaque citation est tirée d'un document publié par le parti — plateforme électorale ou annonce de campagne — et reproduite mot pour mot. Une citation qui ne se retrouve pas telle quelle dans la source est rejetée automatiquement. Le lien « Voir la source » de chaque carte mène à l'original.",
-    'prom.meth.2':"<b>Ce ne sont pas les « promesses phares ».</b> Au plus 8 par parti, choisies automatiquement parmi les plus concrètes — montants, cibles, échéances. Rien ici ne classe les engagements par importance. Un engagement central formulé sans chiffre peut donc ne pas y figurer, et les partis en ont publié davantage.",
-    'prom.meth.3':"<b>La période couverte n'est pas la même pour tous.</b> Québec solidaire, le Parti libéral et le Parti conservateur publient une plateforme complète, lue en entier. Le Parti Québécois n'en publie pas : ses engagements sont lus dans ses annonces de campagne depuis la dissolution du 27 août.",
-    'prom.meth.4':"<b>La Coalition avenir Québec est absente.</b> Elle a publié des engagements sur son site, mais celui-ci demande aux outils automatisés de ne pas le lire. Nous ne contournons pas cette demande. Elle entrera dans la liste dès qu'une source lisible existera.",
-    'prom.meth.5':"<b>Rien n'est tiré des médias.</b> Un engagement annoncé en conférence de presse mais jamais publié par le parti n'apparaît pas ici. La presse québécoise a retiré son contenu de l'usage par l'IA et nos demandes d'autorisation sont restées sans réponse.",
+    'prom.meth.1':"<b>Des partis eux-mêmes.</b> Chaque citation vient de la plateforme 2024 publiée sur le site du parti, reproduite mot pour mot. Un script vérifie que chaque citation se retrouve telle quelle dans la source ; sinon, elle est retirée. Le lien « Voir la source » de chaque carte mène à l'original.",
+    'prom.meth.2':"<b>Ce ne sont pas toutes les promesses.</b> Le Saskatchewan Party a publié une liste d'engagements ; le NPD, cinq grands axes et une garantie sur les impôts. Nous reprenons ces listes telles quelles, sans les classer par importance. Les plateformes complètes en contiennent davantage.",
+    'prom.meth.3':"<b>Les deux plateformes ne se lisent pas de la même façon.</b> Celle du Saskatchewan Party est une liste de mesures précises ; celle du NPD regroupe ses mesures par grand thème. Une carte du NPD peut donc couvrir plusieurs engagements à la fois.",
+    'prom.meth.4':"<b>Le gouvernement et l'opposition n'ont pas le même pouvoir.</b> Le Saskatchewan Party a gagné l'élection et dépose la plupart des projets de loi. Le NPD siège dans l'opposition : ses engagements ne deviennent des lois que si l'Assemblée adopte un projet qui les reprend.",
+    'prom.meth.5':"<b>Rien n'est tiré des médias.</b> Un engagement annoncé en conférence de presse mais jamais publié par le parti n'apparaît pas ici.",
     'prom.meth.fin':"Autrement dit : une absence dans cette liste ne dit rien de ce qu'un parti pense. Pour la liste complète, suivez le lien vers la source.",
-    'prom.ail.h':"Les comparateurs des médias",
-    'prom.ail.p':"Plusieurs salles de rédaction ont bâti leur propre comparateur, avec des moyens que nous n'avons pas. <b>Nous ne reprenons pas leur contenu</b> : ces médias ont retiré leurs textes de l'usage par l'intelligence artificielle, et nos demandes d'autorisation sont restées sans réponse. Nous respectons ce choix. Mais un lien n'est pas une reproduction — alors les voici, parce qu'ils vous seront utiles.",
-    'prom.next.h':"Et après le 5 octobre ?",
-    'prom.next.p':"La nouvelle Assemblée siégera à partir du <b>17 novembre 2026</b>. À partir de là, chaque projet de loi déposé viendra se placer à côté de la promesse qui lui correspond — et l'absence de projet de loi sur un engagement sera tout aussi visible. C'est le suivi que personne ne fait passé la semaine électorale.",
+    'prom.next.h':"Et maintenant ?",
+    'prom.next.p':"L'Assemblée reprend le <b>27 octobre 2026</b> pour la 3e session de la 30e législature. La prochaine étape de cette page : placer chaque projet de loi à côté de la promesse qui lui correspond — et rendre tout aussi visible l'absence de projet sur un engagement.",
     'sujet.lexique':"Lexique de l'Assemblée législative",
     'lexhero.l1':"Le jargon,",
     'lexhero.l2':"décodé.",
     'lexhero.sub':"« Sanction royale », « étude détaillée », « bâillon »… Le Parlement a son vocabulaire. <b>Ici, chaque terme est expliqué comme à un·e ami·e.</b>",
     'h.promesses':"Promesses électorales",
-    'prom.lex':"Les engagements des partis pour l'élection du 5 octobre 2026, chacun avec sa source — et, à mesure que la nouvelle Assemblée légiférera, ce qui en aura réellement été fait. Aucun verdict : la promesse et l'action, côte à côte.",
+    'prom.lex':"Les engagements des partis à l'élection du 28 octobre 2024, chacun avec sa source. Aucun verdict : la promesse, citée mot pour mot.",
     'prom.lex.cta':"Voir les promesses →",
     'quicknav.label':"Aller à :",
     'quicknav.personnes':"Qui gravite autour",
@@ -430,9 +428,9 @@ const translations = {
     'diss.cta':"What the parties are promising →",
     'prom.l1':"What they promise,",
     'prom.l2':"what they'll do with it.",
-    'prom.sub':"The parties' commitments for the October 5, 2026 election, each with its source. <b>No verdict is issued here</b> — as the new Assembly legislates, each promise will be placed next to what was actually done.",
+    'prom.sub':"The two parties' commitments in the October 28, 2024 election, each with its source. <b>No verdict is issued here</b>: each promise is quoted as written, next to what the Assembly has done about it.",
     'h.promesses':"Election promises",
-    'prom.lex':"The parties' commitments for the October 5, 2026 election, each with its source — and, as the new Assembly legislates, what was actually done about them. No verdict: the promise and the action, side by side.",
+    'prom.lex':"The parties' commitments in the October 28, 2024 election, each with its source. No verdict: the promise, quoted word for word.",
     'prom.lex.cta':"See the promises →",
     'prom.byparty':"By party",
     'prom.bytheme':"By topic",
@@ -440,18 +438,16 @@ const translations = {
     'prom.m1':"Exact quote",
     'prom.m2':"Source linked",
     'prom.m3':"No judgment",
-    'prom.caq':"Only one source is accepted here: the <b>party's own official documents</b>, quoted word for word. <b>At most 8 commitments per party</b>, and the <b>Coalition avenir Québec</b> does not appear at all — its website asks automated tools like ours not to read it, and we honour that request rather than work around it.",
+    'prom.caq':"Only one source is accepted here: the <b>party's own official documents</b>, quoted word for word. Both parties in the Assembly are here: the <b>Saskatchewan Party</b>, which forms the government, and the <b>NDP</b>, the Official Opposition.",
     'prom.meth.h':"Where these promises come from",
-    'prom.meth.1':"<b>From the parties themselves.</b> Every quote is taken from a document the party published — an electoral platform or a campaign announcement — and reproduced word for word. A quote that cannot be found verbatim in the source is rejected automatically. The “See the source” link on each card leads to the original.",
-    'prom.meth.2':"<b>These are not the “flagship” promises.</b> At most 8 per party, selected automatically from the most concrete ones — amounts, targets, deadlines. Nothing here ranks commitments by importance. A central commitment stated without a figure may therefore be missing, and the parties have published more.",
-    'prom.meth.3':"<b>The period covered is not the same for everyone.</b> Québec solidaire, the Liberal Party and the Conservative Party publish a full platform, read in its entirety. The Parti Québécois does not: its commitments are read from its campaign announcements since the August 27 dissolution.",
-    'prom.meth.4':"<b>The Coalition avenir Québec is absent.</b> It has published commitments on its website, but that site asks automated tools not to read it. We do not work around that request. It will be added as soon as a readable source exists.",
-    'prom.meth.5':"<b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here. Quebec news organizations have opted their content out of AI use, and our permission requests remain unanswered.",
+    'prom.meth.1':"<b>From the parties themselves.</b> Every quote comes from the 2024 platform published on the party's website, reproduced word for word. A script checks that each quote appears exactly as written in the source; if not, it is removed. The “See the source” link on each card leads to the original.",
+    'prom.meth.2':"<b>These are not all the promises.</b> The Saskatchewan Party published a list of commitments; the NDP, five main pillars and a guarantee on taxes. We use those lists as published, without ranking them by importance. The full platforms contain more.",
+    'prom.meth.3':"<b>The two platforms aren't written the same way.</b> The Saskatchewan Party's is a list of specific measures; the NDP's groups its measures by broad theme. One NDP card can therefore cover several commitments at once.",
+    'prom.meth.4':"<b>Government and opposition don't have the same power.</b> The Saskatchewan Party won the election and introduces most bills. The NDP sits in opposition: its commitments only become law if the Assembly passes a bill that carries them.",
+    'prom.meth.5':"<b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here.",
     'prom.meth.fin':"In short: an absence from this list says nothing about what a party thinks. For the full list, follow the link to the source.",
-    'prom.ail.h':"Comparison tools from news outlets",
-    'prom.ail.p':"Several newsrooms have built their own promise comparison tools, with resources we do not have. <b>We do not reproduce their content</b>: these outlets have opted their material out of AI use, and our permission requests remain unanswered. We respect that choice. But a link is not a reproduction — so here they are, because they will be useful to you.",
-    'prom.next.h':"And after October 5?",
-    'prom.next.p':"The new Assembly sits from <b>November 17, 2026</b>. From then on, every bill introduced will be placed next to the promise it matches — and the absence of a bill on a commitment will be just as visible. That is the follow-up nobody does past election week.",
+    'prom.next.h':"What's next?",
+    'prom.next.p':"The Assembly returns on <b>October 27, 2026</b> for the third session of the 30th Legislature. The next step for this page: placing each bill next to the promise it matches — and making the absence of a bill on a commitment just as visible.",
     'dissp.h':"⚠️ These bills never became law",
     'dissp.p':"The Assembly was dissolved on <b>August 27, 2026</b>. Any bill that had not been <b>assented to</b> therefore <b>died on the Order Paper</b> — that is the Assembly's official term. On the cards we say it plainly: <b>“dead on arrival”</b> if the bill never got past introduction, <b>“died along the way”</b> if it got further. Either way, it must start over before the new Assembly (November 17, 2026). Bills marked “Assented to” did become law.",
     'cal.p1':"The Assembly doesn't sit year-round. Its Standing Orders set two working periods: a spring period starting the 2nd Tuesday of February (16 weeks, plus 2 intensive weeks), and a fall period starting the 3rd Tuesday of September (10 weeks, plus 2 intensive weeks). Outside these periods the Assembly is adjourned — barring a special sitting called by the Premier.",
@@ -510,7 +506,7 @@ const translations = {
     'sujet.ministres':"Saskatchewan ministers and MLAs",
     'sujet.projets':"Saskatchewan bills",
     'sujet.votes':"Recorded divisions in the Legislative Assembly",
-    'sujet.promesses':"2026 election promises",
+    'sujet.promesses':"2024 election promises",
     'sujet.lexique':"Legislative Assembly glossary",
     'fil.accueil':"Home",
     'fil.ministres':"Ministers and MLAs",
@@ -1538,13 +1534,14 @@ async function adminReset(billId){
 /* Couleurs de sujet. Les thèmes courants ont une couleur fixe ; tout nouveau
    thème ajouté dans data/promises.json reçoit automatiquement une couleur
    stable de la palette de secours (dérivée du nom, donc toujours la même). */
+// Les couleurs des sujets : celles du champ de tuiles de l'accueil (design « tuiles », 1er oct. 2026).
 const themeColors = {
-  'Santé':'#E23A3A', 'Logement':'#046A38', 'Transport':'#1E9E5A',
-  'Finances publiques':'#FFD24D', 'Éducation':'#FF7B33', 'Environnement':'#12429B',
-  'Économie':'#7C5CD6', 'Famille':'#D4537E', 'Culture':'#00A5CF',
-  'Immigration':'#B45309', 'Énergie':'#0891B2', 'Justice':'#6B7280', 'Agriculture':'#84A31E', 'Aînés':'#7C3AED', 'Fiscalité':'#A16207', 'Infrastructures':'#475569',
+  'Santé':'#16A34A', 'Logement':'#CA8A04', 'Éducation':'#4D7C0F', 'Familles':'#84CC16',
+  'Sécurité':'#14532D', 'Économie':'#166534', 'Fiscalité':'#A16207', 'Coût de la vie':'#BEF264',
 };
 const themeFallback = ['#8B5CF6','#0891B2','#C2410C','#4D7C0F','#BE185D','#0F766E'];
+const THEMES_EN = {'Fiscalité':'Taxes', 'Logement':'Housing', 'Éducation':'Education', 'Familles':'Families', 'Santé':'Health', 'Sécurité':'Public safety', 'Économie':'Economy', 'Coût de la vie':'Cost of living'};
+const themeLabel = (t) => currentLang === 'en' ? (THEMES_EN[t] || t) : t;
 function themeColor(t){
   if(themeColors[t]) return themeColors[t];
   let h = 0; for(let i=0; i<String(t).length; i++) h = (h*31 + String(t).charCodeAt(i)) % 9973;
@@ -1597,19 +1594,11 @@ function renderPromFilters(){
       const bg = partyColors[k] || '#8B8578';
       return `<button class="qf-btn ${sel ? 'qf-sel' : ''}${zero}" style="background:${bg}; color:${partyText(k)};" onclick="setPromParty('${k}')">${label}${compteur(n)}</button>`;
     }).join('');
-    // « Médias » à la suite des partis : ce n'est PAS un filtre, c'est un renvoi
-    // vers les comparateurs des salles de rédaction, en bas de page. Il est posé
-    // ici parce que c'est là que regarde quelqu'un qui compare — mais il doit se
-    // distinguer des partis, sinon on croit à un filtre qui ne filtre rien :
-    // d'où le trait pointillé, l'absence de couleur de parti et la flèche.
-    partyEl.innerHTML += `<button class="qf-btn qf-renvoi" onclick="allerAuxComparateurs()" title="${isEn
-      ? 'Comparison tools built by newsrooms, at the bottom of the page'
-      : 'Les comparateurs des salles de rédaction, en bas de page'}">${isEn ? 'Media' : 'Médias'}${compteur(4)} ↓</button>`;
   }
   if(themeEl){
     const sujets = [...new Set(promises.map(p => p.theme))].sort();
     const sousParti = (p) => promParty === 'tous' || p.party === promParty;
-    themeEl.innerHTML = [['tous', tous], ...sujets.map(x => [x, x])].map(([k, label]) => {
+    themeEl.innerHTML = [['tous', tous], ...sujets.map(x => [x, themeLabel(x)])].map(([k, label]) => {
       const sel = promTheme === k;
       const esc = String(k).replace(/'/g, "\\'");
       const n = k === 'tous' ? nb(sousParti) : nb(p => p.theme === k && sousParti(p));
@@ -1619,12 +1608,6 @@ function renderPromFilters(){
       return `<button class="qf-btn ${sel ? 'qf-sel' : ''}${zero}" style="background:${bg}; color:${readableOn(bg)};" onclick="setPromTheme('${esc}')">${label}${compteur(n)}</button>`;
     }).join('');
   }
-}
-
-// Renvoi vers les comparateurs des médias, en bas de la page Promesses.
-function allerAuxComparateurs(){
-  const el = document.getElementById('prom-ailleurs');
-  if(el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function renderPromises(){
@@ -1641,7 +1624,7 @@ function renderPromises(){
   const noteEl = document.getElementById('promResultNote');
   if(titreEl) titreEl.textContent = promParty === 'tous' && promTheme === 'tous'
     ? (isEn ? 'All promises' : 'Toutes les promesses')
-    : [promParty !== 'tous' ? promParty : null, promTheme !== 'tous' ? promTheme : null].filter(Boolean).join(' · ');
+    : [promParty !== 'tous' ? promParty : null, promTheme !== 'tous' ? themeLabel(promTheme) : null].filter(Boolean).join(' · ');
   if(noteEl) noteEl.textContent = `${liste.length} ${isEn ? (liste.length > 1 ? 'promises' : 'promise') : (liste.length > 1 ? 'promesses' : 'promesse')}`;
   if(!promises.length){
     el.innerHTML = `<div class="no-results">${isEn ? 'No promise recorded yet.' : 'Aucune promesse saisie pour l\'instant.'}</div>`;
@@ -1659,20 +1642,20 @@ function renderPromises(){
       ? (isEn ? 'Primary source (party)' : 'Source primaire (parti)')
       : (isEn ? 'Journalistic source' : 'Source journalistique');
     return `<div class="prom-card">
-      <div class="prom-top">${badge}<button class="prom-theme-pill" style="background:${themeColor(p.theme)}; color:${readableOn(themeColor(p.theme))};" onclick="setPromTheme('${String(p.theme).replace(/'/g, "\\'")}')" title="${isEn ? 'Filter by this topic' : 'Filtrer par ce sujet'}">${p.theme}</button>${brouillon}</div>
+      <div class="prom-top">${badge}<button class="prom-theme-pill" style="background:${themeColor(p.theme)}; color:${readableOn(themeColor(p.theme))};" onclick="setPromTheme('${String(p.theme).replace(/'/g, "\\'")}')" title="${isEn ? 'Filter by this topic' : 'Filtrer par ce sujet'}">${themeLabel(p.theme)}</button>${brouillon}</div>
       <p class="prom-quote">« ${p.quote} »</p>
       <div class="prom-grid">
         <div class="prom-col">
           <span class="lbl">${isEn ? 'The promise' : 'La promesse'}</span>
-          <p>${p.sourceLabel}</p>
+          <p>${isEn ? (p.sourceLabelEn || p.sourceLabel) : p.sourceLabel}</p>
           <p class="prom-srctype">${typeSrc} · ${isEn ? 'captured on' : 'captée le'} ${p.capturedAt}</p>
           <a href="${p.sourceUrl}" target="_blank" rel="noopener">${isEn ? 'See the source' : 'Voir la source'}</a>
         </div>
         <div class="prom-col">
           <span class="lbl att">${isEn ? 'The action' : 'L\'action'}</span>
           <p class="prom-none">${isEn
-            ? 'Nothing yet. The new Assembly sits from November 17, 2026.'
-            : 'Rien encore. La nouvelle Assemblée siège à partir du 17 novembre 2026.'}</p>
+            ? 'Not yet matched to a bill. Linking each promise to the bills of the 30th Legislature is the next step for this page.'
+            : 'Pas encore rapprochée d’un projet de loi. Relier chaque promesse aux projets de la 30e législature est la prochaine étape de cette page.'}</p>
         </div>
       </div>
     </div>`;

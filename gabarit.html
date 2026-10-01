@@ -590,11 +590,11 @@ function goToFederal(evt){
   <section class="view" id="view-promesses">
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.promesses">2026 election promises</span>
+        <span class="hero-sujet" data-i18n="sujet.promesses">2024 election promises</span>
         <span data-i18n="prom.l1">What they promise,</span>
         <span class="hero-outline" data-i18n="prom.l2">what they'll do with it.</span>
       </h2>
-      <p class="view-hero-sub" data-i18n="prom.sub">The parties' commitments for the October 5, 2026 election, each with its source. <b>No verdict is issued here</b> — as the new Assembly legislates, each promise will be placed next to what was actually done.</p>
+      <p class="view-hero-sub" data-i18n="prom.sub">The two parties' commitments in the October 28, 2024 election, each with its source. <b>No verdict is issued here</b>: each promise is quoted as written, next to what the Assembly has done about it.</p>
     </div>
 
 
@@ -618,9 +618,8 @@ function goToFederal(evt){
       </div>
     </div>
 
-    <!-- Pourquoi la CAQ est absente. Une absence non expliquée se lit comme un
-         parti pris : tant qu'elle n'a pas publié de plateforme, on dit pourquoi. -->
-    <div class="info-box" data-i18n="prom.caq">Only one source is accepted here: the <b>party's own official documents</b>, quoted word for word. <b>At most 8 commitments per party</b>, and the <b>Coalition avenir Québec</b> does not appear at all — its website asks automated tools like ours not to read it, and we honour that request rather than work around it.</div>
+    <!-- D'où viennent les promesses, en une phrase (la clé garde son nom d'origine, prom.caq). -->
+    <div class="info-box" data-i18n="prom.caq">Only one source is accepted here: the <b>party's own official documents</b>, quoted word for word. Both parties in the Assembly are here: the <b>Saskatchewan Party</b>, which forms the government, and the <b>NDP</b>, the Official Opposition.</div>
     <div class="section-head min-group-head" id="promResultHead">
       <div><h2 id="promResultTitle">Toutes les promesses</h2></div>
       <span class="head-note" id="promResultNote"></span>
@@ -637,36 +636,18 @@ function goToFederal(evt){
     <div class="prom-methode" id="prom-methode">
       <h3 data-i18n="prom.meth.h">Where these promises come from</h3>
       <ul>
-        <li data-i18n="prom.meth.1"><b>From the parties themselves.</b> Every quote is taken from a document the party published — an electoral platform or a campaign announcement — and reproduced word for word. A quote that cannot be found verbatim in the source is rejected automatically. The “See the source” link on each card leads to the original.</li>
-        <li data-i18n="prom.meth.2"><b>These are not the “flagship” promises.</b> At most 8 per party, selected automatically from the most concrete ones — amounts, targets, deadlines. Nothing here ranks commitments by importance. A central commitment stated without a figure may therefore be missing, and the parties have published more.</li>
-        <li data-i18n="prom.meth.3"><b>The period covered is not the same for everyone.</b> Québec solidaire, the Liberal Party and the Conservative Party publish a full platform, read in its entirety. The Parti Québécois does not: its commitments are read from its campaign announcements since the August 27 dissolution.</li>
-        <li data-i18n="prom.meth.4"><b>The Coalition avenir Québec is absent.</b> It has published commitments on its website, but that site asks automated tools not to read it. We do not work around that request. It will be added as soon as a readable source exists.</li>
-        <li data-i18n="prom.meth.5"><b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here. Quebec news organizations have opted their content out of AI use, and our permission requests remain unanswered.</li>
+        <li data-i18n="prom.meth.1"><b>From the parties themselves.</b> Every quote comes from the 2024 platform published on the party's website, reproduced word for word. A script checks that each quote appears exactly as written in the source; if not, it is removed. The “See the source” link on each card leads to the original.</li>
+        <li data-i18n="prom.meth.2"><b>These are not all the promises.</b> The Saskatchewan Party published a list of commitments; the NDP, five main pillars and a guarantee on taxes. We use those lists as published, without ranking them by importance. The full platforms contain more.</li>
+        <li data-i18n="prom.meth.3"><b>The two platforms aren't written the same way.</b> The Saskatchewan Party's is a list of specific measures; the NDP's groups its measures by broad theme. One NDP card can therefore cover several commitments at once.</li>
+        <li data-i18n="prom.meth.4"><b>Government and opposition don't have the same power.</b> The Saskatchewan Party won the election and introduces most bills. The NDP sits in opposition: its commitments only become law if the Assembly passes a bill that carries them.</li>
+        <li data-i18n="prom.meth.5"><b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here.</li>
       </ul>
       <p class="prom-methode-fin" data-i18n="prom.meth.fin">In short: an absence from this list says nothing about what a party thinks. For the full list, follow the link to the source.</p>
     </div>
 
-    <!-- Les comparateurs des médias. On ne reprend pas leur contenu — ils ont
-         retiré leurs textes de l'usage par l'IA et nos demandes sont sans
-         réponse — mais UN LIEN N'EST PAS UNE REPRODUCTION. Priver le lecteur de
-         travaux qui l'aideraient à décider, par prudence excessive, irait contre
-         la raison d'être du site.
-         ⚠️ Ces quatre adresses ont été vérifiées (réponse 200) le 2026-09-12.
-         Si l'une tombe, la retirer plutôt que de la laisser pourrir. -->
-    <div class="prom-ailleurs" id="prom-ailleurs">
-      <h3 data-i18n="prom.ail.h">Comparison tools from news outlets</h3>
-      <p data-i18n="prom.ail.p">Several newsrooms have built their own promise comparison tools, with resources we do not have. <b>We do not reproduce their content</b>: these outlets have opted their material out of AI use, and our permission requests remain unanswered. We respect that choice. But a link is not a reproduction — so here they are, because they will be useful to you.</p>
-      <ul class="prom-ailleurs-liste">
-        <li><a href="https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/" target="_blank" rel="noopener"><b>Radio-Canada</b> — Comparez les plateformes électorales des partis</a></li>
-        <li><a href="https://www.ledevoir.com/interactif/2026-08-28/promesses-elections-quebec/index.html" target="_blank" rel="noopener"><b>Le Devoir</b> — Comparez les promesses et programmes des partis</a></li>
-        <li><a href="https://www.lapresse.ca/elections-quebecoises/campagne-electorale/toutes-les-promesses-des-partis/2026-09-10/habitation-et-itinerance.php" target="_blank" rel="noopener"><b>La Presse</b> — « Toutes les promesses des partis », dossier en douze volets</a></li>
-        <li><a href="https://www.noovo.info/nouvelles/politique/elections-quebec/article/les-premieres-promesses-electorales-de-la-caq-du-plq-du-pq-de-qs-et-du-pcq/" target="_blank" rel="noopener"><b>Noovo Info</b> — Les premières promesses électorales des cinq partis</a></li>
-      </ul>
-    </div>
-
     <div class="band band-yellow bleed" id="band-promesses-suite">
-      <h2 data-i18n="prom.next.h">And after October 5?</h2>
-      <p data-i18n="prom.next.p">The new Assembly sits from <b>November 17, 2026</b>. From then on, every bill introduced will be placed next to the promise it matches — and the absence of a bill on a commitment will be just as visible. That is the follow-up nobody does past election week.</p>
+      <h2 data-i18n="prom.next.h">What's next?</h2>
+      <p data-i18n="prom.next.p">The Assembly returns on <b>October 27, 2026</b> for the third session of the 30th Legislature. The next step for this page: placing each bill next to the promise it matches — and making the absence of a bill on a commitment just as visible.</p>
     </div>
   </section>
 
@@ -700,7 +681,7 @@ function goToFederal(evt){
          décision : on lui en donnera un si la page est visitée souvent). -->
     <div class="section-head" id="sec-promesses"><div><h2 data-i18n="h.promesses">Election promises</h2></div></div>
     <div class="info-box">
-      <span data-i18n="prom.lex">The parties' commitments for the October 5, 2026 election, each with its source — and, as the new Assembly legislates, what was actually done about them. No verdict: the promise and the action, side by side.</span>
+      <span data-i18n="prom.lex">The parties' commitments in the October 28, 2024 election, each with its source. No verdict: the promise, quoted word for word.</span>
       <div><a class="diss-cta" href="/promesses" data-i18n="prom.lex.cta" style="margin-top:12px;">See the promises →</a></div>
     </div>
 
@@ -3784,8 +3765,163 @@ const petitions = [];
 
 /* PROMISES_DATA_START — généré par scrapers/build-promises-data.js à partir de
    data/promises.json (saisi à la main). Éditer le JSON, pas ce bloc.
-   Généré le 2026-09-30T23:41:34.181Z */
-const promises = [];
+   Généré le 2026-10-01T01:46:46.631Z */
+const promises = [
+  {
+    "id": "skp-1",
+    "party": "SKP",
+    "theme": "Fiscalité",
+    "quote": "Reducing income tax for everyone, saving a family of four $3400 and a senior couple $3100 over four years",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-2",
+    "party": "SKP",
+    "theme": "Logement",
+    "quote": "Creating a new Home Renovation Tax Credit",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-3",
+    "party": "SKP",
+    "theme": "Logement",
+    "quote": "Increasing the First-Time Homebuyers Tax Credit",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-4",
+    "party": "SKP",
+    "theme": "Éducation",
+    "quote": "Increasing the Graduate Retention Program, saving post-secondary grads up to $24,000 if they stay and work in Saskatchewan after graduation",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-5",
+    "party": "SKP",
+    "theme": "Familles",
+    "quote": "Doubling the Active Families Benefit to help with the cost of children’s sports, arts and cultural activities",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-6",
+    "party": "SKP",
+    "theme": "Santé",
+    "quote": "Extending glucose monitoring coverage for diabetes to seniors and young adults age 25 and under",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-7",
+    "party": "SKP",
+    "theme": "Sécurité",
+    "quote": "Strengthening laws and increasing the number of police officers to make communities and neighbourhoods safer",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "skp-8",
+    "party": "SKP",
+    "theme": "Économie",
+    "quote": "Keeping the small business tax at one per cent",
+    "sourceLabel": "Saskatchewan Party — « Our Plan for a Strong Economy and a Bright Future », plateforme du 12 octobre 2024",
+    "sourceUrl": "https://saskparty.com/saskatchewan_party_releases_election_platform/",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "ndp-1",
+    "party": "NDP",
+    "theme": "Coût de la vie",
+    "quote": "We will make your life more affordable – by cutting the gas tax, getting rid of PST on groceries and children's clothing, making more affordable housing available and delivering a school lunch program for kids.",
+    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
+    "sourceUrl": "https://www.saskndp.ca/plan",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "ndp-2",
+    "party": "NDP",
+    "theme": "Santé",
+    "quote": "We will ensure better healthcare – by investing to hire more doctors, nurses and healthcare workers, and listening to local voices to ensure the best healthcare outcomes.",
+    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
+    "sourceUrl": "https://www.saskndp.ca/plan",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "ndp-3",
+    "party": "NDP",
+    "theme": "Éducation",
+    "quote": "We will improve education – by making a generational investment to address classroom size and complexity, building schools faster to address overcrowding, and respecting teachers, school boards and education workers and working with them as partners in education.",
+    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
+    "sourceUrl": "https://www.saskndp.ca/plan",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "ndp-4",
+    "party": "NDP",
+    "theme": "Économie",
+    "quote": "We will grow the economy – by implementing a Hire Saskatchewan plan to ensure public infrastructure dollars remain in the province, by supporting small businesses by freezing their taxes and supporting workers with more jobs and bigger paycheques.",
+    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
+    "sourceUrl": "https://www.saskndp.ca/plan",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "ndp-5",
+    "party": "NDP",
+    "theme": "Sécurité",
+    "quote": "We will be tough on crime and the causes of crime – by increasing funding to Saskatchewan police forces and mental health and addictions services, offering a rebate program for security equipment to homes, places of worship and small businesses, and scrapping the Sask. Party’s Marshals Service, which has seen millions of dollars spent and not a single new cop hired.",
+    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
+    "sourceUrl": "https://www.saskndp.ca/plan",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  },
+  {
+    "id": "ndp-6",
+    "party": "NDP",
+    "theme": "Fiscalité",
+    "quote": "And, I guarantee I will not raise taxes.",
+    "sourceLabel": "NPD de la Saskatchewan — « It's Time for Change », plateforme électorale 2024",
+    "sourceUrl": "https://www.saskndp.ca/plan",
+    "sourceType": "primaire",
+    "capturedAt": "2026-10-01",
+    "draft": false
+  }
+];
 /* PROMISES_DATA_END */
 </script>
 <script src="/commun/dq.js"></script>
