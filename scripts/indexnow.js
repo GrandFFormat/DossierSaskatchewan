@@ -13,7 +13,7 @@
 import { readFileSync } from 'node:fs';
 
 const HOTE = 'dossiersaskatchewan.ca';
-const CLE = '11c9d53816cf182c6f38b2604d6d8444';
+const CLE = '5e8ac7e60ebd910aed45a4f6d89f5bb3';
 
 const adresses = [...readFileSync('sitemap.xml', 'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1].trim());
 if (!adresses.length) throw new Error('sitemap.xml ne contient aucune adresse');
