@@ -335,3 +335,40 @@ html[data-theme="dark"] body{background:var(--sk-blanc); color:var(--ink);}
 header.top .tabs a{font-size:17px !important; font-weight:500 !important; padding:9px 20px !important;}
 header.top .tabs a.nav-mondossier{font-weight:600 !important;}
 h2, .section-head h2, .sk-sanct-tete h2{font-weight:600 !important; letter-spacing:-0.025em !important;}
+
+/* --------------------------------------------------------------------------
+   Lexique en couleur (Martin, 1er oct. 2026 : « le lexique manque de couleur »)
+   Chaque catégorie prend une couleur du champ de tuiles de l'accueil :
+     Processus = vert · Votes = ocre · Personnes et rôles = lime · Outils citoyens = forêt
+   -------------------------------------------------------------------------- */
+.lexique-item{position:relative; padding-top:26px !important; overflow:hidden;}
+.lexique-item::before{content:""; position:absolute; left:0; right:0; top:0; height:8px; background:var(--cat, var(--sk-vert));}
+.lexique-item dt::before{
+  content:""; display:inline-block; width:14px; height:14px; border-radius:4px; margin-right:10px;
+  background:var(--cat, var(--sk-vert)); transform:rotate(-8deg); vertical-align:1px;
+}
+.lexique-item:has(.cat-proc){--cat:#16A34A; background:#F0FDF4 !important; border-color:#BBF7D0 !important;}
+.lexique-item:has(.cat-votes){--cat:#CA8A04; background:#FFFBEB !important; border-color:#FDE68A !important;}
+.lexique-item:has(.cat-pers){--cat:#84CC16; background:#F7FEE7 !important; border-color:#D9F99D !important;}
+.lexique-item:has(.cat-outils){--cat:#14532D; background:#F1F5F2 !important; border-color:#CFDDD3 !important;}
+.lex-badge{border:0 !important; padding:4px 12px !important;}
+.lex-badge.cat-proc{background:#16A34A !important; color:#fff !important;}
+.lex-badge.cat-votes{background:#CA8A04 !important; color:#fff !important;}
+.lex-badge.cat-pers{background:#BEF264 !important; color:#14532D !important;}
+.lex-badge.cat-outils{background:#14532D !important; color:#BEF264 !important;}
+
+/* Qui gravite autour : une tuile de couleur par groupe, à gauche de chaque fiche */
+.role-card{position:relative; padding-left:34px !important; overflow:hidden;}
+.role-card::before{content:""; position:absolute; left:0; top:0; bottom:0; width:12px; background:#16A34A;}
+.role-group-title[data-i18n="pers.g2"] ~ .role-card::before{background:#CA8A04;}
+.role-group-title[data-i18n="pers.g3"] ~ .role-card::before{background:#14532D;}
+.role-card .role{color:var(--sk-vert-fonce) !important; font-weight:600;}
+.role-badge{background:var(--sk-lime-fond) !important; color:var(--sk-vert-fonce) !important; border:0 !important;}
+
+/* Aller à : des pastilles de couleur */
+.quick-nav a{border:0 !important; border-radius:999px !important; font-weight:500;}
+.quick-nav a:nth-of-type(4n+1){background:#DCFCE7 !important; color:#15803D !important;}
+.quick-nav a:nth-of-type(4n+2){background:#FEF3C7 !important; color:#A16207 !important;}
+.quick-nav a:nth-of-type(4n+3){background:#ECFCCB !important; color:#4D7C0F !important;}
+.quick-nav a:nth-of-type(4n+4){background:#14532D !important; color:#BEF264 !important;}
+.quick-nav a:hover{filter:brightness(0.95);}
