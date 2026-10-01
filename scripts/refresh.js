@@ -48,6 +48,10 @@ const SCRAPERS = [
   ['Scrape : procès-verbaux (legassembly.sk.ca)', ['scrapers/proces-verbaux.js']],
   ['Scrape : projets de loi (depuis les procès-verbaux)', ['scrapers/bills.js']],
   ['Scrape : votes nominatifs (depuis les procès-verbaux)', ['scrapers/votes.js']],
+  // Résumés IA (payants) : seulement les projets nouveaux ou dont le texte a changé — le cache
+  // (data/resumes.json) évite de repayer. « soft » : sans clé ou si l'API est en panne, le reste
+  // du site se met à jour quand même, et la carte dit simplement « résumé non disponible ».
+  ['Résumés IA des projets de loi (Claude Sonnet 5)', ['scrapers/resumes.js'], { soft: true }],
 ];
 
 const failed = [];      // sources critiques → déclenchent l'alerte (run rouge)

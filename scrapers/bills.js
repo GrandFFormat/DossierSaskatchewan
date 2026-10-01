@@ -109,7 +109,11 @@ async function main() {
 
   const bills = [];
   for (const b of [...projets.values()].sort((a, c) => a.num - c.num)) {
-    const id = `${LEGISLATURE}-${numeroSession(b.session)}-${b.num}`;
+    // L'identifiant est un NOMBRE : la page l'écrit tel quel dans ses boutons
+    // (toggleFollowBill(300606, …)) et le compare avec Number(). Une chaîne comme « 30-2-606 »
+    // y devenait une soustraction. Législature × 10 000 + numéro : unique (un numéro ne sert
+    // qu'une fois par législature) et stable d'une session à l'autre.
+    const id = LEGISLATURE * 10000 + b.num;
     const sessionFinie = b.session !== derniereSession;
     const status = b.dates.sanction ? 'sanctionne'
       : b.dates.retire ? (b.motifRetrait === 'rejete' ? 'rejete' : 'retire')

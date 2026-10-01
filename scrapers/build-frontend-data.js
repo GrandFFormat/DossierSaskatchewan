@@ -77,6 +77,34 @@ function omnibusToHtml(text, en) {
   return (tete.length ? `<ul class="bill-summary-list">${tete.map((l) => `<li>${l}</li>`).join('')}</ul>` : '') + html;
 }
 
+const echapperHtml = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+
+// Saskatchewan : les résumés viennent de data/resumes.json (scrapers/resumes.js), un par langue,
+// avec en tête le RÉSUMÉ EXÉCUTIF — une phrase qui dit ce que fait le projet — puis les puces.
+// Sous les puces, une ligne dit d'où vient le résumé : c'est une IA, sur le texte tel que déposé,
+// parfois sur le texte anglais faute de version française, parfois sur les notes explicatives,
+// parfois sur une partie seulement d'un texte trop long. Jamais présenté comme officiel.
+function resumeSkHtml(r, langue) {
+  if (!r) return null;
+  const fr = langue === 'fr';
+  if (r.sansContenu || !r.puces?.length) {
+    return fr ? '<p><em>Texte trop court ou trop technique pour un résumé honnête : voir le texte officiel.</em></p>'
+      : '<p><em>Too short or too technical for an honest summary: see the official text.</em></p>';
+  }
+  const origine = [];
+  if (r.source === 'notes') origine.push(fr ? 'à partir des notes explicatives officielles (le texte du projet est trop long)' : 'from the official explanatory notes (the bill itself is too long)');
+  else if (r.source === 'texte-anglais') origine.push('à partir du texte anglais, seule version officielle');
+  if (r.tronque) origine.push(fr ? 'sur la première partie seulement d\'un texte très long' : 'from the first part only of a very long text');
+  // La carte dit déjà « résumé généré par IA à partir du texte tel que présenté » : ici, seulement
+  // ce qui est propre à ce résumé-là (langue lue, notes explicatives, troncature).
+  const note = origine.length
+    ? (fr ? `Rédigé ${origine.join(', ')}.` : `Written ${origine.join(', ')}.`)
+    : null;
+  return `<p class="resume-executif">${echapperHtml(r.resumeExecutif)}</p>`
+    + `<ul class="bill-summary-list">${r.puces.map((p) => `<li>${echapperHtml(p)}</li>`).join('')}</ul>`
+    + (note ? `<p class="resume-origine">${echapperHtml(note)}</p>` : '');
+}
+
 function summaryToHtml(bill) {
   if (bill.omnibus && bill.summary) return omnibusToHtml(bill.summary, false);
   return bulletsToHtml(bill.summary, '<p><em>Résumé non disponible pour ce projet de loi.</em></p>');
@@ -84,22 +112,33 @@ function summaryToHtml(bill) {
 
 function main() {
   const data = JSON.parse(readFileSync(IN_PATH, 'utf-8'));
+  const resumesIA = existsSync('data/resumes.json') ? JSON.parse(readFileSync('data/resumes.json', 'utf-8')).resumes ?? {} : {};
 
-  const bills = data.bills.map((b) => ({
+  const bills = data.bills.map((b) => {
+    const r = resumesIA[b.id] ?? {};
+    return ({
     id: b.id,
     num: b.num,
-    title: b.title,
+    // En français, le titre français OFFICIEL quand le projet est bilingue ; sinon le titre
+    // anglais, le seul qui existe (on ne traduit pas un titre de loi).
+    title: b.titleFrOfficiel || b.title,
     status: b.status,
     step: b.step,
     note: b.note,
-    sponsor: shortSponsorName(b.sponsor) || (b.type === 'Public du gouvernement' ? 'Gouvernement' : null),
-    summary: summaryToHtml(b),
-    summaryAiGenerated: Boolean(b.summaryAiGenerated),
+    sponsor: shortSponsorName(b.sponsor) || (b.type === 'Government Bill' ? 'Government' : null),
+    summary: resumeSkHtml(r.fr, 'fr') ?? summaryToHtml(b),
+    summaryAiGenerated: Boolean(r.fr || r.en),
+    // La phrase qui s'affiche sur la carte, sous le titre, sans rien déplier.
+    resumeExecutif: r.fr && !r.fr.sansContenu ? r.fr.resumeExecutif : null,
+    resumeExecutifEn: r.en && !r.en.sansContenu ? r.en.resumeExecutif : null,
     url: b.url,
     urlEn: b.urlEn || null,
-    titleEn: b.titleEn || null,
+    titleEn: b.titleEn || b.title || null,
+    titreFrOfficiel: Boolean(b.titleFrOfficiel),
+    // Amendé en comité : la page prévient que le résumé porte sur le texte d'avant.
+    amende: Boolean(b.amende),
     noteEn: b.noteEn || null,
-    summaryEn: b.summaryEn ? (b.omnibus ? omnibusToHtml(b.summaryEn, true) : bulletsToHtml(b.summaryEn, null)) : null,
+    summaryEn: resumeSkHtml(r.en, 'en') ?? (b.summaryEn ? (b.omnibus ? omnibusToHtml(b.summaryEn, true) : bulletsToHtml(b.summaryEn, null)) : '<p><em>No summary available for this bill yet.</em></p>'),
     lastActivity: b.lastActivity,
     presentedOn: b.presentedOn || null,
     // Omnibus (25 sept. 2026, scrapers/bill-summaries.js) : combien de lois et règlements le
@@ -108,7 +147,8 @@ function main() {
     nbLois: Array.isArray(b.loisTouchees) ? b.loisTouchees.length : null,
     omnibus: Boolean(b.omnibus),
     _lois: Array.isArray(b.loisTouchees) ? b.loisTouchees : [],
-  }));
+  });
+  });
 
   bills.sort((a, b) => {
     if (!a.lastActivity && !b.lastActivity) return 0;
