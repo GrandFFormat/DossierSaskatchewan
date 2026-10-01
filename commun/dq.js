@@ -88,9 +88,13 @@ const translations = {
     'nav.close':"Fermer",'nav.villes':"Villes",'nav.apercu':"Aperçu",'nav.ministres':"Ministres",'nav.projets':"Projets de loi",
     'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député·e",
     'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
-    'stat.ministres':"Ministres",'stat.projets':"Projets de loi",'stat.votes':"Votes enregistrés",
+    'stat.ministres':"Ministres au Conseil",'stat.projets':"Projets de loi suivis",'stat.votes':"Votes nominatifs",
     'cal.status':"● L'Assemblée reprend le 27 octobre 2026 · 3e session de la 30e législature",
     'etape.1':"Dépôt", 'etape.2':"Débat et comité", 'etape.3':"Adoption / Sanction",
+    'resume.label':"Résumé", 'resume.h':"L’essentiel en 30 secondes",
+    'lots.eyebrow':"Arpentage · 30e législature", 'lots.h':"L’Assemblée législative, lot par lot.",
+    'lots.p':"Qui siège, qui légifère, qui vote quoi — chaque député·e sur sa parcelle, en langage clair, sans jugement ni verdict.",
+    'lots.riviere':"rivière Saskatchewan Sud", 'sanct.h':"Lois sanctionnées",
     'h.composition':"Composition — 61 sièges",
     'h.billsrecent':"Projets de loi récemment actifs",
     'h.ministres':"Ministres et député·e·s",
@@ -327,7 +331,7 @@ const translations = {
     'nav.close':"Close",'nav.villes':"Cities",'nav.apercu':"Overview",'nav.ministres':"Ministers",'nav.projets':"Bills",
     'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MLA",
     'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
-    'stat.ministres':"Ministers",'stat.projets':"Bills",'stat.votes':"Votes recorded",
+    'stat.ministres':"Ministers in Cabinet",'stat.projets':"Bills tracked",'stat.votes':"Recorded divisions",
     'h.composition':"Composition — 61 seats",
     'h.billsrecent':"Recently active bills",
     'h.ministres':"Ministers and MLAs",
@@ -420,6 +424,10 @@ const translations = {
     // What's new / calendar
     'cal.status':"● The Assembly returns on October 27, 2026 · third session of the 30th Legislature",
     'etape.1':"First reading", 'etape.2':"Debate and committee", 'etape.3':"Third reading / Assent",
+    'resume.label':"Summary", 'resume.h':"The essentials in 30 seconds",
+    'lots.eyebrow':"Survey · 30th Legislature", 'lots.h':"The Legislative Assembly, lot by lot.",
+    'lots.p':"Who sits, who legislates, who votes what — every MLA on their lot, in plain language, with no judgment and no verdict.",
+    'lots.riviere':"South Saskatchewan River", 'sanct.h':"Recently assented",
     'cal.title':"Sitting calendar",
     // Dissolution de la 43e législature (2026-08-27) — à retirer le 17 nov. 2026.
     'diss.h':"⚠️ The Assembly is dissolved — election October 5",
@@ -771,6 +779,7 @@ function applyLanguage(){
   renderDeputes(document.getElementById('searchMinistres')?.value);
   renderVotes();
   renderApercuBills();
+  renderAccueilSk();
   renderApercuPetitions();
   renderNews();
   renderChallenged();
@@ -3057,6 +3066,86 @@ function renderApercuBills(){
   if(!document.getElementById('apercuBills')) return;   // vue absente de cette page
   { const _e = document.getElementById('apercuBills'); if(_e) _e.innerHTML = bills.slice(0,4).map(b=>billCard(b,'apercu')).join(''); }
 }
+
+/* ---------------- ACCUEIL « LONG LOTS » (Saskatchewan, 30 sept. 2026) ----------------
+   Le design de Martin : les terres en lanières, la rivière dessous. Trois morceaux, tous tirés
+   des vraies données de stats.json (scripts/build-section-pages.js) — rien n'est écrit à la main. */
+const echapperTexte = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const dateLisible = (iso, isEn) => {
+  if(!iso) return '';
+  const [a, m, j] = iso.split('-').map(Number);
+  return new Date(Date.UTC(a, m - 1, j)).toLocaleDateString(isEn ? 'en-CA' : 'fr-CA', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+};
+
+// 1. « L'essentiel en 30 secondes » : quatre cases, chacune une phrase vraie.
+function renderResumeAccueil(){
+  if(!document.getElementById('resumeP2') || !stats) return;
+  const isEn = currentLang === 'en';
+  const poser = (id, texte) => { const e = document.getElementById(id); if(e) e.textContent = texte; };
+  poser('resumeT1', isEn ? 'Session' : 'Session');
+  poser('resumeP1', isEn ? 'The Assembly returns on October 27, 2026, for the third session of the 30th Legislature.'
+                         : 'L’Assemblée reprend le 27 octobre 2026, pour la 3e session de la 30e législature.');
+  poser('resumeT2', isEn ? 'Bills' : 'Projets de loi');
+  if(stats.sanctionnes !== undefined){
+    poser('resumeP2', isEn ? `${stats.projets} this legislature: ${stats.sanctionnes} assented, ${stats.enCours} still before the Assembly.`
+                           : `${stats.projets} depuis le début de la législature : ${stats.sanctionnes} sanctionnés, ${stats.enCours} encore devant l’Assemblée.`);
+  }
+  poser('resumeT3', isEn ? 'Votes' : 'Votes');
+  poser('resumeP3', isEn ? `${stats.votes} recorded divisions. Most bills pass without one, by voice vote.`
+                         : `${stats.votes} votes nominatifs. La plupart des projets passent sans, de vive voix.`);
+  poser('resumeT4', isEn ? 'Cabinet' : 'Conseil des ministres');
+  poser('resumeP4', stats.premier
+    ? (isEn ? `${stats.ministres} ministers, led by Premier ${stats.premier}.` : `${stats.ministres} ministres, dirigés par le premier ministre ${stats.premier}.`)
+    : (isEn ? `${stats.ministres} ministers.` : `${stats.ministres} ministres.`));
+}
+
+// 2. Les lots : 61 lanières, une par siège. Le dessin est TIRÉ d'une graine fixe : le même motif à
+// chaque visite (un champ qui changerait à chaque chargement aurait l'air d'un bogue). Chaque
+// lanière est coupée en un à trois lots, comme les terres d'un rang.
+function renderLots(){
+  const champ = document.getElementById('lotsChamp');
+  if(!champ || champ.childElementCount) return;
+  const COULEURS = ['#6B8C4A', '#4E6B3D', '#8BA35E', '#A9B573', '#D4AE62', '#E3CC92', '#B87440', '#C98F57'];
+  let graine = 1885;   // n'importe quel nombre fixe
+  const hasard = () => { graine = (graine * 16807) % 2147483647; return (graine - 1) / 2147483646; };
+  const SIEGES = 61;
+  let html = '';
+  for(let i = 0; i < SIEGES; i++){
+    const largeur = 1 + Math.floor(hasard() * 3);           // 1 à 3 unités de large
+    const morceaux = 1 + Math.floor(hasard() * 3);          // 1 à 3 lots dans la lanière
+    let reste = 100, lots = '';
+    for(let k = 0; k < morceaux; k++){
+      const h = k === morceaux - 1 ? reste : Math.round(reste * (0.3 + hasard() * 0.4));
+      reste -= h;
+      lots += `<span style="flex:${h} 1 0;background:${COULEURS[Math.floor(hasard() * COULEURS.length)]}"></span>`;
+    }
+    html += `<div class="sk-laniere" style="flex:${largeur} 1 0">${lots}</div>`;
+  }
+  champ.innerHTML = html;
+}
+
+// 3. Les dernières lois sanctionnées : quatre tuiles, le numéro en grand, le titre dessous.
+function renderSanctionnees(){
+  const bloc = document.getElementById('skSanct');
+  const grille = document.getElementById('skSanctGrille');
+  if(!bloc || !grille || !stats || !stats.sanctionnees || !stats.sanctionnees.length) return;
+  const isEn = currentLang === 'en';
+  const COULEURS = ['#6B8C4A', '#D4AE62', '#4E6B3D', '#B87440'];
+  const CLAIR = ['#fff', '#1E2A24', '#fff', '#fff'];   // le texte qui se lit sur chaque couleur
+  grille.innerHTML = stats.sanctionnees.map((b, i) => {
+    const titre = isEn ? (b.titleEn || b.title) : b.title;
+    const resume = isEn ? b.resumeEn : b.resume;
+    return `<a class="sk-tuile" href="/projets-de-loi?pl=${b.num}${paramLangue(false)}">
+      <span class="sk-tuile-num" style="background:${COULEURS[i % 4]};color:${CLAIR[i % 4]}">${b.num}</span>
+      <span class="sk-tuile-texte"><b>${echapperTexte(titre)}</b>${resume ? `<small>${echapperTexte(resume)}</small>` : ''}</span>
+    </a>`;
+  }).join('');
+  const d = document.getElementById('skSanctDate');
+  if(d) d.textContent = (isEn ? 'Royal Assent, ' : 'Sanction royale, ') + dateLisible(stats.derniereSanction, isEn);
+  bloc.hidden = false;
+}
+
+function renderAccueilSk(){ renderResumeAccueil(); renderLots(); renderSanctionnees(); }
 
 // Projets « challengés » : affiche PUBLIQUEMENT les projets de loi ayant atteint
 // le seuil de demandes d'explications, via l'agrégat Supabase flag_counts() qui

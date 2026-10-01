@@ -702,7 +702,7 @@
      Couche d'overrides chargée après les styles historiques ; les
      phases suivantes raffinent chaque vue.
      ================================================================ */
-  *{border-radius:0 !important;} /* tout est carré — spec du handoff */
+  /* (Saskatchewan, 30 sept. 2026 : plus de « tout est carré » — le design « long lots » a des coins doux, voir commun/sk.css.) */
 
   /* ---------- TICKER ---------- */
   .ticker{background:var(--ink); color:var(--paper); overflow:hidden; border-bottom:3px solid var(--ink);}
