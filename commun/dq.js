@@ -222,7 +222,7 @@ const translations = {
     'prom.caq':"On suit ici les promesses du <b>Saskatchewan Party</b>, qui a remporté l'élection et gouverne avec la majorité des sièges : c'est lui qui a le pouvoir de les réaliser. Une seule source est acceptée : <b>ses documents officiels</b>, cités mot pour mot.",
     'prom.meth.h':"D'où viennent ces promesses",
     'prom.meth.1':"<b>Du parti lui-même.</b> Chaque citation vient de la plateforme 2024 publiée sur le site du Saskatchewan Party, reproduite mot pour mot. Un script vérifie que chaque citation se retrouve telle quelle dans la source ; sinon, elle est retirée. Le lien « Voir la source » de chaque carte mène à l'original.",
-    'prom.meth.2':"<b>Ce ne sont pas toutes les promesses.</b> Nous reprenons la liste d'engagements publiée par le parti avec sa plateforme, telle quelle, sans la classer par importance. La plateforme complète en contient davantage.",
+    'prom.meth.2':"<b>Ce ne sont pas toutes les promesses.</b> Nous reprenons les 12 engagements que le parti a mis en avant en publiant sa plateforme, tels quels, sans la classer par importance. La plateforme complète en contient davantage.",
     'prom.meth.3':"<b>Pourquoi le gouvernement seulement.</b> Le parti majoritaire dépose la plupart des projets de loi et peut les faire adopter : ses promesses sont celles qu'on peut vérifier dans les faits. L'opposition n'a pas ce pouvoir.",
     'prom.meth.4':"<b>Une absence ne dit rien.</b> Un engagement qui n'est pas dans cette liste peut figurer dans la plateforme complète.",
     'prom.meth.5':"<b>Rien n'est tiré des médias.</b> Un engagement annoncé en conférence de presse mais jamais publié par le parti n'apparaît pas ici.",
@@ -441,7 +441,7 @@ const translations = {
     'prom.caq':"This page follows the promises of the <b>Saskatchewan Party</b>, which won the election and governs with a majority of seats: it has the power to deliver them. Only one source is accepted: <b>its official documents</b>, quoted word for word.",
     'prom.meth.h':"Where these promises come from",
     'prom.meth.1':"<b>From the party itself.</b> Every quote comes from the 2024 platform published on the Saskatchewan Party's website, reproduced word for word. A script checks that each quote appears exactly as written in the source; if not, it is removed. The “See the source” link on each card leads to the original.",
-    'prom.meth.2':"<b>These are not all the promises.</b> We use the list of commitments the party published with its platform, as published, without ranking it by importance. The full platform contains more.",
+    'prom.meth.2':"<b>These are not all the promises.</b> We use the 12 commitments the party highlighted when it released its platform, as published, without ranking it by importance. The full platform contains more.",
     'prom.meth.3':"<b>Why only the government.</b> The majority party introduces most bills and can get them passed: its promises are the ones that can be checked against what actually happens. The opposition doesn't have that power.",
     'prom.meth.4':"<b>An absence says nothing.</b> A commitment missing from this list may still be in the full platform.",
     'prom.meth.5':"<b>Nothing is taken from the news media.</b> A commitment announced at a press conference but never published by the party does not appear here.",
@@ -1537,10 +1537,10 @@ async function adminReset(billId){
 // Les couleurs des sujets : celles du champ de tuiles de l'accueil (design « tuiles », 1er oct. 2026).
 const themeColors = {
   'Santé':'#16A34A', 'Logement':'#CA8A04', 'Éducation':'#4D7C0F', 'Familles':'#84CC16',
-  'Sécurité':'#14532D', 'Économie':'#166534', 'Fiscalité':'#A16207', 'Coût de la vie':'#BEF264',
+  'Sécurité':'#14532D', 'Économie':'#166534', 'Fiscalité':'#A16207', 'Coût de la vie':'#BEF264', 'Aînés':'#65A30D',
 };
 const themeFallback = ['#8B5CF6','#0891B2','#C2410C','#4D7C0F','#BE185D','#0F766E'];
-const THEMES_EN = {'Fiscalité':'Taxes', 'Logement':'Housing', 'Éducation':'Education', 'Familles':'Families', 'Santé':'Health', 'Sécurité':'Public safety', 'Économie':'Economy', 'Coût de la vie':'Cost of living'};
+const THEMES_EN = {'Fiscalité':'Taxes', 'Logement':'Housing', 'Éducation':'Education', 'Familles':'Families', 'Santé':'Health', 'Sécurité':'Public safety', 'Économie':'Economy', 'Coût de la vie':'Cost of living', 'Aînés':'Seniors'};
 const themeLabel = (t) => currentLang === 'en' ? (THEMES_EN[t] || t) : t;
 function themeColor(t){
   if(themeColors[t]) return themeColors[t];
