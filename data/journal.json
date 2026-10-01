@@ -3,6 +3,18 @@
     "date": "2026-10-01",
     "volet": "site",
     "fr": {
+      "titre": "DossierSaskatchewan sur Facebook",
+      "texte": "Le site a maintenant sa page Facebook, facebook.com/dossiersaskatchewan, pour suivre les nouveaux projets de loi et les votes. Le lien est au bas de chaque page."
+    },
+    "en": {
+      "titre": "DossierSaskatchewan on Facebook",
+      "texte": "The site now has its own Facebook page, facebook.com/dossiersaskatchewan, to follow new bills and votes. The link is at the bottom of every page."
+    }
+  },
+  {
+    "date": "2026-10-01",
+    "volet": "site",
+    "fr": {
       "titre": "DossierSaskatchewan est en ligne",
       "texte": "Le site ouvre sur dossiersaskatchewan.ca. Il suit l'Assemblée législative de la Saskatchewan : les 61 député·e·s, les 18 ministres, les 88 projets de loi de la 30e législature et les 34 votes nominatifs, lus dans les documents officiels de l'Assemblée et mis à jour automatiquement deux fois par jour."
     },

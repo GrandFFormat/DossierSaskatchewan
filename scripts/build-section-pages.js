@@ -280,7 +280,7 @@ const ORGANISATION = {
   // Le logo : les quatre lanières du design « long lots » (scripts/fabriquer-images.mjs).
   logo: { '@type': 'ImageObject', url: `${BASE}/commun/sk-512.png`, width: 512, height: 512 },
   // Aucun compte à soi pour l'instant (pas de page Facebook ni de dépôt public).
-  sameAs: [],
+  sameAs: ['https://www.facebook.com/dossiersaskatchewan/'],
 };
 function jsonLd(page) {
   const donnees = page.url === '/'
