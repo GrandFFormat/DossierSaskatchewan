@@ -3,7 +3,7 @@
 <head>
 <!-- Pas de Google Analytics pour l'instant. La copie de DQ portait l'identifiant de DQ : les
      visites de ce site seraient allées dans les statistiques de DQ. Pour en remettre, créer
-     une propriété à part, puis ramener ici le bloc gtag de DQ et commun/consentement.js (la
+     une propriété à part, puis ramener ici, depuis DQ, le bloc gtag et commun/consentement.js (la
      bannière de consentement), qui sont prêts. -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -489,7 +489,7 @@ function goToFederal(evt){
     <div class="band band-yellow bleed" id="band-challenge-explainer">
       <h2 data-i18n="chexp.h">✋ What is “challenging”?</h2>
       <p data-i18n="chexp.p1">One click on “Ask for an explanation” = a citizen request for the bill's sponsor to explain it in plain language, and for us to keep an eye on it together.</p>
-      <p data-i18n="chexp.p2">An account (email) is required — one request per person, no anonymous requests. 🔥 At 1,000, we push for an official petition.</p>
+      <p data-i18n="chexp.p2">An account (email) is required — one request per person, no anonymous requests. Each bill&#39;s total is public: it shows which bills people want explained.</p>
     </div>
 
     <!-- Reste des projets (3e et suivants) — la bande jaune ci-dessus
@@ -979,7 +979,7 @@ const ministers = [
    ce bloc à la main : relancer `node scrapers/build-frontend-data.js` à la place.
    Les résumés ne sont PAS ici : ils vivent dans data/bills-resumes-{fr,en}.json et se chargent
    au premier dépliement de carte ou à la première recherche.
-   Généré le 2026-10-01T00:06:42.664Z */
+   Généré le 2026-10-01T00:17:08.076Z */
 const bills = [
   {
     "id": 300024,

@@ -189,7 +189,7 @@ const translations = {
     'legend.link':"C'est quoi ces étapes ? → Lexique",
     'chexp.h':"✋ C'est quoi, « challenger » ?",
     'chexp.p1':"Un clic sur « Demander une explication » = une demande citoyenne pour que le parrain du projet l'explique en langage clair, et pour qu'on le garde à l'œil ensemble.",
-    'chexp.p2':"<b>Un compte (courriel) est requis</b> — une demande par personne, aucune demande anonyme. 🔥 À <b>1 000</b>, on pousse pour une pétition officielle.",
+    'chexp.p2':"<b>Un compte (courriel) est requis</b> — une demande par personne, aucune demande anonyme. Le total de chaque projet est public : il montre quels projets les gens veulent voir expliqués.",
     'sujet.votes':"Votes nominatifs à l'Assemblée législative",
     'votehero.l1':"Qui a voté",
     'votehero.l2':"pour, contre, absent.",
@@ -373,7 +373,7 @@ const translations = {
     'legend.link':"What are these stages? → Glossary",
     'chexp.h':"✋ What is “challenging”?",
     'chexp.p1':"One click on “Ask for an explanation” = a citizen request for the bill's sponsor to explain it in plain language, and for us to keep an eye on it together.",
-    'chexp.p2':"An account (email) is required — one request per person, no anonymous requests. 🔥 At 1,000, we push for an official petition.",
+    'chexp.p2':"An account (email) is required — one request per person, no anonymous requests. Each bill's total is public: it shows which bills people want explained.",
     // Pendant la dissolution : même geste, promesse différente. Aucune Assemblée ne peut
     // recevoir une pétition avant la rentrée — on dit donc ce qui arrive vraiment aux demandes.
     'chexp.p2.dissous':"<b>An account (email) is required</b> — one request per person, no anonymous requests. The Assembly is dissolved: these bills died on the order paper. Requests are still recorded and counted — when it returns on 17 November, they will show what people wanted explained.",
@@ -961,22 +961,18 @@ async function toggleFollowDepute(id){
   renderDeputes(kw);
 }
 
-// Suivi des projets de loi (21 sept. 2026). Rangé avec les projets des villes, dans
-// dossiers_suivis (ville « assemblee », dossier_id « pl:<id> ») : même limite (3 en tout,
-// trigger Postgres), visible dans Mon dossier. Connexion requise : un suivi anonyme se perdrait.
-// (L'ancien suivi par `follows` type 'bill' n'a jamais pu s'enregistrer : la contrainte de
-// la table n'accepte que 'minister' et 'depute'.)
+// Suivi des projets de loi. Saskatchewan : table à part, sk_bills_suivis (scripts/
+// supabase-saskatchewan.sql), une ligne par projet suivi, 10 au plus (trigger Postgres),
+// visible dans Mon dossier. Connexion requise : un suivi anonyme se perdrait. (DQ range les
+// siens dans dossiers_suivis, dont le plafond compte AUSSI ce qu'on suit au Québec.)
 let followedBills = {};
 async function loadFollowedBills(){
   followedBills = {};
   if(!currentUser) return;
-  const { data, error } = await supabaseClient.from('dossiers_suivis')
-    .select('dossier_id').eq('user_id', currentUser.id).eq('ville', 'assemblee');
+  const { data, error } = await supabaseClient.from('sk_bills_suivis')
+    .select('bill_id').eq('user_id', currentUser.id);
   if(error){ console.error('loadFollowedBills:', error); return; }
-  for(const row of (data || [])){
-    const m = /^pl:(\d+)$/.exec(row.dossier_id);
-    if(m) followedBills[m[1]] = true;
-  }
+  for(const row of (data || [])) followedBills[row.bill_id] = true;
 }
 async function toggleFollowBill(billId, btnId){
   if(!currentUser){ goToAccount(); return; }
@@ -985,21 +981,18 @@ async function toggleFollowBill(billId, btnId){
   const b = bills.find(x => x.id === billId);
   if(!b) return;
   if(btn) btn.disabled = true;
-  const cle = { user_id: currentUser.id, ville: 'assemblee', dossier_id: 'pl:' + billId };
   const { error } = followedBills[billId]
-    ? await supabaseClient.from('dossiers_suivis').delete().eq('user_id', cle.user_id).eq('ville', cle.ville).eq('dossier_id', cle.dossier_id)
-    : await supabaseClient.from('dossiers_suivis').upsert(
-        { ...cle, numero: 'PL ' + b.num, objet: String(b.title || '').slice(0, 600) },
-        { onConflict: 'user_id,ville,dossier_id', ignoreDuplicates: true });
+    ? await supabaseClient.from('sk_bills_suivis').delete().eq('user_id', currentUser.id).eq('bill_id', billId)
+    : await supabaseClient.from('sk_bills_suivis').upsert(
+        { user_id: currentUser.id, bill_id: billId, numero: 'Bill ' + b.num, objet: String(b.titleEn || b.title || '').slice(0, 600) },
+        { onConflict: 'user_id,bill_id', ignoreDuplicates: true });
   if(error){
     console.error('toggleFollowBill:', error);
     if(btn) btn.disabled = false;
-    // Le plafond vient du trigger : « limite de N suivis atteinte ». Un seul quota pour tout ce
-    // qu'on suit — projets de loi, projets de ville, mots-clés, organismes. (« projets » est
-    // l'ancien message, gardé tant que le nouveau script SQL n'est pas exécuté.)
+    // Le plafond vient du trigger : « limite de 10 projets suivis atteinte ».
     const plafond = Number(/limite de (\d+) (?:projets )?suivis/.exec(error.message || '')?.[1]) || 0;
     if(plafond){
-      alert(isEn ? `Limit reached: ${plafond} things followed in all (bills and city projects together). Remove one in My file first.` : `Limite atteinte : ${plafond} suivis en tout (projets de loi et projets de ville ensemble). Retirez-en un dans Mon dossier d’abord.`);
+      alert(isEn ? `Limit reached: you can follow up to ${plafond} bills. Remove one in My file first.` : `Limite atteinte : on peut suivre jusqu’à ${plafond} projets de loi. Retirez-en un dans Mon dossier d’abord.`);
     } else if(/consultation/i.test(error.message || '')){
       alert(isEn ? 'This is a reading-station account: it cannot change what it follows.' : 'Ce compte est un poste de consultation : il ne peut pas modifier ses suivis.');
     } else {
@@ -1060,12 +1053,12 @@ async function upsertFollow(personType, personKey, isFollowed){
   try{
     let error;
     if(isFollowed){
-      ({ error } = await supabaseClient.from('follows').upsert(
+      ({ error } = await supabaseClient.from('sk_follows').upsert(
         { user_id: currentUser.id, person_type: personType, person_key: personKey },
         { onConflict: 'user_id,person_type,person_key' }
       ));
     } else {
-      ({ error } = await supabaseClient.from('follows').delete()
+      ({ error } = await supabaseClient.from('sk_follows').delete()
         .eq('user_id', currentUser.id).eq('person_type', personType).eq('person_key', personKey));
     }
     if(error) console.error('Supabase follow sync error:', error);
@@ -1074,7 +1067,7 @@ async function upsertFollow(personType, personKey, isFollowed){
 
 async function loadFollowsFromSupabase(){
   if(!currentUser) return;
-  const { data, error } = await supabaseClient.from('follows')
+  const { data, error } = await supabaseClient.from('sk_follows')
     .select('person_type, person_key').eq('user_id', currentUser.id);
   if(error){ console.error(error); return; }
   followed = {};
@@ -1092,7 +1085,7 @@ let myFlaggedBills = {};
 async function loadMyFlagsFromSupabase(){
   myFlaggedBills = {};
   if(!currentUser) return;
-  const { data, error } = await supabaseClient.from('bill_flags')
+  const { data, error } = await supabaseClient.from('sk_bill_flags')
     .select('bill_id').eq('user_id', currentUser.id);
   if(error){ console.error('loadMyFlagsFromSupabase failed:', error); return; }
   for(const row of (data || [])) myFlaggedBills[row.bill_id] = true;
@@ -1120,7 +1113,7 @@ async function requestExplanation(billId, btnId){
   }
   const uid = fresh.user.id;
 
-  const { error } = await supabaseClient.from('bill_flags').insert({ user_id: uid, bill_id: billId });
+  const { error } = await supabaseClient.from('sk_bill_flags').insert({ user_id: uid, bill_id: billId });
   if(error && error.code !== '23505'){
     console.error('requestExplanation insert error:', error);
     if(btn) btn.disabled = false;
@@ -1130,7 +1123,7 @@ async function requestExplanation(billId, btnId){
     let atLimit = false;
     try{
       const since = new Date(Date.now() - 30*864e5).toISOString();
-      const { count } = await supabaseClient.from('bill_flags')
+      const { count } = await supabaseClient.from('sk_bill_flags')
         .select('*', { count: 'exact', head: true }).gte('created_at', since);
       atLimit = (typeof count === 'number' && count >= 10);
     }catch(e){}
@@ -1163,7 +1156,7 @@ async function removeExplanation(billId, btnId){
   const isEn = currentLang === 'en';
   const btn = document.getElementById(btnId);
   if(btn) btn.disabled = true;
-  const { error } = await supabaseClient.from('bill_flags')
+  const { error } = await supabaseClient.from('sk_bill_flags')
     .delete().eq('user_id', currentUser.id).eq('bill_id', billId);
   if(error){
     console.error('removeExplanation delete error:', error);
@@ -1286,31 +1279,18 @@ async function handlePromoLink(){
 const mdH = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
 let mdPorteeOk = null;   // la colonne portee existe-t-elle ? (scripts/supabase-schema-mots-cles-portee.sql)
 
-// UN SEUL quota pour tout ce qu'on suit : 3, projets de loi et projets de ville ensemble. (Il
-// montait à 10 avec l'abonnement payant, retiré le 27 sept. 2026 ; les mots-clés et organismes
-// d'avant comptent encore tant qu'ils existent.) Les élus suivis n'en font pas partie.
-// Le compte vient de la base, pas de l'écran : cette page ne voit pas les suivis de ville. Si une
-// des trois lectures échoue, on renvoie `sur: null` et la page n'affiche aucun total plutôt qu'un
-// total faux.
-const MD_PLAFOND = 3;
+// Saskatchewan : un seul compte de projets suivis, 10 au plus (trigger de sk_bills_suivis,
+// scripts/supabase-saskatchewan.sql). Les élus suivis n'en font pas partie. Le compte vient de
+// la base, pas de l'écran ; si la lecture échoue, `sur: null` et la page n'affiche aucun total
+// plutôt qu'un total faux. (Pas de mots-clés ni d'organismes ici : ce sont des outils de DQ.)
+const MD_PLAFOND = 10;
 async function mdQuota(){
   const plafond = MD_PLAFOND;
   if(!currentUser) return { total: 0, sur: null, parties: null };
-  const [d, m, o] = await Promise.all([
-    supabaseClient.from('dossiers_suivis').select('ville'),
-    supabaseClient.from('alertes_mots_cles').select('portee'),
-    supabaseClient.from('organismes_suivis').select('id'),
-  ]);
-  if(d.error || m.error || o.error) return { total: 0, sur: null, parties: null };
-  const dossiers = d.data ?? [], mots = m.data ?? [], org = o.data ?? [];
-  const parties = {
-    lois: dossiers.filter((x) => x.ville === 'assemblee').length,
-    villes: dossiers.filter((x) => x.ville !== 'assemblee').length,
-    motsAssemblee: mots.filter((x) => (x.portee ?? 'villes') === 'assemblee').length,
-    motsVilles: mots.filter((x) => (x.portee ?? 'villes') !== 'assemblee').length,
-    organismes: org.length,
-  };
-  return { total: dossiers.length + mots.length + org.length, sur: plafond, parties };
+  const { data, error } = await supabaseClient.from('sk_bills_suivis').select('bill_id');
+  if(error) return { total: 0, sur: null, parties: null };
+  const lois = (data ?? []).length;
+  return { total: lois, sur: plafond, parties: { lois, villes: 0, motsAssemblee: 0, motsVilles: 0, organismes: 0 } };
 }
 
 async function renderMonDossier(){
@@ -1327,12 +1307,12 @@ function mdCompte(isEn, quota){
   if(!currentUser){
     zone.innerHTML = `<div class="md-carte md-connexion">
       <h2>${isEn ? 'Sign in' : 'Se connecter'}</h2>
-      <p>${isEn ? 'One account for DossierQuébec. No password: a sign-in link arrives by email.' : 'Un seul compte pour DossierQuébec. Pas de mot de passe : un lien de connexion arrive par courriel.'}</p>
+      <p>${isEn ? 'One account for every Dossier site (Dossier Saskatchewan, DossierQuébec…). No password: a sign-in link arrives by email.' : 'Un seul compte pour tous les sites Dossier (Dossier Saskatchewan, DossierQuébec…). Pas de mot de passe : un lien de connexion arrive par courriel.'}</p>
       <div class="md-ligne">
         <input type="email" id="mdEmail" placeholder="${isEn ? 'Your email' : 'Votre courriel'}" aria-label="${isEn ? 'Your email' : 'Votre courriel'}">
         <button class="account-btn" id="mdLienBtn" onclick="mdEnvoyerLien()">${isEn ? 'Get the link' : 'Recevoir le lien'}</button>
       </div>
-      <p class="md-note" id="mdNote">${isEn ? 'A free account follows 3 things in all — bills and city projects together.' : 'Un compte gratuit suit 3 choses en tout — projets de loi et projets de ville ensemble.'}</p>
+      <p class="md-note" id="mdNote">${isEn ? `Free. Follow up to ${MD_PLAFOND} Saskatchewan bills.` : `Gratuit. Suivez jusqu’à ${MD_PLAFOND} projets de loi de la Saskatchewan.`}</p>
     </div>`;
     document.getElementById('mdEmail')?.addEventListener('keydown', (e)=>{ if(e.key === 'Enter'){ e.preventDefault(); mdEnvoyerLien(); } });
     return;
@@ -1343,10 +1323,7 @@ function mdCompte(isEn, quota){
       <button class="md-bouton-doux" onclick="signOutUser()">${isEn ? 'Sign out' : 'Se déconnecter'}</button>
     </div>
     <p>${mdH(currentUser.email)}</p>
-    ${quota?.sur ? `<p class="md-note md-quota"><b>${isEn ? `${quota.total} of ${quota.sur} follows used` : `${quota.total} suivis sur ${quota.sur}`}</b> — ${isEn
-      ? 'bills and city projects share the same count.' : 'projets de loi et projets de ville comptent ensemble.'}
-      ${quota.parties?.villes || quota.parties?.motsVilles || quota.parties?.organismes
-        ? `<a class="md-lien" href="/mes-dossiers">${isEn ? 'Your city follows' : 'Vos suivis de ville'}</a>` : ''}
+    ${quota?.sur ? `<p class="md-note md-quota"><b>${isEn ? `${quota.total} of ${quota.sur} bills followed` : `${quota.total} projets suivis sur ${quota.sur}`}</b>
       <br>${isEn ? 'Members you follow are not counted.' : 'Les élus suivis ne comptent pas dans ce total.'}</p>` : ''}
   </div>`;
 }
@@ -1543,10 +1520,10 @@ async function renderAdminFlagCounts(){
   // des « #27053 ». Admins seulement, donc jamais payé par un visiteur ordinaire.
   await chargerChallenges();
 
-  const { data, error } = await supabaseClient.from('bill_flags').select('bill_id');
+  const { data, error } = await supabaseClient.from('sk_bill_flags').select('bill_id');
   if(error){ console.error('renderAdminFlagCounts failed:', error); container.innerHTML = ''; return; }
   // État de campagne (seuil courant + escalade en attente) — table bill_campaign.
-  const { data: campData } = await supabaseClient.from('bill_campaign').select('bill_id, threshold, escalation_pending');
+  const { data: campData } = CAMPAGNE_ACTIVE ? await supabaseClient.from('bill_campaign').select('bill_id, threshold, escalation_pending') : { data: [] };
   const camp = {}; for(const r of (campData || [])) camp[r.bill_id] = r;
 
   const isEn = currentLang === 'en';
@@ -1579,7 +1556,11 @@ async function renderAdminFlagCounts(){
 // Escalade (bouton admin) : monte le seuil de pétition au palier suivant et pose
 // escalation_pending → le prochain digest aux 2 semaines annonce « le parrain a
 // répondu mais insuffisant, on continue jusqu'à X ». Mutation via la RLS admin.
+// Saskatchewan : la campagne (seuils, escalade par courriel) n'existe pas encore. bill_campaign
+// est la table de DQ : ces deux boutons ne doivent JAMAIS y écrire un projet de la Saskatchewan.
+const CAMPAGNE_ACTIVE = false;
 async function adminResend(billId){
+  if(!CAMPAGNE_ACTIVE){ alert('La campagne (courriels aux paliers) n’existe pas encore sur Dossier Saskatchewan.'); return; }
   const { data } = await supabaseClient.from('bill_campaign').select('threshold').eq('bill_id', billId).maybeSingle();
   const cur = data ? data.threshold : PETITION_TIERS[0];
   const next = PETITION_TIERS.find(t => t > cur) ?? cur;
@@ -1595,6 +1576,7 @@ async function adminResend(billId){
 
 // Reset (bouton admin) : efface la campagne de ce projet — repart à zéro.
 async function adminReset(billId){
+  if(!CAMPAGNE_ACTIVE){ alert('La campagne n’existe pas encore sur Dossier Saskatchewan.'); return; }
   if(!confirm('Réinitialiser la campagne de ce projet (repart à zéro) ?')) return;
   const { error } = await supabaseClient.from('bill_campaign').delete().eq('bill_id', billId);
   if(error){ alert('Erreur : ' + error.message); return; }
@@ -2614,8 +2596,10 @@ function billCard(b, ctx){
   const mailHint = ASSEMBLY.dissolved
     ? (isEn ? 'Recorded and counted — it waits for the new legislature on 17 November'
             : 'Enregistrée et comptée — elle attend la rentrée du 17 novembre')
-    : (isEn ? 'One email at the moments that count (500 & 1,000 requests, or if it becomes law)'
-            : 'Un courriel aux moments qui comptent (500 et 1000 demandes, ou si ça devient loi)');
+    // Saskatchewan : pas encore de courriels de campagne (ils passent par l'envoi automatique de
+    // DQ, branché sur ses propres tables). On ne promet que ce qui arrive vraiment.
+    : (isEn ? 'Recorded and counted — the total is public'
+            : 'Enregistrée et comptée — le total est public');
   let flagRow = '';
   if(canFlag){
     let hint, label, onclick = '', title = '';
@@ -3130,7 +3114,7 @@ const projetChallenge = (billId) =>
 async function chargerChallenges(){
   if(challengedCache !== null) return challengedCache;
   try{
-    const { data, error } = await supabaseClient.rpc('flag_counts');
+    const { data, error } = await supabaseClient.rpc('sk_flag_counts');
     challengedCache = (!error && Array.isArray(data)) ? data : [];
   }catch(e){ challengedCache = []; }
   if(challengedCache.some(c => !bills.some(b => b.id === Number(c.bill_id)))){
