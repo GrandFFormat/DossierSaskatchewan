@@ -514,7 +514,8 @@ html[data-theme="dark"] .qf-btn.qf-sel{outline-color:var(--ink);}
 html[data-theme="dark"] .brutal-search .bs-icon{background:#16A34A !important;}
 html[data-theme="dark"] input, html[data-theme="dark"] select, html[data-theme="dark"] textarea{background:#132119 !important; color:var(--ink) !important;}
 html[data-theme="dark"] .dq-remonter{background:var(--sk-lime-clair) !important; color:#0E1A13 !important;}
-html[data-theme="dark"] .band-blue, html[data-theme="dark"] .band-blue.bleed{background:#050B07 !important;}
+/* En sombre, les bandes foncées prennent le même fond que « Projets challengés » (Martin, 1er oct. 2026). */
+html[data-theme="dark"] .band-blue, html[data-theme="dark"] .band-blue.bleed{background:var(--sk-brume) !important;}
 
 /* Relevé des contrastes en sombre (scripts maison, 1er oct. 2026) : les restes de l'ancien style */
 html[data-theme="dark"] .band-yellow, html[data-theme="dark"] .band-yellow h2, html[data-theme="dark"] .band-yellow p,

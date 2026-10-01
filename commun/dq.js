@@ -142,7 +142,7 @@ const translations = {
     'apercu.recent.sub':"↓ Cliquez n'importe où dans le carré blanc pour voir le résumé ↓",
     'promo.sur':"Compte gratuit",
     'promo.h':"Suivez les projets de loi qui vous touchent",
-    'promo.p':"Un compte gratuit, sans mot de passe : suivez jusqu'à 3 projets de loi ou projets de ville, et retrouvez-les dans Mon dossier, avec leur étape du moment.",
+    'promo.p':"Un compte gratuit, sans mot de passe : suivez jusqu'à 10 projets de loi, et retrouvez-les dans Mon dossier, avec leur étape du moment.",
     'promo.diss':"Les projets de loi de la 43e législature sont morts à la dissolution du 27 août : le suivi reprendra avec les premiers projets de loi de la nouvelle législature, convoquée le 17 novembre 2026.",
     'promo.compte.h':"Votre compte",
     'promo.mesdossiers':"Mon dossier →",
@@ -532,7 +532,7 @@ const translations = {
     'lp.officiel':"This is not an official measure: a missed vote does not tell why.",
     'promo.sur':"Free account",
     'promo.h':"Follow the bills that matter to you",
-    'promo.p':"A free account, no password: follow up to 3 bills or city projects, and find them in My file, with their current stage.",
+    'promo.p':"A free account, no password: follow up to 10 bills, and find them in My file, with their current stage.",
     'promo.diss':"The bills of the 43rd legislature died when the Assembly was dissolved on August 27: following will resume with the first bills of the new legislature, convened on November 17, 2026.",
     'promo.compte.h':"Your account",
     'promo.mesdossiers':"My file →",
@@ -1171,7 +1171,7 @@ function renderPromoCompte(){
   if(currentUser){
     const nom = (currentUser.email || '').split('@')[0] || currentUser.email;
     const echappe = String(nom).replace(/[&<>"']/g, (c) => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
-    box.innerHTML = `<p class="promo-compte-note" style="margin:0">${isEn ? 'Signed in as' : 'Connecté comme'} <b>${echappe}</b>. ${isEn ? 'Your followed bills are in <a class="promo-lien" href="/mon-dossier">My file</a>, your city projects in <a class="promo-lien" href="/mes-dossiers">My files</a>.' : 'Vos projets de loi suivis sont dans <a class="promo-lien" href="/mon-dossier">Mon dossier</a>, vos projets de ville dans <a class="promo-lien" href="/mes-dossiers">Mes dossiers</a>.'}</p>`;
+    box.innerHTML = `<p class="promo-compte-note" style="margin:0">${isEn ? 'Signed in as' : 'Connecté comme'} <b>${echappe}</b>. ${isEn ? 'Your followed bills are in <a class="promo-lien" href="/mon-dossier">My file</a>.' : 'Vos projets de loi suivis sont dans <a class="promo-lien" href="/mon-dossier">Mon dossier</a>.'}</p>`;
     return;
   }
   const saisie = promoEnvoi?.email || document.getElementById('promoEmail')?.value || '';
@@ -1328,7 +1328,7 @@ function mdLois(isEn, quota){
       <span class="md-etiquette">${ids.length}</span>
     </div>
     ${ids.length ? `<ul class="md-liste">${lignes}</ul>` : `<p>${vide}</p>`}
-    <p class="md-note">${isEn ? `${plafond} follows in all — bills and city projects together.` : `${plafond} suivis en tout — projets de loi et projets de ville ensemble.`}</p>
+    <p class="md-note">${isEn ? `Up to ${plafond} bills followed.` : `Jusqu’à ${plafond} projets de loi suivis.`}</p>
   </div>`;
 }
 
