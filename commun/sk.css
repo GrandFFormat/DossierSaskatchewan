@@ -423,3 +423,9 @@ h2, .section-head h2, .sk-sanct-tete h2{font-weight:600 !important; letter-spaci
 .prom-loi-src{font-size:13px; font-weight:500 !important;}
 .prom-etat{display:inline-block; font-family:'JetBrains Mono', monospace; font-size:12px; border-radius:999px; padding:2px 10px; background:#FEF3C7; color:#A16207; margin-left:4px;}
 .prom-etat.ok{background:var(--sk-lime-fond); color:var(--sk-vert-fonce);}
+.prom-top{display:flex; flex-wrap:wrap; align-items:center; gap:8px;}
+.prom-etiq{margin-left:auto; font-family:'JetBrains Mono', monospace; font-size:12.5px; border-radius:999px; padding:5px 14px; font-weight:500;}
+.prom-etiq::before{content:"● "; font-size:10px; vertical-align:1px;}
+.prom-etiq-loi{background:var(--sk-lime-fond); color:var(--sk-vert-fonce);}
+.prom-etiq-partiel{background:#FEF3C7; color:#A16207;}
+.prom-etiq-aucune{background:var(--sk-brume); color:var(--slate);}

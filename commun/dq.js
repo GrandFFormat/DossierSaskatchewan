@@ -1613,6 +1613,17 @@ function renderPromFilters(){
 // La colonne « L'action » : les projets de loi qui mettent l'engagement en œuvre, chacun avec la
 // phrase des notes explicatives qui le prouve (vérifié à la main dans les textes officiels de
 // l'Assemblée, voir data/promises.json). Pas de verdict : on montre ce qui a été déposé.
+// L'étiquette d'état : un FAIT sur les textes de loi, jamais un verdict (« tenue », « brisée »).
+// Une mesure dans une loi sanctionnée n'est pas forcément appliquée ni chiffrée comme promis.
+function etiquettePromesse(p, isEn){
+  const E = {
+    loi:     ['Dans une loi sanctionnée', 'In an assented law'],
+    partiel: ['En partie dans une loi', 'Partly in a law'],
+    aucune:  ['Aucun projet de loi', 'No bill'],
+  }[p.etat];
+  return E ? `<span class="prom-etiq prom-etiq-${p.etat}">${E[isEn ? 1 : 0]}</span>` : '';
+}
+
 function actionPromesse(p, isEn){
   const etat = (a) => a.statut === 'sanctionne'
     ? `<span class="prom-etat ok">${isEn ? 'Assented' : 'Sanctionnée'} · ${(String(a.note || '').match(/\d{4}-\d{2}-\d{2}/) || [''])[0]}</span>`
@@ -1658,7 +1669,7 @@ function renderPromises(){
       ? (isEn ? 'Primary source (party)' : 'Source primaire (parti)')
       : (isEn ? 'Journalistic source' : 'Source journalistique');
     return `<div class="prom-card">
-      <div class="prom-top">${badge}<button class="prom-theme-pill" style="background:${themeColor(p.theme)}; color:${readableOn(themeColor(p.theme))};" onclick="setPromTheme('${String(p.theme).replace(/'/g, "\\'")}')" title="${isEn ? 'Filter by this topic' : 'Filtrer par ce sujet'}">${themeLabel(p.theme)}</button>${brouillon}</div>
+      <div class="prom-top">${badge}<button class="prom-theme-pill" style="background:${themeColor(p.theme)}; color:${readableOn(themeColor(p.theme))};" onclick="setPromTheme('${String(p.theme).replace(/'/g, "\\'")}')" title="${isEn ? 'Filter by this topic' : 'Filtrer par ce sujet'}">${themeLabel(p.theme)}</button>${brouillon}${etiquettePromesse(p, isEn)}</div>
       <p class="prom-quote">« ${p.quote} »</p>
       <div class="prom-grid">
         <div class="prom-col">
