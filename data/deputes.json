@@ -1,7 +1,7 @@
 {
   "source": "https://www.legassembly.sk.ca/mlas/",
   "legislature": 30,
-  "scrapedAt": "2026-09-30T23:41:32.360Z",
+  "scrapedAt": "2026-10-01T01:05:14.353Z",
   "count": 61,
   "deputes": [
     {
@@ -164,7 +164,8 @@
       "party": "SKP",
       "partyFull": "Saskatchewan Party",
       "caucus": "Government Caucus",
-      "id": "todd-goudy"
+      "id": "todd-goudy",
+      "role": "speaker"
     },
     {
       "name": "Tajinder Grewal",

@@ -87,14 +87,19 @@ async function main() {
     if (!liens.includes(attendu)) erreurs.push(`la page ne renvoie plus vers « ${attendu} »`);
   }
 
-  // Le premier ministre, nommé en tête de page : un lien vers sa fiche, puis son rôle en gras
-  // dans la même cellule (<strong>Premier</strong>).
-  let nomPremier = null;
+  // Le premier ministre et le président de l'Assemblée, nommés en tête de page : un lien vers la
+  // fiche, puis le rôle en gras dans la même cellule (<strong>Premier</strong>, <strong>Speaker</strong>).
+  // Le président ne vote pas (seulement pour départager une égalité) : la page des ministres le
+  // sort du calcul de présence aux votes. On le lit ici plutôt que de l'écrire à la main.
+  let nomPremier = null, nomPresident = null;
   $('a[href*="member-details"]').each((_, a) => {
-    if (nomPremier) return;
     const role = $(a).closest('td').find('strong').first().text().replace(/\s+/g, ' ').trim();
-    if (role === 'Premier') nomPremier = sansTitre($(a).text());
+    if (role === 'Premier' && !nomPremier) nomPremier = sansTitre($(a).text());
+    if (role === 'Speaker' && !nomPresident) nomPresident = sansTitre($(a).text());
   });
+  const president = deputes.find((d) => plierNom(d.name) === plierNom(nomPresident));
+  if (!president) erreurs.push(`président de l'Assemblée introuvable dans la liste (« ${nomPresident ?? 'aucun'} »)`);
+  else president.role = 'speaker';
   const premier = deputes.find((d) => plierNom(d.name) === plierNom(nomPremier));
   if (!premier) erreurs.push(`premier ministre introuvable dans la liste (« ${nomPremier ?? 'aucun'} »)`);
   else if (premier.caucus !== 'Government Caucus') erreurs.push(`le premier ministre (${premier.name}) n'est pas au caucus du gouvernement`);
@@ -120,7 +125,7 @@ async function main() {
   const parParti = {};
   for (const d of deputes) parParti[d.party] = (parParti[d.party] || 0) + 1;
   console.log(`${deputes.length} député·e·s écrit·e·s dans ${OUT_PATH} — ${Object.entries(parParti).map(([p, n]) => `${p} ${n}`).join(', ')}`);
-  console.log(`  premier ministre : ${premier.name} (${premier.riding})`);
+  console.log(`  premier ministre : ${premier.name} (${premier.riding}) ; président de l'Assemblée : ${president.name}`);
 }
 
 main().catch((err) => {
