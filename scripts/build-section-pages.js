@@ -370,7 +370,7 @@ function prerendus(valeurs) {
       `<span class="pr-meta">${ht(dateEn(v.date))} —</span> ${v.stage ? `${ht(v.stage)} — ` : ''}${v.billNum && !/^bill\s*(no\.?\s*)?\d/i.test(String(v.subject || '')) ? `Bill ${ht(v.billNum)} — ` : ''}${ht(v.subject)} <span class="pr-meta">· for ${ht(v.totals?.pour)}, against ${ht(v.totals?.contre)}${v.totals?.abstentions != null ? `, abstentions ${ht(v.totals.abstentions)}` : ''}</span>`),
       `The ${pluriel(votesRecents.length, 'most recent vote', 'most recent votes')}, out of ${valeurs.votes.length}. Official source: the Votes and Proceedings, ${ASSEMBLEE}.`, true),
     promisesList: bloc('promises', 'Election promises', valeurs.promises.filter((p) => !p.draft).map((p) =>
-      `<b>${ht(p.party)}</b> <span class="pr-meta">· ${ht(p.theme)}</span> — “${ht(p.quote)}” <span class="pr-meta">(source: ${p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" rel="noopener">${ht(p.sourceLabel)}</a>` : ht(p.sourceLabel)})</span>`),
+      `<b>${ht(p.party)}</b> <span class="pr-meta">· ${ht(p.theme)}</span> — “${ht(p.quote)}” <span class="pr-meta">(source: ${p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" rel="noopener">${ht(p.sourceLabelEn || p.sourceLabel)}</a>` : ht(p.sourceLabelEn || p.sourceLabel)})</span>${p.actions?.length ? ` <span class="pr-meta">· in ${p.actions.map((a) => `Bill ${ht(a.num)}`).join(', ')}</span>` : ''}`),
       'Each promise is quoted word for word, with its source.', true),
     // Les 20 plus récentes seulement, comme la page vivante : sans plafond, le journal ferait
     // grossir /sources sans fin. L'anglais d'abord ; le français si l'entrée n'a que lui.
