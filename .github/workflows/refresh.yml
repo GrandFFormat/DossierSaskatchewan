@@ -1,4 +1,4 @@
-# Rafraîchissement automatique des données de Dossier Saskatchewan.
+# Rafraîchissement automatique des données de DossierSaskatchewan.
 #
 # Deux fois par jour : relance tous les scrapers + builds (npm run refresh), puis, s'il
 # y a un changement, committe et pousse. Le push sur `master` déclenche le

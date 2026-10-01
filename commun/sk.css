@@ -97,7 +97,7 @@ body *:not(.sk-etiq):not(.sk-badge):not(.sk-etapes):not(.hero-sujet):not(.promo-
 /* --------------------------------------------------------------------------
    En-tête : logo | menu en pilule | « Mon dossier » en pilule foncée
    -------------------------------------------------------------------------- */
-.ticker, .maple-flip{display:none !important;}
+.ticker{display:none !important;}
 #dq-topbar, #dq-topbar.compact{background:var(--sk-blanc); border-bottom:0; box-shadow:none;}
 header.top{background:var(--sk-blanc); border:0; box-shadow:none;}
 .brand-title{display:flex; align-items:center; gap:12px; font-weight:700; font-size:26px; color:var(--ink); letter-spacing:-0.02em;}
@@ -545,3 +545,28 @@ html[data-theme="dark"] .md-etiquette{color:#0E1A13 !important;}
 .lire-box.hl h3, .lire-box.hl p{color:var(--ink) !important;}
 html[data-theme="dark"] .calendar-box .status{color:#4ADE80 !important;}
 html[data-theme="dark"] .lire-box.hl p{color:var(--ink) !important;}
+
+/* --------------------------------------------------------------------------
+   En-tête compact (Martin, 1er oct. 2026 : « Mon dossier prend trop de place ») — et la
+   feuille d'érable de DossierCanada revient à côté du logo (goToFederal, gabarit.html).
+   -------------------------------------------------------------------------- */
+.brand-title{font-size:23px;}
+.sk-logo{width:32px; height:32px;}
+header.top .tabs a{font-size:15.5px !important; padding:7px 15px !important;}
+@media (min-width: 981px){
+  header.top .tabs{padding:4px;}
+  header.top .tabs a.nav-mondossier{margin-left:6px; padding:7px 16px !important;}
+}
+.maple-flip{display:inline-flex !important; align-items:center; margin-left:10px; color:#D52B1E; cursor:pointer;}
+.maple-flip svg{width:22px; height:22px;}
+html[data-theme="dark"] .maple-flip{color:#F87171;}
+@media (max-width: 640px){
+  /* Téléphone : logo + nom + feuille d'érable, puis langue et menu. Le bouton lune cède sa
+     place (le téléphone suit déjà souvent son propre thème) ; il reste sur ordinateur. */
+  .brand-title{font-size:15px !important; gap:6px; margin-right:0; letter-spacing:-0.02em;}
+  .header-ctrls .lang-toggle{padding:0 7px !important;}
+  .sk-logo{width:24px; height:24px;}
+  .maple-flip{margin-left:4px; width:20px !important; height:20px !important;}
+  .maple-flip svg{width:18px; height:18px;}
+  .header-ctrls .theme-toggle{display:none !important;}
+}
