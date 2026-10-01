@@ -303,13 +303,13 @@ const translations = {
     'mdhero.l2':"vos élus suivis.",
     'mdhero.sub':"Ce que vous suivez à l'Assemblée législative.",
     'maj.h':"Mises à jour du site",
-    'maj.sub':"Ce qui a changé sur Dossier Saskatchewan, du plus récent au plus ancien",
+    'maj.sub':"Ce qui a changé sur DossierSaskatchewan, du plus récent au plus ancien",
     'bd.back':"← Retour à l'aperçu",
     'bd.intro1':"Bonjour, moi c'est",
     'bd.intro3':"j'ai 45 ans et dossiersaskatchewan.ca, c'est votre premier pas vers la démocratie !",
     'bd.mot1':"Si on veut que les gens comprennent la politique, il faut la ramener à leur niveau.",
     'bd.mot2':"Quand j'ai voulu m'y intéresser, en plus de ne pas connaître le jargon, les projets de loi tenaient en deux lignes… et cinquante PDF. Le commun des mortels passait son chemin.",
-    'bd.mot3':"J'ai eu l'idée de me servir de l'intelligence artificielle pour, d'abord, analyser tout ça, et ensuite le vulgariser. C'est comme ça que DossierQuébec est né, puis Dossier Saskatchewan.",
+    'bd.mot3':"J'ai eu l'idée de me servir de l'intelligence artificielle pour, d'abord, analyser tout ça, et ensuite le vulgariser. C'est comme ça que DossierQuébec est né, puis DossierSaskatchewan.",
     'bd.mot4':"En plus du récapitulatif écrit par l'IA, j'ai mis à la disposition des gens un lexique qui explique les fondements du jargon politique. Je suis l'Éducaloi de la politique !",
     'fil.accueil':"Accueil",
     'fil.lexique':"Lexique",
@@ -537,12 +537,12 @@ const translations = {
     'promo.compte.h':"Your account",
     'promo.mesdossiers':"My file →",
     'footer.villes':"Cities:",
-    'maj.sub':"What changed on Dossier Saskatchewan, newest first",
+    'maj.sub':"What changed on DossierSaskatchewan, newest first",
     'bd.intro1':"Hi! My name is",
     'bd.intro3':"I'm 45, and dossiersaskatchewan.ca is your first step into democracy!",
     'bd.mot1':"If we want people to understand politics, it has to be brought down to their level.",
     'bd.mot2':"When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.",
-    'bd.mot3':"So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierQuébec was born — and now Dossier Saskatchewan.",
+    'bd.mot3':"So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierQuébec was born — and now DossierSaskatchewan.",
     'bd.mot4':"Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!",
     'h.petitionsrecent':"Petitions open right now",
     'apercu.petitions.sub':"Click the \u201cPetitions\u201d tab for the full list",
@@ -1251,7 +1251,7 @@ function mdCompte(isEn, quota){
   if(!currentUser){
     zone.innerHTML = `<div class="md-carte md-connexion">
       <h2>${isEn ? 'Sign in' : 'Se connecter'}</h2>
-      <p>${isEn ? 'One account for every Dossier site (Dossier Saskatchewan, DossierQuébec…). No password: a sign-in link arrives by email.' : 'Un seul compte pour tous les sites Dossier (Dossier Saskatchewan, DossierQuébec…). Pas de mot de passe : un lien de connexion arrive par courriel.'}</p>
+      <p>${isEn ? 'One account for every Dossier site (DossierSaskatchewan, DossierQuébec…). No password: a sign-in link arrives by email.' : 'Un seul compte pour tous les sites Dossier (DossierSaskatchewan, DossierQuébec…). Pas de mot de passe : un lien de connexion arrive par courriel.'}</p>
       <div class="md-ligne">
         <input type="email" id="mdEmail" placeholder="${isEn ? 'Your email' : 'Votre courriel'}" aria-label="${isEn ? 'Your email' : 'Votre courriel'}">
         <button class="account-btn" id="mdLienBtn" onclick="mdEnvoyerLien()">${isEn ? 'Get the link' : 'Recevoir le lien'}</button>
@@ -1504,7 +1504,7 @@ async function renderAdminFlagCounts(){
 // est la table de DQ : ces deux boutons ne doivent JAMAIS y écrire un projet de la Saskatchewan.
 const CAMPAGNE_ACTIVE = false;
 async function adminResend(billId){
-  if(!CAMPAGNE_ACTIVE){ alert('La campagne (courriels aux paliers) n’existe pas encore sur Dossier Saskatchewan.'); return; }
+  if(!CAMPAGNE_ACTIVE){ alert('La campagne (courriels aux paliers) n’existe pas encore sur DossierSaskatchewan.'); return; }
   const { data } = await supabaseClient.from('bill_campaign').select('threshold').eq('bill_id', billId).maybeSingle();
   const cur = data ? data.threshold : PETITION_TIERS[0];
   const next = PETITION_TIERS.find(t => t > cur) ?? cur;
@@ -1520,7 +1520,7 @@ async function adminResend(billId){
 
 // Reset (bouton admin) : efface la campagne de ce projet — repart à zéro.
 async function adminReset(billId){
-  if(!CAMPAGNE_ACTIVE){ alert('La campagne n’existe pas encore sur Dossier Saskatchewan.'); return; }
+  if(!CAMPAGNE_ACTIVE){ alert('La campagne n’existe pas encore sur DossierSaskatchewan.'); return; }
   if(!confirm('Réinitialiser la campagne de ce projet (repart à zéro) ?')) return;
   const { error } = await supabaseClient.from('bill_campaign').delete().eq('bill_id', billId);
   if(error){ alert('Erreur : ' + error.message); return; }
@@ -3233,8 +3233,8 @@ function shareBill(billId, platform, evt){
   const title = isEn ? (b.titleEn || b.title) : b.title;
   const url = `https://dossiersaskatchewan.ca/projets-de-loi?pl=${encodeURIComponent(b.num)}` + paramLangue(false);
   const text = isEn
-    ? `Bill ${b.num} — ${title}. Plain-language summary on Dossier Saskatchewan:`
-    : `Projet de loi n° ${b.num} — ${title}. Résumé en clair sur Dossier Saskatchewan :`;
+    ? `Bill ${b.num} — ${title}. Plain-language summary on DossierSaskatchewan:`
+    : `Projet de loi n° ${b.num} — ${title}. Résumé en clair sur DossierSaskatchewan :`;
   if(platform === 'x'){
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=520');
   } else if(platform === 'fb'){
@@ -3766,14 +3766,14 @@ const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'pro
 // Titres FRANÇAIS seulement : le site est anglophone, l'anglais vient du <title> de la page
 // (voir syncTitle).
 const PAGE_META = {
-  bd:        { fr:"Mises à jour du site — Dossier Saskatchewan" },
-  apercu:    { fr:"L'Assemblée législative de la Saskatchewan en clair — Dossier Saskatchewan" },
-  ministres: { fr:"Ministres et député·e·s de la Saskatchewan — Dossier Saskatchewan" },
-  projets:   { fr:"Projets de loi de la Saskatchewan expliqués en clair — Dossier Saskatchewan" },
-  votes:     { fr:"Votes nominatifs à l'Assemblée législative — Dossier Saskatchewan" },
-  lexique:   { fr:"Lexique de l'Assemblée législative en clair — Dossier Saskatchewan" },
-  promesses: { fr:"Promesses électorales en Saskatchewan — Dossier Saskatchewan" },
-  mondossier:{ fr:"Mon dossier — Dossier Saskatchewan" },
+  bd:        { fr:"Mises à jour du site — DossierSaskatchewan" },
+  apercu:    { fr:"L'Assemblée législative de la Saskatchewan en clair — DossierSaskatchewan" },
+  ministres: { fr:"Ministres et député·e·s de la Saskatchewan — DossierSaskatchewan" },
+  projets:   { fr:"Projets de loi de la Saskatchewan expliqués en clair — DossierSaskatchewan" },
+  votes:     { fr:"Votes nominatifs à l'Assemblée législative — DossierSaskatchewan" },
+  lexique:   { fr:"Lexique de l'Assemblée législative en clair — DossierSaskatchewan" },
+  promesses: { fr:"Promesses électorales en Saskatchewan — DossierSaskatchewan" },
+  mondossier:{ fr:"Mon dossier — DossierSaskatchewan" },
 };
 function viewFromPath(){
   const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');

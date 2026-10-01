@@ -1,4 +1,4 @@
--- Dossier Saskatchewan — les tables du site, dans le projet Supabase de DossierQuébec.
+-- DossierSaskatchewan — les tables du site, dans le projet Supabase de DossierQuébec.
 --
 -- À exécuter UNE FOIS dans le projet Supabase de DQ : SQL Editor → coller → Run.
 -- Re-exécutable sans erreur. Ne touche à AUCUNE table de DQ.

@@ -190,7 +190,7 @@ function extraireDonnees() {
 // affiche les trois compteurs partout. Elle les comptait dans les jeux complets, que la plupart
 // des pages ne chargent plus — elle affichait « 0 vote nominatif » depuis le découpage.
 //
-// RÉFÉRENCEMENT (21 sept. 2026). `title` suit la formule « Sujet — Dossier Saskatchewan », 65
+// RÉFÉRENCEMENT (21 sept. 2026). `title` suit la formule « Sujet — DossierSaskatchewan », 65
 // caractères au plus ; `desc` fait entre 120 et 165 caractères. Le site est anglophone : titres,
 // descriptions et fil d'Ariane sont en ANGLAIS ; le français vient de PAGE_META et du
 // dictionnaire de commun/dq.js quand le visiteur le choisit. Le <h1> de chaque page s'ouvre sur le même
@@ -202,42 +202,42 @@ const PAGES = [
   {
     fichier: 'index.html', vue: 'apercu', onglet: 'apercu', url: '/',
     donnees: ['newsItems', 'petitions', 'apercuBills', 'deputesRaw', 'stats'],
-    title: 'The Legislative Assembly in plain language — Dossier Saskatchewan',
+    title: 'The Legislative Assembly in plain language — DossierSaskatchewan',
     desc: "Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.",
     frequence: 'daily', priorite: '1.0',
   },
   {
     fichier: 'ministres.html', vue: 'ministres', onglet: 'ministres', url: '/ministres',
     donnees: ['ministers', 'deputesRaw', 'deputeEmails', 'presences', 'billsParrains'],
-    title: 'Saskatchewan ministers and MLAs — Dossier Saskatchewan',
+    title: 'Saskatchewan ministers and MLAs — DossierSaskatchewan',
     desc: 'The ministers of the Government of Saskatchewan and the 61 MLAs of the Legislative Assembly: roles, constituencies, voting records and official contact details.',
     fil: 'Ministers and MLAs', cle: 'fil.ministres', frequence: 'weekly', priorite: '0.8',
   },
   {
     fichier: 'projets-de-loi.html', vue: 'projets', onglet: 'projets', url: '/projets-de-loi',
     donnees: ['bills', 'deputesRaw'],
-    title: 'Saskatchewan bills in plain language — Dossier Saskatchewan',
+    title: 'Saskatchewan bills in plain language — DossierSaskatchewan',
     desc: "The bills before Saskatchewan's Legislative Assembly, summarized in everyday language, with the stage each has really reached and a link to the official text.",
     fil: 'Bills', cle: 'fil.projets', frequence: 'daily', priorite: '0.9',
   },
   {
     fichier: 'votes.html', vue: 'votes', onglet: 'votes', url: '/votes',
     donnees: ['votes', 'deputesRaw', 'billsTitres'],
-    title: 'Recorded votes, MLA by MLA — Dossier Saskatchewan',
+    title: 'Recorded votes, MLA by MLA — DossierSaskatchewan',
     desc: "Every recorded division in Saskatchewan's Legislative Assembly: who voted for and who voted against, MLA by MLA, read from the official minutes, with no spin.",
     fil: 'Votes', cle: 'fil.votes', frequence: 'daily', priorite: '0.9',
   },
   {
     fichier: 'promesses.html', vue: 'promesses', onglet: null, url: '/promesses',
     donnees: ['promises', 'deputesRaw'],
-    title: 'Election promises — Dossier Saskatchewan',
+    title: 'Election promises — DossierSaskatchewan',
     desc: "What Saskatchewan's parties promised, each commitment with its official source. No verdicts here: the promise and the action, side by side, for you to judge.",
     fil: 'Promises', cle: 'fil.promesses', frequence: 'weekly', priorite: '0.8',
   },
   {
     fichier: 'lexique.html', vue: 'lexique', onglet: 'lexique', url: '/lexique',
     donnees: [],
-    title: 'Legislative Assembly glossary — Dossier Saskatchewan',
+    title: 'Legislative Assembly glossary — DossierSaskatchewan',
     desc: "Royal assent, committee stage, recorded division: the vocabulary of Saskatchewan's Legislative Assembly explained simply, with links to the official sources.",
     fil: 'Glossary', cle: 'fil.lexique', frequence: 'monthly', priorite: '0.6',
   },
@@ -249,15 +249,15 @@ const PAGES = [
     // séparés ».
     fichier: 'mon-dossier.html', vue: 'mondossier', onglet: 'mondossier', url: '/mon-dossier', prive: true,
     donnees: ['bills'],
-    title: 'My file — Dossier Saskatchewan',
+    title: 'My file — DossierSaskatchewan',
     desc: 'Your corner of the Legislative Assembly: the bills you follow, the ministers and MLAs you follow, your keywords and your morning alert, all in one place.',
     fil: 'My file', cle: 'fil.mondossier', frequence: 'weekly', priorite: '0.1',
   },
   {
     fichier: 'sources.html', vue: 'bd', onglet: null, url: '/sources',
     donnees: ['journal'],
-    title: 'Site updates — Dossier Saskatchewan',
-    desc: "What changes on Dossier Saskatchewan, the independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.",
+    title: 'Site updates — DossierSaskatchewan',
+    desc: "What changes on DossierSaskatchewan, the independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.",
     fil: 'Site updates', cle: 'fil.bd', frequence: 'weekly', priorite: '0.4',
   },
 ];
@@ -275,7 +275,7 @@ const ht = (x) => String(x ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<'
 const ORGANISATION = {
   '@type': 'Organization',
   '@id': `${BASE}/#organisation`,
-  name: 'Dossier Saskatchewan',
+  name: 'DossierSaskatchewan',
   url: `${BASE}/`,
   // Le logo : les quatre lanières du design « long lots » (scripts/fabriquer-images.mjs).
   logo: { '@type': 'ImageObject', url: `${BASE}/commun/sk-512.png`, width: 512, height: 512 },
@@ -288,7 +288,7 @@ function jsonLd(page) {
       '@context': 'https://schema.org',
       '@graph': [
         {
-          '@type': 'WebSite', '@id': `${BASE}/#site`, name: 'Dossier Saskatchewan', url: `${BASE}/`,
+          '@type': 'WebSite', '@id': `${BASE}/#site`, name: 'DossierSaskatchewan', url: `${BASE}/`,
           description: page.desc, inLanguage: 'en-CA', publisher: { '@id': `${BASE}/#organisation` },
         },
         ORGANISATION,
@@ -620,7 +620,7 @@ for (const { page, html } of produites) {
     const f = page.fichier;
     const titre = (html.match(/<title>([^<]*)<\/title>/) || [])[1];
     must(titre === page.title, `${f} : <title> inattendu`);
-    must(titre.length <= 65 && titre.endsWith(' — Dossier Saskatchewan'), `${f} : le titre doit suivre « Sujet — Dossier Saskatchewan » en 65 caractères au plus (${titre.length})`);
+    must(titre.length <= 65 && titre.endsWith(' — DossierSaskatchewan'), `${f} : le titre doit suivre « Sujet — DossierSaskatchewan » en 65 caractères au plus (${titre.length})`);
     must(page.desc.length >= 120 && page.desc.length <= 165, `${f} : description de ${page.desc.length} caractères (attendu 120 à 165)`);
     const h1 = html.match(/<h1[\s>][\s\S]*?<\/h1>/g) || [];
     must(h1.length === 1, `${f} : ${h1.length} <h1> (attendu 1)`);
