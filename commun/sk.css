@@ -595,3 +595,7 @@ html:not([data-theme="dark"]) .compare-col .tag{color:var(--sk-vert-fonce) !impo
 html:not([data-theme="dark"]) .band-blue .sub, html:not([data-theme="dark"]) .band-blue h3,
 html:not([data-theme="dark"]) .band-blue .cp-txt{color:var(--ink) !important;}
 html:not([data-theme="dark"]) .band-blue .cp-vs, html:not([data-theme="dark"]) .band-blue .cp-hint{color:var(--sk-vert-fonce) !important;}
+
+/* Ministres : l'encadré « Lire la présence aux votes » prend le fond des bandes (« Projets
+   challengés », comparateur), en clair comme en sombre (Martin, 1er oct. 2026). */
+.legende-presence{background:var(--sk-brume) !important; border-color:transparent !important;}
