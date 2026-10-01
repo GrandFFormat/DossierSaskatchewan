@@ -1,1 +1,50 @@
-[]
+[
+  {
+    "date": "2026-10-01",
+    "volet": "site",
+    "fr": {
+      "titre": "DossierSaskatchewan est en ligne",
+      "texte": "Le site ouvre sur dossiersaskatchewan.ca. Il suit l'Assemblée législative de la Saskatchewan : les 61 député·e·s, les 18 ministres, les 88 projets de loi de la 30e législature et les 34 votes nominatifs, lus dans les documents officiels de l'Assemblée et mis à jour automatiquement deux fois par jour."
+    },
+    "en": {
+      "titre": "DossierSaskatchewan is live",
+      "texte": "The site opens at dossiersaskatchewan.ca. It follows Saskatchewan's Legislative Assembly: the 61 MLAs, the 18 ministers, the 88 bills of the 30th Legislature and the 34 recorded divisions, read from the Assembly's official documents and updated automatically twice a day."
+    }
+  },
+  {
+    "date": "2026-10-01",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Promesses : ce que l’Assemblée en a fait",
+      "texte": "Les 12 engagements de la plateforme 2024 du Saskatchewan Party, au pouvoir avec la majorité, sont cités mot pour mot. Chacun est placé à côté des projets de loi qui le mettent en œuvre, avec la phrase des notes explicatives officielles qui le montre : 8 sont dans une loi sanctionnée, 1 en partie, 3 sans projet de loi."
+    },
+    "en": {
+      "titre": "Promises: what the Assembly did with them",
+      "texte": "The 12 commitments of the Saskatchewan Party's 2024 platform, the majority government, are quoted word for word. Each sits next to the bills that carry it out, with the sentence from the official explanatory notes that shows it: 8 are in an assented law, 1 partly, 3 have no bill."
+    }
+  },
+  {
+    "date": "2026-10-01",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Un résumé en clair pour chaque projet de loi",
+      "texte": "Chaque projet de loi a son résumé en une phrase et ses points clés, en français et en anglais, écrits par l'IA à partir du texte officiel. Le texte complet reste à un clic sur legassembly.sk.ca."
+    },
+    "en": {
+      "titre": "A plain-language summary for every bill",
+      "texte": "Every bill has a one-sentence summary and its key points, in English and French, written by AI from the official text. The full text is always one click away on legassembly.sk.ca."
+    }
+  },
+  {
+    "date": "2026-10-01",
+    "volet": "site",
+    "fr": {
+      "titre": "Thème sombre",
+      "texte": "Le bouton lune de l'en-tête fait passer tout le site en thème sombre. Toutes les pages ont été vérifiées pour qu'aucun texte ne devienne illisible."
+    },
+    "en": {
+      "titre": "Dark theme",
+      "texte": "The moon button in the header switches the whole site to a dark theme. Every page was checked so that no text becomes unreadable."
+    }
+  }
+]
