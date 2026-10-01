@@ -261,8 +261,8 @@ const ORGANISATION = {
   '@id': `${BASE}/#organisation`,
   name: 'Dossier Saskatchewan',
   url: `${BASE}/`,
-  // À REFAIRE : dq-512.png est encore le logo de DQ.
-  logo: { '@type': 'ImageObject', url: `${BASE}/commun/dq-512.png`, width: 512, height: 512 },
+  // Le logo : les quatre lanières du design « long lots » (scripts/fabriquer-images.mjs).
+  logo: { '@type': 'ImageObject', url: `${BASE}/commun/sk-512.png`, width: 512, height: 512 },
   // Aucun compte à soi pour l'instant (pas de page Facebook ni de dépôt public).
   sameAs: [],
 };
