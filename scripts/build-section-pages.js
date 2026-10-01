@@ -106,11 +106,29 @@ function extraireDonnees() {
   //   billsTitres  ce que la carte d'un vote prend dans un projet de loi : le titre dans les
   //                deux langues et le parrain. 143 projets complets pour ça, c'était 113 ko.
   const derives = {
-    stats: {
-      ministres: valeurs.ministers.length,
-      projets: valeurs.bills.length,
-      votes: valeurs.votes.length,
-    },
+    stats: (() => {
+      // Le résumé « L'essentiel en 30 secondes » et les tuiles « Recently assented » de l'accueil
+      // (design « long lots », 30 sept. 2026) : tout est COMPTÉ ici, dans les vraies données.
+      const sanct = valeurs.bills.filter((b) => b.status === 'sanctionne');
+      // La date de sanction la plus récente se lit dans la note (« Sanctionné le 2026-05-14 »).
+      const dateSanction = (b) => (String(b.note || '').match(/\d{4}-\d{2}-\d{2}/) || [b.lastActivity])[0];
+      const derniere = sanct.map(dateSanction).sort().pop() || null;
+      const premier = valeurs.ministers.find((m) => /^Premier\b/i.test(m.roleEn || '')) || null;
+      return {
+        ministres: valeurs.ministers.length,
+        projets: valeurs.bills.length,
+        votes: valeurs.votes.length,
+        sanctionnes: sanct.length,
+        enCours: valeurs.bills.filter((b) => b.status === 'encours').length,
+        votesSurProjets: valeurs.votes.filter((v) => v.billNum).length,
+        premier: premier ? premier.name : null,
+        derniereSanction: derniere,
+        // Les quatre plus hauts numéros sanctionnés ce jour-là (les plus récents déposés).
+        sanctionnees: sanct.filter((b) => dateSanction(b) === derniere)
+          .sort((a, c) => c.num - a.num).slice(0, 4)
+          .map((b) => ({ id: b.id, num: b.num, title: b.title, titleEn: b.titleEn, resume: b.resumeExecutif, resumeEn: b.resumeExecutifEn })),
+      };
+    })(),
     apercuBills: valeurs.bills.slice(0, 4),
     billsTitres: valeurs.bills.map((b) => ({ id: b.id, title: b.title, titleEn: b.titleEn, sponsor: b.sponsor })),
     // billsParrains : le parrain de chaque projet et son rôle, pour « PL parrainés » de la page

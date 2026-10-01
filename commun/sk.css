@@ -1,0 +1,253 @@
+/* ==========================================================================
+   DOSSIER SASKATCHEWAN — design « long lots » (Martin, 30 sept. 2026)
+   ==========================================================================
+   Les terres en lanières du régime seigneurial, vues du ciel : des bandes étroites et
+   parallèles aux couleurs de champs (olive, blé, ocre, terre cuite), et la rivière en bleu
+   dessous. En Saskatchewan, ce sont les lots de rivière de la Saskatchewan Sud.
+
+   Cette feuille est chargée APRÈS commun/dq.css (l'ancien style néo-brutaliste de DQ). Elle
+   l'emporte de trois façons :
+     1. elle redéfinit ses JETONS (encre, papier, accent, ombres, coins) : presque toute
+        l'ancienne feuille s'appuie sur eux, donc une grande partie du site bascule d'un coup ;
+     2. elle remplace les familles de caractères (Fraunces pour les titres, Karla pour le texte)
+        et annule les capitales forcées ;
+     3. elle dessine les composants propres au nouveau design (sk-*).
+   Le thème sombre n'est pas encore dessiné : le site reste clair (voir la fin du fichier).
+   ========================================================================== */
+
+:root,
+:root[data-theme],
+html[data-theme="dark"]{
+  /* La terre */
+  --sk-olive:#6B8C4A;
+  --sk-foret:#4E6B3D;
+  --sk-prairie:#8BA35E;
+  --sk-sauge:#A9B573;
+  --sk-ble:#D4AE62;
+  --sk-paille:#E3CC92;
+  --sk-ocre:#B87440;
+  --sk-argile:#C98F57;
+  /* L'eau */
+  --sk-riviere:#3E6F9A;
+  --sk-riviere-fonce:#2C5378;
+  /* Le papier */
+  --sk-blanc:#FFFFFF;
+  --sk-creme:#F4EFE3;
+  --sk-rive:#E9DFC6;
+  --sk-filet:#E4DCC9;
+
+  /* Les jetons de DQ, réécrits */
+  --ink:#1E2A24;
+  --ink-2:#1E2A24;
+  --paper:#FFFFFF;
+  --paper-2:#F4EFE3;
+  --card:#FFFFFF;
+  --line:#E4DCC9;
+  --line-soft:#EEE8DA;
+  --slate:#5E665F;
+  --sur-clair:#1E2A24;
+  --sur-fonce:#FFFFFF;
+  --gold:#3E6F9A;          /* l'accent devient la rivière : liens, bouton principal */
+  --gold-soft:#DCE7F1;
+  --gold-bg:#3E6F9A;
+  --gold-hover:#2C5378;
+  --gold-pale:#BFD3E6;
+  --gold-paler:#DCE7F1;
+  --ink-bg:#2F3E33;        /* surfaces actives (filtre choisi) : forêt sombre */
+  --yellow:#F1E6C8;        /* l'ancien jaune vif devient la paille pâle */
+  --green:#4E6B3D;
+  --green-soft:#DDE7CC;
+  --red:#A9452C;
+  --red-soft:#F2D6CB;
+  --radius:4px;
+  --shadow:0 1px 2px rgba(30,42,36,.06), 0 6px 18px rgba(30,42,36,.07);
+  --shadow-lg:0 2px 4px rgba(30,42,36,.06), 0 12px 32px rgba(30,42,36,.10);
+  --shadow-sm:0 1px 2px rgba(30,42,36,.06), 0 3px 8px rgba(30,42,36,.06);
+  color-scheme:light;
+}
+
+/* --------------------------------------------------------------------------
+   Typographie
+   -------------------------------------------------------------------------- */
+html, body{background:var(--sk-blanc); color:var(--ink);}
+body, button, input, select, textarea{font-family:'Karla', system-ui, sans-serif;}
+body{font-size:16px; line-height:1.55;}
+h1, h2, h3, .hero-h1, .brand-title, .section-head h2, .sk-resume-titre, .sk-chiffre b, .sk-tuile-num{
+  font-family:'Fraunces', Georgia, serif;
+  text-transform:none !important;
+  letter-spacing:-0.01em;
+}
+h2, .section-head h2{font-weight:700; font-size:clamp(26px, 3.2vw, 36px); line-height:1.15;}
+h3{font-weight:650;}
+/* Les capitales forcées de l'ancien style tombent : on lit en casse normale. */
+.meta, .bstep, .status-pill, .tabs a, .legend-label, .open-label, .sub, .follow-hint,
+.bill-share-label, .vc-meta, .result-badge, .depute-party, .hot-badge, .expand-hint,
+.calendar-box .status, .stat-cell span, .lang-toggle, footer, footer a{
+  text-transform:none !important;
+  letter-spacing:0.01em !important;
+}
+a{color:var(--gold);}
+
+/* Le surtitre : seule place des petites capitales espacées (maquette : RÉSUMÉ, ARPENTAGE). */
+.sk-surtitre{
+  display:block; font-family:'Karla', sans-serif; font-weight:700; font-size:13px;
+  letter-spacing:0.18em; text-transform:uppercase; color:var(--sk-riviere);
+}
+.sk-surtitre.sk-vert{color:var(--sk-olive);}
+.sk-masque{position:absolute !important; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap;}
+
+/* --------------------------------------------------------------------------
+   En-tête : blanc, léger, un filet dessous
+   -------------------------------------------------------------------------- */
+.ticker, .maple-flip{display:none !important;}
+#dq-topbar, #dq-topbar.compact{background:var(--sk-blanc); border-bottom:1px solid var(--sk-filet); box-shadow:none;}
+header.top{background:var(--sk-blanc); border:0; box-shadow:none;}
+.brand-title{display:flex; align-items:center; gap:10px; font-weight:700; font-size:26px; color:var(--ink);}
+.brand-title .brand-blue{color:var(--ink);}
+.sk-logo{width:36px; height:26px; flex:none;}
+.brand-text p{display:none;}
+.tabs a{font-family:'Karla', sans-serif; font-weight:500; font-size:16px; color:var(--ink); background:transparent; border:0; box-shadow:none;}
+.tabs a .n{display:none;}
+.tabs a[data-view="apercu"]{display:none;}   /* le logo ramène à l'accueil (maquette) */
+header.top .tabs a:hover, header.top .tabs a.active, header.top .tabs a[aria-current="page"]{
+  background:transparent !important; color:var(--sk-riviere) !important; box-shadow:none !important;
+  text-decoration:underline; text-underline-offset:6px; text-decoration-thickness:2px;
+}
+.tabs a.nav-mondossier{background:var(--sk-riviere); color:#fff; border-radius:4px; padding:8px 18px; font-weight:700;}
+header.top .tabs a.nav-mondossier:hover, header.top .tabs a.nav-mondossier.active, header.top .tabs a.nav-mondossier[aria-current="page"]{background:var(--sk-riviere-fonce) !important; color:#fff !important; text-decoration:none;}
+.header-ctrls .theme-toggle{display:none;}   /* thème sombre pas encore dessiné */
+.header-ctrls button, .font-size-ctrl, .lang-toggle{background:transparent; border:1px solid var(--sk-filet); box-shadow:none; color:var(--ink); border-radius:4px;}
+.lang-toggle:hover{background:var(--sk-creme); color:var(--ink);}
+
+/* --------------------------------------------------------------------------
+   Accueil — 1. le résumé (« L'essentiel en 30 secondes »)
+   -------------------------------------------------------------------------- */
+.sk-resume{
+  display:grid; grid-template-columns:1.05fr repeat(4, 1fr);
+  border:1px solid var(--sk-filet); margin:36px 0 36px; background:var(--sk-blanc);
+}
+.sk-resume-tete{background:var(--sk-creme); padding:26px 28px; border-right:1px solid var(--sk-filet);}
+.sk-resume-titre{display:block; font-weight:700; font-size:30px; line-height:1.15; margin-top:8px;}
+.sk-resume-case{padding:22px 24px; border-top:10px solid; border-right:1px solid var(--sk-filet); display:flex; flex-direction:column; gap:6px;}
+.sk-resume-case:last-child{border-right:0;}
+.sk-resume-case b{font-weight:700; font-size:18px; letter-spacing:0.02em;}
+.sk-resume-case span{color:var(--slate); font-size:15px; line-height:1.6;}
+.sk-c1{border-top-color:var(--sk-ocre);}
+.sk-c2{border-top-color:var(--sk-ble);}
+.sk-c3{border-top-color:var(--sk-olive);}
+.sk-c4{border-top-color:var(--sk-riviere);}
+
+/* --------------------------------------------------------------------------
+   Accueil — 2. les lots et la rivière
+   -------------------------------------------------------------------------- */
+.sk-lots{position:relative; border-radius:6px; overflow:hidden; margin-bottom:56px;}
+.sk-lots-champ{display:flex; gap:3px; height:clamp(420px, 46vw, 620px); background:var(--sk-rive);}
+.sk-laniere{display:flex; flex-direction:column; gap:3px;}
+.sk-laniere span{display:block; min-height:24px;}
+.sk-lots-carte{
+  position:absolute; left:4.2%; top:12%; width:min(54%, 820px);
+  background:var(--sk-blanc); border-radius:6px; box-shadow:var(--shadow-lg);
+  padding:clamp(28px, 3.4vw, 52px) clamp(28px, 3.4vw, 50px);
+}
+.sk-lots-titre{
+  margin:16px 0 22px; font-weight:800; font-size:clamp(40px, 5.6vw, 76px); line-height:1.02;
+  color:var(--ink); letter-spacing:-0.025em;
+}
+.sk-lots-titre span:not(.sk-masque){display:block;}
+.sk-lots-texte{font-size:clamp(17px, 1.4vw, 21px); line-height:1.6; color:var(--slate); margin:0; max-width:40ch;}
+.sk-rive{height:10px; background:var(--sk-rive);}
+.sk-riviere{
+  background:var(--sk-riviere); height:clamp(90px, 9vw, 140px); display:flex; align-items:center;
+  justify-content:flex-end; padding:0 clamp(24px, 4vw, 64px);
+}
+.sk-riviere span{font-family:'Fraunces', Georgia, serif; font-style:italic; font-weight:600; font-size:clamp(20px, 2vw, 28px); color:#F4EFE3; letter-spacing:0.02em;}
+
+/* --------------------------------------------------------------------------
+   Accueil — 3. les trois chiffres
+   -------------------------------------------------------------------------- */
+.sk-chiffres{display:grid; grid-template-columns:repeat(3, 1fr); gap:32px; margin:0 0 72px;}
+.sk-chiffre{border-left:12px solid; padding:6px 0 4px 26px; display:flex; flex-direction:column;}
+.sk-chiffre b{font-weight:800; font-size:clamp(64px, 7vw, 104px); line-height:1; letter-spacing:-0.03em;}
+.sk-chiffre span{font-size:19px; color:var(--slate); margin-top:12px;}
+.sk-vert-b{border-left-color:var(--sk-olive);}
+.sk-ble-b{border-left-color:var(--sk-ble);}
+.sk-ocre-b{border-left-color:var(--sk-ocre);}
+
+/* --------------------------------------------------------------------------
+   Accueil — 4. les dernières lois sanctionnées
+   -------------------------------------------------------------------------- */
+.sk-sanct{margin:0 0 72px;}
+.sk-sanct-tete{display:flex; justify-content:space-between; align-items:baseline; gap:16px; margin-bottom:22px;}
+.sk-sanct-tete h2{margin:0;}
+.sk-sanct-date{color:var(--slate); font-size:16px;}
+.sk-sanct-grille{display:grid; grid-template-columns:repeat(4, 1fr); gap:6px;}
+.sk-tuile{display:flex; flex-direction:column; text-decoration:none; color:var(--ink); border-bottom:12px solid var(--sk-riviere); background:var(--sk-creme);}
+.sk-tuile-num{display:block; height:220px; padding:22px 24px; font-weight:800; font-size:56px; line-height:1;}
+.sk-tuile-texte{padding:22px 24px 26px; display:flex; flex-direction:column; gap:8px; flex:1;}
+.sk-tuile-texte b{font-weight:700; font-size:18px; line-height:1.4;}
+.sk-tuile-texte small{font-size:14.5px; color:var(--slate); line-height:1.5;}
+.sk-tuile:hover .sk-tuile-texte b{color:var(--sk-riviere); text-decoration:underline;}
+
+/* --------------------------------------------------------------------------
+   Les bandes et cartes de l'ancien style, adoucies
+   -------------------------------------------------------------------------- */
+.band, .band.bleed{border:0 !important; box-shadow:none !important;}
+.band-yellow, .band-yellow.bleed{background:var(--sk-creme) !important; color:var(--ink) !important;}
+.band-blue, .band-blue.bleed{background:var(--sk-riviere) !important;}
+.band-white{background:var(--sk-blanc) !important;}
+.bill, .vote-card, .md-carte, .info-box, .calendar-box, .deput-card, .minister-card, .m-card, .pet-card, .news-item, .challenged-card{
+  border:1px solid var(--sk-filet) !important; box-shadow:none !important; border-radius:6px;
+  background:var(--sk-blanc);
+}
+.bill:hover, .vote-card:hover{box-shadow:var(--shadow) !important;}
+.bill .num{background:var(--sk-creme); color:var(--ink); border:0; border-radius:4px; font-family:'Fraunces', serif; font-weight:700;}
+.bill h3{font-size:20px; font-weight:650; letter-spacing:-0.01em;}
+.bill-resume-executif{border-left-color:var(--sk-ble);}
+.bstep{border:1px solid var(--sk-filet) !important; background:var(--sk-blanc); color:var(--slate); border-radius:999px; font-weight:600;}
+.bstep.on{background:var(--sk-sauge) !important; color:var(--ink) !important; border-color:var(--sk-sauge) !important;}
+.bstep.now{background:var(--sk-ble) !important; color:var(--ink) !important; border-color:var(--sk-ble) !important;}
+.status-pill{border-radius:999px; border:1px solid var(--sk-filet) !important; font-weight:700;}
+.status-sanctionne{background:var(--green-soft) !important; color:var(--sk-foret) !important;}
+.status-encours{background:var(--gold-soft) !important; color:var(--sk-riviere-fonce) !important;}
+.status-mort{background:var(--sk-creme) !important; color:var(--slate) !important;}
+.depute-party{border-radius:999px;}
+.follow-btn, .account-btn, .hero-cta, .votes-more, .bill-more, button.qf-btn, .qf-btn{
+  border-radius:4px !important; box-shadow:none !important; border:1px solid var(--sk-filet) !important;
+}
+.follow-btn.on, .qf-btn.active{background:var(--ink-bg) !important; color:#fff !important; border-color:var(--ink-bg) !important;}
+.account-btn, .hero-cta{background:var(--sk-riviere) !important; color:#fff !important; border-color:var(--sk-riviere) !important;}
+input[type="email"], input[type="search"], input[type="text"], select{border:1px solid var(--sk-filet) !important; border-radius:4px; box-shadow:none !important;}
+
+/* Les autres pages ont leur propre grand titre : même famille que l'accueil, sans contour. */
+.view-hero .hero-h1, .hero-h1{color:var(--ink);}
+.hero-outline{-webkit-text-stroke:0 !important; color:var(--sk-olive) !important;}
+.hero-blue{color:var(--sk-riviere) !important;}
+.hero-sujet{color:var(--sk-olive); background:transparent !important; border:0 !important; padding:0 !important; font-family:'Karla', sans-serif; font-weight:700; letter-spacing:0.18em !important; text-transform:uppercase !important; font-size:13px;}
+
+/* Pied de page : sobre, comme la maquette */
+footer{background:var(--sk-blanc) !important; color:var(--slate) !important; border-top:1px solid var(--sk-filet) !important;}
+footer a{color:var(--slate) !important;}
+
+/* --------------------------------------------------------------------------
+   Téléphone
+   -------------------------------------------------------------------------- */
+@media (max-width: 980px){
+  .sk-resume{grid-template-columns:1fr 1fr;}
+  .sk-resume-tete{grid-column:1 / -1; border-right:0; border-bottom:1px solid var(--sk-filet);}
+  .sk-resume-case:nth-child(odd){border-right:0;}
+  .sk-sanct-grille{grid-template-columns:1fr 1fr;}
+  .sk-lots-carte{position:relative; left:auto; top:auto; width:auto; margin:-120px 16px 0; }
+  .sk-lots-champ{height:240px;}
+}
+@media (max-width: 640px){
+  .sk-resume{grid-template-columns:1fr;}
+  .sk-resume-case{border-right:0;}
+  .sk-chiffres{grid-template-columns:1fr; gap:24px;}
+  .sk-sanct-grille{grid-template-columns:1fr;}
+  .sk-tuile-num{height:120px;}
+}
+
+/* Le thème sombre n'est pas encore dessiné pour ce design : on reste clair même si un ancien
+   choix « sombre » est mémorisé dans le navigateur. */
+html[data-theme="dark"]{color-scheme:light;}
+html[data-theme="dark"] body{background:var(--sk-blanc); color:var(--ink);}
