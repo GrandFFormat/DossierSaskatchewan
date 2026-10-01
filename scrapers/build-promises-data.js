@@ -26,6 +26,7 @@ function main() {
     sourceUrl: p.sourceUrl,
     // Ce que l'Assemblée en a fait : les projets de loi qui la mettent en œuvre, avec la preuve
     // tirée des notes explicatives ; ou une note quand aucun projet n'en parle.
+    etat: p.etat,   // loi / partiel / aucune : l'étiquette factuelle de la carte
     actions: p.actions || [],
     actionNote: p.actionNote,
     actionNoteEn: p.actionNoteEn,

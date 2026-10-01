@@ -23,7 +23,8 @@
           "preuveEn": "Raises the basic personal amount by $500 a year for 2025, 2026, 2027 and 2028, on top of indexation (explanatory notes, s. 3).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-2",
@@ -46,7 +47,8 @@
           "preuveEn": "Creates the Home Renovation Tax Credit: 10.5% of eligible expenses on a primary residence (explanatory notes, s. 9).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-3",
@@ -69,7 +71,8 @@
           "preuveEn": "Raises the First-time Homebuyers' Credit from $10,000 to $15,000 from 2025 (explanatory notes, s. 10).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-4",
@@ -92,7 +95,8 @@
           "preuveEn": "Raises the lifetime Graduate Retention Program maximum from $20,000 to $24,000 (explanatory notes, ss. 15 and 20).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-5",
@@ -115,7 +119,8 @@
           "preuveEn": "Raises the Active Families Benefit from $150 to $300 per child, and $400 for a child eligible for the Disability Tax Credit (explanatory notes, s. 19).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-6",
@@ -129,7 +134,8 @@
       "capturedAt": "2026-10-01",
       "actions": [],
       "actionNote": "Aucun projet de loi de la 30e législature n'en parle. Une mesure de ce genre peut se faire sans loi (programme, règlement ou budget) : l'absence de projet de loi ne veut pas dire qu'elle n'a pas été faite.",
-      "actionNoteEn": "No bill of the 30th Legislature deals with it. A measure like this can be carried out without a law (a program, a regulation or the budget): the absence of a bill doesn't mean it wasn't done."
+      "actionNoteEn": "No bill of the 30th Legislature deals with it. A measure like this can be carried out without a law (a program, a regulation or the budget): the absence of a bill doesn't mean it wasn't done.",
+      "etat": "aucune"
     },
     {
       "id": "skp-7",
@@ -154,7 +160,8 @@
         }
       ],
       "actionNote": "Le nombre de policiers ne passe pas par une loi : cette partie de l'engagement ne se suit pas ici.",
-      "actionNoteEn": "Police staffing isn't set by law: that part of the commitment can't be tracked here."
+      "actionNoteEn": "Police staffing isn't set by law: that part of the commitment can't be tracked here.",
+      "etat": "partiel"
     },
     {
       "id": "skp-8",
@@ -177,7 +184,8 @@
           "preuveEn": "Holds the small business tax rate at 1% instead of letting it return to 2% on July 1, 2025 (explanatory notes, s. 17).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-9",
@@ -191,7 +199,8 @@
       "capturedAt": "2026-10-01",
       "actions": [],
       "actionNote": "Aucun projet de loi de la 30e législature n'en parle. Une mesure de ce genre peut se faire sans loi (programme, règlement ou budget) : l'absence de projet de loi ne veut pas dire qu'elle n'a pas été faite.",
-      "actionNoteEn": "No bill of the 30th Legislature deals with it. A measure like this can be carried out without a law (a program, a regulation or the budget): the absence of a bill doesn't mean it wasn't done."
+      "actionNoteEn": "No bill of the 30th Legislature deals with it. A measure like this can be carried out without a law (a program, a regulation or the budget): the absence of a bill doesn't mean it wasn't done.",
+      "etat": "aucune"
     },
     {
       "id": "skp-10",
@@ -214,7 +223,8 @@
           "preuveEn": "Raises the Disability Tax Credit, the supplement for persons under 18 and the Caregiver Credit by 25% for 2025 (explanatory notes, ss. 6 and 12).",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L1S/Bill30-1EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     },
     {
       "id": "skp-11",
@@ -228,7 +238,8 @@
       "capturedAt": "2026-10-01",
       "actions": [],
       "actionNote": "Aucun projet de loi de la 30e législature n'en parle. Une mesure de ce genre peut se faire sans loi (programme, règlement ou budget) : l'absence de projet de loi ne veut pas dire qu'elle n'a pas été faite.",
-      "actionNoteEn": "No bill of the 30th Legislature deals with it. A measure like this can be carried out without a law (a program, a regulation or the budget): the absence of a bill doesn't mean it wasn't done."
+      "actionNoteEn": "No bill of the 30th Legislature deals with it. A measure like this can be carried out without a law (a program, a regulation or the budget): the absence of a bill doesn't mean it wasn't done.",
+      "etat": "aucune"
     },
     {
       "id": "skp-12",
@@ -261,7 +272,8 @@
           "preuveEn": "Lets both spouses each claim the credit.",
           "source": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L2S/Bill30-25EN.pdf"
         }
-      ]
+      ],
+      "etat": "loi"
     }
   ],
   "pagesVues": [
