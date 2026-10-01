@@ -400,3 +400,19 @@ h2, .section-head h2, .sk-sanct-tete h2{font-weight:600 !important; letter-spaci
 .qf-btn[onclick*="'adoptes'"]:not(.active){background:#DCFCE7 !important; color:#15803D !important; border-color:#BBF7D0 !important;}
 .qf-btn.active{background:var(--sk-nuit) !important; color:var(--sk-lime-clair) !important; border-color:var(--sk-nuit) !important;}
 .brutal-search .bs-icon{background:var(--sk-vert) !important; color:#fff !important;}
+
+/* --------------------------------------------------------------------------
+   Promesses (1er oct. 2026) : cartes arrondies, bande de la couleur du parti
+   -------------------------------------------------------------------------- */
+.prom-card{position:relative; overflow:hidden; border:1.5px solid var(--sk-filet) !important; box-shadow:none !important; border-radius:22px !important; padding-top:28px !important; background:var(--sk-blanc) !important;}
+.prom-card::before{content:""; position:absolute; left:0; right:0; top:0; height:8px; background:#16A34A;}
+.prom-card:has(.depute-party[style*="#F58220"])::before{background:#F58220;}
+.prom-card:has(.depute-party[style*="#005941"])::before{background:#005941;}
+.prom-quote{font-weight:600 !important; font-size:clamp(18px, 1.5vw, 22px) !important; letter-spacing:-0.01em;}
+.prom-col{border:0 !important; box-shadow:none !important; border-radius:16px !important; background:var(--sk-brume) !important;}
+.prom-col:last-child{background:#FFFBEB !important;}
+.prom-col .lbl{font-family:'JetBrains Mono', monospace !important; letter-spacing:0.08em !important; text-transform:uppercase !important; color:var(--sk-vert-fonce) !important;}
+.prom-col .lbl.att{color:#A16207 !important;}
+.prom-theme-pill{border:0 !important; border-radius:999px !important; box-shadow:none !important; font-weight:600;}
+.prom-col a{color:var(--sk-vert-fonce) !important; font-weight:600;}
+.qf-btn.qf-sel{outline:3px solid var(--sk-nuit); outline-offset:2px;}
