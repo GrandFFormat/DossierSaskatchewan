@@ -3,6 +3,18 @@
     "date": "2026-10-01",
     "volet": "site",
     "fr": {
+      "titre": "Statistiques de visite, avec votre accord",
+      "texte": "Le site compte ses visites avec Google Analytics, mais seulement si vous l’acceptez : une bannière vous le demande à la première visite, et « Refuser » ne change rien d’autre. Vous pouvez changer d’avis avec le lien « Témoins » au bas de chaque page."
+    },
+    "en": {
+      "titre": "Visit statistics, with your consent",
+      "texte": "The site counts its visits with Google Analytics, but only if you agree: a banner asks you on your first visit, and “Decline” changes nothing else. You can change your mind with the “Cookies” link at the bottom of every page."
+    }
+  },
+  {
+    "date": "2026-10-01",
+    "volet": "site",
+    "fr": {
       "titre": "DossierSaskatchewan sur Facebook",
       "texte": "Le site a maintenant sa page Facebook, facebook.com/dossiersaskatchewan, pour suivre les nouveaux projets de loi et les votes. Le lien est au bas de chaque page."
     },

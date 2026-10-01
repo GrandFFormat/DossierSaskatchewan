@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Pas de Google Analytics pour l'instant. La copie de DQ portait l'identifiant de DQ : les
-     visites de ce site seraient allées dans les statistiques de DQ. Pour en remettre, créer
-     une propriété à part, puis ramener ici, depuis DQ, le bloc gtag et commun/consentement.js (la
-     bannière de consentement), qui sont prêts. -->
+<!-- Google Analytics de DossierSaskatchewan (propriété à part, G-FQ1Q3Q0RGZ, 1er oct. 2026), en
+     Consent Mode : par défaut, aucun témoin. La bannière (commun/consentement.js) passe
+     analytics_storage à « granted » après « Accept ». -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dsk:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ1Q3Q0RGZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FQ1Q3Q0RGZ');
+</script>
+<script src="/commun/consentement.js" defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
@@ -241,6 +254,7 @@ function goToFederal(evt){
       <ol class="maj-liste" id="journalListe" aria-live="polite"></ol>
     <div class="prerendu" data-prerendu="journal">
       <ul aria-label="Site updates">
+        <li><span class="pr-meta">October 1, 2026 —</span> <b>Visit statistics, with your consent</b> The site counts its visits with Google Analytics, but only if you agree: a banner asks you on your first visit, and “Decline” changes nothing else. You can change your mind with the “Cookies” link at the bottom of every page.</li>
         <li><span class="pr-meta">October 1, 2026 —</span> <b>DossierSaskatchewan on Facebook</b> The site now has its own Facebook page, facebook.com/dossiersaskatchewan, to follow new bills and votes. The link is at the bottom of every page.</li>
         <li><span class="pr-meta">October 1, 2026 —</span> <b>DossierSaskatchewan is live</b> The site opens at dossiersaskatchewan.ca. It follows Saskatchewan's Legislative Assembly: the 61 MLAs, the 18 ministers, the 88 bills of the 30th Legislature and the 34 recorded divisions, read from the Assembly's official documents and updated automatically twice a day.</li>
         <li><span class="pr-meta">October 1, 2026 —</span> <b>Promises: what the Assembly did with them</b> The 12 commitments of the Saskatchewan Party's 2024 platform, the majority government, are quoted word for word. Each sits next to the bills that carry it out, with the sentence from the official explanatory notes that shows it: 8 are in an assented law, 1 partly, 3 have no bill.</li>

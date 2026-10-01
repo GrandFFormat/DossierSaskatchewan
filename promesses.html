@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Pas de Google Analytics pour l'instant. La copie de DQ portait l'identifiant de DQ : les
-     visites de ce site seraient allées dans les statistiques de DQ. Pour en remettre, créer
-     une propriété à part, puis ramener ici, depuis DQ, le bloc gtag et commun/consentement.js (la
-     bannière de consentement), qui sont prêts. -->
+<!-- Google Analytics de DossierSaskatchewan (propriété à part, G-FQ1Q3Q0RGZ, 1er oct. 2026), en
+     Consent Mode : par défaut, aucun témoin. La bannière (commun/consentement.js) passe
+     analytics_storage à « granted » après « Accept ». -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dsk:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ1Q3Q0RGZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FQ1Q3Q0RGZ');
+</script>
+<script src="/commun/consentement.js" defer></script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>
