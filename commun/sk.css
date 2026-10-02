@@ -599,3 +599,8 @@ html:not([data-theme="dark"]) .band-blue .cp-vs, html:not([data-theme="dark"]) .
 /* Ministres : l'encadré « Lire la présence aux votes » prend le fond des bandes (« Projets
    challengés », comparateur), en clair comme en sombre (Martin, 1er oct. 2026). */
 .legende-presence{background:var(--sk-brume) !important; border-color:transparent !important;}
+
+/* Page d'un projet (/projets-de-loi/24-30) : la carte arrive SOUS l'en-tête fixe, pas dessous. */
+.bill{scroll-margin-top:96px;}
+.bill a.num{text-decoration:none;}
+.bill a.num:hover{text-decoration:underline; text-underline-offset:3px;}

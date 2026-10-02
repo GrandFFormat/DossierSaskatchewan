@@ -45,9 +45,9 @@
   }catch(e){}
 })();
 </script>
-<title>Site updates — DossierSaskatchewan</title>
-<meta name="description" content="What changes on DossierSaskatchewan, the independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.">
-<link rel="canonical" href="https://dossiersaskatchewan.ca/sources">
+<title>Bill 45 — The Co-operatives Consequential Amendments Act, 2025 — DossierSaskatchewan</title>
+<meta name="description" content="Bill 45: Updates references to co-operatives law in about 20 other Saskatchewan statutes so they align with the new Co-operatives Act, 2025.">
+<link rel="canonical" href="https://dossiersaskatchewan.ca/projets-de-loi/45-30">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
 <link rel="alternate" type="application/rss+xml" title="DossierSaskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
@@ -58,9 +58,9 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierSaskatchewan">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Site updates — DossierSaskatchewan">
-<meta property="og:description" content="What changes on DossierSaskatchewan, the independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.">
-<meta property="og:url" content="https://dossiersaskatchewan.ca/sources">
+<meta property="og:title" content="Bill 45 — The Co-operatives Consequential Amendments Act, 2025 — DossierSaskatchewan">
+<meta property="og:description" content="Bill 45: Updates references to co-operatives law in about 20 other Saskatchewan statutes so they align with the new Co-operatives Act, 2025.">
+<meta property="og:url" content="https://dossiersaskatchewan.ca/projets-de-loi/45-30">
 <meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
@@ -68,8 +68,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Site updates — DossierSaskatchewan">
-<meta name="twitter:description" content="What changes on DossierSaskatchewan, the independent citizen site that makes Saskatchewan's Legislative Assembly readable, and who is behind it.">
+<meta name="twitter:title" content="Bill 45 — The Co-operatives Consequential Amendments Act, 2025 — DossierSaskatchewan">
+<meta name="twitter:description" content="Bill 45: Updates references to co-operatives law in about 20 other Saskatchewan statutes so they align with the new Co-operatives Act, 2025.">
 <meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/sk.svg">
@@ -93,8 +93,14 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Site updates",
-      "item": "https://dossiersaskatchewan.ca/sources"
+      "name": "Bills",
+      "item": "https://dossiersaskatchewan.ca/projets-de-loi"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Bill 45",
+      "item": "https://dossiersaskatchewan.ca/projets-de-loi/45-30"
     }
   ]
 }
@@ -123,7 +129,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/commun/sk.css">
 </head>
-<body data-page="bd" data-donnees="journal,stats">
+<body data-page="projets" data-donnees="bills,deputesRaw,stats">
 
 <!-- Ticker brutaliste : bande noire défilante — contenu rempli avec les VRAIES
      données par renderTicker() (appelé une fois les datasets chargés). -->
@@ -166,7 +172,7 @@
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
     <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
     <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
-    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
+    <a class="active" aria-current="page" href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
     <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
     <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
@@ -220,52 +226,71 @@ function goToFederal(evt){
 <div class="app">
 
   <!-- APERÇU -->
-  <section class="view active" id="view-bd">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.bd">Site updates</span></nav>
-    <!-- La page /sources : le créateur, puis les mises à jour du site. Elle portait une bande
-         dessinée (Ti-Jo) ; Martin n'a gardé que la case de sa photo, refaite en HTML pour qu'elle
-         reste lisible sur un téléphone et suive le thème sombre. La liste vient de
-         data/journal.json, tenu à la main : voir renderJournal dans commun/dq.js. -->
-    <div class="section-head">
-      <div>
-        <h1 data-i18n="maj.h">Site updates</h1>
-        <div class="sub" data-i18n="maj.sub">What changed on DossierSaskatchewan, newest first</div>
-      </div>
-      <a class="bd-back" href="/" data-i18n="bd.back">← Back to overview</a>
-    </div>
-    <div class="createur">
-      <div class="createur-tete">
-        <img class="createur-photo" src="/commun/martin.jpg" width="120" height="120" alt="Martin Archambault">
-        <div class="createur-bulle">
-          <span data-i18n="bd.intro1">Hi! My name is</span>
-          <strong class="createur-nom">Martin Archambault</strong>
-          <span data-i18n="bd.intro3">I'm 45, and dossiersaskatchewan.ca is your first step into democracy!</span>
+  <section class="view active" id="view-projets">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.projets">Bills</span></nav>
+    <!-- Rappel de dissolution : sans ça, les projets non sanctionnés seraient lus
+         comme « encore en cours ». À retirer avec l'autre bande le 17 nov. 2026. -->
+
+    <!-- Hero de vue (refonte brutaliste) -->
+    <div class="view-hero">
+      <h1 class="hero-h1 hero-h1-md">
+        <span class="hero-sujet" data-i18n="sujet.projets">Saskatchewan bills</span>
+        <span data-i18n="projhero.l1">Bills,</span>
+        <span class="hero-outline" data-i18n="projhero.l2">translated plainly.</span>
+      </h1>
+      <p class="view-hero-sub" data-i18n="projhero.sub">Every bill summarized in everyday language, with its real stage in the process. The full text is always one click away on legassembly.sk.ca.</p>
+
+      <!-- Recherche façon maquette + 4 filtres rapides (actif = noir/jaune) -->
+      <div class="projets-controls">
+        <div class="brutal-search">
+          <span class="bs-icon" aria-hidden="true">🔍</span>
+          <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Number, title or keyword…">
         </div>
-      </div>
-      <!-- Le mot de Martin (27 sept. 2026), le même que sur DossierCanada. -->
-      <div class="createur-mot">
-        <p class="createur-lead" data-i18n="bd.mot1">If we want people to understand politics, it has to be brought down to their level.</p>
-        <p data-i18n="bd.mot2">When I first tried to take an interest in it, on top of not knowing the jargon, bills came as two lines… and fifty PDFs. Most people would simply walk away.</p>
-        <p data-i18n="bd.mot3">So I had an idea: use artificial intelligence first to read through all of it, then to put it in plain words. That's how DossierQuébec was born — and now DossierSaskatchewan.</p>
-        <p data-i18n="bd.mot4">Alongside the AI recap, I've given people a lexicon that explains the basics of political jargon. Plain-language law exists — think of this as its equivalent for politics!</p>
+        <!-- Tri par activité. La logique existait déjà (toggleBillsSort) mais
+             AUCUN bouton ne la déclenchait : la liste était figée sur « activité
+             la plus récente » sans que personne puisse en sortir. -->
+        <button class="sort-toggle" id="sortToggle" onclick="toggleBillsSort()">↓ Activité récente</button>
+        <div class="quick-filters" id="billsQuickFilters"></div>
       </div>
     </div>
-    <div class="maj" id="journal">
-      <ol class="maj-liste" id="journalListe" aria-live="polite"></ol>
-    <div class="prerendu" data-prerendu="journal">
-      <ul aria-label="Site updates">
-        <li><span class="pr-meta">October 2, 2026 —</span> <b>One page per bill</b> Every bill now has its own address, for example dossiersaskatchewan.ca/projets-de-loi/24-30 (Bill 24, 30th Legislature). It is the address to share: it opens the bill directly, with its summary. The number on each card leads there, and search engines can now find every bill.</li>
-        <li><span class="pr-meta">October 1, 2026 —</span> <b>Visit statistics, with your consent</b> The site counts its visits with Google Analytics, but only if you agree: a banner asks you on your first visit, and “Decline” changes nothing else. You can change your mind with the “Cookies” link at the bottom of every page.</li>
-        <li><span class="pr-meta">October 1, 2026 —</span> <b>DossierSaskatchewan on Facebook</b> The site now has its own Facebook page, facebook.com/dossiersaskatchewan, to follow new bills and votes. The link is at the bottom of every page.</li>
-        <li><span class="pr-meta">October 1, 2026 —</span> <b>DossierSaskatchewan is live</b> The site opens at dossiersaskatchewan.ca. It follows Saskatchewan's Legislative Assembly: the 61 MLAs, the 18 ministers, the 88 bills of the 30th Legislature and the 34 recorded divisions, read from the Assembly's official documents and updated automatically twice a day.</li>
-        <li><span class="pr-meta">October 1, 2026 —</span> <b>Promises: what the Assembly did with them</b> The 12 commitments of the Saskatchewan Party's 2024 platform, the majority government, are quoted word for word. Each sits next to the bills that carry it out, with the sentence from the official explanatory notes that shows it: 8 are in an assented law, 1 partly, 3 have no bill.</li>
-        <li><span class="pr-meta">October 1, 2026 —</span> <b>A plain-language summary for every bill</b> Every bill has a one-sentence summary and its key points, in English and French, written by AI from the official text. The full text is always one click away on legassembly.sk.ca.</li>
-        <li><span class="pr-meta">October 1, 2026 —</span> <b>Dark theme</b> The moon button in the header switches the whole site to a dark theme. Every page was checked so that no text becomes unreadable.</li>
-      </ul>
-      <p class="pr-note">Newest first.</p>
+
+    <!-- Bande légende : le chemin d'un projet (les 3 étapes RÉELLES du site) -->
+    <div class="legend-strip bleed">
+      <span class="legend-label" data-i18n="legend.label">A bill's path:</span>
+      <span class="legend-chips">
+        <span class="bstep" data-i18n="etape.1">First reading</span><span class="legend-arrow">→</span>
+        <span class="bstep" data-i18n="etape.2">Debate and committee</span><span class="legend-arrow">→</span>
+        <span class="bstep" data-i18n="etape.3">Third reading / Assent</span>
+      </span>
+      <a class="legend-link" href="/lexique" data-i18n="legend.link">What are these stages? → Glossary</a>
     </div>
-      <button type="button" class="maj-plus" id="journalPlus" hidden></button>
+
+    <!-- Titre de résultats (change avec le filtre actif) -->
+    <div class="section-head min-group-head" id="billsResultHead">
+      <div><h2 id="billsResultTitle">Tous les projets</h2></div>
+      <span class="head-note" id="billsResultNote"></span>
     </div>
+
+    <div id="billsList"><article class="bill-prerendu">
+<h2>Bill 45 — The Co-operatives Consequential Amendments Act, 2025</h2>
+<p>Assented to on 2026-05-14 · Sponsor: Tim McLeod</p>
+<p>Updates references to co-operatives law in about 20 other Saskatchewan statutes so they align with the new Co-operatives Act, 2025.</p>
+<ul><li>Replaces outdated references to older co-operatives laws with The Co-operatives Act, 2025 across many statutes</li><li>Makes corresponding changes to The Business Corporations Act, 2021, including rules on significant control registers and electronic signatures</li><li>Updates definitions such as co-operative, health care co-operative, and housing co-operative in various acts</li><li>Aligns The Financial and Consumer Affairs Authority of Saskatchewan Act with new Co-operatives Act powers and duties</li><li>Updates municipal, credit union, and financial regulation statutes to reference the new Act</li><li>Comes into force on the same day as The Co-operatives Act, 2025</li></ul>
+<p><a href="https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-45.pdf" rel="noopener">The bill on the Legislative Assembly of Saskatchewan website</a></p>
+</article></div>
+
+    <!-- Explainer « challenger » : adapté au VRAI mécanisme du site (compte
+         requis, 1 demande par personne, paliers 500/1000) — la maquette disait
+         « pas de compte requis », ce qui ne correspond pas à la réalité. -->
+    <div class="band band-yellow bleed" id="band-challenge-explainer">
+      <h2 data-i18n="chexp.h">✋ What is “challenging”?</h2>
+      <p data-i18n="chexp.p1">One click on “Ask for an explanation” = a citizen request for the bill's sponsor to explain it in plain language, and for us to keep an eye on it together.</p>
+      <p data-i18n="chexp.p2">An account (email) is required — one request per person, no anonymous requests. Each bill's total is public: it shows which bills people want explained.</p>
+    </div>
+
+    <!-- Reste des projets (3e et suivants) — la bande jaune ci-dessus
+         s'intercale ainsi entre le 2e et le 3e projet. -->
+    <div id="billsListRest"></div>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->

@@ -1318,7 +1318,7 @@ function mdLois(isEn, quota){
         <div class="md-loi-tete"><span class="md-pl">PL ${mdH(b.num)}</span> <span class="status-pill ${statusClass(b.status)}">${statusLabel(b.status, b.step)}</span></div>
         <b>${mdH(isEn ? (b.titleEn || b.title) : b.title)}</b>
         <div class="md-note">${mdH(note || '')}</div>
-        <div class="md-liens"><a class="md-lien" href="/projets-de-loi?pl=${encodeURIComponent(b.num)}&id=${encodeURIComponent(b.id)}">${isEn ? 'Its card and summary' : 'Sa fiche et son résumé'}</a>
+        <div class="md-liens"><a class="md-lien" href="${adresseProjet(b, true)}">${isEn ? 'Its card and summary' : 'Sa fiche et son résumé'}</a>
           <a class="md-lien" href="${mdH(isEn ? (b.urlEn || b.url) : b.url)}" target="_blank" rel="noopener">${isEn ? 'On the Assembly’s website ↗' : 'Sur le site de l’Assemblée ↗'}</a></div>
       </div>
       <button class="md-bouton-doux" onclick="mdRetirerLoi('${mdH(b.id)}')">${isEn ? 'Stop following' : 'Ne plus suivre'}</button>
@@ -1631,7 +1631,7 @@ function actionPromesse(p, isEn){
     ? `<span class="prom-etat ok">${isEn ? 'Assented' : 'Sanctionnée'} · ${(String(a.note || '').match(/\d{4}-\d{2}-\d{2}/) || [''])[0]}</span>`
     : `<span class="prom-etat">${echapperTexte(isEn ? (a.noteEn || a.note || '') : (a.note || ''))}</span>`;
   const lois = (p.actions || []).map((a) => `<div class="prom-loi">
-      <a href="/projets-de-loi?pl=${a.num}${paramLangue(false)}"><b>${isEn ? 'Bill' : 'PL'} ${a.num}</b> — ${echapperTexte(a.titre)}</a> ${etat(a)}
+      <a href="${adresseProjet({ num: a.num, legislature: LEGISLATURE_SK }, true)}"><b>${isEn ? 'Bill' : 'PL'} ${a.num}</b> — ${echapperTexte(a.titre)}</a> ${etat(a)}
       <p>${echapperTexte(isEn ? a.preuveEn : a.preuve)}</p>
       <a class="prom-loi-src" href="${a.source}" target="_blank" rel="noopener">${isEn ? 'Explanatory notes (legassembly.sk.ca)' : 'Notes explicatives (legassembly.sk.ca)'}</a>
     </div>`).join('');
@@ -2602,7 +2602,7 @@ function billCard(b, ctx){
   return `
     <div class="bill" onclick="toggleBillSummary('${domId}', event)">
       <div class="head">
-        <span class="num">${billLabel}</span>
+        <a class="num" href="${adresseProjet(b, true)}" onclick="event.stopPropagation()" title="${isEn ? 'Link to this bill' : 'Lien vers ce projet'}">${billLabel}</a>
         <div class="bill-head-main">
           <h3>${title}</h3>
           <div class="meta">${sponsorLabel} : ${b.sponsor || noSponsorLabel} · ${presentedOnLabel} ${presentedOnValue}</div>
@@ -3088,7 +3088,7 @@ function renderSanctionnees(){
   const etapes = isEn ? 'Introduced → 2nd reading → Committee → Assent' : 'Dépôt → Principe → Commission → Sanction';
   grille.innerHTML = stats.sanctionnees.map((b) => {
     const titre = isEn ? (b.titleEn || b.title) : b.title;
-    return `<a class="sk-carte" href="/projets-de-loi?pl=${b.num}${paramLangue(false)}">
+    return `<a class="sk-carte" href="${adresseProjet({ num: b.num, legislature: LEGISLATURE_SK }, true)}">
       <span class="sk-carte-tete"><span class="sk-num">${isEn ? 'Bill' : 'PL'} ${b.num}</span><span class="sk-etat">${isEn ? 'Assented' : 'Sanctionné'}</span></span>
       <b>${echapperTexte(titre)}</b>
       <span class="sk-carte-pied"><span class="sk-barre" style="display:block"></span><span class="sk-etapes">${etapes}</span></span>
@@ -3233,7 +3233,8 @@ function shareBill(billId, platform, evt){
   const b = bills.find(x => x.id === Number(billId));
   if(!b) return;
   const title = isEn ? (b.titleEn || b.title) : b.title;
-  const url = `https://dossiersaskatchewan.ca/projets-de-loi?pl=${encodeURIComponent(b.num)}` + paramLangue(false);
+  // L'adresse de la page du projet (scripts/build-bill-pages.js) : c'est elle que Google indexe.
+  const url = 'https://dossiersaskatchewan.ca' + adresseProjet(b, true);
   const text = isEn
     ? `Bill ${b.num} — ${title}. Plain-language summary on DossierSaskatchewan:`
     : `Projet de loi n° ${b.num} — ${title}. Résumé en clair sur DossierSaskatchewan :`;
@@ -3246,15 +3247,26 @@ function shareBill(billId, platform, evt){
   }
 }
 
-// Lien profond : /projets-de-loi?pl=NUM → ouvre directement ce projet.
+// L'adresse d'un projet : sa page à lui, /projets-de-loi/NUM-LÉGISLATURE (scripts/build-bill-pages.js).
+// Les anciens liens /projets-de-loi?pl=NUM continuent d'ouvrir le projet (openBillFromQuery).
+const LEGISLATURE_SK = 30;
+function adresseProjet(b, avecLangue){
+  const leg = b.legislature || LEGISLATURE_SK;
+  return `/projets-de-loi/${encodeURIComponent(b.num)}-${leg}` + (avecLangue ? paramLangue(true) : '');
+}
+
+// Lien profond : /projets-de-loi/NUM-LÉG ou /projets-de-loi?pl=NUM → ouvre directement ce projet.
 function openBillFromQuery(){
   const params = new URLSearchParams(location.search);
-  const pl = params.get('pl');
+  // Page d'un projet : /projets-de-loi/NUM-LÉGISLATURE (scripts/build-bill-pages.js).
+  const page = location.pathname.match(/^\/projets-de-loi\/(\d+)-(\d+)\/?(?:\.html)?$/);
+  const pl = page ? page[1] : params.get('pl');
   if(!pl) return;
   // Le numéro n'est pas unique (PL 1, PL 2… reviennent à chaque session) : quand le lien porte
   // aussi l'id (courriels d'alerte, Mes dossiers), c'est lui qui choisit.
   const id = params.get('id');
-  const b = (id && bills.find(x => String(x.id) === id)) || bills.find(x => String(x.num) === String(pl));
+  const b = (page && bills.find(x => String(x.num) === page[1] && String(x.legislature) === page[2]))
+    || (id && bills.find(x => String(x.id) === id)) || bills.find(x => String(x.num) === String(pl));
   if(!b) return;
   // S'assurer qu'on est bien sur l'onglet Projets (au cas où le lien arrive
   // ailleurs, ex. /?pl=NUM) — sans toucher à l'URL (fromHistory).
@@ -3779,12 +3791,21 @@ const PAGE_META = {
 };
 function viewFromPath(){
   const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
+  // Une page de projet de loi (/projets-de-loi/24-30, scripts/build-bill-pages.js) est la vue Projets.
+  if(seg.startsWith('projets-de-loi/')) return 'projets';
   return SLUG_VIEWS[seg] || 'apercu';
 }
 const _titreEn = document.title;
 function syncTitle(viewName){
   const m = PAGE_META[viewName]; if(!m) return;
-  document.title = (typeof currentLang !== 'undefined' && currentLang === 'fr') ? m.fr : _titreEn;
+  const fr = typeof currentLang !== 'undefined' && currentLang === 'fr';
+  // La page d'un projet garde SON titre (« Bill 24 — … ») : le remplacer par celui de la liste
+  // effaçait le titre de la page une seconde après l'arrivée. En français, seul « Bill » change.
+  if(/^\/projets-de-loi\/\d+-\d+/.test(location.pathname)){
+    document.title = fr ? _titreEn.replace(/^Bill /, 'Projet de loi ') : _titreEn;
+    return;
+  }
+  document.title = fr ? m.fr : _titreEn;
 }
 
 function goToTab(viewName, opts){

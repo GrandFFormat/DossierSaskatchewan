@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-02",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Une page par projet de loi",
+      "texte": "Chaque projet de loi a maintenant sa propre adresse, par exemple dossiersaskatchewan.ca/projets-de-loi/24-30 (projet 24, 30e législature). C’est l’adresse à partager : elle ouvre directement le projet, avec son résumé. Le numéro sur chaque carte y mène, et les moteurs de recherche peuvent maintenant trouver chaque projet."
+    },
+    "en": {
+      "titre": "One page per bill",
+      "texte": "Every bill now has its own address, for example dossiersaskatchewan.ca/projets-de-loi/24-30 (Bill 24, 30th Legislature). It is the address to share: it opens the bill directly, with its summary. The number on each card leads there, and search engines can now find every bill."
+    }
+  },
+  {
     "date": "2026-10-01",
     "volet": "site",
     "fr": {
