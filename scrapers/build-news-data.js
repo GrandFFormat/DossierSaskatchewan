@@ -69,7 +69,7 @@ function main() {
     // ne sert pas dans la page — le bloc « Quoi de neuf » n'a pas de liens — mais
     // le flux RSS en a besoin : un item de flux sans lien vers la chose dont il
     // parle est inutile à qui le reçoit.
-    const lien = `${SITE}/projets-de-loi?pl=${encodeURIComponent(b.num)}`;
+    const lien = `${SITE}/projets-de-loi/${encodeURIComponent(b.num)}-${b.legislature}`;
     if (presente) {
       items.push({
         date: presente[1],
