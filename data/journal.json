@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-05",
+    "volet": "site",
+    "fr": {
+      "titre": "Les règles du site, sur une page",
+      "texte": "Les règles de sources de DossierSaskatchewan sont maintenant réunies sur une page, dossiersaskatchewan.ca/regles : jamais de donnée inventée, sources primaires seulement, aucun média, promesses citées mot pour mot, aucun verdict. Le lien « Les règles » est au bas de chaque page, à côté de Facebook."
+    },
+    "en": {
+      "titre": "The site’s rules, on one page",
+      "texte": "DossierSaskatchewan’s sourcing rules are now gathered on one page, dossiersaskatchewan.ca/regles: no invented data, primary sources only, no news media, promises quoted word for word, no verdict. The “The rules” link is at the bottom of every page, next to Facebook."
+    }
+  },
+  {
     "date": "2026-10-02",
     "volet": "assemblee",
     "fr": {

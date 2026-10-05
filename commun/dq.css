@@ -2008,3 +2008,12 @@
   .bill-lois[open] summary::before{content:"\2212";}
   .bill-lois summary{cursor:pointer; font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12.5px; text-transform:uppercase; letter-spacing:0.04em;}
   .bill-lois ul{margin:8px 0 0; padding-left:20px; font-size:14px; line-height:1.45; columns:2 260px; column-gap:24px;}
+
+/* La page /regles : les règles de sources du site, une carte par règle. */
+.regles-liste{list-style:none; margin:28px 0 0; padding:0; display:grid; gap:16px;}
+.regle{border:3px solid var(--ink); background:var(--card); box-shadow:var(--shadow); padding:20px 24px;}
+.regle-titre{display:flex; align-items:baseline; gap:14px; margin:0 0 10px; font-family:'Archivo',sans-serif; font-size:21px; font-weight:900; line-height:1.2; letter-spacing:-0.01em; color:var(--ink);}
+.regle-no{flex:none; min-width:34px; padding:2px 8px; background:var(--ink); color:var(--card); font-size:17px; text-align:center;}
+.regle p{margin:0; font-size:15.5px; line-height:1.6; color:var(--ink); max-width:75ch;}
+.regles-suite{margin:26px 0 0; font-size:15px; line-height:1.6; color:var(--ink);}
+.regles-suite a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}

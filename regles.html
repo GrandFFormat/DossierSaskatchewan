@@ -45,9 +45,9 @@
   }catch(e){}
 })();
 </script>
-<title>Bill 5 — The Saskatchewan Employment Amendment Act, 2024 — DossierSaskatchewan</title>
-<meta name="description" content="Bill 5: Amends The Saskatchewan Employment Act to update rules on work schedules, wages, leaves, gratuities, discriminatory action complaints and appeals.">
-<link rel="canonical" href="https://dossiersaskatchewan.ca/projets-de-loi/5-30">
+<title>The site's sourcing rules — DossierSaskatchewan</title>
+<meta name="description" content="DossierSaskatchewan's eight sourcing rules: no invented data, primary sources only, no news media, promises quoted word for word, no verdict.">
+<link rel="canonical" href="https://dossiersaskatchewan.ca/regles">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
 <link rel="alternate" type="application/rss+xml" title="DossierSaskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
@@ -58,9 +58,9 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierSaskatchewan">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Bill 5 — The Saskatchewan Employment Amendment Act, 2024 — DossierSaskatchewan">
-<meta property="og:description" content="Bill 5: Amends The Saskatchewan Employment Act to update rules on work schedules, wages, leaves, gratuities, discriminatory action complaints and appeals.">
-<meta property="og:url" content="https://dossiersaskatchewan.ca/projets-de-loi/5-30">
+<meta property="og:title" content="The site's sourcing rules — DossierSaskatchewan">
+<meta property="og:description" content="DossierSaskatchewan's eight sourcing rules: no invented data, primary sources only, no news media, promises quoted word for word, no verdict.">
+<meta property="og:url" content="https://dossiersaskatchewan.ca/regles">
 <meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
@@ -68,8 +68,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bill 5 — The Saskatchewan Employment Amendment Act, 2024 — DossierSaskatchewan">
-<meta name="twitter:description" content="Bill 5: Amends The Saskatchewan Employment Act to update rules on work schedules, wages, leaves, gratuities, discriminatory action complaints and appeals.">
+<meta name="twitter:title" content="The site's sourcing rules — DossierSaskatchewan">
+<meta name="twitter:description" content="DossierSaskatchewan's eight sourcing rules: no invented data, primary sources only, no news media, promises quoted word for word, no verdict.">
 <meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/sk.svg">
@@ -93,14 +93,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Bills",
-      "item": "https://dossiersaskatchewan.ca/projets-de-loi"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Bill 5",
-      "item": "https://dossiersaskatchewan.ca/projets-de-loi/5-30"
+      "name": "The rules",
+      "item": "https://dossiersaskatchewan.ca/regles"
     }
   ]
 }
@@ -129,7 +123,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/commun/sk.css">
 </head>
-<body data-page="projets" data-donnees="bills,deputesRaw,stats">
+<body data-page="regles" data-donnees="stats">
 
 <!-- Ticker brutaliste : bande noire défilante — contenu rempli avec les VRAIES
      données par renderTicker() (appelé une fois les datasets chargés). -->
@@ -172,7 +166,7 @@
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
     <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
     <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
-    <a class="active" aria-current="page" href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
     <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
     <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
@@ -226,71 +220,51 @@ function goToFederal(evt){
 <div class="app">
 
   <!-- APERÇU -->
-  <section class="view active" id="view-projets">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.projets">Bills</span></nav>
-    <!-- Rappel de dissolution : sans ça, les projets non sanctionnés seraient lus
-         comme « encore en cours ». À retirer avec l'autre bande le 17 nov. 2026. -->
-
-    <!-- Hero de vue (refonte brutaliste) -->
+  <section class="view active" id="view-regles">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.regles">The rules</span></nav>
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.projets">Saskatchewan bills</span>
-        <span data-i18n="projhero.l1">Bills,</span>
-        <span class="hero-outline" data-i18n="projhero.l2">translated plainly.</span>
+        <span class="hero-sujet" data-i18n="sujet.regles">DossierSaskatchewan's sourcing rules</span>
+        <span data-i18n="regleshero.l1">The rules,</span>
+        <span class="hero-outline" data-i18n="regleshero.l2">in black and white.</span>
       </h1>
-      <p class="view-hero-sub" data-i18n="projhero.sub">Every bill summarized in everyday language, with its real stage in the process. The full text is always one click away on legassembly.sk.ca.</p>
-
-      <!-- Recherche façon maquette + 4 filtres rapides (actif = noir/jaune) -->
-      <div class="projets-controls">
-        <div class="brutal-search">
-          <span class="bs-icon" aria-hidden="true">🔍</span>
-          <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Number, title or keyword…">
-        </div>
-        <!-- Tri par activité. La logique existait déjà (toggleBillsSort) mais
-             AUCUN bouton ne la déclenchait : la liste était figée sur « activité
-             la plus récente » sans que personne puisse en sortir. -->
-        <button class="sort-toggle" id="sortToggle" onclick="toggleBillsSort()">↓ Activité récente</button>
-        <div class="quick-filters" id="billsQuickFilters"></div>
-      </div>
+      <p class="view-hero-sub" data-i18n="regleshero.sub">The site only publishes what the Legislative Assembly, the government or a party has itself published, as is, with a link to the original. <b>And it says clearly what is missing.</b></p>
     </div>
-
-    <!-- Bande légende : le chemin d'un projet (les 3 étapes RÉELLES du site) -->
-    <div class="legend-strip bleed">
-      <span class="legend-label" data-i18n="legend.label">A bill's path:</span>
-      <span class="legend-chips">
-        <span class="bstep" data-i18n="etape.1">First reading</span><span class="legend-arrow">→</span>
-        <span class="bstep" data-i18n="etape.2">Debate and committee</span><span class="legend-arrow">→</span>
-        <span class="bstep" data-i18n="etape.3">Third reading / Assent</span>
-      </span>
-      <a class="legend-link" href="/lexique" data-i18n="legend.link">What are these stages? → Glossary</a>
-    </div>
-
-    <!-- Titre de résultats (change avec le filtre actif) -->
-    <div class="section-head min-group-head" id="billsResultHead">
-      <div><h2 id="billsResultTitle">Tous les projets</h2></div>
-      <span class="head-note" id="billsResultNote"></span>
-    </div>
-
-    <div id="billsList"><article class="bill-prerendu">
-<h2>Bill 5 — The Saskatchewan Employment Amendment Act, 2024</h2>
-<p>Assented to on 2025-05-13 · Sponsor: Jim Reiter</p>
-<p>Amends The Saskatchewan Employment Act to update rules on work schedules, wages, leaves, gratuities, discriminatory action complaints and appeals.</p>
-<ul><li>Bans employers from withholding or deducting employee gratuities, except for approved pooling arrangements</li><li>Increases bereavement leave to 5 days per death or pregnancy loss, to be taken within 6 months</li><li>Extends critical illness/injury leave to up to 16 weeks and interpersonal violence leave up to 16 weeks</li><li>Raises the notice period for mass layoffs affecting 25 or more employees, up from 10</li><li>Creates a new referral and appeal process through the director of employment standards and adjudicators for discriminatory action complaints</li><li>Allows loss of pregnancy leave up to 20 weeks before the estimated birth date</li><li>Expands protections against discriminatory action to cover reporting offences, testifying in proceedings, and wage seizures</li></ul>
-<p><a href="https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-5.pdf" rel="noopener">The bill on the Legislative Assembly of Saskatchewan website</a></p>
-</article></div>
-
-    <!-- Explainer « challenger » : adapté au VRAI mécanisme du site (compte
-         requis, 1 demande par personne, paliers 500/1000) — la maquette disait
-         « pas de compte requis », ce qui ne correspond pas à la réalité. -->
-    <div class="band band-yellow bleed" id="band-challenge-explainer">
-      <h2 data-i18n="chexp.h">✋ What is “challenging”?</h2>
-      <p data-i18n="chexp.p1">One click on “Ask for an explanation” = a citizen request for the bill's sponsor to explain it in plain language, and for us to keep an eye on it together.</p>
-      <p data-i18n="chexp.p2">An account (email) is required — one request per person, no anonymous requests. Each bill's total is public: it shows which bills people want explained.</p>
-    </div>
-
-    <!-- Reste des projets (3e et suivants) — la bande jaune ci-dessus
-         s'intercale ainsi entre le 2e et le 3e projet. -->
-    <div id="billsListRest"></div>
+    <ol class="regles-liste">
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">1</span><span data-i18n="regles.1.h">No invented data</span></h2>
+        <p data-i18n="regles.1.p">This is rule number one. If a piece of information is missing, the field stays empty or the site says so. We do not guess and we do not fill in.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">2</span><span data-i18n="regles.2.h">Primary sources only</span></h2>
+        <p data-i18n="regles.2.p">We quote the institution or the party itself, never someone talking about it: the <b>Legislative Assembly of Saskatchewan</b> (its official minutes, the Votes and Proceedings; its bill PDFs and their explanatory notes; its MLAs page) for bills, votes and MLAs; the <b>Government of Saskatchewan</b> (the Cabinet page on saskatchewan.ca) for ministers; the <b>Saskatchewan Party's official platform</b>, published on its website, for promises.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">3</span><span data-i18n="regles.3.h">No news media</span></h2>
+        <p data-i18n="regles.3.p">Nothing is taken from the news media. A promise made at a press conference but never published by the party therefore does not appear on the site.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">4</span><span data-i18n="regles.4.h">We never work around a protection</span></h2>
+        <p data-i18n="regles.4.p">The program that reads the official websites identifies itself for what it is, with the address of this site. If a website answers with a CAPTCHA or an anti-bot challenge, it stops instead of insisting: nothing is written, and the previous day's data stays in place.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">5</span><span data-i18n="regles.5.h">Promises are quoted word for word</span></h2>
+        <p data-i18n="regles.5.p">Every promise is an exact quote from the party's platform. A script checks that each quote appears exactly as written in the source; a quote that cannot be found there is not published. Every card carries a “See the source” link to the original.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">6</span><span data-i18n="regles.6.h">No verdict</span></h2>
+        <p data-i18n="regles.6.p">The site never says “promise kept” or “promise broken”. It places the promise next to the bills that carry it out, each with its source. You are the judge.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">7</span><span data-i18n="regles.7.h">The official text always prevails</span></h2>
+        <p data-i18n="regles.7.p">Plain-language summaries are written by artificial intelligence from each bill's official text, and the full text is always one click away. A summary describes the bill as introduced and is not an official document: the Assembly's text is the one that counts. The site is independent and unofficial.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">8</span><span data-i18n="regles.8.h">We explain what is missing</span></h2>
+        <p data-i18n="regles.8.p">When a source is absent or incomplete, the page says so and says why. The promises page follows only the governing party, and only the 12 commitments it highlighted: it says so. A bill amended in committee carries a notice, because its summary describes the text as introduced. An absence must never be read as silence from a party.</p>
+      </li>
+    </ol>
+    <p class="regles-suite" data-i18n="regles.suite">These rules apply everywhere on the site. See them at work on the <a href="/promesses">Promises</a> page, and follow what changes in the <a href="/sources">site updates</a>.</p>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->

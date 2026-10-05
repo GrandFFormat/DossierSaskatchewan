@@ -254,6 +254,14 @@ const PAGES = [
     fil: 'My file', cle: 'fil.mondossier', frequence: 'weekly', priorite: '0.1',
   },
   {
+    // Les règles de sources du site (5 oct. 2026), lien dans le pied de page.
+    fichier: 'regles.html', vue: 'regles', onglet: null, url: '/regles',
+    donnees: [],
+    title: "The site's sourcing rules — DossierSaskatchewan",
+    desc: "DossierSaskatchewan's eight sourcing rules: no invented data, primary sources only, no news media, promises quoted word for word, no verdict.",
+    fil: 'The rules', cle: 'fil.regles', frequence: 'monthly', priorite: '0.5',
+  },
+  {
     fichier: 'sources.html', vue: 'bd', onglet: null, url: '/sources',
     donnees: ['journal'],
     title: 'Site updates — DossierSaskatchewan',

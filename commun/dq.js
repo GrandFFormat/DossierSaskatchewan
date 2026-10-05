@@ -164,6 +164,30 @@ const translations = {
     'footer.etmoi':"et moi",
     'footer.coffee':"Offre-moi un café",
     'footer.rss':"Flux RSS",
+    // La page /regles (5 oct. 2026) : les règles de sources du site, lien dans le pied de page.
+    'footer.regles':"Les règles",
+    'fil.regles':"Les règles",
+    'sujet.regles':"Les règles de sources de DossierSaskatchewan",
+    'regleshero.l1':"Les règles,",
+    'regleshero.l2':"noir sur blanc.",
+    'regleshero.sub':"Le site ne publie que ce que l'Assemblée législative, le gouvernement ou un parti a lui-même publié, tel quel, avec un lien vers l'original. <b>Et il dit clairement ce qui manque.</b>",
+    'regles.1.h':"Jamais de donnée inventée",
+    'regles.1.p':"C'est la règle numéro un. Si une information manque, la case reste vide ou le site le dit. On ne devine pas et on ne complète pas.",
+    'regles.2.h':"Sources primaires seulement",
+    'regles.2.p':"On cite l'institution ou le parti lui-même, jamais quelqu'un qui en parle : l'<b>Assemblée législative de la Saskatchewan</b> (ses procès-verbaux officiels, les Votes and Proceedings ; les PDF de ses projets de loi et leurs notes explicatives ; sa page des député·e·s) pour les projets de loi, les votes et les député·e·s ; le <b>gouvernement de la Saskatchewan</b> (la page du Cabinet sur saskatchewan.ca) pour les ministres ; la <b>plateforme officielle du Saskatchewan Party</b>, publiée sur son site, pour les promesses.",
+    'regles.3.h':"Aucun média",
+    'regles.3.p':"Rien n'est tiré des médias. Une promesse faite en conférence de presse, mais jamais publiée par le parti, n'apparaît donc pas sur le site.",
+    'regles.4.h':"On ne contourne jamais une protection",
+    'regles.4.p':"Le programme qui lit les sites officiels se présente pour ce qu'il est, avec l'adresse de ce site. Si un site répond par un CAPTCHA ou un défi contre les robots, il s'arrête au lieu d'insister : rien n'est écrit, et les données de la veille restent en place.",
+    'regles.5.h':"Les promesses sont citées mot pour mot",
+    'regles.5.p':"Chaque promesse est une citation exacte de la plateforme du parti. Un script vérifie que chaque citation se retrouve telle quelle dans la source ; une citation introuvable n'est pas publiée. Chaque carte porte un lien « Voir la source », qui mène à l'original.",
+    'regles.6.h':"Aucun verdict",
+    'regles.6.p':"Le site ne dit jamais « promesse tenue » ou « promesse brisée ». Il place la promesse à côté des projets de loi qui la mettent en œuvre, chacun avec sa source. C'est vous qui jugez.",
+    'regles.7.h':"Le texte officiel fait toujours foi",
+    'regles.7.p':"Les résumés en langage clair sont rédigés par intelligence artificielle à partir du texte officiel de chaque projet de loi, et le texte intégral reste à un clic. Un résumé décrit le projet tel que déposé et n'est pas un document officiel : c'est le texte de l'Assemblée qui compte. Le site est indépendant et non officiel.",
+    'regles.8.h':"On explique ce qui manque",
+    'regles.8.p':"Quand une source est absente ou incomplète, la page le dit et dit pourquoi. La page des promesses ne suit que le parti au pouvoir, et seulement les 12 engagements qu'il a mis en avant : elle le dit. Un projet de loi amendé en comité porte un avis, parce que son résumé décrit le texte tel que déposé. Une absence ne doit jamais être lue comme un silence d'un parti.",
+    'regles.suite':"Ces règles s'appliquent partout sur le site. Voyez-les à l'œuvre sur la page <a href=\"/promesses\">Promesses</a>, et suivez ce qui change dans les <a href=\"/sources\">mises à jour du site</a>.",
     'sujet.ministres':"Ministres et député·e·s de la Saskatchewan",
     'minhero.l1':"Conseil des ministres",
     'minhero.l2':"&amp; toute l'Assemblée.",
@@ -550,6 +574,30 @@ const translations = {
     'apercu.petitions.sub':"Click the \u201cPetitions\u201d tab for the full list",
     'quicknav.label':"Jump to:",
     'footer.rss':"RSS feed",
+    // La page /regles (5 oct. 2026) : les règles de sources du site, lien dans le pied de page.
+    'footer.regles':"The rules",
+    'fil.regles':"The rules",
+    'sujet.regles':"DossierSaskatchewan's sourcing rules",
+    'regleshero.l1':"The rules,",
+    'regleshero.l2':"in black and white.",
+    'regleshero.sub':"The site only publishes what the Legislative Assembly, the government or a party has itself published, as is, with a link to the original. <b>And it says clearly what is missing.</b>",
+    'regles.1.h':"No invented data",
+    'regles.1.p':"This is rule number one. If a piece of information is missing, the field stays empty or the site says so. We do not guess and we do not fill in.",
+    'regles.2.h':"Primary sources only",
+    'regles.2.p':"We quote the institution or the party itself, never someone talking about it: the <b>Legislative Assembly of Saskatchewan</b> (its official minutes, the Votes and Proceedings; its bill PDFs and their explanatory notes; its MLAs page) for bills, votes and MLAs; the <b>Government of Saskatchewan</b> (the Cabinet page on saskatchewan.ca) for ministers; the <b>Saskatchewan Party's official platform</b>, published on its website, for promises.",
+    'regles.3.h':"No news media",
+    'regles.3.p':"Nothing is taken from the news media. A promise made at a press conference but never published by the party therefore does not appear on the site.",
+    'regles.4.h':"We never work around a protection",
+    'regles.4.p':"The program that reads the official websites identifies itself for what it is, with the address of this site. If a website answers with a CAPTCHA or an anti-bot challenge, it stops instead of insisting: nothing is written, and the previous day's data stays in place.",
+    'regles.5.h':"Promises are quoted word for word",
+    'regles.5.p':"Every promise is an exact quote from the party's platform. A script checks that each quote appears exactly as written in the source; a quote that cannot be found there is not published. Every card carries a “See the source” link to the original.",
+    'regles.6.h':"No verdict",
+    'regles.6.p':"The site never says “promise kept” or “promise broken”. It places the promise next to the bills that carry it out, each with its source. You are the judge.",
+    'regles.7.h':"The official text always prevails",
+    'regles.7.p':"Plain-language summaries are written by artificial intelligence from each bill's official text, and the full text is always one click away. A summary describes the bill as introduced and is not an official document: the Assembly's text is the one that counts. The site is independent and unofficial.",
+    'regles.8.h':"We explain what is missing",
+    'regles.8.p':"When a source is absent or incomplete, the page says so and says why. The promises page follows only the governing party, and only the 12 commitments it highlighted: it says so. A bill amended in committee carries a notice, because its summary describes the text as introduced. An absence must never be read as silence from a party.",
+    'regles.suite':"These rules apply everywhere on the site. See them at work on the <a href=\"/promesses\">Promises</a> page, and follow what changes in the <a href=\"/sources\">site updates</a>.",
     'quicknav.mission':"Our mission",
     'quicknav.composition':"Composition",
     'quicknav.projets':"Bills",
@@ -3775,8 +3823,8 @@ function toggleVoteCard(id, evt){
    sur une de ces adresses. */
 // /mon-dossier y est aussi : sans lui, la page se prenait pour l'accueil et portait son titre
 // anglais (arrivé avec l'anglais qui suit enfin la navigation, 24 sept. 2026).
-const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier' };
-const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles' };
+const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles' };
 // Titres FRANÇAIS seulement : le site est anglophone, l'anglais vient du <title> de la page
 // (voir syncTitle).
 const PAGE_META = {
@@ -3788,6 +3836,7 @@ const PAGE_META = {
   lexique:   { fr:"Lexique de l'Assemblée législative en clair — DossierSaskatchewan" },
   promesses: { fr:"Promesses électorales en Saskatchewan — DossierSaskatchewan" },
   mondossier:{ fr:"Mon dossier — DossierSaskatchewan" },
+  regles:    { fr:"Les règles de sources du site — DossierSaskatchewan" },
 };
 function viewFromPath(){
   const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
