@@ -254,6 +254,7 @@ function goToFederal(evt){
       <ol class="maj-liste" id="journalListe" aria-live="polite"></ol>
     <div class="prerendu" data-prerendu="journal">
       <ul aria-label="Site updates">
+        <li><span class="pr-meta">October 5, 2026 —</span> <b>The site’s rules, on one page</b> DossierSaskatchewan’s sourcing rules are now gathered on one page, dossiersaskatchewan.ca/regles: no invented data, primary sources only, no news media, promises quoted word for word, no verdict. The “The rules” link is at the bottom of every page, next to Facebook.</li>
         <li><span class="pr-meta">October 2, 2026 —</span> <b>One page per bill</b> Every bill now has its own address, for example dossiersaskatchewan.ca/projets-de-loi/24-30 (Bill 24, 30th Legislature). It is the address to share: it opens the bill directly, with its summary. The number on each card leads there, and search engines can now find every bill.</li>
         <li><span class="pr-meta">October 1, 2026 —</span> <b>Visit statistics, with your consent</b> The site counts its visits with Google Analytics, but only if you agree: a banner asks you on your first visit, and “Decline” changes nothing else. You can change your mind with the “Cookies” link at the bottom of every page.</li>
         <li><span class="pr-meta">October 1, 2026 —</span> <b>DossierSaskatchewan on Facebook</b> The site now has its own Facebook page, facebook.com/dossiersaskatchewan, to follow new bills and votes. The link is at the bottom of every page.</li>
@@ -294,6 +295,12 @@ function goToFederal(evt){
        22 sept. 2026 : « mes dossiers provincial et les villes doivent être complètement séparés »).
        Les villes gardent leur propre page, /mes-dossiers, avec le style des volets. Tout le contenu
        est rempli par commun/dq.js (renderMonDossier) : rien de personnel n'est dans le HTML. -->
+  <!-- LES RÈGLES (5 oct. 2026, comme sur DossierQuébec) : les règles de sources du site, réunies
+       sur une page. Chaque règle a sa preuve dans le dépôt (scrapers/sk-commun.js,
+       scripts/verifier-promesses.mjs, scrapers/resumes.js, les encadrés de méthode) : n'en
+       ajouter aucune que le site n'applique pas réellement. Lien dans le pied de page. -->
+  
+
   
 
   
@@ -319,6 +326,7 @@ function goToFederal(evt){
   <!-- La page Facebook du site (créée par Martin le 1er oct. 2026). Pas de « Source code ». -->
   <span class="footer-right-group">
     <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Buy me a coffee" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/regles" data-i18n="footer.regles">The rules</a>
     <a class="footer-gh" href="https://www.facebook.com/dossiersaskatchewan/" target="_blank" rel="noopener" aria-label="DossierSaskatchewan on Facebook">Facebook</a>
     <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="RSS feed of “What's new”">RSS feed</a>
   </span>

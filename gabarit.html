@@ -895,6 +895,56 @@ function goToFederal(evt){
        22 sept. 2026 : « mes dossiers provincial et les villes doivent être complètement séparés »).
        Les villes gardent leur propre page, /mes-dossiers, avec le style des volets. Tout le contenu
        est rempli par commun/dq.js (renderMonDossier) : rien de personnel n'est dans le HTML. -->
+  <!-- LES RÈGLES (5 oct. 2026, comme sur DossierQuébec) : les règles de sources du site, réunies
+       sur une page. Chaque règle a sa preuve dans le dépôt (scrapers/sk-commun.js,
+       scripts/verifier-promesses.mjs, scrapers/resumes.js, les encadrés de méthode) : n'en
+       ajouter aucune que le site n'applique pas réellement. Lien dans le pied de page. -->
+  <section class="view" id="view-regles">
+    <div class="view-hero">
+      <h2 class="hero-h1 hero-h1-md">
+        <span class="hero-sujet" data-i18n="sujet.regles">DossierSaskatchewan's sourcing rules</span>
+        <span data-i18n="regleshero.l1">The rules,</span>
+        <span class="hero-outline" data-i18n="regleshero.l2">in black and white.</span>
+      </h2>
+      <p class="view-hero-sub" data-i18n="regleshero.sub">The site only publishes what the Legislative Assembly, the government or a party has itself published, as is, with a link to the original. <b>And it says clearly what is missing.</b></p>
+    </div>
+    <ol class="regles-liste">
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">1</span><span data-i18n="regles.1.h">No invented data</span></h2>
+        <p data-i18n="regles.1.p">This is rule number one. If a piece of information is missing, the field stays empty or the site says so. We do not guess and we do not fill in.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">2</span><span data-i18n="regles.2.h">Primary sources only</span></h2>
+        <p data-i18n="regles.2.p">We quote the institution or the party itself, never someone talking about it: the <b>Legislative Assembly of Saskatchewan</b> (its official minutes, the Votes and Proceedings; its bill PDFs and their explanatory notes; its MLAs page) for bills, votes and MLAs; the <b>Government of Saskatchewan</b> (the Cabinet page on saskatchewan.ca) for ministers; the <b>Saskatchewan Party's official platform</b>, published on its website, for promises.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">3</span><span data-i18n="regles.3.h">No news media</span></h2>
+        <p data-i18n="regles.3.p">Nothing is taken from the news media. A promise made at a press conference but never published by the party therefore does not appear on the site.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">4</span><span data-i18n="regles.4.h">We never work around a protection</span></h2>
+        <p data-i18n="regles.4.p">The program that reads the official websites identifies itself for what it is, with the address of this site. If a website answers with a CAPTCHA or an anti-bot challenge, it stops instead of insisting: nothing is written, and the previous day's data stays in place.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">5</span><span data-i18n="regles.5.h">Promises are quoted word for word</span></h2>
+        <p data-i18n="regles.5.p">Every promise is an exact quote from the party's platform. A script checks that each quote appears exactly as written in the source; a quote that cannot be found there is not published. Every card carries a “See the source” link to the original.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">6</span><span data-i18n="regles.6.h">No verdict</span></h2>
+        <p data-i18n="regles.6.p">The site never says “promise kept” or “promise broken”. It places the promise next to the bills that carry it out, each with its source. You are the judge.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">7</span><span data-i18n="regles.7.h">The official text always prevails</span></h2>
+        <p data-i18n="regles.7.p">Plain-language summaries are written by artificial intelligence from each bill's official text, and the full text is always one click away. A summary describes the bill as introduced and is not an official document: the Assembly's text is the one that counts. The site is independent and unofficial.</p>
+      </li>
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">8</span><span data-i18n="regles.8.h">We explain what is missing</span></h2>
+        <p data-i18n="regles.8.p">When a source is absent or incomplete, the page says so and says why. The promises page follows only the governing party, and only the 12 commitments it highlighted: it says so. A bill amended in committee carries a notice, because its summary describes the text as introduced. An absence must never be read as silence from a party.</p>
+      </li>
+    </ol>
+    <p class="regles-suite" data-i18n="regles.suite">These rules apply everywhere on the site. See them at work on the <a href="/promesses">Promises</a> page, and follow what changes in the <a href="/sources">site updates</a>.</p>
+  </section>
+
   <section class="view" id="view-mondossier">
     <div class="view-hero">
       <h2 class="hero-h1 hero-h1-md">
@@ -967,6 +1017,7 @@ function goToFederal(evt){
   <!-- La page Facebook du site (créée par Martin le 1er oct. 2026). Pas de « Source code ». -->
   <span class="footer-right-group">
     <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Buy me a coffee" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/regles" data-i18n="footer.regles">The rules</a>
     <a class="footer-gh" href="https://www.facebook.com/dossiersaskatchewan/" target="_blank" rel="noopener" aria-label="DossierSaskatchewan on Facebook">Facebook</a>
     <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="RSS feed of “What's new”">RSS feed</a>
   </span>
