@@ -3236,8 +3236,8 @@ function shareBill(billId, platform, evt){
   // L'adresse de la page du projet (scripts/build-bill-pages.js) : c'est elle que Google indexe.
   const url = 'https://dossiersaskatchewan.ca' + adresseProjet(b, true);
   const text = isEn
-    ? `Bill ${b.num} — ${title}. Plain-language summary on DossierSaskatchewan:`
-    : `Projet de loi n° ${b.num} — ${title}. Résumé en clair sur DossierSaskatchewan :`;
+    ? `Bill ${b.num} — ${title}`
+    : `Projet de loi n° ${b.num} — ${title}`;
   if(platform === 'x'){
     window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(text) + '&url=' + encodeURIComponent(url), '_blank', 'noopener,width=600,height=520');
   } else if(platform === 'fb'){
