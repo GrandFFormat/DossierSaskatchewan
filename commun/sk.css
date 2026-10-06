@@ -651,3 +651,7 @@ html[data-theme="dark"] .lobby-boite, html[data-theme="dark"] .lobby-projet{back
 html[data-theme="dark"] .lobby-boite a{color:#4ADE80;}
 .lobby-apres{display:block; margin-top:4px; font-size:13.5px; color:#A16207;}
 html[data-theme="dark"] .lobby-apres{color:#FCD34D;}
+/* La bulle « Lobbying » : filtre de la page des projets, et pastille sur la carte */
+.lobby-pill{background:#FEF3C7 !important; color:#A16207 !important;}
+.qf-btn[onclick*="'lobby'"]:not(.active){background:#FEF3C7 !important; color:#A16207 !important; border-color:#FDE68A !important;}
+html[data-theme="dark"] .lobby-pill, html[data-theme="dark"] .qf-btn[onclick*="'lobby'"]:not(.active){background:#3A2E0E !important; color:#FCD34D !important; border-color:#4A3B12 !important;}
