@@ -52,6 +52,12 @@ const SCRAPERS = [
   // (data/resumes.json) évite de repayer. « soft » : sans clé ou si l'API est en panne, le reste
   // du site se met à jour quand même, et la carte dit simplement « résumé non disponible ».
   ['Résumés IA des projets de loi (Claude Sonnet 5)', ['scrapers/resumes.js'], { soft: true }],
+  // Le registre des lobbyistes (accord écrit du registraire, 6 oct. 2026) : la liste active, puis
+  // SEULEMENT les fiches nouvelles ou changées, à 10 secondes d'intervalle (son robots.txt). Au
+  // plus 60 fiches par passage (10 minutes) : le workflow en a 30. « soft » : si le registre ne
+  // répond pas, le reste du site se met à jour et la page garde sa dernière lecture, datée.
+  ['Scrape : registre des lobbyistes (sasklobbyistregistry.ca)', ['scrapers/lobbyistes.js', '--max=60'], { soft: true }],
+  ['Liens registre → projets de loi (seulement quand la loi est nommée)', ['scrapers/lobby-liens.js'], { soft: true }],
 ];
 
 const failed = [];      // sources critiques → déclenchent l'alerte (run rouge)

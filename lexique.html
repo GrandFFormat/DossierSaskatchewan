@@ -354,7 +354,7 @@ function goToFederal(evt){
       <p data-i18n="lobby.body" style="margin:0 0 8px;">Anyone paid to lobby Saskatchewan <b>public office holders</b> (ministers, MLAs, senior officials…) must record their activities in an online <b>public registry</b>, kept by the <b>Registrar of Lobbyists</b> (Maurice Herauf, K.C., see above), an independent officer of the Assembly. Volunteers and citizens pursuing their own interests don't have to register.</p>
       <p data-i18n="lobby.note" style="margin:0 0 10px; color:var(--slate); font-size:12.5px;">Why this site doesn't reproduce the registry: it can only be consulted through the official search tool. Rather than make a copy that wouldn't be reliable or up to date, we link straight to the official public tool.</p>
       <div style="font-size:12.5px; display:flex; flex-wrap:wrap; align-items:center; gap:2px 0;">
-        <a href="https://www.sasklobbyistregistry.ca/search-the-registry/" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link1">Search the registry ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://www.sasklobbyistregistry.ca/" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link2">Office of the Registrar of Lobbyists ↗</a>
+        <a href="/lobbyisme" style="color:var(--gold); white-space:nowrap; font-weight:600;" data-i18n="lobby.voir">See who is registered →</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://www.sasklobbyistregistry.ca/search-the-registry/" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link1">Search the registry ↗</a><span style="color:var(--line); margin:0 8px;">·</span><a href="https://www.sasklobbyistregistry.ca/" target="_blank" rel="noopener" style="color:var(--gold); white-space:nowrap;" data-i18n="lobby.link2">Office of the Registrar of Lobbyists ↗</a>
       </div>
     </div>
 
@@ -473,6 +473,12 @@ function goToFederal(evt){
        22 sept. 2026 : « mes dossiers provincial et les villes doivent être complètement séparés »).
        Les villes gardent leur propre page, /mes-dossiers, avec le style des volets. Tout le contenu
        est rempli par commun/dq.js (renderMonDossier) : rien de personnel n'est dans le HTML. -->
+  <!-- LOBBYING (/lobbyisme, 6 oct. 2026) : le registre des lobbyistes, lu avec l'accord écrit du
+       bureau du registraire. Conditions (voir scrapers/lobbyistes.js) : source nommée, date de
+       lecture affichée, texte du registre tel quel, aucune apparence d'appui. Rendu par
+       renderLobbying (commun/dq.js). -->
+  
+
   <!-- LES RÈGLES (5 oct. 2026, comme sur DossierQuébec) : les règles de sources du site, réunies
        sur une page. Chaque règle a sa preuve dans le dépôt (scrapers/sk-commun.js,
        scripts/verifier-promesses.mjs, scrapers/resumes.js, les encadrés de méthode) : n'en
@@ -504,6 +510,7 @@ function goToFederal(evt){
   <!-- La page Facebook du site (créée par Martin le 1er oct. 2026). Pas de « Source code ». -->
   <span class="footer-right-group">
     <a class="footer-gh footer-coffee" href="https://donate.stripe.com/6oU5kDg8b91a3sY8RK9fW00" target="_blank" rel="noopener" aria-label="Buy me a coffee" data-i18n="footer.coffee">Buy me a coffee</a>
+    <a class="footer-gh" href="/lobbyisme" data-i18n="footer.lobby">Lobbying</a>
     <a class="footer-gh" href="/regles" data-i18n="footer.regles">The rules</a>
     <a class="footer-gh" href="https://www.facebook.com/dossiersaskatchewan/" target="_blank" rel="noopener" aria-label="DossierSaskatchewan on Facebook">Facebook</a>
     <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="RSS feed of “What's new”">RSS feed</a>

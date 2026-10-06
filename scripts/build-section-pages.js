@@ -215,7 +215,7 @@ const PAGES = [
   },
   {
     fichier: 'projets-de-loi.html', vue: 'projets', onglet: 'projets', url: '/projets-de-loi',
-    donnees: ['bills', 'deputesRaw'],
+    donnees: ['bills', 'deputesRaw', 'lobbyProjets'],
     title: 'Saskatchewan bills in plain language — DossierSaskatchewan',
     desc: "The bills before Saskatchewan's Legislative Assembly, summarized in everyday language, with the stage each has really reached and a link to the official text.",
     fil: 'Bills', cle: 'fil.projets', frequence: 'daily', priorite: '0.9',
@@ -252,6 +252,14 @@ const PAGES = [
     title: 'My file — DossierSaskatchewan',
     desc: 'Your corner of the Legislative Assembly: the bills you follow, the ministers and MLAs you follow, your keywords and your morning alert, all in one place.',
     fil: 'My file', cle: 'fil.mondossier', frequence: 'weekly', priorite: '0.1',
+  },
+  {
+    // Le registre des lobbyistes (6 oct. 2026), lu avec l'accord du registraire ; lien au pied de page.
+    fichier: 'lobbyisme.html', vue: 'lobby', onglet: null, url: '/lobbyisme',
+    donnees: ['lobbyistes'],
+    title: "Saskatchewan's Lobbyist Registry — DossierSaskatchewan",
+    desc: 'Who is registered to lobby the Government of Saskatchewan, about what, and to whom. Read from the Saskatchewan Lobbyist Registry, with links.',
+    fil: 'Lobbying', cle: 'fil.lobby', frequence: 'daily', priorite: '0.7',
   },
   {
     // Les règles de sources du site (5 oct. 2026), lien dans le pied de page.
