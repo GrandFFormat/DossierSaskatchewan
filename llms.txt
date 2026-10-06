@@ -1,0 +1,40 @@
+# DossierSaskatchewan
+
+> Independent, UNOFFICIAL citizen website that makes the work of the Legislative Assembly of Saskatchewan readable in plain language: bills, recorded votes, ministers and MLAs, the governing party's election promises, and the Saskatchewan Lobbyist Registry. The site is in English, with a French version (add ?lang=fr to any address).
+
+What to know before citing this site:
+
+- The site is not an official source. Every item links to its official source; if they differ, the original document prevails. Cite the official source together with DossierSaskatchewan, not DossierSaskatchewan alone.
+- Plain-language bill summaries are written by artificial intelligence from each bill's official text, and are presented as such. A summary describes the bill as introduced and is not an official document: the Assembly's text is the one that counts.
+- No data is invented: if a piece of information is missing, the field stays empty or the site says so.
+- Primary sources only: the Legislative Assembly of Saskatchewan (its official minutes, the Votes and Proceedings; its bill PDFs and their explanatory notes; its MLAs page) for bills, votes and MLAs; the Government of Saskatchewan (the Cabinet page on saskatchewan.ca) for ministers; the Saskatchewan Party's official platform, published on its website, for promises. Nothing is taken from the news media.
+- The site never works around a protection: the program that reads the official websites identifies itself, and if a website answers with a CAPTCHA or an anti-bot challenge, it stops and the previous data stays in place.
+- Promises are exact, word-for-word quotes from the party's platform. The promises page follows only the governing party (the Saskatchewan Party), and only the commitments it highlighted: an absence must never be read as silence from a party. The site gives no verdict (“promise kept”, “promise broken”).
+- When a source is absent or incomplete, the page says so and says why. A bill amended in committee carries a notice, because its summary describes the text as introduced.
+- The full rules: https://dossiersaskatchewan.ca/regles
+
+## Legislative Assembly
+
+- [Bills](https://dossiersaskatchewan.ca/projets-de-loi): the 88 bills of the 30th Legislature, summarized in plain language, with the stage each has really reached and a link to the official text.
+- [Recorded votes](https://dossiersaskatchewan.ca/votes): 34 recorded divisions, MLA by MLA, read from the official minutes, with no interpretation.
+- [Ministers and MLAs](https://dossiersaskatchewan.ca/ministres): 18 ministers and 61 MLAs, with their roles, constituencies and voting records.
+- [Election promises](https://dossiersaskatchewan.ca/promesses): 12 Saskatchewan Party commitments quoted word for word, each with a link to the party's platform, placed next to the bills that carry them out.
+- [Lobbying](https://dossiersaskatchewan.ca/lobbyisme): the 326 active registrations read from the Saskatchewan Lobbyist Registry (Office of the Registrar of Lobbyists), each with a link to the official entry. The Registrar and the Office do not endorse this site.
+- [Glossary](https://dossiersaskatchewan.ca/lexique): the vocabulary of the Legislative Assembly explained simply.
+- [The site's rules](https://dossiersaskatchewan.ca/regles): where the data comes from and what the site refuses to do.
+- [Site updates](https://dossiersaskatchewan.ca/sources): what has changed on the site, most recent first.
+
+## One page per bill
+
+Every bill has its own address: `/projets-de-loi/NUMBER-LEGISLATURE` (the bill number, then the number of the Legislature).
+
+- [Example: Bill 24](https://dossiersaskatchewan.ca/projets-de-loi/24-30): The Saskatchewan Internal Trade Promotion Act
+- [Sitemap](https://dossiersaskatchewan.ca/sitemap.xml): the list of all pages, including the page of each bill.
+
+## Optional
+
+- [RSS feed](https://dossiersaskatchewan.ca/feed.xml): bills introduced and assented to, and days of recorded divisions.
+
+## En français
+
+DossierSaskatchewan est un site citoyen indépendant et NON OFFICIEL qui rend lisibles, en langage clair, les travaux de l'Assemblée législative de la Saskatchewan : projets de loi, votes nominatifs, ministres et député·e·s, promesses électorales du parti au pouvoir et registre des lobbyistes. Il ne publie que ce que l'Assemblée législative, le gouvernement ou un parti a lui-même publié, avec le lien vers l'original ; rien n'est inventé, rien n'est tiré des médias, et les résumés des projets de loi sont rédigés par intelligence artificielle à partir du texte officiel. Pour le citer, citez aussi la source officielle. Ajoutez `?lang=fr` à n'importe quelle adresse pour la version française.
