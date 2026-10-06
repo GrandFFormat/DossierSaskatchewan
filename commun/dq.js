@@ -308,7 +308,7 @@ const translations = {
     'h.lobby':"Le registre des lobbyistes",
     'lobby.sub':"Qui est payé pour influencer les décisions publiques — et comment le consulter",
     'lobby.body':"Toute personne payée pour faire du lobbying auprès de <b>titulaires de charge publique</b> de la Saskatchewan (ministres, député·e·s, hauts fonctionnaires…) doit inscrire ses activités dans un <b>registre public</b> en ligne, tenu par le <b>registraire des lobbyistes</b> (Maurice Herauf, K.C., voir plus haut), un officier indépendant de l'Assemblée. Les bénévoles et les citoyens qui défendent leurs propres intérêts n'ont pas à s'inscrire.",
-    'lobby.note':"Pourquoi ce site ne reproduit pas ce registre : il n'est consultable qu'à travers l'outil de recherche officiel. Plutôt que d'en faire une copie qui ne serait ni fiable ni à jour, on renvoie directement à l'outil public officiel.",
+    'lobby.note':"Ce que ce site montre du registre : les inscriptions actives, lues avec l'accord écrit du Bureau du registraire des lobbyistes et montrées telles qu'elles étaient à la date de lecture affichée avec chacune, avec un lien vers la fiche officielle. Les noms et les adresses des lobbyistes ne sont pas recopiés : ils restent sur la fiche officielle. Le registraire et son Bureau n'appuient pas ce site, et le registre officiel reste la référence.",
     'lobby.link1':"Rechercher dans le registre ↗",
     'lobby.link2':"Bureau du registraire des lobbyistes ↗",
     'lex.1.t':"Projet de loi",
@@ -531,7 +531,7 @@ const translations = {
     'h.lobby':"The lobbyist registry",
     'lobby.sub':"Who's paid to influence public decisions — and how to look it up",
     'lobby.body':"Anyone paid to lobby Saskatchewan <b>public office holders</b> (ministers, MLAs, senior officials…) must record their activities in an online <b>public registry</b>, kept by the <b>Registrar of Lobbyists</b> (Maurice Herauf, K.C., see above), an independent officer of the Assembly. Volunteers and citizens pursuing their own interests don't have to register.",
-    'lobby.note':"Why this site doesn't reproduce the registry: it can only be consulted through the official search tool. Rather than make a copy that wouldn't be reliable or up to date, we link straight to the official public tool.",
+    'lobby.note':"What this site shows of the registry: the active registrations, read with the written agreement of the Office of the Registrar of Lobbyists and shown as they stood on the reading date displayed with each one, with a link to the official entry. Lobbyists' names and addresses are not copied: they stay on the official entry. The Registrar and the Office do not endorse this site, and the official registry remains the reference.",
     'lobby.link1':"Search the registry ↗",
     'lobby.link2':"Office of the Registrar of Lobbyists ↗",
     // Petitions
