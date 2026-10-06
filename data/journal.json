@@ -1,6 +1,18 @@
 [
   {
     "date": "2026-10-06",
+    "volet": "site",
+    "fr": {
+      "titre": "Le site expliqué aux assistants IA",
+      "texte": "Nouveau fichier dossiersaskatchewan.ca/llms.txt : il présente le site aux assistants comme ChatGPT, Claude ou Perplexity, avec nos mots. Il leur dit que le site est non officiel, d’où viennent les données, que rien n’est inventé ni tiré des médias, et qu’il faut citer la source officielle avec DossierSaskatchewan. Rien ne garantit qu’un assistant le lise."
+    },
+    "en": {
+      "titre": "The site explained to AI assistants",
+      "texte": "New file dossiersaskatchewan.ca/llms.txt: it introduces the site to assistants such as ChatGPT, Claude or Perplexity, in our own words. It tells them the site is unofficial, where the data comes from, that nothing is invented or taken from the news media, and that the official source should be cited together with DossierSaskatchewan. Nothing guarantees an assistant will read it."
+    }
+  },
+  {
+    "date": "2026-10-06",
     "volet": "assemblee",
     "fr": {
       "titre": "Le registre des lobbyistes, lisible",
