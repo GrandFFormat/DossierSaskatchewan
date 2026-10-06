@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- La page 404 (Martin, 6 oct. 2026 : « fais-moi une page 404 drôle »). Vercel la sert toute seule
+     pour toute adresse qui n'existe pas. Autonome : son style est ici, elle ne charge ni dq.js ni
+     les données. Le vocabulaire est celui de l'Assemblée — un vote nominatif perdu d'avance. -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>404 — This page died on the Order Paper — DossierSaskatchewan</title>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/commun/sk.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>
+  // Même langue et même thème que le reste du site (clés de commun/dq.js).
+  (function(){
+    try {
+      var p = new URLSearchParams(location.search).get('lang');
+      var fr = p ? p === 'fr' : localStorage.getItem('dsk:langue') === 'fr';
+      if (fr) document.documentElement.lang = 'fr';
+      if (localStorage.getItem('dossierquebec:theme') === '"dark"') document.documentElement.setAttribute('data-theme', 'dark');
+    } catch (e) {}
+  })();
+</script>
+<style>
+  :root{--vert:#16A34A; --vert-fonce:#15803D; --encre:#0F1F17; --gris:#56635B; --fond:#fff; --brume:#F1F5F2; --filet:#E3EAE5; --lime:#BEF264; --lime-fond:#ECFCCB; --nuit:#0F1F17;}
+  html[data-theme="dark"]{--encre:#E8F0EA; --gris:#A3B4A8; --fond:#0E1A13; --brume:#16241B; --filet:#24372B; --lime-fond:#1C3320; --vert-fonce:#4ADE80;}
+  *{box-sizing:border-box; margin:0;}
+  body{font-family:'Onest',system-ui,sans-serif; background:var(--fond); color:var(--encre); min-height:100vh; display:flex; flex-direction:column;}
+  .mono{font-family:'JetBrains Mono',ui-monospace,monospace;}
+  header{padding:22px clamp(16px,5vw,64px);}
+  .marque{font-weight:700; font-size:23px; letter-spacing:-0.02em; color:var(--encre); text-decoration:none;}
+  .marque b{color:var(--vert); font-weight:700;}
+  main{flex:1; display:grid; grid-template-columns:1.05fr 1fr; gap:clamp(24px,5vw,72px); align-items:center; padding:12px clamp(16px,5vw,64px) 56px; max-width:1280px; width:100%; margin:0 auto;}
+  .pilule{display:inline-flex; align-items:center; gap:10px; background:var(--lime-fond); color:var(--vert-fonce); border-radius:999px; padding:8px 20px; font-size:14px;}
+  .pilule::before{content:""; width:8px; height:8px; border-radius:50%; background:#DC2626;}
+  h1{font-weight:600; font-size:clamp(40px,6vw,88px); line-height:1.03; letter-spacing:-0.035em; margin:26px 0 20px;}
+  h1 em{font-style:normal; color:var(--vert);}
+  p.texte{font-size:clamp(17px,1.5vw,22px); line-height:1.6; color:var(--gris); max-width:38ch; margin-bottom:14px;}
+  .boutons{display:flex; flex-wrap:wrap; gap:14px; margin-top:26px;}
+  .btn{display:inline-flex; align-items:center; border-radius:999px; padding:15px 30px; font-weight:600; font-size:17px; text-decoration:none;}
+  .plein{background:var(--vert); color:#fff;} .plein:hover{background:#15803D;}
+  .creux{border:2px solid var(--encre); color:var(--encre);} .creux:hover{background:var(--brume);}
+
+  /* Le « procès-verbal » : un vote nominatif perdu d'avance */
+  .pv{background:var(--brume); border-radius:28px; padding:28px; position:relative; overflow:hidden;}
+  .pv-tete{display:flex; justify-content:space-between; align-items:center; gap:10px; font-size:12.5px; letter-spacing:0.1em; text-transform:uppercase; color:var(--vert-fonce); margin-bottom:14px;}
+  .pv-etat{background:#FEE4E2; color:#B42318; border-radius:999px; padding:4px 12px; letter-spacing:0.06em;}
+  html[data-theme="dark"] .pv-etat{background:#3A1916; color:#F97066;}
+  .pv h2{font-weight:600; font-size:clamp(20px,2vw,26px); line-height:1.3; letter-spacing:-0.01em; margin-bottom:18px;}
+  .compte{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:18px;}
+  .case{background:var(--fond); border-radius:18px; padding:16px 18px;}
+  .case b{display:block; font-weight:600; font-size:clamp(34px,4vw,54px); line-height:1; letter-spacing:-0.03em;}
+  .case.pour b{color:var(--vert);} .case.contre b{color:#DC2626;}
+  .case span{display:block; margin-top:6px; color:var(--gris); font-size:14px;}
+  .tuiles{display:grid; grid-template-columns:repeat(12,1fr); gap:5px; margin-bottom:16px;}
+  .tuiles i{aspect-ratio:1/1; border-radius:4px; background:#DC2626; opacity:.85; transform:rotate(-8deg);}
+  .tuiles i:nth-child(7n+3){background:#B42318;} .tuiles i:nth-child(5n+1){opacity:.6;}
+  .tuiles i.absent{background:var(--filet); opacity:1;}
+  .etapes{font-size:12.5px; letter-spacing:0.04em; text-transform:uppercase; color:var(--gris); line-height:1.8;}
+  .etapes s{color:var(--gris); opacity:.6;}
+  .etapes b{color:#DC2626; font-weight:500;}
+  footer{padding:18px clamp(16px,5vw,64px); border-top:1px solid var(--filet); color:var(--gris); font-size:14px;}
+  [data-fr]{display:none;} html[lang="fr"] [data-fr]{display:revert;} html[lang="fr"] [data-en]{display:none;}
+  @media (max-width:860px){ main{grid-template-columns:1fr;} .btn{flex:1 1 100%; justify-content:center;} }
+</style>
+</head>
+<body>
+<header>
+  <a class="marque" href="/">Dossier<b>Saskatchewan</b></a>
+</header>
+<main>
+  <div>
+    <span class="pilule mono" data-en>Error 404 · not in the Votes and Proceedings</span>
+    <span class="pilule mono" data-fr>Erreur 404 · absente des procès-verbaux</span>
+
+    <h1 data-en>This page died <em>on the Order Paper.</em></h1>
+    <h1 data-fr>Cette page est morte <em>au feuilleton.</em></h1>
+
+    <p class="texte" data-en>It was never introduced, never debated, and it definitely never received Royal Assent. Not even a first reading.</p>
+    <p class="texte" data-fr>Elle n'a jamais été déposée, jamais débattue, et elle n'a certainement pas reçu la sanction royale. Même pas une première lecture.</p>
+    <p class="texte" data-en>The Speaker has ruled the address out of order. The real bills are over here:</p>
+    <p class="texte" data-fr>Le président a jugé l'adresse irrecevable. Les vrais projets de loi sont par ici :</p>
+
+    <div class="boutons">
+      <a class="btn plein" href="/projets-de-loi" data-en>See bills that exist</a>
+      <a class="btn plein" href="/projets-de-loi?lang=fr" data-fr>Voir les projets qui existent</a>
+      <a class="btn creux" href="/" data-en>Back to the Assembly</a>
+      <a class="btn creux" href="/?lang=fr" data-fr>Retour à l'Assemblée</a>
+    </div>
+  </div>
+
+  <div class="pv" aria-hidden="true">
+    <div class="pv-tete mono"><span data-en>Recorded division</span><span data-fr>Vote par appel nominal</span><span class="pv-etat" data-en>Negatived</span><span class="pv-etat" data-fr>Rejetée</span></div>
+    <h2 data-en>Motion: “That this page be found.”</h2>
+    <h2 data-fr>Motion : «&nbsp;Que cette page soit trouvée.&nbsp;»</h2>
+    <div class="compte">
+      <div class="case pour"><b>0</b><span data-en>Yeas</span><span data-fr>Pour</span></div>
+      <div class="case contre"><b>404</b><span data-en>Nays</span><span data-fr>Contre</span></div>
+    </div>
+    <div class="tuiles" id="tuiles"></div>
+    <div class="etapes mono">
+      <span data-en><s>Introduced</s> → <s>2nd reading</s> → <s>Committee</s> → <s>Assent</s> → <b>Lost</b></span>
+      <span data-fr><s>Dépôt</s> → <s>Principe</s> → <s>Commission</s> → <s>Sanction</s> → <b>Perdue</b></span>
+    </div>
+  </div>
+</main>
+<footer>
+  <span data-en>Unofficial site. No actual vote was held on this page — the Assembly has only 61 seats, and none of them cares about your typo.</span>
+  <span data-fr>Site non officiel. Aucun vote n'a vraiment eu lieu sur cette page — l'Assemblée n'a que 61 sièges, et aucun ne se soucie de votre faute de frappe.</span>
+</footer>
+<script>
+  // 61 sièges : 60 tuiles « contre », et une grise — le président, qui ne vote que pour départager.
+  (function(){
+    var t = document.getElementById('tuiles'), h = '';
+    for (var i = 0; i < 61; i++) h += '<i' + (i === 60 ? ' class="absent"' : '') + '></i>';
+    t.innerHTML = h;
+  })();
+</script>
+</body>
+</html>
