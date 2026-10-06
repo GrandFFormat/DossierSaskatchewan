@@ -77,6 +77,6 @@ export function construireLlms() {
     '',
   ];
   const contenu = lignes.join('\n');
-  if (!existsSync('llms.txt') || readFileSync('llms.txt', 'utf8') !== contenu) writeFileSync('llms.txt', contenu, 'utf8');
+  if (!existsSync('llms.txt') || readFileSync('llms.txt', 'utf8').replace(/\r\n/g, '\n') !== contenu) writeFileSync('llms.txt', contenu, 'utf8');
   console.log(`✓ llms.txt : ${lignes.filter((l) => l.startsWith('- [')).length} liens, ${Buffer.byteLength(contenu)} octets.`);
 }
