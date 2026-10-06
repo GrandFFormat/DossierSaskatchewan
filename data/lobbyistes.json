@@ -1427,7 +1427,17 @@
      "Carla Beck"
     ]
    },
-   "lu": "2026-10-06"
+   "lu": "2026-10-06",
+   "projets": [
+    {
+     "num": 18,
+     "legislature": 30,
+     "titre": "The Regulated Health Professions Act",
+     "phrase": "Engage with the government regarding the implementation of the Regulated Health Professions Act (RHPA) and a range of policies that impact the dental profession.",
+     "apres": true,
+     "sanction": "2025-05-13"
+    }
+   ]
   },
   {
    "id": "26feceef-28b8-f111-aad1-000d3af328df",
@@ -1838,7 +1848,17 @@
     ],
     "deputes": []
    },
-   "lu": "2026-10-06"
+   "lu": "2026-10-06",
+   "projets": [
+    {
+     "num": 18,
+     "legislature": 30,
+     "titre": "The Regulated Health Professions Act",
+     "phrase": "Engaging with government regarding the priorities of the Saskatchewan Association of Optometrists including scope of practice and the implementation of The Regulated Health Professions Act.",
+     "apres": true,
+     "sanction": "2025-05-13"
+    }
+   ]
   },
   {
    "id": "b694f782-c6b6-f111-aad1-000d3af328df",
