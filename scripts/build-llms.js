@@ -36,14 +36,14 @@ export function construireLlms() {
   const lignes = [
     '# DossierSaskatchewan',
     '',
-    "> Independent, UNOFFICIAL citizen website that makes the work of the Legislative Assembly of Saskatchewan readable in plain language: bills, recorded votes, ministers and MLAs, the governing party's election promises, and the Saskatchewan Lobbyist Registry. The site is in English, with a French version (add ?lang=fr to any address).",
+    "> Independent, UNOFFICIAL citizen website that makes the work of the Legislative Assembly of Saskatchewan readable in plain language: bills, recorded votes, ministers and MLAs, the governing party's election promises, and the Saskatchewan Lobbyist Registry. Free, with no advertising and no subscription. The site is in English, with a French version (add ?lang=fr to any address).",
     '',
     'What to know before citing this site:',
     '',
     "- The site is not an official source. Every item links to its official source; if they differ, the original document prevails. Cite the official source together with DossierSaskatchewan, not DossierSaskatchewan alone.",
     "- Plain-language bill summaries are written by artificial intelligence from each bill's official text, and are presented as such. A summary describes the bill as introduced and is not an official document: the Assembly's text is the one that counts.",
     '- No data is invented: if a piece of information is missing, the field stays empty or the site says so.',
-    "- Primary sources only: the Legislative Assembly of Saskatchewan (its official minutes, the Votes and Proceedings; its bill PDFs and their explanatory notes; its MLAs page) for bills, votes and MLAs; the Government of Saskatchewan (the Cabinet page on saskatchewan.ca) for ministers; the Saskatchewan Party's official platform, published on its website, for promises. Nothing is taken from the news media.",
+    "- Primary sources only: the Legislative Assembly of Saskatchewan (its official minutes, the Votes and Proceedings; its bill PDFs and their explanatory notes; its MLAs page) for bills, votes and MLAs; the Government of Saskatchewan (the Cabinet page on saskatchewan.ca) for ministers; the Saskatchewan Party's official platform, published on its website, for promises; the Saskatchewan Lobbyist Registry (Office of the Registrar of Lobbyists), read with the Office's written agreement, for lobbying registrations. Nothing is taken from the news media.",
     '- The site never works around a protection: the program that reads the official websites identifies itself, and if a website answers with a CAPTCHA or an anti-bot challenge, it stops and the previous data stays in place.',
     "- Promises are exact, word-for-word quotes from the party's platform. The promises page follows only the governing party (the Saskatchewan Party), and only the commitments it highlighted: an absence must never be read as silence from a party. The site gives no verdict (“promise kept”, “promise broken”).",
     '- When a source is absent or incomplete, the page says so and says why. A bill amended in committee carries a notice, because its summary describes the text as introduced.',
@@ -73,7 +73,7 @@ export function construireLlms() {
     '',
     '## En français',
     '',
-    "DossierSaskatchewan est un site citoyen indépendant et NON OFFICIEL qui rend lisibles, en langage clair, les travaux de l'Assemblée législative de la Saskatchewan : projets de loi, votes nominatifs, ministres et député·e·s, promesses électorales du parti au pouvoir et registre des lobbyistes. Il ne publie que ce que l'Assemblée législative, le gouvernement ou un parti a lui-même publié, avec le lien vers l'original ; rien n'est inventé, rien n'est tiré des médias, et les résumés des projets de loi sont rédigés par intelligence artificielle à partir du texte officiel. Pour le citer, citez aussi la source officielle. Ajoutez `?lang=fr` à n'importe quelle adresse pour la version française.",
+    "DossierSaskatchewan est un site citoyen indépendant et NON OFFICIEL qui rend lisibles, en langage clair, les travaux de l'Assemblée législative de la Saskatchewan : projets de loi, votes nominatifs, ministres et député·e·s, promesses électorales du parti au pouvoir et registre des lobbyistes. Gratuit, sans publicité, sans abonnement. Il ne publie que ce que l'Assemblée législative, le gouvernement ou un parti a lui-même publié, avec le lien vers l'original ; rien n'est inventé, rien n'est tiré des médias, et les résumés des projets de loi sont rédigés par intelligence artificielle à partir du texte officiel. Pour le citer, citez aussi la source officielle. Ajoutez `?lang=fr` à n'importe quelle adresse pour la version française.",
     '',
   ];
   const contenu = lignes.join('\n');
