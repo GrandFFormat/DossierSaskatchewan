@@ -2701,6 +2701,7 @@ function billCard(b, ctx){
         </div>
         <div class="bill-head-right">
           ${hotBadge}
+          ${aLobby(b) ? `<span class="status-pill lobby-pill" title="${isEn ? 'A registration in the Lobbyist Registry names this law' : 'Une inscription du registre des lobbyistes nomme cette loi'}">Lobbying</span>` : ''}
           ${b.omnibus ? `<span class="status-pill omnibus-pill" title="${isEn ? 'Changes several laws under one title' : 'Modifie plusieurs lois sous un seul titre'}">Omnibus${b.nbLois ? ` · ${b.nbLois} ${isEn ? 'laws' : 'lois'}` : ''}</span>` : ''}
           ${partyBadge}
           <span class="status-pill ${statusClass(b.status)}">${statusLabel(b.status, b.step)}</span>
@@ -2960,7 +2961,9 @@ function renderVotesQuickFilters(correspondRecherche){
 let billsQuickFilter = 'tous';
 // Challengés et Omnibus se cumulent avec le statut (Tous / Non adoptés / Adoptés) et entre eux
 // (Martin, 25 sept. 2026) : « Adoptés » + « Omnibus » = les omnibus adoptés.
-const BILLS_EXTRAS = ['challenges', 'omnibus'];
+const BILLS_EXTRAS = ['challenges', 'omnibus', 'lobby'];
+// Un projet « avec lobbying » : au moins une inscription du registre nomme sa loi (data/lobby-projets.json).
+const aLobby = (b) => Boolean(lobbyProjets && lobbyProjets.projets && (lobbyProjets.projets[b.id] || []).length);
 const billsExtras = new Set();
 // On n'affiche pas les 143 projets d'un coup : 10, puis « + 10 » à la demande.
 // ⚠️ Toute action qui change la LISTE (filtre, recherche, tri) doit remettre ce
@@ -2987,6 +2990,8 @@ function renderBillsQuickFilters(){
     ['challenges', isEn ? '🔥 Challenged' : '🔥 Challengés'],
     // Omnibus (25 sept. 2026) : un projet qui touche plusieurs lois sous un seul titre.
     ['omnibus', 'Omnibus'],
+    // Lobbying (6 oct. 2026) : les projets dont la loi est nommée dans le registre des lobbyistes.
+    ['lobby', 'Lobbying'],
   ];
   el.innerHTML = defs.map(([k, label]) =>
     `<button class="qf-btn ${(billsQuickFilter===k || billsExtras.has(k))?'active':''}"${BILLS_EXTRAS.includes(k) ? ` aria-pressed="${billsExtras.has(k)}"` : ''} onclick="setBillsQuickFilter('${k}')">${label}</button>`
@@ -3014,7 +3019,8 @@ function renderBills(keyword){
       || (billsQuickFilter === 'encours' && (ASSEMBLY.dissolved ? b.status !== 'sanctionne' : b.status === 'encours'))
       || (billsQuickFilter === 'adoptes' && b.status === 'sanctionne'))
       && (!billsExtras.has('challenges') || ch.some(c => Number(c.bill_id) === b.id))
-      && (!billsExtras.has('omnibus') || b.omnibus);
+      && (!billsExtras.has('omnibus') || b.omnibus)
+      && (!billsExtras.has('lobby') || aLobby(b));
     const summaryText = ((_resumesFr && _resumesFr[b.id]) || '').replace(/<[^>]+>/g, ' ');
     // On cherche dans : le titre, le résumé en clair, la ligne de statut, le nom
     // du parrain, le numéro sous toutes ses écritures, et le PARTI du parrain
@@ -3081,6 +3087,7 @@ function renderBills(keyword){
     adoptes:    isEn ? 'Passed bills' : 'Adoptés',
     challenges: isEn ? 'Challenged bills' : 'Challengés',
     omnibus:    isEn ? 'Omnibus bills — several laws under one title' : 'Projets omnibus — plusieurs lois sous un seul titre',
+    lobby:      isEn ? 'Bills named in the Lobbyist Registry' : 'Projets nommés dans le registre des lobbyistes',
   };
   const titleEl = document.getElementById('billsResultTitle');
   const noteEl = document.getElementById('billsResultNote');
@@ -3088,7 +3095,7 @@ function renderBills(keyword){
   // garde son titre complet.
   const extras = BILLS_EXTRAS.filter(k => billsExtras.has(k));
   const titre = extras.length === 1 && billsQuickFilter === 'tous' ? titles[extras[0]]
-    : [billsQuickFilter === 'tous' && extras.length ? null : titles[billsQuickFilter], ...extras.map(k => k === 'omnibus' ? 'Omnibus' : (isEn ? 'Challenged' : 'Challengés'))].filter(Boolean).join(' · ');
+    : [billsQuickFilter === 'tous' && extras.length ? null : titles[billsQuickFilter], ...extras.map(k => k === 'omnibus' ? 'Omnibus' : k === 'lobby' ? 'Lobbying' : (isEn ? 'Challenged' : 'Challengés'))].filter(Boolean).join(' · ');
   if(titleEl) titleEl.textContent = titre;
   // La note dit ce qui est À L'ÉCRAN sur le total filtré — sinon annoncer « 143 »
   // au-dessus de 10 cartes laisse croire à un bogue d'affichage.
