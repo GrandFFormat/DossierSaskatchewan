@@ -45,9 +45,9 @@
   }catch(e){}
 })();
 </script>
-<title>Bill 618 — The Provincial Health Authority (Prohibiting Anonymous… — DossierSaskatchewan</title>
-<meta name="description" content="Bill 618: Prohibits the provincial health authority from contracting with a third party to set up an anonymous system for employees to report wrongdoing by…">
-<link rel="canonical" href="https://dossiersaskatchewan.ca/projets-de-loi/618-30">
+<title>Saskatchewan's Lobbyist Registry — DossierSaskatchewan</title>
+<meta name="description" content="Who is registered to lobby the Government of Saskatchewan, about what, and to whom. Read from the Saskatchewan Lobbyist Registry, with links.">
+<link rel="canonical" href="https://dossiersaskatchewan.ca/lobbyisme">
 <!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
      C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
 <link rel="alternate" type="application/rss+xml" title="DossierSaskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
@@ -58,9 +58,9 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DossierSaskatchewan">
 <meta property="og:locale" content="en_CA">
-<meta property="og:title" content="Bill 618 — The Provincial Health Authority (Prohibiting Anonymous… — DossierSaskatchewan">
-<meta property="og:description" content="Bill 618: Prohibits the provincial health authority from contracting with a third party to set up an anonymous system for employees to report wrongdoing by…">
-<meta property="og:url" content="https://dossiersaskatchewan.ca/projets-de-loi/618-30">
+<meta property="og:title" content="Saskatchewan's Lobbyist Registry — DossierSaskatchewan">
+<meta property="og:description" content="Who is registered to lobby the Government of Saskatchewan, about what, and to whom. Read from the Saskatchewan Lobbyist Registry, with links.">
+<meta property="og:url" content="https://dossiersaskatchewan.ca/lobbyisme">
 <meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 <meta property="og:image:width" content="1702">
 <meta property="og:image:height" content="630">
@@ -68,8 +68,8 @@
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Bill 618 — The Provincial Health Authority (Prohibiting Anonymous… — DossierSaskatchewan">
-<meta name="twitter:description" content="Bill 618: Prohibits the provincial health authority from contracting with a third party to set up an anonymous system for employees to report wrongdoing by…">
+<meta name="twitter:title" content="Saskatchewan's Lobbyist Registry — DossierSaskatchewan">
+<meta name="twitter:description" content="Who is registered to lobby the Government of Saskatchewan, about what, and to whom. Read from the Saskatchewan Lobbyist Registry, with links.">
 <meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
 
 <link rel="icon" type="image/svg+xml" href="/commun/sk.svg">
@@ -93,14 +93,8 @@
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Bills",
-      "item": "https://dossiersaskatchewan.ca/projets-de-loi"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Bill 618",
-      "item": "https://dossiersaskatchewan.ca/projets-de-loi/618-30"
+      "name": "Lobbying",
+      "item": "https://dossiersaskatchewan.ca/lobbyisme"
     }
   ]
 }
@@ -129,7 +123,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/commun/sk.css">
 </head>
-<body data-page="projets" data-donnees="bills,deputesRaw,lobbyProjets,stats">
+<body data-page="lobby" data-donnees="lobbyistes,stats">
 
 <!-- Ticker brutaliste : bande noire défilante — contenu rempli avec les VRAIES
      données par renderTicker() (appelé une fois les datasets chargés). -->
@@ -172,7 +166,7 @@
          /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
     <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
     <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
-    <a class="active" aria-current="page" href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
     <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
     <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
@@ -226,71 +220,42 @@ function goToFederal(evt){
 <div class="app">
 
   <!-- APERÇU -->
-  <section class="view active" id="view-projets">
-    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.projets">Bills</span></nav>
-    <!-- Rappel de dissolution : sans ça, les projets non sanctionnés seraient lus
-         comme « encore en cours ». À retirer avec l'autre bande le 17 nov. 2026. -->
-
-    <!-- Hero de vue (refonte brutaliste) -->
+  <section class="view active" id="view-lobby">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><span aria-current="page" data-i18n="fil.lobby">Lobbying</span></nav>
     <div class="view-hero">
       <h1 class="hero-h1 hero-h1-md">
-        <span class="hero-sujet" data-i18n="sujet.projets">Saskatchewan bills</span>
-        <span data-i18n="projhero.l1">Bills,</span>
-        <span class="hero-outline" data-i18n="projhero.l2">translated plainly.</span>
+        <span class="hero-sujet" data-i18n="sujet.lobby">Saskatchewan's Lobbyist Registry</span>
+        <span data-i18n="lobbyhero.l1">Who lobbies,</span>
+        <span class="hero-outline" data-i18n="lobbyhero.l2">and about what.</span>
       </h1>
-      <p class="view-hero-sub" data-i18n="projhero.sub">Every bill summarized in everyday language, with its real stage in the process. The full text is always one click away on legassembly.sk.ca.</p>
-
-      <!-- Recherche façon maquette + 4 filtres rapides (actif = noir/jaune) -->
-      <div class="projets-controls">
-        <div class="brutal-search">
-          <span class="bs-icon" aria-hidden="true">🔍</span>
-          <input type="text" id="searchBills" data-i18n-placeholder="ph.searchBills" placeholder="Number, title or keyword…">
-        </div>
-        <!-- Tri par activité. La logique existait déjà (toggleBillsSort) mais
-             AUCUN bouton ne la déclenchait : la liste était figée sur « activité
-             la plus récente » sans que personne puisse en sortir. -->
-        <button class="sort-toggle" id="sortToggle" onclick="toggleBillsSort()">↓ Activité récente</button>
-        <div class="quick-filters" id="billsQuickFilters"></div>
+      <p class="view-hero-sub" data-i18n="lobbyhero.sub">Anyone paid to lobby the government must register in a public registry. <b>Here is who is registered, to talk about what, and to whom.</b></p>
+    </div>
+    <div class="info-box lobby-source" id="lobbySource">Source: the Saskatchewan Lobbyist Registry (Office of the Registrar of Lobbyists). This site is independent: the Registrar and the Office do not endorse it.</div>
+    <div class="brutal-search lobby-recherche">
+      <span class="bs-icon" aria-hidden="true">🔎</span>
+      <input type="search" id="lobbyRecherche" data-i18n-placeholder="lobby.chercher" placeholder="Organization, subject, ministry, minister…" aria-label="Search the registrations">
+    </div>
+    <div class="prom-filters">
+      <div class="prom-filter-row">
+        <span class="prom-filter-lbl" data-i18n="lobby.parsujet">By subject</span>
+        <div class="quick-filters" id="lobbySujets"></div>
       </div>
     </div>
-
-    <!-- Bande légende : le chemin d'un projet (les 3 étapes RÉELLES du site) -->
-    <div class="legend-strip bleed">
-      <span class="legend-label" data-i18n="legend.label">A bill's path:</span>
-      <span class="legend-chips">
-        <span class="bstep" data-i18n="etape.1">First reading</span><span class="legend-arrow">→</span>
-        <span class="bstep" data-i18n="etape.2">Debate and committee</span><span class="legend-arrow">→</span>
-        <span class="bstep" data-i18n="etape.3">Third reading / Assent</span>
-      </span>
-      <a class="legend-link" href="/lexique" data-i18n="legend.link">What are these stages? → Glossary</a>
+    <div class="section-head min-group-head">
+      <div><h2 data-i18n="lobby.h">Active registrations</h2><div class="sub" data-i18n="lobby.langue">Registry text is shown exactly as published.</div></div>
+      <span class="head-note" id="lobbyNote"></span>
     </div>
-
-    <!-- Titre de résultats (change avec le filtre actif) -->
-    <div class="section-head min-group-head" id="billsResultHead">
-      <div><h2 id="billsResultTitle">Tous les projets</h2></div>
-      <span class="head-note" id="billsResultNote"></span>
+    <div id="lobbyListe"></div>
+    <button type="button" class="votes-more" id="lobbyPlus" hidden></button>
+    <div class="prom-methode">
+      <h3 data-i18n="lobby.lire.h">How to read this page</h3>
+      <ul>
+        <li data-i18n="lobby.lire.1"><b>A registration is not a wrongdoing.</b> Lobbying is legal; what the law requires is that it be declared. This registry is precisely the proof that it is done in the open.</li>
+        <li data-i18n="lobby.lire.2"><b>A registration describes an intention.</b> It says what an organization plans to talk about, and to whom. It does not say that a meeting took place, nor what came of it.</li>
+        <li data-i18n="lobby.lire.3"><b>What this page does not show.</b> Lobbyists' names, addresses and the political staff named stay on the official entry, one click away. Shown here: the organization, what is being lobbied, and the public office holders targeted.</li>
+        <li data-i18n="lobby.lire.4"><b>No link is made to a bill</b> unless it can be proven in the official documents.</li>
+      </ul>
     </div>
-
-    <div id="billsList"><article class="bill-prerendu">
-<h2>Bill 618 — The Provincial Health Authority (Prohibiting Anonymous Reporting Mechanisms) Amendment Act</h2>
-<p>Introduced on 2026-04-02 · Sponsor: Nathaniel Teed</p>
-<p>Prohibits the provincial health authority from contracting with a third party to set up an anonymous system for employees to report wrongdoing by other employees.</p>
-<ul><li>Amends The Provincial Health Authority Act</li><li>Bans the health authority from hiring outside companies to run anonymous employee reporting systems</li><li>Applies specifically to reports about wrongdoing by other employees</li><li>Takes effect on the date it receives Assent</li></ul>
-<p><a href="https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-618.pdf" rel="noopener">The bill on the Legislative Assembly of Saskatchewan website</a></p>
-</article></div>
-
-    <!-- Explainer « challenger » : adapté au VRAI mécanisme du site (compte
-         requis, 1 demande par personne, paliers 500/1000) — la maquette disait
-         « pas de compte requis », ce qui ne correspond pas à la réalité. -->
-    <div class="band band-yellow bleed" id="band-challenge-explainer">
-      <h2 data-i18n="chexp.h">✋ What is “challenging”?</h2>
-      <p data-i18n="chexp.p1">One click on “Ask for an explanation” = a citizen request for the bill's sponsor to explain it in plain language, and for us to keep an eye on it together.</p>
-      <p data-i18n="chexp.p2">An account (email) is required — one request per person, no anonymous requests. Each bill's total is public: it shows which bills people want explained.</p>
-    </div>
-
-    <!-- Reste des projets (3e et suivants) — la bande jaune ci-dessus
-         s'intercale ainsi entre le 2e et le 3e projet. -->
-    <div id="billsListRest"></div>
   </section>
 
   <!-- MINISTRES & DÉPUTÉS -->

@@ -2,7 +2,7 @@
 // (le serveur local doit tourner sur le port 8131). Liste les textes sous un ratio de 3:1.
 import { chromium } from 'playwright';
 const THEME = process.argv[2] === 'light' ? 'light' : 'dark';
-const PAGES = ['/', '/ministres', '/projets-de-loi', '/votes', '/promesses', '/lexique', '/sources', '/mon-dossier'];
+const PAGES = ['/', '/ministres', '/projets-de-loi', '/votes', '/promesses', '/lobbyisme', '/lexique', '/regles', '/sources', '/mon-dossier'];
 const nav = await chromium.launch();
 const page = await nav.newPage({ viewport: { width: 1440, height: 1000 } });
 await page.addInitScript((t) => { try { localStorage.setItem('theme', JSON.stringify(t)); } catch (e) {} }, THEME);

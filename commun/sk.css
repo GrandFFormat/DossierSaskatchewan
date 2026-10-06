@@ -604,3 +604,48 @@ html:not([data-theme="dark"]) .band-blue .cp-vs, html:not([data-theme="dark"]) .
 .bill{scroll-margin-top:96px;}
 .bill a.num{text-decoration:none;}
 .bill a.num:hover{text-decoration:underline; text-underline-offset:3px;}
+
+/* --------------------------------------------------------------------------
+   Lobbying (/lobbyisme, 6 oct. 2026) : le registre des lobbyistes
+   -------------------------------------------------------------------------- */
+.lobby-source{background:var(--sk-lime-fond) !important; border-color:var(--sk-lime-pale) !important; font-size:15px; line-height:1.6;}
+.lobby-partiel{display:block; margin-top:6px; color:var(--slate);}
+.lobby-recherche{margin:22px 0 14px; max-width:640px;}
+.lobby-recherche input{width:100%;}
+.lobby-carte{position:relative; overflow:hidden; border:1.5px solid var(--sk-filet); border-radius:22px; background:var(--sk-blanc); padding:28px 26px 20px; margin:0 0 16px; scroll-margin-top:96px;}
+.lobby-carte::before{content:""; position:absolute; left:0; right:0; top:0; height:8px; background:var(--sk-ocre);}
+.lobby-tete{display:flex; justify-content:space-between; align-items:flex-start; gap:12px; flex-wrap:wrap;}
+.lobby-tete h3{margin:0; font-size:21px; font-weight:600; letter-spacing:-0.01em;}
+.lobby-type{font-family:'JetBrains Mono', monospace; font-size:12px; border-radius:999px; padding:4px 12px; background:#FEF3C7; color:#A16207; white-space:nowrap;}
+.lobby-carte .meta{margin:4px 0 14px; color:var(--slate); font-size:14px;}
+.lobby-carte .lbl{display:block; font-family:'JetBrains Mono', monospace; font-size:12px; letter-spacing:0.08em; text-transform:uppercase; color:var(--sk-vert-fonce); margin-bottom:6px;}
+.lobby-activite{background:var(--sk-brume); border-radius:14px; padding:12px 14px; margin:0 0 8px;}
+.lobby-activite p{margin:0 0 8px; font-size:15px; line-height:1.55;}
+.lobby-puces{display:flex; flex-wrap:wrap; gap:6px;}
+.lobby-sujet{border:0; cursor:pointer; font:inherit; font-size:13px; font-weight:500; border-radius:999px; padding:3px 12px; background:var(--sk-lime-fond); color:var(--sk-vert-fonce);}
+.lobby-sujet:hover{filter:brightness(.95);}
+.lobby-cat{font-size:13px; border-radius:999px; padding:3px 12px; background:var(--sk-blanc); border:1px solid var(--sk-filet); color:var(--slate);}
+.lobby-qui{display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:10px 22px; margin-top:14px;}
+.lobby-qui .lbl-titre{grid-column:1 / -1; margin-bottom:0;}
+.lobby-qui .lbl{color:var(--slate); font-size:11.5px;}
+.lobby-qui p{margin:0; font-size:14.5px; line-height:1.5;}
+.lobby-attente{color:var(--slate); font-size:14.5px; margin:0 0 8px;}
+.lobby-pied{display:flex; justify-content:space-between; gap:10px 18px; flex-wrap:wrap; margin-top:16px; padding-top:12px; border-top:1px solid var(--sk-filet); font-size:13px; color:var(--slate);}
+.lobby-pied a{color:var(--sk-vert-fonce); font-weight:600; white-space:nowrap;}
+#lobbyPlus{display:block; margin:8px auto 28px;}
+html[data-theme="dark"] .lobby-type{background:#3A2E0E; color:#FCD34D;}
+html[data-theme="dark"] .lobby-carte .lbl, html[data-theme="dark"] .lobby-pied a{color:#4ADE80;}
+html[data-theme="dark"] .lobby-qui .lbl{color:var(--slate);}
+html[data-theme="dark"] .lobby-sujet{color:#86EFAC;}
+html[data-theme="dark"] .lobby-source{background:#18240E !important; border-color:#34501A !important;}
+/* Le lobbying inscrit qui nomme un projet de loi (fiche du projet, et carte de l'inscription) */
+.lobby-boite{margin-top:14px; background:#FFFBEB; border:1.5px solid #FDE68A; border-radius:14px; padding:12px 14px;}
+.lobby-boite ul{margin:6px 0 8px; padding-left:18px;}
+.lobby-boite li{font-size:14.5px; line-height:1.55; margin-bottom:6px;}
+.lobby-boite a{color:var(--sk-vert-fonce); font-weight:600; white-space:nowrap;}
+.lobby-boite .src-note a{white-space:normal;}
+.lobby-projet{margin-top:12px; background:#FFFBEB; border-radius:12px; padding:10px 14px;}
+.lobby-projet a{color:var(--ink); text-decoration:none;}
+.lobby-projet a:hover{text-decoration:underline;}
+html[data-theme="dark"] .lobby-boite, html[data-theme="dark"] .lobby-projet{background:#211C0C; border-color:#4A3B12;}
+html[data-theme="dark"] .lobby-boite a{color:#4ADE80;}

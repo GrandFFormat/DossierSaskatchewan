@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-06",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Le registre des lobbyistes, lisible",
+      "texte": "Nouvelle page Lobbying : les 326 inscriptions actives du registre des lobbyistes de la Saskatchewan, avec ce que chaque organisation demande, sur quels sujets, et auprès de quels ministères et ministres. Lu avec l’accord du bureau du registraire, qui n’appuie pas ce site pour autant. Chaque carte donne la date de lecture et le lien vers la fiche officielle ; le texte du registre est montré tel quel."
+    },
+    "en": {
+      "titre": "The Lobbyist Registry, made readable",
+      "texte": "New Lobbying page: the 326 active registrations in the Saskatchewan Lobbyist Registry, with what each organization is lobbying about, on which subjects, and which ministries and ministers it targets. Read with the agreement of the Office of the Registrar, which does not endorse this site. Every card shows the retrieval date and a link to the official entry; registry text is shown exactly as published."
+    }
+  },
+  {
     "date": "2026-10-05",
     "volet": "site",
     "fr": {

@@ -18,7 +18,7 @@
 // fonction de rendu tourne APRÈS chargerDonnees(), et celles dont la vue n'est pas sur la page
 // sortent immédiatement (voir les gardes en tête de chacune).
 let ministers = [], bills = [], votes = [], presences = {}, deputesRaw = [],
-    deputeEmails = {}, newsItems = [], petitions = [], promises = [], stats = null, journal = [];
+    deputeEmails = {}, newsItems = [], petitions = [], promises = [], stats = null, journal = [], lobbyistes = null, lobbyProjets = null;
 
 // Dérivés des précédents, recalculés une fois les fichiers arrivés.
 let deputes = [], deputeById = new Map(), voteById = new Map();
@@ -42,11 +42,14 @@ const _remplir = {
   promises: (v) => { promises = v; },
   stats: (v) => { stats = v; },
   journal: (v) => { journal = v; },
+  lobbyistes: (v) => { lobbyistes = v; },
+  lobbyProjets: (v) => { lobbyProjets = v; },
 };
 
 // Presque tout sort de data/site/, que scripts/build-section-pages.js régénère. Le journal des
 // mises à jour, lui, est écrit À LA MAIN : il vit à part, pour que personne ne le croie fabriqué.
-const _chemins = { journal: '/data/journal.json' };
+// Le registre des lobbyistes est servi tel que le scraper l'écrit (data/lobbyistes.json).
+const _chemins = { journal: '/data/journal.json', lobbyistes: '/data/lobbyistes.json', lobbyProjets: '/data/lobby-projets.json' };
 
 // Les jeux qui n'ont pas pu arriver. Leur liste écrite dans le HTML par le build (div.prerendu)
 // reste alors affichée : c'est justement le cas où elle sert. Voir retirerPrerendus().
@@ -166,6 +169,23 @@ const translations = {
     'footer.rss':"Flux RSS",
     // La page /regles (5 oct. 2026) : les règles de sources du site, lien dans le pied de page.
     'footer.regles':"Les règles",
+    // La page /lobbyisme (6 oct. 2026) : le registre des lobbyistes, lu avec l'accord du registraire.
+    'footer.lobby':"Lobbying",
+    'fil.lobby':"Lobbying",
+    'sujet.lobby':"Le registre des lobbyistes de la Saskatchewan",
+    'lobbyhero.l1':"Qui fait du lobbying,",
+    'lobbyhero.l2':"et sur quoi.",
+    'lobbyhero.sub':"Toute personne payée pour faire du lobbying auprès du gouvernement doit s'inscrire à un registre public. <b>Voici qui est inscrit, pour parler de quoi, et à qui.</b>",
+    'lobby.chercher':"Organisation, sujet, ministère, ministre…",
+    'lobby.parsujet':"Par sujet",
+    'lobby.h':"Les inscriptions actives",
+    'lobby.langue':"Les textes du registre sont en anglais : ils sont montrés tels que publiés, sans traduction.",
+    'lobby.lire.h':"Comment lire cette page",
+    'lobby.lire.1':"<b>Une inscription n'est pas une faute.</b> Faire du lobbying est légal ; ce que la loi exige, c'est de le déclarer. Ce registre est justement la preuve que c'est fait à visage découvert.",
+    'lobby.lire.2':"<b>Une inscription décrit une intention.</b> Elle dit de quoi une organisation compte parler, et à qui. Elle ne dit pas qu'une rencontre a eu lieu, ni ce qui en est sorti.",
+    'lobby.lire.3':"<b>Ce que la page ne montre pas.</b> Les noms des lobbyistes, les adresses et le personnel politique nommé restent sur la fiche officielle, à un clic. On montre ici l'organisation, ce qui est demandé et les titulaires de charge publique visés.",
+    'lobby.lire.4':"<b>Aucun lien n'est fait avec un projet de loi</b> tant qu'il ne se prouve pas dans les documents officiels.",
+    'lobby.voir':"Voir qui est inscrit →",
     'fil.regles':"Les règles",
     'sujet.regles':"Les règles de sources de DossierSaskatchewan",
     'regleshero.l1':"Les règles,",
@@ -576,6 +596,23 @@ const translations = {
     'footer.rss':"RSS feed",
     // La page /regles (5 oct. 2026) : les règles de sources du site, lien dans le pied de page.
     'footer.regles':"The rules",
+    // La page /lobbyisme (6 oct. 2026) : le registre des lobbyistes, lu avec l'accord du registraire.
+    'footer.lobby':"Lobbying",
+    'fil.lobby':"Lobbying",
+    'sujet.lobby':"Saskatchewan's Lobbyist Registry",
+    'lobbyhero.l1':"Who lobbies,",
+    'lobbyhero.l2':"and about what.",
+    'lobbyhero.sub':"Anyone paid to lobby the government must register in a public registry. <b>Here is who is registered, to talk about what, and to whom.</b>",
+    'lobby.chercher':"Organization, subject, ministry, minister…",
+    'lobby.parsujet':"By subject",
+    'lobby.h':"Active registrations",
+    'lobby.langue':"Registry text is shown exactly as published.",
+    'lobby.lire.h':"How to read this page",
+    'lobby.lire.1':"<b>A registration is not a wrongdoing.</b> Lobbying is legal; what the law requires is that it be declared. This registry is precisely the proof that it is done in the open.",
+    'lobby.lire.2':"<b>A registration describes an intention.</b> It says what an organization plans to talk about, and to whom. It does not say that a meeting took place, nor what came of it.",
+    'lobby.lire.3':"<b>What this page does not show.</b> Lobbyists' names, addresses and the political staff named stay on the official entry, one click away. Shown here: the organization, what is being lobbied, and the public office holders targeted.",
+    'lobby.lire.4':"<b>No link is made to a bill</b> unless it can be proven in the official documents.",
+    'lobby.voir':"See who is registered →",
     'fil.regles':"The rules",
     'sujet.regles':"DossierSaskatchewan's sourcing rules",
     'regleshero.l1':"The rules,",
@@ -770,6 +807,7 @@ function applyLanguage(){
   renderChallenged();
   renderPromises();
   renderJournal();
+  renderLobbying();
   document.querySelectorAll('.snooze-pill').forEach(pill=>{
     // La pastille de l'intro compacte (#introCompact) n'a pas de <span> imbriqué
     // comme les autres — sans ce repli, ça plantait ici et bloquait tout le
@@ -2686,6 +2724,7 @@ function billCard(b, ctx){
             ${b.amende ? `<p class="src-note amende-avis">${isEn
               ? '⚠ This bill was amended in committee. The Assembly does not reprint amended bills: this summary describes the text as introduced.'
               : '⚠ Ce projet a été amendé en comité. L\'Assemblée ne réimprime pas un projet amendé : ce résumé décrit le texte tel que déposé.'}</p>` : ''}
+            ${lobbyBoiteProjet(b, isEn)}
           </div>
           <div class="bill-open-side">
             <div class="open-label side">${lastActivityLabel}</div>
@@ -3823,8 +3862,8 @@ function toggleVoteCard(id, evt){
    sur une de ces adresses. */
 // /mon-dossier y est aussi : sans lui, la page se prenait pour l'accueil et portait son titre
 // anglais (arrivé avec l'anglais qui suit enfin la navigation, 24 sept. 2026).
-const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles' };
-const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles', lobby:'/lobbyisme' };
+const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
 // Titres FRANÇAIS seulement : le site est anglophone, l'anglais vient du <title> de la page
 // (voir syncTitle).
 const PAGE_META = {
@@ -3837,6 +3876,7 @@ const PAGE_META = {
   promesses: { fr:"Promesses électorales en Saskatchewan — DossierSaskatchewan" },
   mondossier:{ fr:"Mon dossier — DossierSaskatchewan" },
   regles:    { fr:"Les règles de sources du site — DossierSaskatchewan" },
+  lobby:     { fr:"Le registre des lobbyistes de la Saskatchewan — DossierSaskatchewan" },
 };
 function viewFromPath(){
   const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
@@ -3984,6 +4024,130 @@ const JOURNAL_VOLETS = {
 };
 const JOURNAL_PREMIERES = 20;   // au-delà, un bouton ouvre le reste
 let journalTout = false;
+
+/* ---------------- LOBBYING (/lobbyisme) ----------------
+   Le registre des lobbyistes de la Saskatchewan, lu avec l'accord écrit du bureau du registraire
+   (6 oct. 2026). Ses conditions sont dans scrapers/lobbyistes.js ; ici, elles se voient :
+     - la source est NOMMÉE en tête de page et sur chaque carte, avec le lien vers la fiche ;
+     - la DATE DE LECTURE est affichée (celle du registre, et celle de chaque fiche) ;
+     - le texte du registre est montré tel quel (en anglais, comme il est publié), jamais réécrit ;
+     - la page dit que le registraire n'appuie pas ce site.
+   Aucun verdict : on montre qui est inscrit pour parler de quoi, à qui. */
+let lobbyRecherche = '', lobbySujet = 'tous', lobbyMontrees = 20;
+const LOBBY_PAS = 20;
+
+function setLobbySujet(s){ lobbySujet = (lobbySujet === s) ? 'tous' : s; lobbyMontrees = LOBBY_PAS; renderLobbying(); }
+function lobbyPlus(){ lobbyMontrees += LOBBY_PAS; renderLobbying(); }
+
+// Sur la fiche d'un projet de loi : les inscriptions du registre des lobbyistes qui NOMMENT cette
+// loi en toutes lettres, pendant qu'elle était devant l'Assemblée (scrapers/lobby-liens.js). La
+// phrase du registre est citée telle quelle, avec la source, la date de lecture et la fiche
+// officielle. Aucune inscription : aucun encadré (on ne dit pas « personne n'a fait de lobbying »,
+// ce que le registre ne permet pas d'affirmer).
+function lobbyBoiteProjet(b, isEn){
+  const l = lobbyProjets && lobbyProjets.projets && lobbyProjets.projets[b.id];
+  if(!l || !l.length) return '';
+  const h = echapperTexte;
+  const quand = lobbyProjets.scrapedAt ? dateLisible(String(lobbyProjets.scrapedAt).slice(0, 10), isEn) : '';
+  return `<div class="lobby-boite" onclick="event.stopPropagation()">
+    <div class="open-label">${isEn ? 'Registered lobbying that names this bill' : 'Lobbying inscrit qui nomme ce projet'}</div>
+    <ul>${l.map((x) => `<li><b>${h(x.organisation)}</b>${x.cabinet ? ` (${isEn ? 'through' : 'par'} ${h(x.cabinet)})` : ''} : « ${h(x.phrase)} » <a href="${h(x.url)}" target="_blank" rel="noopener">${isEn ? 'Registry entry' : 'Fiche du registre'} ${h(x.numero || '')} ↗</a></li>`).join('')}</ul>
+    <p class="src-note">${isEn
+      ? `Source: Saskatchewan Lobbyist Registry, as read on ${quand}. Listed only when the registration names this bill in full while it was before the Assembly. A registration states an intention, not a meeting or a result. The Registrar does not endorse this site. <a href="/lobbyisme">All registrations →</a>`
+      : `Source : registre des lobbyistes de la Saskatchewan, tel que lu le ${quand}. Listé seulement quand l'inscription nomme ce projet en toutes lettres pendant qu'il était devant l'Assemblée. Une inscription dit une intention, pas une rencontre ni un résultat. Le registraire n'appuie pas ce site. <a href="/lobbyisme${paramLangue(true)}">Toutes les inscriptions →</a>`}</p>
+  </div>`;
+}
+
+function renderLobbying(){
+  const el = document.getElementById('lobbyListe');
+  if(!el) return;                         // vue absente de cette page
+  if(!lobbyistes || !Array.isArray(lobbyistes.inscriptions)) return;   // données pas encore là
+  const isEn = currentLang === 'en';
+  const h = echapperTexte;
+  const toutes = lobbyistes.inscriptions;
+  const lues = toutes.filter((i) => i.detail);
+  const jour = (iso) => iso ? dateLisible(String(iso).slice(0, 10), isEn) : '';
+
+  // L'en-tête de source : le nom du registre, la date de lecture, et ce que la page n'est pas.
+  const src = document.getElementById('lobbySource');
+  if(src){
+    const quand = jour(lobbyistes.scrapedAt);
+    src.innerHTML = (isEn
+      ? `<b>Source: the Saskatchewan Lobbyist Registry</b> (Office of the Registrar of Lobbyists). Registry as it read on <b>${quand}</b>: ${toutes.length} active registrations. Entries can be added, amended or removed at any time — the official registry is the authoritative record. This site is independent: <b>the Registrar and the Office do not endorse it</b>, nor anything it shows.`
+      : `<b>Source : le registre des lobbyistes de la Saskatchewan</b> (Office of the Registrar of Lobbyists). Registre tel qu'il se lisait le <b>${quand}</b> : ${toutes.length} inscriptions actives. Une inscription peut être ajoutée, modifiée ou retirée à tout moment — le registre officiel fait foi. Ce site est indépendant : <b>le registraire et son bureau ne l'appuient pas</b>, ni rien de ce qu'il affiche.`)
+      + (lues.length < toutes.length
+        ? ` <span class="lobby-partiel">${isEn ? `${toutes.length - lues.length} entries have not been read in detail yet; they show only their name and date.` : `${toutes.length - lues.length} fiches n'ont pas encore été lues en détail ; elles n'affichent que leur nom et leur date.`}</span>`
+        : '');
+  }
+
+  // Les sujets (ceux du registre, tels quels) avec leur compte.
+  const compte = new Map();
+  for(const i of lues) for(const s of new Set(i.detail.activites.flatMap((a) => a.sujets))) compte.set(s, (compte.get(s) || 0) + 1);
+  const sujets = [...compte].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  const fEl = document.getElementById('lobbySujets');
+  if(fEl){
+    fEl.innerHTML = `<button class="qf-btn ${lobbySujet === 'tous' ? 'active' : ''}" onclick="setLobbySujet('tous')">${isEn ? 'All' : 'Tous'} <span class="qf-n">${toutes.length}</span></button>`
+      + sujets.map(([s, n]) => `<button class="qf-btn ${lobbySujet === s ? 'active' : ''}" onclick="setLobbySujet('${s.replace(/'/g, "\\'")}')">${h(s)} <span class="qf-n">${n}</span></button>`).join('');
+  }
+
+  // Le filtre : le sujet choisi, puis les mots tapés (organisation, cabinet, description,
+  // ministère, ministre).
+  const q = norm(lobbyRecherche);
+  const liste = toutes.filter((i) => {
+    const d = i.detail;
+    if(lobbySujet !== 'tous' && !(d && d.activites.some((a) => a.sujets.includes(lobbySujet)))) return false;
+    if(!q) return true;
+    const foin = [i.organisation, d && d.cabinet, d && d.numero,
+      ...(d ? d.activites.map((a) => a.description + ' ' + a.sujets.join(' ') + ' ' + a.categories.join(' ')) : []),
+      ...(d ? d.institutions : []), ...(d ? d.ministres.map((m) => m.nom) : []), ...(d ? d.deputes : [])].filter(Boolean).join(' ');
+    return norm(foin).includes(q);
+  });
+
+  const note = document.getElementById('lobbyNote');
+  if(note) note.textContent = isEn
+    ? `${liste.length} of ${toutes.length} registrations`
+    : `${liste.length} sur ${toutes.length} inscriptions`;
+
+  if(!liste.length){
+    el.innerHTML = `<div class="no-results">${isEn ? 'No registration matches.' : 'Aucune inscription ne correspond.'}</div>`;
+    const p = document.getElementById('lobbyPlus'); if(p) p.hidden = true;
+    return;
+  }
+  const typeLibelle = (t) => t === 'Consultant' ? (isEn ? 'Consultant lobbyist' : 'Lobbyiste-conseil')
+    : t === 'In-House' || t === 'In-house' ? (isEn ? 'In-house lobbyist' : 'Lobbyiste d’organisation') : t;
+  const uniques = (a) => [...new Set(a)];
+  el.innerHTML = liste.slice(0, lobbyMontrees).map((i) => {
+    const d = i.detail;
+    const pied = `<div class="lobby-pied"><span>${isEn ? 'Saskatchewan Lobbyist Registry' : 'Registre des lobbyistes de la Saskatchewan'}${d && d.numero ? ` · ${isEn ? 'registration' : 'inscription'} ${h(d.numero)}` : ''}${i.lu ? ` · ${isEn ? 'read on' : 'lue le'} ${jour(i.lu)}` : ''}</span>
+        <a href="${h(i.url)}" target="_blank" rel="noopener">${isEn ? 'Official registry entry ↗' : 'Fiche officielle du registre ↗'}</a></div>`;
+    const tete = `<div class="lobby-tete"><h3>${h(i.organisation)}</h3><span class="lobby-type">${h(typeLibelle(i.type))}</span></div>
+      <div class="meta">${d && d.cabinet ? `${isEn ? 'Through' : 'Par l’entremise de'} ${h(d.cabinet)} · ` : ''}${isEn ? 'In effect since' : 'En vigueur depuis le'} ${jour(i.effetLe)}${d && d.finPrevue ? ` · ${isEn ? 'projected end' : 'fin prévue le'} ${jour(d.finPrevue)}` : ''}</div>`;
+    if(!d) return `<div class="lobby-carte">${tete}<p class="lobby-attente">${isEn ? 'Details not read yet — see the official entry.' : 'Détail pas encore lu — voir la fiche officielle.'}</p>${pied}</div>`;
+    const activites = d.activites.map((a) => `<div class="lobby-activite">
+        <p>${h(a.description)}</p>
+        <div class="lobby-puces">${a.sujets.map((s) => `<button class="lobby-sujet" onclick="setLobbySujet('${s.replace(/'/g, "\\'")}')" title="${isEn ? 'Filter by this subject' : 'Filtrer par ce sujet'}">${h(s)}</button>`).join('')}${a.categories.map((c) => `<span class="lobby-cat">${h(c)}</span>`).join('')}</div>
+      </div>`).join('');
+    const ministres = uniques(d.ministres.map((m) => m.nom));
+    const qui = [
+      d.institutions.length ? `<div><span class="lbl">${isEn ? 'Government institutions' : 'Ministères et organismes'}</span><p>${d.institutions.map(h).join(' · ')}</p></div>` : '',
+      ministres.length ? `<div><span class="lbl">${isEn ? 'Ministers named' : 'Ministres nommés'}</span><p>${ministres.map(h).join(' · ')}</p></div>` : '',
+      d.deputes.length ? `<div><span class="lbl">${isEn ? 'MLAs named' : 'Député·e·s nommés'}</span><p>${d.deputes.map(h).join(' · ')}</p></div>` : '',
+    ].join('');
+    return `<div class="lobby-carte">${tete}
+      <span class="lbl">${isEn ? 'What is being lobbied' : 'Ce qui est demandé'}</span>${activites}
+      ${qui ? `<div class="lobby-qui"><span class="lbl lbl-titre">${isEn ? 'Who is being lobbied' : 'Auprès de qui'}</span>${qui}</div>` : ''}
+      ${(i.projets || []).map((p) => `<div class="lobby-projet"><span class="lbl">${isEn ? 'Names this bill' : 'Nomme ce projet de loi'}</span><a href="${adresseProjet(p, true)}"><b>${isEn ? 'Bill' : 'PL'} ${h(p.num)}</b> — ${h(p.titre)}</a></div>`).join('')}
+      ${pied}</div>`;
+  }).join('');
+  const plus = document.getElementById('lobbyPlus');
+  if(plus){
+    const reste = liste.length - lobbyMontrees;
+    plus.hidden = reste <= 0;
+    plus.textContent = isEn ? `Show ${Math.min(LOBBY_PAS, reste)} more — ${Math.min(lobbyMontrees, liste.length)} of ${liste.length}` : `Voir ${Math.min(LOBBY_PAS, reste)} de plus — ${Math.min(lobbyMontrees, liste.length)} sur ${liste.length}`;
+  }
+}
+document.getElementById('lobbyRecherche')?.addEventListener('input', (e) => { lobbyRecherche = e.target.value; lobbyMontrees = LOBBY_PAS; renderLobbying(); });
+document.getElementById('lobbyPlus')?.addEventListener('click', lobbyPlus);
 
 function renderJournal(){
   const liste = document.getElementById('journalListe');
