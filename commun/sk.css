@@ -649,3 +649,5 @@ html[data-theme="dark"] .lobby-source{background:#18240E !important; border-colo
 .lobby-projet a:hover{text-decoration:underline;}
 html[data-theme="dark"] .lobby-boite, html[data-theme="dark"] .lobby-projet{background:#211C0C; border-color:#4A3B12;}
 html[data-theme="dark"] .lobby-boite a{color:#4ADE80;}
+.lobby-apres{display:block; margin-top:4px; font-size:13.5px; color:#A16207;}
+html[data-theme="dark"] .lobby-apres{color:#FCD34D;}

@@ -4048,13 +4048,25 @@ function lobbyBoiteProjet(b, isEn){
   const l = lobbyProjets && lobbyProjets.projets && lobbyProjets.projets[b.id];
   if(!l || !l.length) return '';
   const h = echapperTexte;
-  const quand = lobbyProjets.scrapedAt ? dateLisible(String(lobbyProjets.scrapedAt).slice(0, 10), isEn) : '';
+  const jour = (iso) => iso ? dateLisible(String(iso).slice(0, 10), isEn) : '';
+  const quand = jour(lobbyProjets.scrapedAt);
+  // Deux cas, jamais confondus : l'inscription était en vigueur PENDANT que le projet était devant
+  // l'Assemblée, ou elle a pris effet APRÈS la sanction et parle donc de la loi en vigueur (sa
+  // mise en œuvre, par exemple). Dans le second cas, les deux dates sont écrites.
+  const item = (x) => `<li><b>${h(x.organisation)}</b>${x.cabinet ? ` (${isEn ? 'through' : 'par'} ${h(x.cabinet)})` : ''} : « ${h(x.phrase)} » <a href="${h(x.url)}" target="_blank" rel="noopener">${isEn ? 'Registry entry' : 'Fiche du registre'} ${h(x.numero || '')} ↗</a>${x.apres
+    ? `<span class="lobby-apres">${isEn
+        ? `Registration in effect since ${jour(x.effetLe)}, after the bill received Royal Assent on ${jour(x.sanction)}: it concerns the law in force, not the bill's passage.`
+        : `Inscription en vigueur depuis le ${jour(x.effetLe)}, après la sanction du projet le ${jour(x.sanction)} : elle porte sur la loi en vigueur, pas sur l'adoption du projet.`}</span>`
+    : ''}</li>`;
+  const tousApres = l.every((x) => x.apres);
   return `<div class="lobby-boite" onclick="event.stopPropagation()">
-    <div class="open-label">${isEn ? 'Registered lobbying that names this bill' : 'Lobbying inscrit qui nomme ce projet'}</div>
-    <ul>${l.map((x) => `<li><b>${h(x.organisation)}</b>${x.cabinet ? ` (${isEn ? 'through' : 'par'} ${h(x.cabinet)})` : ''} : « ${h(x.phrase)} » <a href="${h(x.url)}" target="_blank" rel="noopener">${isEn ? 'Registry entry' : 'Fiche du registre'} ${h(x.numero || '')} ↗</a></li>`).join('')}</ul>
+    <div class="open-label">${tousApres
+      ? (isEn ? 'Registered lobbying that names this law' : 'Lobbying inscrit qui nomme cette loi')
+      : (isEn ? 'Registered lobbying that names this bill' : 'Lobbying inscrit qui nomme ce projet')}</div>
+    <ul>${l.map(item).join('')}</ul>
     <p class="src-note">${isEn
-      ? `Source: Saskatchewan Lobbyist Registry, as read on ${quand}. Listed only when the registration names this bill in full while it was before the Assembly. A registration states an intention, not a meeting or a result. The Registrar does not endorse this site. <a href="/lobbyisme">All registrations →</a>`
-      : `Source : registre des lobbyistes de la Saskatchewan, tel que lu le ${quand}. Listé seulement quand l'inscription nomme ce projet en toutes lettres pendant qu'il était devant l'Assemblée. Une inscription dit une intention, pas une rencontre ni un résultat. Le registraire n'appuie pas ce site. <a href="/lobbyisme${paramLangue(true)}">Toutes les inscriptions →</a>`}</p>
+      ? `Source: Saskatchewan Lobbyist Registry, as read on ${quand}. Listed only when the registration names this law in full, with its dates. A registration states an intention, not a meeting or a result. The Registrar does not endorse this site. <a href="/lobbyisme">All registrations →</a>`
+      : `Source : registre des lobbyistes de la Saskatchewan, tel que lu le ${quand}. Listé seulement quand l'inscription nomme cette loi en toutes lettres, avec ses dates. Une inscription dit une intention, pas une rencontre ni un résultat. Le registraire n'appuie pas ce site. <a href="/lobbyisme${paramLangue(true)}">Toutes les inscriptions →</a>`}</p>
   </div>`;
 }
 
@@ -4136,7 +4148,7 @@ function renderLobbying(){
     return `<div class="lobby-carte">${tete}
       <span class="lbl">${isEn ? 'What is being lobbied' : 'Ce qui est demandé'}</span>${activites}
       ${qui ? `<div class="lobby-qui"><span class="lbl lbl-titre">${isEn ? 'Who is being lobbied' : 'Auprès de qui'}</span>${qui}</div>` : ''}
-      ${(i.projets || []).map((p) => `<div class="lobby-projet"><span class="lbl">${isEn ? 'Names this bill' : 'Nomme ce projet de loi'}</span><a href="${adresseProjet(p, true)}"><b>${isEn ? 'Bill' : 'PL'} ${h(p.num)}</b> — ${h(p.titre)}</a></div>`).join('')}
+      ${(i.projets || []).map((p) => `<div class="lobby-projet"><span class="lbl">${p.apres ? (isEn ? 'Names the law this bill became' : 'Nomme la loi issue de ce projet') : (isEn ? 'Names this bill' : 'Nomme ce projet de loi')}</span><a href="${adresseProjet(p, true)}"><b>${isEn ? 'Bill' : 'PL'} ${h(p.num)}</b> — ${h(p.titre)}</a></div>`).join('')}
       ${pied}</div>`;
   }).join('');
   const plus = document.getElementById('lobbyPlus');

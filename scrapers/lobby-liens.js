@@ -6,10 +6,11 @@
 // rien. Trois conditions, toutes requises :
 //   1. le TITRE COMPLET du projet (sans « The », mais AVEC son année s'il en porte une) se lit,
 //      mot pour mot, dans la description d'une activité de l'inscription ;
-//   2. les DATES concordent : la version en vigueur de l'inscription a pris effet au plus tard
-//      le jour où le projet a cessé d'être devant l'Assemblée (sanction, retrait, mort au
-//      feuilleton), et sa fin prévue n'est pas antérieure au dépôt. Une inscription prise APRÈS
-//      la sanction parle de la loi en vigueur, plus du projet : pas de lien ;
+//   2. les DATES sont dites : si la version en vigueur de l'inscription a pris effet pendant que
+//      le projet était devant l'Assemblée, c'est un lien « pendant ». Si elle a pris effet APRÈS
+//      la sanction, elle parle de la loi en vigueur (sa mise en œuvre) : le lien est gardé mais
+//      marqué `apres`, et la page affiche les deux dates. Projet mort, retiré ou rejeté : pas de
+//      lien après coup. Fin prévue antérieure au dépôt : pas de lien ;
 //   3. un seul projet porte ce titre dans la législature (sinon : ambigu, pas de lien).
 // Un titre de moins de quatre mots est écarté : trop court pour ne pas se retrouver par hasard.
 //
@@ -58,16 +59,21 @@ for (const i of reg.inscriptions) {
       const fin = finDuProjet(b);                       // null : encore devant l'Assemblée
       const effet = i.detail.effetLe || i.effetLe;
       if (!effet || !b.presentedOn) continue;           // pas de date : on ne peut rien prouver
-      if (fin && effet > fin) continue;                 // inscription prise après la fin du projet
       if (i.detail.finPrevue && i.detail.finPrevue < b.presentedOn) continue;
-      trouves.push({ num: b.num, legislature: b.legislature, titre: b.titleEn || b.title, phrase: phraseAutour(a.description, t) });
+      // Inscription prise APRÈS la fin du projet. Si le projet est devenu loi, elle nomme LA LOI
+      // (sa mise en œuvre, par exemple) : on la montre, mais étiquetée « après la sanction », avec
+      // les deux dates (Martin, 6 oct. 2026 : les dentistes et les optométristes, projet 18). Si
+      // le projet est mort, retiré ou rejeté, il n'y a pas de loi à nommer : pas de lien.
+      const apres = Boolean(fin && effet > fin);
+      if (apres && b.status !== 'sanctionne') continue;
+      trouves.push({ num: b.num, legislature: b.legislature, titre: b.titleEn || b.title, phrase: phraseAutour(a.description, t), apres, sanction: apres ? fin : null });
     }
   }
   if (!trouves.length) continue;
   i.projets = trouves;
   for (const p of trouves) {
     const b = bills.find((x) => x.num === p.num);
-    (parProjet[b.id] ||= []).push({ organisation: i.organisation, cabinet: i.detail.cabinet, numero: i.detail.numero, url: i.url, phrase: p.phrase, effetLe: i.detail.effetLe || i.effetLe, lu: i.lu });
+    (parProjet[b.id] ||= []).push({ organisation: i.organisation, cabinet: i.detail.cabinet, numero: i.detail.numero, url: i.url, phrase: p.phrase, effetLe: i.detail.effetLe || i.effetLe, lu: i.lu, apres: p.apres, sanction: p.sanction });
     liens++;
   }
 }
