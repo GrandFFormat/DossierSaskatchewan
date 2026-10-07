@@ -1,10 +1,156 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-07T10:56:50.019Z",
+ "scrapedAt": "2026-10-07T21:01:33.864Z",
  "total": 325,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
+   "organisation": "Saskatchewan Automobile Dealers Association",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-06",
+   "version": "4 of 4",
+   "detail": {
+    "numero": "4349-3155-4",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-07",
+    "effetLe": "2026-10-06",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Lobbing activities will include meetings as an Association with MLA's at an MLA reception, it will also include meetings by in house lobbyist with listed Ministries to discuss specific legislation that may pertain to the industry. These meeting may be in person or letter, email, or phone call.",
+      "sujets": [
+       "Economic Development",
+       "Education",
+       "Employment & Training",
+       "Environment",
+       "Transportation"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Trade and Export Development",
+     "Executive Council",
+     "Advanced Education",
+     "Apprenticeship and Trade Certification Commission",
+     "Education",
+     "Environment",
+     "Finance",
+     "Financial & Consumer Affairs Authority",
+     "Highways",
+     "Immigration and Career Training",
+     "Labour Relations & Workplace Safety",
+     "Saskatchewan Government Insurance (SGI)",
+     "Saskatchewan Power Corporation",
+     "Saskatchewan Worker's Compensation Board",
+     "Crown Investments Corporation",
+     "Justice and Attorney General",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Government Insurance (SGI)"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Saskatchewan Worker's Compensation Board"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Apprenticeship and Trade Certification Commission"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     }
+    ],
+    "deputes": [
+     "Darlene Rowden",
+     "Sean Wilson",
+     "Kim Gartner",
+     "Sally Housser",
+     "Eric Schmalz",
+     "Michael Weger",
+     "Kevin Weedmark",
+     "Everett Hindley",
+     "Jeremy Cockrill",
+     "Daryl Harrison",
+     "Travis Keisig",
+     "Tim McLeod",
+     "Aleana Young",
+     "Carla Beck",
+     "Ken Cheveldayoff",
+     "Jeremy Harrison",
+     "Warren Kaeding",
+     "David Marit",
+     "Scott Moe",
+     "Jim Reiter",
+     "Nicole Sarauer",
+     "Trent Wotherspoon"
+    ]
+   },
+   "lu": "2026-10-07"
+  },
   {
    "id": "0033f84b-9bc1-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0033f84b-9bc1-f111-aad1-000d3af328df",
@@ -4571,6 +4717,151 @@
     "deputes": []
    },
    "lu": "2026-10-06"
+  },
+  {
+   "id": "7915e360-eba6-f111-85ce-000d3ae8fe17",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7915e360-eba6-f111-85ce-000d3ae8fe17",
+   "organisation": "South Bow Canada Services Ltd.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-09-08",
+   "version": "9 of 9",
+   "detail": {
+    "numero": "4353-3164-9",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-07",
+    "effetLe": "2026-09-08",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Discussions regarding Canada’s competitiveness, including with respect to taxation, access to capital and taxation.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions regarding Indigenous engagement, consultation and partnerships.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions regarding opportunities to expand egress out of Alberta and Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Representations, comments and discussions on policies which encourage economic investment, job creation and pipeline capacity in Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Communications regarding pipeline related matters and energy projects, such as project review timelines, pipeline safety and incident response and safety improvements.",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "Research & Development",
+       "Workplace Safety"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Representations, comments and discussions regarding North American and international energy security, the integration of pipeline infrastructure and promotion of energy exports. Discussions include impacts on international trade and imposition of tariffs.",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "First Nations, Metis and Northern Affairs",
+     "Immigration and Career Training",
+     "Executive Council",
+     "Energy and Resources",
+     "Environment",
+     "Finance",
+     "Government Relations"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-07"
   },
   {
    "id": "64db016b-b7ab-f111-aad1-000d3af328df",
@@ -9783,151 +10074,6 @@
      {
       "nom": "Darlene Rowden",
       "institution": "Environment"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "10afbaa6-2097-f111-a3d0-6045bd5ff7c3",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=10afbaa6-2097-f111-a3d0-6045bd5ff7c3",
-   "organisation": "South Bow Canada Services Ltd.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-08-01",
-   "version": "8 of 8",
-   "detail": {
-    "numero": "4353-3164-8",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-08-14",
-    "effetLe": "2026-08-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Discussions regarding Canada’s competitiveness, including with respect to taxation, access to capital and taxation.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions regarding Indigenous engagement, consultation and partnerships.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions regarding opportunities to expand egress out of Alberta and Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Representations, comments and discussions on policies which encourage economic investment, job creation and pipeline capacity in Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Communications regarding pipeline related matters and energy projects, such as project review timelines, pipeline safety and incident response and safety improvements.",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "Research & Development",
-       "Workplace Safety"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Representations, comments and discussions regarding North American and international energy security, the integration of pipeline infrastructure and promotion of energy exports. Discussions include impacts on international trade and imposition of tariffs.",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "First Nations, Metis and Northern Affairs",
-     "Immigration and Career Training",
-     "Executive Council",
-     "Energy and Resources",
-     "Environment",
-     "Finance",
-     "Government Relations"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
      }
     ],
     "deputes": []
@@ -30428,147 +30574,6 @@
      "Ken Cheveldayoff",
      "Jeremy Harrison",
      "Warren Kaeding",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Trent Wotherspoon"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "934334e9-9148-f111-9e82-cacc56958576",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=934334e9-9148-f111-9e82-cacc56958576",
-   "organisation": "Saskatchewan Automobile Dealers Association",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2025-12-11",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "4349-3155-3",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-06-16",
-    "effetLe": "2025-12-11",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Lobbing activities will include meetings as an Association with MLA's at an MLA reception, it will also include meetings by in house lobbyist with listed Ministries to discuss specific legislation that may pertain to the industry. These meeting may be in person or letter, email, or phone call.",
-      "sujets": [
-       "Economic Development",
-       "Education",
-       "Employment & Training",
-       "Environment",
-       "Transportation"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Advanced Education",
-     "Apprenticeship and Trade Certification Commission",
-     "Education",
-     "Environment",
-     "Finance",
-     "Financial & Consumer Affairs Authority",
-     "Highways",
-     "Immigration and Career Training",
-     "Labour Relations & Workplace Safety",
-     "Saskatchewan Government Insurance (SGI)",
-     "Saskatchewan Power Corporation",
-     "Saskatchewan Worker's Compensation Board",
-     "Crown Investments Corporation",
-     "Justice and Attorney General",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Government Insurance (SGI)"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Saskatchewan Worker's Compensation Board"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Apprenticeship and Trade Certification Commission"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     }
-    ],
-    "deputes": [
-     "Darlene Rowden",
-     "Sean Wilson",
-     "Kim Gartner",
-     "Sally Housser",
-     "Eric Schmalz",
-     "Michael Weger",
-     "Kevin Weedmark",
-     "Everett Hindley",
-     "Jeremy Cockrill",
-     "Daryl Harrison",
-     "Travis Keisig",
-     "Tim McLeod",
-     "Aleana Young",
-     "Carla Beck",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
      "Scott Moe",
      "Jim Reiter",
      "Nicole Sarauer",
