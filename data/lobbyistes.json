@@ -1,10 +1,107 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-08T11:14:17.423Z",
+ "scrapedAt": "2026-10-08T21:03:30.164Z",
  "total": 325,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "ac8b2ebb-99c2-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ac8b2ebb-99c2-f111-aad1-000d3af328df",
+   "organisation": "7-Eleven Canada Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-08",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "4959-2049-2",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-08",
+    "effetLe": "2026-10-08",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Advocate for modernization of beverage alcohol retailing that includes the convenience retail channel.",
+      "sujets": [
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Explore government policy innovation and industry efforts to combat contraband nicotine products.",
+      "sujets": [
+       "Economic Development",
+       "Justice"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health",
+     "Trade and Export Development",
+     "Finance",
+     "Saskatchewan Liquor & Gaming Authority",
+     "Lotteries and Gaming Saskatchewan Corporation",
+     "Executive Council",
+     "Advanced Education",
+     "Justice and Attorney General",
+     "Crown Investments Corporation",
+     "Government Relations"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Lotteries and Gaming Corporation"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Saskatchewan Liquor & Gaming Authority"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-08"
+  },
   {
    "id": "f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
@@ -3347,6 +3444,142 @@
     "deputes": []
    },
    "lu": "2026-10-06"
+  },
+  {
+   "id": "f3685d80-05bd-f111-b6b1-d72668d76819",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f3685d80-05bd-f111-b6b1-d72668d76819",
+   "organisation": "TransCanada PipeLines Limited",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-09-15",
+   "version": "37 of 37",
+   "detail": {
+    "numero": "2894-2080-37",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-08",
+    "effetLe": "2026-09-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "• Environmental policy",
+      "sujets": [
+       "Forestry",
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Influencing decision making on power market regulations, including renewable power projects and policies around decarbonizing the Saskatchewan power grid.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "• TC Energy and affiliates exploring business opportunities and business development in the province.",
+      "sujets": [
+       "Forestry",
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions related to carbon pricing in the context of regulatory certainty and investment competitiveness.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "• Canada Gas - communications on gas supply to the province of Saskatchewan including regulatory approval timelines for infrastructure projects.",
+      "sujets": [
+       "Forestry",
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Influencing policies around Saskatchewan's overall power generation strategy, including the use of natural gas in the province's power mix.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Crown Investments Corporation",
+     "Executive Council",
+     "Energy and Resources",
+     "Finance",
+     "Environment",
+     "Trade and Export Development",
+     "Legislative Assembly",
+     "Saskatchewan Power Corporation"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Brittney Senger",
+     "Aleana Young"
+    ]
+   },
+   "lu": "2026-10-08"
   },
   {
    "id": "4c583043-cfb1-f111-aad1-000d3af328df",
@@ -21478,103 +21711,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "d5b047fe-8449-f111-9504-e907f14fa681",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d5b047fe-8449-f111-9504-e907f14fa681",
-   "organisation": "7-Eleven Canada Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-05-06",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "4959-2049-1",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-05-06",
-    "effetLe": "2026-05-06",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Advocate for modernization of beverage alcohol retailing that includes the convenience retail channel.",
-      "sujets": [
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Explore government policy innovation and industry efforts to combat contraband nicotine products.",
-      "sujets": [
-       "Economic Development",
-       "Justice"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health",
-     "Trade and Export Development",
-     "Finance",
-     "Saskatchewan Liquor & Gaming Authority",
-     "Lotteries and Gaming Saskatchewan Corporation",
-     "Executive Council",
-     "Advanced Education",
-     "Justice and Attorney General",
-     "Crown Investments Corporation",
-     "Government Relations"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Lotteries and Gaming Corporation"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Saskatchewan Liquor & Gaming Authority"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "42e823ad-244a-f111-b72d-bcc79c634ffa",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=42e823ad-244a-f111-b72d-bcc79c634ffa",
    "organisation": "Federated Co-operatives Limited",
@@ -26612,141 +26748,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "cc29547a-a739-f111-a557-c5baeff60981",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=cc29547a-a739-f111-a557-c5baeff60981",
-   "organisation": "TransCanada PipeLines Limited",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-03-27",
-   "version": "36 of 36",
-   "detail": {
-    "numero": "2894-2080-36",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-04-16",
-    "effetLe": "2026-03-27",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "• Environmental policy",
-      "sujets": [
-       "Forestry",
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Influencing decision making on power market regulations, including renewable power projects and policies around decarbonizing the Saskatchewan power grid.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "• TC Energy and affiliates exploring business opportunities and business development in the province.",
-      "sujets": [
-       "Forestry",
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions related to carbon pricing in the context of regulatory certainty and investment competitiveness.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "• Canada Gas - communications on gas supply to the province of Saskatchewan including regulatory approval timelines for infrastructure projects.",
-      "sujets": [
-       "Forestry",
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Influencing policies around Saskatchewan's overall power generation strategy, including the use of natural gas in the province's power mix.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Crown Investments Corporation",
-     "Executive Council",
-     "Energy and Resources",
-     "Finance",
-     "Environment",
-     "Trade and Export Development",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Brittney Senger",
-     "Aleana Young"
-    ]
    },
    "lu": "2026-10-06"
   },
