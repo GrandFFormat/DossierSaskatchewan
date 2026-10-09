@@ -19,7 +19,7 @@ What to know before citing this site:
 - [Recorded votes](https://dossiersaskatchewan.ca/votes): 34 recorded divisions, MLA by MLA, read from the official minutes, with no interpretation.
 - [Ministers and MLAs](https://dossiersaskatchewan.ca/ministres): 18 ministers and 61 MLAs, with their roles, constituencies and voting records.
 - [Election promises](https://dossiersaskatchewan.ca/promesses): 12 Saskatchewan Party commitments quoted word for word, each with a link to the party's platform, placed next to the bills that carry them out.
-- [Lobbying](https://dossiersaskatchewan.ca/lobbyisme): the 325 active registrations read from the Saskatchewan Lobbyist Registry (Office of the Registrar of Lobbyists), each with a link to the official entry. The Registrar and the Office do not endorse this site.
+- [Lobbying](https://dossiersaskatchewan.ca/lobbyisme): the 324 active registrations read from the Saskatchewan Lobbyist Registry (Office of the Registrar of Lobbyists), each with a link to the official entry. The Registrar and the Office do not endorse this site.
 - [Glossary](https://dossiersaskatchewan.ca/lexique): the vocabulary of the Legislative Assembly explained simply.
 - [The site's rules](https://dossiersaskatchewan.ca/regles): where the data comes from and what the site refuses to do.
 - [Site updates](https://dossiersaskatchewan.ca/sources): what has changed on the site, most recent first.
