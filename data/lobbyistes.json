@@ -1,7 +1,7 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-09T11:12:51.338Z",
+ "scrapedAt": "2026-10-09T20:34:27.105Z",
  "total": 324,
  "complet": true,
  "inscriptions": [
@@ -101,6 +101,157 @@
     "deputes": []
    },
    "lu": "2026-10-08"
+  },
+  {
+   "id": "ec477ee1-0dc4-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ec477ee1-0dc4-f111-aad1-000d3af328df",
+   "organisation": "Canadian Pacific Railway Company",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-06",
+   "version": "29 of 29",
+   "detail": {
+    "numero": "3852-1236-29",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-09",
+    "effetLe": "2026-10-06",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Encourage provincial policies and projects that support safe, efficient, and reliable supply chains as well as promote supply chain growth and investment.",
+      "sujets": [
+       "Infrastructure",
+       "International Trade",
+       "Municipal Affairs",
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Executive Council",
+     "Energy and Resources",
+     "Trade and Export Development",
+     "Highways",
+     "Finance",
+     "Saskatchewan Government Insurance (SGI)"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Government Insurance (SGI)"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-09"
+  },
+  {
+   "id": "6dbaf4c7-8bc2-f111-9578-84490a6da7ae",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=6dbaf4c7-8bc2-f111-9578-84490a6da7ae",
+   "organisation": "True North Nuclear Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-06",
+   "version": "3 of 3",
+   "detail": {
+    "numero": "3029-3484-3",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-09",
+    "effetLe": "2026-10-06",
+    "finPrevue": "2027-10-05",
+    "cabinet": "Self-employed",
+    "activites": [
+     {
+      "description": "Work with the Saskatchewan government to secure a site for True North Nuclear Inc. to deploy a demonstration or commercial micro modular reactor in the province of Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "International Trade",
+       "Regional Development",
+       "Research & Development"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Legislative Proposal, Bill or Resolution",
+       "Order in Council",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Energy and Resources",
+     "Environment",
+     "Government Relations",
+     "Crown Investments Corporation",
+     "Trade and Export Development",
+     "Executive Council"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-09"
   },
   {
    "id": "f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
@@ -6967,84 +7118,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "ea7cfd4a-53a1-f111-85ce-000d3ae8fe17",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ea7cfd4a-53a1-f111-85ce-000d3ae8fe17",
-   "organisation": "True North Nuclear Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-08-25",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "3029-3484-2",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-08-26",
-    "effetLe": "2026-08-25",
-    "finPrevue": "2027-04-27",
-    "cabinet": "Self-employed",
-    "activites": [
-     {
-      "description": "Work with the Saskatchewan government to secure a site for True North Nuclear Inc. to deploy a demonstration or commercial micro modular reactor in the province of Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "International Trade",
-       "Regional Development",
-       "Research & Development"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Grant or Financial Benefit",
-       "Legislative Proposal, Bill or Resolution",
-       "Order in Council",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Energy and Resources",
-     "Environment",
-     "Government Relations",
-     "Crown Investments Corporation",
-     "Trade and Export Development",
-     "Executive Council"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "c9d7b65a-6db0-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=c9d7b65a-6db0-f111-aad1-000d3af328df",
    "organisation": "IBM Canada Limited",
@@ -12760,79 +12833,6 @@
      {
       "nom": "Jim Reiter",
       "institution": "Finance"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "5c8397e9-3b81-f111-a101-8c427fb46116",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5c8397e9-3b81-f111-a101-8c427fb46116",
-   "organisation": "Canadian Pacific Railway Company",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-07-16",
-   "version": "28 of 28",
-   "detail": {
-    "numero": "3852-1236-28",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-07-21",
-    "effetLe": "2026-07-16",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Encourage provincial policies and projects that support safe, efficient, and reliable supply chains as well as promote supply chain growth and investment.",
-      "sujets": [
-       "Infrastructure",
-       "International Trade",
-       "Municipal Affairs",
-       "Transportation"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Executive Council",
-     "Energy and Resources",
-     "Trade and Export Development",
-     "Highways",
-     "Finance",
-     "Saskatchewan Government Insurance (SGI)"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Government Insurance (SGI)"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
      }
     ],
     "deputes": []

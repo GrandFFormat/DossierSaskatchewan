@@ -1,7 +1,7 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-09T11:12:51.338Z",
+ "scrapedAt": "2026-10-09T20:34:27.105Z",
  "regle": "Lien fait seulement quand l'inscription nomme la loi en toutes lettres et que les dates concordent (scrapers/lobby-liens.js).",
  "projets": {
   "300018": [
