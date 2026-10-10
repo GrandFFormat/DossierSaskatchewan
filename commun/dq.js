@@ -171,6 +171,7 @@ const translations = {
     'footer.regles':"Les règles",
     // La page /lobbyisme (6 oct. 2026) : le registre des lobbyistes, lu avec l'accord du registraire.
     'footer.lobby':"Lobbying",
+    'avis.reprise':"Ce site pourrait fermer : l'achalandage est faible et je me concentre sur le Québec. <b>Vous voulez le reprendre ?</b> Il resterait dans le réseau des sites provinciaux reliés par <a href=\"https://dossiercanada.ca/\" target=\"_blank\" rel=\"noopener\">dossiercanada.ca</a>. Coût : environ 30 $ par mois pour un abonnement Claude, et c'est à peu près tout. Écrivez à <a href=\"mailto:info@dossierquebec.ca\">info@dossierquebec.ca</a>.",
     'fil.lobby':"Lobbying",
     'sujet.lobby':"Le registre des lobbyistes de la Saskatchewan",
     'lobbyhero.l1':"Qui fait du lobbying,",
@@ -598,6 +599,7 @@ const translations = {
     'footer.regles':"The rules",
     // La page /lobbyisme (6 oct. 2026) : le registre des lobbyistes, lu avec l'accord du registraire.
     'footer.lobby':"Lobbying",
+    'avis.reprise':"This site may shut down: traffic is low and I'm focusing on Québec. <b>Want to take it over?</b> It would stay part of the network of provincial sites linked through <a href=\"https://dossiercanada.ca/\" target=\"_blank\" rel=\"noopener\">dossiercanada.ca</a>. Cost: about $30 a month for a Claude subscription, and that's pretty much it. Email <a href=\"mailto:info@dossierquebec.ca\">info@dossierquebec.ca</a>.",
     'fil.lobby':"Lobbying",
     'sujet.lobby':"Saskatchewan's Lobbyist Registry",
     'lobbyhero.l1':"Who lobbies,",

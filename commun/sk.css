@@ -655,3 +655,12 @@ html[data-theme="dark"] .lobby-apres{color:#FCD34D;}
 .lobby-pill{background:#FEF3C7 !important; color:#A16207 !important;}
 .qf-btn[onclick*="'lobby'"]:not(.active){background:#FEF3C7 !important; color:#A16207 !important; border-color:#FDE68A !important;}
 html[data-theme="dark"] .lobby-pill, html[data-theme="dark"] .qf-btn[onclick*="'lobby'"]:not(.active){background:#3A2E0E !important; color:#FCD34D !important; border-color:#4A3B12 !important;}
+
+/* L'avis de reprise (Martin, 10 oct. 2026) : une bande sous la barre du logo, sur toutes les pages.
+   Elle disparaît quand l'en-tête passe en mode compact (au défilement), pour ne pas manger l'écran. */
+.sk-avis{margin:0; padding:9px clamp(16px, 4vw, 48px); background:#FEF3C7; color:#713F12; font-size:14.5px; line-height:1.5; text-align:center; border-top:1px solid #FDE68A; border-bottom:1px solid #FDE68A;}
+.sk-avis a{color:#713F12; font-weight:600; text-decoration:underline;}
+#dq-topbar.compact .sk-avis{display:none;}
+html[data-theme="dark"] .sk-avis{background:#3A2E0E; color:#FDE68A; border-color:#4A3B12;}
+html[data-theme="dark"] .sk-avis a{color:#FDE68A;}
+@media (max-width: 640px){ .sk-avis{font-size:13px; text-align:left; padding:8px 14px;} }

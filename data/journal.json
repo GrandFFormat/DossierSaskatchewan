@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-10",
+    "volet": "site",
+    "fr": {
+      "titre": "Le site cherche un repreneur",
+      "texte": "Ce site pourrait fermer : l’achalandage est faible et son auteur se concentre sur le Québec. Il est offert à qui veut le reprendre ; il resterait relié aux autres sites provinciaux par dossiercanada.ca. Coût : environ 30 $ par mois pour un abonnement Claude. Écrire à info@dossierquebec.ca."
+    },
+    "en": {
+      "titre": "The site is looking for someone to take it over",
+      "texte": "This site may shut down: traffic is low and its author is focusing on Québec. It is offered to anyone who wants to take it over; it would stay linked to the other provincial sites through dossiercanada.ca. Cost: about $30 a month for a Claude subscription. Email info@dossierquebec.ca."
+    }
+  },
+  {
     "date": "2026-10-06",
     "volet": "site",
     "fr": {
