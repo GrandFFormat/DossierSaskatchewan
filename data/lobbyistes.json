@@ -1,10 +1,127 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-13T11:33:03.997Z",
- "total": 324,
+ "scrapedAt": "2026-10-13T21:00:41.966Z",
+ "total": 321,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "b5ee630a-2cc4-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b5ee630a-2cc4-f111-aad1-000d3af328df",
+   "organisation": "Saskatchewan Government and General Employees' Union",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-09",
+   "version": "20 of 20",
+   "detail": {
+    "numero": "3192-1240-20",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-13",
+    "effetLe": "2026-10-09",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "1. SGEU advocates for progressive labour legislation that protects the rights and health and safety of workers, funding for adequate staffing levels and increased security to protect workers; we also lobby for reliable, publicly-delivered, high-quality healthcare services for Saskatchewan citizens. 2. SGEU's efforts focus on areas including: preventing the privatization of Saskatchewan's Crown corporations or any other public funded services. 3. SGEU lobbies for stable multi-year funding for community-based organizations. 4. SGEU opposes job and program cuts in the Saskatchewan public service.",
+      "sujets": [
+       "Education",
+       "Employment & Training",
+       "Finance & Budget",
+       "Information Technology",
+       "Infrastructure",
+       "Justice",
+       "Labour Relations",
+       "Government Procurement",
+       "Privatization & Outsourcing",
+       "Workplace Safety"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health",
+     "Executive Council",
+     "Justice and Attorney General",
+     "Labour Relations & Workplace Safety",
+     "Social Services",
+     "Advanced Education",
+     "Saskatchewan Liquor & Gaming Authority",
+     "Rural and Remote Health",
+     "Education",
+     "First Nations, Metis and Northern Affairs",
+     "Apprenticeship and Trade Certification Commission",
+     "Crown Investments Corporation",
+     "Saskatchewan Public Safety Agency",
+     "Community Safety"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Terry Jenson",
+      "institution": "Social Services"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Apprenticeship and Trade Certification Commission"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Community Safety"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Saskatchewan Public Safety Agency"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Saskatchewan Liquor & Gaming Authority"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-13"
+  },
   {
    "id": "ac8b2ebb-99c2-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ac8b2ebb-99c2-f111-aad1-000d3af328df",
@@ -9666,174 +9783,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "2a816e95-e290-f111-ba43-cfbc916e7285",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=2a816e95-e290-f111-ba43-cfbc916e7285",
-   "organisation": "Diabetes Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-08-05",
-   "version": "9 of 9",
-   "detail": {
-    "numero": "2767-1263-9",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-08-05",
-    "effetLe": "2026-08-05",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Diabetes Canada advocates for improved access to diabetes medications, devices, supplies and services for citizens of Saskatchewan living with diabetes.",
-      "sujets": [
-       "Finance & Budget",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Diabetes Canada advocates for the creation and implementation of a provincial diabetes strategy or to prioritize diabetes within a chronic disease strategy to improve diabetes prevention, screening, treatment and health outcomes in Saskatchewan.",
-      "sujets": [
-       "Finance & Budget",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Diabetes Canada advocates for improved support for students living with diabetes at school, including daily diabetes management needs, insulin administration, and emergency preparedness.",
-      "sujets": [
-       "Education",
-       "Finance & Budget",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Education",
-     "Executive Council",
-     "Finance",
-     "Health",
-     "Legislative Assembly",
-     "Rural and Remote Health",
-     "Seniors",
-     "First Nations, Metis and Northern Affairs",
-     "Social Services"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Seniors"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Leroy Laliberte",
-     "Darlene Rowden",
-     "Sean Wilson",
-     "Terri Bromm",
-     "Jordan McPhail",
-     "James Thorsteinson",
-     "Barret Kropf",
-     "Racquel Hilbert",
-     "Chris Beaudry",
-     "Kim Gartner",
-     "Jamie Martens",
-     "Kevin Kasun",
-     "Jacqueline Roy",
-     "Bhajan Brar",
-     "Joan Pratchler",
-     "Sally Housser",
-     "Brent Blakley",
-     "Eric Schmalz",
-     "Don McBean",
-     "Keith Jorgenson",
-     "Kim Breckner",
-     "Hugh Gordon",
-     "Brittney Senger",
-     "Darcy Warrington",
-     "Tajinder Grewal",
-     "Michael Weger",
-     "Brad Crassweller",
-     "David Chan",
-     "Megan Patterson",
-     "Kevin Weedmark",
-     "April ChiefCalf",
-     "Everett Hindley",
-     "Todd Goudy",
-     "Jeremy Cockrill",
-     "Meara Conway",
-     "Daryl Harrison",
-     "Terry Jenson",
-     "Travis Keisig",
-     "Matt Love",
-     "Tim McLeod",
-     "Betty Nippi-Albright",
-     "Erika Ritchie",
-     "Alana Ross",
-     "Aleana Young",
-     "Blaine McLeod",
-     "Noor Burki",
-     "Jared Clarke",
-     "Nathaniel Teed",
-     "Vicki Mowat",
-     "Carla Beck",
-     "Lori Carr",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Doug Steele",
-     "Trent Wotherspoon",
-     "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "3c527422-e990-f111-9b47-0022483dfa86",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=3c527422-e990-f111-9b47-0022483dfa86",
    "organisation": "Ya’thi Néné Land and Resource Office",
@@ -14717,94 +14666,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "f6ab0e02-8280-f111-90e7-b6291d2de551",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f6ab0e02-8280-f111-90e7-b6291d2de551",
-   "organisation": "Breakfast Club of Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-06-30",
-   "version": "12 of 12",
-   "detail": {
-    "numero": "4855-1997-12",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-07-16",
-    "effetLe": "2026-06-30",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Seeking partnership/funding of existing and/or new school feeding programs.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Agriculture",
-       "Education",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly",
-     "Agriculture",
-     "Health",
-     "First Nations, Metis and Northern Affairs",
-     "Finance",
-     "Government Relations",
-     "Education",
-     "Social Services",
-     "Executive Council"
-    ],
-    "ministres": [
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Barret Kropf",
-     "Kim Gartner",
-     "Brent Blakley",
-     "Michael Weger",
-     "David Chan",
-     "April ChiefCalf",
-     "Noor Burki"
-    ]
    },
    "lu": "2026-10-06"
   },
@@ -22618,52 +22479,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "7ca2cd3e-fb4a-f111-9a90-70a8a50cfd63",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7ca2cd3e-fb4a-f111-9a90-70a8a50cfd63",
-   "organisation": "Saskatchewan Foster Families Association Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-05-05",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "4791-2901-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-05-08",
-    "effetLe": "2026-05-05",
-    "finPrevue": "2026-11-05",
-    "cabinet": "Self-employed",
-    "activites": [
-     {
-      "description": "Recruitment and supporting Foster Families in Saskatchewan. Engagement of current foster families as ambassadors for new families. Enhance, strengthen, and expedite intake process for approved familles.",
-      "sujets": [
-       "Housing"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Saskatchewan Housing Corporation",
-     "Social Services"
-    ],
-    "ministres": [
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Saskatchewan Housing Corporation"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "27c83ce4-e447-f111-9a90-70a8a50cfd63",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=27c83ce4-e447-f111-9a90-70a8a50cfd63",
    "organisation": "Nature Conservancy of Canada",
@@ -23729,123 +23544,6 @@
      {
       "nom": "Dave Marit",
       "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "0e316a63-313f-f111-922d-ba929cf81af6",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0e316a63-313f-f111-922d-ba929cf81af6",
-   "organisation": "Saskatchewan Government and General Employees' Union",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-04-23",
-   "version": "19 of 19",
-   "detail": {
-    "numero": "3192-1240-19",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-04-24",
-    "effetLe": "2026-04-23",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "1. SGEU advocates for progressive labour legislation that protects the rights and health and safety of workers, funding for adequate staffing levels and increased security to protect workers; we also lobby for reliable, publicly-delivered, high-quality healthcare services for Saskatchewan citizens. 2. SGEU's efforts focus on areas including: preventing the privatization of Saskatchewan's Crown corporations or any other public funded services. 3. SGEU lobbies for stable multi-year funding for community-based organizations. 4. SGEU opposes job and program cuts in the Saskatchewan public service.",
-      "sujets": [
-       "Education",
-       "Employment & Training",
-       "Finance & Budget",
-       "Information Technology",
-       "Infrastructure",
-       "Justice",
-       "Labour Relations",
-       "Government Procurement",
-       "Privatization & Outsourcing",
-       "Workplace Safety"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health",
-     "Executive Council",
-     "Justice and Attorney General",
-     "Labour Relations & Workplace Safety",
-     "Social Services",
-     "Advanced Education",
-     "Saskatchewan Liquor & Gaming Authority",
-     "Rural and Remote Health",
-     "Education",
-     "First Nations, Metis and Northern Affairs",
-     "Apprenticeship and Trade Certification Commission",
-     "Crown Investments Corporation",
-     "Saskatchewan Public Safety Agency",
-     "Community Safety"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Apprenticeship and Trade Certification Commission"
-     },
-     {
-      "nom": "Mike Weger",
-      "institution": "Community Safety"
-     },
-     {
-      "nom": "Mike Weger",
-      "institution": "Saskatchewan Public Safety Agency"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Saskatchewan Liquor & Gaming Authority"
      }
     ],
     "deputes": []
