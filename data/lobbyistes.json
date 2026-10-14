@@ -1,10 +1,327 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-14T09:23:37.567Z",
+ "scrapedAt": "2026-10-14T20:00:29.589Z",
  "total": 321,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "18ba6598-c9c7-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=18ba6598-c9c7-f111-aad1-000d3af328df",
+   "organisation": "Canadian Bankers Association",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-14",
+   "version": "8 of 8",
+   "detail": {
+    "numero": "3645-2775-8",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-14",
+    "effetLe": "2026-10-14",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "To encourage harmonization with existing provincial and national regulatory frameworks governing Financial Planners and Financial Advisors",
+      "sujets": [
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Advocating for amendments to “The Protection from Human Trafficking (Coerced Debts) Amendment Act, 2023” to establish a reasonable process for establishing a coerced debt and its operationalization at the banks.",
+      "sujets": [
+       "Justice"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Advanced Education",
+     "Finance",
+     "Financial & Consumer Affairs Authority",
+     "Justice and Attorney General",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     }
+    ],
+    "deputes": [
+     "Aleana Young",
+     "Carla Beck"
+    ]
+   },
+   "lu": "2026-10-14"
+  },
+  {
+   "id": "7d562d1c-4dc7-f111-adc6-d888ab9be462",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7d562d1c-4dc7-f111-adc6-d888ab9be462",
+   "organisation": "REalloys Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-13",
+   "version": "3 of 3",
+   "detail": {
+    "numero": "1013-3397-3",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-14",
+    "effetLe": "2026-10-13",
+    "finPrevue": "2027-01-13",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "GSD provides support to REAlloys with respect to its' government relations activities related to SRC and, rare earth minerals, and innovation in Saskatchewan",
+      "sujets": [
+       "Economic Development",
+       "Infrastructure",
+       "Research & Development"
+      ],
+      "categories": [
+       "Contract"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Innovation",
+     "Trade and Export Development",
+     "Finance"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-14"
+  },
+  {
+   "id": "eb29acc3-dcc7-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb29acc3-dcc7-f111-aad1-000d3af328df",
+   "organisation": "True North Nuclear Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-13",
+   "version": "4 of 4",
+   "detail": {
+    "numero": "3029-3484-4",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-14",
+    "effetLe": "2026-10-13",
+    "finPrevue": "2027-05-31",
+    "cabinet": "Self-employed",
+    "activites": [
+     {
+      "description": "Work with the Saskatchewan government to secure a site for True North Nuclear Inc. to deploy a demonstration or commercial micro modular reactor in the province of Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "International Trade",
+       "Regional Development",
+       "Research & Development"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Legislative Proposal, Bill or Resolution",
+       "Order in Council",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Energy and Resources",
+     "Environment",
+     "Government Relations",
+     "Crown Investments Corporation",
+     "Trade and Export Development",
+     "Executive Council"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-14"
+  },
+  {
+   "id": "227c03c2-4cc7-f111-adc6-d888ab9be462",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=227c03c2-4cc7-f111-adc6-d888ab9be462",
+   "organisation": "Fertilizer Canada",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-13",
+   "version": "21 of 21",
+   "detail": {
+    "numero": "4568-1055-21",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-14",
+    "effetLe": "2026-10-13",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Agriculture: Nutrient Stewardship: Half of all food produced is made possible through the use of fertilizer. As demand continues to grow, farmers in Saskatchewan and around the world will continue to rely on fertilizer to grow more food to feed a growing population. 4R Nutrient Stewardship is a science-based framework, which helps farmers use fertilizer more efficiently, improving profitability while reducing nutrient losses to the environment to protect our water, air and soil. Fertilizer Canada wants to ensure continued support for the 4R program and discuss opportunities for further collaboration. In addition, the 4R program should be a central method of reducing agricultural emissions for provincial or federal initiatives.",
+      "sujets": [
+       "Agriculture"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Competitiveness: Fertilizer is a significant contributor to Saskatchewan's economy, both from its manufacture and use of products by the province’s farmers. Our manufacturers are significantly trade-exposed, with 40% of total potash production in Canada exported to the United States; while Canada produces only 1% of total nitrogen supply. With imported product readily available, the fertilizer industry is at high risk of competitiveness impacts resulting from any additional costs. Unachievable greenhouse gas reduction targets that do not recognize our industry’s ability to reduce emissions or compete internationally will result in emissions displacement to jurisdictions with no or lesser greenhouse gas reduction policies.",
+      "sujets": [
+       "Agriculture",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Innovation",
+     "Crown Investments Corporation",
+     "Highways",
+     "Trade and Export Development",
+     "Environment",
+     "Agriculture",
+     "Energy and Resources",
+     "Executive Council",
+     "Finance",
+     "Intergovernmental Affairs",
+     "Government Relations",
+     "Saskatchewan Power Corporation",
+     "SaskEnergy Incorporated"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "SaskEnergy Incorporated"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Intergovernmental Affairs"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-14"
+  },
   {
    "id": "b5ee630a-2cc4-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b5ee630a-2cc4-f111-aad1-000d3af328df",
@@ -286,84 +603,6 @@
      {
       "nom": "Dave Marit",
       "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-09"
-  },
-  {
-   "id": "6dbaf4c7-8bc2-f111-9578-84490a6da7ae",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=6dbaf4c7-8bc2-f111-9578-84490a6da7ae",
-   "organisation": "True North Nuclear Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-10-06",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "3029-3484-3",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-10-09",
-    "effetLe": "2026-10-06",
-    "finPrevue": "2027-10-05",
-    "cabinet": "Self-employed",
-    "activites": [
-     {
-      "description": "Work with the Saskatchewan government to secure a site for True North Nuclear Inc. to deploy a demonstration or commercial micro modular reactor in the province of Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "International Trade",
-       "Regional Development",
-       "Research & Development"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Grant or Financial Benefit",
-       "Legislative Proposal, Bill or Resolution",
-       "Order in Council",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Energy and Resources",
-     "Environment",
-     "Government Relations",
-     "Crown Investments Corporation",
-     "Trade and Export Development",
-     "Executive Council"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
      }
     ],
     "deputes": []
@@ -21180,63 +21419,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "d05c718e-dc4e-f111-9e4b-bfbe4acc115c",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d05c718e-dc4e-f111-9e4b-bfbe4acc115c",
-   "organisation": "REalloys Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-05-12",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "1013-3397-2",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-05-13",
-    "effetLe": "2026-05-12",
-    "finPrevue": "2027-01-13",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "GSD provides support to REAlloys with respect to its' government relations activities related to SRC and, rare earth minerals, and innovation in Saskatchewan",
-      "sujets": [
-       "Economic Development",
-       "Infrastructure",
-       "Research & Development"
-      ],
-      "categories": [
-       "Contract"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Innovation",
-     "Trade and Export Development",
-     "Finance"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "400a9b7f-524e-f111-9a90-70a8a50cfd63",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=400a9b7f-524e-f111-9a90-70a8a50cfd63",
    "organisation": "Prairie Clean Enterprises",
@@ -21322,121 +21504,6 @@
      {
       "nom": "Sean Wilson",
       "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "7d06587e-494d-f111-bc70-a60cdd5e2d7e",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7d06587e-494d-f111-bc70-a60cdd5e2d7e",
-   "organisation": "Fertilizer Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-05-11",
-   "version": "20 of 20",
-   "detail": {
-    "numero": "4568-1055-20",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-05-11",
-    "effetLe": "2026-05-11",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Agriculture: Nutrient Stewardship: Half of all food produced is made possible through the use of fertilizer. As demand continues to grow, farmers in Saskatchewan and around the world will continue to rely on fertilizer to grow more food to feed a growing population. 4R Nutrient Stewardship is a science-based framework, which helps farmers use fertilizer more efficiently, improving profitability while reducing nutrient losses to the environment to protect our water, air and soil. Fertilizer Canada wants to ensure continued support for the 4R program and discuss opportunities for further collaboration. In addition, the 4R program should be a central method of reducing agricultural emissions for provincial or federal initiatives.",
-      "sujets": [
-       "Agriculture"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Competitiveness: Fertilizer is a significant contributor to Saskatchewan's economy, both from its manufacture and use of products by the province’s farmers. Our manufacturers are significantly trade-exposed, with 40% of total potash production in Canada exported to the United States; while Canada produces only 1% of total nitrogen supply. With imported product readily available, the fertilizer industry is at high risk of competitiveness impacts resulting from any additional costs. Unachievable greenhouse gas reduction targets that do not recognize our industry’s ability to reduce emissions or compete internationally will result in emissions displacement to jurisdictions with no or lesser greenhouse gas reduction policies.",
-      "sujets": [
-       "Agriculture",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Innovation",
-     "Crown Investments Corporation",
-     "Highways",
-     "Trade and Export Development",
-     "Environment",
-     "Agriculture",
-     "Energy and Resources",
-     "Executive Council",
-     "Finance",
-     "Intergovernmental Affairs",
-     "Government Relations",
-     "Saskatchewan Power Corporation",
-     "SaskEnergy Incorporated"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "SaskEnergy Incorporated"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
      }
     ],
     "deputes": []
@@ -23341,73 +23408,6 @@
      "Nicole Sarauer",
      "Doug Steele",
      "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "ef751f0d-f943-f111-9a90-70a8a50cfd63",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ef751f0d-f943-f111-9a90-70a8a50cfd63",
-   "organisation": "Canadian Bankers Association",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-04-29",
-   "version": "7 of 7",
-   "detail": {
-    "numero": "3645-2775-7",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-04-30",
-    "effetLe": "2026-04-29",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "To encourage harmonization with existing provincial and national regulatory frameworks governing Financial Planners and Financial Advisors",
-      "sujets": [
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Advocating for amendments to “The Protection from Human Trafficking (Coerced Debts) Amendment Act, 2023” to establish a reasonable process for establishing a coerced debt and its operationalization at the banks.",
-      "sujets": [
-       "Justice"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Advanced Education",
-     "Finance",
-     "Financial & Consumer Affairs Authority",
-     "Justice and Attorney General",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     }
-    ],
-    "deputes": [
-     "Aleana Young",
-     "Carla Beck"
     ]
    },
    "lu": "2026-10-06"
