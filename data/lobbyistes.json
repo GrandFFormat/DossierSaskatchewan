@@ -1,10 +1,149 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-15T09:00:32.916Z",
+ "scrapedAt": "2026-10-15T19:43:51.659Z",
  "total": 321,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "651dc12e-5454-f111-89e7-6045bd5d144b",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=651dc12e-5454-f111-89e7-6045bd5d144b",
+   "organisation": "Canadian Propane Association",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "20 of 20",
+   "detail": {
+    "numero": "3397-1000-20",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-15",
+    "effetLe": "2026-10-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "The Canadian Propane Association is asking the Government of Saskatchewan to review its provincial Motor Fuel Tax regulation. Specifically to eliminate the Motor Fuel Tax on Stationary Propane Use and to Reduce Saskatchewan's Auto-Propane Tax by 50%, from 9¢/L to 4.5¢/L.",
+      "sujets": [
+       "Energy",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Awareness of Propane as Environmentally Friendly, Low Carbon Alternative Fuel Source that has multiple uses and benefits across a variety of sectors. For example, Propane should be viewed as a valuable, and reliable, low carbon energy resource which can lower the emissions in the energy and agrricultural especially in rural communities.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Trade and Export Development",
+     "Labour Relations & Workplace Safety",
+     "Intergovernmental Affairs",
+     "Environment",
+     "Finance",
+     "Government Relations",
+     "Energy and Resources",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Intergovernmental Affairs"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     }
+    ],
+    "deputes": [
+     "Chris Beaudry",
+     "Sally Housser",
+     "Aleana Young",
+     "Jared Clarke",
+     "Carla Beck",
+     "David Marit",
+     "Jim Reiter"
+    ]
+   },
+   "lu": "2026-10-15"
+  },
+  {
+   "id": "96c7d87c-c7c8-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=96c7d87c-c7c8-f111-aad1-000d3af328df",
+   "organisation": "Canadian Association of Direct Relationship Insurers",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "16 of 16",
+   "detail": {
+    "numero": "2223-1410-16",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-15",
+    "effetLe": "2026-10-15",
+    "finPrevue": "2027-04-15",
+    "cabinet": "Self-employed",
+    "activites": [
+     {
+      "description": "Liaison with department regarding insurance legislation or regulation as appropriate; whether in response to request for submission or information, or as part of general routine meetings and updates.",
+      "sujets": [
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution"
+      ]
+     }
+    ],
+    "institutions": [
+     "Finance",
+     "Financial & Consumer Affairs Authority"
+    ],
+    "ministres": [
+     {
+      "nom": "Tim McLeod",
+      "institution": "Financial & Consumer Affairs Authority"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-15"
+  },
   {
    "id": "18ba6598-c9c7-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=18ba6598-c9c7-f111-aad1-000d3af328df",
@@ -15330,51 +15469,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "35d0fef4-b474-f111-9b48-000d3a84cd84",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=35d0fef4-b474-f111-9b48-000d3a84cd84",
-   "organisation": "Canadian Association of Direct Relationship Insurers",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-06-30",
-   "version": "15 of 15",
-   "detail": {
-    "numero": "2223-1410-15",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-07-02",
-    "effetLe": "2026-06-30",
-    "finPrevue": "2026-12-30",
-    "cabinet": "Self-employed",
-    "activites": [
-     {
-      "description": "Liaison with department regarding insurance legislation or regulation as appropriate; whether in response to request for submission or information, or as part of general routine meetings and updates.",
-      "sujets": [
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution"
-      ]
-     }
-    ],
-    "institutions": [
-     "Finance",
-     "Financial & Consumer Affairs Authority"
-    ],
-    "ministres": [
-     {
-      "nom": "Tim McLeod",
-      "institution": "Financial & Consumer Affairs Authority"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "f42fba1d-9474-f111-920c-e4d97b2bb09b",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f42fba1d-9474-f111-920c-e4d97b2bb09b",
    "organisation": "StrataCare Solutions Ltd",
@@ -24063,90 +24157,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "df548322-a34f-f111-9a90-6045bd5e72d0",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=df548322-a34f-f111-9a90-6045bd5e72d0",
-   "organisation": "Canadian Propane Association",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-04-20",
-   "version": "19 of 19",
-   "detail": {
-    "numero": "3397-1000-19",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-05-14",
-    "effetLe": "2026-04-20",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Awareness of Propane as Environmentally Friendly, Low Carbon Alternative Fuel Source that has multiple uses and benefits across a variety of sectors. For example, Propane should be viewed as a valuable, and reliable, low carbon energy resource which can lower the emissions in the energy and agrricultural especially in rural communities.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Trade and Export Development",
-     "Labour Relations & Workplace Safety",
-     "Intergovernmental Affairs",
-     "Environment",
-     "Finance",
-     "Government Relations",
-     "Energy and Resources",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
-     }
-    ],
-    "deputes": [
-     "Chris Beaudry",
-     "Sally Housser",
-     "Aleana Young",
-     "Jared Clarke",
-     "Carla Beck",
-     "David Marit",
-     "Jim Reiter"
-    ]
    },
    "lu": "2026-10-06"
   },
