@@ -1,10 +1,460 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-16T08:51:45.289Z",
+ "scrapedAt": "2026-10-16T19:19:37.119Z",
  "total": 321,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "02f737dd-79c9-f111-8bb8-be5d48b4146f",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=02f737dd-79c9-f111-8bb8-be5d48b4146f",
+   "organisation": "Cenovus Energy Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "90 of 90",
+   "detail": {
+    "numero": "3772-1525-90",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-16",
+    "effetLe": "2026-10-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Discussions with government on various policy levers to help accelerate the adoption of emissions reduction technologies.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Research & Development"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Engage with the government on the design of the Management and Reduction of Greenhouse Gasses Regulations (the “large emitter program”) under the Saskatchewan Climate Change Plan.",
+      "sujets": [
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Environmental Assessment Requirements.",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Implementation of an Area Based Closure (ABC) or similar program in Saskatchewan.",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Regulatory efficiency. Discussions regarding regulatory process efficiency.",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Municipal Affairs"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Thermal Exploration Lease Extensions - Discussions related to potential lease extension for thermal exploration projects in Saskatchewan.",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Contract"
+      ]
+     },
+     {
+      "description": "Discussion with the Saskatchewan government on evolving regulation related to well abandonment.",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution"
+      ]
+     },
+     {
+      "description": "Well Abandonment Directive. Participation in meetings as part of the Industry/Government working group for the draft proposed Saskatchewan Well Abandonment Directive to provide input and suggestions on the content of the directive.",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     },
+     {
+      "description": "Seeking financial security and site closure regulations (FSSCR) that balance liability risks and cost competitiveness.",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Rural Municipality Taxes - Discussion of rural municipality tax impact on operational costs in various Saskatchewan rural municipalities and the need for competitive taxation.",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Municipal Affairs"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions with regulator about how to improve and align combustion technical standards across provincial and federal jurisdictions.",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion with government regarding an effective structure of the SK Tech Fund",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions regarding the competitiveness of the Saskatchewan business environment",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Discussion on proposed changes to the Pipeline Code in relation to additional field work, notifications and requirements",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion with government in regards to flexibility of commercial contracts with road builders",
+      "sujets": [
+       "Energy",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion with government regarding effective and efficient design and implementation of Directive PNG017: Measurement Requirements for Oil and Gas Operations",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     },
+     {
+      "description": "Discussion with government regarding effective and efficient design and implementation of SK OBPS (Output-Based Performance Standards) Program",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions with government on potential policy levers that could help enable further deployment of emissions and waste reducing technologies, including CCUS and related pore space tenure.",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion regarding lag in approval for Rush Lake waste disposal well application",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Discussion with government on potential policy levers to enable gas conservation",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion with government regarding low-productivity well incentive program",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion with government regarding federal policy and international relations",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussion regarding Rush Lake site restoration process and status.",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "SaskBuilds and Procurement",
+     "Social Services",
+     "Legislative Assembly",
+     "Education",
+     "Finance",
+     "Crown Investments Corporation",
+     "Innovation",
+     "Saskatchewan Power Corporation",
+     "Agriculture",
+     "Trade and Export Development",
+     "Environment",
+     "Energy and Resources",
+     "Government Relations",
+     "Executive Council",
+     "Advanced Education",
+     "Justice and Attorney General",
+     "Highways"
+    ],
+    "ministres": [
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     }
+    ],
+    "deputes": [
+     "Darlene Rowden",
+     "James Thorsteinson",
+     "Chris Beaudry",
+     "Kim Gartner",
+     "Eric Schmalz",
+     "Colleen Young"
+    ]
+   },
+   "lu": "2026-10-16"
+  },
+  {
+   "id": "a96af4c4-c9c8-f111-a610-c516c0bb265b",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a96af4c4-c9c8-f111-a610-c516c0bb265b",
+   "organisation": "Canadian Red Cross",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "5 of 5",
+   "detail": {
+    "numero": "3043-2670-5",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-16",
+    "effetLe": "2026-10-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "collaborate and build relationships, alongside Government to build an increased quality referrals to the Friendly Calls program Friendly Calls Program - supporting aging populations in isolated living situations.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "Community Safety",
+     "Saskatchewan Public Safety Agency"
+    ],
+    "ministres": [
+     {
+      "nom": "Mike Weger",
+      "institution": "Community Safety"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Saskatchewan Public Safety Agency"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-16"
+  },
+  {
+   "id": "1acf3b0c-ccc8-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=1acf3b0c-ccc8-f111-aad1-000d3af328df",
+   "organisation": "Mitacs Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "14 of 14",
+   "detail": {
+    "numero": "4330-2793-14",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-16",
+    "effetLe": "2026-10-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Lobbying for the purposes of funding Mitacs and its delivery of post-secondary internships",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Employment & Training",
+       "Regional Development",
+       "Research & Development",
+       "Small Business"
+      ],
+      "categories": [
+       "Contract",
+       "Grant or Financial Benefit",
+       "Order in Council"
+      ]
+     }
+    ],
+    "institutions": [
+     "Advanced Education",
+     "Agriculture",
+     "Energy and Resources",
+     "Environment",
+     "Executive Council",
+     "Finance",
+     "First Nations, Metis and Northern Affairs",
+     "Innovation",
+     "Trade and Export Development",
+     "Government Relations",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Tajinder Grewal"
+    ]
+   },
+   "lu": "2026-10-16"
+  },
   {
    "id": "651dc12e-5454-f111-89e7-6045bd5d144b",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=651dc12e-5454-f111-89e7-6045bd5d144b",
@@ -5178,318 +5628,6 @@
      "Nicole Sarauer",
      "Doug Steele",
      "Trent Wotherspoon",
-     "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "4fd8915e-4dad-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=4fd8915e-4dad-f111-aad1-000d3af328df",
-   "organisation": "Cenovus Energy Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-09-10",
-   "version": "89 of 89",
-   "detail": {
-    "numero": "3772-1525-89",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-09-14",
-    "effetLe": "2026-09-10",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Discussions with government on various policy levers to help accelerate the adoption of emissions reduction technologies.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Research & Development"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Engage with the government on the design of the Management and Reduction of Greenhouse Gasses Regulations (the “large emitter program”) under the Saskatchewan Climate Change Plan.",
-      "sujets": [
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Environmental Assessment Requirements.",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Implementation of an Area Based Closure (ABC) or similar program in Saskatchewan.",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Regulatory efficiency. Discussions regarding regulatory process efficiency.",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Municipal Affairs"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Thermal Exploration Lease Extensions - Discussions related to potential lease extension for thermal exploration projects in Saskatchewan.",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Contract"
-      ]
-     },
-     {
-      "description": "Discussion with the Saskatchewan government on evolving regulation related to well abandonment.",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution"
-      ]
-     },
-     {
-      "description": "Well Abandonment Directive. Participation in meetings as part of the Industry/Government working group for the draft proposed Saskatchewan Well Abandonment Directive to provide input and suggestions on the content of the directive.",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     },
-     {
-      "description": "Seeking financial security and site closure regulations (FSSCR) that balance liability risks and cost competitiveness.",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Rural Municipality Taxes - Discussion of rural municipality tax impact on operational costs in various Saskatchewan rural municipalities and the need for competitive taxation.",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Municipal Affairs"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions with regulator about how to improve and align combustion technical standards across provincial and federal jurisdictions.",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion with government regarding an effective structure of the SK Tech Fund",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions regarding the competitiveness of the Saskatchewan business environment",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Discussion on proposed changes to the Pipeline Code in relation to additional field work, notifications and requirements",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion with government in regards to flexibility of commercial contracts with road builders",
-      "sujets": [
-       "Energy",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion with government regarding effective and efficient design and implementation of Directive PNG017: Measurement Requirements for Oil and Gas Operations",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     },
-     {
-      "description": "Discussion with government regarding effective and efficient design and implementation of SK OBPS (Output-Based Performance Standards) Program",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions with government on potential policy levers that could help enable further deployment of emissions and waste reducing technologies, including CCUS and related pore space tenure.",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion regarding lag in approval for Rush Lake waste disposal well application",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Discussion with government on potential policy levers to enable gas conservation",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion with government regarding low-productivity well incentive program",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion with government regarding federal policy and international relations",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussion regarding Rush Lake site restoration process and status.",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "SaskBuilds and Procurement",
-     "Social Services",
-     "Legislative Assembly",
-     "Education",
-     "Finance",
-     "Crown Investments Corporation",
-     "Innovation",
-     "Saskatchewan Power Corporation",
-     "Agriculture",
-     "Trade and Export Development",
-     "Environment",
-     "Energy and Resources",
-     "Government Relations",
-     "Executive Council",
-     "Advanced Education",
-     "Justice and Attorney General"
-    ],
-    "ministres": [
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": [
-     "Darlene Rowden",
-     "James Thorsteinson",
-     "Chris Beaudry",
-     "Kim Gartner",
-     "Eric Schmalz",
      "Colleen Young"
     ]
    },
@@ -25634,107 +25772,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "d90e9d4c-a639-f111-a557-c5baeff60981",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d90e9d4c-a639-f111-a557-c5baeff60981",
-   "organisation": "Mitacs Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-04-01",
-   "version": "13 of 13",
-   "detail": {
-    "numero": "4330-2793-13",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-04-25",
-    "effetLe": "2026-04-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Lobbying for the purposes of funding Mitacs and its delivery of post-secondary internships",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Employment & Training",
-       "Regional Development",
-       "Research & Development",
-       "Small Business"
-      ],
-      "categories": [
-       "Contract",
-       "Grant or Financial Benefit",
-       "Order in Council"
-      ]
-     }
-    ],
-    "institutions": [
-     "Advanced Education",
-     "Agriculture",
-     "Energy and Resources",
-     "Environment",
-     "Executive Council",
-     "Finance",
-     "First Nations, Metis and Northern Affairs",
-     "Health",
-     "Innovation",
-     "Trade and Export Development",
-     "Government Relations",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Tajinder Grewal"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "0fa06822-7050-f111-a2ad-b473012cc279",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0fa06822-7050-f111-a2ad-b473012cc279",
    "organisation": "Canadian Nuclear Association",
@@ -31353,61 +31390,6 @@
      {
       "nom": "Alana Ross",
       "institution": "Status of Women"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "38b14464-489a-f011-b0f0-a21566f47e6f",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=38b14464-489a-f011-b0f0-a21566f47e6f",
-   "organisation": "Canadian Red Cross",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2025-09-25",
-   "version": "4 of 4",
-   "detail": {
-    "numero": "3043-2670-4",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2025-11-07",
-    "effetLe": "2025-09-25",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "collaborate and build relationships, alongside Government to build an increased quality referrals to the Friendly Calls program Friendly Calls Program - supporting aging populations in isolated living situations.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "Rural and Remote Health",
-     "Education",
-     "Health",
-     "Seniors"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Seniors"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
      }
     ],
     "deputes": []
