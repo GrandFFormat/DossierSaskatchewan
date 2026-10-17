@@ -1,7 +1,7 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-16T19:19:37.119Z",
+ "scrapedAt": "2026-10-17T08:22:09.705Z",
  "total": 321,
  "complet": true,
  "inscriptions": [
@@ -29803,7 +29803,7 @@
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb9f44ad-4c21-f111-9d5a-a4844105b4b7",
    "organisation": "Insurance Brokers Association of Saskatchewan",
    "type": "In-House",
-   "statut": "Active",
+   "statut": "Active Non-Compliant",
    "effetLe": "2026-01-01",
    "version": "11 of 11",
    "detail": {
