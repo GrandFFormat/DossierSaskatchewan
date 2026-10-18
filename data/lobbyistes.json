@@ -1,7 +1,7 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-17T18:10:25.654Z",
+ "scrapedAt": "2026-10-18T08:42:53.361Z",
  "total": 321,
  "complet": true,
  "inscriptions": [
@@ -27465,7 +27465,7 @@
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=3d573c54-1622-f111-9730-70a8a50bc799",
    "organisation": "Nutrien Ltd.",
    "type": "In-House",
-   "statut": "Active",
+   "statut": "Active Non-Compliant",
    "effetLe": "2026-03-17",
    "version": "17 of 17",
    "detail": {
@@ -30917,7 +30917,7 @@
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f295fbf0-04a9-f011-aa44-6045bd5ba0f1",
    "organisation": "Canadian Prepaid Providers Organization",
    "type": "Consultant",
-   "statut": "Active",
+   "statut": "Active Non-Compliant",
    "effetLe": "2025-10-14",
    "version": "5 of 5",
    "detail": {
