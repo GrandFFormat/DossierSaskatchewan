@@ -1,10 +1,193 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-19T09:43:54.350Z",
+ "scrapedAt": "2026-10-19T20:54:43.296Z",
  "total": 321,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "163c46ee-d9cb-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=163c46ee-d9cb-f111-aad1-000d3ae8ce13",
+   "organisation": "Valleyview Petroleums Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-19",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "1090-3415-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-19",
+    "effetLe": "2026-10-19",
+    "finPrevue": "2028-01-31",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "Discussions related to the importance of the role of power generation for oil and gas production.",
+      "sujets": [
+       "Economic Development",
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Energy and Resources",
+     "Crown Investments Corporation",
+     "Saskatchewan Power Corporation",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     }
+    ],
+    "deputes": [
+     "Michael Weger"
+    ]
+   },
+   "lu": "2026-10-19"
+  },
+  {
+   "id": "11392b96-d2cb-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=11392b96-d2cb-f111-aad1-000d3ae8ce13",
+   "organisation": "Nutrien Ltd.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-19",
+   "version": "18 of 18",
+   "detail": {
+    "numero": "2479-1731-18",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-19",
+    "effetLe": "2026-10-19",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "-Environmental policy that is effective and recognizes the early action the potash industry has taken to ensure Saskatchewan potash has the lowest emissions footprint in the world",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Taxes"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "- Provide the government with the appropriate information required to ensure Saskatchewan's potash industry remains competitive.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Finance & Budget",
+       "Taxes"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "-Assist the government in efforts to ensure transportation networks function properly to move products to world markets",
+      "sujets": [
+       "Economic Development",
+       "Finance & Budget",
+       "Transportation"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "- Ensure the government understands the impact rising industrial gas and power rates have on the competitiveness of Saskatchewan's potash industry",
+      "sujets": [
+       "Energy",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "SaskEnergy Incorporated",
+     "Legislative Assembly",
+     "Crown Investments Corporation",
+     "Agriculture",
+     "Environment",
+     "Energy and Resources",
+     "Executive Council",
+     "Trade and Export Development",
+     "Finance",
+     "Saskatchewan Power Corporation",
+     "Highways"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "SaskEnergy Incorporated"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Sally Housser",
+     "Carla Beck",
+     "Trent Wotherspoon"
+    ]
+   },
+   "lu": "2026-10-19"
+  },
   {
    "id": "02f737dd-79c9-f111-8bb8-be5d48b4146f",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=02f737dd-79c9-f111-8bb8-be5d48b4146f",
@@ -27402,189 +27585,6 @@
      "Scott Moe",
      "Jim Reiter",
      "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "3faead00-a824-f111-9730-70a8a50bc799",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=3faead00-a824-f111-9730-70a8a50bc799",
-   "organisation": "Valleyview Petroleums Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-03-18",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "1090-3415-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-03-25",
-    "effetLe": "2026-03-18",
-    "finPrevue": "2027-03-31",
-    "cabinet": "Prairie Sky Strategy",
-    "activites": [
-     {
-      "description": "Discussions related to the importance of the role of power generation for oil and gas production.",
-      "sujets": [
-       "Economic Development",
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Energy and Resources",
-     "Crown Investments Corporation",
-     "Saskatchewan Power Corporation",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     }
-    ],
-    "deputes": [
-     "Michael Weger"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "3d573c54-1622-f111-9730-70a8a50bc799",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=3d573c54-1622-f111-9730-70a8a50bc799",
-   "organisation": "Nutrien Ltd.",
-   "type": "In-House",
-   "statut": "Active Non-Compliant",
-   "effetLe": "2026-03-17",
-   "version": "17 of 17",
-   "detail": {
-    "numero": "2479-1731-17",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-03-17",
-    "effetLe": "2026-03-17",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "-Environmental policy that is effective and recognizes the early action the potash industry has taken to ensure Saskatchewan potash has the lowest emissions footprint in the world",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Taxes"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "- Provide the government with the appropriate information required to ensure Saskatchewan's potash industry remains competitive.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Finance & Budget",
-       "Taxes"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "-Assist the government in efforts to ensure transportation networks function properly to move products to world markets",
-      "sujets": [
-       "Economic Development",
-       "Finance & Budget",
-       "Transportation"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "- Ensure the government understands the impact rising industrial gas and power rates have on the competitiveness of Saskatchewan's potash industry",
-      "sujets": [
-       "Energy",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "SaskEnergy Incorporated",
-     "Legislative Assembly",
-     "Crown Investments Corporation",
-     "Agriculture",
-     "Environment",
-     "Energy and Resources",
-     "Executive Council",
-     "Trade and Export Development",
-     "Finance",
-     "Saskatchewan Power Corporation",
-     "Highways"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "SaskEnergy Incorporated"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Sally Housser",
-     "Carla Beck",
-     "Trent Wotherspoon"
     ]
    },
    "lu": "2026-10-06"
