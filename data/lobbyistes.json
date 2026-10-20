@@ -1,8 +1,8 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-19T20:54:43.296Z",
- "total": 321,
+ "scrapedAt": "2026-10-20T09:18:59.959Z",
+ "total": 320,
  "complet": true,
  "inscriptions": [
   {
@@ -187,6 +187,86 @@
     ]
    },
    "lu": "2026-10-19"
+  },
+  {
+   "id": "5c3d7fde-34c7-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5c3d7fde-34c7-f111-aad1-000d3af328df",
+   "organisation": "Ultragenyx",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-16",
+   "version": "1 of 1",
+   "detail": {
+    "numero": "5133-3506-1",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-16",
+    "effetLe": "2026-10-16",
+    "finPrevue": "2026-10-31",
+    "cabinet": "Global Public Affairs",
+    "activites": [
+     {
+      "description": "Introduction of Ultragenyx team to Saskatchewan Health & Wellness leaders, with a focus on public drug programs and access pathways for rare disease treatments.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health"
+    ],
+    "ministres": [],
+    "deputes": []
+   },
+   "lu": "2026-10-20"
+  },
+  {
+   "id": "a96af4c4-c9c8-f111-a610-c516c0bb265b",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a96af4c4-c9c8-f111-a610-c516c0bb265b",
+   "organisation": "Canadian Red Cross",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "5 of 5",
+   "detail": {
+    "numero": "3043-2670-5",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-16",
+    "effetLe": "2026-10-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "collaborate and build relationships, alongside Government to build an increased quality referrals to the Friendly Calls program Friendly Calls Program - supporting aging populations in isolated living situations.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "Community Safety",
+     "Saskatchewan Public Safety Agency"
+    ],
+    "ministres": [
+     {
+      "nom": "Mike Weger",
+      "institution": "Community Safety"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Saskatchewan Public Safety Agency"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-16"
   },
   {
    "id": "02f737dd-79c9-f111-8bb8-be5d48b4146f",
@@ -502,143 +582,6 @@
    "lu": "2026-10-16"
   },
   {
-   "id": "a96af4c4-c9c8-f111-a610-c516c0bb265b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a96af4c4-c9c8-f111-a610-c516c0bb265b",
-   "organisation": "Canadian Red Cross",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-10-15",
-   "version": "5 of 5",
-   "detail": {
-    "numero": "3043-2670-5",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-10-16",
-    "effetLe": "2026-10-15",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "collaborate and build relationships, alongside Government to build an increased quality referrals to the Friendly Calls program Friendly Calls Program - supporting aging populations in isolated living situations.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "Community Safety",
-     "Saskatchewan Public Safety Agency"
-    ],
-    "ministres": [
-     {
-      "nom": "Mike Weger",
-      "institution": "Community Safety"
-     },
-     {
-      "nom": "Mike Weger",
-      "institution": "Saskatchewan Public Safety Agency"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-16"
-  },
-  {
-   "id": "1acf3b0c-ccc8-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=1acf3b0c-ccc8-f111-aad1-000d3af328df",
-   "organisation": "Mitacs Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-10-15",
-   "version": "14 of 14",
-   "detail": {
-    "numero": "4330-2793-14",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-10-16",
-    "effetLe": "2026-10-15",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Lobbying for the purposes of funding Mitacs and its delivery of post-secondary internships",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Employment & Training",
-       "Regional Development",
-       "Research & Development",
-       "Small Business"
-      ],
-      "categories": [
-       "Contract",
-       "Grant or Financial Benefit",
-       "Order in Council"
-      ]
-     }
-    ],
-    "institutions": [
-     "Advanced Education",
-     "Agriculture",
-     "Energy and Resources",
-     "Environment",
-     "Executive Council",
-     "Finance",
-     "First Nations, Metis and Northern Affairs",
-     "Innovation",
-     "Trade and Export Development",
-     "Government Relations",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Tajinder Grewal"
-    ]
-   },
-   "lu": "2026-10-16"
-  },
-  {
    "id": "651dc12e-5454-f111-89e7-6045bd5d144b",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=651dc12e-5454-f111-89e7-6045bd5d144b",
    "organisation": "Canadian Propane Association",
@@ -731,6 +674,98 @@
     ]
    },
    "lu": "2026-10-15"
+  },
+  {
+   "id": "1acf3b0c-ccc8-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=1acf3b0c-ccc8-f111-aad1-000d3af328df",
+   "organisation": "Mitacs Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-15",
+   "version": "14 of 14",
+   "detail": {
+    "numero": "4330-2793-14",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-16",
+    "effetLe": "2026-10-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Lobbying for the purposes of funding Mitacs and its delivery of post-secondary internships",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Employment & Training",
+       "Regional Development",
+       "Research & Development",
+       "Small Business"
+      ],
+      "categories": [
+       "Contract",
+       "Grant or Financial Benefit",
+       "Order in Council"
+      ]
+     }
+    ],
+    "institutions": [
+     "Advanced Education",
+     "Agriculture",
+     "Energy and Resources",
+     "Environment",
+     "Executive Council",
+     "Finance",
+     "First Nations, Metis and Northern Affairs",
+     "Innovation",
+     "Trade and Export Development",
+     "Government Relations",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Tajinder Grewal"
+    ]
+   },
+   "lu": "2026-10-16"
   },
   {
    "id": "96c7d87c-c7c8-f111-aad1-000d3af328df",
@@ -902,84 +937,6 @@
    "lu": "2026-10-14"
   },
   {
-   "id": "eb29acc3-dcc7-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb29acc3-dcc7-f111-aad1-000d3af328df",
-   "organisation": "True North Nuclear Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-10-13",
-   "version": "4 of 4",
-   "detail": {
-    "numero": "3029-3484-4",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-10-14",
-    "effetLe": "2026-10-13",
-    "finPrevue": "2027-05-31",
-    "cabinet": "Self-employed",
-    "activites": [
-     {
-      "description": "Work with the Saskatchewan government to secure a site for True North Nuclear Inc. to deploy a demonstration or commercial micro modular reactor in the province of Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "International Trade",
-       "Regional Development",
-       "Research & Development"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Grant or Financial Benefit",
-       "Legislative Proposal, Bill or Resolution",
-       "Order in Council",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Energy and Resources",
-     "Environment",
-     "Government Relations",
-     "Crown Investments Corporation",
-     "Trade and Export Development",
-     "Executive Council"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-14"
-  },
-  {
    "id": "227c03c2-4cc7-f111-adc6-d888ab9be462",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=227c03c2-4cc7-f111-adc6-d888ab9be462",
    "organisation": "Fertilizer Canada",
@@ -1088,6 +1045,84 @@
      {
       "nom": "Dave Marit",
       "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-14"
+  },
+  {
+   "id": "eb29acc3-dcc7-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb29acc3-dcc7-f111-aad1-000d3af328df",
+   "organisation": "True North Nuclear Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-13",
+   "version": "4 of 4",
+   "detail": {
+    "numero": "3029-3484-4",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-14",
+    "effetLe": "2026-10-13",
+    "finPrevue": "2027-05-31",
+    "cabinet": "Self-employed",
+    "activites": [
+     {
+      "description": "Work with the Saskatchewan government to secure a site for True North Nuclear Inc. to deploy a demonstration or commercial micro modular reactor in the province of Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "International Trade",
+       "Regional Development",
+       "Research & Development"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Legislative Proposal, Bill or Resolution",
+       "Order in Council",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Energy and Resources",
+     "Environment",
+     "Government Relations",
+     "Crown Investments Corporation",
+     "Trade and Export Development",
+     "Executive Council"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
      }
     ],
     "deputes": []
@@ -1309,79 +1344,6 @@
    "lu": "2026-10-08"
   },
   {
-   "id": "ec477ee1-0dc4-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ec477ee1-0dc4-f111-aad1-000d3af328df",
-   "organisation": "Canadian Pacific Railway Company",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-10-06",
-   "version": "29 of 29",
-   "detail": {
-    "numero": "3852-1236-29",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-10-09",
-    "effetLe": "2026-10-06",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Encourage provincial policies and projects that support safe, efficient, and reliable supply chains as well as promote supply chain growth and investment.",
-      "sujets": [
-       "Infrastructure",
-       "International Trade",
-       "Municipal Affairs",
-       "Transportation"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Executive Council",
-     "Energy and Resources",
-     "Trade and Export Development",
-     "Highways",
-     "Finance",
-     "Saskatchewan Government Insurance (SGI)"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Government Insurance (SGI)"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-09"
-  },
-  {
    "id": "f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f14c76bc-d0c1-f111-8ec3-ad675c482cb3",
    "organisation": "Saskatchewan Automobile Dealers Association",
@@ -1526,6 +1488,79 @@
     ]
    },
    "lu": "2026-10-07"
+  },
+  {
+   "id": "ec477ee1-0dc4-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ec477ee1-0dc4-f111-aad1-000d3af328df",
+   "organisation": "Canadian Pacific Railway Company",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-06",
+   "version": "29 of 29",
+   "detail": {
+    "numero": "3852-1236-29",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-09",
+    "effetLe": "2026-10-06",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Encourage provincial policies and projects that support safe, efficient, and reliable supply chains as well as promote supply chain growth and investment.",
+      "sujets": [
+       "Infrastructure",
+       "International Trade",
+       "Municipal Affairs",
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Executive Council",
+     "Energy and Resources",
+     "Trade and Export Development",
+     "Highways",
+     "Finance",
+     "Saskatchewan Government Insurance (SGI)"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Government Insurance (SGI)"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-09"
   },
   {
    "id": "0033f84b-9bc1-f111-aad1-000d3af328df",
@@ -2485,185 +2520,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "0c15df6e-c0bd-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0c15df6e-c0bd-f111-aad1-000d3af328df",
-   "organisation": "Potentia Renewables Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-29",
-   "version": "10 of 10",
-   "detail": {
-    "numero": "1090-1566-10",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-10-06",
-    "effetLe": "2026-09-29",
-    "finPrevue": "2027-11-30",
-    "cabinet": "Prairie Sky Strategy",
-    "activites": [
-     {
-      "description": "Meetings to discuss renewable energy procurement opportunities and related regulations for the responsible development & operation of projects in Saskatchewan.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Crown Investments Corporation",
-     "Environment",
-     "Saskatchewan Power Corporation",
-     "Agriculture",
-     "Legislative Assembly",
-     "Government Relations",
-     "Parks, Culture and Sport"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Sean Wilson",
-     "Michael Weger",
-     "Blaine McLeod",
-     "David Marit",
-     "Doug Steele"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "36d6417b-ebc0-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=36d6417b-ebc0-f111-aad1-000d3af328df",
-   "organisation": "Informal Coalition of Agri-Processors",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-29",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "5135-3502-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-10-05",
-    "effetLe": "2026-09-29",
-    "finPrevue": "2026-11-30",
-    "cabinet": "T. Bjornson &amp; Associates Consulting Inc.",
-    "activites": [
-     {
-      "description": "To brief provincial officials on the economic and operational impacts of proposed federal carbon pricing policies on agri-processors.",
-      "sujets": [
-       "Agriculture",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Environment"
-    ],
-    "ministres": [
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "b6e4d4f6-f8bc-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b6e4d4f6-f8bc-f111-aad1-000d3af328df",
-   "organisation": "O&T Farms",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-29",
-   "version": "8 of 8",
-   "detail": {
-    "numero": "1013-1288-8",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-30",
-    "effetLe": "2026-09-29",
-    "finPrevue": "2027-05-31",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "Government Relations support related to O&T's business operations",
-      "sujets": [
-       "Economic Development",
-       "Employment & Training",
-       "Justice",
-       "Small Business"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Executive Council",
-     "Highways",
-     "Justice and Attorney General",
-     "Trade and Export Development"
-    ],
-    "ministres": [
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "15471e35-4fbc-f111-a887-8e2a9644d6b3",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=15471e35-4fbc-f111-a887-8e2a9644d6b3",
    "organisation": "TransCanada PipeLines Limited",
@@ -2795,6 +2651,185 @@
      "Brittney Senger",
      "Aleana Young"
     ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "36d6417b-ebc0-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=36d6417b-ebc0-f111-aad1-000d3af328df",
+   "organisation": "Informal Coalition of Agri-Processors",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-29",
+   "version": "1 of 1",
+   "detail": {
+    "numero": "5135-3502-1",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-05",
+    "effetLe": "2026-09-29",
+    "finPrevue": "2026-11-30",
+    "cabinet": "T. Bjornson &amp; Associates Consulting Inc.",
+    "activites": [
+     {
+      "description": "To brief provincial officials on the economic and operational impacts of proposed federal carbon pricing policies on agri-processors.",
+      "sujets": [
+       "Agriculture",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Environment"
+    ],
+    "ministres": [
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "0c15df6e-c0bd-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0c15df6e-c0bd-f111-aad1-000d3af328df",
+   "organisation": "Potentia Renewables Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-29",
+   "version": "10 of 10",
+   "detail": {
+    "numero": "1090-1566-10",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-06",
+    "effetLe": "2026-09-29",
+    "finPrevue": "2027-11-30",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "Meetings to discuss renewable energy procurement opportunities and related regulations for the responsible development & operation of projects in Saskatchewan.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Crown Investments Corporation",
+     "Environment",
+     "Saskatchewan Power Corporation",
+     "Agriculture",
+     "Legislative Assembly",
+     "Government Relations",
+     "Parks, Culture and Sport"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Sean Wilson",
+     "Michael Weger",
+     "Blaine McLeod",
+     "David Marit",
+     "Doug Steele"
+    ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "b6e4d4f6-f8bc-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b6e4d4f6-f8bc-f111-aad1-000d3af328df",
+   "organisation": "O&T Farms",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-29",
+   "version": "8 of 8",
+   "detail": {
+    "numero": "1013-1288-8",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-30",
+    "effetLe": "2026-09-29",
+    "finPrevue": "2027-05-31",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "Government Relations support related to O&T's business operations",
+      "sujets": [
+       "Economic Development",
+       "Employment & Training",
+       "Justice",
+       "Small Business"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Executive Council",
+     "Highways",
+     "Justice and Attorney General",
+     "Trade and Export Development"
+    ],
+    "ministres": [
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -5215,6 +5250,90 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "80edfcf3-71b0-f111-b26e-cb92e3d7bdfc",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=80edfcf3-71b0-f111-b26e-cb92e3d7bdfc",
+   "organisation": "CAD Railway Industries Ltd",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-14",
+   "version": "1 of 1",
+   "detail": {
+    "numero": "5107-3441-1",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-14",
+    "effetLe": "2026-09-14",
+    "finPrevue": "2026-12-07",
+    "cabinet": "Global Public Affairs",
+    "activites": [
+     {
+      "description": "Advancing passenger and freight rail facility projects and operations, while supporting job creation and economic development in Alberta/Saskatchewan.",
+      "sujets": [
+       "Economic Development",
+       "Transportation"
+      ],
+      "categories": [
+       "Grant or Financial Benefit"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Energy and Resources",
+     "Executive Council",
+     "Finance",
+     "Global Transportation Hub",
+     "Highways",
+     "Innovation",
+     "Legislative Assembly",
+     "Trade and Export Development"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "Global Transportation Hub"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Barret Kropf",
+     "Jim Reiter"
+    ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "7f00e3cb-a0b3-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7f00e3cb-a0b3-f111-aad1-000d3af328df",
    "organisation": "OpenCircle National Advocacy Ltd.",
@@ -5330,90 +5449,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "80edfcf3-71b0-f111-b26e-cb92e3d7bdfc",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=80edfcf3-71b0-f111-b26e-cb92e3d7bdfc",
-   "organisation": "CAD Railway Industries Ltd",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-14",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "5107-3441-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-14",
-    "effetLe": "2026-09-14",
-    "finPrevue": "2026-12-07",
-    "cabinet": "Global Public Affairs",
-    "activites": [
-     {
-      "description": "Advancing passenger and freight rail facility projects and operations, while supporting job creation and economic development in Alberta/Saskatchewan.",
-      "sujets": [
-       "Economic Development",
-       "Transportation"
-      ],
-      "categories": [
-       "Grant or Financial Benefit"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Energy and Resources",
-     "Executive Council",
-     "Finance",
-     "Global Transportation Hub",
-     "Highways",
-     "Innovation",
-     "Legislative Assembly",
-     "Trade and Export Development"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "Global Transportation Hub"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Barret Kropf",
-     "Jim Reiter"
-    ]
    },
    "lu": "2026-10-06"
   },
@@ -5817,6 +5852,48 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "d6587d82-63ad-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d6587d82-63ad-f111-aad1-000d3af328df",
+   "organisation": "Insurance Brokers Association of Saskatchewan",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-10",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "3325-1652-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-11",
+    "effetLe": "2026-09-10",
+    "finPrevue": "2026-12-31",
+    "cabinet": "Canadian Strategy Group",
+    "activites": [
+     {
+      "description": "IBAS will engage with the Government of Saskatchewan and Saskatchewan Government Insurance (SGI) on issues related to the rate review panel and the SGI Auto Fund.",
+      "sujets": [
+       "Small Business"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Crown Investments Corporation",
+     "Saskatchewan Government Insurance (SGI)"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "0fce9af0-5ead-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0fce9af0-5ead-f111-aad1-000d3af328df",
    "organisation": "Bally's Corporation",
@@ -5877,41 +5954,50 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "d6587d82-63ad-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d6587d82-63ad-f111-aad1-000d3af328df",
-   "organisation": "Insurance Brokers Association of Saskatchewan",
-   "type": "Consultant",
+   "id": "64db016b-b7ab-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=64db016b-b7ab-f111-aad1-000d3af328df",
+   "organisation": "Abbott Laboratories Co.",
+   "type": "In-House",
    "statut": "Active",
-   "effetLe": "2026-09-10",
-   "version": "2 of 2",
+   "effetLe": "2026-09-08",
+   "version": "16 of 16",
    "detail": {
-    "numero": "3325-1652-2",
-    "type": "Consultant",
+    "numero": "3855-2700-16",
+    "type": "In-House",
     "statut": "Active",
-    "publieLe": "2026-09-11",
-    "effetLe": "2026-09-10",
-    "finPrevue": "2026-12-31",
-    "cabinet": "Canadian Strategy Group",
+    "publieLe": "2026-09-10",
+    "effetLe": "2026-09-08",
+    "finPrevue": null,
+    "cabinet": null,
     "activites": [
      {
-      "description": "IBAS will engage with the Government of Saskatchewan and Saskatchewan Government Insurance (SGI) on issues related to the rate review panel and the SGI Auto Fund.",
+      "description": "Engaging with government stakeholders on matters related to reimbursement of Abbott brand products and services, and engaging core stakeholders regarding the review process.",
       "sujets": [
-       "Small Business"
+       "Finance & Budget",
+       "Health & Wellness"
       ],
       "categories": [
-       "Directive, Guideline or Decision",
        "Program or Policy"
       ]
      }
     ],
     "institutions": [
-     "Crown Investments Corporation",
-     "Saskatchewan Government Insurance (SGI)"
+     "Health",
+     "Executive Council",
+     "Finance"
     ],
     "ministres": [
      {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
      }
     ],
     "deputes": []
@@ -6064,57 +6150,6 @@
    "lu": "2026-10-07"
   },
   {
-   "id": "64db016b-b7ab-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=64db016b-b7ab-f111-aad1-000d3af328df",
-   "organisation": "Abbott Laboratories Co.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-09-08",
-   "version": "16 of 16",
-   "detail": {
-    "numero": "3855-2700-16",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-09-10",
-    "effetLe": "2026-09-08",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Engaging with government stakeholders on matters related to reimbursement of Abbott brand products and services, and engaging core stakeholders regarding the review process.",
-      "sujets": [
-       "Finance & Budget",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health",
-     "Executive Council",
-     "Finance"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "9304ef62-27a8-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=9304ef62-27a8-f111-aad1-000d3af328df",
    "organisation": "Primerica Financial Services (Canada) Ltd.",
@@ -6169,76 +6204,6 @@
      {
       "nom": "Scott Moe",
       "institution": "Intergovernmental Affairs"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "561ecfa2-a1b2-f111-8160-ca9b03c94066",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=561ecfa2-a1b2-f111-8160-ca9b03c94066",
-   "organisation": "Canadian Massage Therapy Council for Accreditation",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-03",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "1299-3497-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-18",
-    "effetLe": "2026-09-03",
-    "finPrevue": "2027-09-03",
-    "cabinet": "1689986 Alberta Ltd. conducting business as Signal Hill Canada Ltd.",
-    "activites": [
-     {
-      "description": "Engagement with the Government of Saskatchewan regarding the regulation of massage therapy as a health profession, including the process and criteria for designating the profession under the Health Professions Act.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Rural and Remote Health",
-     "Advanced Education",
-     "Education",
-     "Health",
-     "Justice and Attorney General",
-     "Labour Relations & Workplace Safety",
-     "Executive Council"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
      }
     ],
     "deputes": []
@@ -6347,6 +6312,76 @@
      {
       "nom": "Scott Moe",
       "institution": "Intergovernmental Affairs"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "561ecfa2-a1b2-f111-8160-ca9b03c94066",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=561ecfa2-a1b2-f111-8160-ca9b03c94066",
+   "organisation": "Canadian Massage Therapy Council for Accreditation",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-03",
+   "version": "1 of 1",
+   "detail": {
+    "numero": "1299-3497-1",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-18",
+    "effetLe": "2026-09-03",
+    "finPrevue": "2027-09-03",
+    "cabinet": "1689986 Alberta Ltd. conducting business as Signal Hill Canada Ltd.",
+    "activites": [
+     {
+      "description": "Engagement with the Government of Saskatchewan regarding the regulation of massage therapy as a health profession, including the process and criteria for designating the profession under the Health Professions Act.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Rural and Remote Health",
+     "Advanced Education",
+     "Education",
+     "Health",
+     "Justice and Attorney General",
+     "Labour Relations & Workplace Safety",
+     "Executive Council"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
      }
     ],
     "deputes": []
@@ -6731,6 +6766,265 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "6aa4d3cf-3ea6-f111-ae9b-e296f3351aa4",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=6aa4d3cf-3ea6-f111-ae9b-e296f3351aa4",
+   "organisation": "Rise Air",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-01",
+   "version": "4 of 4",
+   "detail": {
+    "numero": "1013-3420-4",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-01",
+    "effetLe": "2026-09-01",
+    "finPrevue": "2027-03-31",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "GSD Strategies provides Rise Air with strategic government relations and public affairs support focused on strengthening the company’s profile with provincial identifying policy and funding opportunities, monitoring political and regulatory developments, and helping position Rise Air as a critical transportation partner for Saskatchewan.",
+      "sujets": [
+       "Economic Development",
+       "Employment & Training",
+       "Energy",
+       "Infrastructure",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Contract"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health",
+     "Social Services",
+     "Trade and Export Development",
+     "First Nations, Metis and Northern Affairs",
+     "Highways",
+     "Immigration and Career Training",
+     "Rural and Remote Health",
+     "SaskBuilds and Procurement"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Terry Jenson",
+      "institution": "Social Services"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "e0797c35-3ea6-f111-ae9b-e296f3351aa4",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e0797c35-3ea6-f111-ae9b-e296f3351aa4",
+   "organisation": "PLATO",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-01",
+   "version": "8 of 8",
+   "detail": {
+    "numero": "1013-3176-8",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-01",
+    "effetLe": "2026-09-01",
+    "finPrevue": "2027-09-01",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "GSD will support PLATO in its government relations activities as it relates to discussions and support regarding software testing and technology services, employment and trade and export development with the Saskatchewan Government.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Employment & Training",
+       "Information Technology",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Contract",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Innovation",
+     "Trade and Export Development",
+     "SaskBuilds and Procurement",
+     "Advanced Education"
+    ],
+    "ministres": [
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "e5ebaa4e-38a6-f111-ae9b-e296f3351aa4",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e5ebaa4e-38a6-f111-ae9b-e296f3351aa4",
+   "organisation": "Futurpreneur Canada",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-09-01",
+   "version": "23 of 23",
+   "detail": {
+    "numero": "2082-1653-23",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-09-01",
+    "effetLe": "2026-09-01",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Discussing the advancement of youth entrepreneurship",
+      "sujets": [
+       "Economic Development"
+      ],
+      "categories": [
+       "Grant or Financial Benefit"
+      ]
+     }
+    ],
+    "institutions": [
+     "Innovation",
+     "Trade and Export Development",
+     "Finance",
+     "Executive Council",
+     "Immigration and Career Training",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Darlene Rowden",
+     "James Thorsteinson",
+     "Barret Kropf",
+     "Kim Gartner",
+     "Sally Housser",
+     "Brent Blakley",
+     "Kim Breckner",
+     "Tajinder Grewal",
+     "Michael Weger",
+     "Kevin Weedmark",
+     "April ChiefCalf",
+     "Terry Jenson",
+     "Noor Burki",
+     "Warren Kaeding",
+     "Colleen Young"
+    ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "5e5ae304-49a6-f111-99b2-dfbd314b43a7",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5e5ae304-49a6-f111-99b2-dfbd314b43a7",
+   "organisation": "SAS Institute (Canada) Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-01",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "1013-3436-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-02",
+    "effetLe": "2026-09-01",
+    "finPrevue": "2027-09-01",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "SAS intends to engage in dialogue with Government of Saskatchewan representatives in an effort to expand the use of SAS products and services relating to data and analytics to drive transformation in the healthcare system as well as modernizing how the government makes payments to suppliers and for social programs. SAS will seek to accomplish this through the awarding of new contracts and/or the amendment of existing contracts with the Government of Saskatchewan.",
+      "sujets": [
+       "Information Technology",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Contract"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health",
+     "SaskBuilds and Procurement"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "0e05e2f4-bcb2-f111-b94e-b7bb393cb08c",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0e05e2f4-bcb2-f111-b94e-b7bb393cb08c",
    "organisation": "HOFFMANN-LA ROCHE LIMITED",
@@ -7014,6 +7308,73 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "40162b4f-49a6-f111-815b-86c483691271",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=40162b4f-49a6-f111-815b-86c483691271",
+   "organisation": "Mechanical Contractors Association - Saskatchewan",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-09-01",
+   "version": "11 of 11",
+   "detail": {
+    "numero": "1013-2840-11",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-09-02",
+    "effetLe": "2026-09-01",
+    "finPrevue": "2027-10-01",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "Support to MCAS in their government relations activities related to self-regulation",
+      "sujets": [
+       "Economic Development",
+       "Employment & Training",
+       "Labour Relations"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution"
+      ]
+     }
+    ],
+    "institutions": [
+     "Parks, Culture and Sport",
+     "Government Relations",
+     "Labour Relations & Workplace Safety",
+     "Apprenticeship and Trade Certification Commission",
+     "Trade and Export Development",
+     "Immigration and Career Training"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Alana Ross",
+      "institution": "Parks, Culture and Sport"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Apprenticeship and Trade Certification Commission"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "d10c54a1-1aae-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d10c54a1-1aae-f111-aad1-000d3af328df",
    "organisation": "South Bow USA Services Inc.",
@@ -7221,332 +7582,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "5e5ae304-49a6-f111-99b2-dfbd314b43a7",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5e5ae304-49a6-f111-99b2-dfbd314b43a7",
-   "organisation": "SAS Institute (Canada) Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "1013-3436-2",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-02",
-    "effetLe": "2026-09-01",
-    "finPrevue": "2027-09-01",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "SAS intends to engage in dialogue with Government of Saskatchewan representatives in an effort to expand the use of SAS products and services relating to data and analytics to drive transformation in the healthcare system as well as modernizing how the government makes payments to suppliers and for social programs. SAS will seek to accomplish this through the awarding of new contracts and/or the amendment of existing contracts with the Government of Saskatchewan.",
-      "sujets": [
-       "Information Technology",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Contract"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health",
-     "SaskBuilds and Procurement"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "40162b4f-49a6-f111-815b-86c483691271",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=40162b4f-49a6-f111-815b-86c483691271",
-   "organisation": "Mechanical Contractors Association - Saskatchewan",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "11 of 11",
-   "detail": {
-    "numero": "1013-2840-11",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-02",
-    "effetLe": "2026-09-01",
-    "finPrevue": "2027-10-01",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "Support to MCAS in their government relations activities related to self-regulation",
-      "sujets": [
-       "Economic Development",
-       "Employment & Training",
-       "Labour Relations"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution"
-      ]
-     }
-    ],
-    "institutions": [
-     "Parks, Culture and Sport",
-     "Government Relations",
-     "Labour Relations & Workplace Safety",
-     "Apprenticeship and Trade Certification Commission",
-     "Trade and Export Development",
-     "Immigration and Career Training"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Parks, Culture and Sport"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Apprenticeship and Trade Certification Commission"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "6aa4d3cf-3ea6-f111-ae9b-e296f3351aa4",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=6aa4d3cf-3ea6-f111-ae9b-e296f3351aa4",
-   "organisation": "Rise Air",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "4 of 4",
-   "detail": {
-    "numero": "1013-3420-4",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-01",
-    "effetLe": "2026-09-01",
-    "finPrevue": "2027-03-31",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "GSD Strategies provides Rise Air with strategic government relations and public affairs support focused on strengthening the company’s profile with provincial identifying policy and funding opportunities, monitoring political and regulatory developments, and helping position Rise Air as a critical transportation partner for Saskatchewan.",
-      "sujets": [
-       "Economic Development",
-       "Employment & Training",
-       "Energy",
-       "Infrastructure",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Contract"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health",
-     "Social Services",
-     "Trade and Export Development",
-     "First Nations, Metis and Northern Affairs",
-     "Highways",
-     "Immigration and Career Training",
-     "Rural and Remote Health",
-     "SaskBuilds and Procurement"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "e0797c35-3ea6-f111-ae9b-e296f3351aa4",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e0797c35-3ea6-f111-ae9b-e296f3351aa4",
-   "organisation": "PLATO",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "8 of 8",
-   "detail": {
-    "numero": "1013-3176-8",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-01",
-    "effetLe": "2026-09-01",
-    "finPrevue": "2027-09-01",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "GSD will support PLATO in its government relations activities as it relates to discussions and support regarding software testing and technology services, employment and trade and export development with the Saskatchewan Government.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Employment & Training",
-       "Information Technology",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Contract",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Innovation",
-     "Trade and Export Development",
-     "SaskBuilds and Procurement",
-     "Advanced Education"
-    ],
-    "ministres": [
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "e5ebaa4e-38a6-f111-ae9b-e296f3351aa4",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e5ebaa4e-38a6-f111-ae9b-e296f3351aa4",
-   "organisation": "Futurpreneur Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "23 of 23",
-   "detail": {
-    "numero": "2082-1653-23",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-09-01",
-    "effetLe": "2026-09-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Discussing the advancement of youth entrepreneurship",
-      "sujets": [
-       "Economic Development"
-      ],
-      "categories": [
-       "Grant or Financial Benefit"
-      ]
-     }
-    ],
-    "institutions": [
-     "Innovation",
-     "Trade and Export Development",
-     "Finance",
-     "Executive Council",
-     "Immigration and Career Training",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Darlene Rowden",
-     "James Thorsteinson",
-     "Barret Kropf",
-     "Kim Gartner",
-     "Sally Housser",
-     "Brent Blakley",
-     "Kim Breckner",
-     "Tajinder Grewal",
-     "Michael Weger",
-     "Kevin Weedmark",
-     "April ChiefCalf",
-     "Terry Jenson",
-     "Noor Burki",
-     "Warren Kaeding",
-     "Colleen Young"
-    ]
    },
    "lu": "2026-10-06"
   },
@@ -8026,6 +8061,57 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "a468f8bf-939d-f111-9733-b8b0d099f547",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a468f8bf-939d-f111-9733-b8b0d099f547",
+   "organisation": "Fujifilm Sonosite Canada Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-08-21",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "4991-3295-2",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-08-24",
+    "effetLe": "2026-08-21",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Communications regarding policies to support the effective selection of medical imaging solutions which promote patient access, quality health care outcomes and cost efficiency.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Contract",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Engaging government on medical imaging solutions involving Fujifilm Sonosite devices and services.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Contract",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "8fdb12e9-5aa2-f111-85ce-000d3ae8fe17",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8fdb12e9-5aa2-f111-85ce-000d3ae8fe17",
    "organisation": "Ray-Mont Logistics",
@@ -8090,57 +8176,6 @@
      {
       "nom": "Sean Wilson",
       "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "a468f8bf-939d-f111-9733-b8b0d099f547",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a468f8bf-939d-f111-9733-b8b0d099f547",
-   "organisation": "Fujifilm Sonosite Canada Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-08-21",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "4991-3295-2",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-08-24",
-    "effetLe": "2026-08-21",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Communications regarding policies to support the effective selection of medical imaging solutions which promote patient access, quality health care outcomes and cost efficiency.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Contract",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Engaging government on medical imaging solutions involving Fujifilm Sonosite devices and services.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Contract",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
      }
     ],
     "deputes": []
@@ -8288,6 +8323,194 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "8151a6b2-e59b-f111-a9c3-ddb8a22a5263",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8151a6b2-e59b-f111-a9c3-ddb8a22a5263",
+   "organisation": "Metis Nation-Saskatchewan Secretariat Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-08-19",
+   "version": "3 of 3",
+   "detail": {
+    "numero": "4791-2990-3",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-08-19",
+    "effetLe": "2026-08-19",
+    "finPrevue": "2027-10-31",
+    "cabinet": "Self-employed",
+    "activites": [
+     {
+      "description": "Support the vision that Métis voices are heard in the RCMP and Saskatchewan Marshals Service consultation process on policing and public safety.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Inter-governmental Relations",
+       "Justice",
+       "Law Enforcement"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Advance a Harvest Agreement that protects Métis harvesting rights while promoting sustainability and cultural preservation.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Environment",
+       "Land Use"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discuss the development of a traditional treatment centre for mental health and addictions, serving Métis, other Indigenous peoples, and non-Indigenous individuals in need of culturally grounded care.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Health & Wellness",
+       "Justice"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Justice and Attorney General",
+     "Finance",
+     "First Nations, Metis and Northern Affairs",
+     "Government Relations",
+     "Health",
+     "Mental Health and Addictions",
+     "Rural and Remote Health",
+     "Environment",
+     "Seniors"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Mental Health and Addictions"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Seniors"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "bbf250fb-a49c-f111-b532-89406e26c506",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=bbf250fb-a49c-f111-b532-89406e26c506",
+   "organisation": "Globe Theatre Society",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-08-19",
+   "version": "3 of 3",
+   "detail": {
+    "numero": "3615-3313-3",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-08-20",
+    "effetLe": "2026-08-19",
+    "finPrevue": "2026-09-30",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "Assist with Globe Theatre's efforts to advance their funding requests.",
+      "sujets": [
+       "Arts & Culture",
+       "Finance & Budget",
+       "Tourism"
+      ],
+      "categories": [
+       "Grant or Financial Benefit"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Legislative Assembly",
+     "Government Relations",
+     "Parks, Culture and Sport",
+     "Tourism Saskatchewan",
+     "Crown Investments Corporation",
+     "Finance"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Alana Ross",
+      "institution": "Parks, Culture and Sport"
+     },
+     {
+      "nom": "Alana Ross",
+      "institution": "Tourism Saskatchewan"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Barret Kropf",
+     "Jamie Martens",
+     "Brent Blakley",
+     "Brad Crassweller",
+     "Megan Patterson",
+     "Blaine McLeod",
+     "Carla Beck",
+     "Ken Cheveldayoff",
+     "Warren Kaeding",
+     "Nicole Sarauer"
+    ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "94f42106-e49c-f111-a3d0-6045bd5ff7c3",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=94f42106-e49c-f111-a3d0-6045bd5ff7c3",
    "organisation": "Canadian National Railway Company",
@@ -8420,194 +8643,6 @@
      "Trent Wotherspoon",
      "Colleen Young"
     ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "bbf250fb-a49c-f111-b532-89406e26c506",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=bbf250fb-a49c-f111-b532-89406e26c506",
-   "organisation": "Globe Theatre Society",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-08-19",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "3615-3313-3",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-08-20",
-    "effetLe": "2026-08-19",
-    "finPrevue": "2026-09-30",
-    "cabinet": "Prairie Sky Strategy",
-    "activites": [
-     {
-      "description": "Assist with Globe Theatre's efforts to advance their funding requests.",
-      "sujets": [
-       "Arts & Culture",
-       "Finance & Budget",
-       "Tourism"
-      ],
-      "categories": [
-       "Grant or Financial Benefit"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Legislative Assembly",
-     "Government Relations",
-     "Parks, Culture and Sport",
-     "Tourism Saskatchewan",
-     "Crown Investments Corporation",
-     "Finance"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Parks, Culture and Sport"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Tourism Saskatchewan"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Barret Kropf",
-     "Jamie Martens",
-     "Brent Blakley",
-     "Brad Crassweller",
-     "Megan Patterson",
-     "Blaine McLeod",
-     "Carla Beck",
-     "Ken Cheveldayoff",
-     "Warren Kaeding",
-     "Nicole Sarauer"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "8151a6b2-e59b-f111-a9c3-ddb8a22a5263",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8151a6b2-e59b-f111-a9c3-ddb8a22a5263",
-   "organisation": "Metis Nation-Saskatchewan Secretariat Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-08-19",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "4791-2990-3",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-08-19",
-    "effetLe": "2026-08-19",
-    "finPrevue": "2027-10-31",
-    "cabinet": "Self-employed",
-    "activites": [
-     {
-      "description": "Support the vision that Métis voices are heard in the RCMP and Saskatchewan Marshals Service consultation process on policing and public safety.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Inter-governmental Relations",
-       "Justice",
-       "Law Enforcement"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Advance a Harvest Agreement that protects Métis harvesting rights while promoting sustainability and cultural preservation.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Environment",
-       "Land Use"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discuss the development of a traditional treatment centre for mental health and addictions, serving Métis, other Indigenous peoples, and non-Indigenous individuals in need of culturally grounded care.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Health & Wellness",
-       "Justice"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Justice and Attorney General",
-     "Finance",
-     "First Nations, Metis and Northern Affairs",
-     "Government Relations",
-     "Health",
-     "Mental Health and Addictions",
-     "Rural and Remote Health",
-     "Environment",
-     "Seniors"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Mental Health and Addictions"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Seniors"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -9023,6 +9058,287 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "32424fde-ac98-f111-a3d0-6045bd5ff7c3",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=32424fde-ac98-f111-a3d0-6045bd5ff7c3",
+   "organisation": "B'nai Brith National Organization of Canada",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-08-15",
+   "version": "4 of 4",
+   "detail": {
+    "numero": "4850-3180-4",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-08-17",
+    "effetLe": "2026-08-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Review provincial grant programs to ensure that all programs and recipients of provincial funding are in alignment with Canada’s Anti-Racism Strategy: Changing Systems, Transforming Lives, 2024-2028.",
+      "sujets": [
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Fund two new 5-year programs to enhance understanding of the International Holocaust Remembrance Alliance (IHRA) definition of antisemitism among secondary and post-secondary students in Saskatchewan.",
+      "sujets": [
+       "Education",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Develop a provincial anti-racism strategy modeled on Canada’s Anti-Racism Strategy: Changing Systems, Transforming Lives, 2024-2028.",
+      "sujets": [
+       "Finance & Budget",
+       "Justice"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Introduce vulnerable infrastructure legislation. Such legislation would prioritize public safety, security, and access to essential services while imposing minimal, reasonable restrictions on freedom of expression. This legislation would ensure the safety of religious communities in Saskatchewan by preventing protests from taking place directly outside their places of worship.",
+      "sujets": [
+       "Justice"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution"
+      ]
+     },
+     {
+      "description": "Implement two key policy prescriptions in B’nai Brith Canada’s Seven-Point Plan to Tackle Antisemitism: ➢ B’nai Brith Canada’s Policy for Combatting Antisemitism on Campuses (PCAC) – Introduced on September 13, 2024, its purpose is to “enhance the protection and inclusion of Jewish students within the institution’s equity, diversity, and inclusion (EDI) frameworks. Its purpose is to ensure that the campus environment is free from antisemitism and supports Jewish students in expressing their cultural, religious, and historical identity. The policy aligns with the institution’s commitment to fostering an equitable, inclusive, and diverse community for all students. ➢ B’nai Brith Canada’s Policy for Combating Antisemitism in Schools (PCAS) – Introduced on September 26, 2024, its purpose is to “enhance the protection and inclusion of Jewish students within the school board’s existing Anti-Racism and Anti-Hate frameworks. Its purpose is to ensure that the school environment is free from antisemitism and to provide Jewish students with support in expressing their cultural, religious, and historical identity. The policy aligns with the school board’s commitment to creating a welcoming and safe learning environment for all students, and fostering an equitable, inclusive, and diverse community.”",
+      "sujets": [
+       "Education"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Invest in a mandatory training program on the IHRA definition of antisemitism for all provincial public servants.",
+      "sujets": [
+       "Employment & Training",
+       "Finance & Budget",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Fund immediate security protection for Jewish institutions.",
+      "sujets": [
+       "Finance & Budget",
+       "Justice"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Establish a special prosecution unit for hate crimes.",
+      "sujets": [
+       "Justice"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Intergovernmental Affairs",
+     "Legislative Assembly",
+     "Advanced Education",
+     "Education",
+     "Executive Council",
+     "Government Relations",
+     "Finance",
+     "Justice and Attorney General",
+     "Public Service Commission",
+     "Community Safety"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Public Service Commission"
+     },
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Intergovernmental Affairs"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Community Safety"
+     }
+    ],
+    "deputes": [
+     "Leroy Laliberte",
+     "Darlene Rowden",
+     "Sean Wilson",
+     "Terri Bromm",
+     "Jordan McPhail",
+     "James Thorsteinson",
+     "Barret Kropf",
+     "Racquel Hilbert",
+     "Chris Beaudry",
+     "Kim Gartner",
+     "Jamie Martens",
+     "Kevin Kasun",
+     "Jacqueline Roy",
+     "Bhajan Brar",
+     "Joan Pratchler",
+     "Sally Housser",
+     "Brent Blakley",
+     "Eric Schmalz",
+     "Don McBean",
+     "Keith Jorgenson",
+     "Kim Breckner",
+     "Hugh Gordon",
+     "Brittney Senger",
+     "Darcy Warrington",
+     "Tajinder Grewal",
+     "Michael Weger",
+     "Brad Crassweller",
+     "David Chan",
+     "Megan Patterson",
+     "Kevin Weedmark",
+     "April ChiefCalf",
+     "Everett Hindley",
+     "Todd Goudy",
+     "Jeremy Cockrill",
+     "Meara Conway",
+     "Daryl Harrison",
+     "Terry Jenson",
+     "Travis Keisig",
+     "Matt Love",
+     "Tim McLeod",
+     "Betty Nippi-Albright",
+     "Erika Ritchie",
+     "Alana Ross",
+     "Aleana Young",
+     "Blaine McLeod",
+     "Noor Burki",
+     "Jared Clarke",
+     "Nathaniel Teed",
+     "Vicki Mowat",
+     "Carla Beck",
+     "Lori Carr",
+     "Ken Cheveldayoff",
+     "Jeremy Harrison",
+     "Warren Kaeding",
+     "David Marit",
+     "Scott Moe",
+     "Jim Reiter",
+     "Nicole Sarauer",
+     "Doug Steele",
+     "Trent Wotherspoon",
+     "Colleen Young"
+    ]
+   },
+   "lu": "2026-10-20"
+  },
+  {
+   "id": "04067aa4-02b1-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=04067aa4-02b1-f111-aad1-000d3af328df",
+   "organisation": "Janssen Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-08-15",
+   "version": "31 of 31",
+   "detail": {
+    "numero": "4811-1056-31",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-09-15",
+    "effetLe": "2026-08-15",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Janssen has and expects to continue to lobby GOS representatives regarding the reimbursement and procurement of Janssen products under government programs, including the Saskatchewan Drug Plan, as well as government policies and programs regarding innovation in health services delivery.",
+      "sujets": [
+       "Economic Development",
+       "Health & Wellness",
+       "Government Procurement",
+       "Research & Development"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Janssen will communicate with public office holders regarding policies and programs that impact access to innovative medicines by Saskatchewan patients and Saskatchewan's investment competitiveness for health research and development.",
+      "sujets": [
+       "Economic Development",
+       "Health & Wellness",
+       "Intellectual Property",
+       "Government Procurement",
+       "Research & Development"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Rural and Remote Health",
+     "Health",
+     "Innovation"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-20"
+  },
+  {
    "id": "0da29355-ed97-f111-a3d0-6045bd5ff7c3",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=0da29355-ed97-f111-a3d0-6045bd5ff7c3",
    "organisation": "Insurance Bureau of Canada",
@@ -9142,75 +9458,6 @@
      "Alana Ross",
      "Warren Kaeding"
     ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "2ef669de-e397-f111-a3d0-6045bd5ff7c3",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=2ef669de-e397-f111-a3d0-6045bd5ff7c3",
-   "organisation": "Janssen Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-08-14",
-   "version": "30 of 30",
-   "detail": {
-    "numero": "4811-1056-30",
-    "type": "In-House",
-    "statut": "Inactive (View Latest Version)",
-    "publieLe": "2026-08-14",
-    "effetLe": "2026-08-14 - 2026-08-14",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Janssen has and expects to continue to lobby GOS representatives regarding the reimbursement and procurement of Janssen products under government programs, including the Saskatchewan Drug Plan, as well as government policies and programs regarding innovation in health services delivery.",
-      "sujets": [
-       "Economic Development",
-       "Health & Wellness",
-       "Government Procurement",
-       "Research & Development"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Janssen will communicate with public office holders regarding policies and programs that impact access to innovative medicines by Saskatchewan patients and Saskatchewan's investment competitiveness for health research and development.",
-      "sujets": [
-       "Economic Development",
-       "Health & Wellness",
-       "Intellectual Property",
-       "Government Procurement",
-       "Research & Development"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Rural and Remote Health",
-     "Health",
-     "Innovation"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     }
-    ],
-    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -9477,194 +9724,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "3bdebf01-2c90-f111-9b47-0022483dfa86",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=3bdebf01-2c90-f111-9b47-0022483dfa86",
-   "organisation": "B'nai Brith National Organization of Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-08-12",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "4850-3180-3",
-    "type": "In-House",
-    "statut": "Inactive (View Latest Version)",
-    "publieLe": "2026-08-13",
-    "effetLe": "2026-08-12 - 2026-08-14",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Review provincial grant programs to ensure that all programs and recipients of provincial funding are in alignment with Canada’s Anti-Racism Strategy: Changing Systems, Transforming Lives, 2024-2028.",
-      "sujets": [
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Fund two new 5-year programs to enhance understanding of the International Holocaust Remembrance Alliance (IHRA) definition of antisemitism among secondary and post-secondary students in Saskatchewan.",
-      "sujets": [
-       "Education",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Develop a provincial anti-racism strategy modeled on Canada’s Anti-Racism Strategy: Changing Systems, Transforming Lives, 2024-2028.",
-      "sujets": [
-       "Finance & Budget",
-       "Justice"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Invest in a mandatory training program on the IHRA definition of antisemitism for all provincial public",
-      "sujets": [
-       "Employment & Training",
-       "Finance & Budget",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Introduce vulnerable infrastructure legislation. Such legislation would prioritize public safety, security, and access to essential services while imposing minimal, reasonable restrictions on freedom of expression. This legislation would ensure the safety of religious communities in Saskatchewan by preventing protests from taking place directly outside their places of worship.",
-      "sujets": [
-       "Justice"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution"
-      ]
-     },
-     {
-      "description": "Implement two key policy prescriptions in B’nai Brith Canada’s Seven-Point Plan to Tackle Antisemitism: ➢ B’nai Brith Canada’s Policy for Combatting Antisemitism on Campuses (PCAC) – Introduced on September 13, 2024, its purpose is to “enhance the protection and inclusion of Jewish students within the institution’s equity, diversity, and inclusion (EDI) frameworks. Its purpose is to ensure that the campus environment is free from antisemitism and supports Jewish students in expressing their cultural, religious, and historical identity. The policy aligns with the institution’s commitment to fostering an equitable, inclusive, and diverse community for all students. ➢ B’nai Brith Canada’s Policy for Combating Antisemitism in Schools (PCAS) – Introduced on September 26, 2024, its purpose is to “enhance the protection and inclusion of Jewish students within the school board’s existing Anti-Racism and Anti-Hate frameworks. Its purpose is to ensure that the school environment is free from antisemitism and to provide Jewish students with support in expressing their cultural, religious, and historical identity. The policy aligns with the school board’s commitment to creating a welcoming and safe learning environment for all students, and fostering an equitable, inclusive, and diverse community.”",
-      "sujets": [
-       "Education"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Intergovernmental Affairs",
-     "Legislative Assembly",
-     "Advanced Education",
-     "Education",
-     "Executive Council",
-     "Government Relations",
-     "Finance",
-     "Justice and Attorney General",
-     "Public Service Commission"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Public Service Commission"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     }
-    ],
-    "deputes": [
-     "Leroy Laliberte",
-     "Darlene Rowden",
-     "Sean Wilson",
-     "Terri Bromm",
-     "Jordan McPhail",
-     "James Thorsteinson",
-     "Barret Kropf",
-     "Racquel Hilbert",
-     "Chris Beaudry",
-     "Kim Gartner",
-     "Jamie Martens",
-     "Kevin Kasun",
-     "Jacqueline Roy",
-     "Bhajan Brar",
-     "Joan Pratchler",
-     "Sally Housser",
-     "Brent Blakley",
-     "Eric Schmalz",
-     "Don McBean",
-     "Keith Jorgenson",
-     "Kim Breckner",
-     "Hugh Gordon",
-     "Brittney Senger",
-     "Darcy Warrington",
-     "Tajinder Grewal",
-     "Michael Weger",
-     "Brad Crassweller",
-     "David Chan",
-     "Megan Patterson",
-     "Kevin Weedmark",
-     "April ChiefCalf",
-     "Everett Hindley",
-     "Todd Goudy",
-     "Jeremy Cockrill",
-     "Meara Conway",
-     "Daryl Harrison",
-     "Terry Jenson",
-     "Travis Keisig",
-     "Matt Love",
-     "Tim McLeod",
-     "Betty Nippi-Albright",
-     "Erika Ritchie",
-     "Alana Ross",
-     "Aleana Young",
-     "Blaine McLeod",
-     "Noor Burki",
-     "Jared Clarke",
-     "Nathaniel Teed",
-     "Vicki Mowat",
-     "Carla Beck",
-     "Lori Carr",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Doug Steele",
-     "Trent Wotherspoon",
-     "Colleen Young"
-    ]
    },
    "lu": "2026-10-06"
   },
@@ -11035,124 +11094,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "dde42d8c-4263-f111-9b48-000d3a84cd84",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=dde42d8c-4263-f111-9b48-000d3a84cd84",
-   "organisation": "Graham Group Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-08-01",
-   "version": "12 of 12",
-   "detail": {
-    "numero": "1090-2124-12",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-08-05",
-    "effetLe": "2026-08-01",
-    "finPrevue": "2027-07-31",
-    "cabinet": "Prairie Sky Strategy",
-    "activites": [
-     {
-      "description": "Meetings to gather information on the Saskatchewan Indigenous Investment Finance Corporation programs for First Nations partners.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Grant or Financial Benefit"
-      ]
-     },
-     {
-      "description": "Discussion of power generation, Indigenous and environmental policy, and to assist with SaskPower's short-term, medium-term and long-term generation, transmission and distribution of electricity.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Meetings to better understand and provide input into government infrastructure needs and capital projects.",
-      "sujets": [
-       "Agriculture",
-       "Economic Development",
-       "Education",
-       "Environment",
-       "Health & Wellness",
-       "Infrastructure",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Contract",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Advanced Education",
-     "Executive Council",
-     "Agriculture",
-     "Finance",
-     "Legislative Assembly",
-     "SaskBuilds and Procurement",
-     "Saskatchewan Water Security Agency",
-     "Saskatchewan Power Corporation",
-     "Trade and Export Development",
-     "Crown Investments Corporation"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Saskatchewan Water Security Agency"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Barret Kropf",
-     "Todd Goudy",
-     "Jim Reiter"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "a88cc820-2190-f111-8f3a-c0e3b917a2fe",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a88cc820-2190-f111-8f3a-c0e3b917a2fe",
    "organisation": "Women Entrepreneurs of Saskatchewan Inc",
@@ -11304,6 +11245,159 @@
      "Trent Wotherspoon",
      "Colleen Young"
     ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "dde42d8c-4263-f111-9b48-000d3a84cd84",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=dde42d8c-4263-f111-9b48-000d3a84cd84",
+   "organisation": "Graham Group Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-08-01",
+   "version": "12 of 12",
+   "detail": {
+    "numero": "1090-2124-12",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-08-05",
+    "effetLe": "2026-08-01",
+    "finPrevue": "2027-07-31",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "Meetings to gather information on the Saskatchewan Indigenous Investment Finance Corporation programs for First Nations partners.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Grant or Financial Benefit"
+      ]
+     },
+     {
+      "description": "Discussion of power generation, Indigenous and environmental policy, and to assist with SaskPower's short-term, medium-term and long-term generation, transmission and distribution of electricity.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Meetings to better understand and provide input into government infrastructure needs and capital projects.",
+      "sujets": [
+       "Agriculture",
+       "Economic Development",
+       "Education",
+       "Environment",
+       "Health & Wellness",
+       "Infrastructure",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Contract",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Advanced Education",
+     "Executive Council",
+     "Agriculture",
+     "Finance",
+     "Legislative Assembly",
+     "SaskBuilds and Procurement",
+     "Saskatchewan Water Security Agency",
+     "Saskatchewan Power Corporation",
+     "Trade and Export Development",
+     "Crown Investments Corporation"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Saskatchewan Water Security Agency"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Barret Kropf",
+     "Todd Goudy",
+     "Jim Reiter"
+    ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "b59c4de7-4890-f111-8733-a925ab618652",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b59c4de7-4890-f111-8733-a925ab618652",
+   "organisation": "Trudell HealthCare Solutions Inc./Trudell Solutions Sante Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-07-31",
+   "version": "3 of 3",
+   "detail": {
+    "numero": "4320-3252-3",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-08-05",
+    "effetLe": "2026-07-31",
+    "finPrevue": "2027-12-31",
+    "cabinet": "WestPAR Consultancy Inc.",
+    "activites": [
+     {
+      "description": "Conduct information exchange and discussions with the intent of having Saskatchewan Health, through its Pharmacare program, fund spacers for COPD and Asthma patients provincewide. Spacers if funded, would include Trudell's line of AeroChambers and Aero2go.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health"
+    ],
+    "ministres": [],
+    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -11993,36 +12087,46 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "b59c4de7-4890-f111-8733-a925ab618652",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b59c4de7-4890-f111-8733-a925ab618652",
-   "organisation": "Trudell HealthCare Solutions Inc./Trudell Solutions Sante Inc.",
+   "id": "e08b7820-6f8b-f111-9e98-91b12d3b4123",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e08b7820-6f8b-f111-9e98-91b12d3b4123",
+   "organisation": "Draganfly Inc.",
    "type": "Consultant",
    "statut": "Active",
-   "effetLe": "2026-07-31",
-   "version": "3 of 3",
+   "effetLe": "2026-07-29",
+   "version": "2 of 2",
    "detail": {
-    "numero": "4320-3252-3",
+    "numero": "4922-3460-2",
     "type": "Consultant",
     "statut": "Active",
-    "publieLe": "2026-08-05",
-    "effetLe": "2026-07-31",
-    "finPrevue": "2027-12-31",
-    "cabinet": "WestPAR Consultancy Inc.",
+    "publieLe": "2026-07-29",
+    "effetLe": "2026-07-29",
+    "finPrevue": "2026-12-31",
+    "cabinet": "Rubicon Strategy",
     "activites": [
      {
-      "description": "Conduct information exchange and discussions with the intent of having Saskatchewan Health, through its Pharmacare program, fund spacers for COPD and Asthma patients provincewide. Spacers if funded, would include Trudell's line of AeroChambers and Aero2go.",
+      "description": "Support Draganfly's effort to build profile with Federal elected officials.",
       "sujets": [
-       "Health & Wellness"
+       "Inter-governmental Relations"
       ],
       "categories": [
-       "Program or Policy"
+       "Directive, Guideline or Decision"
       ]
      }
     ],
     "institutions": [
-     "Health"
+     "Intergovernmental Affairs",
+     "Executive Council"
     ],
-    "ministres": [],
+    "ministres": [
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Intergovernmental Affairs"
+     }
+    ],
     "deputes": []
    },
    "lu": "2026-10-06"
@@ -12071,112 +12175,6 @@
      {
       "nom": "Chris Beaudry",
       "institution": "Energy and Resources"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "e08b7820-6f8b-f111-9e98-91b12d3b4123",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e08b7820-6f8b-f111-9e98-91b12d3b4123",
-   "organisation": "Draganfly Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-07-29",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "4922-3460-2",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-07-29",
-    "effetLe": "2026-07-29",
-    "finPrevue": "2026-12-31",
-    "cabinet": "Rubicon Strategy",
-    "activites": [
-     {
-      "description": "Support Draganfly's effort to build profile with Federal elected officials.",
-      "sujets": [
-       "Inter-governmental Relations"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "Intergovernmental Affairs",
-     "Executive Council"
-    ],
-    "ministres": [
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "8253d022-c78a-f111-9b47-0022483dfa86",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8253d022-c78a-f111-9b47-0022483dfa86",
-   "organisation": "Saskatoon Regional Economic Development Authority",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-07-28",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "1036-3472-2",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-07-29",
-    "effetLe": "2026-07-28",
-    "finPrevue": "2026-12-31",
-    "cabinet": "Integrated Strategic Partners",
-    "activites": [
-     {
-      "description": "Engaging in conversations to better understand Saskatchewan's defence landscape and how entities such as SREDA can align with existing priorities and efforts in the space.",
-      "sujets": [
-       "Economic Development",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Intergovernmental Affairs",
-     "SaskBuilds and Procurement",
-     "Labour Relations & Workplace Safety",
-     "Finance"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
      }
     ],
     "deputes": []
@@ -12291,6 +12289,67 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "8253d022-c78a-f111-9b47-0022483dfa86",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8253d022-c78a-f111-9b47-0022483dfa86",
+   "organisation": "Saskatoon Regional Economic Development Authority",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-07-28",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "1036-3472-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-07-29",
+    "effetLe": "2026-07-28",
+    "finPrevue": "2026-12-31",
+    "cabinet": "Integrated Strategic Partners",
+    "activites": [
+     {
+      "description": "Engaging in conversations to better understand Saskatchewan's defence landscape and how entities such as SREDA can align with existing priorities and efforts in the space.",
+      "sujets": [
+       "Economic Development",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Intergovernmental Affairs",
+     "SaskBuilds and Procurement",
+     "Labour Relations & Workplace Safety",
+     "Finance"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Intergovernmental Affairs"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-06"
+  },
+  {
    "id": "a0fccf83-3e90-f111-8733-a925ab618652",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a0fccf83-3e90-f111-8733-a925ab618652",
    "organisation": "Max Power Mining Corporation",
@@ -12358,47 +12417,6 @@
      "Scott Moe",
      "Trent Wotherspoon"
     ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "cb94d9b6-fa85-f111-9b47-0022483dfa86",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=cb94d9b6-fa85-f111-9b47-0022483dfa86",
-   "organisation": "Premier Tech Ltée",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-07-22",
-   "version": "34 of 34",
-   "detail": {
-    "numero": "1448-1329-34",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-07-28",
-    "effetLe": "2026-07-22",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Discussions relative to the restoration of the old forest roads.",
-      "sujets": [
-       "Environment"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Environment"
-    ],
-    "ministres": [
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -12521,6 +12539,47 @@
      "David Marit",
      "Doug Steele"
     ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "cb94d9b6-fa85-f111-9b47-0022483dfa86",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=cb94d9b6-fa85-f111-9b47-0022483dfa86",
+   "organisation": "Premier Tech Ltée",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-07-22",
+   "version": "34 of 34",
+   "detail": {
+    "numero": "1448-1329-34",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-07-28",
+    "effetLe": "2026-07-22",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Discussions relative to the restoration of the old forest roads.",
+      "sujets": [
+       "Environment"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Environment"
+    ],
+    "ministres": [
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     }
+    ],
+    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -14977,90 +15036,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "d115a391-489a-f111-ab23-aa5eeee60d94",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d115a391-489a-f111-ab23-aa5eeee60d94",
-   "organisation": "Merck Canada Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-07-01",
-   "version": "23 of 23",
-   "detail": {
-    "numero": "3228-1300-23",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-08-27",
-    "effetLe": "2026-07-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "To actively promote the value of the pharmaceutical industry for the Province’s economic health and well being, but more importantly for the health and well being of its citizens and to propose solutions for integrated health care in Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Health & Wellness",
-       "Research & Development"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Merck Canada also seeks to contribute to Saskatchewan's economic prosperity by recommending policies that will attract increased investment. Activities could include providing recommendations on tax policies, research programs and policies and Innovation.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Health & Wellness",
-       "Research & Development"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Merck Canada Inc. seeks to have its products listed on the Saskatchewan Drug Plan Formulary and have publicly funded immunization programs. Focus of lobbying efforts will be on representations relating to the conditions under which innovative drugs and vaccines are marketed and reimbursed in Saskatchewan, including under the Saskatchewan Drug Plans or under federal legislation. More specifically, representations are made to support a favorable and knowledgeable environment to implement new or improve current immunizations programs into the Saskatchewan Drug Plans and to emphasize the importance that the federal and provincial governments respect their respective jurisdiction with respect to the approval, marketing and reimbursement of drugs.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Health & Wellness",
-       "Research & Development"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Representations may also concern legislation enacted or proposed in Saskatchewan to ensure that innovative drugs are excluded from the tendering process covered by such legislation until the expiry of the period covered by their patents. Merck Canada’s objective is to preserve a regulatory framework which creates a favorable business environment for the development of the life science sector, including innovative drugs and vaccines, which are the company’s main sectors of activities.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Health & Wellness",
-       "Research & Development"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Health",
-     "Saskatchewan Water Corporation"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Water Corporation"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "dc4c03de-f07e-f111-a4cb-e79cddfe995f",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=dc4c03de-f07e-f111-a4cb-e79cddfe995f",
    "organisation": "Canadian Association of Energy Contractors",
@@ -15231,6 +15206,90 @@
     "deputes": [
      "Carla Beck"
     ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "d115a391-489a-f111-ab23-aa5eeee60d94",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d115a391-489a-f111-ab23-aa5eeee60d94",
+   "organisation": "Merck Canada Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-07-01",
+   "version": "23 of 23",
+   "detail": {
+    "numero": "3228-1300-23",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-08-27",
+    "effetLe": "2026-07-01",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "To actively promote the value of the pharmaceutical industry for the Province’s economic health and well being, but more importantly for the health and well being of its citizens and to propose solutions for integrated health care in Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Health & Wellness",
+       "Research & Development"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Merck Canada also seeks to contribute to Saskatchewan's economic prosperity by recommending policies that will attract increased investment. Activities could include providing recommendations on tax policies, research programs and policies and Innovation.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Health & Wellness",
+       "Research & Development"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Merck Canada Inc. seeks to have its products listed on the Saskatchewan Drug Plan Formulary and have publicly funded immunization programs. Focus of lobbying efforts will be on representations relating to the conditions under which innovative drugs and vaccines are marketed and reimbursed in Saskatchewan, including under the Saskatchewan Drug Plans or under federal legislation. More specifically, representations are made to support a favorable and knowledgeable environment to implement new or improve current immunizations programs into the Saskatchewan Drug Plans and to emphasize the importance that the federal and provincial governments respect their respective jurisdiction with respect to the approval, marketing and reimbursement of drugs.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Health & Wellness",
+       "Research & Development"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Representations may also concern legislation enacted or proposed in Saskatchewan to ensure that innovative drugs are excluded from the tendering process covered by such legislation until the expiry of the period covered by their patents. Merck Canada’s objective is to preserve a regulatory framework which creates a favorable business environment for the development of the life science sector, including innovative drugs and vaccines, which are the company’s main sectors of activities.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Health & Wellness",
+       "Research & Development"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Health",
+     "Saskatchewan Water Corporation"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Water Corporation"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     }
+    ],
+    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -18996,48 +19055,6 @@
      "Doug Steele",
      "Trent Wotherspoon",
      "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "533e11d1-716a-f111-9b48-000d3a84cd84",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=533e11d1-716a-f111-9b48-000d3a84cd84",
-   "organisation": "Canadian Construction Association",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-06-15",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "5029-1013-1",
-    "type": "Consultant",
-    "statut": "Inactive",
-    "publieLe": "2026-06-24",
-    "effetLe": "2026-06-15 - 2026-10-01",
-    "finPrevue": "2026-08-31",
-    "cabinet": "Impact Public Affairs",
-    "activites": [
-     {
-      "description": "Stable and long-term infrastructure funding that supports housing, trade, and economic growth. Government collaboration with industry to promote careers in construction to address Saskatchewan's critical labour shortage.",
-      "sujets": [
-       "Economic Development",
-       "Employment & Training",
-       "Housing",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly"
-    ],
-    "ministres": [],
-    "deputes": [
-     "Barret Kropf",
-     "Kevin Kasun"
     ]
    },
    "lu": "2026-10-06"
@@ -24674,52 +24691,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "3afba74c-bd3a-f111-9a90-70a8a50cfd63",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=3afba74c-bd3a-f111-9a90-70a8a50cfd63",
-   "organisation": "Canadian Trucking Alliance",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-04-17",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "4937-1342-1",
-    "type": "Consultant",
-    "statut": "Inactive",
-    "publieLe": "2026-04-20",
-    "effetLe": "2026-04-17 - 2026-10-01",
-    "finPrevue": "2026-08-31",
-    "cabinet": "Crestview Strategy",
-    "activites": [
-     {
-      "description": "Compel elected officials to prioritize revisions to inter-provincial safety codes standards (carrier profiles), (safety ratings), (facility audits) and properly fund carrier data exchanges systems and provide enforcement authorities access to all relevant data on trucking companies and drivers.",
-      "sujets": [
-       "Transportation"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Highways"
-    ],
-    "ministres": [
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "cddf54b5-9362-f111-9b48-000d3a84cd84",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=cddf54b5-9362-f111-9b48-000d3a84cd84",
    "organisation": "AtkinsRealis Nuclear (Candu Energy Inc)",
@@ -27292,7 +27263,7 @@
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=cbac0f86-6624-f111-9d8f-aecba8f4fbe4",
    "organisation": "MacKenzie Art Gallery",
    "type": "In-House",
-   "statut": "Active",
+   "statut": "Active Non-Compliant",
    "effetLe": "2026-03-19",
    "version": "2 of 2",
    "detail": {
@@ -27594,7 +27565,7 @@
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=bf017ec3-1422-f111-910c-8080589803a1",
    "organisation": "Elmwood Residences Inc.",
    "type": "In-House",
-   "statut": "Active",
+   "statut": "Active Non-Compliant",
    "effetLe": "2026-03-16",
    "version": "3 of 3",
    "detail": {
@@ -28091,114 +28062,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "eb7ab836-696a-f111-85f5-ddf7c26528c5",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb7ab836-696a-f111-85f5-ddf7c26528c5",
-   "organisation": "Takeda Canada Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-03-01",
-   "version": "15 of 15",
-   "detail": {
-    "numero": "5024-1908-15",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-08-14",
-    "effetLe": "2026-03-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Partnering with Economic and Trade Development, in support of projects related to real world evidence generation to address gaps in data in one or more of the following therapeutic areas: neurosciences, gastroenterology, oncology, rare diseases, dermatology",
-      "sujets": [
-       "Economic Development",
-       "Education",
-       "Finance & Budget",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Exchange and sharing of perspectives and information on evolving health care policy matters impacting Saskatchewan and Saskatchewans, such as, but not limited to national Pharmacare, federal Rare Disease Framework, the Federal Patented Medicine Prices Review Board",
-      "sujets": [
-       "Economic Development",
-       "Education",
-       "Environment",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Product education on Takeda’s neuroscience, rare disease, oncology, Inflammatory Bowel Disease, neurology, and dermatology products related to unique Mode of Action and delivery, clinical and economic value, and how these products address unmet patient needs and contribute to the health of Saskatchewans.",
-      "sujets": [
-       "Economic Development",
-       "Education",
-       "Finance & Budget",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Health",
-     "Finance",
-     "Innovation",
-     "First Nations, Metis and Northern Affairs",
-     "Rural and Remote Health",
-     "Social Services",
-     "Seniors"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Seniors"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Keith Jorgenson",
-     "Brittney Senger",
-     "Vicki Mowat",
-     "Warren Kaeding",
-     "Jim Reiter"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "348601c4-6819-f111-9374-ec5aed6e45ce",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=348601c4-6819-f111-9374-ec5aed6e45ce",
    "organisation": "InterPro Steel",
@@ -28389,6 +28252,114 @@
      "Kevin Weedmark",
      "Everett Hindley",
      "Alana Ross",
+     "Jim Reiter"
+    ]
+   },
+   "lu": "2026-10-06"
+  },
+  {
+   "id": "eb7ab836-696a-f111-85f5-ddf7c26528c5",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb7ab836-696a-f111-85f5-ddf7c26528c5",
+   "organisation": "Takeda Canada Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-03-01",
+   "version": "15 of 15",
+   "detail": {
+    "numero": "5024-1908-15",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-08-14",
+    "effetLe": "2026-03-01",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Partnering with Economic and Trade Development, in support of projects related to real world evidence generation to address gaps in data in one or more of the following therapeutic areas: neurosciences, gastroenterology, oncology, rare diseases, dermatology",
+      "sujets": [
+       "Economic Development",
+       "Education",
+       "Finance & Budget",
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Exchange and sharing of perspectives and information on evolving health care policy matters impacting Saskatchewan and Saskatchewans, such as, but not limited to national Pharmacare, federal Rare Disease Framework, the Federal Patented Medicine Prices Review Board",
+      "sujets": [
+       "Economic Development",
+       "Education",
+       "Environment",
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Product education on Takeda’s neuroscience, rare disease, oncology, Inflammatory Bowel Disease, neurology, and dermatology products related to unique Mode of Action and delivery, clinical and economic value, and how these products address unmet patient needs and contribute to the health of Saskatchewans.",
+      "sujets": [
+       "Economic Development",
+       "Education",
+       "Finance & Budget",
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Health",
+     "Finance",
+     "Innovation",
+     "First Nations, Metis and Northern Affairs",
+     "Rural and Remote Health",
+     "Social Services",
+     "Seniors"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Seniors"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Terry Jenson",
+      "institution": "Social Services"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Keith Jorgenson",
+     "Brittney Senger",
+     "Vicki Mowat",
+     "Warren Kaeding",
      "Jim Reiter"
     ]
    },
