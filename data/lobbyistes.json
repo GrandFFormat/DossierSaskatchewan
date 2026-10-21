@@ -1,10 +1,83 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-21T09:14:34.079Z",
+ "scrapedAt": "2026-10-21T19:57:19.361Z",
  "total": 320,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "9329206f-53cd-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=9329206f-53cd-f111-aad1-000d3ae8ce13",
+   "organisation": "Futurpreneur Canada",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-21",
+   "version": "24 of 24",
+   "detail": {
+    "numero": "2082-1653-24",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-21",
+    "effetLe": "2026-10-21",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Discussing the advancement of youth entrepreneurship",
+      "sujets": [
+       "Economic Development"
+      ],
+      "categories": [
+       "Grant or Financial Benefit"
+      ]
+     }
+    ],
+    "institutions": [
+     "Innovation",
+     "Trade and Export Development",
+     "Finance",
+     "Executive Council",
+     "Immigration and Career Training",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Darlene Rowden",
+     "James Thorsteinson",
+     "Barret Kropf",
+     "Kim Gartner",
+     "Sally Housser",
+     "Brent Blakley",
+     "Kim Breckner",
+     "Tajinder Grewal",
+     "Michael Weger",
+     "Kevin Weedmark",
+     "April ChiefCalf",
+     "Terry Jenson",
+     "Noor Burki",
+     "Warren Kaeding",
+     "Colleen Young"
+    ]
+   },
+   "lu": "2026-10-21"
+  },
   {
    "id": "8a9060c8-c1cc-f111-940a-a2d54383640c",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8a9060c8-c1cc-f111-940a-a2d54383640c",
@@ -2416,6 +2489,194 @@
     "deputes": []
    },
    "lu": "2026-10-06"
+  },
+  {
+   "id": "704196e6-76cd-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=704196e6-76cd-f111-aad1-000d3ae8ce13",
+   "organisation": "Insurance Brokers Association of Saskatchewan",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-01",
+   "version": "12 of 12",
+   "detail": {
+    "numero": "1020-1652-12",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-21",
+    "effetLe": "2026-10-01",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Shift the burden of overland flood risk away from the taxpayer and onto the private insurance market.",
+      "sujets": [
+       "Environment",
+       "Finance & Budget",
+       "Housing",
+       "Infrastructure",
+       "Inter-governmental Relations",
+       "Land Use",
+       "Municipal Affairs",
+       "Regional Development",
+       "Privatization & Outsourcing"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "The taxation of insurance products, including through the Provincial Sales Tax and Insurance Premiums Tax.",
+      "sujets": [
+       "Finance & Budget",
+       "Taxes"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Consumer protection and business competitiveness issues related to The Insurance Act and related regulations, as well as the General Insurance Council of Saskatchewan.",
+      "sujets": [
+       "Economic Development",
+       "Inter-governmental Relations",
+       "Justice",
+       "Small Business"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Encouragement of reasonable and attainable insurance requirements in provincial and Crown tenders.",
+      "sujets": [
+       "Government Procurement"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     },
+     {
+      "description": "Promotion of a strong, stable public auto insurance system, backed by competition and choice in the extended auto coverage market, and delivered primarily through the broker distribution network.",
+      "sujets": [
+       "Finance & Budget",
+       "Government Procurement",
+       "Privatization & Outsourcing",
+       "Small Business",
+       "Transportation"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Legislative Proposal, Bill or Resolution",
+       "Order in Council",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Crown Investments Corporation",
+     "Executive Council",
+     "Finance",
+     "Financial & Consumer Affairs Authority",
+     "Intergovernmental Affairs",
+     "Justice and Attorney General",
+     "Legislative Assembly",
+     "Saskatchewan Government Insurance (SGI)",
+     "Immigration and Career Training",
+     "Government Relations",
+     "Trade and Export Development",
+     "Saskatchewan Public Safety Agency"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Government Insurance (SGI)"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Financial & Consumer Affairs Authority"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Intergovernmental Affairs"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Saskatchewan Public Safety Agency"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     }
+    ],
+    "deputes": [
+     "Sean Wilson",
+     "Sally Housser",
+     "Eric Schmalz",
+     "Darcy Warrington",
+     "Everett Hindley",
+     "Todd Goudy",
+     "Jeremy Cockrill",
+     "Meara Conway",
+     "Daryl Harrison",
+     "Terry Jenson",
+     "Matt Love",
+     "Tim McLeod",
+     "Alana Ross",
+     "Aleana Young",
+     "Jared Clarke",
+     "Nathaniel Teed",
+     "Carla Beck",
+     "Lori Carr",
+     "Ken Cheveldayoff",
+     "Jeremy Harrison",
+     "Warren Kaeding",
+     "David Marit",
+     "Scott Moe",
+     "Jim Reiter",
+     "Nicole Sarauer",
+     "Trent Wotherspoon"
+    ]
+   },
+   "lu": "2026-10-21"
   },
   {
    "id": "e82e404d-afbd-f111-a8e4-c4624e3d57e8",
@@ -6969,79 +7230,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "e5ebaa4e-38a6-f111-ae9b-e296f3351aa4",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e5ebaa4e-38a6-f111-ae9b-e296f3351aa4",
-   "organisation": "Futurpreneur Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "23 of 23",
-   "detail": {
-    "numero": "2082-1653-23",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-09-01",
-    "effetLe": "2026-09-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Discussing the advancement of youth entrepreneurship",
-      "sujets": [
-       "Economic Development"
-      ],
-      "categories": [
-       "Grant or Financial Benefit"
-      ]
-     }
-    ],
-    "institutions": [
-     "Innovation",
-     "Trade and Export Development",
-     "Finance",
-     "Executive Council",
-     "Immigration and Career Training",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Darlene Rowden",
-     "James Thorsteinson",
-     "Barret Kropf",
-     "Kim Gartner",
-     "Sally Housser",
-     "Brent Blakley",
-     "Kim Breckner",
-     "Tajinder Grewal",
-     "Michael Weger",
-     "Kevin Weedmark",
-     "April ChiefCalf",
-     "Terry Jenson",
-     "Noor Burki",
-     "Warren Kaeding",
-     "Colleen Young"
-    ]
    },
    "lu": "2026-10-06"
   },
@@ -29750,194 +29938,6 @@
     ],
     "ministres": [],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "eb9f44ad-4c21-f111-9d5a-a4844105b4b7",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=eb9f44ad-4c21-f111-9d5a-a4844105b4b7",
-   "organisation": "Insurance Brokers Association of Saskatchewan",
-   "type": "In-House",
-   "statut": "Active Non-Compliant",
-   "effetLe": "2026-01-01",
-   "version": "11 of 11",
-   "detail": {
-    "numero": "1020-1652-11",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-03-16",
-    "effetLe": "2026-01-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Shift the burden of overland flood risk away from the taxpayer and onto the private insurance market.",
-      "sujets": [
-       "Environment",
-       "Finance & Budget",
-       "Housing",
-       "Infrastructure",
-       "Inter-governmental Relations",
-       "Land Use",
-       "Municipal Affairs",
-       "Regional Development",
-       "Privatization & Outsourcing"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "The taxation of insurance products, including through the Provincial Sales Tax and Insurance Premiums Tax.",
-      "sujets": [
-       "Finance & Budget",
-       "Taxes"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Consumer protection and business competitiveness issues related to The Insurance Act and related regulations, as well as the General Insurance Council of Saskatchewan.",
-      "sujets": [
-       "Economic Development",
-       "Inter-governmental Relations",
-       "Justice",
-       "Small Business"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Encouragement of reasonable and attainable insurance requirements in provincial and Crown tenders.",
-      "sujets": [
-       "Government Procurement"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     },
-     {
-      "description": "Promotion of a strong, stable public auto insurance system, backed by competition and choice in the extended auto coverage market, and delivered primarily through the broker distribution network.",
-      "sujets": [
-       "Finance & Budget",
-       "Government Procurement",
-       "Privatization & Outsourcing",
-       "Small Business",
-       "Transportation"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Grant or Financial Benefit",
-       "Legislative Proposal, Bill or Resolution",
-       "Order in Council",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Crown Investments Corporation",
-     "Executive Council",
-     "Finance",
-     "Financial & Consumer Affairs Authority",
-     "Intergovernmental Affairs",
-     "Justice and Attorney General",
-     "Legislative Assembly",
-     "Saskatchewan Government Insurance (SGI)",
-     "Immigration and Career Training",
-     "Government Relations",
-     "Trade and Export Development",
-     "Saskatchewan Public Safety Agency"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Government Insurance (SGI)"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Financial & Consumer Affairs Authority"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     },
-     {
-      "nom": "Mike Weger",
-      "institution": "Saskatchewan Public Safety Agency"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     }
-    ],
-    "deputes": [
-     "Sean Wilson",
-     "Sally Housser",
-     "Eric Schmalz",
-     "Darcy Warrington",
-     "Everett Hindley",
-     "Todd Goudy",
-     "Jeremy Cockrill",
-     "Meara Conway",
-     "Daryl Harrison",
-     "Terry Jenson",
-     "Matt Love",
-     "Tim McLeod",
-     "Alana Ross",
-     "Aleana Young",
-     "Jared Clarke",
-     "Nathaniel Teed",
-     "Carla Beck",
-     "Lori Carr",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Trent Wotherspoon"
-    ]
    },
    "lu": "2026-10-06"
   },
