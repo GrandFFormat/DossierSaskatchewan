@@ -1,8 +1,8 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-22T09:16:14.316Z",
- "total": 320,
+ "scrapedAt": "2026-10-22T19:45:52.774Z",
+ "total": 321,
  "complet": true,
  "inscriptions": [
   {
@@ -457,6 +457,94 @@
     "deputes": []
    },
    "lu": "2026-10-21"
+  },
+  {
+   "id": "5ba9b071-37ce-f111-8b09-82397b994e75",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5ba9b071-37ce-f111-8b09-82397b994e75",
+   "organisation": "Covenant Energy Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-19",
+   "version": "7 of 7",
+   "detail": {
+    "numero": "3096-2340-7",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-22",
+    "effetLe": "2026-10-19",
+    "finPrevue": "2027-12-31",
+    "cabinet": "PAA Advisory I Conseils",
+    "activites": [
+     {
+      "description": "Looking for partnership and/or support to build Canada’s first renewable diesel refinery in Western Saskatchewan.",
+      "sujets": [
+       "Agriculture",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "International Trade",
+       "Regional Development",
+       "Transportation"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Policy, programming or regulations that support the development and uptake of biofuels in Saskatchewan.",
+      "sujets": [
+       "Agriculture",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Agriculture",
+     "Environment",
+     "Energy and Resources",
+     "Finance",
+     "Trade and Export Development",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Lori Carr"
+    ]
+   },
+   "lu": "2026-10-22"
   },
   {
    "id": "163c46ee-d9cb-f111-aad1-000d3ae8ce13",
