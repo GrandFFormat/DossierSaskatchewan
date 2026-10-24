@@ -19,9 +19,8 @@ name: Rafraîchissement des données (deux fois par jour)
 on:
   schedule:
     # La Saskatchewan est à UTC−6 toute l'année (pas d'heure d'été).
-    # 16:00 UTC = 10 h à Regina ; 04:00 UTC = 22 h à Regina.
-    - cron: '0 16 * * *'
-    - cron: '0 4 * * *'
+    # 16:00 UTC = 10 h à Regina. Une fois par semaine, le lundi (décision de Martin, 24 oct. 2026).
+    - cron: '0 16 * * 1'
   workflow_dispatch: {} # permet aussi de lancer à la main (bouton « Run workflow »)
 
 # Nécessaire pour que le job puisse committer et pousser les données mises à jour.
