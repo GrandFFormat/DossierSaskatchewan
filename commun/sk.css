@@ -559,6 +559,9 @@ header.top .tabs a{font-size:15.5px !important; padding:7px 15px !important;}
   header.top .tabs a.nav-mondossier{margin-left:6px; padding:7px 16px !important;}
 }
 .maple-flip{display:inline-flex !important; align-items:center; margin-left:10px; color:#D52B1E; cursor:pointer;}
+/* Toujours rouge ; toutes les 20 s elle se retourne sur elle-même, comme sur les autres sites (Martin, 30 oct. 2026). */
+.maple-flip.is-red{color:#D52B1E; transform:rotateY(180deg) !important;}
+html[data-theme="dark"] .maple-flip.is-red{color:#F87171;}
 .maple-flip svg{width:22px; height:22px;}
 html[data-theme="dark"] .maple-flip{color:#F87171;}
 @media (max-width: 640px){
