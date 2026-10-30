@@ -1,0 +1,40 @@
+{
+ "session": "30L3S",
+ "date": "2026-10-29",
+ "numero": 3,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261029Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261029Minutes.pdf",
+ "version": "20261029235041",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 61,
+   "titre": "The Mandatory Testing and Disclosure (Bodily Substances) Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 62,
+   "titre": "The Statute Law Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 63,
+   "titre": "The Municipal Employees' Pension Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  },
+  {
+   "type": "premiere",
+   "bill": 64,
+   "titre": "The Revenue and Financial Services Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Jim Reiter"
+  }
+ ],
+ "divisions": []
+}
