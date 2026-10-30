@@ -2017,3 +2017,14 @@
 .regle p{margin:0; font-size:15.5px; line-height:1.6; color:var(--ink); max-width:75ch;}
 .regles-suite{margin:26px 0 0; font-size:15px; line-height:1.6; color:var(--ink);}
 .regles-suite a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}
+
+/* Partager et Wikipédia sur les fiches d'élu·e·s (30 oct. 2026, comme DQ) */
+.part-btn{flex:none; width:30px; height:30px; padding:0; border:2px solid var(--ink); background:var(--card); color:var(--ink); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; font-weight:900;}
+.part-btn:hover, .part-btn:focus-visible{background:var(--ink); color:var(--card);}
+.wiki-btn{flex:none; width:30px; height:30px; display:inline-flex; align-items:center; justify-content:center; border:2px solid var(--ink); background:var(--card); color:var(--ink); font-family:Georgia,'Times New Roman',serif; font-size:17px; font-weight:700; line-height:1; text-decoration:none;}
+.wiki-btn:hover, .wiki-btn:focus-visible{background:var(--ink); color:var(--card);}
+.m-actions{display:inline-flex; gap:6px; margin-left:auto;}
+.dep-actions{display:flex; align-items:center; gap:5px; justify-content:flex-end;}
+.dep-actions .follow-btn{white-space:nowrap;}
+.dep-row{grid-template-columns:1fr 280px auto;}
+@media (max-width:760px){ .dep-row{grid-template-columns:1fr;} .dep-actions{justify-content:flex-start;} }

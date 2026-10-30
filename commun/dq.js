@@ -71,7 +71,7 @@ async function chargerDonnees(){
       _echecs.add(nom);
     }
   }));
-  deputes = deputesRaw.map(d => ({ name: d[0], riding: d[1], region: d[2], party: d[3], assnatId: d[4] }));
+  deputes = deputesRaw.map(d => ({ name: d[0], riding: d[1], region: d[2], party: d[3], assnatId: d[4], wiki: d[6] ?? null }));
   deputeById = new Map(deputes.map(d => [d.assnatId, d]));
   voteById = new Map(votes.map(v => [v.id, v]));
   if(newsItems.length) newsAnchor = newsItems.reduce((max, n) => (n.date > max ? n.date : max), newsItems[0].date);
@@ -2150,6 +2150,70 @@ function norm(s){
     .trim();
 }
 
+// Partager la fiche d'un·e élu·e (30 oct. 2026, comme sur DossierQuébec et DossierCanada) : un clic
+// copie un court résumé (rôle, circonscription, parti, présence aux votes nominatifs, projets de loi
+// parrainés) et le lien lisible (?elu=carla-beck), qui rouvre la page avec ce nom dans la recherche.
+const ICONE_PARTAGE = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" fill="currentColor"><circle cx="18" cy="5" r="3.2"/><circle cx="6" cy="12" r="3.2"/><circle cx="18" cy="19" r="3.2"/><path d="M8.6 10.7l6.8-3.9 1 1.7-6.8 3.9zM8.6 13.3l1-1.7 6.8 3.9-1 1.7z"/></svg>';
+const partageBouton = (nom) => `<button class="part-btn" type="button" title="${currentLang === 'en' ? 'Share' : 'Partager'}" aria-label="${currentLang === 'en' ? 'Share the profile of' : 'Partager la fiche de'} ${nom.replace(/"/g, '&quot;')}" onclick="event.stopPropagation(); ouvrirPartageElu(this, '${nom.replace(/'/g, "\\'").replace(/"/g, '&quot;')}')">${ICONE_PARTAGE}</button>`;
+// Le « W » : la page Wikipédia de la personne dans la langue de la page (l'autre langue sinon),
+// quand une page sûre existe (scrapers/wikipedia.js) ; sinon rien.
+const wikiBouton = (nom) => {
+  const w = resolveDepute(nom)?.wiki;
+  const url = w && (currentLang === 'en' ? (w.en || w.fr) : (w.fr || w.en));
+  return url ? `<a class="wiki-btn" href="${url}" target="_blank" rel="noopener" onclick="event.stopPropagation()" title="Wikipédia" aria-label="${currentLang === 'en' ? 'Wikipedia page of' : 'Page Wikipédia de'} ${nom.replace(/"/g, '&quot;')}">W</a>` : '';
+};
+function resumeElu(nom, isEn){
+  const dep = resolveDepute(nom);
+  const ministre = ministers.find((m) => m.name === nom);
+  const role = ministre ? (isEn ? (ministre.roleEn || ministre.role) : ministre.role) : '';
+  const president = presidingRoleNote(nom, isEn);
+  const att = dep && !president ? attendanceForAssnatId(dep.assnatId) : null;
+  const parraines = billsSponsoredBy(nom);
+  const lois = parraines.filter((b) => b.status === 'sanctionne').length;
+  const parti = ministre?.party || dep?.party;
+  const tete = [
+    role ? `${nom}, ${role},` : `${nom},`,
+    dep ? (isEn ? `MLA for ${dep.riding}` : `député·e de ${dep.riding}`) : '',
+    parti ? `(${parti})` : '',
+  ].filter(Boolean).join(' ');
+  const faits = [
+    att ? (isEn ? `Recorded-vote attendance: ${att.rate}%` : `Présence aux votes nominatifs : ${att.rate} %`) : '',
+    isEn ? `Bills sponsored: ${parraines.length}${lois ? `, ${lois} became law` : ''}` : `Projets de loi parrainés : ${parraines.length}${lois ? `, dont ${lois} devenus lois` : ''}`,
+  ].filter(Boolean).join(' · ');
+  return `${tete}. ${faits}.`;
+}
+// « Carla Beck » → « carla-beck ».
+const slugElu = (n) => String(n || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s*\([^)]*\)\s*$/, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+// Un clic copie le résumé et le lien, sans menu ; ✓ le confirme 1,5 s.
+function ouvrirPartageElu(bouton, nom){
+  const isEn = currentLang === 'en';
+  const lien = `https://dossiersaskatchewan.ca/ministres?elu=${slugElu(nom)}${isEn ? '&lang=en' : ''}`;
+  const texte = `${resumeElu(nom, isEn)} ${lien}`;
+  const fait = () => {
+    const avant = bouton.innerHTML;
+    bouton.textContent = '✓';
+    bouton.title = isEn ? 'Copied' : 'Copié';
+    setTimeout(() => { bouton.innerHTML = avant; bouton.title = isEn ? 'Share' : 'Partager'; }, 1500);
+  };
+  (navigator.clipboard ? navigator.clipboard.writeText(texte) : Promise.reject()).then(fait).catch(() => window.prompt(isEn ? 'Copy:' : 'Copiez :', texte));
+}
+window.ouvrirPartageElu = ouvrirPartageElu;
+// Le lien partagé : /ministres?elu=carla-beck remplit la recherche une fois les données arrivées.
+document.addEventListener('DOMContentLoaded', () => {
+  const demande = new URLSearchParams(location.search).get('elu');
+  if(!demande) return;
+  let essais = 0;
+  const remplir = () => {
+    const champ = document.getElementById('searchMinistres');
+    if(champ && ministers.length && deputes.length){
+      const vrai = [...ministers.map((m) => m.name), ...deputes.map((d) => d.name)].find((n) => slugElu(n) === slugElu(demande));
+      const nom = vrai ? vrai.replace(/\s*\([^)]*\)\s*$/, '') : demande;
+      champ.value = nom; champ.dispatchEvent(new Event('input', { bubbles: true })); champ.scrollIntoView({ block: 'center' }); return; }
+    if(++essais < 40) setTimeout(remplir, 250);
+  };
+  remplir();
+});
+
 function renderDeputes(filter){
   if(!document.getElementById('deputesList')) return;   // vue absente de cette page
   // En mode trié (voir toggleMinistresSort), renderMinistres() affiche tout le
@@ -2213,7 +2277,8 @@ function renderDeputes(filter){
             <div class="dep-riding">${d.riding} — ${d.region}</div>
             <div class="dep-att">${attNote}</div>
           </div>
-          <button class="follow-btn dep-follow ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey.replace(/'/g,"\\'")}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
+          <div class="dep-actions">${partageBouton(d.name)}${wikiBouton(d.name)}
+          <button class="follow-btn dep-follow ${isFollowed?'on':''}" onclick="toggleFollowDepute('${followKey.replace(/'/g,"\\'")}')">${isFollowed ? t('btn.following') : t('btn.follow')}</button></div>
         </div>`;
       }).join('')}`;
     }).join('')}
@@ -2269,6 +2334,7 @@ function personCard(p){
       <div class="m-card-top">
         <div class="m-top-row">
           <span class="depute-party" style="background:${partyColors[party]}; color:${partyText(party)}">${party}</span>
+          <span class="m-actions">${partageBouton(name)}${wikiBouton(name)}</span>
           <button class="follow-btn ${isFollowed?'on':''}" onclick="${followOnclick}">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
         </div>
         <div class="m-name">${name}</div>

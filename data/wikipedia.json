@@ -1,0 +1,246 @@
+{
+  "source": "en.wikipedia.org (API publique)",
+  "lu": "2026-10-30",
+  "liens": {
+    "chris-beaudry": {
+      "en": "https://en.wikipedia.org/wiki/Chris_Beaudry",
+      "fr": null
+    },
+    "carla-beck": {
+      "en": "https://en.wikipedia.org/wiki/Carla_Beck",
+      "fr": "https://fr.wikipedia.org/wiki/Carla_Beck"
+    },
+    "brent-blakley": {
+      "en": "https://en.wikipedia.org/wiki/Brent_Blakley",
+      "fr": null
+    },
+    "bhajan-brar": {
+      "en": "https://en.wikipedia.org/wiki/Bhajan_Brar",
+      "fr": null
+    },
+    "kim-breckner": {
+      "en": "https://en.wikipedia.org/wiki/Kim_Breckner",
+      "fr": null
+    },
+    "terri-bromm": {
+      "en": "https://en.wikipedia.org/wiki/Terri_Bromm",
+      "fr": "https://fr.wikipedia.org/wiki/Terri_Bromm"
+    },
+    "noor-burki": {
+      "en": "https://en.wikipedia.org/wiki/Noor_Burki",
+      "fr": null
+    },
+    "lori-carr": {
+      "en": "https://en.wikipedia.org/wiki/Lori_Carr",
+      "fr": "https://fr.wikipedia.org/wiki/Lori_Carr"
+    },
+    "ken-cheveldayoff": {
+      "en": "https://en.wikipedia.org/wiki/Ken_Cheveldayoff",
+      "fr": "https://fr.wikipedia.org/wiki/Ken_Cheveldayoff"
+    },
+    "april-chiefcalf": {
+      "en": "https://en.wikipedia.org/wiki/April_ChiefCalf",
+      "fr": null
+    },
+    "jared-clarke": {
+      "en": "https://en.wikipedia.org/wiki/Jared_Clarke",
+      "fr": null
+    },
+    "jeremy-cockrill": {
+      "en": "https://en.wikipedia.org/wiki/Jeremy_Cockrill",
+      "fr": "https://fr.wikipedia.org/wiki/Jeremy_Cockrill"
+    },
+    "meara-conway": {
+      "en": "https://en.wikipedia.org/wiki/Meara_Conway",
+      "fr": "https://fr.wikipedia.org/wiki/Meara_Conway"
+    },
+    "brad-crassweller": {
+      "en": "https://en.wikipedia.org/wiki/Brad_Crassweller",
+      "fr": null
+    },
+    "kim-gartner": {
+      "en": "https://en.wikipedia.org/wiki/Kim_Gartner",
+      "fr": null
+    },
+    "todd-goudy": {
+      "en": "https://en.wikipedia.org/wiki/Todd_Goudy",
+      "fr": "https://fr.wikipedia.org/wiki/Todd_Goudy"
+    },
+    "tajinder-grewal": {
+      "en": "https://en.wikipedia.org/wiki/Tajinder_Grewal",
+      "fr": null
+    },
+    "daryl-harrison": {
+      "en": "https://en.wikipedia.org/wiki/Daryl_Harrison",
+      "fr": "https://fr.wikipedia.org/wiki/Daryl_Harrison"
+    },
+    "jeremy-harrison": {
+      "en": "https://en.wikipedia.org/wiki/Jeremy_Harrison",
+      "fr": "https://fr.wikipedia.org/wiki/Jeremy_Harrison"
+    },
+    "racquel-hilbert": {
+      "en": "https://en.wikipedia.org/wiki/Racquel_Hilbert",
+      "fr": null
+    },
+    "everett-hindley": {
+      "en": "https://en.wikipedia.org/wiki/Everett_Hindley",
+      "fr": "https://fr.wikipedia.org/wiki/Everett_Hindley"
+    },
+    "sally-housser": {
+      "en": "https://en.wikipedia.org/wiki/Sally_Housser",
+      "fr": null
+    },
+    "terry-jenson": {
+      "en": "https://en.wikipedia.org/wiki/Terry_Jenson",
+      "fr": "https://fr.wikipedia.org/wiki/Terry_Jenson"
+    },
+    "keith-jorgenson": {
+      "en": "https://en.wikipedia.org/wiki/Keith_Jorgenson",
+      "fr": null
+    },
+    "warren-kaeding": {
+      "en": "https://en.wikipedia.org/wiki/Warren_Kaeding",
+      "fr": "https://fr.wikipedia.org/wiki/Warren_Kaeding"
+    },
+    "kevin-kasun": {
+      "en": "https://en.wikipedia.org/wiki/Kevin_Kasun",
+      "fr": null
+    },
+    "travis-keisig": {
+      "en": "https://en.wikipedia.org/wiki/Travis_Keisig",
+      "fr": "https://fr.wikipedia.org/wiki/Travis_Keisig"
+    },
+    "barret-kropf": {
+      "en": "https://en.wikipedia.org/wiki/Barret_Kropf",
+      "fr": "https://fr.wikipedia.org/wiki/Barret_Kropf"
+    },
+    "leroy-laliberte": {
+      "en": "https://en.wikipedia.org/wiki/Leroy_Laliberte",
+      "fr": null
+    },
+    "matt-love": {
+      "en": "https://en.wikipedia.org/wiki/Matt_Love",
+      "fr": "https://fr.wikipedia.org/wiki/Matt_Love"
+    },
+    "david-marit": {
+      "en": "https://en.wikipedia.org/wiki/Dave_Marit",
+      "fr": "https://fr.wikipedia.org/wiki/Dave_Marit"
+    },
+    "jamie-martens": {
+      "en": "https://en.wikipedia.org/wiki/Jamie_Martens",
+      "fr": null
+    },
+    "don-mcbean": {
+      "en": "https://en.wikipedia.org/wiki/Don_McBean",
+      "fr": null
+    },
+    "blaine-mcleod": {
+      "en": "https://en.wikipedia.org/wiki/Blaine_McLeod",
+      "fr": null
+    },
+    "tim-mcleod": {
+      "en": "https://en.wikipedia.org/wiki/Tim_McLeod",
+      "fr": "https://fr.wikipedia.org/wiki/Tim_McLeod"
+    },
+    "jordan-mcphail": {
+      "en": "https://en.wikipedia.org/wiki/Jordan_McPhail",
+      "fr": null
+    },
+    "scott-moe": {
+      "en": "https://en.wikipedia.org/wiki/Scott_Moe",
+      "fr": "https://fr.wikipedia.org/wiki/Scott_Moe"
+    },
+    "vicki-mowat": {
+      "en": "https://en.wikipedia.org/wiki/Vicki_Mowat",
+      "fr": "https://fr.wikipedia.org/wiki/Vicki_Mowat"
+    },
+    "betty-nippi-albright": {
+      "en": "https://en.wikipedia.org/wiki/Betty_Nippi-Albright",
+      "fr": "https://fr.wikipedia.org/wiki/Betty_Nippi-Albright"
+    },
+    "megan-patterson": {
+      "en": "https://en.wikipedia.org/wiki/Megan_Patterson",
+      "fr": null
+    },
+    "joan-pratchler": {
+      "en": "https://en.wikipedia.org/wiki/Joan_Pratchler",
+      "fr": null
+    },
+    "jim-reiter": {
+      "en": "https://en.wikipedia.org/wiki/Jim_Reiter",
+      "fr": "https://fr.wikipedia.org/wiki/Jim_Reiter"
+    },
+    "erika-ritchie": {
+      "en": "https://en.wikipedia.org/wiki/Erika_Ritchie",
+      "fr": "https://fr.wikipedia.org/wiki/Erika_Ritchie"
+    },
+    "alana-ross": {
+      "en": "https://en.wikipedia.org/wiki/Alana_Ross",
+      "fr": "https://fr.wikipedia.org/wiki/Alana_Ross"
+    },
+    "darlene-rowden": {
+      "en": "https://en.wikipedia.org/wiki/Darlene_Rowden",
+      "fr": null
+    },
+    "jacqueline-roy": {
+      "en": "https://en.wikipedia.org/wiki/Jacqueline_Roy",
+      "fr": null
+    },
+    "nicole-sarauer": {
+      "en": "https://en.wikipedia.org/wiki/Nicole_Sarauer",
+      "fr": "https://fr.wikipedia.org/wiki/Nicole_Sarauer"
+    },
+    "eric-schmalz": {
+      "en": "https://en.wikipedia.org/wiki/Eric_Schmalz",
+      "fr": null
+    },
+    "brittney-senger": {
+      "en": "https://en.wikipedia.org/wiki/Brittney_Senger",
+      "fr": null
+    },
+    "doug-steele": {
+      "en": "https://en.wikipedia.org/wiki/Doug_Steele",
+      "fr": "https://fr.wikipedia.org/wiki/Doug_Steele"
+    },
+    "nathaniel-teed": {
+      "en": "https://en.wikipedia.org/wiki/Nathaniel_Teed",
+      "fr": null
+    },
+    "james-thorsteinson": {
+      "en": "https://en.wikipedia.org/wiki/James_Thorsteinson",
+      "fr": "https://fr.wikipedia.org/wiki/James_Thorsteinson"
+    },
+    "darcy-warrington": {
+      "en": "https://en.wikipedia.org/wiki/Darcy_Warrington",
+      "fr": null
+    },
+    "michael-weger": {
+      "en": "https://en.wikipedia.org/wiki/Michael_Weger",
+      "fr": null
+    },
+    "trent-wotherspoon": {
+      "en": "https://en.wikipedia.org/wiki/Trent_Wotherspoon",
+      "fr": "https://fr.wikipedia.org/wiki/Trent_Wotherspoon"
+    },
+    "aleana-young": {
+      "en": "https://en.wikipedia.org/wiki/Aleana_Young",
+      "fr": "https://fr.wikipedia.org/wiki/Aleana_Young"
+    },
+    "david-chan": {
+      "en": "https://en.wikipedia.org/wiki/David_Chan_(politician)",
+      "fr": null
+    },
+    "sean-wilson": {
+      "en": "https://en.wikipedia.org/wiki/Sean_Wilson_(politician)",
+      "fr": null
+    },
+    "colleen-young": {
+      "en": "https://en.wikipedia.org/wiki/Colleen_Young_(politician)",
+      "fr": "https://fr.wikipedia.org/wiki/Colleen_Young_(femme_politique)"
+    },
+    "hugh-gordon": {
+      "en": "https://en.wikipedia.org/wiki/Hugh_Gordon_(Canadian_politician)",
+      "fr": null
+    }
+  }
+}

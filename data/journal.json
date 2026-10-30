@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-10-30",
+    "volet": "site",
+    "fr": {
+      "titre": "Élu·e·s : partager une fiche, voir sa page Wikipédia",
+      "texte": "Chaque fiche de député·e et de ministre porte deux boutons. Le premier copie d’un clic un court résumé (rôle, circonscription, parti, présence aux votes nominatifs, projets de loi parrainés) avec un lien qui rouvre la fiche. Le « W » mène à la page Wikipédia de la personne quand une page sûre existe."
+    },
+    "en": {
+      "titre": "MLAs: share a profile, open its Wikipedia page",
+      "texte": "Every MLA and minister card has two buttons. The first copies in one click a short summary (role, riding, party, recorded-vote attendance, bills sponsored) with a link that reopens the profile. The “W” opens the person’s Wikipedia page when a reliable one exists."
+    }
+  },
+  {
     "date": "2026-10-10",
     "volet": "site",
     "fr": {
