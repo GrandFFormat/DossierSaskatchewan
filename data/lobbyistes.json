@@ -1,10 +1,882 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-10-26T20:49:52.267Z",
- "total": 320,
+ "scrapedAt": "2026-10-30T12:00:48.380Z",
+ "total": 318,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "65091cd5-10d3-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=65091cd5-10d3-f111-aad1-000d3ae8ce13",
+   "organisation": "Enerva Energy Solutions Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-28",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "1166-3417-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-28",
+    "finPrevue": "2027-10-27",
+    "cabinet": "Counsel Public Affairs",
+    "activites": [
+     {
+      "description": "To support the client's engagement with the Government of Saskatchewan by facilitating introductions and advancing relationship-building to position the client within the province's energy sector",
+      "sujets": [
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Saskatchewan Power Corporation"
+    ],
+    "ministres": [],
+    "deputes": []
+   },
+   "lu": "2026-10-30"
+  },
+  {
+   "id": "fb56f9df-eed2-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=fb56f9df-eed2-f111-aad1-000d3ae8ce13",
+   "organisation": "Ducks Unlimited Canada",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-28",
+   "version": "25 of 25",
+   "detail": {
+    "numero": "1148-1324-25",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-28",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Meetings to discuss the potential to develop mutually beneficial green infrastructure programming for SK residents and potential mitigation programming for SK industry.",
+      "sujets": [
+       "Agriculture",
+       "Economic Development",
+       "Environment",
+       "Infrastructure",
+       "Inter-governmental Relations"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Meetings to discuss SK's climate change strategy and how conservation lands and wetland policy will fit in with government planning, while complementing the other government priorities.",
+      "sujets": [
+       "Agriculture",
+       "Environment",
+       "Inter-governmental Relations"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss SK Water Security's wetland policy development which includes mitigation and the role conservation lands play in this policy development. Focusing on water quality, quantity and habitat as a key component of these discussions and at what threshold these focal points become ineffective/unproductive.",
+      "sujets": [
+       "Agriculture",
+       "Environment",
+       "Inter-governmental Relations"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss mutually beneficial program delivery under the Sustainable Canadian Agriculture Partnership and the Resilient Agricultural Landscape Programs.",
+      "sujets": [
+       "Agriculture"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Ongoing annual or semi annual meetings to discuss Crown land transfers (FWDF, WHPA) and updating Ministry of Agriculture on DUC projects throughout SK as they relate to publicly owned lands.",
+      "sujets": [
+       "Agriculture",
+       "Environment",
+       "Land Use",
+       "Tourism"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings and discussions to update on mitigation and offsetting efforts with industries including agriculture, oil and gas, mining and forestry.",
+      "sujets": [
+       "Agriculture",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Updates to elected officials on new wetland science as it relates to water management, carbon banking, carbon sequestration, climate change, biodiversity, and habitat.",
+      "sujets": [
+       "Agriculture",
+       "Environment",
+       "Land Use"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Work to update large scale water management projects including fundraising, construction and long term management for irrigation and non irrigation works.",
+      "sujets": [
+       "Agriculture",
+       "Environment",
+       "Sports & Recreation",
+       "Tourism"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss hunting regulations and potential revisions to modernize legislation and regulation of the fishing and hunting sector.",
+      "sujets": [
+       "Environment",
+       "Justice"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss DUC's programming and support for emerging biodiversity and carbon markets and how SK farms and businesses could benefit from these emerging markets through program delivery either from government, or private investment.",
+      "sujets": [
+       "Agriculture",
+       "Environment",
+       "Land Use"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss the Southern Conservation Lands Policy renewal and the opening of the Saskatchewan Farm Security Act.",
+      "sujets": [
+       "Agriculture",
+       "Environment"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to update and inform provincial government on DUC's activities on national agricultural programming including the Next Agricultural Policy Framework and the work DUC is conducting with other national agricultural stakeholders.",
+      "sujets": [
+       "Agriculture",
+       "Environment"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Legislative Assembly",
+     "Agriculture",
+     "Saskatchewan Water Security Agency",
+     "Environment",
+     "Parks, Culture and Sport",
+     "Energy and Resources",
+     "Justice and Attorney General"
+    ],
+    "ministres": [
+     {
+      "nom": "Tim McLeod",
+      "institution": "Justice and Attorney General"
+     },
+     {
+      "nom": "Alana Ross",
+      "institution": "Parks, Culture and Sport"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Saskatchewan Water Security Agency"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Darlene Rowden",
+     "Chris Beaudry",
+     "Tim McLeod",
+     "Erika Ritchie",
+     "Alana Ross",
+     "Jared Clarke",
+     "Carla Beck",
+     "Warren Kaeding",
+     "David Marit",
+     "Scott Moe",
+     "Trent Wotherspoon"
+    ]
+   },
+   "lu": "2026-10-30"
+  },
+  {
+   "id": "b43bda0a-e7d2-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b43bda0a-e7d2-f111-aad1-000d3ae8ce13",
+   "organisation": "Informal Coalition of Agri-Processors",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-28",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "5135-3502-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-28",
+    "finPrevue": "2026-11-30",
+    "cabinet": "T. Bjornson &amp; Associates Consulting Inc.",
+    "activites": [
+     {
+      "description": "To brief provincial officials on the economic and operational impacts of proposed federal carbon pricing policies on agri-processors.",
+      "sujets": [
+       "Agriculture",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Environment"
+    ],
+    "ministres": [
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-10-30"
+  },
+  {
+   "id": "1f4d930e-8cd2-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=1f4d930e-8cd2-f111-aad1-000d3ae8ce13",
+   "organisation": "Inclusion Saskatchewan",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-27",
+   "version": "4 of 4",
+   "detail": {
+    "numero": "4464-3205-4",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-27",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Promotion of inclusion for people with intellectual disabilities. Promotion of inclusive education policies and practices in elementary, secondary, and post-secondary institutions. Promotion of inclusive and dignified policies and practices within Income Assistance and Disability Programs and the Ministry of Social Services.",
+      "sujets": [
+       "Education",
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Contract",
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Legislative Assembly",
+     "Advanced Education",
+     "Education",
+     "Health",
+     "Social Services",
+     "Immigration and Career Training"
+    ],
+    "ministres": [
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Terry Jenson",
+      "institution": "Social Services"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     }
+    ],
+    "deputes": [
+     "Brittney Senger",
+     "Darcy Warrington",
+     "April ChiefCalf",
+     "Everett Hindley",
+     "Jeremy Cockrill",
+     "Terry Jenson",
+     "Matt Love",
+     "Erika Ritchie",
+     "Carla Beck",
+     "Ken Cheveldayoff"
+    ]
+   },
+   "lu": "2026-10-30"
+  },
+  {
+   "id": "614bee27-39d2-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=614bee27-39d2-f111-aad1-000d3ae8ce13",
+   "organisation": "Eye Physicians and Surgeons Association of Saskatchewan",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-27",
+   "version": "2 of 2",
+   "detail": {
+    "numero": "1577-3426-2",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-27",
+    "finPrevue": "2027-12-31",
+    "cabinet": "Sparks &amp; Associates Inc.",
+    "activites": [
+     {
+      "description": "Discussion of Health Professional Regulation and scopes of practice",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Legislative Assembly",
+     "Mental Health and Addictions",
+     "Health",
+     "Rural and Remote Health"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     }
+    ],
+    "deputes": [
+     "Carla Beck"
+    ]
+   },
+   "lu": "2026-10-30"
+  },
+  {
+   "id": "7ef7f46e-1ad3-f111-9676-9deaedefcc01",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7ef7f46e-1ad3-f111-9676-9deaedefcc01",
+   "organisation": "Saskatchewan Mining Association",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-10-26",
+   "version": "12 of 12",
+   "detail": {
+    "numero": "1046-1019-12",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-26",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Meetings to discuss rail transportation issues affecting mining sector, including global trade relationship and reputations; Meeting to understand role of provincial Ministry with Canada Transportation Agency",
+      "sujets": [
+       "International Trade",
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Meeting to inform Ministers and senior officials about international trade; status of global competitors; impacts of increasing costs to global competitiveness and how that is affecting current status of operating mines in SK, future investment decisions and decreasing market share",
+      "sujets": [
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Meetings to discuss Crown (SaskPower, SaskEnergy/Transgas) short-medium and long-term plans and financial costs related to power generation and transmission, and energy (gas) transmission;",
+      "sujets": [
+       "Energy",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Economic and Operational Impact of ECCC Clean Fuel Standard of SK exploration and mining sector; share information with Province; advocate for support in relaying concerns to Government of Canada",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Inter-governmental Relations",
+       "Taxes"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Implications of delays in mineral exploration permitting to provincial revenue streams and investment attraction.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "International Trade",
+       "Land Claims",
+       "Land Use",
+       "Regional Development",
+       "Small Business"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Implications of Carbon Tax on EITEI including SK mining operations - Prairie Resilience Plan, engagement with Climate Change Branch regarding compliance policy options for OBPS industries (Tech Fund, offsets, Performance Credits) Federal incursion on development of provincial resources; Incursion of Federal Government (ECCC) into areas of provincial jurisdiction re: Provincial Crown Lands: Access to Lands, Protected Areas Programs etc. Critical Minerals listing Security of Mineral Tenure Access to Lands Species at Risk File - Boreal Caribou and related Range Plans; Section 11 agreements",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Energy",
+       "Environment",
+       "Justice",
+       "Land Use"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss legislation and policies that affect the global competitiveness and safe and sustainable operation of existing and future mining and milling facilities and mineral exploration activity in Saskatchewan.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "International Trade"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings with Ministry or Environment, Energy and Resources and Government Relations to discuss the adequacy of Duty to Consult Process, permitting processes and timelines related to mineral exploration. Meetings to discuss Federal Governments undefined policies with respect UNDRIP and implications for mineral resource development on provincial Crown Land",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Inter-governmental Relations",
+       "Justice",
+       "Land Use"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Priority Infrastructure Projects to support resource development (SaskBuilds, SaskPower, Highways, TED, SaskTel)",
+      "sujets": [
+       "Energy",
+       "Infrastructure",
+       "International Trade",
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Critical Minerals and Incentives",
+      "sujets": [
+       "Economic Development",
+       "Small Business"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Meeting with Ministry of Education, Advanced Education and Immigration and Career Training to discuss SMA labour study. Workforce planning in Saskatchewan and address the looming labour shortage and what programs and support the government can offer in partnership with educational institutions.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Education",
+       "Employment & Training"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Labour Market Development including Career Awareness for prevalent and critical careers in Saskatchewan's Mining Sector (K-12 focus but also post-secondary)",
+      "sujets": [
+       "Education",
+       "Employment & Training",
+       "Land Use",
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings with Education, Advanced Education, ICT, SATCC related to Education Outreach material related to mineral resources development and career awareness of prevalent and critical careers for Sask. mining industry.",
+      "sujets": [
+       "Education",
+       "Employment & Training"
+      ],
+      "categories": [
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss state of Exploration and Mining and incentives (TMEI, tax credit relief from assessment work; rapid COVID_testing; clarity on transportation/road closures in northern Saskatchewan: essential nature of exploration and mining and their supply chains to economy; expanded opportunity for indigenous procurement; extension of time to spend dollars raised by flow-through shares (CRA)",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Employment & Training",
+       "Environment",
+       "Infrastructure",
+       "International Trade",
+       "Government Procurement",
+       "Transportation",
+       "Workplace Safety"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Meetings to discuss Saskatchewan Air Transportation Strategy",
+      "sujets": [
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Highways",
+     "Environment",
+     "Energy and Resources",
+     "Executive Council",
+     "Trade and Export Development",
+     "Finance",
+     "First Nations, Metis and Northern Affairs",
+     "Government Relations",
+     "Labour Relations & Workplace Safety",
+     "Saskatchewan Power Corporation",
+     "Crown Investments Corporation",
+     "Education",
+     "Advanced Education",
+     "Legislative Assembly",
+     "Immigration and Career Training",
+     "Apprenticeship and Trade Certification Commission",
+     "SaskEnergy Incorporated"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "SaskEnergy Incorporated"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Apprenticeship and Trade Certification Commission"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     }
+    ],
+    "deputes": [
+     "Leroy Laliberte",
+     "Darlene Rowden",
+     "Chris Beaudry",
+     "Kim Gartner",
+     "Sally Housser",
+     "Eric Schmalz",
+     "Kim Breckner",
+     "Everett Hindley",
+     "Betty Nippi-Albright",
+     "Aleana Young",
+     "Blaine McLeod",
+     "Jared Clarke",
+     "Carla Beck",
+     "Ken Cheveldayoff",
+     "Jeremy Harrison",
+     "Warren Kaeding",
+     "David Marit",
+     "Scott Moe",
+     "Jim Reiter",
+     "Nicole Sarauer",
+     "Trent Wotherspoon"
+    ]
+   },
+   "lu": "2026-10-30"
+  },
+  {
+   "id": "727ce39b-75d1-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=727ce39b-75d1-f111-aad1-000d3ae8ce13",
+   "organisation": "Enserva",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-10-26",
+   "version": "5 of 5",
+   "detail": {
+    "numero": "4144-3163-5",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-10-26",
+    "finPrevue": "2027-12-31",
+    "cabinet": "Garrison Strategy",
+    "activites": [
+     {
+      "description": "Policies and programs that support increased Indigenous participation in Saskatchewan’s site rehabilitation work. This includes promoting initiatives that enhance Indigenous training, employment, and business opportunities in the reclamation of inactive wells and associated environmental projects.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Employment & Training",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Employment opportunities and expanded training programs to support workforce development in the energy services sector",
+      "sujets": [
+       "Employment & Training",
+       "Energy",
+       "Transportation"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Harmonization of regulations across provincial borders to improve efficiency and reduce barriers in transportation and energy sector-related requirements.",
+      "sujets": [
+       "Employment & Training",
+       "Energy",
+       "Transportation",
+       "Workplace Safety"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Legislative Assembly",
+     "Executive Council",
+     "Environment",
+     "Energy and Resources",
+     "Finance",
+     "First Nations, Metis and Northern Affairs",
+     "Highways",
+     "Innovation",
+     "Labour Relations & Workplace Safety",
+     "Trade and Export Development",
+     "Saskatchewan Government Insurance (SGI)"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Kim Gartner",
+      "institution": "Highways"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Labour Relations & Workplace Safety"
+     }
+    ],
+    "deputes": [
+     "James Thorsteinson",
+     "Colleen Young"
+    ]
+   },
+   "lu": "2026-10-30"
+  },
   {
    "id": "9329206f-53cd-f111-aad1-000d3ae8ce13",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=9329206f-53cd-f111-aad1-000d3ae8ce13",
@@ -2936,6 +3808,142 @@
    "lu": "2026-10-06"
   },
   {
+   "id": "6ef7dda8-44d2-f111-aad1-000d3ae8ce13",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=6ef7dda8-44d2-f111-aad1-000d3ae8ce13",
+   "organisation": "TransCanada PipeLines Limited",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-09-30",
+   "version": "38 of 38",
+   "detail": {
+    "numero": "2894-2080-38",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-10-28",
+    "effetLe": "2026-09-30",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "• Environmental policy",
+      "sujets": [
+       "Forestry",
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Influencing decision making on power market regulations, including renewable power projects and policies around decarbonizing the Saskatchewan power grid.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "• TC Energy and affiliates exploring business opportunities and business development in the province.",
+      "sujets": [
+       "Forestry",
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions related to carbon pricing in the context of regulatory certainty and investment competitiveness.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "• Canada Gas - communications on gas supply to the province of Saskatchewan including regulatory approval timelines for infrastructure projects.",
+      "sujets": [
+       "Forestry",
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Education",
+       "Energy",
+       "Environment",
+       "Finance & Budget",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Influencing policies around Saskatchewan's overall power generation strategy, including the use of natural gas in the province's power mix.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Crown Investments Corporation",
+     "Executive Council",
+     "Energy and Resources",
+     "Finance",
+     "Environment",
+     "Trade and Export Development",
+     "Legislative Assembly",
+     "Saskatchewan Power Corporation"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Brittney Senger",
+     "Aleana Young"
+    ]
+   },
+   "lu": "2026-10-30"
+  },
+  {
    "id": "15471e35-4fbc-f111-a887-8e2a9644d6b3",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=15471e35-4fbc-f111-a887-8e2a9644d6b3",
    "organisation": "TransCanada PipeLines Limited",
@@ -3067,53 +4075,6 @@
      "Brittney Senger",
      "Aleana Young"
     ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "36d6417b-ebc0-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=36d6417b-ebc0-f111-aad1-000d3af328df",
-   "organisation": "Informal Coalition of Agri-Processors",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-29",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "5135-3502-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-10-05",
-    "effetLe": "2026-09-29",
-    "finPrevue": "2026-11-30",
-    "cabinet": "T. Bjornson &amp; Associates Consulting Inc.",
-    "activites": [
-     {
-      "description": "To brief provincial officials on the economic and operational impacts of proposed federal carbon pricing policies on agri-processors.",
-      "sujets": [
-       "Agriculture",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Environment"
-    ],
-    "ministres": [
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -4511,118 +5472,6 @@
    ]
   },
   {
-   "id": "b694f782-c6b6-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b694f782-c6b6-f111-aad1-000d3af328df",
-   "organisation": "Enserva",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-09-22",
-   "version": "4 of 4",
-   "detail": {
-    "numero": "4144-3163-4",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-09-28",
-    "effetLe": "2026-09-22",
-    "finPrevue": "2027-12-31",
-    "cabinet": "Garrison Strategy",
-    "activites": [
-     {
-      "description": "Policies and programs that support increased Indigenous participation in Saskatchewan’s site rehabilitation work. This includes promoting initiatives that enhance Indigenous training, employment, and business opportunities in the reclamation of inactive wells and associated environmental projects.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Employment & Training",
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Harmonization of regulations across provincial borders to improve efficiency and reduce barriers in transportation and energy sector-related requirements.",
-      "sujets": [
-       "Employment & Training",
-       "Energy",
-       "Transportation",
-       "Workplace Safety"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Employment opportunities and expanded training programs to support workforce development in the energy services sector",
-      "sujets": [
-       "Employment & Training",
-       "Energy",
-       "Transportation"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly",
-     "Executive Council",
-     "Environment",
-     "Energy and Resources",
-     "Finance",
-     "First Nations, Metis and Northern Affairs",
-     "Highways",
-     "Innovation",
-     "Labour Relations & Workplace Safety",
-     "Trade and Export Development"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Kim Gartner",
-      "institution": "Highways"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Labour Relations & Workplace Safety"
-     }
-    ],
-    "deputes": [
-     "James Thorsteinson",
-     "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "e7aec5fd-7abb-f111-8ebf-ec916bd8bb22",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=e7aec5fd-7abb-f111-8ebf-ec916bd8bb22",
    "organisation": "Northland Power Inc.",
@@ -5174,142 +6023,6 @@
     "deputes": []
    },
    "lu": "2026-10-06"
-  },
-  {
-   "id": "f3685d80-05bd-f111-b6b1-d72668d76819",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f3685d80-05bd-f111-b6b1-d72668d76819",
-   "organisation": "TransCanada PipeLines Limited",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-09-15",
-   "version": "37 of 37",
-   "detail": {
-    "numero": "2894-2080-37",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-10-08",
-    "effetLe": "2026-09-15",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "• Environmental policy",
-      "sujets": [
-       "Forestry",
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Influencing decision making on power market regulations, including renewable power projects and policies around decarbonizing the Saskatchewan power grid.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "• TC Energy and affiliates exploring business opportunities and business development in the province.",
-      "sujets": [
-       "Forestry",
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions related to carbon pricing in the context of regulatory certainty and investment competitiveness.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "• Canada Gas - communications on gas supply to the province of Saskatchewan including regulatory approval timelines for infrastructure projects.",
-      "sujets": [
-       "Forestry",
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Education",
-       "Energy",
-       "Environment",
-       "Finance & Budget",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Influencing policies around Saskatchewan's overall power generation strategy, including the use of natural gas in the province's power mix.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Crown Investments Corporation",
-     "Executive Council",
-     "Energy and Resources",
-     "Finance",
-     "Environment",
-     "Trade and Export Development",
-     "Legislative Assembly",
-     "Saskatchewan Power Corporation"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     }
-    ],
-    "deputes": [
-     "Brittney Senger",
-     "Aleana Young"
-    ]
-   },
-   "lu": "2026-10-08"
   },
   {
    "id": "4c583043-cfb1-f111-aad1-000d3af328df",
@@ -20824,227 +21537,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "d5528692-1359-f111-89e7-6045bd5d144b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d5528692-1359-f111-89e7-6045bd5d144b",
-   "organisation": "Ducks Unlimited Canada",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-05-26",
-   "version": "24 of 24",
-   "detail": {
-    "numero": "1148-1324-24",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-05-26",
-    "effetLe": "2026-05-26",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Meetings to discuss the potential to develop mutually beneficial green infrastructure programming for SK residents and potential mitigation programming for SK industry.",
-      "sujets": [
-       "Agriculture",
-       "Economic Development",
-       "Environment",
-       "Infrastructure",
-       "Inter-governmental Relations"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Meetings to discuss SK's climate change strategy and how conservation lands and wetland policy will fit in with government planning, while complementing the other government priorities.",
-      "sujets": [
-       "Agriculture",
-       "Environment",
-       "Inter-governmental Relations"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings to discuss SK Water Security's wetland policy development which includes mitigation and the role conservation lands play in this policy development. Focusing on water quality, quantity and habitat as a key component of these discussions and at what threshold these focal points become ineffective/unproductive.",
-      "sujets": [
-       "Agriculture",
-       "Environment",
-       "Inter-governmental Relations"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings to discuss mutually beneficial program delivery under the Sustainable Canadian Agriculture Partnership and the Resilient Agricultural Landscape Programs.",
-      "sujets": [
-       "Agriculture"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Ongoing annual or semi annual meetings to discuss Crown land transfers (FWDF, WHPA) and updating Ministry of Agriculture on DUC projects throughout SK as they relate to publicly owned lands.",
-      "sujets": [
-       "Agriculture",
-       "Environment",
-       "Land Use",
-       "Tourism"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings to discuss the Southern Conservation Lands Policy renewal.",
-      "sujets": [
-       "Agriculture",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings and discussions to update on mitigation and offsetting efforts with industries including agriculture, oil and gas, mining and forestry.",
-      "sujets": [
-       "Agriculture",
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Updates to elected officials on new wetland science as it relates to water management, carbon banking, carbon sequestration, climate change, biodiversity, and habitat.",
-      "sujets": [
-       "Agriculture",
-       "Environment",
-       "Land Use"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Work to update large scale water management projects including fundraising, construction and long term management for irrigation and non irrigation works.",
-      "sujets": [
-       "Agriculture",
-       "Environment",
-       "Sports & Recreation",
-       "Tourism"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Grant or Financial Benefit",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings to discuss DUC's programming and support for emerging biodiversity and carbon markets and how SK farms and businesses could benefit from these emerging markets through program delivery.",
-      "sujets": [
-       "Agriculture",
-       "Environment",
-       "Land Use"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings to discuss hunting regulations and potential revisions to modernize legislation and regulation of the fishing and hunting sector.",
-      "sujets": [
-       "Environment",
-       "Justice"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Meetings to update and inform provincial government on DUC's activities on national agricultural programming including the Next Agricultural Policy Framework and the work DUC is conducting with other national agricultural stakeholders.",
-      "sujets": [
-       "Agriculture",
-       "Environment"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Legislative Assembly",
-     "Agriculture",
-     "Saskatchewan Water Security Agency",
-     "Environment",
-     "Parks, Culture and Sport",
-     "Energy and Resources",
-     "Justice and Attorney General"
-    ],
-    "ministres": [
-     {
-      "nom": "Tim McLeod",
-      "institution": "Justice and Attorney General"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Parks, Culture and Sport"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Saskatchewan Water Security Agency"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Darlene Rowden",
-     "Chris Beaudry",
-     "Tim McLeod",
-     "Erika Ritchie",
-     "Alana Ross",
-     "Jared Clarke",
-     "Carla Beck",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Trent Wotherspoon"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "25d3f9a8-5758-f111-ae5e-ac1ae3db9985",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=25d3f9a8-5758-f111-ae5e-ac1ae3db9985",
    "organisation": "AbbVie Corporation",
@@ -23131,113 +23623,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "fe2e1ece-074b-f111-9a90-70a8a50cfd63",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=fe2e1ece-074b-f111-9a90-70a8a50cfd63",
-   "organisation": "LifeLabs LP",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-05-05",
-   "version": "6 of 6",
-   "detail": {
-    "numero": "1299-3133-6",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-05-08",
-    "effetLe": "2026-05-05",
-    "finPrevue": "2027-05-05",
-    "cabinet": "1689986 Alberta Ltd. conducting business as Signal Hill Canada Ltd.",
-    "activites": [
-     {
-      "description": "Engaging with the Government of Saskatchewan in regard to provincial diagnostic and laboratory testing services.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Mental Health and Addictions",
-     "Executive Council",
-     "Finance",
-     "First Nations, Metis and Northern Affairs",
-     "Health",
-     "Legislative Assembly",
-     "Rural and Remote Health",
-     "SaskBuilds and Procurement",
-     "Seniors"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Mental Health and Addictions"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Seniors"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": [
-     "Sean Wilson",
-     "Everett Hindley",
-     "Jeremy Cockrill",
-     "Meara Conway",
-     "Daryl Harrison",
-     "Terry Jenson",
-     "Travis Keisig",
-     "Matt Love",
-     "Tim McLeod",
-     "Betty Nippi-Albright",
-     "Erika Ritchie",
-     "Alana Ross",
-     "Aleana Young",
-     "Blaine McLeod",
-     "Noor Burki",
-     "Jared Clarke",
-     "Nathaniel Teed",
-     "Vicki Mowat",
-     "Carla Beck",
-     "Lori Carr",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Doug Steele",
-     "Trent Wotherspoon",
-     "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "27c83ce4-e447-f111-9a90-70a8a50cfd63",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=27c83ce4-e447-f111-9a90-70a8a50cfd63",
    "organisation": "Nature Conservancy of Canada",
@@ -24243,76 +24628,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "b8700a4a-663f-f111-9a90-70a8a50cfd63",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b8700a4a-663f-f111-9a90-70a8a50cfd63",
-   "organisation": "Inclusion Saskatchewan",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-04-23",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "4464-3205-3",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-04-24",
-    "effetLe": "2026-04-23",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Promotion of inclusion for people with intellectual disabilities. Promotion of inclusive education policies and practices in elementary, secondary, and post-secondary institutions. Promotion of inclusive policies and practices within Community Living Service Delivery and the Ministry of Social Services.",
-      "sujets": [
-       "Education",
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly",
-     "Advanced Education",
-     "Education",
-     "Health",
-     "Social Services",
-     "Immigration and Career Training"
-    ],
-    "ministres": [
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     }
-    ],
-    "deputes": [
-     "Brittney Senger",
-     "Everett Hindley",
-     "Jeremy Cockrill",
-     "Terry Jenson",
-     "Matt Love",
-     "Carla Beck",
-     "Ken Cheveldayoff"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "d2c8bef1-313f-f111-9a90-70a8a50cfd63",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d2c8bef1-313f-f111-9a90-70a8a50cfd63",
    "organisation": "Heart and Stroke Foundation of Canada",
@@ -25075,56 +25390,6 @@
      }
     ],
     "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "ef43adee-1335-f111-82eb-9e352d676563",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=ef43adee-1335-f111-82eb-9e352d676563",
-   "organisation": "Eye Physicians and Surgeons Association of Saskatchewan",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-04-09",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "1577-3426-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-04-20",
-    "effetLe": "2026-04-09",
-    "finPrevue": "2026-12-31",
-    "cabinet": "Sparks &amp; Associates Inc.",
-    "activites": [
-     {
-      "description": "Discussion of Health Professional Regulation and scopes of practice",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly",
-     "Mental Health and Addictions",
-     "Health",
-     "Rural and Remote Health"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     }
-    ],
-    "deputes": [
-     "Carla Beck"
-    ]
    },
    "lu": "2026-10-06"
   },
@@ -26024,59 +26289,6 @@
      "Ken Cheveldayoff",
      "Colleen Young"
     ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "f4f3bd6f-8b32-f111-84ef-e60c334a462e",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=f4f3bd6f-8b32-f111-84ef-e60c334a462e",
-   "organisation": "Athabasca Chipewyan First Nation / Première nation athabasca chipewyan",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-04-01",
-   "version": "3 of 3",
-   "detail": {
-    "numero": "3990-3115-3",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-04-08",
-    "effetLe": "2026-04-01",
-    "finPrevue": "2027-03-31",
-    "cabinet": "Counsel Public Affairs Inc.",
-    "activites": [
-     {
-      "description": "Engage in discussions regarding the recognition of ACFN's rights & self-determination.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Environment",
-       "Municipal Affairs"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Environment",
-     "Energy and Resources",
-     "First Nations, Metis and Northern Affairs"
-    ],
-    "ministres": [
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": []
    },
    "lu": "2026-10-06"
   },
@@ -27003,41 +27215,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "287e0618-6028-f111-b834-ca09cb58486b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=287e0618-6028-f111-b834-ca09cb58486b",
-   "organisation": "Enerva Energy Solutions Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-03-24",
-   "version": "1 of 1",
-   "detail": {
-    "numero": "1166-3417-1",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-03-26",
-    "effetLe": "2026-03-24",
-    "finPrevue": "2027-03-24",
-    "cabinet": "Counsel Public Affairs",
-    "activites": [
-     {
-      "description": "To support the client's engagement with the Government of Saskatchewan by facilitating introductions and advancing relationship-building to position the client within the province's energy sector",
-      "sujets": [
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Saskatchewan Power Corporation"
-    ],
-    "ministres": [],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "1c734edc-bc27-f111-9730-70a8a50bc799",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=1c734edc-bc27-f111-9730-70a8a50bc799",
    "organisation": "IT Solutions of Saskatchewan Inc",
@@ -27184,188 +27361,6 @@
     ],
     "deputes": [
      "Carla Beck"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "cbac0f86-6624-f111-9d8f-aecba8f4fbe4",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=cbac0f86-6624-f111-9d8f-aecba8f4fbe4",
-   "organisation": "MacKenzie Art Gallery",
-   "type": "In-House",
-   "statut": "Active Non-Compliant",
-   "effetLe": "2026-03-19",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "4730-3333-2",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-03-20",
-    "effetLe": "2026-03-19",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Discussions around a provincial investment in a facility renewal project for the MacKenzie Art Gallery.",
-      "sujets": [
-       "Arts & Culture",
-       "Economic Development",
-       "Finance & Budget",
-       "Gaming & Lotteries",
-       "Infrastructure",
-       "Inter-governmental Relations",
-       "Government Procurement",
-       "Tourism"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Advanced Education",
-     "Crown Investments Corporation",
-     "Education",
-     "Environment",
-     "Executive Council",
-     "Finance",
-     "First Nations, Metis and Northern Affairs",
-     "Government Relations",
-     "Health",
-     "Legislative Assembly",
-     "Intergovernmental Affairs",
-     "Mental Health and Addictions",
-     "Parks, Culture and Sport",
-     "Provincial Capital Commission",
-     "Lotteries and Gaming Saskatchewan Corporation",
-     "SaskBuilds and Procurement",
-     "Tourism Saskatchewan"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Lotteries and Gaming Corporation"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Mental Health and Addictions"
-     },
-     {
-      "nom": "Everett Hindley",
-      "institution": "Education"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Parks, Culture and Sport"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Tourism Saskatchewan"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Provincial Capital Commission"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Intergovernmental Affairs"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": [
-     "Leroy Laliberte",
-     "Darlene Rowden",
-     "Sean Wilson",
-     "Terri Bromm",
-     "Jordan McPhail",
-     "James Thorsteinson",
-     "Barret Kropf",
-     "Racquel Hilbert",
-     "Chris Beaudry",
-     "Kim Gartner",
-     "Jamie Martens",
-     "Kevin Kasun",
-     "Jacqueline Roy",
-     "Bhajan Brar",
-     "Joan Pratchler",
-     "Sally Housser",
-     "Brent Blakley",
-     "Eric Schmalz",
-     "Don McBean",
-     "Keith Jorgenson",
-     "Kim Breckner",
-     "Hugh Gordon",
-     "Brittney Senger",
-     "Darcy Warrington",
-     "Tajinder Grewal",
-     "Michael Weger",
-     "Brad Crassweller",
-     "David Chan",
-     "Megan Patterson",
-     "Kevin Weedmark",
-     "April ChiefCalf",
-     "Everett Hindley",
-     "Todd Goudy",
-     "Jeremy Cockrill",
-     "Meara Conway",
-     "Daryl Harrison",
-     "Terry Jenson",
-     "Travis Keisig",
-     "Matt Love",
-     "Tim McLeod",
-     "Betty Nippi-Albright",
-     "Erika Ritchie",
-     "Alana Ross",
-     "Aleana Young",
-     "Blaine McLeod",
-     "Noor Burki",
-     "Jared Clarke",
-     "Nathaniel Teed",
-     "Vicki Mowat",
-     "Carla Beck",
-     "Lori Carr",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Doug Steele",
-     "Trent Wotherspoon",
-     "Colleen Young"
     ]
    },
    "lu": "2026-10-06"
