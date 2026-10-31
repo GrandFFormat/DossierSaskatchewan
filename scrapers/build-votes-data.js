@@ -35,6 +35,8 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
+const PRESENCES_PATH = 'data/presences-par-legislature.json';
+
 const VOTES_PATH = 'data/votes.json';
 const BILLS_PATH = 'data/bills.json';
 const NOMINAL_DIR = 'data/votes';
@@ -148,8 +150,30 @@ function matchBill(vote, bills) {
   return best;
 }
 
+// Projets de loi parrainés dans chaque législature terminée, par nom de parrain normalisé (même
+// normalisation que norm() dans commun/dq.js) : { 43: { "jean francois roberge": [pl, lois] } }.
+const normNom = (s) => (s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[-–—']/g, ' ').replace(/\s+/g, ' ').trim();
+function plPasses(courante) {
+  const out = {};
+  if (!existsSync('data/archives')) return out;
+  for (const l of readdirSync('data/archives')) {
+    if (!/^\d+$/.test(l) || Number(l) === courante || !existsSync(`data/archives/${l}/bills.json`)) continue;
+    const j = JSON.parse(readFileSync(`data/archives/${l}/bills.json`, 'utf-8'));
+    const parNom = {};
+    for (const b of j.bills ?? j) {
+      if (!b.sponsor) continue;
+      const k = normNom(b.sponsor);
+      parNom[k] = parNom[k] || [0, 0];
+      parNom[k][0]++;
+      if (b.status === 'sanctionne') parNom[k][1]++;
+    }
+    out[l] = parNom;
+  }
+  return out;
+}
+
 function main() {
-  const { votes } = JSON.parse(readFileSync(VOTES_PATH, 'utf-8'));
+  const { votes, legislature } = JSON.parse(readFileSync(VOTES_PATH, 'utf-8'));
   const { bills } = JSON.parse(readFileSync(BILLS_PATH, 'utf-8'));
 
   let matched = 0;
@@ -185,6 +209,13 @@ function main() {
   for (const v of out) v.divise = voteDivise(v.nominal);
   const presences = calculerPresences(out);
   const fichiers = ecrireNominal(out);
+  // Le taux de présence de chaque législature, gardé pour toujours (comme DossierQuébec, 30 oct. 2026).
+  // La législature en cours s'y réécrit à chaque passage ; à la suivante, la précédente reste figée.
+  const historique = existsSync(PRESENCES_PATH) ? JSON.parse(readFileSync(PRESENCES_PATH, 'utf-8')) : {};
+  if (legislature && Object.keys(presences).length) historique[legislature] = presences;
+  writeFileSync(PRESENCES_PATH, JSON.stringify(historique) + '\n');
+  const presencesPassees = Object.fromEntries(Object.entries(historique).filter(([l]) => Number(l) !== legislature)
+    .map(([l, p]) => [l, Object.fromEntries(Object.entries(p).map(([id, x]) => [id, x.rate]))]));
 
   // Ce qui part dans la page : tout sauf le nominatif.
   const allege = out.map(({ nominal, ...reste }) => reste);
@@ -193,7 +224,8 @@ function main() {
     + `/* Le détail nominatif de chaque vote vit dans ${NOMINAL_DIR}/<id>.json et se charge quand\n`
     + `   on déplie une carte. Ici ne restent que les agrégats qui en dérivent : « divise » par\n`
     + `   vote et « presences » par député. Ne pas éditer à la main. */\n`
-    + `const presences = ${JSON.stringify(presences)};\n`;
+    + `const presences = ${JSON.stringify(presences)};\n`
+    + `const historiqueLeg = ${JSON.stringify({ courante: legislature ?? null, presences: presencesPassees, pl: plPasses(legislature) })};\n`;
 
   const html = readFileSync(HTML_PATH, 'utf-8');
   const startIdx = html.indexOf(START_MARKER);

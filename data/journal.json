@@ -3,6 +3,18 @@
     "date": "2026-10-30",
     "volet": "site",
     "fr": {
+      "titre": "Élu·e·s : présence et projets de loi par législature",
+      "texte": "Les fiches des ministres et des député·e·s montrent la 30e législature à part : présence aux votes nominatifs, projets de loi parrainés. Le nombre de projets mène à la liste de ces projets. La présence de chaque législature est désormais gardée ; les prochaines s’afficheront à côté, en gris."
+    },
+    "en": {
+      "titre": "MLAs: attendance and bills by legislature",
+      "texte": "Minister and MLA cards now show the 30th Legislature on its own: recorded-vote attendance and bills sponsored. The bill count links to the list of those bills. Attendance is now kept for each legislature; later ones will appear alongside, in grey."
+    }
+  },
+  {
+    "date": "2026-10-30",
+    "volet": "site",
+    "fr": {
       "titre": "Élu·e·s : partager une fiche, voir sa page Wikipédia",
       "texte": "Chaque fiche de député·e et de ministre porte deux boutons. Le premier copie d’un clic un court résumé (rôle, circonscription, parti, présence aux votes nominatifs, projets de loi parrainés) avec un lien qui rouvre la fiche. Le « W » mène à la page Wikipédia de la personne quand une page sûre existe."
     },
