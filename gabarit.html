@@ -164,6 +164,7 @@
     <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
     <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
     <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
+    <a href="/archives" data-view="archives"><span class="n">05</span><span data-i18n="nav.archives">Archives</span></a>
     <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
     <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
@@ -597,6 +598,21 @@ function goToFederal(evt){
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- ARCHIVES (d'après DossierQuébec, 30 oct. 2026) : les législatures terminées, une carte chacune
+       (projets de loi, votes). Dessiné par commun/dq.js (renderArchives) depuis
+       data/archives/index.json : la 30e y entre seule à l'ouverture de la 31e. -->
+  <section class="view" id="view-archives">
+    <div class="view-hero">
+      <h2 class="hero-h1 hero-h1-md">
+        <span class="hero-sujet" data-i18n="sujet.archives">Legislative Assembly archives</span>
+        <span data-i18n="archhero.l1">The archives,</span>
+        <span class="hero-outline" data-i18n="archhero.l2">legislature by legislature.</span>
+      </h2>
+      <p class="view-hero-sub" data-i18n="archhero.sub">Bills and recorded votes of past legislatures, as they stood at the last sitting. <b>Nothing changes afterwards.</b></p>
+    </div>
+    <ol class="regles-liste" id="archivesListe"></ol>
   </section>
 
   <!-- COMPTE & ABONNEMENT -->
@@ -1052,6 +1068,7 @@ function goToFederal(evt){
     <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
     <a href="/votes" data-i18n="nav.votes">Votes</a>
     <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/archives" data-i18n="nav.archives">Archives</a>
     <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
     <a href="/sources" data-i18n="fil.bd">Site updates</a>
     <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>

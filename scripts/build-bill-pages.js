@@ -24,18 +24,56 @@ const couper = (s, n) => (s.length > n ? `${s.slice(0, n - 3).replace(/\s+\S*$/,
 
 export const slugProjet = (b) => (b.num != null && b.legislature ? `${b.num}-${b.legislature}` : null);
 
+// ARCHIVES (d'après DossierQuébec, 30 oct. 2026). L'unité d'archive est la LÉGISLATURE, pas la
+// session (scrapers/bills.js marque « mort » les projets d'une session close, ils restent dans
+// data/bills.json jusqu'à la fin de la législature). Chaque build recopie la législature EN DIRECT
+// dans data/archives/<législature>/ : bills.json (ce que le site affiche, data/site/bills.json, avec
+// la législature de chaque projet), bills-brut.json, les résumés (bills-resumes-fr/en.json et
+// resumes.json). Le jour où la 31e commence, la copie de la 30e reste telle quelle : ses pages
+// continuent d'être fabriquées ici, /projets-de-loi?archives=30 la lit (commun/dq.js, chargerArchive)
+// et /archives lui donne sa carte. Rien à faire à la main.
+const ARCHIVES = 'data/archives';
+const lire = (chemin, defaut) => (existsSync(chemin) ? JSON.parse(readFileSync(chemin, 'utf8')) : defaut);
+const ecrireSiChange = (chemin, contenu) => {
+  if (!existsSync(chemin) || readFileSync(chemin, 'utf8') !== contenu) writeFileSync(chemin, contenu, 'utf8');
+};
+const copier = (de, vers) => { if (existsSync(de)) ecrireSiChange(vers, readFileSync(de, 'utf8')); };
+
+function archiverLegislature(bills) {
+  const leg = Math.max(0, ...bills.map((b) => Number(b.legislature) || 0));
+  if (!leg) return null;
+  const dossier = `${ARCHIVES}/${leg}`;
+  mkdirSync(dossier, { recursive: true });
+  copier('data/bills.json', `${dossier}/bills-brut.json`);
+  // data/site/bills.json ne porte pas la législature : on l'ajoute, l'archive doit se suffire.
+  const legParId = new Map(bills.map((b) => [b.id, b.legislature]));
+  const site = lire('data/site/bills.json', []).map((b) => ({ ...b, legislature: legParId.get(b.id) ?? leg }));
+  ecrireSiChange(`${dossier}/bills.json`, JSON.stringify(site));
+  copier('data/bills-resumes-fr.json', `${dossier}/bills-resumes-fr.json`);
+  copier('data/bills-resumes-en.json', `${dossier}/bills-resumes-en.json`);
+  copier('data/resumes.json', `${dossier}/resumes.json`);
+  const toutes = readdirSync(ARCHIVES).filter((d) => /^\d+$/.test(d) && existsSync(`${ARCHIVES}/${d}/bills.json`)).map(Number).sort((a, b) => a - b);
+  ecrireSiChange(`${ARCHIVES}/index.json`, JSON.stringify({ enDirect: leg, legislatures: toutes }));
+  return { leg, anciennes: toutes.filter((l) => l !== leg) };
+}
+
 export function construirePagesProjets() {
   const modele = readFileSync(`${DOSSIER}.html`, 'utf8');
-  const { bills } = JSON.parse(readFileSync('data/bills.json', 'utf8'));
-  const R = existsSync('data/resumes.json') ? JSON.parse(readFileSync('data/resumes.json', 'utf8')) : {};
-  const resumes = R.resumes || R;
+  const enDirect = JSON.parse(readFileSync('data/bills.json', 'utf8')).bills;
+  const archive = archiverLegislature(enDirect);
+  const resumesDe = (chemin) => { const R = lire(chemin, {}); return R.resumes || R; };
+  // Les projets en direct d'abord, puis ceux des législatures archivées, chacun avec ses résumés.
+  const lots = [{ bills: enDirect, resumes: resumesDe('data/resumes.json') }];
+  for (const l of archive?.anciennes ?? []) {
+    lots.push({ bills: lire(`${ARCHIVES}/${l}/bills-brut.json`, { bills: [] }).bills, resumes: resumesDe(`${ARCHIVES}/${l}/resumes.json`) });
+  }
 
   if (existsSync(DOSSIER)) for (const f of readdirSync(DOSSIER)) if (f.endsWith('.html')) rmSync(`${DOSSIER}/${f}`);
   mkdirSync(DOSSIER, { recursive: true });
 
   const vues = new Set();
   const adresses = [];
-  for (const b of bills) {
+  for (const { bills, resumes } of lots) for (const b of bills) {
     const slug = slugProjet(b);
     if (!slug || vues.has(slug)) continue;
     vues.add(slug);
@@ -94,5 +132,5 @@ ${puces.length ? `<ul>${puces.map((p) => `<li>${echapper(p)}</li>`).join('')}</u
   const entrees = adresses.map((a) => `  <url>\n    <loc>${a.url}</loc>\n${a.lastmod ? `    <lastmod>${a.lastmod}</lastmod>\n` : ''}    <changefreq>weekly</changefreq>\n    <priority>0.6</priority>\n  </url>`).join('\n');
   const nouveau = plan.replace(/\n<\/urlset>/, `\n${entrees}\n</urlset>`);
   if (nouveau !== plan) writeFileSync('sitemap.xml', nouveau, 'utf8');
-  console.log(`✓ ${adresses.length} pages de projets de loi (/${DOSSIER}/numéro-législature), au sitemap.`);
+  console.log(`✓ ${adresses.length} pages de projets de loi (/${DOSSIER}/numéro-législature), au sitemap${archive?.anciennes.length ? ` — dont les archives : ${archive.anciennes.map((l) => `${l}e`).join(', ')}` : ''}.`);
 }

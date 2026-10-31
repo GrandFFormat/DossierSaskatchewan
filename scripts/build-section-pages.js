@@ -228,6 +228,15 @@ const PAGES = [
     fil: 'Votes', cle: 'fil.votes', frequence: 'daily', priorite: '0.9',
   },
   {
+    // Les législatures terminées (d'après DossierQuébec, 30 oct. 2026) : leurs projets de loi et
+    // leurs votes. La liste se dessine depuis data/archives/index.json (commun/dq.js, renderArchives).
+    fichier: 'archives.html', vue: 'archives', onglet: 'archives', url: '/archives',
+    donnees: [],
+    title: 'Legislative Assembly archives — DossierSaskatchewan',
+    desc: "The past legislatures of Saskatchewan's Legislative Assembly: their bills and their recorded votes, as they stood at the last sitting.",
+    fil: 'Archives', cle: 'fil.archives', frequence: 'monthly', priorite: '0.6',
+  },
+  {
     fichier: 'promesses.html', vue: 'promesses', onglet: null, url: '/promesses',
     donnees: ['promises', 'deputesRaw'],
     title: 'Election promises — DossierSaskatchewan',

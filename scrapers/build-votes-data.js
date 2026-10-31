@@ -38,6 +38,7 @@ import { join } from 'node:path';
 const PRESENCES_PATH = 'data/presences-par-legislature.json';
 
 const VOTES_PATH = 'data/votes.json';
+const ARCHIVES_DIR = 'data/archives';
 const BILLS_PATH = 'data/bills.json';
 const NOMINAL_DIR = 'data/votes';
 const HTML_PATH = 'gabarit.html';   // le MODÈLE, jamais servi : les pages en sont tirées
@@ -95,15 +96,15 @@ function calculerPresences(out) {
 // Un fichier par vote. Les votes passés ne changent jamais : le rafraîchissement
 // quotidien n'ajoute que les nouveaux, au lieu de réécrire un bloc d'un mégaoctet
 // dans six pages. On retire quand même les fichiers dont le vote a disparu du jeu.
-function ecrireNominal(out) {
-  mkdirSync(NOMINAL_DIR, { recursive: true });
+function ecrireNominal(out, dossier = NOMINAL_DIR) {
+  mkdirSync(dossier, { recursive: true });
   const attendus = new Set();
   let ecrits = 0;
   for (const v of out) {
     const nom = `${v.id}.json`;
     attendus.add(nom);
     const contenu = JSON.stringify(v.nominal);
-    const chemin = join(NOMINAL_DIR, nom);
+    const chemin = join(dossier, nom);
     // Ne réécrire que ce qui change : garde l'horodatage des fichiers stables
     // et le diff quotidien minuscule.
     if (existsSync(chemin) && readFileSync(chemin, 'utf-8') === contenu) continue;
@@ -111,8 +112,8 @@ function ecrireNominal(out) {
     ecrits++;
   }
   let retires = 0;
-  for (const f of readdirSync(NOMINAL_DIR)) {
-    if (f.endsWith('.json') && !attendus.has(f)) { rmSync(join(NOMINAL_DIR, f)); retires++; }
+  for (const f of readdirSync(dossier)) {
+    if (f.endsWith('.json') && !attendus.has(f)) { rmSync(join(dossier, f)); retires++; }
   }
   return { ecrits, retires, total: attendus.size };
 }
@@ -220,6 +221,21 @@ function main() {
   // Ce qui part dans la page : tout sauf le nominatif.
   const allege = out.map(({ nominal, ...reste }) => reste);
   const json = JSON.stringify(allege);
+
+  // ARCHIVE DES VOTES (d'après DossierQuébec, 30 oct. 2026). Comme les projets de loi
+  // (scripts/build-bill-pages.js), la législature en direct est recopiée dans
+  // data/archives/<législature>/ : votes.json (la liste allégée) et votes/<id>.json (le nominatif).
+  // Le jour où votes.js passe à la 31e, la copie de la 30e reste telle quelle et /votes?archives=30
+  // la lit. Un dossier nominatif par archive : les identifiants (session-numéro) ne sont uniques
+  // que dans leur législature.
+  if (legislature) {
+    const dossierArchive = `${ARCHIVES_DIR}/${legislature}`;
+    mkdirSync(dossierArchive, { recursive: true });
+    const cheminListe = `${dossierArchive}/votes.json`;
+    if (!existsSync(cheminListe) || readFileSync(cheminListe, 'utf-8') !== json) writeFileSync(cheminListe, json);
+    const arch = ecrireNominal(out, `${dossierArchive}/votes`);
+    console.log(`  archive : ${cheminListe} et ${arch.total} fichiers nominatifs (${arch.ecrits} écrit(s))`);
+  }
   const block = `${START_MARKER}\nconst votes = ${json};\n`
     + `/* Le détail nominatif de chaque vote vit dans ${NOMINAL_DIR}/<id>.json et se charge quand\n`
     + `   on déplie une carte. Ici ne restent que les agrégats qui en dérivent : « divise » par\n`

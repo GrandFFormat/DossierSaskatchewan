@@ -3,6 +3,18 @@
     "date": "2026-10-30",
     "volet": "site",
     "fr": {
+      "titre": "Nouvel onglet Archives",
+      "texte": "Les projets de loi, leurs résumés et les votes nominatifs de chaque législature sont gardés tels quels. À l’ouverture de la 31e législature, la 30e aura sa carte dans l’onglet Archives, avec ses projets de loi et ses votes. Les projets parrainés d’une législature terminée mènent à leur liste."
+    },
+    "en": {
+      "titre": "New Archives tab",
+      "texte": "Each legislature’s bills, summaries and recorded votes are kept as they stand. When the 31st Legislature opens, the 30th will get its own card in the Archives tab, with its bills and its votes. Bills sponsored in a past legislature link to their list."
+    }
+  },
+  {
+    "date": "2026-10-30",
+    "volet": "site",
+    "fr": {
       "titre": "Élu·e·s : présence et projets de loi par législature",
       "texte": "Les fiches des ministres et des député·e·s montrent la 30e législature à part : présence aux votes nominatifs, projets de loi parrainés. Le nombre de projets mène à la liste de ces projets. La présence de chaque législature est désormais gardée ; les prochaines s’afficheront à côté, en gris."
     },
