@@ -34,7 +34,7 @@ const src = readFileSync(SRC, 'utf8').replace(/\r\n/g, '\n');
 const JEUX = [
   { marqueur: 'MINISTERS_DATA', consts: ['ministers'] },
   { marqueur: 'BILLS_DATA', consts: ['bills'] },
-  { marqueur: 'VOTES_DATA', consts: ['votes', 'presences'] },
+  { marqueur: 'VOTES_DATA', consts: ['votes', 'presences', 'historiqueLeg'] },
   { marqueur: 'DEPUTES_DATA', consts: ['deputesRaw'] },
   { marqueur: 'DEPUTE_EMAILS', consts: ['deputeEmails'] },
   { marqueur: 'NEWS_DATA', consts: ['newsItems'] },
@@ -208,7 +208,7 @@ const PAGES = [
   },
   {
     fichier: 'ministres.html', vue: 'ministres', onglet: 'ministres', url: '/ministres',
-    donnees: ['ministers', 'deputesRaw', 'deputeEmails', 'presences', 'billsParrains'],
+    donnees: ['ministers', 'deputesRaw', 'deputeEmails', 'presences', 'historiqueLeg', 'billsParrains'],
     title: 'Saskatchewan ministers and MLAs — DossierSaskatchewan',
     desc: 'The ministers of the Government of Saskatchewan and the 61 MLAs of the Legislative Assembly: roles, constituencies, voting records and official contact details.',
     fil: 'Ministers and MLAs', cle: 'fil.ministres', frequence: 'weekly', priorite: '0.8',

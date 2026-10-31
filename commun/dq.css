@@ -2028,3 +2028,28 @@
 .dep-actions .follow-btn{white-space:nowrap;}
 .dep-row{grid-template-columns:1fr 280px auto;}
 @media (max-width:760px){ .dep-row{grid-template-columns:1fr;} .dep-actions{justify-content:flex-start;} }
+
+/* Une pastille par législature sur les cartes de ministres et d'élu·e·s (30 oct. 2026). */
+.leg-ruban{display:flex; gap:8px; align-items:stretch;}
+.leg-bloc{flex:1; min-width:0; border:2px solid var(--ink); padding:6px 9px; font-size:12.5px; line-height:1.45; font-weight:600;}
+.leg-bloc.leg-passe{border-color:var(--line-soft); color:var(--slate);}
+.leg-bloc.leg-cache{display:none;}
+.leg-num{font-family:'Archivo',sans-serif; font-weight:900; font-size:14px;}
+.leg-fleche{flex:none; border:2px solid var(--ink); background:var(--paper); font-weight:900; padding:0 7px; cursor:pointer;}
+.leg-fleche:hover{background:var(--yellow);}
+.leg-titre{font-size:12px; margin-bottom:4px;}
+.leg-pres{white-space:nowrap; margin:2px 0;}
+/* Sans rectangle (Martin, 30 oct. 2026) : un simple filet sépare les législatures. */
+.leg-bloc, .leg-bloc.leg-passe{border:0; padding:0 0 0 10px; border-left:2px solid var(--ink);}
+.leg-bloc.leg-passe{border-left-color:var(--line-soft);}
+.leg-num{font-size:13px;}
+/* Liste des député·e·s : une législature par segment, sur une ligne. */
+.leg-ligne-passe{color:var(--slate);}
+.leg-ligne-sep{color:var(--line-soft); font-weight:400;}
+.leg-seg.leg-cache{display:none;}
+.leg-seg.leg-premier > .leg-ligne-sep{display:none;}
+.leg-fleche-ligne{padding:0 5px; font-size:11px; line-height:1.3; margin-left:4px;}
+.leg-ruban.leg-ruban-ligne{display:inline; gap:0;}
+
+.leg-lien{color:inherit; text-decoration:underline; text-underline-offset:2px;}
+.leg-lien:hover{color:var(--gold);}
