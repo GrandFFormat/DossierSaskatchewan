@@ -2060,3 +2060,20 @@
 .archives-note a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}
 .archives-liens{line-height:1.9;}
 .archives-liens a, #archivesListe a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}
+
+/* « Qui a voté… » dans la carte d'un projet de loi (caseVotes, d'après DossierQuébec, 30 oct. 2026) :
+   l'allure de « Lois et règlements touchés », puis les cartes de /votes, déjà ouvertes. */
+.bill-votes{cursor:pointer; margin-top:12px; border:1px solid var(--line-soft); padding:12px 14px; background:var(--paper-2);}
+.bill-votes:hover{border-color:var(--ink);}
+.bill-votes summary{list-style:none; cursor:pointer; font-family:'Archivo Narrow',sans-serif; font-weight:700; font-size:12.5px; text-transform:uppercase; letter-spacing:0.04em;}
+.bill-votes summary::-webkit-details-marker{display:none;}
+.bill-votes summary::before{content:"+"; display:inline-block; width:1.1em; font-size:15px; font-weight:800; color:var(--gold);}
+.bill-votes[open] summary::before{content:"\2212";}
+.bill-votes-note{font-size:13px; line-height:1.5; margin:8px 0;}
+.bill-votes-ancien{opacity:.55;}
+.bill-votes-mail{text-decoration:none; font-weight:700;}
+.bill-votes-copie{background:none; border:0; padding:0 2px; margin:0; font:inherit; font-weight:700; cursor:pointer; color:inherit;}
+.bill-votes-copie:hover{color:var(--gold, #b8860b);}
+.bill-votes .bill-vote-card{margin:12px 0 0; cursor:default;}
+.bill-votes .bill-vote-card .vc-head{cursor:default;}
+.bill-votes .bill-vote-card .vc-nrow .bill-votes-mail, .bill-votes .bill-vote-card .vc-nrow .bill-votes-copie{margin-left:4px;}

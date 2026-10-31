@@ -2954,7 +2954,69 @@ async function remplirResume(el){
   corps.innerHTML = texte
     || `<p><em>${isEn ? 'Summary not available for this bill.' : 'Résumé non disponible pour ce projet de loi.'}</em></p>`;
   if(texte) el.dataset.rempli = '1';
+  remplirVotesProjet(corps);
 }
+
+// LES VOTES D'UN PROJET DE LOI (d'après DossierQuébec, 30 oct. 2026). Le résumé apporte la tête de
+// chaque carte de vote (scrapers/build-frontend-data.js, caseVotes) ; les noms arrivent à l'ouverture
+// de la case « Qui a voté… », depuis data/archives/<législature>/votes/<id>.json, et se dessinent
+// comme sur /votes. Sans abstention consignée en Saskatchewan : deux colonnes.
+const _nomsLeg = new Map();
+function nomsDeLaLegislature(leg){
+  if(!_nomsLeg.has(leg)) _nomsLeg.set(leg, fetch(`/data/archives/${leg}/noms.json`).then(r => r.ok ? r.json() : {}).catch(() => ({})));
+  return _nomsLeg.get(leg);
+}
+let _courrielsP = null;
+function courrielsDeputes(){
+  if(Object.keys(deputeEmails).length) return Promise.resolve(deputeEmails);
+  if(!_courrielsP) _courrielsP = fetch('/data/site/deputeEmails.json').then(r => r.ok ? r.json() : {}).catch(() => ({}));
+  return _courrielsP;
+}
+function remplirVotesProjet(corps){
+  for(const d of corps.querySelectorAll('details.bill-votes[data-objet]')){
+    d.addEventListener('toggle', () => { if(d.open) remplirCartesVotes(d); });
+    if(d.open) remplirCartesVotes(d);
+  }
+}
+async function remplirCartesVotes(d){
+  const isEn = currentLang === 'en';
+  const objet = d.dataset.objet || '';
+  for(const det of d.querySelectorAll('.vc-detail[data-vote]:not([data-rempli])')){
+    det.dataset.rempli = '1';
+    const colonnes = det.querySelector('.vc-ncols');
+    colonnes.innerHTML = `<div class="vc-empty">${isEn ? 'Loading the names…' : 'Chargement des noms…'}</div>`;
+    const leg = det.dataset.leg;
+    const [nominal, noms, mails] = await Promise.all([
+      fetch(`/data/archives/${leg}/votes/${encodeURIComponent(det.dataset.vote)}.json`).then(r => r.ok ? r.json() : null).catch(() => null),
+      nomsDeLaLegislature(leg), courrielsDeputes(),
+    ]);
+    if(!nominal){
+      delete det.dataset.rempli;
+      colonnes.innerHTML = `<div class="vc-empty">${isEn ? 'Could not load the names. Open the official record below.' : 'Les noms n\'ont pas pu être chargés. Le procès-verbal officiel est en dessous.'}</div>`;
+      continue;
+    }
+    const totals = { pour: (nominal.pour || []).length, contre: (nominal.contre || []).length, abstentions: null };
+    det.querySelector('.vc-pgrid').innerHTML = contenuNominal({ totals }, nominal, isEn).partyBoxes;
+    const heads = isEn ? ['Yea', 'Nay'] : ['Pour', 'Contre'];
+    colonnes.innerHTML = ['pour', 'contre'].map((g, i) => {
+      const lignes = (nominal[g] || []).map(([id, party]) => {
+        const dep = deputeById.get(id);
+        const nom = dep ? dep.name : (noms[id] || ('#' + id));
+        const courriel = dep ? (mails[norm(dep.name)] || null) : null;
+        const outils = courriel ? ` <a class="bill-votes-mail" href="mailto:${echapperTexte(courriel)}?subject=${objet}" aria-label="${isEn ? 'Email' : 'Écrire à'} ${echapperTexte(nom)}">✉</a><button type="button" class="bill-votes-copie" onclick="event.stopPropagation(); copierCourriel(this, '${echapperTexte(courriel)}')" title="${isEn ? 'Copy the address' : 'Copier l’adresse'}" aria-label="${isEn ? 'Copy the address of' : 'Copier l’adresse de'} ${echapperTexte(nom)}">⧉</button>` : '';
+        return `<div class="vc-nrow${dep ? '' : ' bill-votes-ancien'}"><span class="vc-chip" style="background:${partyColors[party] || '#999'}"></span>${echapperTexte(nom)}${outils}</div>`;
+      }).join('');
+      return `<div class="vc-ncol"><div class="vc-nhead ${['pour', 'contre'][i]}">${heads[i]} — ${totals[g]}</div><div class="vc-nbody">${lignes || `<div class="vc-empty">${isEn ? 'None' : 'Personne'}</div>`}</div></div>`;
+    }).join('');
+  }
+}
+// Le ⧉ à côté du ✉ : copie l'adresse de l'élu·e, à coller dans n'importe quel courriel.
+function copierCourriel(bouton, adresse){
+  const fait = () => { const avant = bouton.textContent; bouton.textContent = '✓'; setTimeout(() => { bouton.textContent = avant; }, 1500); };
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(adresse).then(fait).catch(() => window.prompt('', adresse));
+  else window.prompt('', adresse);
+}
+window.copierCourriel = copierCourriel;
 
 function toggleBillSummary(domId, evt){
   if(evt) evt.stopPropagation();
@@ -2965,6 +3027,8 @@ function toggleBillSummary(domId, evt){
     if(!evt.target.closest('summary') && !evt.target.closest('a')) lois.open = !lois.open;
     return;
   }
+  // Même chose pour la case « Qui a voté » : un clic dedans (nom, ✉, liste) ne ferme pas la carte.
+  if(evt && evt.target && evt.target.closest && evt.target.closest('.bill-votes')) return;
   const el = document.getElementById(domId);
   const hint = document.getElementById('hint-'+domId);
   const willOpen = !el.classList.contains('open');

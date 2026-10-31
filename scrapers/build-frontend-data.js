@@ -147,6 +147,9 @@ function main() {
     nbLois: Array.isArray(b.loisTouchees) ? b.loisTouchees.length : null,
     omnibus: Boolean(b.omnibus),
     _lois: Array.isArray(b.loisTouchees) ? b.loisTouchees : [],
+    // Pour rattacher les votes nominaux (caseVotes) : législature et session de dépôt.
+    _leg: b.legislature,
+    _session: b.introSession,
   });
   });
 
@@ -166,10 +169,48 @@ function main() {
   // français en anglais : ce sont les titres officiels, il n'en existe pas d'autre ici.
   const listeLois = (b, en) => b._lois.length < 2 ? '' :
     `<details class="bill-lois"><summary>${en ? `Laws and regulations affected (${b._lois.length}) — official French titles` : `Lois et règlements touchés (${b._lois.length})`}</summary><ul>${b._lois.map((l) => `<li>${echapper(l)}</li>`).join('')}</ul></details>`;
+  // LES VOTES NOMINAUX D'UN PROJET (d'après DossierQuébec, 30 oct. 2026) : une case « Qui a voté… »
+  // sous le résumé, une carte par vote du plus ancien au plus récent, dessinée comme sur /votes.
+  // Rapprochement : numéro, législature et session (data/votes.json, lu dans les procès-verbaux).
+  // Seules la tête et la barre sont ici ; commun/dq.js (remplirVotesProjet) tire les noms de
+  // data/archives/<législature>/votes/<id>.json à l'ouverture. Pas de vote, pas de case : la
+  // Saskatchewan n'a pas de fiche qui dirait comment une loi a passé de vive voix.
+  const votesNominaux = existsSync('data/votes.json') ? JSON.parse(readFileSync('data/votes.json', 'utf-8')).votes ?? [] : [];
+  const votesDuProjet = (b) => votesNominaux.filter((x) => x.billNum && String(x.billNum) === String(b.num)
+    && Number(x.legislature) === Number(b._leg) && Number(x.session) === Number(b._session))
+    .sort((x, y) => (x.date || '').localeCompare(y.date || '') || (Number(x.num) || 0) - (Number(y.num) || 0));
+  let avecCase = 0;
+  const caseVotes = (b, en) => {
+    const liste = votesDuProjet(b);
+    if (!liste.length) return '';
+    if (!en) avecCase++;
+    const titre = en ? 'Who voted for or against' : 'Qui a voté pour ou contre';
+    const objet = encodeURIComponent((en ? 'Bill ' : 'Projet de loi n° ') + b.num + ' — ' + (en ? (b.titleEn || b.title) : b.title));
+    const etapeDe = (v) => (en ? v.stage : (v.stageFr || v.stage)) || '';
+    const carte = (v) => {
+      const t = { pour: (v.pour || []).length, contre: (v.contre || []).length };
+      const total = t.pour + t.contre;
+      const seg = (g) => (total ? (t[g] / total * 100).toFixed(1) : 0);
+      const adopte = v.result ? v.result === 'adopte' : t.pour > t.contre;
+      const etape = etapeDe(v) || (en ? 'Recorded division' : 'Vote nominal');
+      return `<div class="vote-card bill-vote-card"><div class="vc-head"><span class="result-badge ${adopte ? 'adopte' : 'rejete'}">${adopte ? (en ? 'Passed' : 'Adopté') : (en ? 'Rejected' : 'Rejeté')}</span><div class="vc-head-main"><h3>${echapper(etape)}</h3><div class="vc-meta">${echapper(v.date)} · ${en ? 'Recorded division' : 'Vote nominal'}</div></div><div class="vc-counts"><span class="vcc pour"><b>${t.pour}</b> ${en ? 'yea' : 'pour'}</span><span class="vcc contre"><b>${t.contre}</b> ${en ? 'nay' : 'contre'}</span></div></div><div class="bar"><div class="seg pour" style="width:${seg('pour')}%"></div><div class="seg contre" style="width:${seg('contre')}%"></div></div><div class="vc-detail open" data-vote="${v.session}-${v.num}" data-leg="${v.legislature}"><div class="vc-pgrid"></div><div class="vc-ncols"></div><div class="vc-foot"><span class="vc-foot-note">${en ? 'The Assembly does not record abstentions: an MLA who does not vote is simply not listed — which can mean a mission, an illness, a scheduling conflict.' : 'L’Assemblée ne consigne pas d’abstention : qui ne vote pas n’est simplement pas nommé — mission, maladie, horaire.'}</span><a class="bill-more" href="${echapper(v.url)}" target="_blank" rel="noopener">${en ? 'Official minutes → legassembly.sk.ca' : 'Procès-verbal officiel → legassembly.sk.ca'}</a></div></div></div>`;
+    };
+    const n = liste.length;
+    // Le décompte du dernier vote dans le titre ; avec plusieurs votes, son étape le précède.
+    const dernier = liste[n - 1];
+    // Format de Martin (DQ, 30 oct. 2026) : « titre : pour / contre », puis, avec plusieurs votes,
+    // « (étape du dernier · N votes nominaux) ». Pas d'abstention consignée ici : deux nombres.
+    const chiffres = `${(dernier.pour || []).length} / ${(dernier.contre || []).length}`;
+    const suite = n > 1 ? ` (${etapeDe(dernier) ? etapeDe(dernier) + ' · ' : ''}${n} ${en ? 'recorded votes' : 'votes nominaux'})` : '';
+    return `<details class="bill-votes" data-objet="${objet}"><summary>${titre}${en ? ':' : ' :'} ${echapper(chiffres + suite)}</summary><p class="bill-votes-note">${en
+      ? 'Every recorded division on this bill, oldest first. ✉ opens your email app, with the bill’s name as subject; ⧉ copies the address, to paste in Gmail or elsewhere. A name in grey, without ✉: this person no longer sits in the Assembly.'
+      : 'Chaque vote nom par nom sur ce projet, du plus ancien au plus récent. ✉ ouvre votre logiciel de courriel, avec le nom du projet en objet ; ⧉ copie l’adresse, à coller dans Gmail ou ailleurs. Un nom en gris, sans ✉ : cette personne ne siège plus à l’Assemblée.'}</p>${liste.map(carte).join('')}</details>`;
+  };
   for (const b of bills) {
-    if (b.summary) resumes.fr[b.id] = b.summary + listeLois(b, false);
-    if (b.summaryEn) resumes.en[b.id] = b.summaryEn + listeLois(b, true);
+    if (b.summary) resumes.fr[b.id] = b.summary + listeLois(b, false) + caseVotes(b, false);
+    if (b.summaryEn) resumes.en[b.id] = b.summaryEn + listeLois(b, true) + caseVotes(b, true);
   }
+  console.log(`  case des votes : ${avecCase} projet(s)`);
   for (const [langue, map] of Object.entries(resumes)) {
     const chemin = `data/bills-resumes-${langue}.json`;
     const contenu = JSON.stringify(map);
@@ -179,7 +220,7 @@ function main() {
   }
 
   // Ce qui part dans la page : tout sauf les résumés.
-  const allege = bills.map(({ summary, summaryEn, _lois, ...reste }) => reste);
+  const allege = bills.map(({ summary, summaryEn, _lois, _leg, _session, ...reste }) => reste);
 
   const html = readFileSync(HTML_PATH, 'utf-8');
   const startIdx = html.indexOf(START_MARKER);
