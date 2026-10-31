@@ -167,9 +167,9 @@
     <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
     <a href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
     <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
-    <a href="/votes" data-view="votes"><span class="n">04</span><span data-i18n="nav.votes">Votes</span></a>
-    <a href="/archives" data-view="archives"><span class="n">05</span><span data-i18n="nav.archives">Archives</span></a>
-    <a href="/lexique" data-view="lexique"><span class="n">06</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <!-- Votes a quitté la barre le 30 oct. 2026 (comme DQ) : lié du pied de page et de /projets-de-loi. -->
+    <a href="/archives" data-view="archives"><span class="n">04</span><span data-i18n="nav.archives">Archives</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">05</span><span data-i18n="nav.lexique">Glossary</span></a>
     <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
   </nav>
   <div class="header-ctrls">
@@ -259,6 +259,7 @@ function goToFederal(evt){
       <ol class="maj-liste" id="journalListe" aria-live="polite"></ol>
     <div class="prerendu" data-prerendu="journal">
       <ul aria-label="Site updates">
+        <li><span class="pr-meta">October 30, 2026 —</span> <b>The Votes tab leaves the top bar</b> Votes are now read in each bill’s card. The full list of recorded votes, motions included, is still linked from the footer and the bills page.</li>
         <li><span class="pr-meta">October 30, 2026 —</span> <b>Votes inside each bill’s card</b> Under a bill’s summary, the “Who voted for or against” box shows every recorded division on that bill, oldest first, with the latest tally in its title. Names appear when you open it, with ✉ to write to each MLA.</li>
         <li><span class="pr-meta">October 30, 2026 —</span> <b>New Archives tab</b> Each legislature’s bills, summaries and recorded votes are kept as they stand. When the 31st Legislature opens, the 30th will get its own card in the Archives tab, with its bills and its votes. Bills sponsored in a past legislature link to their list.</li>
         <li><span class="pr-meta">October 30, 2026 —</span> <b>MLAs: attendance and bills by legislature</b> Minister and MLA cards now show the 30th Legislature on its own: recorded-vote attendance and bills sponsored. The bill count links to the list of those bills. Attendance is now kept for each legislature; later ones will appear alongside, in grey.</li>

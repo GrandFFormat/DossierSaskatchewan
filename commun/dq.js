@@ -181,7 +181,8 @@ function renderArchives(){
 const translations = {
   fr: {
     'nav.close':"Fermer",'nav.villes':"Villes",'nav.apercu':"Aperçu",'nav.ministres':"Ministres",'nav.projets':"Projets de loi",
-    'nav.votes':"Votes",'nav.archives':"Archives",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député·e",
+    'projets.tousvotes':"Tous les votes nominaux, motions comprises →",
+  'nav.votes':"Votes",'nav.archives':"Archives",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député·e",
     'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Ministres au Conseil",'stat.projets':"Projets de loi suivis",'stat.votes':"Votes nominatifs",
     'cal.status':"● L'Assemblée siège depuis le 27 octobre 2026 · 3e session de la 30e législature",
@@ -463,7 +464,8 @@ const translations = {
   },
   en: {
     'nav.close':"Close",'nav.villes':"Cities",'nav.apercu':"Overview",'nav.ministres':"Ministers",'nav.projets':"Bills",
-    'nav.votes':"Votes",'nav.archives':"Archives",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MLA",
+    'projets.tousvotes':"All recorded votes, motions included →",
+  'nav.votes':"Votes",'nav.archives':"Archives",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MLA",
     'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"Ministers in Cabinet",'stat.projets':"Bills tracked",'stat.votes':"Recorded divisions",
     'h.composition':"Composition — 61 seats",

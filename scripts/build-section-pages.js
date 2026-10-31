@@ -221,7 +221,9 @@ const PAGES = [
     fil: 'Bills', cle: 'fil.projets', frequence: 'daily', priorite: '0.9',
   },
   {
-    fichier: 'votes.html', vue: 'votes', onglet: 'votes', url: '/votes',
+    // Plus d'onglet depuis le 30 oct. 2026 (comme DQ) : la page reste en ligne et indexée,
+    // liée du pied de page et de /projets-de-loi.
+    fichier: 'votes.html', vue: 'votes', onglet: null, url: '/votes',
     donnees: ['votes', 'deputesRaw', 'billsTitres'],
     title: 'Recorded votes, MLA by MLA — DossierSaskatchewan',
     desc: "Every recorded division in Saskatchewan's Legislative Assembly: who voted for and who voted against, MLA by MLA, read from the official minutes, with no spin.",
