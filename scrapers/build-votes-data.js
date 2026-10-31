@@ -234,6 +234,13 @@ function main() {
     const cheminListe = `${dossierArchive}/votes.json`;
     if (!existsSync(cheminListe) || readFileSync(cheminListe, 'utf-8') !== json) writeFileSync(cheminListe, json);
     const arch = ecrireNominal(out, `${dossierArchive}/votes`);
+    // noms.json : identifiant → nom, pour les cases « Qui a voté… » des projets de loi (commun/dq.js,
+    // remplirVotesProjet) quand la personne ne siège plus.
+    const noms = {};
+    for (const v of votes) for (const camp of ['pour', 'contre', 'abstentions']) for (const p of v[camp] || []) if (p.assnatId && p.name) noms[p.assnatId] = p.name;
+    const cheminNoms = `${dossierArchive}/noms.json`;
+    const jsonNoms = JSON.stringify(noms);
+    if (!existsSync(cheminNoms) || readFileSync(cheminNoms, 'utf-8') !== jsonNoms) writeFileSync(cheminNoms, jsonNoms);
     console.log(`  archive : ${cheminListe} et ${arch.total} fichiers nominatifs (${arch.ecrits} écrit(s))`);
   }
   const block = `${START_MARKER}\nconst votes = ${json};\n`

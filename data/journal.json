@@ -3,6 +3,18 @@
     "date": "2026-10-30",
     "volet": "site",
     "fr": {
+      "titre": "Les votes dans la carte de chaque projet de loi",
+      "texte": "Sous le résumé d’un projet de loi, la case « Qui a voté pour ou contre » montre chaque vote nominal sur ce projet, du plus ancien au plus récent, avec le décompte du dernier vote dans son titre. Les noms s’affichent à l’ouverture, avec ✉ pour écrire à chaque député·e."
+    },
+    "en": {
+      "titre": "Votes inside each bill’s card",
+      "texte": "Under a bill’s summary, the “Who voted for or against” box shows every recorded division on that bill, oldest first, with the latest tally in its title. Names appear when you open it, with ✉ to write to each MLA."
+    }
+  },
+  {
+    "date": "2026-10-30",
+    "volet": "site",
+    "fr": {
       "titre": "Nouvel onglet Archives",
       "texte": "Les projets de loi, leurs résumés et les votes nominatifs de chaque législature sont gardés tels quels. À l’ouverture de la 31e législature, la 30e aura sa carte dans l’onglet Archives, avec ses projets de loi et ses votes. Les projets parrainés d’une législature terminée mènent à leur liste."
     },
