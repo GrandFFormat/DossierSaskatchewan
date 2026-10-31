@@ -2053,3 +2053,10 @@
 
 .leg-lien{color:inherit; text-decoration:underline; text-underline-offset:2px;}
 .leg-lien:hover{color:var(--gold);}
+
+/* Archives (d'après DossierQuébec, 30 oct. 2026) : la bande au-dessus des projets ou des votes d'une
+   législature terminée, et les liens de la page /archives. */
+.archives-note{margin:18px 0 0; font-size:15px; line-height:1.5; color:var(--ink);}
+.archives-note a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}
+.archives-liens{line-height:1.9;}
+.archives-liens a, #archivesListe a{color:var(--ink); font-weight:800; text-decoration:underline; text-underline-offset:3px;}

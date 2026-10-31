@@ -87,11 +87,101 @@ async function chargerDonnees(){
   }
 }
 
+// ARCHIVES (d'après DossierQuébec, 30 oct. 2026). La législature est la seule unité d'archive (pas la
+// session : scrapers/bills.js marque déjà « mort » les projets d'une session close). Chaque build
+// recopie la législature EN DIRECT dans data/archives/<n>/ (scripts/build-bill-pages.js pour les
+// projets et leurs résumés, scrapers/build-votes-data.js pour les votes et leur nominatif). Tant que
+// l'archive EST la législature en direct (aujourd'hui : la 30e), rien ne change à l'écran. Ensuite,
+// /projets-de-loi?archives=30, /projets-de-loi/24-30 et /votes?archives=30 chargent l'archive, et la
+// page /archives a une carte par législature terminée.
+let archiveLeg = null;      // la législature archivée affichée, sinon null
+let archivesDispo = [];     // les législatures archivées, sauf celle en direct
+let legEnDirect = 0;        // la législature en direct, selon data/archives/index.json
+let votesBase = '/data/votes';   // où vit le nominatif des votes affichés (archive ou direct)
+async function chargerArchive(){
+  const surProjets = !!document.getElementById('billsList');
+  const surVotes = !!document.getElementById('votesList');
+  const page = location.pathname.match(/^\/projets-de-loi\/\d+-(\d+)/);
+  const demandee = Number(page ? page[1] : new URLSearchParams(location.search).get('archives')) || 0;
+  // L'index se lit partout (quelques octets) : la page Ministres en a besoin pour lier les
+  // « PL parrainés » d'une législature terminée (lienParrain).
+  try {
+    const idx = await fetch('/data/archives/index.json').then(r => r.ok ? r.json() : null);
+    legEnDirect = (idx && idx.enDirect) || Math.max(0, ...bills.map(b => Number(b.legislature) || 0));
+    archivesDispo = ((idx && idx.legislatures) || []).filter(l => l !== legEnDirect);
+  } catch (e) { /* sans index : pas d'archives, la page marche comme avant */ }
+  if(!demandee || !archivesDispo.includes(demandee) || (!surProjets && !surVotes)) return;
+  try {
+    // Les projets de l'archive : complets sur /projets-de-loi, pour leurs titres sur /votes.
+    const r = await fetch(`/data/archives/${demandee}/bills.json`);
+    if(!r.ok) throw new Error(r.status);
+    bills = await r.json();
+    archiveLeg = demandee;
+    if(surVotes){
+      const rv = await fetch(`/data/archives/${demandee}/votes.json`);
+      if(!rv.ok) throw new Error(rv.status);
+      votes = await rv.json();
+      voteById = new Map(votes.map(v => [v.id, v]));
+      votesBase = `/data/archives/${demandee}/votes`;
+    }
+  } catch (e) { console.error('archive non chargée :', e.message); }
+}
+// Une législature terminée : les projets non sanctionnés y sont morts, dissolution en cours ou non.
+const legislatureFinie = () => ASSEMBLY.dissolved || archiveLeg !== null;
+// « 30e législature » / « 30th Legislature ».
+function nomLegislature(l, isEn){
+  return isEn ? `${l}${l % 10 === 1 && l % 100 !== 11 ? 'st' : l % 10 === 2 && l % 100 !== 12 ? 'nd' : l % 10 === 3 && l % 100 !== 13 ? 'rd' : 'th'} Legislature` : `${l}<sup>e</sup> législature`;
+}
+// La bande « vous êtes dans les archives », au-dessus de la liste des projets ou des votes.
+function renderArchivesNote(){
+  const isEn = currentLang === 'en';
+  const lang = paramLangue(true);
+  for(const [tete, html] of [
+    [document.getElementById('billsResultHead'), isEn
+      ? `<b>Archives: ${nomLegislature(archiveLeg, true)}.</b> These bills belong to a legislature that has ended. <a href="/projets-de-loi${lang}">← Current bills</a>`
+      : `<b>Archives de la ${nomLegislature(archiveLeg, false)}.</b> Ces projets datent d'une législature terminée. <a href="/projets-de-loi${lang}">← Projets de loi en cours</a>`],
+    [document.querySelector('#view-votes .section-head'), isEn
+      ? `<b>Archives: ${nomLegislature(archiveLeg, true)}.</b> These votes belong to a legislature that has ended. <a href="/votes${lang}">← Current votes</a>`
+      : `<b>Archives de la ${nomLegislature(archiveLeg, false)}.</b> Ces votes datent d'une législature terminée. <a href="/votes${lang}">← Votes en cours</a>`],
+  ]){
+    if(!tete) continue;
+    let note = tete.parentNode.querySelector(':scope > .archives-note.archives-bande');
+    if(!archiveLeg){ if(note) note.remove(); continue; }
+    if(!note){
+      note = document.createElement('p');
+      note.className = 'archives-note archives-bande';
+      tete.before(note);
+    }
+    note.innerHTML = html;
+  }
+}
+// La page /archives : une carte par législature terminée, la plus récente d'abord. Avant la première
+// archive (la 30e), une ligne dit quand elle arrivera.
+function renderArchives(){
+  const liste = document.getElementById('archivesListe');
+  if(!liste) return;
+  const isEn = currentLang === 'en';
+  if(!archivesDispo.length){
+    const l = legEnDirect || 30;
+    liste.innerHTML = `<li class="regle"><p>${isEn
+      ? `The ${nomLegislature(l, true)} will be archived here when the ${l + 1}${(l + 1) % 10 === 1 && (l + 1) % 100 !== 11 ? 'st' : (l + 1) % 10 === 2 && (l + 1) % 100 !== 12 ? 'nd' : (l + 1) % 10 === 3 && (l + 1) % 100 !== 13 ? 'rd' : 'th'} opens.`
+      : `La ${nomLegislature(l, false)} sera archivée ici à l'ouverture de la ${l + 1}<sup>e</sup>.`}</p></li>`;
+    return;
+  }
+  const q = paramLangue(false);
+  liste.innerHTML = archivesDispo.slice().sort((a, b) => b - a).map(l => `
+      <li class="regle">
+        <h2 class="regle-titre"><span class="regle-no">${l}<sup>${isEn ? '' : 'e'}</sup></span><span>${isEn ? `The ${nomLegislature(l, true)}` : `La ${nomLegislature(l, false)}`}</span></h2>
+        <p class="archives-liens"><a href="/projets-de-loi?archives=${l}${q}">${isEn ? `Bills of the ${nomLegislature(l, true)}` : `Projets de loi de la ${nomLegislature(l, false)}`} →</a><br>
+        <a href="/votes?archives=${l}${q}">${isEn ? `Votes of the ${nomLegislature(l, true)}` : `Votes de la ${nomLegislature(l, false)}`} →</a></p>
+      </li>`).join('');
+}
+
 /* ---------------- I18N ---------------- */
 const translations = {
   fr: {
     'nav.close':"Fermer",'nav.villes':"Villes",'nav.apercu':"Aperçu",'nav.ministres':"Ministres",'nav.projets':"Projets de loi",
-    'nav.votes':"Votes",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député·e",
+    'nav.votes':"Votes",'nav.archives':"Archives",'nav.quoideneuf':"Quoi de neuf",'nav.compte':"Compte & à propos",'nav.trouve':"Trouvez votre député·e",
     'nav.lexique':"Lexique",'nav.personnes':"Qui gravite autour",'nav.petitions':"Pétitions",'nav.apropos':"D'où viennent ces données",
     'stat.ministres':"Ministres au Conseil",'stat.projets':"Projets de loi suivis",'stat.votes':"Votes nominatifs",
     'cal.status':"● L'Assemblée siège depuis le 27 octobre 2026 · 3e session de la 30e législature",
@@ -190,6 +280,11 @@ const translations = {
     'lobby.lire.4':"<b>Aucun lien n'est fait avec un projet de loi</b> tant qu'il ne se prouve pas dans les documents officiels.",
     'lobby.voir':"Voir qui est inscrit →",
     'fil.regles':"Les règles",
+    'fil.archives':"Archives",
+    'sujet.archives':"Archives de l'Assemblée législative",
+    'archhero.l1':"Les archives,",
+    'archhero.l2':"législature par législature.",
+    'archhero.sub':"Les projets de loi et les votes nominatifs des législatures terminées, tels qu'ils étaient à la dernière séance. <b>Rien n'y change après coup.</b>",
     'sujet.regles':"Les règles de sources de DossierSaskatchewan",
     'regleshero.l1':"Les règles,",
     'regleshero.l2':"noir sur blanc.",
@@ -368,7 +463,7 @@ const translations = {
   },
   en: {
     'nav.close':"Close",'nav.villes':"Cities",'nav.apercu':"Overview",'nav.ministres':"Ministers",'nav.projets':"Bills",
-    'nav.votes':"Votes",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MLA",
+    'nav.votes':"Votes",'nav.archives':"Archives",'nav.quoideneuf':"What's new",'nav.compte':"Account & about",'nav.trouve':"Find your MLA",
     'nav.lexique':"Glossary",'nav.personnes':"Who's involved",'nav.petitions':"Petitions",'nav.apropos':"Where this data comes from",
     'stat.ministres':"Ministers in Cabinet",'stat.projets':"Bills tracked",'stat.votes':"Recorded divisions",
     'h.composition':"Composition — 61 seats",
@@ -618,6 +713,11 @@ const translations = {
     'lobby.lire.4':"<b>No link is made to a bill</b> unless it can be proven in the official documents.",
     'lobby.voir':"See who is registered →",
     'fil.regles':"The rules",
+    'fil.archives':"Archives",
+    'sujet.archives':"Legislative Assembly archives",
+    'archhero.l1':"The archives,",
+    'archhero.l2':"legislature by legislature.",
+    'archhero.sub':"Bills and recorded votes of past legislatures, as they stood at the last sitting. <b>Nothing changes afterwards.</b>",
     'sujet.regles':"DossierSaskatchewan's sourcing rules",
     'regleshero.l1':"The rules,",
     'regleshero.l2':"in black and white.",
@@ -789,6 +889,7 @@ function traduireTextesFixes(){
 }
 function applyLanguage(){
   traduireTextesFixes();
+  renderArchives();
   // Re-render dynamic lists so their JS-generated buttons pick up the new language
   renderHemicycle();
   renderLegendePresence();
@@ -1062,7 +1163,7 @@ const loiVivante = (b) => !ASSEMBLY.dissolved && !['mort', 'rejete', 'retire'].i
 // gens veulent des explications. On laisse donc challenger les projets morts au feuilleton :
 // la demande est enregistrée, comptée, et elle dira à la rentrée ce que les gens voulaient
 // voir expliqué. Seul un projet SANCTIONNÉ (devenu loi) ne se challenge pas.
-const peutEtreChallenge = (b) => ASSEMBLY.dissolved
+const peutEtreChallenge = (b) => archiveLeg !== null ? false : ASSEMBLY.dissolved
   ? b.status !== 'sanctionne'
   : (b.status === 'encours' && loiVivante(b));
 
@@ -2587,7 +2688,7 @@ function statusLabel(s, step){
   // On distingue selon l'étape atteinte, sinon le libellé contredirait les chips
   // d'étapes affichées juste en dessous : 95 des 102 projets n'ont jamais dépassé
   // la présentation, 7 s'étaient rendus à l'adoption du principe.
-  if(ASSEMBLY.dissolved && s !== 'sanctionne'){
+  if(legislatureFinie() && s !== 'sanctionne'){
     // Appel sans étape (chips de filtre, qui portent sur un statut, pas un projet).
     if(step === undefined || step === null){
       return isEn ? 'Not passed' : 'Non adopté';
@@ -2613,7 +2714,7 @@ function statusLabel(s, step){
   return s==='sanctionne' ? 'Sanctionnée' : s==='laisse_de_cote' ? 'Sur la glace' : 'À l\'étude';
 }
 function statusClass(s){
-  if(ASSEMBLY.dissolved && s !== 'sanctionne') return 'status-mort';
+  if(legislatureFinie() && s !== 'sanctionne') return 'status-mort';
   if(s === 'mort' || s === 'rejete' || s === 'retire') return 'status-mort';
   return s==='sanctionne' ? 'status-sanctionne' : s==='laisse_de_cote' ? 'status-glace' : 'status-encours';
 }
@@ -2818,7 +2919,7 @@ const _resumes = new Map();
 function resumesProjets(langue){
   const cle = langue === 'en' ? 'en' : 'fr';
   if(_resumes.has(cle)) return _resumes.get(cle);
-  const p = fetch(`/data/bills-resumes-${cle}.json`)
+  const p = fetch(archiveLeg ? `/data/archives/${archiveLeg}/bills-resumes-${cle}.json` : `/data/bills-resumes-${cle}.json`)
     .then(r => r.ok ? r.json() : null)
     // Un échec ne doit pas rester collé : on l'oublie pour que la prochaine tentative réessaie.
     .catch(() => null)
@@ -3053,7 +3154,7 @@ function renderBillsQuickFilters(){
   const isEn = currentLang === 'en';
   const defs = [
     ['tous', isEn ? 'All' : 'Tous'],
-    ['encours', ASSEMBLY.dissolved ? (isEn ? 'Not passed' : 'Non adoptés') : (isEn ? 'Active' : 'En cours')],
+    ['encours', legislatureFinie() ? (isEn ? 'Not passed' : 'Non adoptés') : (isEn ? 'Active' : 'En cours')],
     ['adoptes', isEn ? 'Passed' : 'Adoptés'],
     ['challenges', isEn ? '🔥 Challenged' : '🔥 Challengés'],
     // Omnibus (25 sept. 2026) : un projet qui touche plusieurs lois sous un seul titre.
@@ -3067,6 +3168,7 @@ function renderBillsQuickFilters(){
 }
 
 function renderBills(keyword){
+  renderArchivesNote();
   if(!document.getElementById('billsList')) return;   // vue absente de cette page
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchBills')?.value || '');
   const kw = norm(keyword);
@@ -3088,7 +3190,7 @@ function renderBills(keyword){
   const numCherche = (kw.match(/^(?:pl|projet de loi)?\s*(?:n[°ºo]?\s*)?(\d+)$/) || [])[1] ?? null;
   const list = bills.filter(b => {
     const quickOk = (billsQuickFilter === 'tous'
-      || (billsQuickFilter === 'encours' && (ASSEMBLY.dissolved ? b.status !== 'sanctionne' : b.status === 'encours'))
+      || (billsQuickFilter === 'encours' && (legislatureFinie() ? b.status !== 'sanctionne' : b.status === 'encours'))
       || (billsQuickFilter === 'adoptes' && b.status === 'sanctionne'))
       && (!billsExtras.has('challenges') || ch.some(c => Number(c.bill_id) === b.id))
       && (!billsExtras.has('omnibus') || b.omnibus)
@@ -3155,7 +3257,7 @@ function renderBills(keyword){
   renderBillsQuickFilters();
   const titles = {
     tous:       isEn ? 'All bills' : 'Tous les projets',
-    encours:    ASSEMBLY.dissolved ? (isEn ? 'Bills that never passed' : 'Projets non adoptés') : (isEn ? 'Active bills' : 'En cours'),
+    encours:    legislatureFinie() ? (isEn ? 'Bills that never passed' : 'Projets non adoptés') : (isEn ? 'Active bills' : 'En cours'),
     adoptes:    isEn ? 'Passed bills' : 'Adoptés',
     challenges: isEn ? 'Challenged bills' : 'Challengés',
     omnibus:    isEn ? 'Omnibus bills — several laws under one title' : 'Projets omnibus — plusieurs lois sous un seul titre',
@@ -3697,11 +3799,11 @@ function ligneLegislatures(name, dep, att, isEn){
 // « 5 PL parrainés » mène à la liste de ces projets, archives comprises (Martin, 30 oct. 2026) :
 // /projets-de-loi?parrain=Nom, ou ?archives=43&parrain=Nom pour une législature terminée.
 function lienParrain(name, leg, cour, texte, nombre, isEn){
-  if(!nombre || leg !== cour) return texte;   // pas encore d'archives des projets de loi ici
+  if(!nombre || (leg !== cour && !archivesDispo.includes(Number(leg)))) return texte;   // législature sans archive : pas de lien
   const q = new URLSearchParams();
   if(leg !== cour) q.set('archives', leg);
   q.set('parrain', name.replace(/\s*\([^)]*\)\s*/g, ''));
-  if(isEn) q.set('lang', 'en');
+  if(!isEn) q.set('lang', 'fr');
   return `<a class="leg-lien" href="/projets-de-loi?${q}" onclick="event.stopPropagation()">${texte}</a>`;
 }
 function defilerLeg(bouton, sens, enBoucle){
@@ -3786,6 +3888,7 @@ let votesShown = 6; // on montre les 6 plus récents ; « Voir 6 de plus » ajou
 function loadMoreVotes(){ votesShown += 6; renderVotes(); }
 
 function renderVotes(keyword){
+  renderArchivesNote();
   if(!document.getElementById('votesList')) return;   // vue absente de cette page
   const isEn = currentLang === 'en';
   keyword = keyword !== undefined ? keyword : (document.getElementById('searchVotes')?.value || '');
@@ -3891,7 +3994,7 @@ function renderVotes(keyword){
 const _nominalCache = new Map();
 async function nominalDuVote(voteId){
   if(_nominalCache.has(voteId)) return _nominalCache.get(voteId);
-  const p = fetch(`/data/votes/${encodeURIComponent(voteId)}.json`)
+  const p = fetch(`${votesBase}/${encodeURIComponent(voteId)}.json`)
     .then(r => r.ok ? r.json() : null)
     // Un réseau qui tombe ne doit pas laisser la carte bloquée sur « chargement » pour
     // toujours : on oublie l'échec pour que la prochaine ouverture réessaie.
@@ -4001,8 +4104,8 @@ function toggleVoteCard(id, evt){
    sur une de ces adresses. */
 // /mon-dossier y est aussi : sans lui, la page se prenait pour l'accueil et portait son titre
 // anglais (arrivé avec l'anglais qui suit enfin la navigation, 24 sept. 2026).
-const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles', lobby:'/lobbyisme' };
-const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', archives:'/archives', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles', lobby:'/lobbyisme' };
+const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'archives':'archives', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
 // Titres FRANÇAIS seulement : le site est anglophone, l'anglais vient du <title> de la page
 // (voir syncTitle).
 const PAGE_META = {
@@ -4016,6 +4119,7 @@ const PAGE_META = {
   mondossier:{ fr:"Mon dossier — DossierSaskatchewan" },
   regles:    { fr:"Les règles de sources du site — DossierSaskatchewan" },
   lobby:     { fr:"Le registre des lobbyistes de la Saskatchewan — DossierSaskatchewan" },
+  archives:  { fr:"Archives de l'Assemblée législative de la Saskatchewan — DossierSaskatchewan" },
 };
 function viewFromPath(){
   const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
@@ -4379,6 +4483,7 @@ try{ localStorage.setItem('dq:dernier-volet', JSON.stringify({ ville: 'assemblee
   // D'abord les données : tout ce qui suit en dépend, et elles arrivent maintenant par le
   // réseau plutôt que d'être écrites dans la page.
   await chargerDonnees();
+  await chargerArchive();
   // L'encadré de l'abonnement : sa phrase « le suivi commencera avec la nouvelle législature »
   // tombe quand un projet de loi suivable existe VRAIMENT dans les données (loiVivante), pas à une
   // date : le 17 nov., dissolved=false ne suffit pas, il faut le premier projet de la 44e.
