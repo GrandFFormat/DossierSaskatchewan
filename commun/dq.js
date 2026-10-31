@@ -92,7 +92,7 @@ async function chargerDonnees(){
 // recopie la législature EN DIRECT dans data/archives/<n>/ (scripts/build-bill-pages.js pour les
 // projets et leurs résumés, scrapers/build-votes-data.js pour les votes et leur nominatif). Tant que
 // l'archive EST la législature en direct (aujourd'hui : la 30e), rien ne change à l'écran. Ensuite,
-// /projets-de-loi?archives=30, /projets-de-loi/24-30 et /votes?archives=30 chargent l'archive, et la
+// /projets-de-loi?archives=30, /projets-de-loi/24-30 et /votes?archives=30 chargent l'archive ; la
 // page /archives a une carte par législature terminée.
 let archiveLeg = null;      // la législature archivée affichée, sinon null
 let archivesDispo = [];     // les législatures archivées, sauf celle en direct
