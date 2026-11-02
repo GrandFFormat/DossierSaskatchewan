@@ -2676,6 +2676,190 @@
     }
    }
   },
+  "300061": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's law on mandatory testing of bodily substances to expand when and how testing orders can be made, including for deceased individuals.",
+    "puces": [
+     "Allows courts to issue testing orders for deceased source individuals, with sample collection by qualified health professionals",
+     "Lets applicants skip the usual notice period if giving notice is impossible or risks harm to their health or well-being",
+     "Permits peace officers to help apprehend, convey, and detain a source individual to enforce a testing order, including entering their home",
+     "Allows medical health officers or qualified health professionals to call on peace officers for assistance under the Act",
+     "Replaces references to 'department' with 'ministry' throughout the law",
+     "Increases offence penalties to fines up to $10,000 for individuals or $25,000 for corporations, up to 6 months imprisonment, or both",
+     "Adds new regulation-making powers covering testing orders for deceased individuals and peace officer assistance"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "57ac1ce4c9598243",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:15:46.953Z",
+    "jetons": {
+     "entree": 2953,
+     "sortie": 379
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie les règles entourant les ordonnances de test obligatoire de substances corporelles, y compris pour les personnes décédées.",
+    "puces": [
+     "Permet à un tribunal d'ordonner un test sur un échantillon corporel d'une personne source décédée, sous réserve des règlements",
+     "Permet de demander une ordonnance sans préavis si donner un préavis de trois jours est impossible, impraticable ou crée un risque pour la santé du demandeur",
+     "Autorise un agent de la paix à appréhender, transporter, détenir la personne source ou entrer dans sa résidence pour faire respecter une ordonnance",
+     "Permet à un agent de santé ou à un professionnel de la santé qualifié de demander l'aide d'un agent de la paix pour exercer ses responsabilités",
+     "Remplace le terme « department » par « ministry » dans la loi",
+     "Fixe les peines en cas d'infraction : amende maximale de 10 000 $ pour un individu, 25 000 $ pour une entreprise, ou emprisonnement maximal de 6 mois, ou les deux",
+     "Ajoute des pouvoirs réglementaires concernant les ordonnances pour personnes décédées et l'aide des agents de la paix"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "296db85cf21ea33f",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:15:52.350Z",
+    "jetons": {
+     "entree": 3258,
+     "sortie": 484
+    }
+   }
+  },
+  "300062": {
+   "en": {
+    "resumeExecutif": "Makes minor technical corrections to many Saskatchewan statutes, mainly replacing gendered pronouns with neutral wording and fixing outdated references.",
+    "puces": [
+     "Replaces 'he or she', 'his or her', and similar gendered terms with neutral language across many acts including the Police Act and Summary Offences Procedure Act",
+     "Updates references to the old 'Saskatchewan Insurance Act' to the current 'Insurance Act' in several laws",
+     "Fixes minor wording and typographical errors, such as 'White City-Qu'appelle' corrected to 'White City-Qu'Appelle'",
+     "Removes outdated cross-references, such as deleting a reference to the repealed Federal-Provincial Agreements Act",
+     "Adds 'chief marshal' to the list of positions covered under a provision of the Police Act, 1990",
+     "Repeals outdated or redundant sections, including one in the Reviewable Transactions Act and parts of two other acts",
+     "Updates the University of Saskatchewan Act's complaint process wording for convocation list errors"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "c5aad4d71cd59d13",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:15:57.292Z",
+    "jetons": {
+     "entree": 7535,
+     "sortie": 419
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Corrige des erreurs de rédaction et modernise le langage dans plus de 20 lois de la Saskatchewan, sans changer les règles de fond.",
+    "puces": [
+     "Remplace des expressions comme « he or she » ou « his or her » par un langage neutre dans plusieurs lois, dont The Police Act, 1990 et The Summary Offences Procedure Act, 1990",
+     "Met à jour les renvois à l'ancienne Saskatchewan Insurance Act en les remplaçant par The Insurance Act dans plusieurs lois",
+     "Corrige le nom « White City-Qu'appelle » en « White City-Qu'Appelle » dans l'annexe de The Representation Act, 2022",
+     "Ajoute l'Université de Regina et l'Université de Saskatchewan à une liste dans The Summary Offences Procedure Act, 1990",
+     "Précise les règles pour les passagers de motoneige qui traversent une route dans The Snowmobile Act",
+     "Révise la procédure de plainte sur la liste de convocation dans The University of Saskatchewan Act, 1995",
+     "Abroge ou corrige certaines dispositions devenues inutiles, comme dans The Reviewable Transactions Act et The Provincial Sales Tax Amendment Act, 2018"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "323ad900fa145d06",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:16:02.988Z",
+    "jetons": {
+     "entree": 7840,
+     "sortie": 507
+    }
+   }
+  },
+  "300063": {
+   "en": {
+    "resumeExecutif": "Amends the pension act to move rules for calculating certain retirement allowances from the Act itself into regulations set by the Lieutenant Governor in Council.",
+    "puces": [
+     "Replaces references to specific sections with references to 'the regulations' for calculating allowances",
+     "Repeals most of section 22, which previously set out allowance calculation rules",
+     "Lets the commission pay the commuted value of a dependant's allowance to that dependant on application",
+     "Lets the commission pay the commuted value of an allowance to a named beneficiary or the member's estate on application",
+     "Allows the Lieutenant Governor in Council to make regulations on calculating allowances for members retiring at or after normal retirement age",
+     "Updates a heading to read 'Dependants' Allowances'",
+     "Takes effect on a date set by the Lieutenant Governor in Council"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "6dff54d8a8831ddf",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:16:06.705Z",
+    "jetons": {
+     "entree": 3162,
+     "sortie": 345
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie The Municipal Employees' Pension Act pour remplacer plusieurs règles fixées par la loi sur les rentes par des règles établies par règlement.",
+    "puces": [
+     "Remplace plusieurs renvois à l'article 22 et à d'autres articles par des renvois aux règlements à venir",
+     "Abroge les paragraphes 22(2) à (10), qui fixaient certaines règles de calcul des rentes dans la loi",
+     "Précise les règles applicables quand un membre prend sa retraite avant l'âge normal de retraite",
+     "Donne à la commission le pouvoir de verser la valeur actualisée d'une rente à un bénéficiaire admissible, sur demande",
+     "Remplace l'intitulé suivant l'article 30 par « DEPENDANTS' ALLOWANCES »",
+     "Permet au lieutenant-gouverneur en conseil d'adopter des règlements sur le calcul des rentes des membres prenant leur retraite à l'âge normal ou après",
+     "La loi entrera en vigueur à une date fixée par décret"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "58f3a9f4518511f7",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:16:11.609Z",
+    "jetons": {
+     "entree": 3467,
+     "sortie": 427
+    }
+   }
+  },
+  "300064": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's tax collection and enforcement rules, including assessment time limits, penalty reinstatement, and collection procedures.",
+    "puces": [
+     "Lets the minister reinstate penalties or interest previously waived, at any time",
+     "Sets a 4-year limit for most tax assessments, extended to 6 years for unremitted collected tax",
+     "Allows unlimited assessment periods for cases involving wilful default or fraud",
+     "Confirms that appeals do not stop interest, penalties, or collection enforcement from continuing",
+     "Lets the minister reinstate suspended or cancelled licences once conditions are met",
+     "Sets a 6-year time limit for the minister to start collection proceedings, with no limit for fraud cases",
+     "Some provisions apply retroactively to 2017 and 2024, while others start June 1, 2027"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "e5a949f9c4f230fa",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:16:15.216Z",
+    "jetons": {
+     "entree": 4159,
+     "sortie": 343
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie les règles de cotisation, d'appel et de recouvrement des taxes en Saskatchewan, dont les délais et les pouvoirs du ministre.",
+    "puces": [
+     "Permet au ministre de rétablir en tout temps des pénalités ou intérêts annulés",
+     "Limite les avis de cotisation à 4 ans, ou 6 ans si la taxe perçue n'a pas été remise",
+     "Aucune limite de délai en cas de fraude ou de défaut volontaire",
+     "Un appel en cours n'empêche pas le ministre de continuer à exiger le paiement des taxes",
+     "Permet au ministre de rétablir une licence, un permis ou une autorisation suspendue ou annulée",
+     "Fixe à 6 ans le délai pour entreprendre une procédure de recouvrement d'un montant dû",
+     "Certaines dispositions s'appliquent rétroactivement depuis 2017 ou 2024, d'autres entrent en vigueur en 2027"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "9eb192cccfe527ae",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-02T23:16:19.688Z",
+    "jetons": {
+     "entree": 4464,
+     "sortie": 406
+    }
+   }
+  },
   "300601": {
    "en": {
     "resumeExecutif": "Declares the month of April as Sikh Heritage Month in Saskatchewan.",
@@ -3916,7 +4100,7 @@
  "modele": "claude-sonnet-5",
  "avertissementEn": "Written by AI from the bill as introduced (official PDF on legassembly.sk.ca), not from the law as amended since. Not an official document.",
  "avertissementFr": "Rédigé par une IA à partir du projet de loi tel que déposé (PDF officiel sur legassembly.sk.ca), et non de la loi telle qu'amendée depuis. Ce n'est pas un document officiel.",
- "maj": "2026-10-01T00:06:42.525Z",
- "nombre": 88,
- "coutCumule": 1.3823
+ "maj": "2026-11-02T23:16:19.688Z",
+ "nombre": 92,
+ "coutCumule": 1.4891
 }
