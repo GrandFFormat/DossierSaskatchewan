@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-03",
+    "volet": "site",
+    "fr": {
+      "titre": "Partage aux couleurs des réseaux sous chaque projet de loi",
+      "texte": "Sous un projet de loi ouvert, des boutons partagent le lien sur X, Facebook, LinkedIn, Reddit, Threads ou Bluesky, ou le copient. Un bouton café permet d’appuyer le site. À l’ouverture, la page amène le titre du projet en haut de l’écran."
+    },
+    "en": {
+      "titre": "Share buttons in each network’s colours under every bill",
+      "texte": "Under an open bill, buttons share its link on X, Facebook, LinkedIn, Reddit, Threads or Bluesky, or copy it. A coffee button lets you support the site. When a bill opens, the page brings its title to the top of the screen."
+    }
+  },
+  {
     "date": "2026-10-30",
     "volet": "site",
     "fr": {
