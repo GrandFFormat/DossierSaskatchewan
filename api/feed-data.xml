@@ -6,7 +6,35 @@
     <atom:link href="https://dossiersaskatchewan.ca/api/feed-data.xml" rel="self" type="application/rss+xml"/>
     <description>Bills introduced and assented to, and days of recorded divisions in Saskatchewan's Legislative Assembly. Independent citizen site, official public data.</description>
     <language>en-CA</language>
-    <lastBuildDate>Mon, 02 Nov 2026 23:18:22 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 15:45:49 GMT</lastBuildDate>
+    <item>
+      <title>Bill 61 introduced — The Mandatory Testing and Disclosure (Bodily Substances) Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/61-30</link>
+      <guid isPermaLink="false">depot-61-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Bill 61 introduced — The Mandatory Testing and Disclosure (Bodily Substances) Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 62 introduced — The Statute Law Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/62-30</link>
+      <guid isPermaLink="false">depot-62-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Bill 62 introduced — The Statute Law Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 63 introduced — The Municipal Employees' Pension Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/63-30</link>
+      <guid isPermaLink="false">depot-63-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Bill 63 introduced — The Municipal Employees' Pension Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 64 introduced — The Revenue and Financial Services Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/64-30</link>
+      <guid isPermaLink="false">depot-64-2026-10-29</guid>
+      <pubDate>Thu, 29 Oct 2026 16:00:00 GMT</pubDate>
+      <description>Bill 64 introduced — The Revenue and Financial Services Amendment Act, 2026</description>
+    </item>
     <item>
       <title>Bill 24 assented to — The Saskatchewan Internal Trade Promotion Act</title>
       <link>https://dossiersaskatchewan.ca/projets-de-loi/24-30</link>
@@ -204,6 +232,41 @@
       <description>Bill 60 assented to — The Appropriation Act, 2026 (No. 1)</description>
     </item>
     <item>
+      <title>Bill 625 introduced — The Members' Conflict of Interest Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/625-30</link>
+      <guid isPermaLink="false">depot-625-2026-05-13</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 625 introduced — The Members' Conflict of Interest Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 626 introduced — The Lobbyists Transparency Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/626-30</link>
+      <guid isPermaLink="false">depot-626-2026-05-13</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 626 introduced — The Lobbyists Transparency Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 628 introduced — The Freedom of Information and Protection of Privacy Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/628-30</link>
+      <guid isPermaLink="false">depot-628-2026-05-13</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 628 introduced — The Freedom of Information and Protection of Privacy Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 629 introduced — The Child and Family Services (Betty's Law) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/629-30</link>
+      <guid isPermaLink="false">depot-629-2026-05-13</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 629 introduced — The Child and Family Services (Betty's Law) Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 630 introduced — The Public Health Care Transparency and Accountability Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/630-30</link>
+      <guid isPermaLink="false">depot-630-2026-05-13</guid>
+      <pubDate>Wed, 13 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 630 introduced — The Public Health Care Transparency and Accountability Act</description>
+    </item>
+    <item>
       <title>2 recorded divisions held in the Assembly.</title>
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-05-12</guid>
@@ -211,11 +274,25 @@
       <description>2 recorded divisions held in the Assembly.</description>
     </item>
     <item>
+      <title>Bill 60 introduced — The Appropriation Act, 2026 (No. 1)</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/60-30</link>
+      <guid isPermaLink="false">depot-60-2026-05-11</guid>
+      <pubDate>Mon, 11 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 60 introduced — The Appropriation Act, 2026 (No. 1)</description>
+    </item>
+    <item>
       <title>1 recorded division held in the Assembly.</title>
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-05-11</guid>
       <pubDate>Mon, 11 May 2026 16:00:00 GMT</pubDate>
       <description>1 recorded division held in the Assembly.</description>
+    </item>
+    <item>
+      <title>Bill 624 introduced — The Provincial Sales Tax Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/624-30</link>
+      <guid isPermaLink="false">depot-624-2026-05-07</guid>
+      <pubDate>Thu, 07 May 2026 16:00:00 GMT</pubDate>
+      <description>Bill 624 introduced — The Provincial Sales Tax Amendment Act, 2026</description>
     </item>
     <item>
       <title>1 recorded division held in the Assembly.</title>
@@ -232,6 +309,27 @@
       <description>1 recorded division held in the Assembly.</description>
     </item>
     <item>
+      <title>Bill 58 introduced — The Time Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/58-30</link>
+      <guid isPermaLink="false">depot-58-2026-04-30</guid>
+      <pubDate>Thu, 30 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 58 introduced — The Time Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 59 introduced — The Time Consequential Amendments Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/59-30</link>
+      <guid isPermaLink="false">depot-59-2026-04-30</guid>
+      <pubDate>Thu, 30 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 59 introduced — The Time Consequential Amendments Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 622 introduced — The Provincial Health Authority (Executive Pay Freeze) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/622-30</link>
+      <guid isPermaLink="false">depot-622-2026-04-30</guid>
+      <pubDate>Thu, 30 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 622 introduced — The Provincial Health Authority (Executive Pay Freeze) Amendment Act</description>
+    </item>
+    <item>
       <title>1 recorded division held in the Assembly.</title>
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-04-30</guid>
@@ -239,11 +337,39 @@
       <description>1 recorded division held in the Assembly.</description>
     </item>
     <item>
+      <title>Bill 621 introduced — The Public Works and Services (Prioritizing Local Jobs) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/621-30</link>
+      <guid isPermaLink="false">depot-621-2026-04-29</guid>
+      <pubDate>Wed, 29 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 621 introduced — The Public Works and Services (Prioritizing Local Jobs) Amendment Act</description>
+    </item>
+    <item>
       <title>2 recorded divisions held in the Assembly.</title>
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-04-29</guid>
       <pubDate>Wed, 29 Apr 2026 16:00:00 GMT</pubDate>
       <description>2 recorded divisions held in the Assembly.</description>
+    </item>
+    <item>
+      <title>Bill 57 introduced — The Information Services Corporation Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/57-30</link>
+      <guid isPermaLink="false">depot-57-2026-04-22</guid>
+      <pubDate>Wed, 22 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 57 introduced — The Information Services Corporation Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 56 introduced — The King's Bench Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/56-30</link>
+      <guid isPermaLink="false">depot-56-2026-04-21</guid>
+      <pubDate>Tue, 21 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 56 introduced — The King's Bench Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 620 introduced — The Restricting Property Controls for Grocery Stores and Supermarkets Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/620-30</link>
+      <guid isPermaLink="false">depot-620-2026-04-21</guid>
+      <pubDate>Tue, 21 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 620 introduced — The Restricting Property Controls for Grocery Stores and Supermarkets Act</description>
     </item>
     <item>
       <title>1 recorded division held in the Assembly.</title>
@@ -260,11 +386,32 @@
       <description>1 recorded division held in the Assembly.</description>
     </item>
     <item>
+      <title>Bill 55 introduced — The Medical Profession Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/55-30</link>
+      <guid isPermaLink="false">depot-55-2026-04-15</guid>
+      <pubDate>Wed, 15 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 55 introduced — The Medical Profession Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 619 introduced — The Consumer Protection and Business Practices (Banning Unfair A.I. Pricing) 'Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/619-30</link>
+      <guid isPermaLink="false">depot-619-2026-04-15</guid>
+      <pubDate>Wed, 15 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 619 introduced — The Consumer Protection and Business Practices (Banning Unfair A.I. Pricing) 'Amendment Act</description>
+    </item>
+    <item>
       <title>1 recorded division held in the Assembly.</title>
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-04-15</guid>
       <pubDate>Wed, 15 Apr 2026 16:00:00 GMT</pubDate>
       <description>1 recorded division held in the Assembly.</description>
+    </item>
+    <item>
+      <title>Bill 618 introduced — The Provincial Health Authority (Prohibiting Anonymous Reporting Mechanisms) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/618-30</link>
+      <guid isPermaLink="false">depot-618-2026-04-02</guid>
+      <pubDate>Thu, 02 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 618 introduced — The Provincial Health Authority (Prohibiting Anonymous Reporting Mechanisms) Amendment Act</description>
     </item>
     <item>
       <title>1 recorded division held in the Assembly.</title>
@@ -274,11 +421,67 @@
       <description>1 recorded division held in the Assembly.</description>
     </item>
     <item>
+      <title>Bill 617 introduced — The Provincial Health Authority (Family Physician Registry) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/617-30</link>
+      <guid isPermaLink="false">depot-617-2026-04-01</guid>
+      <pubDate>Wed, 01 Apr 2026 16:00:00 GMT</pubDate>
+      <description>Bill 617 introduced — The Provincial Health Authority (Family Physician Registry) Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 54 introduced — The Correctional Services Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/54-30</link>
+      <guid isPermaLink="false">depot-54-2026-03-26</guid>
+      <pubDate>Thu, 26 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 54 introduced — The Correctional Services Amendment Act, 2026</description>
+    </item>
+    <item>
       <title>2 recorded divisions held in the Assembly.</title>
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-03-26</guid>
       <pubDate>Thu, 26 Mar 2026 16:00:00 GMT</pubDate>
       <description>2 recorded divisions held in the Assembly.</description>
+    </item>
+    <item>
+      <title>Bill 53 introduced — The Saskatchewan Chemical Fertilizer Incentive Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/53-30</link>
+      <guid isPermaLink="false">depot-53-2026-03-25</guid>
+      <pubDate>Wed, 25 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 53 introduced — The Saskatchewan Chemical Fertilizer Incentive Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 52 introduced — The Heritage Property Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/52-30</link>
+      <guid isPermaLink="false">depot-52-2026-03-24</guid>
+      <pubDate>Tue, 24 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 52 introduced — The Heritage Property Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 616 introduced — The Islamic Heritage Month Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/616-30</link>
+      <guid isPermaLink="false">depot-616-2026-03-24</guid>
+      <pubDate>Tue, 24 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 616 introduced — The Islamic Heritage Month Act</description>
+    </item>
+    <item>
+      <title>Bill 49 introduced — The Income Tax Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/49-30</link>
+      <guid isPermaLink="false">depot-49-2026-03-23</guid>
+      <pubDate>Mon, 23 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 49 introduced — The Income Tax Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 50 introduced — The Financial Administration Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/50-30</link>
+      <guid isPermaLink="false">depot-50-2026-03-23</guid>
+      <pubDate>Mon, 23 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 50 introduced — The Financial Administration Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 51 introduced — The Corporation Capital Tax Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/51-30</link>
+      <guid isPermaLink="false">depot-51-2026-03-23</guid>
+      <pubDate>Mon, 23 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 51 introduced — The Corporation Capital Tax Amendment Act, 2026</description>
     </item>
     <item>
       <title>Bill 29 assented to — The Tailgating Act</title>
@@ -300,6 +503,41 @@
       <guid isPermaLink="false">sanction-42-2026-03-12</guid>
       <pubDate>Thu, 12 Mar 2026 16:00:00 GMT</pubDate>
       <description>Bill 42 assented to — The Saskatchewan Firearms Amendment Act, 2025</description>
+    </item>
+    <item>
+      <title>Bill 615 introduced — The Provincial Health Authority (Banning Parking Fees for Cancer Patients) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/615-30</link>
+      <guid isPermaLink="false">depot-615-2026-03-12</guid>
+      <pubDate>Thu, 12 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 615 introduced — The Provincial Health Authority (Banning Parking Fees for Cancer Patients) Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 614 introduced — The Saskatchewan Medical Care Insurance (Banning Private Fees) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/614-30</link>
+      <guid isPermaLink="false">depot-614-2026-03-11</guid>
+      <pubDate>Wed, 11 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 614 introduced — The Saskatchewan Medical Care Insurance (Banning Private Fees) Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 613 introduced — The Saskatchewan Farm Security (Foreign Farmland Ownership) Amendment Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/613-30</link>
+      <guid isPermaLink="false">depot-613-2026-03-10</guid>
+      <pubDate>Tue, 10 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 613 introduced — The Saskatchewan Farm Security (Foreign Farmland Ownership) Amendment Act</description>
+    </item>
+    <item>
+      <title>Bill 612 introduced — The Lower Power Bills and Car Insurance Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/612-30</link>
+      <guid isPermaLink="false">depot-612-2026-03-05</guid>
+      <pubDate>Thu, 05 Mar 2026 16:00:00 GMT</pubDate>
+      <description>Bill 612 introduced — The Lower Power Bills and Car Insurance Act</description>
+    </item>
+    <item>
+      <title>Bill 48 introduced — The Compassionate Intervention Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/48-30</link>
+      <guid isPermaLink="false">depot-48-2025-12-05</guid>
+      <pubDate>Fri, 05 Dec 2025 16:00:00 GMT</pubDate>
+      <description>Bill 48 introduced — The Compassionate Intervention Act</description>
     </item>
     <item>
       <title>Bill 25 assented to — The Income Tax (Miscellaneous) Amendment Act, 2025</title>
@@ -328,244 +566,6 @@
       <guid isPermaLink="false">sanction-28-2025-12-04</guid>
       <pubDate>Thu, 04 Dec 2025 16:00:00 GMT</pubDate>
       <description>Bill 28 assented to — The Public Libraries Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 34 assented to — The Cyberstalking and Coercive Control Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/34-30</link>
-      <guid isPermaLink="false">sanction-34-2025-12-04</guid>
-      <pubDate>Thu, 04 Dec 2025 16:00:00 GMT</pubDate>
-      <description>Bill 34 assented to — The Cyberstalking and Coercive Control Act</description>
-    </item>
-    <item>
-      <title>Bill 46 assented to — The Appropriation Act, 2025 (No. 2)</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/46-30</link>
-      <guid isPermaLink="false">sanction-46-2025-12-04</guid>
-      <pubDate>Thu, 04 Dec 2025 16:00:00 GMT</pubDate>
-      <description>Bill 46 assented to — The Appropriation Act, 2025 (No. 2)</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-12-04</guid>
-      <pubDate>Thu, 04 Dec 2025 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-12-03</guid>
-      <pubDate>Wed, 03 Dec 2025 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>2 recorded divisions held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-10-30</guid>
-      <pubDate>Thu, 30 Oct 2025 16:00:00 GMT</pubDate>
-      <description>2 recorded divisions held in the Assembly.</description>
-    </item>
-    <item>
-      <title>2 recorded divisions held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-10-23</guid>
-      <pubDate>Thu, 23 Oct 2025 16:00:00 GMT</pubDate>
-      <description>2 recorded divisions held in the Assembly.</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-05-14</guid>
-      <pubDate>Wed, 14 May 2025 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>Bill 3 assented to — The Safer Communities and Neighbourhoods Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/3-30</link>
-      <guid isPermaLink="false">sanction-3-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 3 assented to — The Safer Communities and Neighbourhoods Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 4 assented to — The Workers' Compensation Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/4-30</link>
-      <guid isPermaLink="false">sanction-4-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 4 assented to — The Workers' Compensation Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 5 assented to — The Saskatchewan Employment Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/5-30</link>
-      <guid isPermaLink="false">sanction-5-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 5 assented to — The Saskatchewan Employment Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 6 assented to — The Safe Public Spaces (Street Weapons) Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/6-30</link>
-      <guid isPermaLink="false">sanction-6-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 6 assented to — The Safe Public Spaces (Street Weapons) Act</description>
-    </item>
-    <item>
-      <title>Bill 7 assented to — The Court of Appeal (Residency) Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/7-30</link>
-      <guid isPermaLink="false">sanction-7-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 7 assented to — The Court of Appeal (Residency) Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 8 assented to — The Child Care (New Facilities) Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/8-30</link>
-      <guid isPermaLink="false">sanction-8-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 8 assented to — The Child Care (New Facilities) Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 9 assented to — The Traffic Safety Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/9-30</link>
-      <guid isPermaLink="false">sanction-9-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 9 assented to — The Traffic Safety Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 10 assented to — The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/10-30</link>
-      <guid isPermaLink="false">sanction-10-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 10 assented to — The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024</description>
-    </item>
-    <item>
-      <title>Bill 11 assented to — The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024 (No. 2)</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/11-30</link>
-      <guid isPermaLink="false">sanction-11-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 11 assented to — The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2024 (No. 2)</description>
-    </item>
-    <item>
-      <title>Bill 13 assented to — The Income Tax Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/13-30</link>
-      <guid isPermaLink="false">sanction-13-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 13 assented to — The Income Tax Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 14 assented to — The Power Corporation Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/14-30</link>
-      <guid isPermaLink="false">sanction-14-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 14 assented to — The Power Corporation Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 15 assented to — Alcohol and Gaming Regulation Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/15-30</link>
-      <guid isPermaLink="false">sanction-15-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 15 assented to — Alcohol and Gaming Regulation Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 16 assented to — The Provincial Sales Tax Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/16-30</link>
-      <guid isPermaLink="false">sanction-16-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 16 assented to — The Provincial Sales Tax Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 17 assented to — The Saskatchewan Commercial Innovation Incentive (Patent Box) Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/17-30</link>
-      <guid isPermaLink="false">sanction-17-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 17 assented to — The Saskatchewan Commercial Innovation Incentive (Patent Box) Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 18 assented to — The Regulated Health Professions Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/18-30</link>
-      <guid isPermaLink="false">sanction-18-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 18 assented to — The Regulated Health Professions Act</description>
-    </item>
-    <item>
-      <title>Bill 19 assented to — The Regulated Health Professions Consequential Amendments Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/19-30</link>
-      <guid isPermaLink="false">sanction-19-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 19 assented to — The Regulated Health Professions Consequential Amendments Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 20 assented to — The Small and Medium Enterprise (SME) Investment Tax Credit Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/20-30</link>
-      <guid isPermaLink="false">sanction-20-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 20 assented to — The Small and Medium Enterprise (SME) Investment Tax Credit Act</description>
-    </item>
-    <item>
-      <title>Bill 21 assented to — The Construction Codes (Derelict Buildings) Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/21-30</link>
-      <guid isPermaLink="false">sanction-21-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 21 assented to — The Construction Codes (Derelict Buildings) Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 22 assented to — The King's Bench Amendment Act, 2025</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/22-30</link>
-      <guid isPermaLink="false">sanction-22-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 22 assented to — The King's Bench Amendment Act, 2025</description>
-    </item>
-    <item>
-      <title>Bill 23 assented to — The Appropriation Act, 2025 (No. 1)</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/23-30</link>
-      <guid isPermaLink="false">sanction-23-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 23 assented to — The Appropriation Act, 2025 (No. 1)</description>
-    </item>
-    <item>
-      <title>Bill 601 assented to — The Sikh Heritage Month Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/601-30</link>
-      <guid isPermaLink="false">sanction-601-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>Bill 601 assented to — The Sikh Heritage Month Act</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-05-13</guid>
-      <pubDate>Tue, 13 May 2025 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-05-12</guid>
-      <pubDate>Mon, 12 May 2025 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>2 recorded divisions held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-05-05</guid>
-      <pubDate>Mon, 05 May 2025 16:00:00 GMT</pubDate>
-      <description>2 recorded divisions held in the Assembly.</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-04-17</guid>
-      <pubDate>Thu, 17 Apr 2025 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>2 recorded divisions held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-03-31</guid>
-      <pubDate>Mon, 31 Mar 2025 16:00:00 GMT</pubDate>
-      <description>2 recorded divisions held in the Assembly.</description>
-    </item>
-    <item>
-      <title>2 recorded divisions held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2025-03-27</guid>
-      <pubDate>Thu, 27 Mar 2025 16:00:00 GMT</pubDate>
-      <description>2 recorded divisions held in the Assembly.</description>
     </item>
   </channel>
 </rss>

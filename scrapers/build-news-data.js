@@ -64,7 +64,12 @@ function main() {
     const titreFr = court(b.title);
     const titreEn = court(b.titleEn || b.title);
     const note = String(b.note || '');
-    const presente = note.match(/^Présenté le (\d{4}-\d{2}-\d{2})/);
+    // Saskatchewan : les dates EXACTES sont dans b.dates, lues dans les procès-verbaux
+    // (premiere = première lecture, le jour du dépôt ; sanction). La note, elle, ne dit que
+    // l'étape du moment (« Déposé le… », et non « Présenté le… » comme au Québec) : s'y fier
+    // perdait tous les dépôts (le bloc s'est arrêté au 14 mai 2026 pendant toute la rentrée).
+    const d = b.dates || {};
+    const presente = d.premiere ? [null, d.premiere] : note.match(/^(?:Présenté|Déposé) le (\d{4}-\d{2}-\d{2})/);
     // `link` : le lien profond qui ouvre CE projet (voir openBillFromQuery). Il
     // ne sert pas dans la page — le bloc « Quoi de neuf » n'a pas de liens — mais
     // le flux RSS en a besoin : un item de flux sans lien vers la chose dont il
@@ -79,7 +84,7 @@ function main() {
         guid: `depot-${b.num}-${presente[1]}`,
       });
     }
-    const sanctionne = note.match(/^Sanctionné le (\d{4}-\d{2}-\d{2})/);
+    const sanctionne = d.sanction ? [null, d.sanction] : note.match(/^Sanctionné le (\d{4}-\d{2}-\d{2})/);
     if (sanctionne) {
       items.push({
         date: sanctionne[1],
