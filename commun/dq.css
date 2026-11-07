@@ -2141,3 +2141,6 @@ html.etroit .brand{flex-wrap:wrap; row-gap:6px; max-width:100%;}
 @media (max-width:760px){ .bill-cafe-btn{justify-content:center; text-align:center;} .bill-cafe-btn .bulle{margin-left:0;} }
 html.etroit .bill-cafe-btn{justify-content:center; text-align:center;}
 html.etroit .bill-cafe-btn .bulle{margin-left:0;}
+
+/* « Une réalisation de DAFR Solution » (6 nov. 2026). */
+#footerDafr{ color:inherit; }
