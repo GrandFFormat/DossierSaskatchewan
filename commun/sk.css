@@ -676,3 +676,25 @@ html[data-theme="dark"] .sk-avis a{color:#FDE68A;}
    pastille ne tient plus à côté de la feuille ; elle passe sous le nom (comme .etroit le fait déjà). */
 html.entete-etroite .brand{flex-wrap:wrap; row-gap:6px; max-width:100%;}
 html.entete-etroite .villes-menu ul{left:0; right:auto;}
+
+/* Le menu des villes devient l'onglet 06 de la barre (7 nov. 2026), comme DossierCanada : la pastille
+   à côté du nom faisait déborder l'en-tête sur cellulaire. La barre défile (overflow-x), donc la liste
+   s'ouvre en position fixe, placée sous l'onglet au moment de l'ouverture. */
+nav.tabs .tab-villes{flex:none; position:relative; margin:0;}
+/* Même pilule que les autres onglets (.tabs a, plus haut) */
+header.top nav.tabs .tab-villes summary{
+  list-style:none; display:inline-flex; align-items:center; gap:7px; cursor:pointer;
+  font-family:'Archivo Narrow', sans-serif !important; font-weight:500; font-size:15.5px; color:var(--ink);
+  padding:7px 15px; border-radius:999px; white-space:nowrap; background:transparent;
+}
+nav.tabs .tab-villes summary::-webkit-details-marker{display:none;}
+nav.tabs .tab-villes summary .n{display:none;}
+nav.tabs .tab-villes summary::after{content:""; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid currentColor; opacity:.7;}
+header.top nav.tabs .tab-villes summary:hover, header.top nav.tabs .tab-villes[open] summary{background:rgba(255,255,255,.7);}
+html[data-theme="dark"] header.top nav.tabs .tab-villes summary:hover, html[data-theme="dark"] header.top nav.tabs .tab-villes[open] summary{background:rgba(255,255,255,.06);}
+nav.tabs .tab-villes ul{position:fixed; right:auto; text-transform:none; letter-spacing:0;}
+@media (max-width:640px){
+  nav.tabs .tab-villes{display:flex; flex-direction:column; align-items:center;}
+  nav.tabs .tab-villes ul{position:static; box-shadow:none; border:none; background:transparent; padding:2px 0 8px; min-width:0; text-align:center;}
+  nav.tabs .tab-villes li.villes-rtv a{color:#1F9D55 !important;}
+}
