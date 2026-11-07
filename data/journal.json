@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-07",
+    "volet": "site",
+    "fr": {
+      "titre": "Les lois adoptées sans vote nominal l’expliquent",
+      "texte": "Sous une loi sanctionnée sans vote nom par nom, la case « Qui a voté pour ou contre » explique maintenant l’adoption de vive voix et mène au projet sur le site de l’Assemblée. Huit projets ont leurs votes nominaux, nom par nom."
+    },
+    "en": {
+      "titre": "Laws passed without a recorded division now say so",
+      "texte": "Under a law that received Royal Assent without a recorded division, the “Who voted for or against” box now explains the voice vote and links to the bill on the Assembly’s website. Eight bills have their recorded divisions, name by name."
+    }
+  },
+  {
     "date": "2026-11-03",
     "volet": "site",
     "fr": {

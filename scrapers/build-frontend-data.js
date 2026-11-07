@@ -180,11 +180,23 @@ function main() {
     && Number(x.legislature) === Number(b._leg) && Number(x.session) === Number(b._session))
     .sort((x, y) => (x.date || '').localeCompare(y.date || '') || (Number(x.num) || 0) - (Number(y.num) || 0));
   let avecCase = 0;
+  let avecNote = 0;
   const caseVotes = (b, en) => {
     const liste = votesDuProjet(b);
-    if (!liste.length) return '';
-    if (!en) avecCase++;
     const titre = en ? 'Who voted for or against' : 'Qui a voté pour ou contre';
+    // Comme DQ (7 nov. 2026) : une loi sanctionnée sans vote nominal a sa case, qui explique
+    // l'adoption de vive voix ; un projet non sanctionné sans vote nominal n'en a pas. Les
+    // procès-verbaux lus (data/votes.json) couvrent toutes les sessions des projets affichés.
+    if (!liste.length) {
+      if (b.status !== 'sanctionne') return '';
+      if (!en) avecNote++;
+      return `<details class="bill-votes"><summary>${titre}</summary><p class="bill-votes-note">${en
+        ? '<b>No list of names exists for this law.</b> It was passed by voice: the Speaker puts the question and members answer from their seats. If no one objects, it passes unanimously. If a party answers “On division”, it passes by a majority, without anyone being counted.'
+        : '<b>Il n’existe pas de liste de noms pour cette loi.</b> Elle a été adoptée de vive voix : le président met la question aux voix et les députés répondent de leur place. Si personne ne s’oppose, elle passe à l’unanimité. Si un parti répond « Sur division », elle passe à la majorité des voix, sans que personne soit compté.'}</p><p class="bill-votes-note">${en
+        ? 'A list of names exists only when members ask for a <b>recorded division</b>: each member then stands for or against, and their name is written down.'
+        : 'Une liste nom par nom existe seulement quand des députés demandent un <b>vote par appel nominal</b> : chaque député se lève alors pour ou contre, et son nom est inscrit.'} <a href="${echapper(en ? (b.urlEn || b.url) : b.url)}" target="_blank" rel="noopener">${en ? 'The bill on the Assembly’s website' : 'Le projet sur le site de l’Assemblée'}</a>.</p></details>`;
+    }
+    if (!en) avecCase++;
     const objet = encodeURIComponent((en ? 'Bill ' : 'Projet de loi n° ') + b.num + ' — ' + (en ? (b.titleEn || b.title) : b.title));
     const etapeDe = (v) => (en ? v.stage : (v.stageFr || v.stage)) || '';
     const carte = (v) => {
@@ -210,7 +222,7 @@ function main() {
     if (b.summary) resumes.fr[b.id] = b.summary + listeLois(b, false) + caseVotes(b, false);
     if (b.summaryEn) resumes.en[b.id] = b.summaryEn + listeLois(b, true) + caseVotes(b, true);
   }
-  console.log(`  case des votes : ${avecCase} projet(s)`);
+  console.log(`  case des votes : ${avecCase} projet(s), note « de vive voix » : ${avecNote}`);
   for (const [langue, map] of Object.entries(resumes)) {
     const chemin = `data/bills-resumes-${langue}.json`;
     const contenu = JSON.stringify(map);
