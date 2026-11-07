@@ -1,0 +1,977 @@
+{
+  "300001": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-1.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Income Tax Act, 2000",
+      "The Active Families Benefit Act, 2021",
+      "The Graduate Retention Program Act"
+    ]
+  },
+  "300002": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-2.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The SaskEnergy Act",
+      "The SaskEnergy (Carbon Tax Fairness for Families) Amendment Act, 2023"
+    ]
+  },
+  "300003": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-3.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Safer Communities and Neighbourhoods Act"
+    ]
+  },
+  "300004": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-4.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Workers’ Compensation Act, 2013"
+    ]
+  },
+  "300005": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-5.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Saskatchewan Employment Act"
+    ]
+  },
+  "300006": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-6.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Wildlife Control (Capsaicin) Products Regulations"
+    ]
+  },
+  "300007": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-7.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Court of Appeal Act, 2000"
+    ]
+  },
+  "300008": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-8.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Child Care Act, 2014"
+    ]
+  },
+  "300009": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-9.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Traffic Safety Act"
+    ]
+  },
+  "300010": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-10.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Business Corporations Act, 2021",
+      "The Business Names Registration Act",
+      "The Credit Union Act, 1985",
+      "The Credit Union Act, 1998",
+      "The Land Surveys Act, 2000",
+      "The Land Titles Act, 2000",
+      "The Libel and Slander Act",
+      "The New Generation Co-operatives Act",
+      "The Partnership Act",
+      "The Personal Property Security Act, 1993"
+    ]
+  },
+  "300011": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-11.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Co-operatives Act, 1996",
+      "The Non-profit Corporations Act, 2022"
+    ]
+  },
+  "300012": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-12.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300013": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-13.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Income Tax Act, 2000"
+    ]
+  },
+  "300014": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-14.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Power Corporation Act"
+    ]
+  },
+  "300015": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-15.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Alcohol and Gaming Regulation Act, 1997"
+    ]
+  },
+  "300016": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-16.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Provincial Sales Tax Act"
+    ]
+  },
+  "300017": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-17.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Saskatchewan Commercial Innovation Incentive (Patent Box) Act"
+    ]
+  },
+  "300018": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-18.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Chiropractic Act, 1994",
+      "The Saskatchewan Employment Act",
+      "The Saskatchewan Medical Care Insurance Act",
+      "The Workers’ Compensation Act, 2013",
+      "The Dental Disciplines Act",
+      "The Cancer Agency Act",
+      "The Correctional Services Act, 2012",
+      "The Licensed Practical Nurses Act, 2000",
+      "The Youth Justice Administration Act, 2019",
+      "The Medical Profession Act, 1981",
+      "The Health Information Protection Act",
+      "The Public Health Act, 1994",
+      "The Medical Radiation and Imaging Professionals Act",
+      "The Midwifery Act",
+      "The Coroners Act, 1999",
+      "The Naturopathic Medicine Act",
+      "The Miscellaneous Statutes (Health Professions) Amendment Act, 2023",
+      "The Naturopathy Act",
+      "The Optometry Act, 1985",
+      "The White Cane Act",
+      "The Paramedics Act",
+      "The Pharmacy and Pharmacy Disciplines Act",
+      "The Opioid Damages and Health Care Costs Recovery Act",
+      "The Prescription Drugs Act",
+      "The Tobacco and Vapour Products Control Act",
+      "The Psychologists Act, 1997",
+      "The Interpersonal Violence Disclosure Protocol (Clare’s Law) Act",
+      "The Protection From Human Trafficking Act",
+      "The Victims of Interpersonal Violence Act",
+      "The Emergency Medical Aid Act",
+      "The Mental Health Services Act",
+      "The Registered Psychiatric Nurses Act",
+      "The Speech-Language Pathologists and Audiologists Act",
+      "The Hearing Aid Sales and Services Act",
+      "The Dietitians Act",
+      "The Massage Therapy Act",
+      "The Medical Laboratory Technologists Act",
+      "The Occupational Therapists Act, 1997",
+      "The Opticians Act",
+      "The Physical Therapists Act, 1998",
+      "The Podiatry Act"
+    ]
+  },
+  "300019": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-19.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Legislation Act",
+      "The Vital Statistics Act, 2009"
+    ]
+  },
+  "300020": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-20.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300021": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-21.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Construction Codes Act"
+    ]
+  },
+  "300022": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-22.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300023": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-23.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300024": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-24.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300025": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-25.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Income Tax Act, 2000"
+    ]
+  },
+  "300026": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-26.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Companies Winding Up Act",
+      "The Saskatchewan Opportunities Corporation Act",
+      "The Bishop Andrew Roborecki Foundation Act",
+      "The Central Trust Company Act",
+      "The Fountain of Life School of Ministry Inc. Act",
+      "The Saskatchewan Roman Catholic Dioceses Reorganization Act",
+      "The St. Paul’s Cathedral Foundation Act",
+      "The United Community Funds of Saskatoon Foundation Act",
+      "An Act concerning the City of Weyburn and the Grand Trunk Pacific Saskatchewan Railway",
+      "An Act dealing with Certain Bylaws of the City of Moose Jaw",
+      "An Act ratifying Certain Money Bylaws of the City of Saskatoon",
+      "An Act respecting Certain Bylaws and Certain Expenditures of the City of Yorkton",
+      "An Act respecting Change of Part of Plan of Wellesley Park Subdivision to the City of Moose Jaw, Saskatchewan, Plan No. R-1941",
+      "An Act respecting Co-operative Trust Company Limited and Co-operative Trust Company of Canada",
+      "An Act respecting Guaranty Trust Company of Canada and Prudential Trust Company Limited",
+      "An Act respecting Guaranty Trust Company of Canada and The Western Trust Company",
+      "An Act respecting Imperial Lumber Yards, Limited",
+      "An Act respecting The Canada Permanent Trust Company and The Toronto General Trusts Corporation",
+      "An Act respecting the City of Moose Jaw",
+      "An Act respecting the City of Prince Albert",
+      "An Act respecting the City of Regina",
+      "An Act respecting the City of Regina’s Street Railway System and other Public Works",
+      "An Act respecting the City of Saskatoon",
+      "An Act respecting the Lady Minto Hospital at Melfort",
+      "An Act respecting The Maple Creek General Hospital",
+      "An Act respecting the merger and amalgamation of Saskatchewan Farmers’ Union with others to constitute National Farmers Union",
+      "An Act respecting the Methodist Church",
+      "An Act respecting The Presbyterian Church Building Corporation",
+      "An Act respecting the Town of Melfort",
+      "An Act respecting the Town of Milestone",
+      "An Act respecting the Town of Watrous",
+      "An Act respecting the Town of Yorkton",
+      "An Act respecting The Trusts and Guarantee Company Limited and The Union Trust Company Limited",
+      "An Act respecting The Young Men’s Christian Association of Saskatoon",
+      "An Act to amend a Certain Bylaw of the City of Saskatoon concerning the Canadian Pacific Railway Company",
+      "An act to authorise the City of Moose Jaw to Expropriate Lands and for other purposes",
+      "An Act to authorise the Council of St. Chad’s College of the Diocese of Qu’Appelle to confer Degrees in Divinity",
+      "An Act to authorise the Town of Maple Creek to install a Drainage and Sewage System and to issue debentures for payment of same",
+      "An Act to change the name of Norfolk Trust",
+      "An Act to change the Name of Radville Christian College",
+      "An Act to change the Name of Retailers Trust Company",
+      "An Act to change the Name of The Saskatoon Country Club, Limited",
+      "An Act to confer certain powers upon The City of Estevan",
+      "An Act to Confer Certain Powers upon the City of Saskatoon",
+      "An Act to confer Certain Powers upon The City of Saskatoon",
+      "An Act to confer certain powers upon The City of Yorkton",
+      "An Act to confer Certain Powers upon the Council of the City of Moose Jaw",
+      "An Act to confirm a Certain Agreement between The City of Regina and McCallum Hill & Co. Limited",
+      "An Act to confirm a certain Bylaw of the City of Moose Jaw and a certain Agreement entered into between the City of Moose Jaw and The British American Oil Company Limited",
+      "An Act to confirm a Certain Bylaw of The City of Prince Albert",
+      "An Act to confirm a Certain Bylaw of the City of Saskatoon",
+      "An Act to confirm a Certain Bylaw of The City of Saskatoon",
+      "An Act to confirm a Certain Bylaw of the City of Saskatoon regarding the Street Railway",
+      "An Act to confirm a Certain Bylaw of the City of Yorkton and a Certain Agreement entered into between the City of Yorkton and Canadian Utilities, Limited",
+      "An Act to confirm a Certain Bylaw of the City of Yorkton and a Certain Agreement entered into between the City of Yorkton and Canadian Utilities Limited",
+      "An Act to confirm Bylaw No. 4191 of The City of Saskatoon and to authorize The City of Saskatoon to borrow Certain Moneys",
+      "An Act to confirm Bylaw No. 675 of the City of Saskatoon",
+      "An Act to confirm Bylaw No. 70 of the Town of Indian Head",
+      "An Act to confirm Bylaws Nos. 563 and 573 of the City of Saskatoon",
+      "An Act to confirm Certain Bylaws of the City of Moose Jaw and a Certain Agreement entered into between The City of Moose Jaw and Iowa Southern Utilities Company of Delaware",
+      "An Act to confirm Certain Bylaws of the City of Prince Albert and for Certain Other Purposes",
+      "An Act to confirm Certain Bylaws of The City of Prince Albert",
+      "An Act to confirm certain Bylaws of the City of Saskatoon",
+      "An Act to confirm certain Bylaws of the City of Yorkton and a certain Agreement entered into between the City of Yorkton and Mid-West Utilities Limited",
+      "An Act to confirm Certain Bylaws of the Town of Estevan",
+      "An Act to confirm the Incorporation of and to grant Further Powers to The Ursuline Sisters",
+      "An Act to enlarge the area of the Town of Weyburn by adding thereto certain lands",
+      "An Act to extend the Time for Issuing Debentures under Certain Bylaws of the City of Moose Jaw and for other Purposes",
+      "An Act to extend the Time for Issuing Debentures under Certain Bylaws of the City of Moose Jaw",
+      "An Act to extend the Time for issuing Debentures under Certain Bylaws of the City of Saskatoon",
+      "An Act to extend the Time for Issuing Debentures under certain Bylaws of the City of Saskatoon",
+      "An Act to incorporate Central Saskatchewan Trust Company, Limited",
+      "An Act to incorporate Central Turf and Driving Club, Limited",
+      "An Act to incorporate Consumers Co-operative Mills Limited",
+      "An Act to incorporate Dalmeny Home for the Aged",
+      "An Act to incorporate Dannevirke Evangelical Lutheran Church of Redvers, Saskatchewan",
+      "An Act to incorporate Estevan Agricultural Society",
+      "An Act to incorporate Fine Arts Foundation of Saskatoon",
+      "An Act to incorporate La Congregation des Filles de la Croix, dites, Sœurs de St. Andre",
+      "An Act to incorporate La Congregation des Sacres Coeurs de Jesus et de Marie et de l’Adoration",
+      "An Act to incorporate Le College Catholique Romain de Prince Albert",
+      "An Act to incorporate Les Missionaires Oblates du Sacré Coeur et de Marie Immaculée de Gravelbourg",
+      "An Act to incorporate Les Religieuses de Jesus-Marie",
+      "An Act to incorporate Les Reverends Peres de Sainte Marie de Tinchebray",
+      "An Act to incorporate Les Soeurs Adoratrices du Precieux Sang de Gravelbourg, Saskatchewan",
+      "An Act to incorporate Les Soeurs Adoratrices du Precieux Sang de Prince Albert",
+      "An Act to incorporate Moose Jaw Bible College, also referred to as An Act to incorporate Aldersgate College,",
+      "An Act to incorporate Moose Jaw College",
+      "An Act to incorporate Notre Dame de Sion Academy",
+      "An Act to incorporate Place Riel Society",
+      "An Act to incorporate Radville Christian College",
+      "An Act to incorporate Regina Beach Community Memorial Association",
+      "An Act to incorporate Retailers Trust Company, also referred to as An Act to incorporate Norfolk Trust Company,",
+      "An Act to incorporate Saskatchewan Co-operative Poultry Producers, Limited, also referred to as An Act to incorporate Saskatchewan Poultry Pool, Limited,",
+      "An Act to incorporate Saskatoon Petroleum Club",
+      "An Act to incorporate Sisters of St. Joseph of Pembroke",
+      "An Act to incorporate St. Joseph’s College, Yorkton",
+      "An Act to incorporate Tabor Bible Institute",
+      "An Act to incorporate The Agricultural Insurance Company, Limited",
+      "An Act to incorporate the Canadian Theological Seminary",
+      "An Act to incorporate The Cannington Trust Company",
+      "An Act to incorporate The Catholic Orphanage of Prince Albert",
+      "An Act to incorporate The Colonial Club of the City of Moose Jaw",
+      "An Act to incorporate The Commercial Club of the City of Saskatoon",
+      "An Act to incorporate the Commercial Trust Company",
+      "An Act to incorporate The Congregation of the Sisters of St. Elizabeth of the Third Order Regular of St. Francis of Assisi",
+      "An Act to incorporate The Convention of Baptist Churches in Saskatchewan",
+      "An Act to incorporate The Davin Memorial Recreation Centre",
+      "An Act to incorporate The District Advisory Board of the Manitoba-Saskatchewan Church of the Nazarene",
+      "An Act to incorporate The Elmwood Golf Club",
+      "An Act to incorporate The Estevan Transit and Power Company, Limited",
+      "An Act to incorporate The Farmers’ Co-operative Supply Company, Limited",
+      "An Act to incorporate The Fathers of La Salette",
+      "An Act to incorporate The Frontier Club",
+      "An Act to incorporate The Grand Lodge of Saskatchewan of the Independent Order of Odd Fellows",
+      "An Act to incorporate The Herbert Union Waisenamt",
+      "An Act to Incorporate the Hudson Bay Insurance Company",
+      "An Act to incorporate The Loretto Ladies’ Colleges and Schools",
+      "An Act to incorporate The Loretto Ladies’ Colleges and Schools of Weyburn",
+      "An Act to incorporate The Lutheran Student Foundation of Saskatchewan",
+      "An Act to incorporate the Mantle Memorial Scholarship Fund Trustees",
+      "An Act to incorporate the Middle West Insurance Company, Limited",
+      "An Act to incorporate The Midwest Insurance Company, Limited",
+      "An Act to incorporate The Missionary Society of the Church of Christ in Saskatchewan",
+      "An Act to incorporate the Missionary Society of the Most Holy Redeemer in the Province of Saskatchewan",
+      "An Act to incorporate The Moose Jaw Club",
+      "An Act to incorporate the National Fire Assurance Company",
+      "An Act to incorporate The Northern Loan Company",
+      "An Act to incorporate the Prairie Driving Club, Limited",
+      "An Act to incorporate The Religious Education Council of Saskatchewan",
+      "An Act to incorporate The Retail Merchants Association of Canada (Saskatchewan) Incorporated",
+      "An Act to incorporate The Rosenort Mennonite Church of Saskatchewan",
+      "An Act to incorporate The Ruthenian Catholic Mission of the Most Holy Redeemer in the Province of Saskatchewan",
+      "An Act to incorporate The Ruthenian Sisters of the Immaculate Conception in the Province of Saskatchewan",
+      "An Act to incorporate the Saskatchewan Automobile League",
+      "An Act to incorporate The Saskatchewan Club",
+      "An Act to Incorporate The Saskatchewan Guarantee and Fidelity Company",
+      "An Act to incorporate The Saskatchewan Insurance Agents’ Association",
+      "An Act to incorporate The Saskatchewan Registered Seed Growers Co-operative Association, Limited, also referred to as An Act to incorporate The Saskatchewan Registered Seed Growers, Limited,",
+      "An Act to incorporate The Saskatoon Club",
+      "An Act to incorporate The Saskatoon Mortgage and Loan Company Limited",
+      "An Act to incorporate The Saskatoon Mortgage Company Limited",
+      "An Act to incorporate The Scottish Saskatchewan Trust Corporation",
+      "An Act to incorporate The Sisters Adorers of the Precious Blood of Regina",
+      "An Act to incorporate The Sisters of The Order of Saint Dominic",
+      "An Act to incorporate The Society of Our Lady of Sion",
+      "An Act to incorporate The Swift Current Curling Club",
+      "An Act to incorporate the Town of Caron",
+      "An Act to incorporate The Ukrainian Missionary and Bible Society",
+      "An Act to incorporate the Village of Vonda as a Town Municipality",
+      "An Act to incorporate the Village of Wadena as a Town Municipality",
+      "An Act to Incorporate the Village of Watson as a Town Municipality",
+      "An Act to incorporate The Wascana Country Club",
+      "An Act to incorporate the Western Canadian Bible Institute of the Christian and Missionary Alliance",
+      "An Act to incorporate The Weyburn Club",
+      "An Act to incorporate The Yorkton Club",
+      "An Act to incorporate Wells-Dickey Company, Limited",
+      "An Act to incorporate Western Turf and Driving Club Limited",
+      "An Act to legalise Bylaw No. 275 and certain Debentures of the Corporation of The City of Moose Jaw",
+      "An Act to provide for Exemption from Taxation of Certain Property of Saskatoon Bible College, of Saskatoon, Saskatchewan",
+      "An Act to provide for Exemption from Taxation of Certain Property of Oblate Fathers of St. Mary’s Province",
+      "An Act to provide for Exemption from Taxation of Certain Property of the Apostolic Church of Pentecost of Canada Incorporated",
+      "An Act to provide for Exemption from Taxation of Certain Property of The Ukrainian Catholic Episcopal Corporation of Saskatchewan",
+      "An Act to provide for Exemption from Taxation of Certain Property of Prairie Christian Training Centre (United Church of Canada)",
+      "An Act to provide for Exemption from Taxation of Certain Property of Canadian Bible College of the Christian and Missionary Alliance",
+      "An Act to provide for exemption from taxation of certain Property of the Parkland Baptist Schools of Prince Albert in the Province of Saskatchewan",
+      "An Act to provide for exemption from taxation of Property of the Boy Scouts of Canada Saskatchewan Provincial Council",
+      "An Act to provide for exemption from taxation of Property of The Canadian Red Cross Society, Saskatchewan Division",
+      "An Act to provide for Exemption from Taxation of the Property of Le College Catholique Romain de Prince Albert",
+      "An Act to Provide for the Establishment and Maintenance of Public Parks in the City of Saskatoon",
+      "An Act to provide for the Exemption from Taxation of certain Property of La Corporation Episcopale Catholique Romaine de Prince Albert",
+      "An Act to provide for Exemption from Taxation of the Property of The Evangelical Covenant Church of Canada",
+      "An Act to provide for Partial Exemption from Taxation of Certain Lands of The Free Methodist Church in Canada",
+      "An Act to provide for Payment of Interest under Certain Bylaws of the City of Moose Jaw",
+      "An Act to provide for the Exemption from Taxation of Certain Property of The Society of the Sisters of Sion",
+      "An Act to ratify an Agreement between Oddfellows Temple Company Limited and Saskatoon Fraternal Charitable Association",
+      "An Act to ratify a Certain Agreement between the City of Moose Jaw and the Swift Canadian Company, Limited",
+      "An Act to ratify Bylaws 538, 655 and 656 of the City of Moose Jaw relating to a Public Library",
+      "An Act to ratify certain Debentures of the City of Moose Jaw",
+      "An Act to validate and confirm Bylaw No. 16 of the Town of Duck Lake",
+      "An Act to validate and confirm Bylaw No. 603 of the City of Saskatoon",
+      "An Act to validate and confirm Bylaw No. 621 of the City of Saskatoon",
+      "An Act to validate and confirm Bylaw No. 627 of the City of Saskatoon, and to authorise the borrowing of $15,000 for the erection of a Children’s Home",
+      "An Act to Validate and Confirm certain Bylaws of the City of Saskatoon",
+      "An Act to validate Certain Bylaws of the City of Saskatoon",
+      "An Act to validate Bylaw No. 5 of The Rural Municipality of Maryfield No. 91"
+    ]
+  },
+  "300027": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-27.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Alcohol and Gaming Regulation Act, 1997",
+      "The Constitutional Questions Act, 2012",
+      "The Enforcement of Maintenance Orders Act, 1997",
+      "The Family Maintenance Act, 1997",
+      "The International Child Abduction Act, 1996",
+      "The King’s Bench Act",
+      "The Legislation Act",
+      "The Non-profit Corporations Act, 2022",
+      "The Small Claims Act, 2016",
+      "The Vital Statistics Act, 2009"
+    ]
+  },
+  "300028": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-28.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Public Libraries Act, 1996"
+    ]
+  },
+  "300029": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-29.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Alcohol and Gaming Regulation Act, 1997"
+    ]
+  },
+  "300030": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-30.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Inter-jurisdictional Support Orders Act",
+      "The Enforcement of Maintenance Orders Act, 1997"
+    ]
+  },
+  "300031": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-31.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Libel and Slander Act",
+      "The Advocate for Children and Youth Act",
+      "The Ombudsman Act, 2012",
+      "The Operation of Public Registry Statutes Act"
+    ]
+  },
+  "300032": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-32.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Jury Act, 1998",
+      "The Legislative Assembly Act, 2007",
+      "The Small Claims Act, 2016"
+    ]
+  },
+  "300033": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-33.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Credit Union Act, 1998",
+      "The Credit Union Act, 1985",
+      "The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2025"
+    ]
+  },
+  "300034": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-34.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Victims of Interpersonal Violence Act"
+    ]
+  },
+  "300035": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-35.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Mineral Resources Act, 1985"
+    ]
+  },
+  "300036": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-36.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Change of Name Act, 1995"
+    ]
+  },
+  "300037": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-37.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Vital Statistics Act, 2009"
+    ]
+  },
+  "300038": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-38.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Planning and Development Act, 2007"
+    ]
+  },
+  "300039": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-39.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Education Act, 1995"
+    ]
+  },
+  "300040": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-40.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Animal Protection Act, 2018"
+    ]
+  },
+  "300041": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-41.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300042": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-42.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Saskatchewan Firearms Act"
+    ]
+  },
+  "300043": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-43.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Cities Act",
+      "The Municipalities Act",
+      "The Northern Municipalities Act, 2010",
+      "The Urban Municipality Act, 1984"
+    ]
+  },
+  "300044": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-44.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Co-operatives Act, 1996",
+      "The New Generation Co-operatives Act",
+      "The Child Care Act, 2014",
+      "The Justice and Attorney General Act",
+      "The Legislation Act",
+      "The Non-profit Corporations Act, 2022"
+    ]
+  },
+  "300045": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-45.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Assessment Management Agency Act",
+      "The Business Corporations Act, 2021",
+      "The Charitable Fund-raising Businesses Act",
+      "The Condominium Property Act, 1993",
+      "The Credit Union Central of Saskatchewan Act, 2016",
+      "The Farm Financial Stability Act",
+      "The Financial and Consumer Affairs Authority of Saskatchewan Act",
+      "The Funeral and Cremation Services Act",
+      "The Health Information Protection Act",
+      "The Labour-sponsored Venture Capital Corporations Act",
+      "The Mortgage Brokerages and Mortgage Administrators Act",
+      "The Municipalities Act",
+      "The Northern Municipalities Act, 2010",
+      "The Operation of Public Registry Statutes Act",
+      "The Personal Care Homes Act",
+      "The Pharmacy and Pharmacy Disciplines Act",
+      "The Residential Services Act, 2019",
+      "The Residential Tenancies Act, 2006",
+      "The Trust and Loan Corporations Act, 1997"
+    ]
+  },
+  "300046": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-46.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300047": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-47.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300048": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-48.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Coroners Act, 1999",
+      "The Freedom of Information and Protection of Privacy Act",
+      "The Health Information Protection Act",
+      "The Local Authority Freedom of Information and Protection of Privacy Act"
+    ]
+  },
+  "300049": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-49.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Income Tax Act, 2000"
+    ]
+  },
+  "300050": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-50.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Financial Administration Act, 1993"
+    ]
+  },
+  "300051": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-51.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Corporation Capital Tax Act"
+    ]
+  },
+  "300052": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-52.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Heritage Property Act"
+    ]
+  },
+  "300053": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-53.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Saskatchewan Chemical Fertilizer Incentive Act"
+    ]
+  },
+  "300054": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-54.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Correctional Services Act, 2012"
+    ]
+  },
+  "300055": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-55.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Medical Profession Act, 1981",
+      "The Regulated Health Professions Act"
+    ]
+  },
+  "300056": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-56.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The King’s Bench Act"
+    ]
+  },
+  "300057": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-57.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Information Services Corporation Act"
+    ]
+  },
+  "300058": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-58.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Time Act",
+      "The Election Act, 1996"
+    ]
+  },
+  "300059": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-59.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Alcohol and Gaming Regulation Act, 1997",
+      "The Legislation Act"
+    ]
+  },
+  "300060": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-60.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300061": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-61.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Mandatory Testing and Disclosure (Bodily Substances) Act"
+    ]
+  },
+  "300062": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-62.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Animal Protection Act, 2018",
+      "The Condominium Property Act, 1993",
+      "The Correctional Services Act, 2012",
+      "The Expropriation Procedure Act",
+      "The Guarantee Companies Securities Act",
+      "The Insurance Premiums Tax Act",
+      "The Interprovincial Subpoena Act",
+      "The Municipalities Act",
+      "The Northern Municipalities Act, 2010",
+      "The Pension Benefits Act, 1992",
+      "The Police Act, 1990",
+      "The Representation Act, 2022",
+      "The Research Council Act",
+      "The Revenue and Financial Services Act",
+      "The Reviewable Transactions Act",
+      "The Saskatchewan Income Plan Act",
+      "The Snowmobile Act",
+      "The Summary Offences Procedure Act, 1990",
+      "The University of Saskatchewan Act, 1995",
+      "The Wildfire Act",
+      "The Miscellaneous Statutes (Public Registries Enhancement) Amendment Act, 2025",
+      "The Provincial Sales Tax Amendment Act, 2018"
+    ]
+  },
+  "300063": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-63.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Municipal Employees’ Pension Act"
+    ]
+  },
+  "300064": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-64.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Revenue and Financial Services Act"
+    ]
+  },
+  "300601": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-601.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300602": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-602.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300603": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-603.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300604": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-604.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300605": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-605.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300606": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-606.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300607": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-607.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300608": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-608.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300609": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-609.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300610": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-610.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300611": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-611.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300612": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-612.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300613": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-613.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300614": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-614.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300615": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-615.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300616": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-616.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300617": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-617.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300618": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-618.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300619": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-619.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Consumer Protection and Business Practices Act"
+    ]
+  },
+  "300620": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-620.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300621": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-621.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300622": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-622.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300624": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-624.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": [
+      "The Provincial Sales Tax Act"
+    ]
+  },
+  "300625": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-625.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300626": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-626.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300628": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-628.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300629": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-629.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  },
+  "300630": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L2S/Bill30-630.pdf",
+    "version": 4,
+    "lu": "2026-11-07",
+    "lois": []
+  }
+}

@@ -112,6 +112,8 @@ function summaryToHtml(bill) {
 
 function main() {
   const data = JSON.parse(readFileSync(IN_PATH, 'utf-8'));
+  // Lois et règlements touchés, lus dans le PDF de chaque projet (scrapers/lois-touchees.js, 7 nov. 2026).
+  const loisTouchees = existsSync('data/lois-touchees.json') ? JSON.parse(readFileSync('data/lois-touchees.json', 'utf-8')) : {};
   const resumesIA = existsSync('data/resumes.json') ? JSON.parse(readFileSync('data/resumes.json', 'utf-8')).resumes ?? {} : {};
 
   const bills = data.bills.map((b) => {
@@ -146,7 +148,7 @@ function main() {
     // suit le résumé (chargé à l'ouverture de la carte).
     nbLois: Array.isArray(b.loisTouchees) ? b.loisTouchees.length : null,
     omnibus: Boolean(b.omnibus),
-    _lois: Array.isArray(b.loisTouchees) ? b.loisTouchees : [],
+    _lois: Array.isArray(loisTouchees[b.id]?.lois) ? loisTouchees[b.id].lois : [],
     // Pour rattacher les votes nominaux (caseVotes) : législature et session de dépôt.
     _leg: b.legislature,
     _session: b.introSession,
@@ -165,10 +167,11 @@ function main() {
   // Un fichier par langue, parce qu'on n'a jamais besoin des deux en même temps.
   const resumes = { fr: {}, en: {} };
   const echapper = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
-  // La liste officielle des textes touchés, repliée sous le résumé. Les titres restent en
-  // français en anglais : ce sont les titres officiels, il n'en existe pas d'autre ici.
+  // La liste des textes touchés (scrapers/lois-touchees.js), repliée sous le résumé, à partir
+  // de 2 comme DQ. Les titres restent en anglais en français : la Saskatchewan ne publie pas
+  // de version française de ses lois.
   const listeLois = (b, en) => b._lois.length < 2 ? '' :
-    `<details class="bill-lois"><summary>${en ? `Laws and regulations affected (${b._lois.length}) — official French titles` : `Lois et règlements touchés (${b._lois.length})`}</summary><ul>${b._lois.map((l) => `<li>${echapper(l)}</li>`).join('')}</ul></details>`;
+    `<details class="bill-lois"><summary>${en ? `Laws and regulations affected (${b._lois.length})` : `Lois et règlements touchés (${b._lois.length})`}</summary><ul>${b._lois.map((l) => `<li>${echapper(l)}</li>`).join('')}</ul><p class="bill-lois-note">${en ? 'Bill as introduced at first reading.' : 'Texte tel que déposé en première lecture. Titres officiels en anglais : la Saskatchewan ne publie pas ses lois en français.'}</p></details>`;
   // LES VOTES NOMINAUX D'UN PROJET (d'après DossierQuébec, 30 oct. 2026) : une case « Qui a voté… »
   // sous le résumé, une carte par vote du plus ancien au plus récent, dessinée comme sur /votes.
   // Rapprochement : numéro, législature et session (data/votes.json, lu dans les procès-verbaux).
