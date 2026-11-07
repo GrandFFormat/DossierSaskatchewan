@@ -667,3 +667,9 @@ html[data-theme="dark"] .lobby-pill, html[data-theme="dark"] .qf-btn[onclick*="'
 html[data-theme="dark"] .sk-avis{background:#3A2E0E; color:#FDE68A; border-color:#4A3B12;}
 html[data-theme="dark"] .sk-avis a{color:#FDE68A;}
 @media (max-width: 640px){ .sk-avis{font-size:13px; text-align:left; padding:8px 14px;} }
+
+/* Onglet « Représentez votre ville / Represent your city » (formulaire sur DossierQuébec,
+   6 nov. 2026). Il allonge la barre : en français à 1 280 px, les contrôles passaient sur une
+   2e rangée. Les onglets se resserrent donc un peu (15 → 8 px de côté). */
+@media (min-width: 641px){ header.top .tabs a{padding:7px 8px !important;} }
+header.top .tabs a.nav-rtv:hover{background:#1F9D55 !important; color:#fff !important;}
