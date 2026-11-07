@@ -698,3 +698,6 @@ nav.tabs .tab-villes ul{position:fixed; right:auto; text-transform:none; letter-
   nav.tabs .tab-villes ul{position:static; box-shadow:none; border:none; background:transparent; padding:2px 0 8px; min-width:0; text-align:center;}
   nav.tabs .tab-villes li.villes-rtv a{color:#1F9D55 !important;}
 }
+
+/* Légende sous la liste des lois touchées (7 nov. 2026). */
+.bill-lois .bill-lois-note{margin:8px 0 0; font-size:12.5px; line-height:1.4; color:var(--slate); font-style:italic; cursor:auto;}

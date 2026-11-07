@@ -47,6 +47,7 @@ const SCRAPERS = [
   ['Scrape : ministres (saskatchewan.ca)', ['scrapers/ministers.js']],
   ['Scrape : procès-verbaux (legassembly.sk.ca)', ['scrapers/proces-verbaux.js']],
   ['Scrape : projets de loi (depuis les procès-verbaux)', ['scrapers/bills.js']],
+  ['Scrape : lois touchées (PDF des projets, sans IA, cache par projet)', ['scrapers/lois-touchees.js'], { soft: true }],
   ['Scrape : votes nominatifs (depuis les procès-verbaux)', ['scrapers/votes.js']],
   // Résumés IA (payants) : seulement les projets nouveaux ou dont le texte a changé — le cache
   // (data/resumes.json) évite de repayer. « soft » : sans clé ou si l'API est en panne, le reste
