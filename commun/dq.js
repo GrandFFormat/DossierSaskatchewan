@@ -219,7 +219,7 @@ const translations = {
     'btn.viewSummary':"+ Voir le résumé",'btn.hideSummary':"− Masquer le résumé",
     'btn.viewFull':"Voir le texte complet sur legassembly.sk.ca →",
     'footer.left':"Site non officiel — données publiques de l'Assemblée législative de la Saskatchewan et du gouvernement de la Saskatchewan ·",
-    'footer.right':"construit avec Claude",
+    'footer.right':"Une réalisation de",
     'footer.source':"Code source",
     // Le français que les pages portaient en dur avant de passer à l'anglais (site anglophone) :
     // ramené ici pour que « ?lang=fr » affiche encore tout en français.
@@ -540,7 +540,7 @@ const translations = {
     'btn.viewSummary':"+ View summary",'btn.hideSummary':"− Hide summary",
     'btn.viewFull':"View full text on legassembly.sk.ca →",
     'footer.left':"Unofficial site — public data from the Legislative Assembly of Saskatchewan and the Government of Saskatchewan ·",
-    'footer.right':"built with Claude",
+    'footer.right':"A project by",
     'footer.source':"Source code",
 
     // Ministers
