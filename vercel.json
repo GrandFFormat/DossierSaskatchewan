@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "installCommand": "echo \"Aucune dependance : fonctions sans paquet npm.\"",
   "buildCommand": "echo \"Rien a construire : les pages sont deja fabriquees et commitees.\"",
+  "outputDirectory": ".",
   "ignoreCommand": "sh scripts/vercel-deployer.sh",
   "functions": {
     "api/feed.js": {
