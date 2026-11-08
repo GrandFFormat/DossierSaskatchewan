@@ -170,7 +170,7 @@
     <details class="villes-menu tab-villes" id="villesMenu">
       <summary><span class="n">06</span><span data-i18n="nav.villes">Cities</span></summary>
       <ul>
-        <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?lang=en" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
+        <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?province=sk&lang=en" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
       </ul>
     </details>
     <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;var a=m.querySelector('a');function maj(){a.href='https://dossierquebec.ca/represente-ta-ville'+(/^en/i.test(document.documentElement.lang)?'?lang=en':'');}maj();var ul=m.querySelector('ul'),s=m.querySelector('summary');function placer(){if(window.innerWidth<=640){ul.style.top=ul.style.left='';return;}var r=s.getBoundingClientRect();ul.style.top=(r.bottom+6)+'px';ul.style.left=Math.max(8,Math.min(r.left,window.innerWidth-ul.offsetWidth-8))+'px';}m.addEventListener('toggle',function(){if(m.open){maj();placer();}});window.addEventListener('scroll',function(){if(m.open)m.open=false;},{passive:true});document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
