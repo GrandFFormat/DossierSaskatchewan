@@ -803,6 +803,10 @@ construirePagesProjets();
 const { construirePagesMinistres } = await import('./build-minister-pages.js');
 construirePagesMinistres();
 
+// Les chefs de l'opposition qui siègent (/deputes/<slug>) : scripts/build-chefs-opposition.js.
+const { construirePagesChefs } = await import('./build-chefs-opposition.js');
+construirePagesChefs();
+
 // /llms.txt : le site expliqué aux assistants, refait à chaque build (scripts/build-llms.js).
 const { construireLlms } = await import('./build-llms.js');
 construireLlms();

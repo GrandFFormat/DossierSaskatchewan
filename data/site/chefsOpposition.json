@@ -1,0 +1,24 @@
+[
+ {
+  "name": "Carla Beck",
+  "party": "NDP",
+  "femme": true,
+  "roles": [
+   "Cheffe de l'opposition officielle et du Nouveau Parti démocratique de la Saskatchewan"
+  ],
+  "rolesEn": [
+   "Leader of the Official Opposition and of the Saskatchewan NDP"
+  ],
+  "bandeau": [
+   "Cheffe de l'opposition officielle",
+   "Leader of the Official Opposition"
+  ],
+  "source": "https://www.saskndp.ca/carlabeck",
+  "reseaux": [
+   "https://www.facebook.com/CarlaBeckSK",
+   "https://www.instagram.com/carlabecksk",
+   "https://x.com/CarlaBeckSK"
+  ],
+  "reseauxSource": "https://www.saskndp.ca/carlabeck"
+ }
+]

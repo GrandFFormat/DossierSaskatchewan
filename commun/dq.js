@@ -2346,7 +2346,9 @@ function renderDeputes(filter){
   // boutons Suivre (followedDeputes), même courriel.
   const partyOrder = seats.map(s=>s.party);
   const groups = partyOrder
-    .map(p => ({ party:p, seat: seats.find(s=>s.party===p), members: list.filter(d=>d.party===p) }))
+    .map(p => ({ party:p, seat: seats.find(s=>s.party===p), members: list.filter(d=>d.party===p)
+      // Le ou les chefs en tête de leur parti, comme sur DossierQuébec, puis par ordre alphabétique.
+      .sort((a, b) => ((CHEFS_OPPOSITION.indexOf(a.name) + 1 || 99) - (CHEFS_OPPOSITION.indexOf(b.name) + 1 || 99)) || a.name.localeCompare(b.name, 'fr')) }))
     .filter(g => g.members.length);
   const nameLabel = isEn ? 'Name' : 'Nom';
   const ridingLabel = isEn ? 'Riding — region' : 'Circonscription — région';
@@ -2375,7 +2377,7 @@ function renderDeputes(filter){
         return `
         <div class="dep-row">
           <div>
-            <div class="dep-name">${d.name}</div>
+            <div class="dep-name">${CHEFS_OPPOSITION.includes(d.name) ? `<a href="/deputes/${slugMinistre(d.name)}${paramLangue(true)}">${d.name}</a>` : d.name}</div>
             <a class="dep-mail" href="${mailHref}" ${email ? '' : 'target="_blank" rel="noopener"'}>✉ ${mailText}</a>
           </div>
           <div>
@@ -4194,7 +4196,7 @@ function toggleVoteCard(id, evt){
 // /mon-dossier y est aussi : sans lui, la page se prenait pour l'accueil et portait son titre
 // anglais (arrivé avec l'anglais qui suit enfin la navigation, 24 sept. 2026).
 const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', ministre:'/ministres', projets:'/projets-de-loi', votes:'/votes', archives:'/archives', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles', lobby:'/lobbyisme' };
-const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'ministres/':'ministre', 'projets-de-loi':'projets', 'votes':'votes', 'archives':'archives', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
+const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'ministres/':'ministre', 'deputes/':'ministre', 'projets-de-loi':'projets', 'votes':'votes', 'archives':'archives', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
 // Titres FRANÇAIS seulement : le site est anglophone, l'anglais vient du <title> de la page
 // (voir syncTitle).
 const PAGE_META = {
@@ -4217,6 +4219,7 @@ function viewFromPath(){
   // Une page de projet de loi (/projets-de-loi/24-30, scripts/build-bill-pages.js) est la vue Projets.
   if(seg.startsWith('projets-de-loi/')) return 'projets';
   if(seg.startsWith('ministres/')) return SLUG_VIEWS['ministres/'];
+  if(seg.startsWith('deputes/')) return SLUG_VIEWS['deputes/'];
   return SLUG_VIEWS[seg] || 'apercu';
 }
 const _titreEn = document.title;
@@ -4230,12 +4233,14 @@ function syncTitle(viewName){
     return;
   }
   // Fiche d'un·e ministre : son propre titre français, écrit par son build (meta dvq:titre-fr).
-  const propre = document.querySelector('meta[name="dvq:titre-fr"]')?.content;
+  const propre = document.querySelector('meta[name="dvq:titre-fr"]')?.content || document.getElementById('view-ministre')?.dataset.titreFr;
   if(propre){ document.title = fr ? propre : _titreEn; return; }
   document.title = fr ? m.fr : _titreEn;
 }
 
 // Même slug que scripts/build-minister-pages.js (slugMinistre).
+// Chef·fe·s de l'opposition qui ont leur fiche (/deputes/<slug>, scripts/build-chefs-opposition.js).
+const CHEFS_OPPOSITION = ['Carla Beck'];
 function slugMinistre(nom){ return String(nom).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 
 function goToTab(viewName, opts){
