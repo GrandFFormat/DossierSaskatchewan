@@ -3,6 +3,18 @@
     "date": "2026-11-11",
     "volet": "assemblee",
     "fr": {
+      "titre": "Réseaux sociaux des ministres",
+      "texte": "La fiche de Ken Cheveldayoff affiche ses comptes Facebook et Instagram, relevés sur son site de circonscription. Aucun autre ministre ne publie de compte sur un site officiel."
+    },
+    "en": {
+      "titre": "Ministers on social media",
+      "texte": "Ken Cheveldayoff's page now shows his Facebook and Instagram accounts, taken from his constituency website. No other minister lists an account on an official website."
+    }
+  },
+  {
+    "date": "2026-11-11",
+    "volet": "assemblee",
+    "fr": {
       "titre": "Une fiche par ministre",
       "texte": "Chacun des 18 membres du Conseil exécutif a sa page : fonctions, parti, circonscription, projets de loi parrainés et présence aux votes. Le nom sur la page Ministres y mène."
     },
