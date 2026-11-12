@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-12",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Fiche de la cheffe de l’opposition",
+      "texte": "Carla Beck a sa fiche, avec ses réseaux sociaux officiels, et passe en tête de son parti dans la liste des député·e·s. La fiche de Scott Moe mentionne qu’il dirige le Saskatchewan Party."
+    },
+    "en": {
+      "titre": "Opposition leader’s page",
+      "texte": "Carla Beck now has her own page, with her official social media, and comes first in her party in the list of MLAs. Scott Moe’s page notes that he leads the Saskatchewan Party."
+    }
+  },
+  {
     "date": "2026-11-11",
     "volet": "assemblee",
     "fr": {
