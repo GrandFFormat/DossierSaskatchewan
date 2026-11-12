@@ -16,6 +16,7 @@
 // Usage : node scripts/build-section-pages.js   (appelé par scripts/refresh.js)
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+const slugMinistre = (nom) => String(nom).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 const BASE = 'https://dossiersaskatchewan.ca';
 const SRC = 'gabarit.html';
@@ -384,7 +385,7 @@ function prerendus(valeurs) {
         .map((n) => `<span class="pr-meta">${ht(n.label || dateEn(n.date))} —</span> ${ht(n.text)}`),
       `Official source: ${ASSEMBLEE}.`),
     ministresGrid: bloc('ministers', 'Cabinet',
-      valeurs.ministers.map((m) => `<b>${ht(m.name)}</b> — ${ht(m.roleEn || m.role)} <span class="pr-meta">(${ht(m.party)})</span>`),
+      valeurs.ministers.map((m) => `<b><a href="/ministres/${slugMinistre(m.name)}">${ht(m.name)}</a></b> — ${ht(m.roleEn || m.role)} <span class="pr-meta">(${ht(m.party)})</span>`),
       `The ${pluriel(valeurs.ministers.length, 'member', 'members')} of Cabinet. Official source: ${SASK_CA}.`, true),
     deputesList: bloc('deputesRaw', 'The rest of the Assembly',
       deputes.map((d) => `${ht(d[0])} — ${ht(d[1])} <span class="pr-meta">(${ht(d[3])})</span>`),
@@ -797,6 +798,10 @@ console.log(`✓ sitemap.xml : ${sitemap.n} adresses (${sitemap.n - sitemap.vill
 // d'être écrit, et ajoutée au sitemap : scripts/build-bill-pages.js.
 const { construirePagesProjets } = await import('./build-bill-pages.js');
 construirePagesProjets();
+
+// Une page par ministre (/ministres/<slug>), à partir de ministres.html : scripts/build-minister-pages.js.
+const { construirePagesMinistres } = await import('./build-minister-pages.js');
+construirePagesMinistres();
 
 // /llms.txt : le site expliqué aux assistants, refait à chaque build (scripts/build-llms.js).
 const { construireLlms } = await import('./build-llms.js');

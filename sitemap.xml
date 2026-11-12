@@ -9,7 +9,7 @@
   </url>
   <url>
     <loc>https://dossiersaskatchewan.ca/ministres</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://dossiersaskatchewan.ca/sources</loc>
-    <lastmod>2026-11-03</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
@@ -610,6 +610,96 @@
   <url>
     <loc>https://dossiersaskatchewan.ca/projets-de-loi/630-30</loc>
     <lastmod>2026-05-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/scott-moe</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/jim-reiter</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/david-marit</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/jeremy-harrison</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/lori-carr</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/everett-hindley</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/jeremy-cockrill</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/tim-mcleod</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/terry-jenson</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/ken-cheveldayoff</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/warren-kaeding</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/alana-ross</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/eric-schmalz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/chris-beaudry</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/kim-gartner</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/darlene-rowden</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/michael-weger</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://dossiersaskatchewan.ca/ministres/sean-wilson</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>

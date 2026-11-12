@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-11",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Une fiche par ministre",
+      "texte": "Chacun des 18 membres du Conseil exécutif a sa page : fonctions, parti, circonscription, projets de loi parrainés et présence aux votes. Le nom sur la page Ministres y mène."
+    },
+    "en": {
+      "titre": "A page for each minister",
+      "texte": "Each of the 18 Executive Council members has a page: roles, party, riding, bills sponsored and voting attendance. The name on the Ministers page leads to it."
+    }
+  },
+  {
     "date": "2026-11-10",
     "volet": "site",
     "fr": {

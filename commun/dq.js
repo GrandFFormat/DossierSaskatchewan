@@ -2441,7 +2441,7 @@ function personCard(p){
           <span class="m-actions">${partageBouton(name)}${wikiBouton(name)}</span>
           <button class="follow-btn ${isFollowed?'on':''}" onclick="${followOnclick}">${isFollowed ? t('btn.following') : t('btn.follow')}</button>
         </div>
-        <div class="m-name">${name}</div>
+        <div class="m-name">${isMin ? `<a href="/ministres/${slugMinistre(name)}${paramLangue(true)}">${name}</a>` : name}</div>
         <div class="m-portfolio">${subtitle}</div>
       </div>
       <div class="m-card-bottom">
@@ -4193,14 +4193,16 @@ function toggleVoteCard(id, evt){
    sur une de ces adresses. */
 // /mon-dossier y est aussi : sans lui, la page se prenait pour l'accueil et portait son titre
 // anglais (arrivé avec l'anglais qui suit enfin la navigation, 24 sept. 2026).
-const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', projets:'/projets-de-loi', votes:'/votes', archives:'/archives', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles', lobby:'/lobbyisme' };
-const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'projets-de-loi':'projets', 'votes':'votes', 'archives':'archives', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
+const VIEW_SLUGS = { apercu:'/', ministres:'/ministres', ministre:'/ministres', projets:'/projets-de-loi', votes:'/votes', archives:'/archives', lexique:'/lexique', promesses:'/promesses', bd:'/sources', mondossier:'/mon-dossier', regles:'/regles', lobby:'/lobbyisme' };
+const SLUG_VIEWS = { '':'apercu', 'ministres':'ministres', 'ministres/':'ministre', 'projets-de-loi':'projets', 'votes':'votes', 'archives':'archives', 'lexique':'lexique', 'promesses':'promesses', 'sources':'bd', 'mon-dossier':'mondossier', 'regles':'regles', 'lobbyisme':'lobby' };
 // Titres FRANÇAIS seulement : le site est anglophone, l'anglais vient du <title> de la page
 // (voir syncTitle).
 const PAGE_META = {
   bd:        { fr:"Mises à jour du site — DossierSaskatchewan" },
   apercu:    { fr:"L'Assemblée législative de la Saskatchewan en clair — DossierSaskatchewan" },
   ministres: { fr:"Ministres et député·e·s de la Saskatchewan — DossierSaskatchewan" },
+  // Page d'un ministre (/ministres/<slug>, scripts/build-minister-pages.js) : titre français dans la page.
+  ministre:  { fr:'Ministre de la Saskatchewan — DossierSaskatchewan' },
   projets:   { fr:"Projets de loi de la Saskatchewan expliqués en clair — DossierSaskatchewan" },
   votes:     { fr:"Votes nominatifs à l'Assemblée législative — DossierSaskatchewan" },
   lexique:   { fr:"Lexique de l'Assemblée législative en clair — DossierSaskatchewan" },
@@ -4214,6 +4216,7 @@ function viewFromPath(){
   const seg = location.pathname.replace(/^\/+|\/+$/g, '').replace(/\.html$/, '');
   // Une page de projet de loi (/projets-de-loi/24-30, scripts/build-bill-pages.js) est la vue Projets.
   if(seg.startsWith('projets-de-loi/')) return 'projets';
+  if(seg.startsWith('ministres/')) return SLUG_VIEWS['ministres/'];
   return SLUG_VIEWS[seg] || 'apercu';
 }
 const _titreEn = document.title;
@@ -4226,8 +4229,14 @@ function syncTitle(viewName){
     document.title = fr ? _titreEn.replace(/^Bill /, 'Projet de loi ') : _titreEn;
     return;
   }
+  // Fiche d'un·e ministre : son propre titre français, écrit par son build (meta dvq:titre-fr).
+  const propre = document.querySelector('meta[name="dvq:titre-fr"]')?.content;
+  if(propre){ document.title = fr ? propre : _titreEn; return; }
   document.title = fr ? m.fr : _titreEn;
 }
+
+// Même slug que scripts/build-minister-pages.js (slugMinistre).
+function slugMinistre(nom){ return String(nom).normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 
 function goToTab(viewName, opts){
   opts = opts || {};
@@ -4240,7 +4249,7 @@ function goToTab(viewName, opts){
     return;
   }
   document.querySelectorAll('nav.tabs a[data-view]').forEach(a=>{
-    const actif = a.dataset.view === viewName;
+    const actif = a.dataset.view === (viewName === 'ministre' ? 'ministres' : viewName);
     a.classList.toggle('active', actif);
     if(actif) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });

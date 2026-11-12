@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Analytics de DossierSaskatchewan (propriété à part, G-FQ1Q3Q0RGZ, 1er oct. 2026), en
+     Consent Mode : par défaut, aucun témoin. La bannière (commun/consentement.js) passe
+     analytics_storage à « granted » après « Accept ». -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { analytics_storage: (function(){ try { return localStorage.getItem('dsk:temoins') === 'oui' ? 'granted' : 'denied'; } catch (e) { return 'denied'; } })(), ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ1Q3Q0RGZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FQ1Q3Q0RGZ');
+</script>
+<script src="/commun/consentement.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+/* La langue, avant d'afficher quoi que ce soit — EXACTEMENT la décision de langueDeDepart
+   (commun/dq.js) : « ?lang=fr » dans l'adresse, sinon le choix gardé dans dsk:langue (commun à
+   tout le site) ; en revenant par Précédent ou Suivant, le choix gardé passe avant l'adresse.
+   Le site est ANGLOPHONE : l'anglais est écrit dans le HTML et s'affiche tout de suite. C'est
+   le français qui attend sa traduction, et la page reste cachée le temps que dq.js la fasse :
+   1,5 s au plus, même s'il échoue. lang="fr" n'est posé qu'au moment de traduire (dq.js).
+   Tout est dans une fonction : une variable globale ici entrerait en collision avec les
+   déclarations de dq.js et le ferait planter en entier. */
+(function(){
+  try{
+    var valide = function(l){ return l === 'en' || l === 'fr'; };
+    var gardee = null;
+    try{ gardee = localStorage.getItem('dvq:langue'); }catch(e){}
+    var q = new URLSearchParams(location.search).get('lang');
+    var nav = window.performance && performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+    var parHistorique = !!nav && nav.type === 'back_forward';
+    var choix = (parHistorique && valide(gardee)) ? gardee : (valide(q) ? q : gardee);
+    if(choix !== 'fr') return;
+    var racine = document.documentElement;
+    racine.classList.add('dq-fr');
+    setTimeout(function(){ racine.classList.add('dq-pret'); }, 1500);
+  }catch(e){}
+})();
+</script>
+<title>Jim Reiter, ministre — DossierSaskatchewan</title>
+<meta name="dvq:titre-fr" content="Jim Reiter, ministre — DossierSaskatchewan">
+<meta name="description" content="Jim Reiter (SKP, Rosetown-Delisle) : Vice-premier ministre et ministre des Finances. Ses fonctions, ses projets de loi, sa présence aux votes et sa biographie.">
+<link rel="canonical" href="https://dossiersaskatchewan.ca/ministres/jim-reiter">
+<!-- Flux RSS de « Quoi de neuf », généré au build par scrapers/build-news-data.js.
+     C'est ainsi que journalistes et agrégateurs suivent un site sans le visiter. -->
+<link rel="alternate" type="application/rss+xml" title="DossierSaskatchewan — Quoi de neuf" href="https://dossiersaskatchewan.ca/feed.xml">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#046A38">
+
+<!-- Open Graph (aperçu au partage : Facebook, LinkedIn, iMessage…) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DossierSaskatchewan">
+<meta property="og:locale" content="en_CA">
+<meta property="og:title" content="Jim Reiter, ministre — DossierSaskatchewan">
+<meta property="og:description" content="Jim Reiter (SKP, Rosetown-Delisle) : Vice-premier ministre et ministre des Finances. Ses fonctions, ses projets de loi, sa présence aux votes et sa biographie.">
+<meta property="og:url" content="https://dossiersaskatchewan.ca/ministres/jim-reiter">
+<meta property="og:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
+<meta property="og:image:width" content="1702">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DossierSaskatchewan — The Legislative Assembly, lot by lot: fields in long strips above the South Saskatchewan River">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jim Reiter, ministre — DossierSaskatchewan">
+<meta name="twitter:description" content="Jim Reiter (SKP, Rosetown-Delisle) : Vice-premier ministre et ministre des Finances. Ses fonctions, ses projets de loi, sa présence aux votes et sa biographie.">
+<meta name="twitter:image" content="https://dossiersaskatchewan.ca/dossier-saskatchewan-cover.png">
+
+<link rel="icon" type="image/svg+xml" href="/commun/sk.svg">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="/commun/sk-48.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/commun/sk-512.png">
+<link rel="apple-touch-icon" href="/commun/sk-180.png">
+
+<!-- Données structurées (aide Google à comprendre le site) -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "BreadcrumbList",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Accueil",
+     "item": "https://dossiersaskatchewan.ca/"
+    },
+    {
+     "@type": "ListItem",
+     "position": 2,
+     "name": "Ministres et député·e·s",
+     "item": "https://dossiersaskatchewan.ca/ministres"
+    },
+    {
+     "@type": "ListItem",
+     "position": 3,
+     "name": "Jim Reiter",
+     "item": "https://dossiersaskatchewan.ca/ministres/jim-reiter"
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "name": "Jim Reiter",
+   "url": "https://dossiersaskatchewan.ca/ministres/jim-reiter",
+   "jobTitle": [
+    "Vice-premier ministre et ministre des Finances"
+   ],
+   "memberOf": [
+    {
+     "@type": "PoliticalParty",
+     "name": "Saskatchewan Party"
+    },
+    {
+     "@type": "GovernmentOrganization",
+     "name": "Conseil exécutif de la Saskatchewan"
+    }
+   ]
+  }
+ ]
+}
+</script>
+<!-- Les DEUX préconnexions sont nécessaires et ce n'est pas un doublon :
+     googleapis.com sert la feuille CSS, gstatic.com sert les ~258 ko de
+     fichiers de police. Sans la seconde, le navigateur n'ouvre la connexion
+     vers gstatic qu'APRÈS avoir lu le CSS — un DNS + TLS en série, soit 100 à
+     300 ms perdus sur mobile à la première visite. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ⚠️ « wght@400..900 » (deux points) demande la POLICE VARIABLE : un seul
+     fichier couvrant toutes les graisses, au lieu d'un fichier par graisse.
+     Mesuré : Archivo passe de 6 fichiers / 205 ko à 1 fichier / 34 ko, et
+     Archivo Narrow de 3 fichiers / 55 ko à 1 fichier / 18 ko — 260 ko et
+     9 requêtes ramenés à 52 ko et 2 requêtes, sans perdre aucune graisse.
+     Ne pas revenir à la liste « 400;500;600 » (points-virgules) : c'est la
+     syntaxe des fichiers statiques.
+     IBM Plex Mono a été retirée : utilisée nulle part. Aucun octet économisé
+     pour autant — un navigateur ne télécharge une police que si elle sert au
+     rendu, donc elle ne partait déjà pas. C'était du ménage, pas un gain. -->
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&family=Archivo+Narrow:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/commun/dq.css">
+<!-- Design « tuiles » (30 sept. 2026) : Onest pour le texte, JetBrains Mono pour les étiquettes,
+     et la couche commun/sk.css, chargée APRÈS dq.css, qui l'emporte sur l'ancien style. -->
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/commun/sk.css">
+</head>
+<body data-page="ministre" data-donnees="ministers,deputesRaw,deputeEmails,presences,historiqueLeg,billsParrains,stats">
+
+<!-- Ticker brutaliste : bande noire défilante — contenu rempli avec les VRAIES
+     données par renderTicker() (appelé une fois les datasets chargés). -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="ticker-text" id="tickerA">● DossierSaskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-text" id="tickerB">● DossierSaskatchewan — independent citizen site · real public data&nbsp;&nbsp;&nbsp;</span>
+  </div>
+</div>
+
+<div id="dq-topbar">
+<header class="top">
+  <div class="brand">
+    <div class="brand-text" role="button" tabindex="0" aria-label="Retour à l'aperçu" onclick="goToTab('apercu')">
+      <!-- Volontairement un div, et non un titre de niveau 1 : le nom du site se
+           répète sur chaque page, alors que le titre de niveau 1 doit annoncer
+           le sujet de LA page. C'est le titre de une de la vue active qui joue
+           ce rôle, et le générateur de pages de section s'en assure.
+           (Pas de balise écrite en toutes lettres dans ce commentaire : elle
+           fausserait les outils qui comptent les titres à l'expression
+           régulière.) -->
+      <div class="brand-title"><span>Dossier<span class="brand-blue">Saskatchewan</span></span></div>
+      <p>Qui siège, qui légifère, qui vote quoi</p>
+    </div>
+    <!-- Feuille d'érable : passerelle vers le site fédéral DossierCanada.
+         Flippe jaune ↔ rouge toutes les 20 s (voir le script plus bas). -->
+    <a class="maple-flip" id="mapleFlip" role="button" tabindex="0"
+       title="Aller au site fédéral — DossierCanada"
+       aria-label="Aller au site fédéral — DossierCanada"
+       onclick="goToFederal(event)">
+      <svg viewBox="-2015 -2000 4030 4030" aria-hidden="true"><path fill="currentColor" d="m-90 2030 45-863a95 95 0 0 0-111-98l-859 151 116-320a65 65 0 0 0-20-73l-941-762 212-99a65 65 0 0 0 34-79l-186-572 542 115a65 65 0 0 0 73-38l105-247 423 454a65 65 0 0 0 111-57l-204-1052 327 189a65 65 0 0 0 91-27l332-652 332 652a65 65 0 0 0 91 27l327-189-204 1052a65 65 0 0 0 111 57l423-454 105 247a65 65 0 0 0 73 38l542-115-186 572a65 65 0 0 0 34 79l212 99-941 762a65 65 0 0 0-20 73l116 320-859-151a95 95 0 0 0-111 98l45 863z"/></svg>
+    </a>
+  </div>
+  <!-- Nav DANS la ligne du header (maquette : logo | menu | contrôles sur
+       UNE seule rangée). Sur mobile, le nav devient le panneau plein écran
+       du hamburger (position:fixed), peu importe où il vit dans le DOM. -->
+  <nav class="tabs">
+    <div class="close-menu" id="closeMenuBtn"><span data-i18n="nav.close">Close</span> ✕</div>
+    <!-- De vrais liens, pas des <button> : un moteur de recherche ne suit pas un bouton, et
+         /ministres, /projets-de-loi, /votes et /lexique n'avaient aucun lien qu'il puisse suivre. -->
+    <a href="/" data-view="apercu"><span class="n">01</span><span data-i18n="nav.apercu">Overview</span></a>
+    <a class="active" aria-current="page" href="/ministres" data-view="ministres"><span class="n">02</span><span data-i18n="nav.ministres">Ministers</span></a>
+    <a href="/projets-de-loi" data-view="projets"><span class="n">03</span><span data-i18n="nav.projets">Bills</span></a>
+    <!-- Votes a quitté la barre le 30 oct. 2026 (comme DQ) : lié du pied de page et de /projets-de-loi. -->
+    <a href="/archives" data-view="archives"><span class="n">04</span><span data-i18n="nav.archives">Archives</span></a>
+    <a href="/lexique" data-view="lexique"><span class="n">05</span><span data-i18n="nav.lexique">Glossary</span></a>
+    <!-- Onglet 06 : menu des villes (7 nov. 2026), comme DossierCanada. Un seul lien vers « Représentez votre ville » sur DQ. -->
+    <details class="villes-menu tab-villes" id="villesMenu">
+      <summary><span class="n">06</span><span data-i18n="nav.villes">Cities</span></summary>
+      <ul>
+        <li class="villes-rtv"><a href="https://dossierquebec.ca/represente-ta-ville?province=sk&lang=en" target="_blank" rel="noopener">+ <span data-i18n="nav.rtv">Represent your city</span></a></li>
+      </ul>
+    </details>
+    <script>(function(){var m=document.getElementById('villesMenu');if(!m)return;var a=m.querySelector('a');function maj(){a.href='https://dossierquebec.ca/represente-ta-ville?province=sk'+(/^en/i.test(document.documentElement.lang)?'&lang=en':'');}maj();var ul=m.querySelector('ul'),s=m.querySelector('summary');function placer(){if(window.innerWidth<=640){ul.style.top=ul.style.left='';return;}var r=s.getBoundingClientRect();ul.style.top=(r.bottom+6)+'px';ul.style.left=Math.max(8,Math.min(r.left,window.innerWidth-ul.offsetWidth-8))+'px';}m.addEventListener('toggle',function(){if(m.open){maj();placer();}});window.addEventListener('scroll',function(){if(m.open)m.open=false;},{passive:true});document.addEventListener('click',function(e){if(m.open&&!m.contains(e.target))m.open=false;});document.addEventListener('keydown',function(e){if(e.key==='Escape'&&m.open){m.open=false;m.querySelector('summary').focus();}});})();</script>
+    <a href="/mon-dossier" data-view="mondossier" class="nav-mondossier"><span class="n">★</span><span data-i18n="nav.mondossier">My file</span></a>
+  </nav>
+  <div class="header-ctrls">
+    <div class="font-size-ctrl" id="fontSizeCtrl">
+      <button id="fontMinus" aria-label="Réduire le texte">A−</button>
+      <span id="fontPct">100%</span>
+      <button id="fontPlus" aria-label="Agrandir le texte">A+</button>
+    </div>
+    <!-- Aucun contenu textuel : l'icône est dessinée en CSS. Le nom accessible
+         vient donc entièrement de aria-label, que le JS tient à jour. -->
+    <button class="theme-toggle" id="themeToggle" aria-pressed="false" aria-label="Passer au thème sombre" title="Passer au thème sombre"></button>
+    <button class="lang-toggle" id="langToggle">English</button>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+</div>
+
+<script>
+/* Bascule le bloc logo+menu en mode compact après un peu de défilement.
+   Hystérésis (80 vs 20) pour éviter le clignotement autour du seuil. */
+(function(){
+  var bar = document.getElementById('dq-topbar');
+  var compact = false;
+  function onScroll(){
+    var y = window.scrollY;
+    if(!compact && y > 80){ compact = true; bar.classList.add('compact'); }
+    else if(compact && y < 20){ compact = false; bar.classList.remove('compact'); }
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+// Ouvre le site fédéral DossierCanada dans un nouvel onglet.
+function goToFederal(evt){
+  if(evt) evt.stopPropagation();
+  window.open('https://dossiercanada.ca/', '_blank', 'noopener');
+}
+// Feuille d'érable : flippe jaune ↔ rouge toutes les 20 secondes.
+(function(){
+  var leaf = document.getElementById('mapleFlip');
+  if(!leaf) return;
+  setInterval(function(){ leaf.classList.toggle('is-red'); }, 20000);
+})();
+
+</script>
+
+<div class="app">
+
+  <!-- APERÇU -->
+  <section class="view active" id="view-ministre">
+    <nav class="fil-ariane" aria-label="Fil d'Ariane"><a href="/" data-i18n="fil.accueil">Accueil</a><span class="sep" aria-hidden="true">›</span><a href="/ministres" data-i18n="fil.ministres">Ministres et député·e·s</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">Jim Reiter</span></nav>
+    <div class="view-hero min-hero">
+      <div class="min-colphoto"></div>
+      <div class="min-tete">
+        <h1 class="hero-h1 hero-h1-md"><span class="hero-sujet"><span class="fr-txt">Ministre de la Saskatchewan</span><span class="en-txt">Saskatchewan minister</span></span><span>Jim Reiter</span></h1>
+        <p class="view-hero-sub"><span class="fr-txt">Jim Reiter est Vice-premier ministre et ministre des Finances au Conseil exécutif de la 30<sup>e</sup> législature, dirigé par le premier ministre Scott Moe (au 12 novembre 2026).</span><span class="en-txt">Jim Reiter is Deputy Premier and Minister of Finance in the Executive Council of the 30th Parliament, led by Premier Scott Moe (as of November 12, 2026).</span></p>
+        <button class="follow-btn" onclick="toggleFollow('Jim Reiter')" data-i18n="btn.follow">Suivre</button>
+      </div>
+    </div>
+    <div class="band band-white bleed"><div class="min-fiche">
+      <h2><span class="fr-txt">Fonctions</span><span class="en-txt">Roles</span></h2>
+      <ul class="min-liste"><li><span class="fr-txt">Vice-premier ministre et ministre des Finances</span><span class="en-txt">Deputy Premier and Minister of Finance</span></li></ul>
+      <div class="min-faits">
+        <div class="m-row"><span class="m-label"><span class="fr-txt">Parti</span><span class="en-txt">Party</span></span><span class="m-val">Saskatchewan Party (SKP)</span></div>
+        <div class="m-row"><span class="m-label"><span class="fr-txt">Circonscription</span><span class="en-txt">Riding</span></span><span class="m-val">Rosetown-Delisle</span></div>
+        
+      </div>
+
+      <h2><span class="fr-txt">Projets de loi parrainés</span><span class="en-txt">Bills sponsored</span></h2>
+      <ul class="min-liste"><li><a href="/projets-de-loi/63-30"><span class="fr-txt">PL 63 — The Municipal Employees' Pension Amendment Act, 2026</span><span class="en-txt">Bill 63 — The Municipal Employees' Pension Amendment Act, 2026</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Déposé le 2026-10-29</span><span class="en-txt">Introduced on 2026-10-29</span></span></li><li><a href="/projets-de-loi/64-30"><span class="fr-txt">PL 64 — The Revenue and Financial Services Amendment Act, 2026</span><span class="en-txt">Bill 64 — The Revenue and Financial Services Amendment Act, 2026</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Déposé le 2026-10-29</span><span class="en-txt">Introduced on 2026-10-29</span></span></li><li><a href="/projets-de-loi/49-30"><span class="fr-txt">PL 49 — The Income Tax Amendment Act, 2026</span><span class="en-txt">Bill 49 — The Income Tax Amendment Act, 2026</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2026-05-14</span><span class="en-txt">Assented to on 2026-05-14</span></span></li><li><a href="/projets-de-loi/50-30"><span class="fr-txt">PL 50 — The Financial Administration Amendment Act, 2026</span><span class="en-txt">Bill 50 — The Financial Administration Amendment Act, 2026</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2026-05-14</span><span class="en-txt">Assented to on 2026-05-14</span></span></li><li><a href="/projets-de-loi/51-30"><span class="fr-txt">PL 51 — The Corporation Capital Tax Amendment Act, 2026</span><span class="en-txt">Bill 51 — The Corporation Capital Tax Amendment Act, 2026</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2026-05-14</span><span class="en-txt">Assented to on 2026-05-14</span></span></li><li><a href="/projets-de-loi/60-30"><span class="fr-txt">PL 60 — The Appropriation Act, 2026 (No. 1)</span><span class="en-txt">Bill 60 — The Appropriation Act, 2026 (No. 1)</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2026-05-14</span><span class="en-txt">Assented to on 2026-05-14</span></span></li><li><a href="/projets-de-loi/25-30"><span class="fr-txt">PL 25 — The Income Tax (Miscellaneous) Amendment Act, 2025</span><span class="en-txt">Bill 25 — The Income Tax (Miscellaneous) Amendment Act, 2025</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-12-04</span><span class="en-txt">Assented to on 2025-12-04</span></span></li><li><a href="/projets-de-loi/46-30"><span class="fr-txt">PL 46 — The Appropriation Act, 2025 (No. 2)</span><span class="en-txt">Bill 46 — The Appropriation Act, 2025 (No. 2)</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-12-04</span><span class="en-txt">Assented to on 2025-12-04</span></span></li><li><a href="/projets-de-loi/4-30"><span class="fr-txt">PL 4 — The Workers' Compensation Amendment Act, 2024</span><span class="en-txt">Bill 4 — The Workers' Compensation Amendment Act, 2024</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-05-13</span><span class="en-txt">Assented to on 2025-05-13</span></span></li><li><a href="/projets-de-loi/5-30"><span class="fr-txt">PL 5 — The Saskatchewan Employment Amendment Act, 2024</span><span class="en-txt">Bill 5 — The Saskatchewan Employment Amendment Act, 2024</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-05-13</span><span class="en-txt">Assented to on 2025-05-13</span></span></li><li><a href="/projets-de-loi/13-30"><span class="fr-txt">PL 13 — The Income Tax Amendment Act, 2025</span><span class="en-txt">Bill 13 — The Income Tax Amendment Act, 2025</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-05-13</span><span class="en-txt">Assented to on 2025-05-13</span></span></li><li><a href="/projets-de-loi/16-30"><span class="fr-txt">PL 16 — The Provincial Sales Tax Amendment Act, 2025</span><span class="en-txt">Bill 16 — The Provincial Sales Tax Amendment Act, 2025</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-05-13</span><span class="en-txt">Assented to on 2025-05-13</span></span></li><li><a href="/projets-de-loi/23-30"><span class="fr-txt">PL 23 — The Appropriation Act, 2025 (No. 1)</span><span class="en-txt">Bill 23 — The Appropriation Act, 2025 (No. 1)</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2025-05-13</span><span class="en-txt">Assented to on 2025-05-13</span></span></li><li><a href="/projets-de-loi/1-30"><span class="fr-txt">PL 1 — The Saskatchewan Affordability Act</span><span class="en-txt">Bill 1 — The Saskatchewan Affordability Act</span></a> <span class="pr-meta">· <span class="fr-txt">30e législature</span><span class="en-txt">30th Legislature</span> · <span class="fr-txt">Sanctionné le 2024-12-10</span><span class="en-txt">Assented to on 2024-12-10</span></span></li></ul>
+
+      <h2><span class="fr-txt">Présence aux votes</span><span class="en-txt">Vote attendance</span></h2>
+      <p><span class="fr-txt"><b class="presence-pastille presence-haute">94 %</b> des votes nominaux de la session : 32 sur 34, soit 2 votes manqués (30e législature).</span><span class="en-txt"><b class="presence-pastille presence-haute">94%</b> of recorded divisions this session: 32 of 34, i.e. 2 votes missed (30th Legislature).</span></p><p class="pr-meta"><span class="fr-txt">Un vote manqué peut être une mission officielle, une maladie ou un conflit d’horaire : le registre n’en donne pas la raison.</span><span class="en-txt">A missed vote can be an official mission, an illness or a scheduling conflict: the register does not give the reason.</span></p>
+
+      
+      <p></p>
+
+      
+
+      <h2><span class="fr-txt">Biographie</span><span class="en-txt">Biography</span></h2><p><span class="fr-txt">Député de Rosetown-Delisle (Saskatchewan Party).</span><span class="en-txt">MLA for Rosetown-Delisle (Saskatchewan Party).</span></p>
+
+      <h2><span class="fr-txt">Coordonnées officielles</span><span class="en-txt">Official contact</span></h2>
+      <p><a class="m-mail" href="mailto:jimreitermla@sasktel.net">✉ jimreitermla@sasktel.net</a></p>
+      
+    </div></div>
+  </section>
+
+  <!-- MINISTRES & DÉPUTÉS -->
+  
+
+  <!-- PROJETS DE LOI -->
+  
+
+  <!-- VOTES -->
+  
+
+  <!-- ARCHIVES (d'après DossierQuébec, 30 oct. 2026) : les législatures terminées, une carte chacune
+       (projets de loi, votes). Dessiné par commun/dq.js (renderArchives) depuis
+       data/archives/index.json : la 30e y entre seule à l'ouverture de la 31e. -->
+  
+
+  <!-- COMPTE & ABONNEMENT -->
+
+  <!-- LEXIQUE (fusion : personnes, lexique, apropos) -->
+  <!-- PROMESSES — vue sans onglet (comme view-bd). Accessible par /promesses,
+       par le bouton de la bande de dissolution et par le bloc du Lexique.
+       Contenu saisi à la main dans data/promises.json (voir la note du fichier). -->
+  
+
+  
+
+  <!-- PAGE CACHÉE — la BD « l'idée derrière le site ». Aucun onglet n'y mène :
+       accessible seulement par le « et moi » du bas de page (à côté de
+       « Construit avec Claude »). goToTab('bd') fonctionne sans bouton d'onglet. -->
+  <!-- /mon-dossier : l'espace de la personne connectée, côté ASSEMBLÉE seulement (Martin,
+       22 sept. 2026 : « mes dossiers provincial et les villes doivent être complètement séparés »).
+       Les villes gardent leur propre page, /mes-dossiers, avec le style des volets. Tout le contenu
+       est rempli par commun/dq.js (renderMonDossier) : rien de personnel n'est dans le HTML. -->
+  <!-- LOBBYING (/lobbyisme, 6 oct. 2026) : le registre des lobbyistes, lu avec l'accord écrit du
+       bureau du registraire. Conditions (voir scrapers/lobbyistes.js) : source nommée, date de
+       lecture affichée, texte du registre tel quel, aucune apparence d'appui. Rendu par
+       renderLobbying (commun/dq.js). -->
+  
+
+  <!-- LES RÈGLES (5 oct. 2026, comme sur DossierQuébec) : les règles de sources du site, réunies
+       sur une page. Chaque règle a sa preuve dans le dépôt (scrapers/sk-commun.js,
+       scripts/verifier-promesses.mjs, scrapers/resumes.js, les encadrés de méthode) : n'en
+       ajouter aucune que le site n'applique pas réellement. Lien dans le pied de page. -->
+  
+
+  
+
+  
+
+</div>
+
+<!-- Footer maquette : texte à gauche (avec « construit avec Claude » suivi du
+     lien caché « et moi » vers la BD), liens texte en majuscules à droite. -->
+<footer>
+  <nav class="footer-nav" aria-label="Plan du site">
+    <a href="/" data-i18n="nav.apercu">Overview</a>
+    <a href="/ministres" data-i18n="nav.ministres">Ministers</a>
+    <a href="/projets-de-loi" data-i18n="nav.projets">Bills</a>
+    <a href="/votes" data-i18n="nav.votes">Votes</a>
+    <a href="/promesses" data-i18n="fil.promesses">Promises</a>
+    <a href="/archives" data-i18n="nav.archives">Archives</a>
+    <a href="/lexique" data-i18n="nav.lexique">Glossary</a>
+    <a href="/sources" data-i18n="fil.bd">Site updates</a>
+    <a href="/mon-dossier" data-i18n="nav.mondossier">My file</a>
+    </span>
+  </nav>
+  <div class="footer-inner">
+  <span class="footer-left-line"><span id="footerLeft">Unofficial site — public data from the Legislative Assembly of Saskatchewan and the Government of Saskatchewan ·</span> <span id="footerRight">A project by</span> <a class="footer-etmoi" id="footerDafr" href="https://www.dafrsolution.com/en" target="_blank" rel="noopener">DAFR Solution</a></span>
+  <!-- La page Facebook du site (créée par Martin le 1er oct. 2026). Pas de « Source code ». -->
+  <span class="footer-right-group">
+    <a class="footer-gh" href="/lobbyisme" data-i18n="footer.lobby">Lobbying</a>
+    <a class="footer-gh" href="/regles" data-i18n="footer.regles">The rules</a>
+    <a class="footer-gh" href="https://www.facebook.com/dossiersaskatchewan/" target="_blank" rel="noopener" aria-label="DossierSaskatchewan on Facebook">Facebook</a>
+    <a class="footer-gh" href="/feed.xml" data-i18n="footer.rss" title="RSS feed of “What's new”">RSS feed</a>
+  </span>
+  </div>
+</footer>
+
+<button id="backToTop" class="dq-remonter" aria-label="Remonter en haut" title="Remonter en haut" onclick="window.scrollTo({top:0, behavior:'smooth'})">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="/commun/dq.js"></script>
+<!-- Vercel Web Analytics — sans cookie, sans donnée personnelle (donc pas de
+     bannière de consentement requise). Le script est servi automatiquement par
+     Vercel quand Web Analytics est activé dans le tableau de bord du projet (activé pour
+     DossierSaskatchewan le 1er oct. 2026 ; un « Redeploy » ne suffit pas : scripts/vercel-deployer.sh
+     annule un déploiement sans changement, il faut un commit qui touche le site). -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
