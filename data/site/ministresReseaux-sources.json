@@ -1,1 +1,110 @@
-{"ken-cheveldayoff": {"source": "https://cheveldayoff.com/index.php?docID=12", "liens": ["https://www.facebook.com/KenCheveldayoffSK", "https://www.instagram.com/kencheveldayoffsk"], "releve": "2026-11-11"}}
+{
+ "ken-cheveldayoff": {
+  "source": [
+   "https://cheveldayoff.com/index.php?docID=12",
+   "https://skcaucus.com/ken-cheveldayoff/"
+  ],
+  "liens": [
+   "https://www.facebook.com/KenCheveldayoffSK",
+   "https://www.instagram.com/kencheveldayoffsk",
+   "https://x.com/kencheveld",
+   "https://www.youtube.com/channel/UCJXYKTvGnuQxfpPMbhR96Ig"
+  ],
+  "releve": "2026-11-11",
+  "note": "Facebook et Instagram lus sur cheveldayoff.com ; X et YouTube sur skcaucus.com"
+ },
+ "scott-moe": {
+  "source": "https://skcaucus.com/scott-moe/",
+  "liens": [
+   "https://x.com/PremierScottMoe",
+   "https://www.facebook.com/PremierScottMoe",
+   "https://www.instagram.com/premierscottmoe",
+   "https://www.youtube.com/c/PremierScottMoe"
+  ],
+  "releve": "2026-11-11"
+ },
+ "david-marit": {
+  "source": "https://skcaucus.com/david-marit/",
+  "liens": [
+   "https://x.com/DavidMaritSK"
+  ],
+  "releve": "2026-11-11"
+ },
+ "jeremy-harrison": {
+  "source": "https://skcaucus.com/jeremy-harrison/",
+  "liens": [
+   "https://x.com/JHarrisonMLA",
+   "https://www.facebook.com/JeremyHarrison.ca"
+  ],
+  "releve": "2026-11-11"
+ },
+ "lori-carr": {
+  "source": "https://skcaucus.com/lori-carr/",
+  "liens": [
+   "https://www.facebook.com/profile.php?id=61552976060668"
+  ],
+  "releve": "2026-11-11"
+ },
+ "everett-hindley": {
+  "source": "https://skcaucus.com/everett-hindley/",
+  "liens": [
+   "https://x.com/everetthindley",
+   "https://www.facebook.com/everettswiftcurrrent"
+  ],
+  "releve": "2026-11-11"
+ },
+ "jeremy-cockrill": {
+  "source": "https://skcaucus.com/jeremy-cockrill/",
+  "liens": [
+   "https://x.com/jeremycockrill",
+   "https://www.instagram.com/jeremy4thebattlefords",
+   "https://www.youtube.com/channel/UCr4ZrIhrW8-apTS7xgZPTdA"
+  ],
+  "releve": "2026-11-11"
+ },
+ "tim-mcleod": {
+  "source": "https://skcaucus.com/tim-mcleod/",
+  "liens": [
+   "https://www.facebook.com/MooseJawNorth"
+  ],
+  "releve": "2026-11-11"
+ },
+ "terry-jenson": {
+  "source": "https://skcaucus.com/terry-jenson/",
+  "liens": [
+   "https://x.com/TJenson33",
+   "https://www.facebook.com/terryjenson.mla"
+  ],
+  "releve": "2026-11-11"
+ },
+ "warren-kaeding": {
+  "source": "https://skcaucus.com/warren-kaeding/",
+  "liens": [
+   "https://x.com/wkaeding",
+   "https://www.facebook.com/warren.kaeding.1",
+   "https://www.youtube.com/channel/UCA4keyY_dwsFu0U6w6eWCDw"
+  ],
+  "releve": "2026-11-11"
+ },
+ "alana-ross": {
+  "source": "https://skcaucus.com/alana-ross/",
+  "liens": [
+   "https://www.facebook.com/alanarossprincealbertnorthcote"
+  ],
+  "releve": "2026-11-11"
+ },
+ "eric-schmalz": {
+  "source": "https://skcaucus.com/eric-schmalz/",
+  "liens": [
+   "https://www.facebook.com/ericschmalz4saskrivers"
+  ],
+  "releve": "2026-11-11"
+ },
+ "sean-wilson": {
+  "source": "https://skcaucus.com/sean-wilson/",
+  "liens": [
+   "https://www.facebook.com/seanwilsonCP"
+  ],
+  "releve": "2026-11-11"
+ }
+}
