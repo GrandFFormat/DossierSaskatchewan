@@ -3,7 +3,8 @@
 //   commun/sk.svg                       l'icône vectorielle (onglet du navigateur)
 //   commun/sk-48.png, sk-180.png, sk-512.png
 //   favicon.ico                         un .ico qui contient le PNG de 48 px
-//   dossier-saskatchewan-cover.png      l'image de partage, 1702 × 630 (Facebook, X, iMessage…)
+//   dossier-saskatchewan-partage.png    l'image de partage, 1200 × 630, le format exact de Facebook, X, iMessage
+//                                       (l'ancienne dossier-saskatchewan-cover.png de 1702 px reste en place)
 //
 // Les tuiles de l'image de partage sont tirées de la même graine et des mêmes couleurs que
 // celles de l'accueil (commun/dq.js, renderTuiles) : le même champ, partout.
@@ -36,15 +37,15 @@ const COUVERTURE = `<!doctype html><html><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0}
-  body{width:1702px;height:630px;background:#fff;font-family:Onest,sans-serif;position:relative;overflow:hidden}
-  .texte{position:absolute;left:80px;top:70px;width:860px}
-  .marque{display:flex;align-items:center;gap:16px;font-weight:700;font-size:36px;color:#0F1F17;letter-spacing:-0.02em}
+  body{width:1200px;height:630px;background:#fff;font-family:Onest,sans-serif;position:relative;overflow:hidden}
+  .texte{position:absolute;left:64px;top:64px;width:640px}
+  .marque{display:flex;align-items:center;gap:16px;font-weight:700;font-size:32px;color:#0F1F17;letter-spacing:-0.02em}
   .marque svg{width:48px;height:48px}
-  h1{font-weight:600;font-size:92px;line-height:1.02;letter-spacing:-0.035em;color:#0F1F17;margin:56px 0 26px}
+  h1{font-weight:600;font-size:74px;line-height:1.02;letter-spacing:-0.035em;color:#0F1F17;margin:48px 0 24px}
   h1 em{font-style:normal;color:#16A34A}
-  p{font-size:27px;line-height:1.5;color:#56635B;max-width:34ch}
-  .champ{position:absolute;right:60px;top:50px;width:640px;height:530px;border-radius:40px;overflow:hidden;background:#0F1F17}
-  .tuiles{position:absolute;left:-20%;top:-30%;width:140%;display:grid;grid-template-columns:repeat(9,1fr);gap:11px;transform:rotate(-8deg)}
+  p{font-size:24px;line-height:1.5;color:#56635B;max-width:34ch}
+  .champ{position:absolute;right:48px;top:48px;width:420px;height:534px;border-radius:40px;overflow:hidden;background:#0F1F17}
+  .tuiles{position:absolute;left:-240px;top:-170px;width:900px;display:grid;grid-template-columns:repeat(9,1fr);gap:11px;transform:rotate(-8deg)}
   .tuiles span{border-radius:9px;aspect-ratio:1/1}
 </style></head><body>
   <div class="texte">
@@ -77,11 +78,11 @@ try {
   }
   writeFileSync('favicon.ico', ico(readFileSync('commun/sk-48.png'), 48));
 
-  await page.setViewportSize({ width: 1702, height: 630 });
+  await page.setViewportSize({ width: 1200, height: 630 });
   await page.setContent(COUVERTURE, { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
-  await page.screenshot({ path: 'dossier-saskatchewan-cover.png' });
-  console.log('images faites : commun/sk.svg, sk-48/180/512.png, favicon.ico, dossier-saskatchewan-cover.png');
+  await page.screenshot({ path: 'dossier-saskatchewan-partage.png' });
+  console.log('images faites : commun/sk.svg, sk-48/180/512.png, favicon.ico, dossier-saskatchewan-partage.png');
 } finally {
   await navigateur.close();
 }
