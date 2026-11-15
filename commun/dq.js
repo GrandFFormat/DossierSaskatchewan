@@ -242,7 +242,7 @@ const translations = {
     'promo.diss':"Les projets de loi de la 43e législature sont morts à la dissolution du 27 août : le suivi reprendra avec les premiers projets de loi de la nouvelle législature, convoquée le 17 novembre 2026.",
     'promo.compte.h':"Votre compte",
     'promo.mesdossiers':"Mon dossier →",
-    'ch.papier':"En Saskatchewan, les pétitions se signent sur papier seulement : l'Assemblée n'accepte pas de pétition électronique.",
+    'ch.papier':"<b>✍️ En Saskatchewan, une pétition se signe encore à l’encre.</b> Pas de pétition en ligne : chaque signature doit être originale, écrite sur la pétition même, sans photocopie, télécopie ni version électronique. Et la pétition n’arrive en Chambre que si une ou un député accepte de la présenter. L’<a href=\"https://www.assnat.qc.ca/fr/exprimez-votre-opinion/petition/index.html\" target=\"_blank\" rel=\"noopener\">Assemblée nationale du Québec</a> accepte les pétitions en ligne depuis 2009, la <a href=\"https://www.ourcommons.ca/procedure/procedure-and-practice-3/ch_22_4-f.html\" target=\"_blank\" rel=\"noopener\">Chambre des communes</a> depuis 2015. <a href=\"https://www.legassembly.sk.ca/media/xq4ddcwt/practical-guide-to-petitions-october-2024-v10.pdf\" target=\"_blank\" rel=\"noopener\">Les règles officielles ↗</a>",
     'pet.sub':"Pas de pétition électronique en Saskatchewan : elles se signent sur papier et un·e député·e les dépose en Chambre",
     'mission.eyebrow':"Notre mission",
     'mission.st1':"Le site officiel de l'Assemblée est la source la plus fiable qui existe. Celui-ci la rend juste",
@@ -635,7 +635,7 @@ const translations = {
     'lobby.link1':"Search the registry ↗",
     'lobby.link2':"Office of the Registrar of Lobbyists ↗",
     // Petitions
-    'ch.papier':"In Saskatchewan, petitions are signed on paper only: the Assembly does not accept electronic petitions.",
+    'ch.papier':"<b>✍️ In Saskatchewan, a petition is still signed in ink.</b> No online petitions: every signature must be original, written on the petition itself, with no photocopies, faxes or electronic versions. And a petition only reaches the House if an MLA agrees to present it. Quebec’s <a href=\"https://www.assnat.qc.ca/fr/exprimez-votre-opinion/petition/index.html\" target=\"_blank\" rel=\"noopener\">National Assembly</a> has accepted online petitions since 2009, the <a href=\"https://www.ourcommons.ca/procedure/procedure-and-practice-3/ch_22_4-e.html\" target=\"_blank\" rel=\"noopener\">House of Commons</a> since 2015. <a href=\"https://www.legassembly.sk.ca/media/xq4ddcwt/practical-guide-to-petitions-october-2024-v10.pdf\" target=\"_blank\" rel=\"noopener\">The official rules ↗</a>",
     'pet.sub':"No electronic petitions in Saskatchewan: they are signed on paper and an MLA presents them in the House",
     'pet.info':"Each petition above is reproduced as-is from the National Assembly's official list, with a link to the official page where you can find and sign it. The signature count shown is the one recorded at the last update — for the exact, current count, or to sign, use the \u201cFind and sign on assnat.qc.ca\u201d link on each card.",
     // Where this data comes from
