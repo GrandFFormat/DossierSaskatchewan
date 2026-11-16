@@ -4640,3 +4640,11 @@ try{ localStorage.setItem('dq:dernier-volet', JSON.stringify({ ville: 'assemblee
   renderTicker();
   demarrageFini = true;
 })();
+
+// La mesure maison commune à tous les sites Dossier (16 nov. 2026) : pages vues et clics, sans donnée
+// personnelle, lus dans dossierquebec.ca/admin. Un seul fichier, servi par DQ.
+(function () {
+  if (window.__dqMesure) return; window.__dqMesure = true;
+  var s = document.createElement("script"); s.src = "https://dossierquebec.ca/commun/mesure.js"; s.defer = true;
+  document.head.appendChild(s);
+})();
