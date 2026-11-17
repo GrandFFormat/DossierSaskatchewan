@@ -802,6 +802,91 @@
       "The Revenue and Financial Services Act"
     ]
   },
+  "300065": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-65.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Protection From Human Trafficking Act",
+      "The Protection From Human Trafficking (Coerced Debts) Amendment Act, 2024",
+      "The Hotel Keepers Act"
+    ]
+  },
+  "300066": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-66.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Pooled Registered Pension Plans (Saskatchewan) Act"
+    ]
+  },
+  "300067": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-67.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Coroners Act, 1999"
+    ]
+  },
+  "300068": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-68.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Enforcement of Maintenance Orders Act, 1997",
+      "The Registered Plan (Retirement Income) Exemption Act"
+    ]
+  },
+  "300069": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-69.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Legal Profession Act, 1990"
+    ]
+  },
+  "300070": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-70.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300071": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-71.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Personal Care Homes Act"
+    ]
+  },
+  "300072": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-72.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Opioid Damages and Health Care Costs Recovery Act"
+    ]
+  },
+  "300073": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-73.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300074": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-74.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Workers’ Compensation Act, 2013"
+    ]
+  },
+  "300075": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-75.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
   "300601": {
     "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-601.pdf",
     "version": 4,
@@ -973,5 +1058,65 @@
     "version": 4,
     "lu": "2026-11-07",
     "lois": []
+  },
+  "300631": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-631.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300632": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-632.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300633": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-633.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Provincial Sales Tax Act"
+    ]
+  },
+  "300634": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-634.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300635": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-635.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300636": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-636.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Consumer Protection and Business Practices Act"
+    ]
+  },
+  "300637": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-637.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300638": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-638.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": []
+  },
+  "300639": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-639.pdf",
+    "version": 4,
+    "lu": "2026-11-17",
+    "lois": [
+      "The Saskatchewan Assistance Act"
+    ]
   }
 }

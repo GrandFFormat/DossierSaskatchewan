@@ -1,8 +1,8 @@
 {
  "legislature": 30,
  "source": "Procès-verbaux (Votes and Proceedings) de l'Assemblée législative de la Saskatchewan",
- "scrapedAt": "2026-11-16T23:56:52.152Z",
- "count": 34,
+ "scrapedAt": "2026-11-17T20:24:45.780Z",
+ "count": 36,
  "votes": [
   {
    "legislature": 30,
@@ -13414,6 +13414,796 @@
      "name": "April ChiefCalf",
      "lastName": "ChiefCalf",
      "riding": "Saskatoon Westview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "keith-jorgenson",
+     "name": "Keith Jorgenson",
+     "lastName": "Jorgenson",
+     "riding": "Saskatoon Churchill-Wildwood",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "bhajan-brar",
+     "name": "Bhajan Brar",
+     "lastName": "Brar",
+     "riding": "Regina Pasqua",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "don-mcbean",
+     "name": "Don McBean",
+     "lastName": "McBean",
+     "riding": "Saskatoon Chief Mistawasis",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "darcy-warrington",
+     "name": "Darcy Warrington",
+     "lastName": "Warrington",
+     "riding": "Saskatoon Stonebridge",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "joan-pratchler",
+     "name": "Joan Pratchler",
+     "lastName": "Pratchler",
+     "riding": "Regina Rochdale",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "sally-housser",
+     "name": "Sally Housser",
+     "lastName": "Housser",
+     "riding": "Regina University",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "brittney-senger",
+     "name": "Brittney Senger",
+     "lastName": "Senger",
+     "riding": "Saskatoon Southeast",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "jacqueline-roy",
+     "name": "Jacqueline Roy",
+     "lastName": "Roy",
+     "riding": "Regina Northeast",
+     "party": "NDP"
+    }
+   ],
+   "abstentions": []
+  },
+  {
+   "legislature": 30,
+   "session": 3,
+   "num": 1,
+   "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261105Minutes-HTML.htm",
+   "date": "2026-11-05",
+   "title": "Amendment – That the motion be amended by adding: And, that the Assembly does not support the agenda outlined in the Speech from the Throne because it does not include any new measures to address the urgent challenges Saskatchewan people face regarding health care, the cost of living, and public safety; and further, That the Assembly has lost confidence in the government.",
+   "stage": "Amendment",
+   "stageFr": "Amendement",
+   "subject": "That the motion be amended by adding: And, that the Assembly does not support the agenda outlined in the Speech from the Throne because it does not include any new measures to address the urgent challenges Saskatchewan people face regarding health care, the cost of living, and public safety; and further, That the Assembly has lost confidence in the government.",
+   "motion": "That the motion be amended by adding: And, that the Assembly does not support the agenda outlined in the Speech from the Throne because it does not include any new measures to address the urgent challenges Saskatchewan people face regarding health care, the cost of living, and public safety; and further, That the Assembly has lost confidence in the government.",
+   "result": "rejete",
+   "billNum": null,
+   "totals": {
+    "pour": 21,
+    "contre": 32,
+    "abstentions": null
+   },
+   "pour": [
+    {
+     "assnatId": "carla-beck",
+     "name": "Carla Beck",
+     "lastName": "Beck",
+     "riding": "Regina Lakeview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "erika-ritchie",
+     "name": "Erika Ritchie",
+     "lastName": "Ritchie",
+     "riding": "Saskatoon Nutana",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "noor-burki",
+     "name": "Noor Burki",
+     "lastName": "Burki",
+     "riding": "Regina Coronation Park",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "jared-clarke",
+     "name": "Jared Clarke",
+     "lastName": "Clarke",
+     "riding": "Regina Walsh Acres",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "vicki-mowat",
+     "name": "Vicki Mowat",
+     "lastName": "Mowat",
+     "riding": "Saskatoon Fairview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "matt-love",
+     "name": "Matt Love",
+     "lastName": "Love",
+     "riding": "Saskatoon Eastview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "nathaniel-teed",
+     "name": "Nathaniel Teed",
+     "lastName": "Teed",
+     "riding": "Saskatoon Meewasin",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "jordan-mcphail",
+     "name": "Jordan McPhail",
+     "lastName": "McPhail",
+     "riding": "Cumberland",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "meara-conway",
+     "name": "Meara Conway",
+     "lastName": "Conway",
+     "riding": "Regina Elphinstone-Centre",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "nicole-sarauer",
+     "name": "Nicole Sarauer",
+     "lastName": "Sarauer",
+     "riding": "Regina Douglas Park",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "kim-breckner",
+     "name": "Kim Breckner",
+     "lastName": "Breckner",
+     "riding": "Saskatoon Riversdale",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "brent-blakley",
+     "name": "Brent Blakley",
+     "lastName": "Blakley",
+     "riding": "Regina Wascana Plains",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "tajinder-grewal",
+     "name": "Tajinder Grewal",
+     "lastName": "Grewal",
+     "riding": "Saskatoon University-Sutherland",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "keith-jorgenson",
+     "name": "Keith Jorgenson",
+     "lastName": "Jorgenson",
+     "riding": "Saskatoon Churchill-Wildwood",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "bhajan-brar",
+     "name": "Bhajan Brar",
+     "lastName": "Brar",
+     "riding": "Regina Pasqua",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "don-mcbean",
+     "name": "Don McBean",
+     "lastName": "McBean",
+     "riding": "Saskatoon Chief Mistawasis",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "darcy-warrington",
+     "name": "Darcy Warrington",
+     "lastName": "Warrington",
+     "riding": "Saskatoon Stonebridge",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "joan-pratchler",
+     "name": "Joan Pratchler",
+     "lastName": "Pratchler",
+     "riding": "Regina Rochdale",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "sally-housser",
+     "name": "Sally Housser",
+     "lastName": "Housser",
+     "riding": "Regina University",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "brittney-senger",
+     "name": "Brittney Senger",
+     "lastName": "Senger",
+     "riding": "Saskatoon Southeast",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "jacqueline-roy",
+     "name": "Jacqueline Roy",
+     "lastName": "Roy",
+     "riding": "Regina Northeast",
+     "party": "NDP"
+    }
+   ],
+   "contre": [
+    {
+     "assnatId": "scott-moe",
+     "name": "Scott Moe",
+     "lastName": "Moe",
+     "riding": "Rosthern-Shellbrook",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "kim-gartner",
+     "name": "Kim Gartner",
+     "lastName": "Gartner",
+     "riding": "Kindersley-Biggar",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "warren-kaeding",
+     "name": "Warren Kaeding",
+     "lastName": "Kaeding",
+     "riding": "Melville-Saltcoats",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jeremy-cockrill",
+     "name": "Jeremy Cockrill",
+     "lastName": "Cockrill",
+     "riding": "The Battlefords",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jim-reiter",
+     "name": "Jim Reiter",
+     "lastName": "Reiter",
+     "riding": "Rosetown-Delisle",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "everett-hindley",
+     "name": "Everett Hindley",
+     "lastName": "Hindley",
+     "riding": "Swift Current",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jeremy-harrison",
+     "name": "Jeremy Harrison",
+     "lastName": "Harrison",
+     "riding": "Meadow Lake",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff",
+     "lastName": "Cheveldayoff",
+     "riding": "Saskatoon Willowgrove",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "eric-schmalz",
+     "name": "Eric Schmalz",
+     "lastName": "Schmalz",
+     "riding": "Saskatchewan Rivers",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "terry-jenson",
+     "name": "Terry Jenson",
+     "lastName": "Jenson",
+     "riding": "Warman",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "michael-weger",
+     "name": "Michael Weger",
+     "lastName": "Weger",
+     "riding": "Weyburn-Bengough",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "travis-keisig",
+     "name": "Travis Keisig",
+     "lastName": "Keisig",
+     "riding": "Last Mountain-Touchwood",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jamie-martens",
+     "name": "Jamie Martens",
+     "lastName": "Martens",
+     "riding": "Martensville-Blairmore",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "sean-wilson",
+     "name": "Sean Wilson",
+     "lastName": "Wilson",
+     "riding": "Canora-Pelly",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "chris-beaudry",
+     "name": "Chris Beaudry",
+     "lastName": "Beaudry",
+     "riding": "Kelvington-Wadena",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "darlene-rowden",
+     "name": "Darlene Rowden",
+     "lastName": "Rowden",
+     "riding": "Batoche",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "alana-ross",
+     "name": "Alana Ross",
+     "lastName": "Ross",
+     "riding": "Prince Albert Northcote",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "tim-mcleod",
+     "name": "Tim McLeod",
+     "lastName": "McLeod",
+     "riding": "Moose Jaw North",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "lori-carr",
+     "name": "Lori Carr",
+     "lastName": "Carr",
+     "riding": "Estevan-Big Muddy",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "brad-crassweller",
+     "name": "Brad Crassweller",
+     "lastName": "Crassweller",
+     "riding": "White City-Qu'Appelle",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "doug-steele",
+     "name": "Doug Steele",
+     "lastName": "Steele",
+     "riding": "Cypress Hills",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "colleen-young",
+     "name": "Colleen Young",
+     "lastName": "Young",
+     "riding": "Lloydminster",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "daryl-harrison",
+     "name": "Daryl Harrison",
+     "lastName": "Harrison",
+     "riding": "Cannington",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "kevin-weedmark",
+     "name": "Kevin Weedmark",
+     "lastName": "Weedmark",
+     "riding": "Moosomin-Montmartre",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "barret-kropf",
+     "name": "Barret Kropf",
+     "lastName": "Kropf",
+     "riding": "Dakota-Arm River",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "blaine-mcleod",
+     "name": "Blaine McLeod",
+     "lastName": "McLeod",
+     "riding": "Lumsden-Morse",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "megan-patterson",
+     "name": "Megan Patterson",
+     "lastName": "Patterson",
+     "riding": "Moose Jaw Wakamow",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "terri-bromm",
+     "name": "Terri Bromm",
+     "lastName": "Bromm",
+     "riding": "Carrot River Valley",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "racquel-hilbert",
+     "name": "Racquel Hilbert",
+     "lastName": "Hilbert",
+     "riding": "Humboldt-Watrous",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "david-chan",
+     "name": "David Chan",
+     "lastName": "Chan",
+     "riding": "Yorkton",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "james-thorsteinson",
+     "name": "James Thorsteinson",
+     "lastName": "Thorsteinson",
+     "riding": "Cut Knife-Turtleford",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "kevin-kasun",
+     "name": "Kevin Kasun",
+     "lastName": "Kasun",
+     "riding": "Prince Albert Carlton",
+     "party": "SKP"
+    }
+   ],
+   "abstentions": []
+  },
+  {
+   "legislature": 30,
+   "session": 3,
+   "num": 2,
+   "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261105Minutes-HTML.htm",
+   "date": "2026-11-05",
+   "title": "Speech from the Throne – That an Humble Address be presented to Her Honour the Lieutenant Governor as follows:",
+   "stage": "Speech from the Throne",
+   "stageFr": "Discours du Trône",
+   "subject": "That an Humble Address be presented to Her Honour the Lieutenant Governor as follows:",
+   "motion": "That an Humble Address be presented to Her Honour the Lieutenant Governor as follows:",
+   "result": "adopte",
+   "billNum": null,
+   "totals": {
+    "pour": 32,
+    "contre": 21,
+    "abstentions": null
+   },
+   "pour": [
+    {
+     "assnatId": "scott-moe",
+     "name": "Scott Moe",
+     "lastName": "Moe",
+     "riding": "Rosthern-Shellbrook",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "kim-gartner",
+     "name": "Kim Gartner",
+     "lastName": "Gartner",
+     "riding": "Kindersley-Biggar",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "warren-kaeding",
+     "name": "Warren Kaeding",
+     "lastName": "Kaeding",
+     "riding": "Melville-Saltcoats",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jeremy-cockrill",
+     "name": "Jeremy Cockrill",
+     "lastName": "Cockrill",
+     "riding": "The Battlefords",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jim-reiter",
+     "name": "Jim Reiter",
+     "lastName": "Reiter",
+     "riding": "Rosetown-Delisle",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "everett-hindley",
+     "name": "Everett Hindley",
+     "lastName": "Hindley",
+     "riding": "Swift Current",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jeremy-harrison",
+     "name": "Jeremy Harrison",
+     "lastName": "Harrison",
+     "riding": "Meadow Lake",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "ken-cheveldayoff",
+     "name": "Ken Cheveldayoff",
+     "lastName": "Cheveldayoff",
+     "riding": "Saskatoon Willowgrove",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "eric-schmalz",
+     "name": "Eric Schmalz",
+     "lastName": "Schmalz",
+     "riding": "Saskatchewan Rivers",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "terry-jenson",
+     "name": "Terry Jenson",
+     "lastName": "Jenson",
+     "riding": "Warman",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "michael-weger",
+     "name": "Michael Weger",
+     "lastName": "Weger",
+     "riding": "Weyburn-Bengough",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "travis-keisig",
+     "name": "Travis Keisig",
+     "lastName": "Keisig",
+     "riding": "Last Mountain-Touchwood",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "jamie-martens",
+     "name": "Jamie Martens",
+     "lastName": "Martens",
+     "riding": "Martensville-Blairmore",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "sean-wilson",
+     "name": "Sean Wilson",
+     "lastName": "Wilson",
+     "riding": "Canora-Pelly",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "chris-beaudry",
+     "name": "Chris Beaudry",
+     "lastName": "Beaudry",
+     "riding": "Kelvington-Wadena",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "darlene-rowden",
+     "name": "Darlene Rowden",
+     "lastName": "Rowden",
+     "riding": "Batoche",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "alana-ross",
+     "name": "Alana Ross",
+     "lastName": "Ross",
+     "riding": "Prince Albert Northcote",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "tim-mcleod",
+     "name": "Tim McLeod",
+     "lastName": "McLeod",
+     "riding": "Moose Jaw North",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "lori-carr",
+     "name": "Lori Carr",
+     "lastName": "Carr",
+     "riding": "Estevan-Big Muddy",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "brad-crassweller",
+     "name": "Brad Crassweller",
+     "lastName": "Crassweller",
+     "riding": "White City-Qu'Appelle",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "doug-steele",
+     "name": "Doug Steele",
+     "lastName": "Steele",
+     "riding": "Cypress Hills",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "colleen-young",
+     "name": "Colleen Young",
+     "lastName": "Young",
+     "riding": "Lloydminster",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "daryl-harrison",
+     "name": "Daryl Harrison",
+     "lastName": "Harrison",
+     "riding": "Cannington",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "kevin-weedmark",
+     "name": "Kevin Weedmark",
+     "lastName": "Weedmark",
+     "riding": "Moosomin-Montmartre",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "barret-kropf",
+     "name": "Barret Kropf",
+     "lastName": "Kropf",
+     "riding": "Dakota-Arm River",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "blaine-mcleod",
+     "name": "Blaine McLeod",
+     "lastName": "McLeod",
+     "riding": "Lumsden-Morse",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "megan-patterson",
+     "name": "Megan Patterson",
+     "lastName": "Patterson",
+     "riding": "Moose Jaw Wakamow",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "terri-bromm",
+     "name": "Terri Bromm",
+     "lastName": "Bromm",
+     "riding": "Carrot River Valley",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "racquel-hilbert",
+     "name": "Racquel Hilbert",
+     "lastName": "Hilbert",
+     "riding": "Humboldt-Watrous",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "david-chan",
+     "name": "David Chan",
+     "lastName": "Chan",
+     "riding": "Yorkton",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "james-thorsteinson",
+     "name": "James Thorsteinson",
+     "lastName": "Thorsteinson",
+     "riding": "Cut Knife-Turtleford",
+     "party": "SKP"
+    },
+    {
+     "assnatId": "kevin-kasun",
+     "name": "Kevin Kasun",
+     "lastName": "Kasun",
+     "riding": "Prince Albert Carlton",
+     "party": "SKP"
+    }
+   ],
+   "contre": [
+    {
+     "assnatId": "carla-beck",
+     "name": "Carla Beck",
+     "lastName": "Beck",
+     "riding": "Regina Lakeview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "erika-ritchie",
+     "name": "Erika Ritchie",
+     "lastName": "Ritchie",
+     "riding": "Saskatoon Nutana",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "noor-burki",
+     "name": "Noor Burki",
+     "lastName": "Burki",
+     "riding": "Regina Coronation Park",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "jared-clarke",
+     "name": "Jared Clarke",
+     "lastName": "Clarke",
+     "riding": "Regina Walsh Acres",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "vicki-mowat",
+     "name": "Vicki Mowat",
+     "lastName": "Mowat",
+     "riding": "Saskatoon Fairview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "matt-love",
+     "name": "Matt Love",
+     "lastName": "Love",
+     "riding": "Saskatoon Eastview",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "nathaniel-teed",
+     "name": "Nathaniel Teed",
+     "lastName": "Teed",
+     "riding": "Saskatoon Meewasin",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "jordan-mcphail",
+     "name": "Jordan McPhail",
+     "lastName": "McPhail",
+     "riding": "Cumberland",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "meara-conway",
+     "name": "Meara Conway",
+     "lastName": "Conway",
+     "riding": "Regina Elphinstone-Centre",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "nicole-sarauer",
+     "name": "Nicole Sarauer",
+     "lastName": "Sarauer",
+     "riding": "Regina Douglas Park",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "kim-breckner",
+     "name": "Kim Breckner",
+     "lastName": "Breckner",
+     "riding": "Saskatoon Riversdale",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "brent-blakley",
+     "name": "Brent Blakley",
+     "lastName": "Blakley",
+     "riding": "Regina Wascana Plains",
+     "party": "NDP"
+    },
+    {
+     "assnatId": "tajinder-grewal",
+     "name": "Tajinder Grewal",
+     "lastName": "Grewal",
+     "riding": "Saskatoon University-Sutherland",
      "party": "NDP"
     },
     {

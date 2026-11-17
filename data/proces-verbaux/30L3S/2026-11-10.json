@@ -1,0 +1,26 @@
+{
+ "session": "30L3S",
+ "date": "2026-11-10",
+ "numero": 9,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261110Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261110Minutes.pdf",
+ "version": "20261116030843",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 74,
+   "titre": "The Workers' Compensation (Strengthening Compensation Outcomes) Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Ken Cheveldayoff"
+  },
+  {
+   "type": "premiere",
+   "bill": 638,
+   "titre": "The Freedom of Information and Protection of Privacy (Accountability and Transparency) Amendment Act",
+   "titreFr": null,
+   "parrain": "Jordan McPhail"
+  }
+ ],
+ "divisions": []
+}

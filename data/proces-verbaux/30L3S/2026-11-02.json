@@ -1,0 +1,61 @@
+{
+ "session": "30L3S",
+ "date": "2026-11-02",
+ "numero": 4,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261102Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261102Minutes.pdf",
+ "version": "20261103153743",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 631,
+   "titre": "The Restricting Property Controls for Grocery Stores and Supermarkets Act",
+   "titreFr": null,
+   "parrain": "Nicole Sarauer"
+  },
+  {
+   "type": "premiere",
+   "bill": 632,
+   "titre": "The Rent Control Act, 2026",
+   "titreFr": null,
+   "parrain": "Nicole Sarauer"
+  },
+  {
+   "type": "premiere",
+   "bill": 633,
+   "titre": "The Provincial Sales Tax Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Trent Wotherspoon"
+  },
+  {
+   "type": "premiere",
+   "bill": 634,
+   "titre": "The Saskatchewan Medical Care Insurance (Banning Private Fees) Amendment Act",
+   "titreFr": null,
+   "parrain": "Meara Conway"
+  },
+  {
+   "type": "premiere",
+   "bill": 635,
+   "titre": "The Provincial Health Authority (Banning Parking Fees for Cancer Patients) Amendment Act",
+   "titreFr": null,
+   "parrain": "Jared Clarke"
+  },
+  {
+   "type": "premiere",
+   "bill": 636,
+   "titre": "The Consumer Protection and Business Practices (Banning Unfair A.I. Pricing) Amendment Act",
+   "titreFr": null,
+   "parrain": "Brittney Senger"
+  },
+  {
+   "type": "premiere",
+   "bill": 65,
+   "titre": "The Protection From Human Trafficking Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  }
+ ],
+ "divisions": []
+}

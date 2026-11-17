@@ -1,0 +1,26 @@
+{
+ "session": "30L3S",
+ "date": "2026-11-03",
+ "numero": 5,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261103Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261103Minutes.pdf",
+ "version": "20261104043227",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 66,
+   "titre": "The Pooled Registered Pension Plans (Saskatchewan) Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  },
+  {
+   "type": "premiere",
+   "bill": 67,
+   "titre": "The Coroners Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  }
+ ],
+ "divisions": []
+}

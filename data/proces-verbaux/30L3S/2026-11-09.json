@@ -1,0 +1,26 @@
+{
+ "session": "30L3S",
+ "date": "2026-11-09",
+ "numero": 8,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261109Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261109Minutes.pdf",
+ "version": "20261112202409",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 637,
+   "titre": "The Saskatchewan Employment (National Day for Truth and Reconciliation) Amendment Act",
+   "titreFr": null,
+   "parrain": "Leroy Laliberte"
+  },
+  {
+   "type": "premiere",
+   "bill": 73,
+   "titre": "The Medical Assistance in Dying Additional Safeguards Act",
+   "titreFr": null,
+   "parrain": "Jeremy Cockrill"
+  }
+ ],
+ "divisions": []
+}
