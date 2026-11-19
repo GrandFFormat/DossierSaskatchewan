@@ -22,3 +22,7 @@ montreal/data/details.json
 levis/data/details.json
 longueuil/data/details.json
 laval/data/details.json
+
+# Fichiers de travail privés (retirés du site le 19 nov. 2026)
+/CHARTE-DOSSIER.md
+/contexte-pour-claude-code.md
