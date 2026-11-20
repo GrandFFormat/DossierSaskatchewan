@@ -3357,6 +3357,214 @@
     }
    }
   },
+  "300076": {
+   "en": {
+    "resumeExecutif": "Prohibits deceptive use of AI-generated \"synthetic media\" that deceives people and causes harm, requires disclosure labels, and creates a new civil tort with court remedies.",
+    "puces": [
+     "Bans knowingly creating, publishing or distributing synthetic media meant to deceive people and cause harm or safety risks",
+     "Requires clear disclosure labels, and machine-readable markings where feasible, on synthetic media that could seem authentic",
+     "Exempts parody, satire, and content whose artificial nature would be obvious to a reasonable person",
+     "Creates a new tort allowing lawsuits for deceptive synthetic media without needing to prove damage occurred",
+     "Lets courts order damages, profit recovery, content removal, de-indexing, injunctions and corrections for violations",
+     "Allows courts to hold closed hearings and restrict publication of case details in these lawsuits",
+     "Amends consumer protection, election, local election and privacy laws to address synthetic media, including political ad disclosure rules and treating minors' involvement as an aggravating factor for damages"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "5c860ea665a0f58d",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:04.891Z",
+    "jetons": {
+     "entree": 7291,
+     "sortie": 416
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Interdit l'utilisation trompeuse de contenus créés ou modifiés par l'intelligence artificielle et exige leur divulgation claire.",
+    "puces": [
+     "Interdit de créer, publier ou diffuser sciemment des « médias synthétiques » (contenus générés ou altérés par l'IA) de façon trompeuse pouvant causer un préjudice physique, psychologique, réputationnel ou économique, ou un risque pour la sécurité publique",
+     "Oblige quiconque diffuse un contenu synthétique pouvant être pris pour authentique à y joindre une mention claire et, si possible, un marquage détectable indiquant qu'il s'agit d'un média synthétique",
+     "Crée un nouveau délit civil (poursuite devant la Cour du Banc du Roi) pour usage trompeur de médias synthétiques, sans obligation de prouver un dommage",
+     "Permet au tribunal d'ordonner des dommages-intérêts, la remise de profits, la destruction ou le retrait du contenu, une injonction ou une correction publique",
+     "Permet au tribunal de tenir des audiences à huis clos et d'interdire la publication de renseignements liés à ces poursuites",
+     "Modifie la loi électorale, la loi sur les élections municipales et la loi sur la protection du consommateur pour exiger la divulgation des médias synthétiques dans la publicité électorale et commerciale",
+     "Modifie la loi sur la protection de la vie privée pour préciser que l'usage trompeur de médias synthétiques, y compris de nature sexuelle, peut constituer une atteinte à la vie privée, avec dommages aggravés si un mineur est impliqué"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "e4c7dd70b53e72ab",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:11.810Z",
+    "jetons": {
+     "entree": 7596,
+     "sortie": 641
+    }
+   }
+  },
+  "300077": {
+   "fr": {
+    "resumeExecutif": "Établit que l'espace poreux souterrain appartient à la Couronne, crée un régime pour la séquestration du carbone et réorganise les règles sur le pétrole, le gaz et l'exploration sismique.",
+    "puces": [
+     "Déclare que l'espace poreux sous toutes les terres de la Saskatchewan appartient à la Couronne, sans compensation pour cette prise",
+     "Crée un processus de permis (disposition) pour utiliser l'espace poreux, notamment pour stocker du dioxyde de carbone",
+     "Permet de traverser l'espace poreux ou d'autres minéraux pour exercer ses droits miniers ou de stockage, sans permission ni compensation",
+     "Crée le Carbon Dioxide Sequestration Legacy Fund pour surveiller le CO2 injecté et payer les installations orphelines",
+     "Transfère au ministre la responsabilité du CO2 capturé et des installations une fois le projet fermé officiellement",
+     "Ajoute des règles sur l'exploration sismique, exigeant le consentement du propriétaire ou une ordonnance du ministre",
+     "Regroupe et modernise les règles sur le forage, la mise en commun des droits pétroliers et gaziers et l'exploitation unitaire des gisements"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "2da604dc04e8b34d",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:20.707Z",
+    "jetons": {
+     "entree": 20216,
+     "sortie": 502
+    }
+   }
+  },
+  "300078": {
+   "en": {
+    "resumeExecutif": "Creates a new licensing and regulatory system for oil, gas and mineral wells and facilities in Saskatchewan, replacing the Oil and Gas Conservation Act.",
+    "puces": [
+     "Requires a valid licence to drill, operate, suspend or abandon any well or facility",
+     "Gives the minister exclusive power to issue, amend, suspend, cancel or transfer licences with no court appeal",
+     "Continues an electronic licence registry and a volumetric and valuation registry for tracking production data",
+     "Imposes an administrative levy on licensed wells and pipelines, with interest on late payments",
+     "Continues the Oil and Gas Orphan Fund to pay for abandonment and reclamation of orphaned wells and sites",
+     "Lets the minister require letters of credit or other security from licensees to cover cleanup obligations",
+     "Sets out inspection, investigation, enforcement powers plus offences, penalties and forfeiture for illegal minerals"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": true,
+    "empreinte": "3d95892d98f2f5c8",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:26.077Z",
+    "jetons": {
+     "entree": 21117,
+     "sortie": 413
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Établit un nouveau régime complet de permis, de surveillance et d'application de la loi pour les puits et installations servant à la production de ressources minérales en Saskatchewan.",
+    "puces": [
+     "Oblige à détenir un permis du ministre pour forer, exploiter, suspendre ou abandonner un puits ou une installation",
+     "Donne au ministre un pouvoir exclusif de décision sans appel ni révision par les tribunaux",
+     "Impose un prélèvement administratif aux titulaires de permis de puits et de pipelines, avec intérêts en cas de retard",
+     "Maintient le registre électronique des permis et le registre volumétrique et de valorisation existants",
+     "Maintient le Oil and Gas Orphan Fund pour financer l'abandon et la remise en état de puits et installations orphelins",
+     "Crée des règles sur les émissions de gaz à effet de serre, dont un mécanisme de plainte et d'enquête citoyenne",
+     "Prévoit des inspections, enquêtes, pénalités administratives, infractions et confiscation de minéraux produits illégalement"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": true,
+    "empreinte": "0c1e6d30f7c19614",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:33.143Z",
+    "jetons": {
+     "entree": 21427,
+     "sortie": 434
+    }
+   }
+  },
+  "300079": {
+   "en": {
+    "resumeExecutif": "Establishes a minister-led framework requiring government ministries, agencies and Crown corporations to reduce red tape and modernize regulations, with annual public reporting.",
+    "puces": [
+     "Assigns a minister responsibility for coordinating red tape reduction and regulatory modernization across government",
+     "Requires ministries, agencies and Crown corporations to compile and report data on regulatory costs and improvements",
+     "Requires each ministry to track and report the number of compliance requirements affecting businesses",
+     "Requires ministries and agencies to create processes for considering stakeholder feedback on regulatory burden",
+     "Requires each ministry, agency and Crown corporation to maintain a regulatory modernization plan or review schedule",
+     "Requires measurement of costs and impacts of proposed regulatory changes, possibly using a government-wide methodology",
+     "Requires the minister to prepare and publicly publish an annual report tabled in the Legislative Assembly"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "7397fddf03d875a3",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:37.413Z",
+    "jetons": {
+     "entree": 4440,
+     "sortie": 404
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Confie à un ministre la responsabilité de réduire la paperasse gouvernementale et oblige les ministères et sociétés d'État à rendre compte de leurs efforts de simplification réglementaire.",
+    "puces": [
+     "Donne à un ministre le pouvoir de coordonner la réduction de la paperasse et la modernisation des règlements dans tout le gouvernement",
+     "Oblige les ministères, agences et sociétés d'État à fournir chaque année des informations sur leurs résultats en matière de réduction de la paperasse",
+     "Exige que chaque ministère établisse un plan de modernisation réglementaire ou un calendrier de révision de ses règles",
+     "Oblige à mesurer les coûts et impacts de tout nouveau changement réglementaire proposé",
+     "Exige que le ministre publie un rapport annuel public et le dépose à l'Assemblée législative",
+     "Oblige les ministères et agences à tenir compte des commentaires des parties prenantes pour réduire les exigences inutiles",
+     "Abroge l'ancienne loi The Regulatory Modernization and Accountability Act"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "a11a5cdfde71a427",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:42.464Z",
+    "jetons": {
+     "entree": 4745,
+     "sortie": 439
+    }
+   }
+  },
+  "300080": {
+   "en": {
+    "resumeExecutif": "Updates Saskatchewan's alcohol and gaming law with new inspection powers, standards for licensees, safety removal rules, and stricter lottery age and tax enforcement provisions.",
+    "puces": [
+     "Allows the authority to set standards for licensees, permittees and registrants that must be made public",
+     "Lets officers remove people from licensed premises believed to pose a risk of violence",
+     "Creates new offences for unauthorized or falsely advertised lottery schemes",
+     "Sets minimum age at 19 for casinos and most lottery activities, 18 for certain lottery-ticket schemes",
+     "Allows the minister to request suspension or cancellation of a liquor permit for unpaid liquor taxes",
+     "Permits notices to be sent by email, deemed delivered the next day unless proven otherwise",
+     "Raises a referenced percentage threshold in section 169 from 0.5% to 1%"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "de31dd48b2139a33",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:46.830Z",
+    "jetons": {
+     "entree": 10446,
+     "sortie": 366
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modernise les règles sur l'alcool et les jeux de hasard en renforçant les inspections, les interdictions pour mineurs et les pouvoirs de la régie.",
+    "puces": [
+     "Permet d'envoyer les avis officiels par courriel, réputés reçus le lendemain de l'envoi",
+     "Crée un pouvoir d'inspection élargi touchant titulaires de permis, inscrits et exploitants de loteries",
+     "Interdit explicitement de vendre de l'alcool ou d'exploiter une loterie durant une suspension de permis ou d'inscription",
+     "Permet à un agent d'expulser une personne qui présente un risque de violence dans un lieu visé par un permis",
+     "Interdit aux mineurs d'être dans un casino ou de participer à une loterie à restriction d'âge, avec un seuil de 18 ans pour certaines loteries à billets",
+     "Permet à la régie de suspendre ou annuler un permis lorsque le titulaire néglige de percevoir, déclarer ou verser la taxe sur les boissons alcoolisées",
+     "Hausse de un demi pour cent à un pour cent un taux prévu à l'article 169"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "9748140bd5e81d8b",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:55:52.225Z",
+    "jetons": {
+     "entree": 13137,
+     "sortie": 468
+    }
+   }
+  },
   "300601": {
    "en": {
     "resumeExecutif": "Declares the month of April as Sikh Heritage Month in Saskatchewan.",
@@ -4993,7 +5201,7 @@
  "modele": "claude-sonnet-5",
  "avertissementEn": "Written by AI from the bill as introduced (official PDF on legassembly.sk.ca), not from the law as amended since. Not an official document.",
  "avertissementFr": "Rédigé par une IA à partir du projet de loi tel que déposé (PDF officiel sur legassembly.sk.ca), et non de la loi telle qu'amendée depuis. Ce n'est pas un document officiel.",
- "maj": "2026-11-20T17:51:30.094Z",
- "nombre": 112,
- "coutCumule": 1.9297
+ "maj": "2026-11-20T17:55:52.225Z",
+ "nombre": 117,
+ "coutCumule": 2.2329
 }

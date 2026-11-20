@@ -1,0 +1,26 @@
+{
+ "session": "30L3S",
+ "date": "2026-11-19",
+ "numero": 13,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261119Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261119Minutes.pdf",
+ "version": "20261120160505",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 79,
+   "titre": "The Red Tape Reduction and Accountability Act",
+   "titreFr": null,
+   "parrain": "Warren Kaeding"
+  },
+  {
+   "type": "premiere",
+   "bill": 80,
+   "titre": "The Alcohol and Gaming Regulation Amendment Act, 2026",
+   "titreFr": "Loi modificative de 2026 sur la réglementation des boissons alcoolisées et des jeux de hasard",
+   "parrain": "Warren Kaeding"
+  }
+ ],
+ "divisions": []
+}

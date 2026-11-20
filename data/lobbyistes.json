@@ -1,10 +1,706 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-11-17T20:27:20.553Z",
- "total": 325,
+ "scrapedAt": "2026-11-20T17:58:47.028Z",
+ "total": 327,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "a2b58dea-29c7-f111-aad1-000d3af328df",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a2b58dea-29c7-f111-aad1-000d3af328df",
+   "organisation": "Breakfast Club of Canada",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-11-19",
+   "version": "13 of 13",
+   "detail": {
+    "numero": "4855-1997-13",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-11-20",
+    "effetLe": "2026-11-19",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Seeking partnership/funding of existing and/or new school feeding programs.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Agriculture",
+       "Education",
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Legislative Assembly",
+     "Agriculture",
+     "Health",
+     "First Nations, Metis and Northern Affairs",
+     "Finance",
+     "Government Relations",
+     "Education",
+     "Social Services",
+     "Executive Council"
+    ],
+    "ministres": [
+     {
+      "nom": "Everett Hindley",
+      "institution": "Education"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Terry Jenson",
+      "institution": "Social Services"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Barret Kropf",
+     "Kim Gartner",
+     "Brent Blakley",
+     "Michael Weger",
+     "David Chan",
+     "April ChiefCalf",
+     "Noor Burki"
+    ]
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "4598696a-8de3-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=4598696a-8de3-f111-bda1-6045bd5c8f14",
+   "organisation": "Portage Cybertech",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "10 of 10",
+   "detail": {
+    "numero": "1013-3046-10",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-05-18",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "GSD will be supporting Portage Cybertech in it's government relations activities in Saskatchewan on issues related to Information Technology (Citizen One/Digital Signatures, and other solutions provided by Portage Cybertech)",
+      "sujets": [
+       "Information Technology"
+      ],
+      "categories": [
+       "Contract",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Crown Investments Corporation",
+     "SaskBuilds and Procurement",
+     "Advanced Education",
+     "Innovation"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "7d5cb7f8-87e3-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7d5cb7f8-87e3-f111-bda1-6045bd5c8f14",
+   "organisation": "Great Western Brewing Company Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "8 of 8",
+   "detail": {
+    "numero": "1013-1170-8",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-05-18",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "Support GWB in their government relations activities related to the growth and expansion of the brewery",
+      "sujets": [
+       "Agriculture",
+       "Economic Development",
+       "Finance & Budget",
+       "Taxes"
+      ],
+      "categories": [
+       "Grant or Financial Benefit",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Legislative Assembly",
+     "Agriculture",
+     "Executive Council",
+     "Finance",
+     "Saskatchewan Liquor & Gaming Authority",
+     "Trade and Export Development"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Saskatchewan Liquor & Gaming Authority"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Leroy Laliberte",
+     "Darlene Rowden",
+     "Sean Wilson",
+     "Terri Bromm",
+     "Jordan McPhail",
+     "James Thorsteinson",
+     "Barret Kropf",
+     "Racquel Hilbert",
+     "Chris Beaudry",
+     "Kim Gartner",
+     "Jamie Martens",
+     "Kevin Kasun",
+     "Jacqueline Roy",
+     "Bhajan Brar",
+     "Joan Pratchler",
+     "Sally Housser",
+     "Brent Blakley",
+     "Eric Schmalz",
+     "Don McBean",
+     "Keith Jorgenson",
+     "Kim Breckner",
+     "Hugh Gordon",
+     "Brittney Senger",
+     "Darcy Warrington",
+     "Tajinder Grewal",
+     "Michael Weger",
+     "Brad Crassweller",
+     "David Chan",
+     "Megan Patterson",
+     "Kevin Weedmark",
+     "Everett Hindley",
+     "Todd Goudy",
+     "Jeremy Cockrill",
+     "Meara Conway",
+     "Daryl Harrison",
+     "Terry Jenson",
+     "Travis Keisig",
+     "Matt Love",
+     "Tim McLeod",
+     "Betty Nippi-Albright",
+     "Erika Ritchie",
+     "Alana Ross",
+     "Aleana Young",
+     "Blaine McLeod",
+     "Noor Burki",
+     "Jared Clarke",
+     "Nathaniel Teed",
+     "Vicki Mowat",
+     "Carla Beck",
+     "Lori Carr",
+     "Ken Cheveldayoff",
+     "Jeremy Harrison",
+     "Warren Kaeding",
+     "David Marit",
+     "Scott Moe",
+     "Jim Reiter",
+     "Nicole Sarauer",
+     "Doug Steele",
+     "Trent Wotherspoon",
+     "Colleen Young"
+    ]
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "743a1b74-61e3-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=743a1b74-61e3-f111-bda1-6045bd5c8f14",
+   "organisation": "Red Leaf Pulp Ltd.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "22 of 22",
+   "detail": {
+    "numero": "2235-2363-22",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-11-30",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "Red Leaf Pulp would like to meet with various Ministers and the Premier and certain MLA's to keep them apprised of the progress of their proposed Pulp Manufacturing facility, understand issues in Agriculture and possible feedstock for Biomass for SaskPower.",
+      "sujets": [
+       "Agriculture",
+       "Economic Development",
+       "Government Procurement"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Agriculture",
+     "Crown Investments Corporation",
+     "Executive Council",
+     "Saskatchewan Power Corporation",
+     "Saskatchewan Water Corporation",
+     "Saskatchewan Water Security Agency",
+     "SaskBuilds and Procurement",
+     "Energy and Resources",
+     "Trade and Export Development",
+     "Environment",
+     "Finance",
+     "Legislative Assembly",
+     "Advanced Education",
+     "Government Relations"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Water Corporation"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Saskatchewan Water Security Agency"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": [
+     "Sean Wilson",
+     "Daryl Harrison",
+     "Travis Keisig",
+     "Blaine McLeod",
+     "Warren Kaeding"
+    ]
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "7c739ded-60e3-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=7c739ded-60e3-f111-bda1-6045bd5c8f14",
+   "organisation": "Canadian Energy Metals Corp.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "14 of 14",
+   "detail": {
+    "numero": "2235-2760-14",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-11-30",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "Research product opportunity.",
+      "sujets": [
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Contract"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Trade and Export Development",
+     "Energy and Resources",
+     "Finance",
+     "Environment",
+     "Legislative Assembly"
+    ],
+    "ministres": [
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     }
+    ],
+    "deputes": [
+     "Terri Bromm",
+     "Chris Beaudry",
+     "Eric Schmalz"
+    ]
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "fbcbee52-86e3-f111-bdfa-ee49c9093767",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=fbcbee52-86e3-f111-bdfa-ee49c9093767",
+   "organisation": "Saskatchewan Community Foundation",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "5 of 5",
+   "detail": {
+    "numero": "1013-3363-5",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-05-18",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "GSD Strategies is supporting theSaskatchewan Community Foundation with issues related to SUMAInvest. This will also include sharing information with elected officials regarding SUMAInvest. GSD is also working with SCF to support their government relations activities related to the Truth and Reconciliation Endowment Fund.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Arts & Culture",
+       "Economic Development",
+       "Education",
+       "Health & Wellness",
+       "Housing",
+       "Municipal Affairs"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Grant or Financial Benefit"
+      ]
+     }
+    ],
+    "institutions": [
+     "Government Relations",
+     "Advanced Education",
+     "Community Safety",
+     "Health",
+     "Legislative Assembly",
+     "Mental Health and Addictions",
+     "Parks, Culture and Sport",
+     "Rural and Remote Health",
+     "Seniors",
+     "Status of Women",
+     "Social Services",
+     "First Nations, Metis and Northern Affairs"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Mental Health and Addictions"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Seniors"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Terry Jenson",
+      "institution": "Social Services"
+     },
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Alana Ross",
+      "institution": "Parks, Culture and Sport"
+     },
+     {
+      "nom": "Alana Ross",
+      "institution": "Status of Women"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Mike Weger",
+      "institution": "Community Safety"
+     }
+    ],
+    "deputes": [
+     "Darlene Rowden",
+     "Terri Bromm",
+     "Barret Kropf",
+     "Jamie Martens",
+     "Kevin Kasun",
+     "Megan Patterson",
+     "Todd Goudy",
+     "Doug Steele"
+    ]
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "5fec5bee-85e3-f111-bdfa-ee49c9093767",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5fec5bee-85e3-f111-bdfa-ee49c9093767",
+   "organisation": "WellTraxx Surface Asset Management",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "6 of 6",
+   "detail": {
+    "numero": "1013-3170-6",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-05-18",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "GSD is supporting WellTraxx in its discussion related to information sharing protocols",
+      "sujets": [
+       "Information Technology",
+       "Land Use",
+       "Municipal Affairs",
+       "Taxes"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision"
+      ]
+     }
+    ],
+    "institutions": [
+     "SaskBuilds and Procurement",
+     "Energy and Resources",
+     "Environment",
+     "Advanced Education",
+     "Agriculture",
+     "Government Relations",
+     "Innovation"
+    ],
+    "ministres": [
+     {
+      "nom": "Ken Cheveldayoff",
+      "institution": "Advanced Education"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "10a6e9a7-85e3-f111-bdfa-ee49c9093767",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=10a6e9a7-85e3-f111-bdfa-ee49c9093767",
+   "organisation": "FCI Accelerated Solutions Inc.",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-18",
+   "version": "6 of 6",
+   "detail": {
+    "numero": "1013-3177-6",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-18",
+    "finPrevue": "2027-05-18",
+    "cabinet": "GSD Strategies",
+    "activites": [
+     {
+      "description": "Gsd has been engaged by FCIAS to support their government relations activities as it relates to procurement and adoption of FCIAS's technologies",
+      "sujets": [
+       "Economic Development",
+       "Information Technology"
+      ],
+      "categories": [
+       "Contract",
+       "Directive, Guideline or Decision",
+       "Legislative Proposal, Bill or Resolution"
+      ]
+     }
+    ],
+    "institutions": [
+     "Legislative Assembly",
+     "Crown Investments Corporation",
+     "SaskBuilds and Procurement",
+     "Finance",
+     "Trade and Export Development",
+     "Innovation",
+     "Health"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Sean Wilson",
+      "institution": "SaskBuilds and Procurement"
+     }
+    ],
+    "deputes": [
+     "Barret Kropf"
+    ]
+   },
+   "lu": "2026-11-20"
+  },
   {
    "id": "087b7d96-e3e1-f111-bda1-6045bd5c8f14",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=087b7d96-e3e1-f111-bda1-6045bd5c8f14",
@@ -754,58 +1450,6 @@
    "lu": "2026-11-17"
   },
   {
-   "id": "8c6e9ba8-a8de-f111-8e6a-bd4216758306",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=8c6e9ba8-a8de-f111-8e6a-bd4216758306",
-   "organisation": "Portage Cybertech",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-11-11",
-   "version": "9 of 9",
-   "detail": {
-    "numero": "1013-3046-9",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-11-12",
-    "effetLe": "2026-11-11",
-    "finPrevue": "2027-05-31",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "GSD will be supporting Portage Cybertech in it's government relations activities in Saskatchewan on issues related to Information Technology (Citizen One/Digital Signatures, and other solutions provided by Portage Cybertech)",
-      "sujets": [
-       "Information Technology"
-      ],
-      "categories": [
-       "Contract",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Crown Investments Corporation",
-     "SaskBuilds and Procurement",
-     "Advanced Education",
-     "Innovation"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-11-17"
-  },
-  {
    "id": "681a3c6e-f2dd-f111-bda1-6045bd5c8f14",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=681a3c6e-f2dd-f111-bda1-6045bd5c8f14",
    "organisation": "Canadian Life and Health Insurance Association Inc.",
@@ -1265,6 +1909,72 @@
     "deputes": []
    },
    "lu": "2026-11-17"
+  },
+  {
+   "id": "9bfe0b38-73df-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=9bfe0b38-73df-f111-bda1-6045bd5c8f14",
+   "organisation": "Canadian Nuclear Association",
+   "type": "Consultant",
+   "statut": "Active",
+   "effetLe": "2026-11-09",
+   "version": "1 of 1",
+   "detail": {
+    "numero": "3615-1855-1",
+    "type": "Consultant",
+    "statut": "Active",
+    "publieLe": "2026-11-18",
+    "effetLe": "2026-11-09",
+    "finPrevue": "2027-06-30",
+    "cabinet": "Prairie Sky Strategy",
+    "activites": [
+     {
+      "description": "To provide the Government of Saskatchewan with updates on the key initiatives of the Canadian Nuclear Association and the nuclear industry. The activities entail establishing a policy dialogue with the Government of Saskatchewan on energy, innovation and power generation.",
+      "sujets": [
+       "Economic Development",
+       "Energy"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Legislative Assembly",
+     "Crown Investments Corporation",
+     "Saskatchewan Power Corporation",
+     "Trade and Export Development",
+     "Innovation"
+    ],
+    "ministres": [
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Crown Investments Corporation"
+     },
+     {
+      "nom": "Jeremy Harrison",
+      "institution": "Saskatchewan Power Corporation"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Trade and Export Development"
+     },
+     {
+      "nom": "Warren Kaeding",
+      "institution": "Innovation"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": [
+     "Aleana Young",
+     "Carla Beck"
+    ]
+   },
+   "lu": "2026-11-20"
   },
   {
    "id": "5879a06b-cfe1-f111-bda1-6045bd5c8f14",
@@ -2722,6 +3432,210 @@
     ]
    },
    "lu": "2026-11-02"
+  },
+  {
+   "id": "d85af7d8-2ae4-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d85af7d8-2ae4-f111-bda1-6045bd5c8f14",
+   "organisation": "Imperial Oil Ltd.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-11-01",
+   "version": "10 of 10",
+   "detail": {
+    "numero": "4581-3135-10",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-11-20",
+    "effetLe": "2026-11-01",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Communicating with government officials, in general, about potential private sector investments in the extractive sector in Saskatchewan.",
+      "sujets": [
+       "Economic Development",
+       "Energy"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Communicating with government officials about potential incentives for the extractive sector, including the Critical Minerals Processing Investment Incentive (\"CMPII\") and the Saskatchewan Critical Minerals Innovation Incentive (\"SCMII\").",
+      "sujets": [
+       "Energy",
+       "Taxes"
+      ],
+      "categories": [
+       "Grant or Financial Benefit"
+      ]
+     },
+     {
+      "description": "Communicating with government officials about land tenure matters, including about oil and gas tenure agreements and Crown dispositions.",
+      "sujets": [
+       "Energy",
+       "Land Use"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Trade and Export Development",
+     "Energy and Resources",
+     "Crown Investments Corporation",
+     "Saskatchewan Power Corporation"
+    ],
+    "ministres": [],
+    "deputes": []
+   },
+   "lu": "2026-11-20"
+  },
+  {
+   "id": "4a27cafd-afe3-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=4a27cafd-afe3-f111-bda1-6045bd5c8f14",
+   "organisation": "South Bow USA Services Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-11-01",
+   "version": "3 of 3",
+   "detail": {
+    "numero": "4869-3409-3",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-11-19",
+    "effetLe": "2026-11-01",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Representations, comments and discussions on policies which encourage economic investment, job creation and pipeline capacity in Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions regarding opportunities to expand egress out of Alberta and Saskatchewan.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Infrastructure"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Communications regarding pipeline related matters and energy projects, such as project review timelines, pipeline safety and incident response and safety improvements.",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "Research & Development",
+       "Workplace Safety"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions regarding Canada’s competitiveness, including with respect to taxation, access to capital and taxation.",
+      "sujets": [
+       "Economic Development",
+       "Energy",
+       "Environment",
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Discussions regarding Indigenous engagement, consultation and partnerships.",
+      "sujets": [
+       "Aboriginal Affairs",
+       "Economic Development",
+       "Energy",
+       "Environment"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     },
+     {
+      "description": "Representations, comments and discussions regarding North American and international energy security, the integration of pipeline infrastructure and promotion of energy exports.",
+      "sujets": [
+       "Energy",
+       "Environment",
+       "Infrastructure",
+       "International Trade"
+      ],
+      "categories": [
+       "Program or Policy"
+      ]
+     }
+    ],
+    "institutions": [
+     "Executive Council",
+     "Energy and Resources",
+     "Environment",
+     "Finance",
+     "Government Relations",
+     "Agriculture",
+     "Immigration and Career Training",
+     "First Nations, Metis and Northern Affairs"
+    ],
+    "ministres": [
+     {
+      "nom": "Jim Reiter",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Government Relations"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "First Nations, Metis and Northern Affairs"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     },
+     {
+      "nom": "Chris Beaudry",
+      "institution": "Energy and Resources"
+     },
+     {
+      "nom": "Darlene Rowden",
+      "institution": "Environment"
+     },
+     {
+      "nom": "Eric Schmalz",
+      "institution": "Immigration and Career Training"
+     },
+     {
+      "nom": "Dave Marit",
+      "institution": "Agriculture"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-11-20"
   },
   {
    "id": "73347245-9ee2-f111-8bf0-e4d019420def",
@@ -11794,151 +12708,6 @@
    "lu": "2026-11-17"
   },
   {
-   "id": "d10c54a1-1aae-f111-aad1-000d3af328df",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=d10c54a1-1aae-f111-aad1-000d3af328df",
-   "organisation": "South Bow USA Services Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-09-01",
-   "version": "2 of 2",
-   "detail": {
-    "numero": "4869-3409-2",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-09-11",
-    "effetLe": "2026-09-01",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Representations, comments and discussions on policies which encourage economic investment, job creation and pipeline capacity in Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions regarding opportunities to expand egress out of Alberta and Saskatchewan.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Infrastructure"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Communications regarding pipeline related matters and energy projects, such as project review timelines, pipeline safety and incident response and safety improvements.",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "Research & Development",
-       "Workplace Safety"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions regarding Canada’s competitiveness, including with respect to taxation, access to capital and taxation.",
-      "sujets": [
-       "Economic Development",
-       "Energy",
-       "Environment",
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Discussions regarding Indigenous engagement, consultation and partnerships.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Economic Development",
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Representations, comments and discussions regarding North American and international energy security, the integration of pipeline infrastructure and promotion of energy exports.",
-      "sujets": [
-       "Energy",
-       "Environment",
-       "Infrastructure",
-       "International Trade"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Energy and Resources",
-     "Environment",
-     "Finance",
-     "Government Relations",
-     "Agriculture",
-     "Immigration and Career Training",
-     "First Nations, Metis and Northern Affairs"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Immigration and Career Training"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "9df1551f-3ca6-f111-85ce-000d3ae8fe17",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=9df1551f-3ca6-f111-85ce-000d3ae8fe17",
    "organisation": "Whitecap Resources Inc.",
@@ -17065,136 +17834,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "bffb3d00-4285-f111-9cfc-9850a45eba98",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=bffb3d00-4285-f111-9cfc-9850a45eba98",
-   "organisation": "Great Western Brewing Company Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-07-21",
-   "version": "7 of 7",
-   "detail": {
-    "numero": "1013-1170-7",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-07-21",
-    "effetLe": "2026-07-21",
-    "finPrevue": "2027-03-24",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "Support GWB in their government relations activities related to the growth and expansion of the brewery",
-      "sujets": [
-       "Agriculture",
-       "Economic Development",
-       "Finance & Budget",
-       "Taxes"
-      ],
-      "categories": [
-       "Grant or Financial Benefit",
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly",
-     "Agriculture",
-     "Executive Council",
-     "Finance",
-     "Saskatchewan Liquor & Gaming Authority",
-     "Trade and Export Development"
-    ],
-    "ministres": [
-     {
-      "nom": "Jim Reiter",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Saskatchewan Liquor & Gaming Authority"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Leroy Laliberte",
-     "Darlene Rowden",
-     "Sean Wilson",
-     "Terri Bromm",
-     "Jordan McPhail",
-     "James Thorsteinson",
-     "Barret Kropf",
-     "Racquel Hilbert",
-     "Chris Beaudry",
-     "Kim Gartner",
-     "Jamie Martens",
-     "Kevin Kasun",
-     "Jacqueline Roy",
-     "Bhajan Brar",
-     "Joan Pratchler",
-     "Sally Housser",
-     "Brent Blakley",
-     "Eric Schmalz",
-     "Don McBean",
-     "Keith Jorgenson",
-     "Kim Breckner",
-     "Hugh Gordon",
-     "Brittney Senger",
-     "Darcy Warrington",
-     "Tajinder Grewal",
-     "Michael Weger",
-     "Brad Crassweller",
-     "David Chan",
-     "Megan Patterson",
-     "Kevin Weedmark",
-     "Everett Hindley",
-     "Todd Goudy",
-     "Jeremy Cockrill",
-     "Meara Conway",
-     "Daryl Harrison",
-     "Terry Jenson",
-     "Travis Keisig",
-     "Matt Love",
-     "Tim McLeod",
-     "Betty Nippi-Albright",
-     "Erika Ritchie",
-     "Alana Ross",
-     "Aleana Young",
-     "Blaine McLeod",
-     "Noor Burki",
-     "Jared Clarke",
-     "Nathaniel Teed",
-     "Vicki Mowat",
-     "Carla Beck",
-     "Lori Carr",
-     "Ken Cheveldayoff",
-     "Jeremy Harrison",
-     "Warren Kaeding",
-     "David Marit",
-     "Scott Moe",
-     "Jim Reiter",
-     "Nicole Sarauer",
-     "Doug Steele",
-     "Trent Wotherspoon",
-     "Colleen Young"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "805007ec-5285-f111-9b48-000d3a84cd84",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=805007ec-5285-f111-9b48-000d3a84cd84",
    "organisation": "Merit Contractors Association of Saskatchewan",
@@ -21977,68 +22616,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "b7d92340-8953-f111-89e7-6045bd5d144b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=b7d92340-8953-f111-89e7-6045bd5d144b",
-   "organisation": "Canadian Energy Metals Corp.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-06-17",
-   "version": "13 of 13",
-   "detail": {
-    "numero": "2235-2760-13",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-06-17",
-    "effetLe": "2026-06-17",
-    "finPrevue": "2026-12-31",
-    "cabinet": "Prairie Sky Strategy",
-    "activites": [
-     {
-      "description": "Research product opportunity.",
-      "sujets": [
-       "Energy",
-       "Environment"
-      ],
-      "categories": [
-       "Contract"
-      ]
-     }
-    ],
-    "institutions": [
-     "Executive Council",
-     "Trade and Export Development",
-     "Energy and Resources",
-     "Finance",
-     "Environment",
-     "Legislative Assembly"
-    ],
-    "ministres": [
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     }
-    ],
-    "deputes": [
-     "Terri Bromm",
-     "Chris Beaudry",
-     "Eric Schmalz"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "2e5633f4-8853-f111-89e7-6045bd5d144b",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=2e5633f4-8853-f111-89e7-6045bd5d144b",
    "organisation": "CRM of Canada Processing ULC",
@@ -22273,115 +22850,6 @@
      "Scott Moe",
      "Jim Reiter",
      "Trent Wotherspoon"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "4f7d5ec5-8653-f111-89e7-6045bd5d144b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=4f7d5ec5-8653-f111-89e7-6045bd5d144b",
-   "organisation": "Red Leaf Pulp Ltd.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-06-17",
-   "version": "21 of 21",
-   "detail": {
-    "numero": "2235-2363-21",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-06-17",
-    "effetLe": "2026-06-17",
-    "finPrevue": "2026-12-31",
-    "cabinet": "Prairie Sky Strategy",
-    "activites": [
-     {
-      "description": "Red Leaf Pulp would like to meet with various Ministers and the Premier and certain MLA's to keep them apprised of the progress of their proposed Pulp Manufacturing facility, understand issues in Agriculture and possible feedstock for Biomass for SaskPower.",
-      "sujets": [
-       "Agriculture",
-       "Economic Development",
-       "Government Procurement"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Agriculture",
-     "Crown Investments Corporation",
-     "Executive Council",
-     "Saskatchewan Power Corporation",
-     "Saskatchewan Water Corporation",
-     "Saskatchewan Water Security Agency",
-     "SaskBuilds and Procurement",
-     "Energy and Resources",
-     "Trade and Export Development",
-     "Environment",
-     "Finance",
-     "Legislative Assembly",
-     "Advanced Education",
-     "Government Relations"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Power Corporation"
-     },
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Saskatchewan Water Corporation"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Saskatchewan Water Security Agency"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": [
-     "Sean Wilson",
-     "Daryl Harrison",
-     "Travis Keisig",
-     "Blaine McLeod",
-     "Warren Kaeding"
     ]
    },
    "lu": "2026-10-06"
@@ -24698,257 +25166,6 @@
    "lu": "2026-10-06"
   },
   {
-   "id": "68fc45e1-9d53-f111-89e7-6045bd5d144b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=68fc45e1-9d53-f111-89e7-6045bd5d144b",
-   "organisation": "Saskatchewan Community Foundation",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-05-19",
-   "version": "4 of 4",
-   "detail": {
-    "numero": "1013-3363-4",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-05-20",
-    "effetLe": "2026-05-19",
-    "finPrevue": "2027-01-13",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "GSD Strategies is supporting theSaskatchewan Community Foundation with issues related to SUMAInvest. This will also include sharing information with elected officials regarding SUMAInvest. GSD is also working with SCF to support their government relations activities related to the Truth and Reconciliation Endowment Fund.",
-      "sujets": [
-       "Aboriginal Affairs",
-       "Arts & Culture",
-       "Economic Development",
-       "Education",
-       "Health & Wellness",
-       "Housing",
-       "Municipal Affairs"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Grant or Financial Benefit"
-      ]
-     }
-    ],
-    "institutions": [
-     "Government Relations",
-     "Advanced Education",
-     "Community Safety",
-     "Health",
-     "Legislative Assembly",
-     "Mental Health and Addictions",
-     "Parks, Culture and Sport",
-     "Rural and Remote Health",
-     "Seniors",
-     "Status of Women",
-     "Social Services",
-     "First Nations, Metis and Northern Affairs"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Mental Health and Addictions"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Seniors"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Terry Jenson",
-      "institution": "Social Services"
-     },
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Parks, Culture and Sport"
-     },
-     {
-      "nom": "Alana Ross",
-      "institution": "Status of Women"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "First Nations, Metis and Northern Affairs"
-     },
-     {
-      "nom": "Mike Weger",
-      "institution": "Community Safety"
-     }
-    ],
-    "deputes": [
-     "Darlene Rowden",
-     "Terri Bromm",
-     "Barret Kropf",
-     "Jamie Martens",
-     "Kevin Kasun",
-     "Megan Patterson",
-     "Todd Goudy",
-     "Doug Steele"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "2f1dde1b-9d53-f111-89e7-6045bd5d144b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=2f1dde1b-9d53-f111-89e7-6045bd5d144b",
-   "organisation": "WellTraxx Surface Asset Management",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-05-19",
-   "version": "5 of 5",
-   "detail": {
-    "numero": "1013-3170-5",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-05-20",
-    "effetLe": "2026-05-19",
-    "finPrevue": "2027-01-13",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "GSD is supporting WellTraxx in its discussion related to information sharing protocols",
-      "sujets": [
-       "Information Technology",
-       "Land Use",
-       "Municipal Affairs",
-       "Taxes"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision"
-      ]
-     }
-    ],
-    "institutions": [
-     "SaskBuilds and Procurement",
-     "Energy and Resources",
-     "Environment",
-     "Advanced Education",
-     "Agriculture",
-     "Government Relations",
-     "Innovation"
-    ],
-    "ministres": [
-     {
-      "nom": "Ken Cheveldayoff",
-      "institution": "Advanced Education"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Eric Schmalz",
-      "institution": "Government Relations"
-     },
-     {
-      "nom": "Chris Beaudry",
-      "institution": "Energy and Resources"
-     },
-     {
-      "nom": "Darlene Rowden",
-      "institution": "Environment"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     },
-     {
-      "nom": "Dave Marit",
-      "institution": "Agriculture"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "5d52a1f6-9b53-f111-89e7-6045bd5d144b",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=5d52a1f6-9b53-f111-89e7-6045bd5d144b",
-   "organisation": "FCI Accelerated Solutions Inc.",
-   "type": "Consultant",
-   "statut": "Active",
-   "effetLe": "2026-05-19",
-   "version": "5 of 5",
-   "detail": {
-    "numero": "1013-3177-5",
-    "type": "Consultant",
-    "statut": "Active",
-    "publieLe": "2026-05-20",
-    "effetLe": "2026-05-19",
-    "finPrevue": "2027-01-13",
-    "cabinet": "GSD Strategies",
-    "activites": [
-     {
-      "description": "Gsd has been engaged by FCIAS to support their government relations activities as it relates to procurement and adoption of FCIAS's technologies",
-      "sujets": [
-       "Economic Development",
-       "Information Technology"
-      ],
-      "categories": [
-       "Contract",
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution"
-      ]
-     }
-    ],
-    "institutions": [
-     "Legislative Assembly",
-     "Crown Investments Corporation",
-     "SaskBuilds and Procurement",
-     "Finance",
-     "Trade and Export Development",
-     "Innovation",
-     "Health"
-    ],
-    "ministres": [
-     {
-      "nom": "Jeremy Harrison",
-      "institution": "Crown Investments Corporation"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Trade and Export Development"
-     },
-     {
-      "nom": "Warren Kaeding",
-      "institution": "Innovation"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Sean Wilson",
-      "institution": "SaskBuilds and Procurement"
-     }
-    ],
-    "deputes": [
-     "Barret Kropf"
-    ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
    "id": "650852f3-9453-f111-89e7-6045bd5d144b",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=650852f3-9453-f111-89e7-6045bd5d144b",
    "organisation": "Steven Kovacs",
@@ -26609,65 +26826,6 @@
      "Doug Steele",
      "Colleen Young"
     ]
-   },
-   "lu": "2026-10-06"
-  },
-  {
-   "id": "9091f719-2e43-f111-9a90-70a8a50cfd63",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=9091f719-2e43-f111-9a90-70a8a50cfd63",
-   "organisation": "Imperial Oil Ltd.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-04-28",
-   "version": "9 of 9",
-   "detail": {
-    "numero": "4581-3135-9",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-04-28",
-    "effetLe": "2026-04-28",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Communicating with government officials, in general, about potential private sector investments in the extractive sector in Saskatchewan.",
-      "sujets": [
-       "Economic Development",
-       "Energy"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     },
-     {
-      "description": "Communicating with government officials about potential incentives for the extractive sector, including the Critical Minerals Processing Investment Incentive (\"CMPII\") and the Saskatchewan Critical Minerals Innovation Incentive (\"SCMII\").",
-      "sujets": [
-       "Energy",
-       "Taxes"
-      ],
-      "categories": [
-       "Grant or Financial Benefit"
-      ]
-     },
-     {
-      "description": "Communicating with government officials about land tenure matters, including about oil and gas tenure agreements and Crown dispositions.",
-      "sujets": [
-       "Energy",
-       "Land Use"
-      ],
-      "categories": [
-       "Program or Policy"
-      ]
-     }
-    ],
-    "institutions": [
-     "Trade and Export Development",
-     "Energy and Resources",
-     "Crown Investments Corporation",
-     "Saskatchewan Power Corporation"
-    ],
-    "ministres": [],
-    "deputes": []
    },
    "lu": "2026-10-06"
   },

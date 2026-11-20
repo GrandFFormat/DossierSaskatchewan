@@ -1,0 +1,33 @@
+{
+ "session": "30L3S",
+ "date": "2026-11-17",
+ "numero": 11,
+ "url": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261117Minutes-HTML.htm",
+ "urlPdf": "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261117Minutes.pdf",
+ "version": "20261118001719",
+ "lecteur": 3,
+ "evenements": [
+  {
+   "type": "premiere",
+   "bill": 77,
+   "titre": "The Mineral Resources (Miscellaneous) Amendment Act, 2026",
+   "titreFr": null,
+   "parrain": "Chris Beaudry"
+  },
+  {
+   "type": "premiere",
+   "bill": 78,
+   "titre": "The Mineral Resources Wells and Facilities Operations Act",
+   "titreFr": null,
+   "parrain": "Chris Beaudry"
+  },
+  {
+   "type": "premiere",
+   "bill": 76,
+   "titre": "The Prevention of Deceptive Artificial Intelligence Act",
+   "titreFr": null,
+   "parrain": "Tim McLeod"
+  }
+ ],
+ "divisions": []
+}

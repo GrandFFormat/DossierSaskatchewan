@@ -1,8 +1,8 @@
 {
   "source": "Procès-verbaux (Votes and Proceedings) de l'Assemblée législative de la Saskatchewan",
   "legislature": 30,
-  "scrapedAt": "2026-11-17T20:24:16.153Z",
-  "count": 112,
+  "scrapedAt": "2026-11-20T17:53:48.246Z",
+  "count": 117,
   "bills": [
     {
       "id": 300001,
@@ -3046,6 +3046,171 @@
       "textSource": "texte tel que déposé en première lecture (PDF) ; l'Assemblée ne réimprime pas un projet amendé",
       "sources": [
         "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261116Minutes-HTML.htm"
+      ],
+      "summary": null,
+      "summaryEn": null
+    },
+    {
+      "id": 300076,
+      "num": 76,
+      "legislature": 30,
+      "introSession": 3,
+      "session": "30L3S",
+      "type": "Government Bill",
+      "typeFr": "Projet de loi du gouvernement",
+      "title": "The Prevention of Deceptive Artificial Intelligence Act",
+      "titleEn": "The Prevention of Deceptive Artificial Intelligence Act",
+      "titleFrOfficiel": null,
+      "status": "encours",
+      "step": 1,
+      "note": "Déposé le 2026-11-17",
+      "noteEn": "Introduced on 2026-11-17",
+      "presentedOn": "2026-11-17",
+      "lastActivity": "2026-11-17",
+      "dates": {
+        "premiere": "2026-11-17"
+      },
+      "comites": [],
+      "amende": false,
+      "sponsor": "Tim McLeod",
+      "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-76.pdf",
+      "urlEn": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-76.pdf",
+      "notesUrl": null,
+      "textSource": "texte tel que déposé en première lecture (PDF) ; l'Assemblée ne réimprime pas un projet amendé",
+      "sources": [
+        "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261117Minutes-HTML.htm"
+      ],
+      "summary": null,
+      "summaryEn": null
+    },
+    {
+      "id": 300077,
+      "num": 77,
+      "legislature": 30,
+      "introSession": 3,
+      "session": "30L3S",
+      "type": "Government Bill",
+      "typeFr": "Projet de loi du gouvernement",
+      "title": "The Mineral Resources (Miscellaneous) Amendment Act, 2026",
+      "titleEn": "The Mineral Resources (Miscellaneous) Amendment Act, 2026",
+      "titleFrOfficiel": null,
+      "status": "encours",
+      "step": 1,
+      "note": "Déposé le 2026-11-17",
+      "noteEn": "Introduced on 2026-11-17",
+      "presentedOn": "2026-11-17",
+      "lastActivity": "2026-11-17",
+      "dates": {
+        "premiere": "2026-11-17"
+      },
+      "comites": [],
+      "amende": false,
+      "sponsor": "Chris Beaudry",
+      "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-77.pdf",
+      "urlEn": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-77.pdf",
+      "notesUrl": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L3S/Bill30-77EN.pdf",
+      "textSource": "texte tel que déposé en première lecture (PDF) ; l'Assemblée ne réimprime pas un projet amendé",
+      "sources": [
+        "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261117Minutes-HTML.htm"
+      ],
+      "summary": null,
+      "summaryEn": null
+    },
+    {
+      "id": 300078,
+      "num": 78,
+      "legislature": 30,
+      "introSession": 3,
+      "session": "30L3S",
+      "type": "Government Bill",
+      "typeFr": "Projet de loi du gouvernement",
+      "title": "The Mineral Resources Wells and Facilities Operations Act",
+      "titleEn": "The Mineral Resources Wells and Facilities Operations Act",
+      "titleFrOfficiel": null,
+      "status": "encours",
+      "step": 1,
+      "note": "Déposé le 2026-11-17",
+      "noteEn": "Introduced on 2026-11-17",
+      "presentedOn": "2026-11-17",
+      "lastActivity": "2026-11-17",
+      "dates": {
+        "premiere": "2026-11-17"
+      },
+      "comites": [],
+      "amende": false,
+      "sponsor": "Chris Beaudry",
+      "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-78.pdf",
+      "urlEn": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-78.pdf",
+      "notesUrl": null,
+      "textSource": "texte tel que déposé en première lecture (PDF) ; l'Assemblée ne réimprime pas un projet amendé",
+      "sources": [
+        "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261117Minutes-HTML.htm"
+      ],
+      "summary": null,
+      "summaryEn": null
+    },
+    {
+      "id": 300079,
+      "num": 79,
+      "legislature": 30,
+      "introSession": 3,
+      "session": "30L3S",
+      "type": "Government Bill",
+      "typeFr": "Projet de loi du gouvernement",
+      "title": "The Red Tape Reduction and Accountability Act",
+      "titleEn": "The Red Tape Reduction and Accountability Act",
+      "titleFrOfficiel": null,
+      "status": "encours",
+      "step": 1,
+      "note": "Déposé le 2026-11-19",
+      "noteEn": "Introduced on 2026-11-19",
+      "presentedOn": "2026-11-19",
+      "lastActivity": "2026-11-19",
+      "dates": {
+        "premiere": "2026-11-19"
+      },
+      "comites": [],
+      "amende": false,
+      "sponsor": "Warren Kaeding",
+      "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-79.pdf",
+      "urlEn": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-79.pdf",
+      "notesUrl": null,
+      "textSource": "texte tel que déposé en première lecture (PDF) ; l'Assemblée ne réimprime pas un projet amendé",
+      "sources": [
+        "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261119Minutes-HTML.htm"
+      ],
+      "summary": null,
+      "summaryEn": null
+    },
+    {
+      "id": 300080,
+      "num": 80,
+      "legislature": 30,
+      "introSession": 3,
+      "session": "30L3S",
+      "type": "Government Bill",
+      "typeFr": "Projet de loi du gouvernement",
+      "title": "The Alcohol and Gaming Regulation Amendment Act, 2026",
+      "titleEn": "The Alcohol and Gaming Regulation Amendment Act, 2026",
+      "titleFrOfficiel": "Loi modificative de 2026 sur la réglementation des boissons alcoolisées et des jeux de hasard",
+      "status": "encours",
+      "step": 1,
+      "note": "Déposé le 2026-11-19",
+      "noteEn": "Introduced on 2026-11-19",
+      "presentedOn": "2026-11-19",
+      "lastActivity": "2026-11-19",
+      "dates": {
+        "premiere": "2026-11-19"
+      },
+      "comites": [],
+      "amende": false,
+      "sponsor": "Warren Kaeding",
+      "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-80.pdf",
+      "urlEn": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-80.pdf",
+      "notesUrl": "https://docs.legassembly.sk.ca/legdocs/Explanatory%20Notes/30L3S/Bill30-80EN.pdf",
+      "textSource": "texte tel que déposé en première lecture (PDF) ; l'Assemblée ne réimprime pas un projet amendé",
+      "sources": [
+        "https://docs.legassembly.sk.ca/legdocs/Assembly/Minutes/30L3S/20261119Minutes-HTML.htm"
       ],
       "summary": null,
       "summaryEn": null

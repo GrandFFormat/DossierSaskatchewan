@@ -6,7 +6,42 @@
     <atom:link href="https://dossiersaskatchewan.ca/api/feed-data.xml" rel="self" type="application/rss+xml"/>
     <description>Bills introduced and assented to, and days of recorded divisions in Saskatchewan's Legislative Assembly. Independent citizen site, official public data.</description>
     <language>en-CA</language>
-    <lastBuildDate>Tue, 17 Nov 2026 20:27:21 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 17:58:47 GMT</lastBuildDate>
+    <item>
+      <title>Bill 79 introduced — The Red Tape Reduction and Accountability Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/79-30</link>
+      <guid isPermaLink="false">depot-79-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Bill 79 introduced — The Red Tape Reduction and Accountability Act</description>
+    </item>
+    <item>
+      <title>Bill 80 introduced — The Alcohol and Gaming Regulation Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/80-30</link>
+      <guid isPermaLink="false">depot-80-2026-11-19</guid>
+      <pubDate>Thu, 19 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Bill 80 introduced — The Alcohol and Gaming Regulation Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 76 introduced — The Prevention of Deceptive Artificial Intelligence Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/76-30</link>
+      <guid isPermaLink="false">depot-76-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Bill 76 introduced — The Prevention of Deceptive Artificial Intelligence Act</description>
+    </item>
+    <item>
+      <title>Bill 77 introduced — The Mineral Resources (Miscellaneous) Amendment Act, 2026</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/77-30</link>
+      <guid isPermaLink="false">depot-77-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Bill 77 introduced — The Mineral Resources (Miscellaneous) Amendment Act, 2026</description>
+    </item>
+    <item>
+      <title>Bill 78 introduced — The Mineral Resources Wells and Facilities Operations Act</title>
+      <link>https://dossiersaskatchewan.ca/projets-de-loi/78-30</link>
+      <guid isPermaLink="false">depot-78-2026-11-17</guid>
+      <pubDate>Tue, 17 Nov 2026 16:00:00 GMT</pubDate>
+      <description>Bill 78 introduced — The Mineral Resources Wells and Facilities Operations Act</description>
+    </item>
     <item>
       <title>Bill 75 introduced — The Community Support and Recovery Act</title>
       <link>https://dossiersaskatchewan.ca/projets-de-loi/75-30</link>
@@ -530,41 +565,6 @@
       <link>https://dossiersaskatchewan.ca/votes</link>
       <guid isPermaLink="false">votes-2026-04-16</guid>
       <pubDate>Thu, 16 Apr 2026 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>Bill 55 introduced — The Medical Profession Amendment Act, 2026</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/55-30</link>
-      <guid isPermaLink="false">depot-55-2026-04-15</guid>
-      <pubDate>Wed, 15 Apr 2026 16:00:00 GMT</pubDate>
-      <description>Bill 55 introduced — The Medical Profession Amendment Act, 2026</description>
-    </item>
-    <item>
-      <title>Bill 619 introduced — The Consumer Protection and Business Practices (Banning Unfair A.I. Pricing) 'Amendment Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/619-30</link>
-      <guid isPermaLink="false">depot-619-2026-04-15</guid>
-      <pubDate>Wed, 15 Apr 2026 16:00:00 GMT</pubDate>
-      <description>Bill 619 introduced — The Consumer Protection and Business Practices (Banning Unfair A.I. Pricing) 'Amendment Act</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2026-04-15</guid>
-      <pubDate>Wed, 15 Apr 2026 16:00:00 GMT</pubDate>
-      <description>1 recorded division held in the Assembly.</description>
-    </item>
-    <item>
-      <title>Bill 618 introduced — The Provincial Health Authority (Prohibiting Anonymous Reporting Mechanisms) Amendment Act</title>
-      <link>https://dossiersaskatchewan.ca/projets-de-loi/618-30</link>
-      <guid isPermaLink="false">depot-618-2026-04-02</guid>
-      <pubDate>Thu, 02 Apr 2026 16:00:00 GMT</pubDate>
-      <description>Bill 618 introduced — The Provincial Health Authority (Prohibiting Anonymous Reporting Mechanisms) Amendment Act</description>
-    </item>
-    <item>
-      <title>1 recorded division held in the Assembly.</title>
-      <link>https://dossiersaskatchewan.ca/votes</link>
-      <guid isPermaLink="false">votes-2026-04-02</guid>
-      <pubDate>Thu, 02 Apr 2026 16:00:00 GMT</pubDate>
       <description>1 recorded division held in the Assembly.</description>
     </item>
   </channel>

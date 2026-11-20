@@ -887,6 +887,57 @@
     "lu": "2026-11-17",
     "lois": []
   },
+  "300076": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-76.pdf",
+    "version": 4,
+    "lu": "2026-11-20",
+    "lois": [
+      "The Consumer Protection and Business Practices Act",
+      "The Election Act, 1996",
+      "The Local Government Election Act, 2015",
+      "The Privacy Act"
+    ]
+  },
+  "300077": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-77.pdf",
+    "version": 4,
+    "lu": "2026-11-20",
+    "lois": [
+      "The Mineral Resources Act, 1985",
+      "The Crown Minerals Act",
+      "The Freehold Oil and Gas Production Tax Act, 2010"
+    ]
+  },
+  "300078": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-78.pdf",
+    "version": 4,
+    "lu": "2026-11-20",
+    "lois": [
+      "The Oil and Gas Conservation Act",
+      "The Energy and Mines Act",
+      "The Freehold Oil and Gas Production Tax Act, 2010",
+      "The Pipelines Act, 1998",
+      "The Planning and Development Act, 2007",
+      "The Surface Rights Acquisition and Compensation Act",
+      "The Water Security Agency Act"
+    ]
+  },
+  "300079": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-79.pdf",
+    "version": 4,
+    "lu": "2026-11-20",
+    "lois": [
+      "The Regulatory Modernization and Accountability Act"
+    ]
+  },
+  "300080": {
+    "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L3S/Bill30-80.pdf",
+    "version": 4,
+    "lu": "2026-11-20",
+    "lois": [
+      "The Alcohol and Gaming Regulation Act, 1997"
+    ]
+  },
   "300601": {
     "url": "https://docs.legassembly.sk.ca/legdocs/Bills/30L1S/Bill30-601.pdf",
     "version": 4,
