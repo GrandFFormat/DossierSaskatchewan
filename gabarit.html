@@ -339,11 +339,13 @@ function goToFederal(evt){
     <!-- Le flux RSS (feed.xml) reprend exactement ces événements. Son lien
          visible vit dans le pied de page ; la balise <link rel=alternate> de
          l'en-tête sert aux lecteurs RSS. -->
-    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">What's new</h2><div class="sub" data-i18n="h.quoideneuf.sub">Real, recent activity from the Legislative Assembly</div></div></div>
+    <!-- « Latest motions » à la place de « What's new » (Martin, 20 nov. 2026, comme DossierOntario et DQ).
+         Les événements de What's new restent chargés : le ticker et le flux RSS s'en servent. -->
+    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.motions">Latest motions</h2><div class="sub" data-i18n="h.motions.sub">Motions put to a recorded vote in the Legislative Assembly, newest first</div></div></div>
 
     <div id="body-quoideneuf">
-    <div id="newsList"></div>
-    <!--PRERENDU:newsList-->
+    <div id="motionsList"></div>
+    <!--PRERENDU:motionsList-->
     <!-- Encadré noir compact (maquette) — le même statut réel que le ticker.
          renderTicker() lit .calendar-box .status : NE PAS renommer. -->
     <div class="calendar-box">

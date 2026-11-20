@@ -17,6 +17,7 @@
 // Ce sont des `let`, pas des `const` : ils sont vides jusqu'à l'arrivée des fichiers. Toute
 // fonction de rendu tourne APRÈS chargerDonnees(), et celles dont la vue n'est pas sur la page
 // sortent immédiatement (voir les gardes en tête de chacune).
+let motions = [];
 let ministers = [], bills = [], votes = [], presences = {}, historiqueLeg = {}, deputesRaw = [],
     deputeEmails = {}, newsItems = [], petitions = [], promises = [], stats = null, journal = [], lobbyistes = null, lobbyProjets = null;
 
@@ -40,6 +41,7 @@ const _remplir = {
   deputesRaw: (v) => { deputesRaw = v; },
   deputeEmails: (v) => { deputeEmails = v; },
   newsItems: (v) => { newsItems = v; },
+  motions: (v) => { motions = v; },
   petitions: (v) => { petitions = v; },
   promises: (v) => { promises = v; },
   stats: (v) => { stats = v; },
@@ -201,6 +203,7 @@ const translations = {
     'h.trouve':"Trouvez votre député·e",
     'h.quoideneuf':"Quoi de neuf",
     'h.quoideneuf.sub':"Dernières activités réelles à l'Assemblée législative",
+    'h.motions':"Dernières motions",'h.motions.sub':"Les motions mises aux voix à l'Assemblée législative, de la plus récente à la plus ancienne",
     'h.lexique':"Lexique du jargon parlementaire",
     'h.lexique.sub':"Pour comprendre le reste du site sans avoir fait un cours de science politique",
     'h.personnes':"Qui gravite autour de l'Assemblée",
@@ -484,6 +487,7 @@ const translations = {
     'h.trouve':"Find your MLA",
     'h.quoideneuf':"What's new",
     'h.quoideneuf.sub':"Real, recent activity from the Legislative Assembly",
+    'h.motions':"Latest motions",'h.motions.sub':"Motions put to a recorded vote in the Legislative Assembly, newest first",
     'h.lexique':"Parliamentary glossary",
     'h.lexique.sub':"To understand the rest of the site without a political science degree",
     'h.personnes':"Who's involved around the Assembly",
@@ -911,6 +915,7 @@ function applyLanguage(){
   renderAccueilSk();
   renderApercuPetitions();
   renderNews();
+  renderMotions();
   renderChallenged();
   renderPromises();
   renderJournal();
@@ -2144,9 +2149,37 @@ function renderNews(){
   `).join('') + (hasMore ? `<button class="bill-more" style="margin-top:14px; border:none; cursor:pointer;" onclick="loadMoreNews()">${moreBtn}</button>` : `<div class="no-results">${noMore}</div>`);
 }
 
+/* ---------------- DERNIÈRES MOTIONS (accueil) ----------------
+   Copie de DossierOntario et DQ (20 nov. 2026) : 5 motions, puis « 5 de plus ». Texte du registre
+   des votes, tel quel (anglais seulement). Le résultat est celui que l'Assemblée publie (result). */
+let motionsShown = 5;
+function renderMotions(){
+  const zone = document.getElementById('motionsList');
+  if(!zone || !motions.length) return;
+  const isEn = currentLang === 'en';
+  const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const date = (d) => new Date(d + 'T12:00:00').toLocaleDateString(isEn ? 'en-CA' : 'fr-CA', { day: 'numeric', month: 'long', year: 'numeric' });
+  const ligne = (m) => {
+    const t = m.totals || {}, p = t.pour ?? 0, c = t.contre ?? 0;
+    const ok = m.result === 'adopte', non = m.result === 'rejete';
+    const res = ok ? (isEn ? 'Carried' : 'Adoptée') : non ? (isEn ? 'Defeated' : 'Rejetée') : '';
+    const etape = isEn ? m.stage : (m.stageFr || m.stage);
+    return `<li class="motion-ligne">
+      ${etape ? `<span class="motion-etape">${esc(etape)}</span>` : ''}
+      <p class="motion-texte">${esc(m.subject)}</p>
+      <p class="motion-meta">${res ? `<span class="motion-res ${ok ? 'motion-adoptee' : 'motion-rejetee'}">${res}</span>` : ''}
+        ${isEn ? `${p} for, ${c} against` : `${p} pour, ${c} contre`} · ${date(m.date)}
+        · <a href="${esc(m.url)}" target="_blank" rel="noopener">${isEn ? 'Official record ↗' : 'Registre officiel ↗'}</a></p></li>`;
+  };
+  zone.innerHTML = (isEn ? '' : '<p class="motion-langue">Le texte des motions est publié en anglais seulement.</p>') +
+    `<ul class="motions-liste">${motions.slice(0, motionsShown).map(ligne).join('')}</ul>` +
+    (motionsShown < motions.length ? `<button class="bill-more motions-plus" data-mesure="sk-motions-plus" style="margin-top:14px; border:none; cursor:pointer;" onclick="motionsShown += 5; renderMotions();">${isEn ? '5 more ↓' : '5 de plus ↓'}</button>` : '');
+}
+
 function loadMoreNews(){
   newsShown += NEWS_STEP;
   renderNews();
+  renderMotions();
 }
 
 function toggleRoadmapRecap(id){
@@ -4613,6 +4646,7 @@ try{ localStorage.setItem('dq:dernier-volet', JSON.stringify({ ville: 'assemblee
   renderVotes();
   renderDeputes();
   renderNews();
+  renderMotions();
   // Les listes du HTML s'effacent dès que leurs cartes sont là — AVANT l'appel réseau de
   // renderChallenged, sinon l'accueil montrait les deux versions le temps de sa réponse.
   retirerPrerendus(['apercuBills', 'newsItems', 'bills', 'votes', 'ministers', 'deputesRaw']);

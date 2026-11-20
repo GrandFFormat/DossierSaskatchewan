@@ -107,6 +107,14 @@ function extraireDonnees() {
   //   billsTitres  ce que la carte d'un vote prend dans un projet de loi : le titre dans les
   //                deux langues et le parrain. 143 projets complets pour ça, c'était 113 ko.
   const derives = {
+    // motions : les 40 dernières motions mises aux voix, pour « Latest motions » de l'accueil
+    // (Martin, 20 nov. 2026, copié de DossierOntario et DQ). Texte du registre des votes, tel quel
+    // (anglais), et le résultat que l'Assemblée publie (result : adopte / rejete).
+    motions: valeurs.votes
+      .filter((v) => !v.billId && /motion/i.test(`${v.stage ?? ''} ${v.subject ?? ''}`))
+      .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? '') || String(b.id).localeCompare(String(a.id), undefined, { numeric: true }))
+      .slice(0, 40)
+      .map((v) => ({ id: v.id, date: v.date, stage: v.stage, stageFr: v.stageFr, result: v.result, subject: v.subject, url: v.url, totals: v.totals })),
     stats: (() => {
       // Le résumé « L'essentiel en 30 secondes » et les tuiles « Recently assented » de l'accueil
       // (design « long lots », 30 sept. 2026) : tout est COMPTÉ ici, dans les vraies données.
@@ -202,7 +210,7 @@ function extraireDonnees() {
 const PAGES = [
   {
     fichier: 'index.html', vue: 'apercu', onglet: 'apercu', url: '/',
-    donnees: ['newsItems', 'petitions', 'apercuBills', 'deputesRaw', 'stats'],
+    donnees: ['newsItems', 'motions', 'petitions', 'apercuBills', 'deputesRaw', 'stats'],
     title: 'The Legislative Assembly in plain language — DossierSaskatchewan',
     desc: "Follow Saskatchewan's Legislative Assembly in plain language: bills summarized, each MLA's recorded votes, ministers, and where every number comes from.",
     frequence: 'daily', priorite: '1.0',
@@ -380,10 +388,12 @@ function prerendus(valeurs) {
   return {
     apercuBills: bloc('apercuBills', 'Recently active bills', bills.slice(0, 4).map(projet),
       `Official source: ${ASSEMBLEE}.`),
-    newsList: bloc('newsItems', 'What’s new at the Legislative Assembly',
-      [...valeurs.newsItems].sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 8)
-        .map((n) => `<span class="pr-meta">${ht(n.label || dateEn(n.date))} —</span> ${ht(n.text)}`),
-      `Official source: ${ASSEMBLEE}.`),
+    // « Latest motions » remplace « What's new » à l'accueil (20 nov. 2026) : la même liste, écrite dans le HTML.
+    motionsList: bloc('motions', 'Latest motions at the Legislative Assembly',
+      valeurs.votes.filter((v) => !v.billId && /motion/i.test(`${v.stage ?? ''} ${v.subject ?? ''}`))
+        .sort((a, b) => (b.date ?? '').localeCompare(a.date ?? '')).slice(0, 8)
+        .map((v) => `<span class="pr-meta">${ht(dateEn(v.date))} —</span> ${ht(v.subject)} <span class="pr-meta">(${v.totals?.pour ?? 0} for, ${v.totals?.contre ?? 0} against)</span>`),
+      `Official source: the Votes and Proceedings, ${ASSEMBLEE}.`),
     ministresGrid: bloc('ministers', 'Cabinet',
       valeurs.ministers.map((m) => `<b><a href="/ministres/${slugMinistre(m.name)}">${ht(m.name)}</a></b> — ${ht(m.roleEn || m.role)} <span class="pr-meta">(${ht(m.party)})</span>`),
       `The ${pluriel(valeurs.ministers.length, 'member', 'members')} of Cabinet. Official source: ${SASK_CA}.`, true),

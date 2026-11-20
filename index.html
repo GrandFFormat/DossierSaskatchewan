@@ -136,7 +136,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/commun/sk.css">
 </head>
-<body data-page="apercu" data-donnees="newsItems,petitions,apercuBills,deputesRaw,stats">
+<body data-page="apercu" data-donnees="newsItems,motions,petitions,apercuBills,deputesRaw,stats">
 
 <!-- Ticker brutaliste : bande noire défilante — contenu rempli avec les VRAIES
      données par renderTicker() (appelé une fois les datasets chargés). -->
@@ -364,22 +364,24 @@ function goToFederal(evt){
     <!-- Le flux RSS (feed.xml) reprend exactement ces événements. Son lien
          visible vit dans le pied de page ; la balise <link rel=alternate> de
          l'en-tête sert aux lecteurs RSS. -->
-    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.quoideneuf">What's new</h2><div class="sub" data-i18n="h.quoideneuf.sub">Real, recent activity from the Legislative Assembly</div></div></div>
+    <!-- « Latest motions » à la place de « What's new » (Martin, 20 nov. 2026, comme DossierOntario et DQ).
+         Les événements de What's new restent chargés : le ticker et le flux RSS s'en servent. -->
+    <div class="section-head" id="sec-quoideneuf"><div><h2 data-i18n="h.motions">Latest motions</h2><div class="sub" data-i18n="h.motions.sub">Motions put to a recorded vote in the Legislative Assembly, newest first</div></div></div>
 
     <div id="body-quoideneuf">
-    <div id="newsList"></div>
-    <div class="prerendu" data-prerendu="newsItems">
-      <ul aria-label="What’s new at the Legislative Assembly">
-        <li><span class="pr-meta">16 novembre 2026 —</span> Dépôt du projet de loi n° 639 — The Saskatchewan Assistance (Direct Payment of Rent and Utilities) Amendment Act</li>
-        <li><span class="pr-meta">16 novembre 2026 —</span> Dépôt du projet de loi n° 75 — The Community Support and Recovery Act</li>
-        <li><span class="pr-meta">10 novembre 2026 —</span> Dépôt du projet de loi n° 638 — The Freedom of Information and Protection of Privacy (Accountability and Transparency) Amendment Act</li>
-        <li><span class="pr-meta">10 novembre 2026 —</span> Dépôt du projet de loi n° 74 — The Workers' Compensation (Strengthening Compensation Outcomes) Amendment Act, 2026</li>
-        <li><span class="pr-meta">9 novembre 2026 —</span> Dépôt du projet de loi n° 637 — The Saskatchewan Employment (National Day for Truth and Reconciliation) Amendment Act</li>
-        <li><span class="pr-meta">9 novembre 2026 —</span> Dépôt du projet de loi n° 73 — The Medical Assistance in Dying Additional Safeguards Act</li>
-        <li><span class="pr-meta">5 novembre 2026 —</span> 2 votes nominatifs tenus à l'Assemblée.</li>
-        <li><span class="pr-meta">5 novembre 2026 —</span> Dépôt du projet de loi n° 72 — The Opioid Damages Amendment Act, 2026</li>
+    <div id="motionsList"></div>
+    <div class="prerendu" data-prerendu="motions">
+      <ul aria-label="Latest motions at the Legislative Assembly">
+        <li><span class="pr-meta">November 5, 2026 —</span> That the motion be amended by adding: And, that the Assembly does not support the agenda outlined in the Speech from the Throne because it does not include any new measures to address the urgent challenges Saskatchewan people face regarding health care, the cost of living, and public safety; and further, That the Assembly has lost confidence in the government. <span class="pr-meta">(21 for, 32 against)</span></li>
+        <li><span class="pr-meta">May 12, 2026 —</span> That this House endorses and supports the Government of Saskatchewan's Patients First Healthcare Plan, including the more than 50 action items to put patients first, which include: <span class="pr-meta">(31 for, 21 against)</span></li>
+        <li><span class="pr-meta">April 29, 2026 —</span> That the actions of the Member for Cumberland on April 22, 2026, constitutes a breach of privilege of the Speaker of the Legislative Assembly of Saskatchewan resulting in contempt by attempting to influence a decision by the Speaker, and by publicly requesting the Speaker violate the privilege of another member of the Legislative Assembly of Saskatchewan; <span class="pr-meta">(33 for, 20 against)</span></li>
+        <li><span class="pr-meta">April 2, 2026 —</span> That this Assembly call upon the Government of Saskatchewan to support the development of a new Canadian pipeline to carry Saskatchewan and Albertan oil to the west coast of Canada. <span class="pr-meta">(53 for, 0 against)</span></li>
+        <li><span class="pr-meta">December 3, 2025 —</span> That the third report of the Standing Committee on Crown and Central Agencies for the thirtieth legislature be now concurred in. <span class="pr-meta">(32 for, 22 against)</span></li>
+        <li><span class="pr-meta">October 30, 2025 —</span> That the motion be amended by adding: And, that the Assembly does not support the agenda outlined in the Speech from the Throne because it fails to include adequate measures to urgently address the challenges Saskatchewan people face regarding health care, tariffs, the cost of living, housing, and public safety; and further, That the Assembly has lost confidence in the government. <span class="pr-meta">(25 for, 32 against)</span></li>
+        <li><span class="pr-meta">October 23, 2025 —</span> That the Assembly calls upon the Premier to clearly and unequivocally call for the Government of Canada to immediately remove its tariffs on electric vehicles from China to restore market access for canola, pea, and pork producers in Saskatchewan. <span class="pr-meta">(33 for, 24 against)</span></li>
+        <li><span class="pr-meta">May 14, 2025 —</span> That this Assembly do now adjourn. <span class="pr-meta">(31 for, 16 against)</span></li>
       </ul>
-      <p class="pr-note">Official source: <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.</p>
+      <p class="pr-note">Official source: the Votes and Proceedings, <a href="https://www.legassembly.sk.ca/" rel="noopener">legassembly.sk.ca</a>.</p>
     </div>
     <!-- Encadré noir compact (maquette) — le même statut réel que le ticker.
          renderTicker() lit .calendar-box .status : NE PAS renommer. -->

@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-11-20",
+    "volet": "assemblee",
+    "fr": {
+      "titre": "Dernières motions",
+      "texte": "À l’accueil, « Dernières motions » remplace « Quoi de neuf » : les motions mises aux voix, avec leur texte, le résultat publié par l’Assemblée et le décompte. Cinq à la fois, puis « 5 de plus »."
+    },
+    "en": {
+      "titre": "Latest motions",
+      "texte": "On the home page, “Latest motions” replaces “What’s new”: motions put to a recorded vote, with their text, the result published by the Assembly and the count. Five at a time, then “5 more”."
+    }
+  },
+  {
     "date": "2026-11-13",
     "volet": "site",
     "fr": {
