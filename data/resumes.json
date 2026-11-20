@@ -2860,6 +2860,503 @@
     }
    }
   },
+  "300065": {
+   "en": {
+    "resumeExecutif": "Strengthens Saskatchewan's human trafficking protections by adding reporting duties, hotel guest registers, and police access rules.",
+    "puces": [
+     "Requires creditors to notify agencies, collectors and courts when a debt is a coerced debt",
+     "Requires hotels, accommodation platforms and vehicle-for-hire drivers to report suspected human trafficking to police",
+     "Bars insurers from considering coerced debts when deciding whether to provide insurance",
+     "Requires hotel keepers to maintain a guest register with name and residence information",
+     "Allows police to apply for a court order or make urgent demands to access hotel registers to find trafficking victims",
+     "Requires police services to publish annual reports on urgent register access demands",
+     "Sets fines up to $100,000 for corporations and $10,000 for individuals who violate register rules"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "2808bc2a193af152",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:48:35.229Z",
+    "jetons": {
+     "entree": 5597,
+     "sortie": 344
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Renforce la lutte contre la traite de personnes en imposant des obligations de signalement et de tenue de registre aux hôtels, plateformes et créanciers.",
+    "puces": [
+     "Oblige les créanciers à aviser les agences de crédit et autres parties qu'une dette est une « dette forcée » liée à la traite de personnes",
+     "Interdit à un assureur de refuser une assurance en raison d'une dette forcée subie par une victime",
+     "Oblige les hôtels, plateformes d'hébergement en ligne et chauffeurs de véhicules à la demande à signaler immédiatement à un agent de la paix toute croyance raisonnable qu'une personne est victime de traite",
+     "Exige que chaque hôtel tienne un registre des clients incluant nom et lieu de résidence, avec pièce d'identité avec photo",
+     "Permet à un policier d'obtenir une ordonnance d'un juge de paix pour accéder au registre d'un hôtel afin de localiser une victime de traite",
+     "Permet aux policiers d'exiger un accès urgent au registre sans ordonnance en cas de risque de préjudice corporel imminent ou de destruction de preuves",
+     "Prévoit des amendes allant jusqu'à 5 000 $ pour un particulier et 25 000 $ pour une entreprise en cas de contravention au registre, doublées en cas de récidive"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "fee68a8e835c9bb3",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:48:41.258Z",
+    "jetons": {
+     "entree": 5902,
+     "sortie": 532
+    }
+   }
+  },
+  "300066": {
+   "en": {
+    "resumeExecutif": "Updates Saskatchewan's pooled registered pension plan law to add rules for new \"variable life payment\" options, including seizure, attachment and spousal division provisions.",
+    "puces": [
+     "Introduces variable life payments, variable life payment credits and variable life payment funds into the Act",
+     "Makes a member's variable life payments subject to seizure or attachment for maintenance orders",
+     "Sets out how pension funds and variable life payments must be divided after a spousal relationship breakdown",
+     "Allows division amounts to be transferred to another plan, a retirement savings plan, or used to buy an annuity",
+     "Lets a member assign all or part of their variable life payments to a spouse or former spouse on relationship breakdown",
+     "Expands the government's power to make regulations covering variable life payments, transfers, and fund terminations",
+     "Comes into force on a date set later by the Lieutenant Governor in Council"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "7a2de26f49523b9f",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:48:45.722Z",
+    "jetons": {
+     "entree": 4377,
+     "sortie": 363
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie la loi sur les régimes de pension agréés collectifs pour encadrer les nouveaux « paiements viagers variables » et leur partage en cas de rupture conjugale ou de saisie.",
+    "puces": [
+     "Ajoute des définitions pour les paiements viagers variables et le fonds qui leur est associé",
+     "Permet la saisie et la retenue des paiements viagers variables pour faire respecter une ordonnance alimentaire",
+     "Précise comment partager le compte, les paiements viagers variables et le crédit de paiement viager lors d'une rupture conjugale",
+     "Permet de transférer les sommes dues à un ex-conjoint vers un autre régime, un REER ou une rente viagère",
+     "Permet à un membre de céder une partie de ses paiements viagers variables à son ex-conjoint",
+     "Donne au gouvernement le pouvoir de préciser par règlement le fonctionnement de ces nouveaux paiements et fonds",
+     "La loi entrera en vigueur à une date fixée plus tard par le lieutenant-gouverneur en conseil"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "68ef0c5048268db2",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:48:51.705Z",
+    "jetons": {
+     "entree": 4682,
+     "sortie": 431
+    }
+   }
+  },
+  "300067": {
+   "en": {
+    "resumeExecutif": "Updates Saskatchewan's coroner legislation to modify investigation, inquest, jury and information-sharing rules for deaths investigated under the Act.",
+    "puces": [
+     "Requires anyone in charge of a lock-up, guardroom, remand centre or correctional facility to notify a coroner immediately when a person in custody dies",
+     "Reduces inquest juries from a larger number to 6 jurors, allowing a 7th juror or an alternate in certain cases",
+     "Requires a mandatory inquest when a person dies in custody, unless death was natural and unpreventable or a Serious Incident Response Team report adequately covers it",
+     "Lets the chief coroner publicly release investigation information and findings when necessary for public safety, including personal information",
+     "Allows coroners to enter private dwellings to investigate a death and lets pathologists retain body parts or objects to determine cause of death",
+     "Creates rules for information-sharing agreements allowing the chief coroner to collect, use and disclose information, including personal information, for investigations",
+     "Requires the coroner to reject jury findings or recommendations that are illegal, contravene the Act, or are unreasonable to implement"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "7d68057070aedb06",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:48:57.486Z",
+    "jetons": {
+     "entree": 5693,
+     "sortie": 443
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie la loi sur les coroners pour mettre à jour les règles d'enquête, les jurys d'enquête et le partage d'information lors de décès.",
+    "puces": [
+     "Oblige le responsable d'un lieu de détention (y compris un lock-up policier) à aviser immédiatement un coroner en cas de décès d'une personne détenue",
+     "Exige une enquête publique sur le décès d'une personne en garde à vue, sauf exceptions comme un décès naturel non évitable",
+     "Réduit le nombre de jurés requis pour une enquête de 12 à 6, avec possibilité de juré suppléant ou d'un 7e juré",
+     "Permet au coroner de rejeter une conclusion ou une recommandation du jury jugée illégale ou impossible à mettre en œuvre",
+     "Permet au chef coroner de conclure des ententes de partage d'information, y compris des renseignements personnels, pour les enquêtes",
+     "Permet au coroner d'obtenir l'assistance d'agents de la paix ou d'autres personnes, en plus du service de police local",
+     "Permet de documenter une scène par photo ou vidéo et d'utiliser le téléphone ou d'autres moyens électroniques pour certaines procédures"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "525ffe9e95979194",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:02.975Z",
+    "jetons": {
+     "entree": 5998,
+     "sortie": 483
+    }
+   }
+  },
+  "300068": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's maintenance order enforcement law to update fee rules, add new charges on defaulting payors, and expand pension attachment options.",
+    "puces": [
+     "Allows the director to charge fees for enforcing maintenance orders and for payments dishonoured by a payor's bank",
+     "Creates a new annual default fee that can be imposed on payors who repeatedly miss maintenance payments",
+     "Lets the director waive or reduce the annual default fee based on the payor's financial circumstances",
+     "Allows a court to reduce or cancel fees owed under these sections on application",
+     "Expands pension entitlements subject to attachment to include variable life payments from pooled registered pension plans",
+     "Adds tax-free savings accounts (TFSAs) to the list of registered plans covered by the Act",
+     "Adds registered education savings plans (RESPs) to the definition of registered plan under the related Registered Plan Exemption Act"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "4dbe7af13249c15d",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:06.981Z",
+    "jetons": {
+     "entree": 4115,
+     "sortie": 375
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie les règles d'exécution des ordonnances alimentaires en Saskatchewan et permet au directeur d'imposer de nouveaux droits aux payeurs en défaut.",
+    "puces": [
+     "Permet au directeur d'exiger des droits pour toute action d'exécution ou pour un paiement non honoré par l'institution financière du payeur",
+     "Crée un droit annuel pour défaut de paiement, plafonné par règlement, après préavis donné au payeur",
+     "Permet au directeur de réduire, annuler ou renoncer à ce droit selon la situation financière du payeur",
+     "Permet au tribunal, sur requête, de réduire ou annuler les droits exigés",
+     "Ajoute les paiements viagers variables d'un régime de pension agréé collectif aux prestations de pension saisissables",
+     "Élargit la définition de « régime enregistré » pour inclure le compte d'épargne libre d'impôt (CELI)",
+     "Ajoute le régime enregistré d'épargne-études (REEE) à la liste des régimes protégés contre la saisie dans la loi connexe"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "844071d5be6a9585",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:11.815Z",
+    "jetons": {
+     "entree": 5155,
+     "sortie": 442
+    }
+   }
+  },
+  "300069": {
+   "en": {
+    "resumeExecutif": "Amends The Legal Profession Act, 1990 to allow non-lawyer agents to provide legal services under set rules and to create a new health intervention process for lawyers whose ability to practise may be impaired.",
+    "puces": [
+     "Allows benchers to exempt agents from the unauthorized practice of law prohibition under set conditions",
+     "Lets people routinely act as legal agents under federal or provincial law if they follow agent rules",
+     "Creates health intervention committees that can order physical or mental exams for members believed impaired",
+     "Allows these committees to suspend or impose conditions on a lawyer's licence to protect the public",
+     "Gives affected members the right to a new hearing before a review panel within 15 days of request",
+     "Makes refusing an ordered exam or ignoring imposed conditions count as professional misconduct",
+     "Requires agents providing legal services under The Summary Offences Procedure Act to follow the Legal Profession Act"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "94ba3bbc54d17f29",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:16.631Z",
+    "jetons": {
+     "entree": 3703,
+     "sortie": 374
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie la loi encadrant la profession juridique pour créer un processus d'intervention en santé pour les membres et encadrer les agents offrant des services juridiques.",
+    "puces": [
+     "Crée un nouveau mécanisme d'intervention en santé pour les avocats dont l'état de santé menace la sécurité du public",
+     "Permet à un comité d'intervention en santé d'ordonner un examen médical ou psychologique d'un membre",
+     "Autorise l'imposition de conditions ou la suspension temporaire du permis d'un membre pendant cette intervention",
+     "Donne au membre visé le droit de demander une audience devant un comité de révision, dans les 15 jours suivant la demande",
+     "Précise que le refus de se soumettre à un examen ou de respecter les conditions constitue une faute professionnelle",
+     "Permet aux benchers d'exempter certaines personnes de l'interdiction de pratiquer le droit sans autorisation, sous conditions, pour agir comme agents",
+     "Oblige les agents fournissant des services juridiques dans le cadre de la loi sur les infractions sommaires à respecter la loi sur la profession juridique"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "28f521c704d8b0e2",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:21.996Z",
+    "jetons": {
+     "entree": 4008,
+     "sortie": 459
+    }
+   }
+  },
+  "300070": {
+   "en": {
+    "resumeExecutif": "Requires people acting as agents providing legal services under The Small Claims Act, 2016 to comply with The Legal Profession Act, 1990.",
+    "puces": [
+     "Adds a new section to The Small Claims Act, 2016",
+     "Agents providing legal services in small claims matters must follow The Legal Profession Act, 1990",
+     "The change takes effect alongside The Legal Profession Amendment Act, 2026",
+     "Makes a consequential amendment linked to separate legal profession reforms"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "e90b43071d5557c2",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:24.719Z",
+    "jetons": {
+     "entree": 1951,
+     "sortie": 235
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Exige que toute personne agissant comme mandataire pour fournir des services juridiques aux petites créances respecte la loi sur la profession juridique.",
+    "puces": [
+     "Ajoute un nouvel article à la Loi de 2016 sur les petites créances",
+     "Oblige les mandataires offrant des services juridiques à se conformer à The Legal Profession Act, 1990",
+     "Entre en vigueur en même temps que l'article 1 de la loi The Legal Profession Amendment Act, 2026"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "a04ede6cf4b7ddf2",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:27.505Z",
+    "jetons": {
+     "entree": 1958,
+     "sortie": 244
+    }
+   }
+  },
+  "300071": {
+   "en": {
+    "resumeExecutif": "Gives the minister new powers to order compliance, issue administrative penalties and enforce rules under The Personal Care Homes Act.",
+    "puces": [
+     "Lets the minister order a person to stop an act, comply with the law, or fix a violation",
+     "Allows administrative penalties up to $5,000 plus up to $1,000 per day of continued violation",
+     "Gives people served with an order or penalty the right to make written representations and appeal to court",
+     "Lets the minister file penalties as court judgments recoverable as Crown debts",
+     "Allows the minister to publish notices of penalties, licence suspensions or other orders publicly",
+     "Sets new offence fines up to $10,000 for individuals and $25,000 for corporations, plus daily fines for continuing offences",
+     "Replaces references to 'department' with 'ministry' throughout the Act and adds rules for serving legal notices"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "debab9ef7582ea27",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:32.170Z",
+    "jetons": {
+     "entree": 5770,
+     "sortie": 349
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Donne au ministre de nouveaux pouvoirs pour ordonner la conformité et imposer des pénalités aux foyers de soins personnels qui enfreignent la loi.",
+    "puces": [
+     "Permet au ministre d'ordonner à une personne de cesser une action ou de corriger une violation de la loi",
+     "Autorise des pénalités administratives jusqu'à 5 000 $, plus 1 000 $ par jour de contravention continue",
+     "Donne droit à la personne visée de présenter des observations écrites avant une décision du ministre",
+     "Permet au ministre de faire exécuter une pénalité impayée comme un jugement de la cour",
+     "Permet d'en appeler d'une pénalité administrative devant un juge dans les 30 jours",
+     "Autorise le ministre à publier un avis des pénalités, suspensions ou annulations de permis",
+     "Augmente les amendes en cas d'infraction : jusqu'à 10 000 $ pour un individu et 25 000 $ pour une corporation, avec montants quotidiens additionnels"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "0690a8b087a30993",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:36.988Z",
+    "jetons": {
+     "entree": 6075,
+     "sortie": 420
+    }
+   }
+  },
+  "300072": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's opioid damages law to let the Government of Canada also sue manufacturers, wholesalers and consultants to recover its opioid-related health care costs.",
+    "puces": [
+     "Creates a new direct legal action allowing the Government of Canada to sue for opioid-related health care costs",
+     "Lets claims target consultants in addition to manufacturers and wholesalers",
+     "Extends the definition of 'opioid product' to cover active ingredients, not just drugs",
+     "Allows cost recovery on an aggregate population basis without identifying individual patients",
+     "Lets courts order disclosure of a sample of patient records under strict anonymity rules if a defendant applies",
+     "Applies the same procedural rules (aggregate claims, record protections) to both provincial and federal government actions",
+     "Makes the amendments retroactive to July 3, 2020"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "b7de2e70110c2f1a",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:41.604Z",
+    "jetons": {
+     "entree": 4417,
+     "sortie": 352
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Permet au gouvernement du Canada de poursuivre les fabricants et vendeurs d'opioïdes pour récupérer ses propres coûts de soins de santé.",
+    "puces": [
+     "Crée un nouveau droit d'action distinct pour le gouvernement du Canada contre les fabricants, grossistes ou consultants d'opioïdes",
+     "Permet au gouvernement du Canada de réclamer ces coûts même sans recours déjà intenté par d'autres personnes lésées",
+     "Permet de réclamer les coûts pour des individus précis ou pour un groupe de personnes de façon globale",
+     "Protège la confidentialité des dossiers médicaux individuels, sauf ordonnance du tribunal avec échantillon statistique anonymisé",
+     "Élargit la définition de « manufacturier » et de « produit opioïde » pour inclure aussi les ingrédients actifs, pas seulement les médicaments",
+     "Ajoute les consultants à la liste des parties pouvant être visées par une faute liée aux opioïdes",
+     "La loi entre en vigueur à la sanction mais s'applique rétroactivement depuis le 3 juillet 2020"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "b73556ee49ae964f",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:47.028Z",
+    "jetons": {
+     "entree": 4722,
+     "sortie": 466
+    }
+   }
+  },
+  "300073": {
+   "en": {
+    "resumeExecutif": "Sets additional eligibility restrictions and conscientious objection protections for medical assistance in dying in Saskatchewan.",
+    "puces": [
+     "Bans practitioners from finding anyone under 18 eligible for medical assistance in dying",
+     "Prohibits assessing or treating someone as eligible if they lack capacity to decide",
+     "Excludes mental illness alone as sole underlying condition from qualifying",
+     "Requires all federal eligibility criteria and safeguards under the Criminal Code to be met",
+     "Protects practitioners and other individuals from being forced to provide or assist with it",
+     "Prevents disciplinary or employment penalties against those who refuse to participate",
+     "Requires health regulatory bodies to dismiss complaints based on such refusals"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "e6bfff8795c31ef4",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:50.915Z",
+    "jetons": {
+     "entree": 2965,
+     "sortie": 313
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Impose des conditions supplémentaires encadrant qui peut être admissible à l'aide médicale à mourir et protège les praticiens qui refusent d'y participer.",
+    "puces": [
+     "Interdit à un praticien de juger une personne admissible à l'aide médicale à mourir si elle a moins de 18 ans",
+     "Interdit l'admissibilité si la personne n'a pas la capacité de comprendre et communiquer sa décision",
+     "Exclut les demandes basées uniquement sur une maladie mentale comme condition sous-jacente",
+     "Exige le respect des critères et mesures de sauvegarde fédéraux prévus au Code criminel",
+     "Protège les praticiens contre toute mesure disciplinaire ou mesure d'emploi négative s'ils refusent de fournir ou d'aider à l'aide médicale à mourir",
+     "Interdit aux ordres professionnels de santé d'adopter des règlements obligeant leurs membres à fournir cette aide",
+     "Oblige un ordre professionnel à rejeter toute plainte fondée sur le refus d'un membre de participer à l'aide médicale à mourir"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "e3515ce87f329331",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:49:56.117Z",
+    "jetons": {
+     "entree": 3270,
+     "sortie": 455
+    }
+   }
+  },
+  "300074": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's workers' compensation law to update psychological injury presumptions, appeal timelines, board responsibilities and payment rules.",
+    "puces": [
+     "Clarifies that directors, employers, partners and proprietors are not automatically considered workers",
+     "Sets a 2-year deadline to appeal a delegate's decision to the board",
+     "Expands presumption of psychological injury to workers diagnosed by psychiatrists, psychologists or approved health care professionals",
+     "Allows the board to pay a medical appointment allowance when attending appointments causes lost earnings",
+     "Requires the board to set aside 10% of compensation paid after 24 months for future annuity purposes",
+     "Changes survivor spouse compensation rules to require a loss of the worker's earnings due to death",
+     "Requires principals to report payment information about contractors and subcontractors to the board"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "1b0e0a6c404fc058",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:00.067Z",
+    "jetons": {
+     "entree": 4367,
+     "sortie": 354
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie la loi sur l'indemnisation des travailleurs pour élargir la reconnaissance des blessures psychologiques et ajuster plusieurs règles de compensation.",
+    "puces": [
+     "Crée une présomption de blessure psychologique pour les travailleurs exposés à un événement traumatique ou exerçant un métier prescrit par règlement, s'ils sont diagnostiqués par un psychiatre, un psychologue autorisé ou un professionnel de la santé approuvé par la commission",
+     "Exclut les administrateurs d'entreprise, employeurs, associés et propriétaires de la définition de « travailleur », sauf s'ils sont désignés comme tels",
+     "Fixe à 2 ans le délai pour contester une décision d'un délégué devant la commission",
+     "Permet à la commission de verser une allocation pour perte de revenu lors d'un rendez-vous médical nécessaire au maintien d'un retour à temps plein",
+     "Oblige la commission à mettre de côté 10% de la compensation versée après 24 mois cumulatifs pour un travailleur ou un conjoint survivant à charge, pour constituer une rente future",
+     "Oblige les entrepreneurs principaux à fournir à la commission des informations sur les paiements faits aux sous-traitants",
+     "Précise que le taux de salaire maximal applicable est celui en vigueur à la date de la blessure initiale du travailleur"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "43064ec7aeae589a",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:06.075Z",
+    "jetons": {
+     "entree": 4672,
+     "sortie": 550
+    }
+   }
+  },
+  "300075": {
+   "en": {
+    "resumeExecutif": "Restricts where supervised drug consumption sites can be located and requires government approval for local authorities to seek or support such sites.",
+    "puces": [
+     "Bans supervised consumption sites within 400 metres of a child care centre, school, or registered independent school",
+     "Sets detailed rules for how that 400-metre distance must be measured for each type of premises",
+     "Requires local authorities like municipalities to get the minister's approval before applying for a federal drug site exemption",
+     "Also requires minister's approval before a local authority supports someone else's application for such an exemption",
+     "Allows the Lieutenant Governor in Council to make regulations defining terms, prescribing software for measuring distances, and adding other premises types",
+     "Act takes effect on a date set later by cabinet order"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "b5eeb11f49b7b08f",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:09.982Z",
+    "jetons": {
+     "entree": 2759,
+     "sortie": 316
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Interdit l'établissement de sites de consommation supervisée à moins de 400 mètres de garderies et d'écoles, et encadre l'approbation des demandes d'exemption fédérale.",
+    "puces": [
+     "Interdit d'établir ou d'exploiter un site de consommation supervisée à moins de 400 mètres d'une garderie, d'une école ou d'une école indépendante enregistrée",
+     "Précise comment mesurer cette distance selon le type de lieu (porte d'entrée, limites du terrain, centre du bâtiment)",
+     "Exclut les garderies situées sur une réserve et les écoles offrant seulement des cours par internet de la définition de 'lieu désigné'",
+     "Exige l'approbation du ministre avant qu'une municipalité ou un autre organisme local demande ou appuie une exemption fédérale pour un tel site",
+     "Permet au gouvernement d'ajouter par règlement d'autres lieux ou organismes visés par ces règles",
+     "La loi entrera en vigueur à une date fixée par décret du lieutenant-gouverneur en conseil"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "9696fea4d3e144bc",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:15.141Z",
+    "jetons": {
+     "entree": 3064,
+     "sortie": 441
+    }
+   }
+  },
   "300601": {
    "en": {
     "resumeExecutif": "Declares the month of April as Sikh Heritage Month in Saskatchewan.",
@@ -4095,12 +4592,408 @@
      "sortie": 343
     }
    }
+  },
+  "300631": {
+   "en": {
+    "resumeExecutif": "Voids and prohibits property restrictions that stop land from being used to open or operate grocery stores and supermarkets.",
+    "puces": [
+     "Bans new restrictive covenants or exclusivity clauses that block land being used as a grocery store or supermarket",
+     "Makes such existing restrictions void unless the Minister specifically exempts them",
+     "Minister can only exempt pre-existing restrictions that do not unduly harm competition and serve the public interest",
+     "Automatically removes exclusivity clauses held by non-supermarket parties that block land from supermarket use",
+     "Exempts restrictions granted by government, municipalities, and certain public bodies from this Act",
+     "Does not apply to building restriction covenants, development schemes, or zoning-based restrictions",
+     "Allows the government to make regulations defining terms and exempting certain classes of covenants or clauses"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "2add118cfdeb01ae",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:19.525Z",
+    "jetons": {
+     "entree": 2961,
+     "sortie": 344
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Interdit les clauses contractuelles qui empêchent l'ouverture d'épiceries ou de supermarchés concurrents sur un terrain.",
+    "puces": [
+     "Rend invalides les nouvelles clauses restrictives créées après l'entrée en vigueur de la loi, qui limiteraient l'usage d'un terrain pour une épicerie ou un supermarché",
+     "Annule aussi les clauses existantes avant la loi, sauf si le ministre les exempte par règlement",
+     "Le ministre peut exempter une clause existante seulement si elle ne nuit pas indûment à la concurrence et sert l'intérêt public",
+     "Modifie automatiquement certaines clauses d'exclusivité pour retirer la restriction visant les supermarchés, quand elles ne bénéficient pas à un exploitant de supermarché",
+     "Exclut de la loi les restrictions imposées par les gouvernements, municipalités, ou liées uniquement au zonage",
+     "Définit précisément ce qu'est un dépanneur, une épicerie et un supermarché selon leur superficie et les produits vendus",
+     "Permet au Lieutenant-gouverneur en conseil d'adopter des règlements pour préciser des définitions et des exemptions"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "94287c93e3668f74",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:25.115Z",
+    "jetons": {
+     "entree": 3266,
+     "sortie": 491
+    }
+   }
+  },
+  "300632": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's residential tenancy law to limit annual rent increases to a government-set guideline, with specific exemptions.",
+    "puces": [
+     "Caps yearly rent increases at a guideline tied to Saskatchewan's Consumer Price Index changes",
+     "Requires the guideline to be published in the Saskatchewan Gazette by August 31 each year",
+     "Allows landlords and tenants to agree to higher increases for capital improvements or new services",
+     "Exempts hotels, motels, caretaker and employee units, and boarding house rooms from the cap",
+     "Exempts new buildings from rent control for 5 years after first occupancy",
+     "Exempts new subsidized or social housing buildings from rent control for 5 years",
+     "Lets landlords raise rent on vacant units, up to the average rent of comparable units, in complexes with 4 or more units"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "5af6f714a1d783f7",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:29.325Z",
+    "jetons": {
+     "entree": 2610,
+     "sortie": 354
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Instaure un contrôle des loyers en Saskatchewan en limitant les hausses de loyer à un taux maximal annuel.",
+    "puces": [
+     "Plafonne les hausses de loyer selon un taux directeur basé sur l'indice des prix à la consommation de Statistique Canada",
+     "Le taux directeur annuel doit être publié dans la Gazette de la Saskatchewan au plus tard le 31 août de l'année précédente",
+     "Permet une hausse de loyer supérieure au taux si le locataire et le propriétaire s'entendent sur des rénovations ou de nouveaux services",
+     "Exempte du plafond les hôtels, motels, auberges, logements de concierge ou d'employé et chambres en pension",
+     "Exempte les nouveaux immeubles pendant 5 ans suivant le permis d'occupation ou la première location",
+     "Exempte pendant 5 ans les immeubles neufs destinés au logement social ou subventionné",
+     "Permet d'augmenter le loyer d'une unité libérée, dans un immeuble de 4 logements ou plus, jusqu'à la moyenne des loyers comparables de l'immeuble"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "8e820050c73a2e35",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:35.597Z",
+    "jetons": {
+     "entree": 2915,
+     "sortie": 462
+    }
+   }
+  },
+  "300633": {
+   "en": {
+    "resumeExecutif": "Exempts children's clothing and various grocery store food items from provincial sales tax.",
+    "puces": [
+     "Removes provincial sales tax on clothing for children under age 16",
+     "Exempts ready-to-eat grocery store meals like rotisserie chickens, chili, and soup",
+     "Exempts pre-packaged salads, sandwiches, wraps, and food platters from the tax",
+     "Exempts snack foods including muffins, granola bars, and protein bars",
+     "Exempts mixed and salted nuts, fruit juices, and yogurt drinks",
+     "Allows the government to add more exempt foods by regulation",
+     "Takes effect immediately upon receiving assent"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "7beacb947af51c0a",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:39.072Z",
+    "jetons": {
+     "entree": 1864,
+     "sortie": 291
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Exempte de la taxe de vente provinciale les vêtements pour enfants de moins de 16 ans et plusieurs aliments vendus en épicerie.",
+    "puces": [
+     "Les vêtements pour enfants de moins de 16 ans ne seront plus taxés",
+     "Les repas prêts-à-manger comme les poulets rôtis, chilis et soupes deviennent exemptés",
+     "Les salades préemballées et les noix mélangées ou salées sont exemptées",
+     "Les muffins, barres granola et barres protéinées ou énergétiques sont exemptés",
+     "Les jus de fruits et boissons au yogourt deviennent exemptés",
+     "Les sandwichs, wraps et plateaux de fromages, viandes, fruits et légumes sont exemptés",
+     "Le gouvernement pourra ajouter d'autres aliments exemptés par règlement"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "9a97ec145de40266",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:43.723Z",
+    "jetons": {
+     "entree": 2169,
+     "sortie": 385
+    }
+   }
+  },
+  "300634": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's medical care insurance law to ban private access fees and extra billing by physicians for insured health services.",
+    "puces": [
+     "Defines 'access fees' as any extra charges tied to receiving or speeding up insured physician services",
+     "Prohibits physicians from charging or collecting any amount beyond what the Minister pays for insured services",
+     "Bars physicians from billing patients extra for faster, preferred or exclusive access to insured care",
+     "Allows charges for non-insured goods or services only when reasonably necessary before an insured service",
+     "Requires the Minister to reimburse patients who are improperly charged access fees",
+     "Sets escalating penalties for repeat violations: warnings, referral to the College of Physicians and Surgeons, then loss of payment eligibility",
+     "Requires anyone charging privately for insured services to notify patients in writing that it's available free publicly, with signed acknowledgment"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "d534eb9af477a205",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:47.773Z",
+    "jetons": {
+     "entree": 2999,
+     "sortie": 370
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Interdit aux médecins de facturer des frais privés ou des frais d'accès pour des services médicaux déjà assurés par le régime public.",
+    "puces": [
+     "Définit les « frais d'accès » comme tout montant exigé en plus des prestations payées par le ministre pour un service assuré",
+     "Interdit à un médecin de charger ou percevoir un montant supplémentaire pour un service assuré, y compris pour un accès accéléré ou préférentiel",
+     "Empêche un médecin d'être payé par le ministre pour un service assuré si le patient a payé des frais d'accès",
+     "Permet de facturer des biens ou services non assurés jugés nécessaires avant de fournir le service assuré",
+     "Prévoit que le ministre peut ordonner le remboursement d'un patient ayant payé des frais d'accès interdits",
+     "Établit des sanctions progressives: avertissement écrit, renvoi au Saskatchewan College of Physicians and Surgeons, puis inadmissibilité à la rémunération",
+     "Oblige tout médecin facturant un service privé à informer par écrit le patient que ce service est aussi offert gratuitement par le régime public, avec signature de reconnaissance"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "6e87f8208df110de",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:53.263Z",
+    "jetons": {
+     "entree": 3304,
+     "sortie": 475
+    }
+   }
+  },
+  "300635": {
+   "en": {
+    "resumeExecutif": "Bans parking fees for cancer patients attending treatment at health authority facilities designated for cancer care.",
+    "puces": [
+     "Prohibits health facilities designated for cancer care from charging patients parking fees",
+     "Applies to patients attending the facility to access cancer treatments",
+     "Amends The Provincial Health Authority Act with a new subsection",
+     "Takes effect immediately upon receiving Assent"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "3c7927227d583219",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:55.773Z",
+    "jetons": {
+     "entree": 1792,
+     "sortie": 206
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Interdit aux établissements désignés pour le traitement du cancer de facturer des frais de stationnement aux patients en traitement.",
+    "puces": [
+     "Modifie la loi sur l'autorité provinciale de santé (The Provincial Health Authority Act)",
+     "Les installations désignées pour les soins aux patients atteints de cancer ne peuvent plus imposer de frais de stationnement",
+     "L'interdiction vise les patients qui se rendent sur place pour recevoir des traitements contre le cancer",
+     "La loi entre en vigueur dès qu'elle reçoit la sanction royale"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "9f178144c6c7f487",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:50:59.199Z",
+    "jetons": {
+     "entree": 2097,
+     "sortie": 275
+    }
+   }
+  },
+  "300636": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's consumer protection law to ban businesses from charging consumers higher prices based on personalized algorithmic pricing.",
+    "puces": [
+     "Defines personalized algorithmic pricing, electronic shelf labels, online retailers, distributors and platforms as covered under the law",
+     "Bans demanding a higher price due to personalized algorithmic pricing when using electronic shelf labels",
+     "Bans online retailers and distributors from using personalized algorithmic pricing to increase prices charged to consumers",
+     "Requires clear disclosure of the reason for a higher price and a clear consumer action to consent before it applies",
+     "Deems it an unfair business practice to charge a consumer more than others due to personalized algorithmic pricing",
+     "Requires disclosure of total price, fees and other material facts in clear language for online retailers and distributors",
+     "Extends the time limit for prosecuting offences under the Act to two years after evidence came to the director's knowledge"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "ec388a8e87cc04f7",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:03.902Z",
+    "jetons": {
+     "entree": 4022,
+     "sortie": 388
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Interdit aux commerçants et plateformes en ligne de fixer des prix plus élevés à certains consommateurs à partir de données personnelles analysées par algorithme.",
+    "puces": [
+     "Interdit de demander un prix plus élevé à un consommateur en se basant sur ses données personnelles traitées par un algorithme",
+     "Vise les étiquettes électroniques de prix pouvant être modifiées à distance",
+     "Oblige les détaillants et distributeurs en ligne à bien expliquer clairement toute hausse de prix et à obtenir l'accord clair du consommateur",
+     "Déclare que l'utilisation d'un tarif personnalisé par algorithme est un fait important devant être divulgué au consommateur",
+     "Ajoute de nouvelles pratiques commerciales jugées déloyales, comme profiter d'un consommateur vulnérable ou imposer des conditions trop dures",
+     "Précise que des éléments comme l'intelligence artificielle ou l'apprentissage automatique peuvent constituer une pratique déloyale même sans transaction conclue",
+     "Allonge le délai de poursuite pour une infraction à la loi à deux ans après la découverte de la preuve par le directeur"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "40bfa9766370b75d",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:09.436Z",
+    "jetons": {
+     "entree": 4327,
+     "sortie": 479
+    }
+   }
+  },
+  "300637": {
+   "en": {
+    "resumeExecutif": "Adds the National Day for Truth and Reconciliation on September 30 as a public holiday under The Saskatchewan Employment Act.",
+    "puces": [
+     "Amends The Saskatchewan Employment Act's list of public holidays",
+     "Adds September 30, the National Day for Truth and Reconciliation, as a recognized holiday",
+     "Makes the change part of the existing list of statutory public holidays in section 2-30",
+     "Takes effect immediately upon receiving Assent"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "fd4422b2476efd56",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:12.139Z",
+    "jetons": {
+     "entree": 1743,
+     "sortie": 231
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Ajoute le 30 septembre, Journée nationale de la vérité et de la réconciliation, comme jour férié provincial en Saskatchewan.",
+    "puces": [
+     "Modifie The Saskatchewan Employment Act pour inclure un nouveau jour férié",
+     "Le 30 septembre devient officiellement un jour férié public provincial",
+     "La loi entre en vigueur dès sa sanction"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "b6aac721dbc1cb28",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:14.787Z",
+    "jetons": {
+     "entree": 2048,
+     "sortie": 212
+    }
+   }
+  },
+  "300638": {
+   "en": {
+    "resumeExecutif": "Amends Saskatchewan's freedom of information law to remove fees, require proactive publication of records, and strengthen the Information Commissioner's enforcement powers.",
+    "puces": [
+     "Eliminates all fees government institutions can charge for access-to-information requests",
+     "Requires government to publish released records online within 14 days, unless they contain personal information",
+     "Creates a new duty to disclose information without delay when there is risk of significant harm or clear public interest",
+     "Allows the commissioner to demand records even if protected by solicitor-client privilege, without losing that privilege",
+     "Lets the commissioner file recommendations directly as enforceable court orders if a government head fails to comply",
+     "Gives applicants and third parties the right to appeal a head's decision to the Court of King's Bench",
+     "Requires every Cabinet minister to publish their ministerial calendar online every quarter"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "c8a888b6cc2a09e9",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:19.015Z",
+    "jetons": {
+     "entree": 4013,
+     "sortie": 347
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Modifie la loi sur l'accès à l'information pour éliminer les frais de demande, forcer la publication des réponses et renforcer les pouvoirs du commissaire.",
+    "puces": [
+     "Interdit à un organisme gouvernemental de facturer des frais pour une demande d'accès à l'information",
+     "Oblige la publication du document fourni sur un site gouvernemental dans les 14 jours, sauf renseignements personnels",
+     "Crée une obligation de divulguer sans délai toute information présentant un risque important pour la santé, la sécurité ou l'environnement",
+     "Oblige la divulgation de toute information clairement dans l'intérêt public, même sans demande",
+     "Permet au commissaire d'exiger des documents malgré le privilège avocat-client",
+     "Permet au commissaire de déposer une ordonnance exécutoire à la Cour du Banc du Roi si le chef de l'organisme ne suit pas sa recommandation",
+     "Oblige chaque membre du Conseil exécutif à publier trimestriellement son agenda ministériel"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "01b16dd81349d6e4",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:23.729Z",
+    "jetons": {
+     "entree": 4318,
+     "sortie": 428
+    }
+   }
+  },
+  "300639": {
+   "en": {
+    "resumeExecutif": "Requires that assistance payments for rent and utilities be paid directly to landlords and utility providers unless the recipient requests otherwise.",
+    "puces": [
+     "Amends The Saskatchewan Assistance Act by adding a new section 7.1",
+     "Default rule sends rent and utility payments straight to landlords or utility companies",
+     "Person in need can request to receive the payments themselves instead",
+     "Change takes effect immediately upon Assent"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "3f956acb67eac976",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:26.474Z",
+    "jetons": {
+     "entree": 1736,
+     "sortie": 217
+    }
+   },
+   "fr": {
+    "resumeExecutif": "Oblige le versement direct des prestations de loyer et de services publics au propriétaire ou au fournisseur, sauf demande contraire de la personne.",
+    "puces": [
+     "Modifie la loi sur l'assistance de la Saskatchewan en ajoutant un nouvel article 7.1",
+     "Exige que l'unité d'assistance paie directement le loyer au fournisseur de logement locatif",
+     "Exige aussi le paiement direct des services publics au fournisseur de services",
+     "La personne dans le besoin peut demander que ce soit différent",
+     "La loi entre en vigueur dès sa sanction"
+    ],
+    "sansContenu": false,
+    "source": "texte-anglais",
+    "tronque": false,
+    "empreinte": "b7c5232854d0ffcc",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-20T17:51:30.094Z",
+    "jetons": {
+     "entree": 2041,
+     "sortie": 277
+    }
+   }
   }
  },
  "modele": "claude-sonnet-5",
  "avertissementEn": "Written by AI from the bill as introduced (official PDF on legassembly.sk.ca), not from the law as amended since. Not an official document.",
  "avertissementFr": "Rédigé par une IA à partir du projet de loi tel que déposé (PDF officiel sur legassembly.sk.ca), et non de la loi telle qu'amendée depuis. Ce n'est pas un document officiel.",
- "maj": "2026-11-02T23:16:19.688Z",
- "nombre": 92,
- "coutCumule": 1.4891
+ "maj": "2026-11-20T17:51:30.094Z",
+ "nombre": 112,
+ "coutCumule": 1.9297
 }
