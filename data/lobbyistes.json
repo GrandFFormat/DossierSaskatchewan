@@ -1,10 +1,100 @@
 {
  "source": "https://www.sasklobbyistregistry.ca/search-the-registry/",
  "attribution": "Saskatchewan Lobbyist Registry — Office of the Registrar of Lobbyists",
- "scrapedAt": "2026-11-20T17:58:47.028Z",
+ "scrapedAt": "2026-11-24T02:46:18.331Z",
  "total": 327,
  "complet": true,
  "inscriptions": [
+  {
+   "id": "104f662f-04e5-f111-bda1-6045bd5c8f14",
+   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=104f662f-04e5-f111-bda1-6045bd5c8f14",
+   "organisation": "Canadian Life and Health Insurance Association Inc.",
+   "type": "In-House",
+   "statut": "Active",
+   "effetLe": "2026-11-20",
+   "version": "38 of 38",
+   "detail": {
+    "numero": "1608-1444-38",
+    "type": "In-House",
+    "statut": "Active",
+    "publieLe": "2026-11-23",
+    "effetLe": "2026-11-20",
+    "finPrevue": null,
+    "cabinet": null,
+    "activites": [
+     {
+      "description": "Encourage the development of decumulation options for Saskatchewan. Encourage legislative amendments to enable automatic features in workplace retirement savings plans.",
+      "sujets": [
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Encourage strong support for the continuation of prescription drug coverage through health benefit plans.",
+      "sujets": [
+       "Health & Wellness"
+      ],
+      "categories": [
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     },
+     {
+      "description": "Encourage harmonization of provincial legislative and regulatory frameworks related to the licensing and market conduct of insurance companies and the distribution intermediaries they work with.",
+      "sujets": [
+       "Finance & Budget"
+      ],
+      "categories": [
+       "Directive, Guideline or Decision",
+       "Legislative Proposal, Bill or Resolution",
+       "Program or Policy",
+       "Regulation"
+      ]
+     }
+    ],
+    "institutions": [
+     "Rural and Remote Health",
+     "Executive Council",
+     "Finance",
+     "Health",
+     "Financial & Consumer Affairs Authority",
+     "Mental Health and Addictions"
+    ],
+    "ministres": [
+     {
+      "nom": "Lori Carr",
+      "institution": "Mental Health and Addictions"
+     },
+     {
+      "nom": "Lori Carr",
+      "institution": "Rural and Remote Health"
+     },
+     {
+      "nom": "Jeremy Cockrill",
+      "institution": "Health"
+     },
+     {
+      "nom": "Tim McLeod",
+      "institution": "Financial & Consumer Affairs Authority"
+     },
+     {
+      "nom": "Jim Reiter",
+      "institution": "Finance"
+     },
+     {
+      "nom": "Scott Moe",
+      "institution": "Executive Council"
+     }
+    ],
+    "deputes": []
+   },
+   "lu": "2026-11-24"
+  },
   {
    "id": "a2b58dea-29c7-f111-aad1-000d3af328df",
    "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=a2b58dea-29c7-f111-aad1-000d3af328df",
@@ -1443,96 +1533,6 @@
      {
       "nom": "Darlene Rowden",
       "institution": "Environment"
-     }
-    ],
-    "deputes": []
-   },
-   "lu": "2026-11-17"
-  },
-  {
-   "id": "681a3c6e-f2dd-f111-bda1-6045bd5c8f14",
-   "url": "https://www.sasklobbyistregistry.ca/search-the-registry/registration-details/?id=681a3c6e-f2dd-f111-bda1-6045bd5c8f14",
-   "organisation": "Canadian Life and Health Insurance Association Inc.",
-   "type": "In-House",
-   "statut": "Active",
-   "effetLe": "2026-11-11",
-   "version": "37 of 37",
-   "detail": {
-    "numero": "1608-1444-37",
-    "type": "In-House",
-    "statut": "Active",
-    "publieLe": "2026-11-12",
-    "effetLe": "2026-11-11",
-    "finPrevue": null,
-    "cabinet": null,
-    "activites": [
-     {
-      "description": "Encourage the development of decumulation options for Saskatchewan. Encourage legislative amendments to enable automatic features in workplace retirement savings plans.",
-      "sujets": [
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Encourage strong support for the continuation of prescription drug coverage through health benefit plans.",
-      "sujets": [
-       "Health & Wellness"
-      ],
-      "categories": [
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     },
-     {
-      "description": "Encourage harmonization of provincial legislative and regulatory frameworks related to the licensing and market conduct of insurance companies and the distribution intermediaries they work with.",
-      "sujets": [
-       "Finance & Budget"
-      ],
-      "categories": [
-       "Directive, Guideline or Decision",
-       "Legislative Proposal, Bill or Resolution",
-       "Program or Policy",
-       "Regulation"
-      ]
-     }
-    ],
-    "institutions": [
-     "Rural and Remote Health",
-     "Executive Council",
-     "Finance",
-     "Health",
-     "Financial & Consumer Affairs Authority",
-     "Mental Health and Addictions"
-    ],
-    "ministres": [
-     {
-      "nom": "Lori Carr",
-      "institution": "Mental Health and Addictions"
-     },
-     {
-      "nom": "Lori Carr",
-      "institution": "Rural and Remote Health"
-     },
-     {
-      "nom": "Jeremy Cockrill",
-      "institution": "Health"
-     },
-     {
-      "nom": "Tim McLeod",
-      "institution": "Financial & Consumer Affairs Authority"
-     },
-     {
-      "nom": "Jim Reiter",
-      "institution": "Finance"
-     },
-     {
-      "nom": "Scott Moe",
-      "institution": "Executive Council"
      }
     ],
     "deputes": []

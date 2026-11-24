@@ -3425,6 +3425,28 @@
      "entree": 20216,
      "sortie": 502
     }
+   },
+   "en": {
+    "resumeExecutif": "Vests ownership of underground pore space in the Crown and creates new rules, a licensing system, and a legacy fund for carbon dioxide sequestration and oil and gas conservation in Saskatchewan.",
+    "puces": [
+     "Declares all pore space beneath Saskatchewan land to be Crown property, with no compensation for this vesting alone",
+     "Lets the minister issue, amend or cancel licenses (dispositions) for using pore space, including for carbon capture and storage",
+     "Requires a government-issued project authorization before anyone can inject captured carbon dioxide underground",
+     "Creates a Carbon Dioxide Sequestration Legacy Fund, paid by project fees, to cover long-term monitoring and orphan site cleanup costs",
+     "Lets the Crown take over ownership and liability for stored carbon dioxide once a sequestration project formally closes",
+     "Protects existing pore space agreements and dispositions already in place, letting them continue until they expire",
+     "Adds new rules for seismic exploration, well spacing, oil and gas pooling, and unit operation of oil and gas fields"
+    ],
+    "sansContenu": false,
+    "source": "texte",
+    "tronque": false,
+    "empreinte": "92a3ad49fa838d1b",
+    "modele": "claude-sonnet-5",
+    "genereLe": "2026-11-24T02:45:02.239Z",
+    "jetons": {
+     "entree": 19911,
+     "sortie": 426
+    }
    }
   },
   "300078": {
@@ -5201,7 +5223,7 @@
  "modele": "claude-sonnet-5",
  "avertissementEn": "Written by AI from the bill as introduced (official PDF on legassembly.sk.ca), not from the law as amended since. Not an official document.",
  "avertissementFr": "Rédigé par une IA à partir du projet de loi tel que déposé (PDF officiel sur legassembly.sk.ca), et non de la loi telle qu'amendée depuis. Ce n'est pas un document officiel.",
- "maj": "2026-11-20T17:55:52.225Z",
+ "maj": "2026-11-24T02:45:02.239Z",
  "nombre": 117,
- "coutCumule": 2.2329
+ "coutCumule": 2.277
 }
